@@ -79,28 +79,28 @@ function addItemToCart(variant_id, qty) {
   seconds = upgradeTime;
 }
 
-function addItemToCart(variant_id, qty) {
-  data = {
-    id: variant_id,
-    quantity: qty,
-  };
+// function addItemToCart(variant_id, qty) {
+//   data = {
+//     id: variant_id,
+//     quantity: qty,
+//   };
 
-  fetch("/cart/add.js", {
-    method: "POST",
-    "Content-Type": "application/json",
-    body: JSON.stringify(data),
-  })
-    .then(function () {
-      document.documentElement.dispatchEvent(
-        new CustomEvent("cart:refresh", {
-          bubbles: true, //this code is for prestige theme, is to refresh the cart
-        })
-      );
-    })
-    .catch((err) => null);
+//   fetch("/cart/add.js", {
+//     method: "POST",
+//     "Content-Type": "application/json",
+//     body: JSON.stringify(data),
+//   })
+//     .then(function () {
+//       document.documentElement.dispatchEvent(
+//         new CustomEvent("cart:refresh", {
+//           bubbles: true, //this code is for prestige theme, is to refresh the cart
+//         })
+//       );
+//     })
+//     .catch((err) => null);
 
-  seconds = upgradeTime;
-}
+//   seconds = upgradeTime;
+// }
 
 $(window).ready(function () {
   $(".Product__Gallery").addClass("notextt");
