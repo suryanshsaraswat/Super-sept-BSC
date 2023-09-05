@@ -43,7 +43,7 @@
                 <span>{{ cart.total_price | minus: threshold_in_cents | abs | money }}</span>
               {%- endcapture -%}
               <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
-              <div class="progress"><div class="bar" style="width:{{ cart.total_price | divided_by:2000  }}%"></div></div>
+              <!-- <div class="progress"><div class="bar" style="width:{{ cart.total_price | divided_by:2000  }}%"></div></div> -->
               <div class="paisa-wapsi"><p>Complete your checkout to get a 100% Cashback</p></div>
             {%- endif -%}
           </div>
