@@ -44,7 +44,6 @@
               {%- endcapture -%}
               <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
               <!-- <div class="progress"><div class="bar" style="width:{{ cart.total_price | divided_by:2000  }}%"></div></div> -->
-              <div class="paisa-wapsi"><p>Complete your checkout to get a 100% Cashback</p></div>
             {%- endif -%}
           </div>
         </div>
@@ -54,6 +53,7 @@
         <p class="Cart__Empty Heading u-h5">{{ 'cart.general.empty' | t }}</p>
       {%- else -%}
         <!-- <div class="timexx" style="background: #ffffff;color: #f00; font-weight: 600; text-align: center; padding: 5px; ">Hurry! Your cart is reserved for <span id="timer"></span></div> -->
+      <div class="paisa-wapsi"><p>Complete your checkout to get a 100% Cashback</p></div>
         <div class="Drawer__Container">
           <input
             type="hidden"
