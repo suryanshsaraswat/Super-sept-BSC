@@ -44,7 +44,7 @@
               {%- endcapture -%}
               <p>{{- 'cart.general.free_shipping_remaining_html' | t: remaining_amount: remaining_amount -}}</p>
               <!-- <div class="progress"><div class="bar" style="width:{{ cart.total_price | divided_by:2000  }}%"></div></div> -->
-              {% if cart.item_count != 0 %}<div class="paisa-wapsi"><p>Complete your checkout to get a 100% Cashback</p></div>{% endif %}
+              <div class="paisa-wapsi"><p>Complete your checkout to get a 100% Cashback</p></div>
             {%- endif -%}
           </div>
         </div>
