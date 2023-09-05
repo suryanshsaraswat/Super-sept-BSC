@@ -2,7 +2,7 @@
   .brand-sliderr {
     max-width: 100px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0 17px;
   }
 </style>
 <div class="main-block">
@@ -31,14 +31,32 @@
 // pauseOnHover: false,
 // cssEase: 'linear'
 // });
-  $('.brand-slider').slick({
-    speed: 9000,
-    autoplay: true,
-    autoplaySpeed: 0,
-    cssEase: 'linear',
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    variableWidth: true
+  $(document).ready(function() {
+    $('.brand-slider').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 3000,
+      arrows: false,
+      variableWidth: true,
+      cssEase: 'linear',
+      dots: false,
+      pauseOnHover: false,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 3
+          }
+        }, {
+          breakpoint: 520,
+          settings: {
+            slidesToShow: 2
+          }
+        }
+      ]
+    });
   });
 </script>
 {% schema %}
