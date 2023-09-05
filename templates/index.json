@@ -714,10 +714,34 @@
             "logo_brand": "shopify:\/\/shop_images\/BSCLogo_cfb0ea44-7b30-4ce0-b268-61271f63beb0.png",
             "discount_desc": "Rs.500 OFF on MOV 1999"
           }
+        },
+        "42f9acee-3e49-4609-89f7-db7446eaf0c0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs. 500 off on MOV 1999"
+          }
+        },
+        "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.500 OFF on MOV 1999"
+          }
+        },
+        "b8a5132c-f086-4c13-953b-b8cf5d692516": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.599 OFF on MOV 1999"
+          }
         }
       },
       "block_order": [
-        "e6b56035-5e0c-4a44-9615-5abc1356881f"
+        "e6b56035-5e0c-4a44-9615-5abc1356881f",
+        "42f9acee-3e49-4609-89f7-db7446eaf0c0",
+        "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
+        "b8a5132c-f086-4c13-953b-b8cf5d692516"
       ],
       "settings": {
         "logo-headingg": "Brand Coupons"
