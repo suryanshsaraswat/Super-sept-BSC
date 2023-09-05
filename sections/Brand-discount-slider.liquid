@@ -1,0 +1,34 @@
+{% schema %}
+  {
+    "name": "Brand offer slider",
+    "settings": [
+      {
+        "type": "html",
+        "id": "logo-headingg",
+        "label": "Enter Section Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "name": "Brand Block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "logo_brand",
+            "label": "Select brand logo"
+          }, {
+            "type": "text",
+            "id": "discount_desc",
+            "label": "Enter offer here"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Brand Slider Homepage",
+        "category": "homepage"
+      }
+    ]
+  }
+{% endschema %}
