@@ -1,0 +1,121 @@
+<style>
+  .Button#ad_to_cart{font-size:12px}
+  .mx-product-slider{display:flex}
+  body{background:#fff}
+  .slidec{margin:20px;}
+  .product-details {padding: 14px 0;}
+  .product-details h1 {font-size: 20px;font-weight: 500;margin-bottom: 0;line-height: 1.4;margin-bottom: 5px;}
+  .mx-product h2{font-size: 24px;font-weight: 700;line-height: 1.4;margin:20px 0 0px; text-align:center}
+      p.quote{    margin-bottom: 8px;}
+  .pricediv{font-weight:500;}
+  .pricediv .price-compareat {text-decoration: line-through;text-decoration-color: #0a589b;text-decoration-thickness: 3px;padding-right: 6px;}
+  .pricediv .pridce .priddce {font-weight: 700;display: block;font-size: 20px;}
+  .ArticleItem__Content{text-align:left}
+  .whytrim .desk-cont {margin-top: 25px;border-radius: 15px;box-shadow: 0 0 12px 0 #ccc;}
+  
+  .product-imagea {position: relative;overflow: hidden;}
+  .product-imagea:hover .hvx{opacity:1}
+  .ad_to_cart_coll{margin-top:0!important;padding: 12px 0 !important;}
+  .btncart span.ofr{color: #494949;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-top: 3px;}
+  @media(max-width:480px){
+    .slidec{margin:8px 10px;}
+    .whytrim{margin-top:10px}
+    .product-details h1{font-size: 12px;}
+    .trimmeta .rating__star {width: 18px;height: 18px;}
+    .verfied img {width: 15px;vertical-align: sub;}
+  }
+</style>
+<div class="mx-product">
+      <div class="mx-product-slider">
+        
+        {%- for block in section.blocks -%}
+{%- assign product = all_products[block.settings.featured_product] -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
+        <div class="slidec">
+          <a href="{{ product.url }}">
+          <div class="product-card">
+            <div class="product-imagea">
+              <img src="{{ block.settings.featured_image | img_url: 'master'}}">
+            </div>
+            <div class="product-details">
+             <h1>{{ product.title }}</h1>
+                
+              <div class="metaflex">
+                {%- if product.compare_at_price > product.price -%}
+                <p class="pricediv"><span class="price-compareat">MRP{{ product.compare_at_price | money }}</span> <span class="pridce">{{ product.price | money }}</span></p>
+                  {%- else -%}
+                  <p class="pricediv"><span class="pridce">MRP {{ product.price | money }}</span></p>
+                  {% endif %}
+              <div class="btncart">
+                <button type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll Button Button--primary" id="ad_to_cart conf" aria-haspopup="dialog" data-add-to-cart="{{ current_variant.id }}" data-var_id="{{ current_variant.id }}" data-action="open-drawer" data-drawer-id="sidebar-cart"><span>Add to cart</span></button>
+                <span class="ofr">Special offers at checkout</span>
+              </div>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+        {%- endfor -%}
+      </div>
+
+  </div>
+{% comment %}
+<script>
+     $('.mx-product-slider').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              centerMode: false,
+              infinite: true,
+       
+       arrows: true,
+			  responsive: [ {
+                breakpoint: 480,
+                settings: {
+                  initialSlide: 1,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1,
+                  settings: 'unslick'
+                }
+              }]
+         
+            });
+
+</script>
+{% endcomment %}
+{% schema %}
+  {
+    "name": "Product Block-3",
+    "settings": [],
+    "max_blocks":2,
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Product Slider",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product",
+            "label": "Select Product"
+          },
+          {
+            "type": "image_picker",
+            "id": "featured_image",
+            "label": "Upload Image"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "bhaidooj prod block-3",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

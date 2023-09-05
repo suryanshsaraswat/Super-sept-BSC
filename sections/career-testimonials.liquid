@@ -1,0 +1,55 @@
+<div class="testc">
+{%- for block in section.blocks -%}
+  <img src="{{ block.settings.image | img_url: 'master' }}" width="100%">
+  {% endfor %}
+</div>
+ <script>
+  $('.testc').slick({
+    dots: false,
+    arrows: false,
+    autoplay: true,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    infinite: true,
+ responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        
+      }
+    },
+   ]
+  });
+
+  
+</script>
+{% schema %}
+    {
+      "name": "Careers",
+      "settings": [],
+      "blocks": [
+            {
+			  "type": "testimonial",
+              "name": "Blocks",
+              "settings": [
+               {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+          
+        }
+         ]
+            }
+          ],
+      "presets": [
+          {
+            "name": "Career Testimonials",
+            "category": "image"
+          }
+        ]
+    }
+    {% endschema %}

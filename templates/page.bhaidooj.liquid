@@ -1,0 +1,29 @@
+<style>
+  .video iframe{padding:30px;border-radius:43px; height:880px}
+  @media(max-width:500px){.video iframe{padding:4px 0; border-radius:19px;height:280px}.slidec {padding:0!important;}.product-details h1{margin-left:0!important; padding:0 5px; font-size:13px !important}.pricediv{margin-left:5px!important; margin-bottom:0!important; font-size:13px}.ad_to_cart_coll{font-size:11px !important; padding:8px 0!important}.btncart span.ofr{font-size:11px}}
+  .product-card {box-shadow: 0px 2px 11px #4e464661;border-radius:15px}
+  .slidec {margin: 36px;padding: 10px 87px;}
+  .pricediv{margin-left:10px}
+  .product-details h1{margin-left:10px;text-transform:uppercase}
+  .product-imagea img{border-radius:15px 15px 0 0;}
+  .ad_to_cart_coll{width:95%!important; margin:0 auto}
+  .pricediv .price-compareat{text-decoration-thickness: 2px!important}
+</style>
+{% section 'single-banner' %}
+{% section 'bhaidooj-prod-block' %}
+{% section 'bhaidooj-prod-block-2' %}
+<div class="video">
+  <iframe width="100%" height="600" src="https://www.youtube.com/embed/wbzpL4eby3g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% section 'bhaidooj-prod-block-3' %}
+{% section 'bhaidooj-prod-block-4' %}
+{% section 'bhaidooj-prod-block-5' %}
+<div class="prod-contt">
+  {% section 'featured-product' %}
+</div>
+
+<script>
+  $(".desk-cont").click(function() {
+    window.scrollTo({top: 700, behavior: 'smooth'});
+});
+</script>

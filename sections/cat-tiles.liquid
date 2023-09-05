@@ -1,0 +1,106 @@
+<style>
+  .nav-main {
+    max-width: 100%;
+    width: 1300px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    padding-top: 25px;
+  }
+  .nav-main h2 {
+    font-size: 21px;
+    text-transform: none;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: 0.3px;
+    color: #0d5ea8;
+  }
+  .nav-clid {
+    display: flex;
+    justify-content: space-between;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.4s;
+  }
+  /*.nav-item {
+    flex: 15% 0 0;
+    scroll-snap-align: start;
+  }*/
+  .nav-item h2 {
+    font-size: 15px;
+    FONT-WEIGHT: 500;
+    text-align: center;
+    margin-top: -10px;
+    color: #007684;
+  }
+  img.nav-tile {
+    transition: 0.4s;
+  }
+  img.nav-tile:hover {
+    transform: scale(1.09);
+  }
+  img.nav-tile {
+    width: 130px
+  }
+  @media(max-width:700px) {
+    .nav-main {
+      display: none;
+    }
+  }
+</style>
+<div class="nav-main">
+  <h2>Explore Categories</h2>
+  <div class="nav-clid">
+    {% for block in section.blocks %}
+      <div class="nav-item">
+        <a href="{{block.settings.linkurl_nav}}">
+          <h2><img src="{{block.settings.cat_tile_image | img_url: '400x'}}" class="nav-tile"></h2>
+          <h2>{{ block.settings.heading_nav }}</h2>
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Desktop Navigation Tiles",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "homepage",
+        "name": "Navigation Item",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading_nav",
+            "label": "Name",
+            "default": "Enter Title",
+            "info": "Enter Name of the Collection up here"
+          }, {
+            "type": "url",
+            "id": "linkurl_nav",
+            "label": "Link"
+          }, {
+            "type": "image_picker",
+            "id": "cat_tile_image",
+            "label": "select category image"
+          }, {
+            "type": "checkbox",
+            "id": "linkopen",
+            "label": "Open in new window",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "homepage",
+        "name": "Desktop Navigation Tiles"
+      }
+    ]
+  }
+{% endschema %}

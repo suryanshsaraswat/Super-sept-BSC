@@ -1,0 +1,132 @@
+<style>
+  .tablewrapper {position: fixed;top: 0;left: 0;padding: 0px 20px;background: #00000082;z-index: 999;width: 100%;display: flex;height: 100%;align-items: center;justify-content: center;}
+ .comptab td, .comptab th {padding: 8px; border: 1px solid #353535;}
+ .comptab { background: #000; color: #fff; width: 620px;overflow-x: scroll;}
+  .tableinner{overflow-x: scroll; max-height: 630px;}
+  .close{color:#fff;fomnt-size:28px;position:absolute;right:25px;top:25px;font-size: 45px;cursor:pointer}
+  .comparebtn{cursor:pointer}
+  .set > a i{margin-top:25px!important}
+  @media(min-width:1000px){
+    .comptab{width: 900px;overflow-x:hidden}
+    .tableinner{overflow-x: hidden;}
+                          }
+</style>
+<div class="tablewrapper" style="display:none">
+  <div class="close">&times;</div>
+  <div class="tableinner">
+    <table class="comptab">
+<thead>
+  <tr>
+    <th>Feature </th>
+    <th>Beard Trimmer PE2025</th>
+    <th>Cordless Beard Trimmer &amp; Hair Clipper</th>
+    <th>Beard Trimmer </th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>User Rating</td>
+    <td></td>
+    <td>5</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Water Resistant</td>
+    <td>No</td>
+    <td>IPX6 Washable</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Charging </td>
+    <td>120 mins</td>
+    <td>120 mins</td>
+    <td> 90 mins</td>
+  </tr>
+  <tr>
+    <td>Runtime </td>
+    <td>90 mins</td>
+    <td>80 mins</td>
+    <td>80 mins</td>
+  </tr>
+  <tr>
+    <td>Length Adjustments </td>
+    <td>4</td>
+    <td>5</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>Number of combs </td>
+    <td>3mm,6mm,9mm,12mm</td>
+    <td>3mm, 6mm, 9mm, 12mm&nbsp;&nbsp;and zero trim</td>
+    <td>1-20 mm</td>
+  </tr>
+  <tr>
+    <td>Blade material</td>
+    <td>Stainless Steel </td>
+    <td>Stainless Steel </td>
+    <td>Stainless Steel </td>
+  </tr>
+  <tr>
+    <td>MRP</td>
+    <td>899</td>
+    <td>1.999</td>
+    <td>1,199</td>
+  </tr>
+  <tr>
+    <td>Colors available </td>
+    <td>Electric Blue, Classic Black</td>
+    <td>Grey</td>
+    <td>Black</td>
+  </tr>
+  <tr>
+    <td>USB Charging Pod</td>
+    <td>No</td>
+    <td>Yes</td>
+    <td>No</td>
+  </tr>
+  <tr>
+    <td>Battery</td>
+    <td>600maH battery</td>
+    <td>600mAH Battery</td>
+    <td>600mAH Battery</td>
+  </tr>
+  <tr>
+    <td>Warranty</td>
+    <td>1 Year</td>
+    <td>2 + 1 Year</td>
+    <td>2 Year</td>
+  </tr>
+  <tr>
+    <td>Features</td>
+    <td>Sleek Design with a comfortable grip, Best in segment battery performance of 90 minutes with just 2 Hours of charging</td>
+    <td>2-in-1 grooming tool is designed for men to shape and trim beard and hair, Ergonomic Sleek &amp; Compact Design, comes with a USB charging pod</td>
+    <td>Flash charging, secure lock for excellent finesse</td>
+  </tr>
+</tbody>
+</table>
+  </div>
+</div>
+
+<script>
+  $(".comparebtn").click(function(){
+  $(".tablewrapper").slideDown();
+});
+  
+  $(".close").click(function(){
+  $(".tablewrapper").slideUp();
+});
+  
+</script>
+{% schema %}
+  {
+    
+"presets": [
+    {
+      "category": "Collection",
+      "name": "compare",
+      "settings": {}
+      
+    }
+  ]
+  }
+{% endschema %}

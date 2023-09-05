@@ -1,0 +1,90 @@
+<style>
+  .homebar {
+    text-align: center;
+    background: #fff
+  }
+  .homebar ul {
+    list-style: none;
+    white-space: nowrap;
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y: hidden
+  }
+  .homebar ul li {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 500;
+    margin-right: 10px;
+  }
+  .homebar ul li h2 {
+    margin-bottom: 0;
+  }
+  .homebar ul li:first-child {
+    margin-left: 8px
+  }
+  .homebar img {
+    width: 65px;
+  }
+  .homebar ul li p {
+    margin-top: 0;
+  }
+  .homebar ul li a {
+    padding: 0
+  }
+</style>
+<div class="homebar">
+  <ul>
+    {%- for block in section.blocks -%}
+      <li>
+        <a href="{{ block.settings.linkurl }}" {% if block.settings.linkopen == true %}target="_blank"{% endif %}>
+          <h2><img src="{{ block.settings.mobile_nav  | img_url: '400x' }}" alt="category tiles"></h2>
+          <p>{{ block.settings.text }}</p>
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Mobile Navigation Bar",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Navigation Item",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "mobile_nav",
+            "label": "select image tile"
+          }, {
+            "type": "text",
+            "id": "text",
+            "label": "Name",
+            "default": "Enter name here",
+            "info": "Enter Name of the Collection up here"
+          }, {
+            "type": "url",
+            "id": "linkurl",
+            "label": "Link"
+          }, {
+            "type": "checkbox",
+            "id": "linkopen",
+            "label": "Open in new window",
+            "default": false
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Header",
+        "name": "Mobile Navigation Bar"
+
+
+      }
+    ]
+  }
+{% endschema %}

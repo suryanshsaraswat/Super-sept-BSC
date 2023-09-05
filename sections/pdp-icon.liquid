@@ -1,0 +1,62 @@
+<style>
+  .desktop-icons{display:block}
+  .mobile-icons{display:none}
+  section.usp-icon-for-pdp {
+    padding: 10px;
+    margin: 0px 80px 16px 80px;
+    border-radius: 10px;
+}
+  .icon-heading h2{font-size: 25px;text-align: left;font-weight: 600;margin-left: 77px;margin-bottom: 11px;text-transform: uppercase;font-family: 'Avenir Next';}
+  @media(max-width:450px){
+    .mobile-icons{display:block}
+    .desktop-icons{display:none}
+    section.usp-icon-for-pdp{margin:0px 16px 16px 16px}
+    .icon-heading h2{font-size:16px; text-align:left; font-weight:600;margin-left:10px;margin-bottom:5px;text-transform: none;}
+  }
+</style>
+{% for block in section.blocks %}
+  {%- if block.settings.desktop_icon_strip != blank -%}
+  <div class="icon-heading">
+     <h2>Features of the product:</h2>
+  </div>
+<section class="usp-icon-for-pdp">
+  <div class="desktop-icons">
+    <img src="{{ block.settings.desktop_icon_strip | img_url:"master" }}" style="width:100%; height:auto" alt="dekstop icons">
+  </div>
+  <div class="mobile-icons">
+    <img src="{{ block.settings.mobile_icon_strip | img_url:"master" }}" style="width:100%; height:auto" alt="dekstop icons">
+  </div>
+    {% else %}
+    <div class="display:none"></div>
+  {%- endif -%}
+</section>
+  {% endfor %}
+{% schema %}
+  {
+    "name": "USP Icons for PDP",
+    "settings": [],
+    "blocks":[
+      {
+      "type":"product",
+      "name":"ICON BLOCK",
+      "settings":[
+        {
+          "type":"image_picker",
+          "id":"desktop_icon_strip",
+          "label":"Select desktop icon strip"
+        },
+        {
+          "type":"image_picker",
+          "id":"mobile_icon_strip",
+          "label":"Select mobile icon strip"
+        }
+      ]
+    }],
+    "presets":[
+      {
+        "category":"product",
+        "name":"USP Icons for PDP"
+      }
+    ]
+  }
+{% endschema %}

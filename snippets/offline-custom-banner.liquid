@@ -1,0 +1,67 @@
+<style>
+  .offline-banner-desktop {
+    position: relative;
+    display: block;
+    padding-top: 107px;
+}
+  .logo-abs img {
+    position: absolute;
+    top: 13px;
+    left: 41%;
+    right: 50%;
+    animation: tada 3s ease-in-out infinite;
+}
+  .offline-banner-mobile {
+    display:none
+}
+  @keyframes tada{
+0% {
+    -webkit-transform: scale3d(1,1,1);
+    transform: scaleZ(1);
+}
+10%, 20% {
+    -webkit-transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+    transform: scale3d(.9,.9,.9) rotate3d(0,0,1,-3deg);
+}
+30%, 50%, 70%, 90% {
+    -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+    transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,3deg);
+}
+40%, 60%, 80% {
+    -webkit-transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+    transform: scale3d(1.1,1.1,1.1) rotate3d(0,0,1,-3deg);
+}
+100% {
+    opacity: 1;
+    -webkit-transform: scale3d(1,1,1);
+    transform: scaleZ(1);
+}
+}
+  @media(max-width:500px){
+    .offline-banner-desktop {
+    display:none
+}
+    .offline-banner-mobile {
+    display: block;
+    position: relative;
+    padding-top: 66px;
+}
+  .logo-abs-mobile img {
+    position: absolute;
+    top: 3px;
+    left: 36%;
+    right: 50%;
+    animation: tada 3s ease-in-out infinite;
+}
+  }
+</style>
+<div class="offline-banner-desktop">
+  <div class="logo-abs">
+  <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/WinPrizes_Logo.png?v=1680174929" style="width:200px; height:auto"></div>
+  <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Win_Banner_1920x650_8264ffa7-19d5-414b-b27b-98f252ccaa05.jpg?v=1680679250" style="width:100%; height:auto">
+</div>
+<div class="offline-banner-mobile">
+  <div class="logo-abs-mobile">
+  <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/WinPrizes_Logo.png?v=1680174929" style="width:100px; height:auto"></div>
+  <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Win_Banner_800x1100_2610431f-1d3c-4a3d-9225-56695bda495a.jpg?v=1680679250" style="width:100%; height:auto">
+</div>

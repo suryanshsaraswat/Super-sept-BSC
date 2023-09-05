@@ -1,0 +1,26 @@
+<style>
+.s5-section p{color:#fff;text-align:center;font-size:22px;font-family:Roboto,sans-serif}
+.s5-section h2{font-family:'Roboto',sans-serif;font-weight:700;font-size:42px;text-align:center;color:#fff;text-transform:uppercase;line-height:44px;padding-top:35px;margin-bottom:0}
+.s5-section{max-width:100%;background:#000}
+@media(max-width:450px){.s5-section h2 {
+    font-size: 25px;
+    line-height: 30px;}
+                       }
+  a.rzp-button{margin-top: 12px;}
+</style>
+<div class="s5-section">
+  {% if customer %}
+    <h2>Have Questions<br><span class="razp-name">About Razorpreneur?</span></h2>
+  <div class="rzp-buttons">
+    <a href="/pages/razorpreneur-faq" class="rzp-button learn-more">FAQ</a>
+  </div>
+  {% else %}
+    <h2>Ready to be a<br><span class="razp-name">Razorpreneur</span></h2>
+  <p>Take the plunge</p>
+  <div class="rzp-buttons">
+    <a href="/pages/razorpreneur-faq" class="rzp-button learn-more">FAQ</a>
+    <a href="https://bombayshavingcompany.com/pages/razorpreneur#section-2" class="rzp-button apply-now" id="appply-now" style="display:block">Sign up</a>
+  </div>
+    {% endif %}
+</div>
+    

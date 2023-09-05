@@ -1,0 +1,151 @@
+<style>
+  .gifting-personalise {
+    position: absolute;
+    z-index: 1;
+    background: #0d5ea8;
+    display: block;
+    width: 100%;
+    height: 21px;
+    bottom: 0;
+    color: #fff;
+    font-weight: 600;
+}
+  .prod-parent {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+    margin-top: 30px;
+}
+  .prod-child {
+    flex: 0 0 22%;
+    margin: 23px 19px;
+    min-height: 480px;
+    position:relative
+}
+  h2.prod-tit{font-size:15px;font-weight:400;font-family:Lato,sans-serif;text-align:center;text-transform:uppercase;letter-spacing:1.2px;margin-top:7px;in-height: 22px;}
+  .prod-rate-p{display:flex;justify-content:center;align-items:center}
+  .prod-rate {margin-right: 9px;}
+  svg.Icon.Icon--rating-star { margin-top: -3px;margin-right: 4px;color: #f9d603;}
+  .priceee{font-family:lato;text-align:center;font-weight:400;letter-spacing:1.2px;margin-top:8px}
+  .gift{border-radius:0!important; background:#FF8A00; font-family: lato!important; font-weight:400!important; color:#000}
+  .prod-rev { margin-left: 9px;}
+  button#ad_to_cartt {display: block; margin: 0 auto;padding: 11px 24px;margin-top: 14px; text-transform: uppercase;transition:0.4s}
+  button#ad_to_cartt:hover {background: #000;color: #fff;transform: scale(0.99);padding: 11px 28px;}
+  span.comp-subdued {text-decoration: line-through;text-decoration-thickness: 2px;padding-right: 5px;text-decoration-color: #0d5ea8;}
+  .hvvx {position: absolute;width: 100%;height: 100%;left: 0;top: 0;opacity: 0;transition:0.3s;}
+  .prod-img:hover .hvvx{opacity:1}
+  .prod-img {position: relative}
+  .gifting-label{position: absolute;z-index: 1;background: linear-gradient(45deg, #ff3d3d, #ff8a00);color: #fff;font-weight: 600;padding: 3px 10px;border-radius: 0px 0 8px 0;font-size: 12px;text-transform: uppercase;letter-spacing: .5px}
+  @media(min-width:1000px) and (max-width:1267px){.prod-child{flex:0 0 21%}}
+  @media(min-width:500px) and (max-width:1000px){.prod-child{flex:0 0 42%}}
+  @media(max-width:500px){
+    .prod-child {flex: 0 40%;margin: 4px 8px;min-height: 365px;}
+    h2.prod-tit{font-size:11px;width: 179px;white-space: nowrap; overflow: hidden;text-overflow: ellipsis;}
+    .prod-rate{font-size:13px}
+    .prod-rev{font-size:13px}
+    .gift{padding:9px 9px !important; display:block}
+    .priceee{font-size:13px}
+  }
+  @media(max-width:375px){
+    .prod-child{margin:4px 0px}
+  }
+  
+</style>
+<div class="container">
+  <div class="prod-parent">
+    {%- for block in section.blocks -%}
+      {%- assign product = all_products[block.settings.featured_product] -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
+     
+    <div class="prod-child">
+      {% if product.compare_at_price > product.price %}
+      <div class="gifting-label">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | replace: '0,', ''| append: "% OFF"}}</div>{% endif %}
+      <a href="{{ product.url }}">
+      <div class="prod-img">
+        {% for tags in product.tags %}
+        {% if tags == 'personalise-it' %}
+          <div class="gifting-personalise">
+            <marquee width="100%" direction="left" height="100px"><div>PERSONALIZE IT FOR YOUR LOVED ONES.</div></marquee>
+          </div>
+          {% endif %}
+        {% endfor %}
+        <img class="hvvx" src="{{ block.settings.featured_image-2 | img_url: 'master'}}">
+        <img src="{{ block.settings.featured_image-1 | img_url: 'master' }}" style="width:100%; height:auto" alt-text="product image">
+      </div></a>
+      <div class="prod-contentt">
+        <h2 class="prod-tit">{{ product.title }}</h2>
+        <div class="prod-rate-p">
+          <div class="prod-rate">{% render 'icon' with 'rating-star' %}{{ product.metafields.reviews.rating.value }}</div>
+          <span>|</span>
+          <div class="prod-rev">{{ product.metafields.reviews.rating_count.value }} Reviews</div>
+        </div>
+        <div class="priceee">
+          {%- if product.compare_at_price > product.price -%}
+          MRP<span class="comp-subdued">{{ product.compare_at_price | money }}</span> <span> {{ product.price | money }}</span>
+          {%- else -%}
+            <span>MRP {{ product.price | money }}</span>
+          {%- endif -%}
+        </div>
+        <div class="btncart">
+          {% if product.available %}
+                <button type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll gift" id="ad_to_cartt" aria-haspopup="dialog" data-add-to-cart="{{ current_variant.id }}" data-var_id="{{ current_variant.id }}"><span>Add to cart</span></button>
+            {% else %}
+                <button class="gift soldout"  id="ad_to_cartt" ><span>sold out</span></button>
+                  {% endif %}
+              </div>
+      </div>
+      
+    </div>
+    {%- endfor -%}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Gifting Product Block",
+    "settings": [
+      {
+              "type": "text",
+              "id": "headtext",
+              "label": "Block Heading"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Product selector",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product",
+            "label": "Select Product"
+          },
+          {
+            "type": "image_picker",
+            "id": "featured_image-1",
+            "label": "Upload 1st Image"
+          },
+           {
+            "type": "image_picker",
+            "id": "featured_image-2",
+            "label": "Upload 2nd Image"
+          },
+          {
+            "type": "text",
+            "id": "labelll",
+            "label": "label"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "Gifting product Block",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

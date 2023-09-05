@@ -1,0 +1,44 @@
+<style>
+      .main_flexx {display: flex;justify-content: space-between;width: 100%;align-items: center;}
+      .popup_img { width: 40%;}
+      #notification-popup {
+        position: fixed;
+        display:none;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: #f1f1f1;
+        padding: 4px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        text-align: center;
+        animation: fade-in-out 2s ease;
+        z-index:10;
+        width:300px}
+      .popup_img {width: 20%;}
+      .popup_txt{width:50%;text-align:left;font-size:15.3px;}
+      .view_cart{width:30%}
+      .view_cart button {background: #0d5ea8;color: #fff;padding: 5px 11px;border-radius: 5px;font-weight: 500;}
+      .popup_txt {
+    width: 50%;
+    text-align: left;
+}
+    </style>
+    <div id="notification-popup">
+      <div class="main_flexx">
+      <div class="popup_img"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/checklist.png?v=1685520801" alt="cart popup" style="width:40px; height:40px"></div>
+      <div class="popup_txt"><p>Item added to cart</p></div>
+      <div class="view_cart"><button data-action="open-drawer" data-drawer-id="sidebar-cart" aria-expanded="true" aria-label="Open cart">view cart</button></div>
+      </div>
+      
+    </div>
+        <script>
+          $(document).ready(function() {
+            $('.ad_to_cart_coll,.ProductForm__AddToCart,.stickyy-b').click(function() {
+              $('#notification-popup').fadeIn(300);
+              setTimeout(function() {
+                $('#notification-popup').fadeOut(300);
+              }, 3000); // Adjust the duration (in milliseconds) as needed
+            });
+          });
+        </script>

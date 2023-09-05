@@ -1,0 +1,145 @@
+{%- capture section_settings -%}
+{
+  "videoType": {{ section.settings.video_url.type | json }},
+  "videoId": {{ section.settings.video_url.id | json }},
+  "requestHost": {{ request.host | json }}
+}
+{%- endcapture -%}
+
+<section class="Section" id="section-{{ section.id }}" data-section-id="{{ section.id }}" data-section-type="background-video" data-section-settings='{{ section_settings }}'>
+  <div class="ImageHero {% if section.settings.section_size != 'normal' %}ImageHero--{{ section.settings.section_size }}{% endif %}">
+    <div class="ImageHero__VideoHolder"></div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Background video",
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Background videos are automatically muted to allow autoplay. If you require audio, use the \"Featured Video\" section."
+    },
+    {
+      "type": "select",
+      "id": "section_size",
+      "label": "Section size",
+      "options": [
+        {
+          "value": "preserveRatio",
+          "label": "Preserve original ratio"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "preserveRatio"
+    },
+    {
+      "type": "video_url",
+      "accept": ["youtube", "vimeo"],
+      "id": "video_url",
+      "label": "Video URL",
+      "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Video",
+      "name": "Background video",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}
+
+<script type="text/javascripts">
+  
+  
+   
+
+  console.log("suh test");
+
+
+
+_loadScript().then(this._setupPlayer.bind(this));
+
+
+function _loadScript() {
+        var _this = this;
+
+    console.log("suh test load");
+
+
+        return new Promise(function (resolve, reject) {
+          var script = document.createElement('script');
+          document.body.appendChild(script);
+          script.onload = resolve;
+          script.onerror = reject;
+          script.async = true;
+          script.src = '//www.youtube.com/iframe_api' ;
+        });
+      }
+function onUnload() {
+        if (this.player) {
+          this.player.destroy(); // Both YouTube and Vimeo use the same function name
+        }
+      }
+function _setupPlayer() {
+        var _this2 = this;
+
+        var elementToInsert = document.querySelector('.ImageHero__VideoHolder');
+        var playerLoadingInterval = setInterval(function () {
+			
+            if (window.YT) {
+              _this2.player = new YT.Player(elementToInsert, {
+                videoId: {{ section.settings.video_url.id | json }},
+                playerVars: {
+                  showinfo: 0,
+                  controls: 0,
+                  fs: 0,
+                  rel: 0,
+                  height: '100%',
+                  width: '100%',
+                  iv_load_policy: 3,
+                  html5: 1,
+                  loop: 1,
+                  playsinline: 1,
+                  modestbranding: 1,
+                  disablekb: 1,
+                  origin: {{ request.host | json }}
+                },
+                events: {
+                  onReady: _this2._onYouTubeReady.bind(_this2),
+                  onStateChange:{{ request.host | json }}
+                }
+              });
+              clearInterval(playerLoadingInterval);
+            }
+           
+        }, 50);
+      }
+
+
+function _onYouTubeStateChange(event) {
+        if (event.data === YT.PlayerState.ENDED) {
+          this.player.playVideo();
+        }
+      }
+
+function _onYouTubeReady(event) {
+        this.player.mute();
+        this.player.playVideo();
+      }
+  
+  
+</script>

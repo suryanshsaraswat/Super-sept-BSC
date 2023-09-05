@@ -1,0 +1,7 @@
+{% if product.tags == 'ups1' %}
+  {%- for collection in collection['upsell1'].products -%}
+    <ul>
+      <li>{{ product.title }}</li>
+    </ul>
+  {% endfor %}
+  {% endif %}

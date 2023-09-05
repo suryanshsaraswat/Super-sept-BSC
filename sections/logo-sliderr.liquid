@@ -1,0 +1,97 @@
+<style>
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: auto;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+animation-iteration-count: infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+</style>
+<div class="slider">
+	<div class="slide-track">
+{%- for block in section.blocks -%}
+		<div class="slide">
+			<img src="{{ block.settings.image1 | img_url: '300x' }}" />
+		</div>
+{%-endfor-%}
+		
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+{
+    "name": "Logo Sliderr",
+    "settings": [],
+	"blocks": [
+            {
+			  "type": "testimonial",
+              "name": "Logo",
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image1",
+                  "label": "Image 1"
+
+                },
+				
+                {
+                  "type": "url",
+                  "id": "linkurl1",
+                  "label": "Link 1"
+                }
+
+                
+
+              ]
+            }
+          ],
+    
+	"presets": [
+        {
+          "category": "Product",
+          "name": "Logo Sliderr"
+          
+          
+        }
+      ]
+  }
+{% endschema %}

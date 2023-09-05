@@ -1,0 +1,96 @@
+<style>
+  .acccordian {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    align-items: center;
+    max-width: 100%;
+    width: 700px;
+    padding: 17px;
+
+    border-top: 1px solid;
+  }
+
+  .acccordian-heading {
+    flex-grow: 1;
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 20px;
+    font-weight: 600;
+  }
+  .acccordian-content.yt {
+    padding: 0 5px 5px;
+  }
+
+  .acccordian-button {
+    width: 23px;
+    height: 23px;
+    border: 1px solid;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fff;
+    color: #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+
+  .acccordian-content {
+    display: none;
+    padding-left: 40px;
+  }
+
+  .acccordian.active .acccordian-button {
+    background-color: #fff;
+  }
+</style>
+
+<div class="acccordian">
+  <div class="acccordian-heading">more about the product<br>from Shantanu</div>
+  <button class="acccordian-button">+</button>
+</div>
+<div class="acccordian-content">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum ullam quae repellat accusamus? Nemo, tenetur laborum. Ex ratione incidunt atque nostrum eius, obcaecati iste dolor ea laudantium? Obcaecati, nulla.
+</div>
+
+<div class="acccordian">
+  <div class="acccordian-heading">how to sell better<br>from shanky</div>
+  <button class="acccordian-button">+</button>
+</div>
+<div class="acccordian-content yt">
+  <div class="playlist">
+    <iframe
+      width="100%"
+      height="300"
+      src="https://www.youtube.com/embed/videoseries?list=PLGoaWQs7rbK3CsIFe267dOs7E6XkRBNLa"
+      frameborder="0"
+      allowfullscreen></iframe>
+  </div>
+</div>
+<div class="acccordian b-bottom">
+  <div class="acccordian-heading">first-sale stories<br>from razorgurus</div>
+  <button class="acccordian-button">+</button>
+</div>
+<div class="acccordian-content">
+  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas rerum ullam quae repellat accusamus? Nemo, tenetur laborum. Ex ratione incidunt atque nostrum eius, obcaecati iste dolor ea laudantium? Obcaecati, nulla.
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.acccordian-button').click(function() {
+      var acccordian = $(this).parent('.acccordian');
+      var content = acccordian.next('.acccordian-content');
+
+      acccordian.toggleClass('active');
+      content.slideToggle(300);
+      var buttonText = $(this).text() === '+'
+        ? '-'
+        : '+';
+      $(this).text(buttonText);
+    });
+  });
+</script>

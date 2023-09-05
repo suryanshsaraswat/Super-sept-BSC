@@ -1,0 +1,40 @@
+<style>
+  img.catt-imgg {border-radius: 0px 0px 72px 72px;}
+  @media(max-width:500px){
+    img.catt-imgg {    border-radius: 0px 0px 30px 0px;}
+  }
+</style>
+{% for block in section.blocks %}
+  <div class="bammerrr">
+  <img class="Image--lazyLoad Image--fadeIn catt-imgg" src="{{ block.settings.imags | img_url: 'master' }}" style="width:100%; height:auto"> 
+  </div>
+  {% endfor %}
+{% schema %}
+   {
+    "name": "single banner",
+    "settings": [],
+    "max_blocks": 1,
+	"blocks": [
+            {
+			  "type": "testimonial",
+              "name": "category banner",
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "imags",
+                  "label": "Desktop Category Image"
+                }
+              ]
+            }
+          ],
+    
+	"presets": [
+        {
+          "category": "Product",
+          "name": "Single category banner"
+          
+          
+        }
+      ]
+  }
+{% endschema %}

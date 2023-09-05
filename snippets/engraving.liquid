@@ -1,0 +1,380 @@
+{% if product.tags contains 'engrave' %}
+	{% if product.id == 7354167427226 or product.id == 6933550268570 or product.id == 7406552187034 or product.id == 7531264213146  or product.id == 7766043328666 %}
+      <div class="pdp__personalise__single">
+        <h1 class="text-uppercase letter-spacing-3 font-weight-600">FREE PERSONALISED ENGRAVING</h1>
+        <div class="descc"><span>Add up to 10 characters. Emoticons and special characters are not allowed.</span></div>
+        <div><input class="Form__Input" id="Engrave{{product.id}}" placeholder="Your Message Here" type="text" name="properties[EngraveData]" maxlength='10'></div>
+        <div class="engrave-preview">
+          <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Trimmer_1.png?v=1682511809" width="100%">
+          <div class="engrave-text"><h2 id="etxt">name</h2></div>
+        </div>
+      </div>
+      <script>
+      $('#Engrave{{ product.id }}').on('keyup', function() {
+          var r = new RegExp(/[^A-Za-z\s]/g, "ug");
+          $("#etxt").html($('#Engrave{{ product.id }}').val().replace(r,''));
+      });   
+      </script>
+
+      <style>
+   .pdp__personalise__single {
+      padding: 1rem 2rem 1rem;
+      background-color: rgba(234,229,240,.6);
+      border-radius: 12px;
+      width:100%;
+      margin-bottom:20px;
+  }
+    .pdp__personalise__single h1{font-size:16px}
+    .descc{margin-bottom:10px}
+  .font-weight-600 {
+      font-weight: 600 !important;
+  }
+  .text-uppercase {
+      text-transform: uppercase !important;
+  }
+  .font-size-14 {
+      font-size: 1.4rem;
+  }
+
+  .letter-spacing-3 {
+      letter-spacing: 2px;
+      margin: 0 !important;
+  }
+  .mb-3, .my-3 {
+      margin-bottom: 3rem !important;
+  }
+  .mt-1, .my-1 {
+      margin-top: 1rem !important;
+  }
+  .fieldset {
+      border: 0;
+      margin: 0;
+      padding: 0;
+  }
+  [class^=icon-], [class*=" icon-"] {
+      font-family: 'icomoon' !important;
+      speak: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+  }
+  .field:not(.choice):not(.textarea) {
+      position: relative;
+  }
+  .fieldset>.field, .fieldset>.fields>.field, .fieldset [class^=col-]>.field, .fieldset [class^=col-]>.fields>.field {
+      margin-bottom: 4rem;
+  }
+  *, :after, :before {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+  }
+  .field:not(.choice):not(.textarea) .label {
+      color: #1d1f24;
+      left: 0;
+      position: absolute;
+      top: 5px;
+      transition: transform .15s ease-out,font-size .15s ease-out;
+  }
+  .field:not(.choice) .label {
+      color: #1d1f24;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+      font-weight: 500;
+  }
+
+  .field:not(.choice) .label {
+      font-size: 1.2rem;
+  }
+  .field-img {
+      border-top: 1px solid #ccc;
+      padding-top: 2.6rem;
+      margin-bottom: 3rem;
+  }
+  .mb-1, .my-1 {
+      margin-bottom: 1rem !important;
+  }
+  .font-size-14 {
+      font-size: 1.4rem;
+  }
+  .label{color:#333333 !important;}
+
+
+  .pdp__personalise__single input,
+  .pdp__personalise__single textarea {
+      width: 100%;
+  }
+
+  .input-img {
+      height: 5rem;
+      position: relative;
+      z-index: 1;
+  }
+  .pdp__personalise__single .field:not(.choice) .label {
+      font-size: 1.2rem;
+  }
+  .field:not(.choice) .label {
+      color: #1d1f24;
+      text-transform: uppercase;
+      letter-spacing: .3rem;
+      font-weight: 500;
+  }
+
+  .small-text span
+  {
+    font-size:11px;
+
+  }
+
+
+
+  .personalize-data{width:100%;text-align:center;letter-spacing:3px}
+  .engrave-preview
+  {
+    width:100%;
+    max-width:500px;
+    height:280px;
+    margin-top:20px;
+    padding:0 80px;overflow:hidden;position:relative;
+
+  }
+  .engrave-text{position:absolute;top: 140px; right: 50%; transform: translateX(50%);}
+  #etxt.h2, h2#etxt {
+      color: #fff!important;
+      font-size: 17px;
+      font-weight: 700!important;
+      
+    direction: rtl;
+  }
+
+  .pprofile
+  {
+    width:100%;
+    max-width:500px;
+    height:500px;
+    background-color:#151515;
+    text-align:center;
+    margin: 0 auto;
+    color:#FFF;
+  }
+  .pname{ padding-top:40px;}
+  #ppname,
+  #ppname-small
+  {
+    margin:0 auto;
+    color:#fff !important;
+    font-size:28px !important;
+  }
+  #imgphoto,
+  #imgphoto-small
+  {
+    border-radius:100px;
+    border:1px solid #151515;
+  }
+  #ptext,
+  #ptext-small
+  {
+    margin:0 auto;
+    color:#fff !important;
+  }
+    @media(max-width:480px){
+      .engrave-preview{height:300px;padding:0 50px}
+    .engrave-text {position: absolute;top: 155px; right: 50%;}
+      .pdp__personalise__single{padding:1rem}
+    }
+  </style>
+	{%else%}
+    <div class="pdp__personalise__single">
+      <h1 class="text-uppercase letter-spacing-3 font-weight-600">FREE PERSONALISED ENGRAVING</h1>
+      <div class="descc"><span>Add up to 10 characters. Emoticons and special characters are not allowed.</span></div>
+      <div><input class="Form__Input" id="Engrave{{product.id}}" placeholder="Your Message Here" type="text" name="properties[EngraveData]" maxlength='16'></div>
+      <div class="engrave-preview">
+        <div class="engrave-text"><h2 id="etxt">Your Message Here</h2></div>
+      </div>
+    </div>
+    <script>
+  	$('#Engrave{{ product.id }}').on('keyup', function() {
+  		var r = new RegExp(/[^A-Za-z\s]/g, "ug");
+  		$("#etxt").html($('#Engrave{{ product.id }}').val().replace(r,''));
+	});   
+    </script>
+	<style>
+ .pdp__personalise__single {
+    padding: 1rem 2rem 1rem;
+    background-color: rgba(234,229,240,.6);
+    border-radius: 12px;
+    width:100%;
+    margin-bottom:20px;
+}
+  .pdp__personalise__single h1{font-size:16px}
+  .descc{margin-bottom:10px}
+.font-weight-600 {
+    font-weight: 600 !important;
+}
+.text-uppercase {
+    text-transform: uppercase !important;
+}
+.font-size-14 {
+    font-size: 1.4rem;
+}
+
+.letter-spacing-3 {
+    letter-spacing: 2px;
+    margin: 0  !important;
+}
+.mb-3, .my-3 {
+    margin-bottom: 3rem !important;
+}
+.mt-1, .my-1 {
+    margin-top: 1rem !important;
+}
+.fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+[class^=icon-], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.field:not(.choice):not(.textarea) {
+    position: relative;
+}
+.fieldset>.field, .fieldset>.fields>.field, .fieldset [class^=col-]>.field, .fieldset [class^=col-]>.fields>.field {
+    margin-bottom: 4rem;
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.field:not(.choice):not(.textarea) .label {
+    color: #1d1f24;
+    left: 0;
+    position: absolute;
+    top: 5px;
+    transition: transform .15s ease-out,font-size .15s ease-out;
+}
+.field:not(.choice) .label {
+    color: #1d1f24;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 500;
+}
+
+.field:not(.choice) .label {
+    font-size: 1.2rem;
+}
+.field-img {
+    border-top: 1px solid #ccc;
+    padding-top: 2.6rem;
+    margin-bottom: 3rem;
+}
+.mb-1, .my-1 {
+    margin-bottom: 1rem !important;
+}
+.font-size-14 {
+    font-size: 1.4rem;
+}
+.label{color:#333333 !important;}
+
+
+.pdp__personalise__single input,
+.pdp__personalise__single textarea {
+    width: 100%;
+}
+
+.input-img {
+    height: 5rem;
+    position: relative;
+    z-index: 1;
+}
+.pdp__personalise__single .field:not(.choice) .label {
+    font-size: 1.2rem;
+}
+.field:not(.choice) .label {
+    color: #1d1f24;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    font-weight: 500;
+}
+
+.small-text span
+{
+  font-size:11px;
+  
+}
+
+
+
+.personalize-data{width:100%;text-align:center;letter-spacing:3px}
+.engrave-preview
+{
+  width:100%;
+  max-width:500px;
+  height:170px;
+  margin-top:20px;
+  background-image:url(https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Razor_Straight.png?v=1625131637);
+  background-repeat:no-repeat;
+  position:relative;
+  background-size:contain;
+}
+.engrave-text{position:absolute;top:57px;right:25px}
+#etxt.h2, h2#etxt {
+    color: grey!important;
+    font-size: 12px;
+    font-weight: 700!important;
+    
+  direction: rtl;
+}
+
+.pprofile
+{
+  width:100%;
+  max-width:500px;
+  height:500px;
+  background-color:#151515;
+  text-align:center;
+  margin: 0 auto;
+  color:#FFF;
+}
+.pname{ padding-top:40px;}
+#ppname,
+#ppname-small
+{
+  margin:0 auto;
+  color:#fff !important;
+  font-size:28px !important;
+}
+#imgphoto,
+#imgphoto-small
+{
+  border-radius:100px;
+  border:1px solid #151515;
+}
+#ptext,
+#ptext-small
+{
+  margin:0 auto;
+  color:#fff !important;
+}
+  @media(max-width:480px){
+    .engrave-preview{height:130px}
+  .engrave-text {position: absolute;top: 52px;right: 15px;}
+    .pdp__personalise__single{padding:1rem}
+  }
+</style>
+	{%endif%}
+
+{% endif %}

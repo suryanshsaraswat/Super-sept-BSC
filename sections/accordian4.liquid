@@ -1,0 +1,116 @@
+<style>
+.accordion-container{position:relative;max-width:1070px;height:auto;margin:10px auto}
+.accordion-container > h2{text-align:center;color:#fff;padding-bottom:5px;margin-bottom:20px;padding-bottom:15px;border-bottom:1px solid #ddd}
+.setc{position:relative;width:100%;height:auto;background-color: #fff; margin: 20px 0; border-radius: 12px; box-shadow: 0 0 12px 0 #00000017; overflow: hidden;}
+.setc > a{display:block;padding:15px;text-decoration:none;color:#0d5ea8;font-weight:600;-webkit-transition:all .2s linear;-moz-transition:all .2s linear;transition:all .2s linear}
+.setc > a i{float:right;margin-top:25px;position:relative}
+.setc > a.active{background-color:#0d5ea8;color:#fff}
+  .setc > a p{margin-bottom:0}  
+.setc > a i::before {position: absolute; content: "+"; font-weight: 800; font-size: 22px; bottom: -4px; right: 0;}
+  .setc > a.active i::before{content: "-";}
+  .content{background-color:#fff;display:none}
+.content p{padding:10px 15px;margin:0;color:#333;font-weight: 500;}
+  
+</style>
+
+<div class="accordion-container">
+  
+   {%- for block in section.blocks -%}
+  {% if block.settings.ans != blank %}
+  {% if block.settings.open == true %}
+  <div class="setc">
+    <a href="#" class="active">
+      {{ block.settings.que }}
+      <i class="fa-minus"></i> 
+    </a>
+    <div class="content" style="display:block">
+      {{ block.settings.ans }}
+    </div>
+  </div>
+  {% else %}
+  <div class="setc">
+    <a href="#">
+      {{ block.settings.que }}
+      <i class="fa-plus"></i> 
+    </a>
+    <div class="content">
+      {{ block.settings.ans }}
+    </div>
+  </div>
+  {% endif %}  
+  {% endif %}
+      {%- endfor -%}
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".setc > a").on("click", function(e) {
+    e.preventDefault();
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+      $(this)
+        .siblings(".content")
+        .slideUp(200);
+      $(".setc > a i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+    } else {
+      $(".setc > a i")
+        .removeClass("fa-minus")
+        .addClass("fa-plus");
+      $(this)
+        .find("i")
+        .removeClass("fa-plus")
+        .addClass("fa-minus");
+      $(".setc > a").removeClass("active");
+      $(this).addClass("active");
+      $(".content").slideUp(200);
+      $(this)
+        .siblings(".content")
+        .slideDown(200);
+    }
+  });
+});
+  
+$(".shopify-section--slideshow").click(function() {
+    window.scrollTo({top: 400, behavior: 'smooth'});
+});
+</script>
+
+{% schema %}
+  {
+    
+"presets": [
+    {
+      "category": "Collection",
+      "name": "Accordion4",
+      "settings": {}
+      
+    }
+  ],
+"blocks": [
+            {
+			  "type": "testimonial",
+              "name": "Blocks",
+              "settings": [
+                
+                {
+                  "type": "text",
+                  "id": "que",
+                  "label": "Heading"
+                },
+				{
+                  "type": "richtext",
+                  "id": "ans",
+                  "label": "Content"
+                },
+				{
+                  "type": "checkbox",
+                  "id": "open",
+                  "label": "Open by Default"
+                }
+		]
+            }
+          ]
+  }
+{% endschema %}

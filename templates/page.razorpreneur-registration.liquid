@@ -1,0 +1,116 @@
+<section data-section-id="reset-password" data-section-type="reset-password">
+  <div class="Container ">
+    <div class="PageContent PageContent--fitScreen PageContent--extraNarrow">
+      {%- form 'create_customer', name: 'create_customer', class: 'Form Form--spacingTight', id: 'create_customer' -%}
+        <header class="Form__Header">
+          <h1 class="Form__Title Heading u-h1">{{ 'customer.register.title' | t }}</h1>
+          <p class="Form__Legend">{{ 'customer.register.description' | t }}</p>
+        </header>
+
+        {%- if form.errors -%}
+          <div class="Form__Alert Alert Alert--error">
+            <ul class="Alert__ErrorList">
+              {%- for field in form.errors -%}
+                {%- if field == 'form' -%}
+                  <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
+                {%- else -%}
+                  <li class="Alert__ErrorItem"><strong>{{ form.errors.translated_fields[field] }}</strong> {{ form.errors.messages[field] }}</li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        {%- if request.locale.iso_code == 'ja' -%}
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[last_name]" aria-label="{{ 'customer.register.last_name' | t }}" placeholder="{{ 'customer.register.last_name' | t }}">
+            <label class="Form__FloatingLabel">{{ 'customer.register.last_name' | t }}</label>
+          </div>
+
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[first_name]" aria-label="{{ 'customer.register.first_name' | t }}" placeholder="{{ 'customer.register.first_name' | t }}" autofocus>
+            <label class="Form__FloatingLabel">{{ 'customer.register.first_name' | t }}</label>
+          </div>
+        {%- else -%}
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[first_name]" aria-label="{{ 'customer.register.first_name' | t }}" placeholder="{{ 'customer.register.first_name' | t }}" autofocus>
+            <label class="Form__FloatingLabel">{{ 'customer.register.first_name' | t }}</label>
+          </div>
+
+          <div class="Form__Item">
+            <input type="text" class="Form__Input" name="customer[last_name]" aria-label="{{ 'customer.register.last_name' | t }}" placeholder="{{ 'customer.register.last_name' | t }}">
+            <label class="Form__FloatingLabel">{{ 'customer.register.last_name' | t }}</label>
+          </div>
+        {%- endif -%}
+
+        <div class="Form__Item">
+          <input type="email" class="Form__Input" name="customer[email]" aria-label="{{ 'customer.register.email' | t }}" placeholder="{{ 'customer.register.email' | t }}" required="required">
+          <label class="Form__FloatingLabel">{{ 'customer.register.email' | t }}</label>
+        </div>
+
+        <div class="Form__Item">
+          <input type="password" class="Form__Input" name="customer[password]" aria-label="{{ 'customer.register.password' | t }}" placeholder="{{ 'customer.register.password' | t }}" required="required">
+          <label class="Form__FloatingLabel">{{ 'customer.register.password' | t }}</label>
+        </div>
+      <div class="Form__Item phoneme">
+        <input type="tel" pattern="[0-9]{5}[0-9]{5}" class="Form__Input" name="customer[note][Phone]" size="10" maxlength="10" placeholder="Phone" required="required"/>
+        <label for="register_phone_number" class="form-field-title" ></label><br />
+      </div>
+      <div class="Form__Item DOB">
+        <input type="date" id="dateofbirth" class="Form__Input" name="customer[note][DOB]" placeholder="" required="required"/>
+      </div>
+<!--       <div class="Form__Item catee">
+  <select name="customer[note][prefered category]" id="cate" class="Form__Input" placeholder="Preferred category" required="required">
+    <option value="" disabled selected>Select your Category</option>
+    <option value="Shave">Shave</option>
+      <option value="Beard">Beard</option>
+    <option value="Bath">Bath</option>
+    <option value="Skin">skin</option>
+  </select>
+      </div> -->
+      <div class="gnder">
+        <label>
+          <input type="radio" name="customer[note][gender]" value="Male" checked/>
+          <div class="front-end box">
+            <span>Male</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="customer[note][gender]" value="Female"/>
+          <div class="back-end box">
+            <span>Female</span>
+          </div>
+        </label>
+        <label>
+          <input type="radio" name="customer[note][gender]" value="Preferred not to say"/>
+          <div class="front-end box">
+            <span>Preferred Not To Say</span>
+          </div>
+        </label>
+      </div>
+      <select id="dropdown"name="customer[note][college]" class="Form__Input">
+        <option value="">Select a university</option>
+      </select>
+
+         <button type="submit" class="Form__Submit Button Button--primary Button--full">{{ 'customer.login.submit' | t }}</button>
+      {%- endform -%}
+    </div>
+  </div>
+</section>
+<script>
+     fetch('https://api.data.gov.in/resource/44bea382-c525-4740-8a07-04bd20a99b52?api-key=579b464db66ec23bdd000001249515d5d2a04f234a08a39235f5c246&format=json&limit=100')
+      .then(response => response.json())
+      .then(data => {
+        const records = data.records;
+        const dropdown = document.getElementById('dropdown');
+        records.forEach(record => {
+          const option = document.createElement('option');
+          option.value = record.college_name;
+          option.textContent = record.college_name;
+          dropdown.appendChild(option);
+        });
+      })
+      .catch(error => {
+        console.log('Error:', error);
+      });
+  </script>

@@ -1,0 +1,109 @@
+<style>
+  .games{
+    display:flex;
+    flex-flow:nowrap;
+    height: 650px;
+    background:url('https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Background-Image-For-Sliders.jpg?v=1664009268');
+    background-repeat: no-repeat;
+    background-size:cover;
+    z-index: 0; 
+    position: relative;
+  }
+  .game1, .game2,.game3,.game4{width:100%; margin:20px;margin-top: 82px;z-index:-1;position:relative;cursor:pointer}
+  .game-flip-i{
+    position:relative;
+    transition:transform 0.6s;
+    transform-style: preserve-3d;
+    z-index:0;
+  }
+  .game-flip{width:100%;height:100%;}
+  .game-flip:hover .game-flip-i{transform:rotateY(180deg) !important}
+  
+  .active .game-flip .game-flip-i{transform:rotateY(180deg);z-index:0;}
+  .activee .game-flip .game-flip-i{transform:rotateY(0deg);z-index:0;}
+  
+  .game-flip-f, .game-flip-b{position:absolute; width:100%; height:100%; -webkit-backgace-visibility:hidden; backface-visibility:hidden}
+  .game-flip-b{transform:rotateY(180deg);z-index:0;}
+  @media (max-width:500px){
+    .games{flex-flow:wrap}
+    .game1, .game2, .game3, .game4{width:50%;margin:0;padding: 15px;}
+    .game-flip {height: 260px;}
+  }
+</style>
+<div class="container">
+<div class="games">
+  <div class="game1" id="bsc1">
+    <div class="game-flip">
+      <div class="game-flip-i">
+        <div class="game-flip-f"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/CarRacing.png?v=1664011398"></div>
+        <div class="game-flip-b"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BaloonPop_Offer_59e0289e-3734-4a06-b958-d30809efd238.png?v=1664285018"></div>
+      </div>
+    </div>
+  </div>
+  <div class="game2" id="bsc2">
+    <div class="game-flip">
+      <div class="game-flip-i">
+        <div class="game-flip-f active"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/BaloonPop.png?v=1664011397"></div>
+        <div class="game-flip-b"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/SliceUp_Offer_1.png?v=1664285018"></div>
+      </div>
+    </div>
+  </div>
+  <div class="game3" id="bsc3">
+    <div class="game-flip">
+      <div class="game-flip-i">
+        <div class="game-flip-f"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/SquashIt.png?v=1664011397"></div>
+        <div class="game-flip-b"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/SquashIt_Offer_697f063e-1c2b-4fb7-9634-df659f40f82f.png?v=1664285018"></div>
+      </div>
+    </div>
+  </div>
+  <div class="game4" id="bsc4">
+    <div class="game-flip">
+      <div class="game-flip-i">
+        <div class="game-flip-f"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/SliceUp.png?v=1664011397"></div>
+        <div class="game-flip-b"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/CarRacing_Offer_7437aabc-0140-4009-ac31-e9abddb8b5a4.png?v=1664285018"></div>
+      </div>
+    </div>
+  </div>
+</div> 
+</div>
+
+<script>
+  $(".shopify-section--slideshow").click(function() {
+    window.scrollTo({top: 400, behavior: 'smooth'});
+});
+</script>
+<script>
+  
+setInterval(function(){ 
+   $('.game2, .game4').addClass('active'); 
+  $('.game2, .game4').removeClass('activee'); 
+   setTimeout(function(){
+     $('.game2, .game4').addClass('activee'); 
+    $('.game2, .game4').removeClass('active'); 
+   },2000)
+
+},4000);
+
+  setInterval(function(){ 
+   $('.game1, .game3').addClass('active'); 
+  $('.game1, .game3').removeClass('activee'); 
+   setTimeout(function(){
+     $('.game1, .game3').addClass('activee'); 
+    $('.game1, .game3').removeClass('active'); 
+   },2000)
+
+},8000);
+
+</script>
+{% schema %}
+  {
+    "name": "Games",
+    "settings": [],
+    "presets":[
+      {
+        "name": "games",
+        "category":"product"
+      }
+    ]
+  }
+{% endschema %}

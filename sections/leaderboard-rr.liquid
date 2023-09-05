@@ -1,0 +1,93 @@
+<style>
+ /* Styles for neumorphism leaderboard section */
+.neumorphism-leaderboard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  padding: 30px;
+  background-color: #f2f2f2;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 20px;
+  text-align: left;
+  border-bottom: 1px solid #c1c1c1;
+}
+th {
+  background-color: #2e3192;
+  font-weight: bold;
+  color:#fff;
+  font-size:15px
+}
+tr:nth-child(even) {
+  background-color: #e2178f;
+  color:#fff;
+}
+.neumorphism-leaderboard h1 {
+    font-size: 23px;
+    font-weight: 500;
+    color: #2e3197;
+}
+</style>
+<div class="neumorphism-leaderboard">
+  <h1>Winner Leaderboard</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Prize</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for block in section.blocks %}
+      <tr>
+        
+        <td>{{ block.settings.winner_name }}</td>
+        <td>{{ block.settings.prize_name }}</td>
+      </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+{% schema %}
+  {
+    "name": "Product Block",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Product Slider",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "winner_image",
+            "label": "Upload Image"
+          },
+           {
+            "type": "text",
+            "id": "winner_name",
+            "label": "Enter winner name"
+          },
+          {
+            "type": "text",
+            "id": "prize_name",
+            "label": "Enter prize name"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "Winner leaderboard",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

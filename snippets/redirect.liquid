@@ -1,0 +1,27 @@
+<script type="text/javascript">
+  {% if template == '404' %}
+    window.location.href = '/';
+  {% endif %}
+
+  {% if collection.url == '/collections/womens-shaving-grooming-personal-care-products' %}
+    window.location.href= 'https://www.bscwomen.com/collections/shop-all';
+  {% elsif product.url == '/products/eyebrow-face-razor-for-women' %}
+    window.location.href= 'https://www.bscwomen.com/products/eyebrow-face-razor-for-women';
+  {% elsif product.url == '/products/defender-for-her-cartridge-pak-of-6' %}
+    window.location.href= 'https://bscwomen.com/products/defender-for-her-cartridges';
+  {% elsif product.url == '/products/defender-for-her-cartridge-pack-of-6' %}
+    window.location.href= 'https://bscwomen.com/products/defender-for-her-cartridges';
+  {% elsif product.url == '/products/razor-for-women-shaving-kit-for-sensitive-skin' %}
+    window.location.href= 'https://www.bscwomen.com/products/defender-for-her-regime-kit';
+  {% elsif product.url == '/products/precision-face-razor-for-women-pack-of-3' %}
+    window.location.href= 'https://bscwomen.com/products/precision-face-razor';
+  {% elsif product.url == '/products/womens-face-body-shave-value-pack' %}
+    window.location.href= 'https://bscwomen.com/products/face-body-shaving-kit';
+  {% elsif collection.url == '/collections/hide-from-search' %}
+    window.location.href= 'https://bombayshavingcompany.com';
+  {% elsif page.url == '/pages/razor-cartridges' %}
+    window.location.href = "https://bombayshavingcompany.com/discount/SENSI50?redirect=%2Fcollections%2Frazor-cartridges-sensi";
+  {% elsif page.url == '/pages/shaveclub' %}
+    window.location.href = "https://bombayshavingcompany.com/discount/SENSI50?redirect=%2Fcollections%2Frazor-cartridges-sensi";
+  {% endif %}
+</script>

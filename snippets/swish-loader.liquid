@@ -1,0 +1,18 @@
+{% if content_for_header contains "swishapp.digital" %}<script>var s = {{content_for_header | json}};s = s.substring(s.lastIndexOf("SwishKeyFinder") + 20);s = s.substring(0, s.indexOf("data-id=SwishTocken"));const swishScript = document.createElement("script");swishScript.src = "https://swishapp.digital/static/loader/?key="+s+" defer async";swishScript.async = true;document.head.appendChild(swishScript);</script>
+{%assign domcontentloadeda="document.addEventListener('DOMContentLoaded'"%}
+{%assign startasyncLoadinga="document.addEventListener('StartAsyncLoading'"%}
+{%assign domcontentloaded='e.addEventListener("DOMContentLoaded"'%}
+{%assign startasyncLoading="e.addEventListener('StartAsyncLoading'"%}
+{%assign rapp=", asyncLoad"%}{%assign napp=", function(){}"%}
+{%assign rappload="if(window.attachEvent)"%}
+{%assign nappload="document.addEventListener('StartAsyncLoading',function(event){asyncLoad();});if(window.attachEvent)"%}
+{%assign storefrontDatasrc='data-src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features'%}
+{%assign storefrontsrc='src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features'%}
+{%assign swishdatasrc='data-src="https://swishapp.digital'%}
+{%assign swishsrc='src="https://swishapp.digital'%}
+{%if template=='cart'%}
+{{content_for_header|replace:'src=','data-src='|replace:domcontentloadeda,startasyncLoadinga|replace:domcontentloaded,startasyncLoading|replace:rapp,napp|replace:rappload,nappload}}
+{%else%}
+{{content_for_header|replace:'src=','data-src='|replace:domcontentloadeda,startasyncLoadinga|replace:domcontentloaded,startasyncLoading|replace:rapp,napp|replace:rappload,nappload|replace:swishdatasrc,swishsrc}}
+{%endif%}
+{%else%}{{content_for_header}}{%endif%}

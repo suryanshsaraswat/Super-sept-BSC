@@ -1,0 +1,56 @@
+<style>
+.twoinarowwrapper{position:relative;display:flex;flex-flow:wrap; padding:18px; align-items:center; justify-content:center;text-align:center;margin-bottom: 40px;}
+.twoinarow{width:100%; flex:100%;padding:0 9px;color:#262626;text-align:center}
+  .twoinarowwrapper .img-cover{margin-bottom:18px}
+.twoinarow img{width:100%}
+  @media(min-width:480px){.twoinarow{width:50%; flex:50%;}}
+</style>
+
+<div class="twoinarowwrapper">
+  
+  {%- for block in section.blocks -%}
+  <div class="twoinarow">
+    <a href="{{ block.settings.linkurl }}">
+    <div class="img-cover"><img class="Image--lazyLoad" data-src="{{ block.settings.image | img_url: '600x' }}"></div>
+    </a>
+  </div>
+  {%- endfor -%}
+  
+</div>
+
+{% schema %}
+   {
+    "name": "Two In a Row",
+    "settings": [],
+	"blocks": [
+            {
+			  "type": "testimonial",
+              "name": "Blocks",
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Icon"
+
+                },
+                {
+                  "type": "url",
+                  "id": "linkurl",
+                  "label": "Link"
+                }
+                
+
+              ]
+            }
+          ],
+    
+	"presets": [
+        {
+          "category": "Product",
+          "name": "Two In a Row"
+          
+          
+        }
+      ]
+  }
+{% endschema %}

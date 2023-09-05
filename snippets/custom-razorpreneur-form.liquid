@@ -1,0 +1,203 @@
+<style>
+  #rzp-button {
+    background-color: #00BED6;
+  }
+  .sing-in {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 11px;
+  }
+  .sing-in a {
+    color: #00bed6;
+    font-weight: 700;
+    font-style: italic;
+  }
+</style>
+  <div class="Container">
+    <div class="razp-form" id="form-none">
+      {%- form 'create_customer', name: 'create_customer', class: 'Form Form--spacingTight', id: 'create_customer' -%}
+        {% comment %} <header class="Form__Header">
+        <h1 class="Form__Title Heading u-h1">{{ 'customer.register.title' | t }}</h1>
+        <p class="Form__Legend">{{ 'customer.register.description' | t }}</p>
+        </header> {% endcomment %}
+
+        {% comment %}{%- if form.errors -%}
+          <div class="Form__Alert Alert Alert--error">
+            <ul class="Alert__ErrorList">
+              {%- for field in form.errors -%}
+                {%- if field == 'form' -%}
+                  <li class="Alert__ErrorItem">{{ form.errors.messages[field] }}</li>
+                {%- else -%}
+                  <li class="Alert__ErrorItem">
+                    <strong>{{ form.errors.translated_fields[field] }}</strong>
+                    {{ form.errors.messages[field] }}</li>
+                {%- endif -%}
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}{% endcomment %}
+        <div class="form-feilds">
+          <div class="Form__Item">
+            <input
+              type="email"
+              class="Form__Input"
+              name="customer[email]"
+              aria-label="{{ 'customer.register.email' | t }}"
+              placeholder="{{ 'customer.register.email' | t }}"
+              required="required"
+              id="email-id">
+            <label class="Form__FloatingLabel">{{ 'customer.register.email' | t }}</label>
+          </div>
+
+          <div class="Form__Item" style="display:none">
+            <input
+              type="password"
+              class="Form__Input"
+              name="customer[password]"
+              aria-label="{{ 'customer.register.password' | t }}"
+              placeholder="{{ 'customer.register.password' | t }}"
+              value="razor123"
+              required="required">
+            <label class="Form__FloatingLabel">{{ 'customer.register.password' | t }}</label>
+          </div>
+          <div class="Form__Item phoneme">
+            <input
+              type="tel"
+              pattern="[0-9]{5}[0-9]{5}"
+              class="Form__Input"
+              name="customer[note][phone-number]"
+              size="10"
+              maxlength="10"
+              placeholder="Phone"
+              id="phone-id"
+              required="required" />
+            <label for="register_phone_number" class="form-field-title"></label>
+          </div>
+        </div>
+        <label>
+          <input type="checkbox" id="showDropdown"> Are you a college student ?
+        </label>
+        <select
+          id="dropdown"
+          name="customer[note][college]"
+          class="Form__Input"
+          style="display: none;">
+          <option value="">Select a university</option>
+        </select>
+        <button
+          onclick="rerouteToSamePage()"
+          type="submit"
+          class="Form__Submit Button Button--primary Button--full"
+          id="rzp-button">Sign up</button>
+      {%- endform -%}
+      <div class="sing-in">Already a razorpreneur?
+        <a href="/account/login">Login</a>
+      </div>
+    </div>
+  </div>
+</section>
+<script>
+  var collegeNames = [
+    "IIM Lucknow",
+    "Christ College",
+    "Lovely Professional University",
+    "Amity University (Noida)",
+    "Sharda University",
+    "Manav Rachna International University",
+    "Ashoka University",
+    "Jaipur National University",
+    "NMIMS, Mumbai",
+    "Galgotiya University",
+    "Amity University (Gurgaon)",
+    "Ansal University Gurgaon",
+    "Apeejay Stya University",
+    "Kurukshetra University",
+    "IIM Udaipur",
+    "GL Bajaj Institution of Technology & Management",
+    "B R Ambedkar National Institute Of Technology",
+    "CT Group of Institutions",
+    "DAV University",
+    "A Pee Jay Institute of Management",
+    "Central University of Haryana",
+    "Chaudhary Devi Lal University",
+    "G D Goenka University, Gurgaon",
+    "Maharishi Markandeshwar University, Mullana",
+    "Bharti Vidyapeeth, Sonipat_Campus",
+    "JECRC University",
+    "Bhupal Nobeles University",
+    "Jodhpur National University",
+    "Jai Naraiin Vyas Unniversity old Campus",
+    "IIM Jammu",
+    "MICA",
+    "MNIMS, Bangalore",
+    "IIM, Lucknow",
+    "SRCC",
+    "ISB&M Pune",
+    "NMIMS, Bangalore",
+    "IIT Delhi, MBA",
+    "IMT, Ghaziabad",
+    "SIBM, Hydrabad",
+    "IIT Bombay",
+    "NIT Hamirpur",
+    "Sri Guru Gobind Singh College of Commerce, University of Delhi",
+    "IIM Rohtak",
+    "MDI Gurgaon",
+    "DoMS IIT Roorkee",
+    "IIT Delhi",
+    "MDI Murshidabad",
+    "K J Somaiya",
+    "IIM Bodh Gaya",
+    "IBS, Gurgaon",
+    "Indian Institute of Mass Communication",
+    "Gargi College, DU",
+    "NMIMS Indore",
+    "IIM, Kashipur",
+    "MDI Gurgaon I Management Development Institute, Gurgaon",
+    "Sri Guru Gobind Singh College of Commerce, University of Delhi",
+    "Indian Institute of Management, (IIM) Jammu",
+    "Indian Institute of Technology, Kanpur",
+    "Mudra Institute Of Communications, Ahmedabad",
+    "Shailesh J. Mehta School of Management (SJMSOM) IIT Bombay",
+    "Indian Institute of Management, Amritsar",
+    "Hindu College, University of Delhi",
+    "Indian Institute of Management, Bodh Gaya",
+    "Sri Ram College of Commerce, Delhi University",
+    "K J Somaiya Institute of Management, Vidyavihar(E)",
+    "others"
+  ];
+
+// Populate the dropdown with college names
+  var select = $("#dropdown");
+  $.each(collegeNames, function(index, value) {
+    select.append($("<option></option>").val(value).html(value));
+  });
+</script>
+<script>
+  const showDropdown = document.getElementById('showDropdown');
+  const collegeDropdown = document.getElementById('dropdown');
+  showDropdown.addEventListener('change', function() {
+    if (showDropdown.checked) {
+      collegeDropdown.style.display = 'block';
+    } else {
+      collegeDropdown.style.display = 'none';
+    }
+  })
+</script>
+<script>
+  function rerouteToSamePage() {
+            // Reload the current page
+            window.location.reload();
+        }
+  var dataPush = document.getElementById("rzp-button");
+  dataPush.addEventListener("click", function() {
+    var emailInput = document.getElementById("email-id");
+    var phoneNumberInput = document.getElementById("phone-id")
+    var email = emailInput.value;
+    var phoneNumber = "+91" + phoneNumberInput.value;
+
+// window.contlo.sendEvent('custom_form_submitted',"emailfortest@gmail.com" ,"+919450010324", null, null, null);
+    window.contlo.sendEvent('custom_form_submitted', email, phoneNumber, null, null, null);
+  })
+</script>

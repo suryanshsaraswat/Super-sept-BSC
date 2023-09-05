@@ -1,0 +1,105 @@
+<style>
+  .jobcard{filter:greyscale(1)}
+  .apply_now {
+    display: block;
+    text-align: center;
+    padding: 7px;
+    margin-top: 13px;
+    border-radius: 7px;
+    margin-bottom: -9px;
+}
+</style>
+<div class="apply">
+                 <h2>Inspired to Join?</h2>
+               <h4>Check out the current opportunities below</h4>
+                 
+                 <div class="jobslider">
+                   {%- for block in section.blocks -%}
+                   <div class="jobcard">
+                     
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Logo_CP.png?v=1662108603">
+                     <h4>{{block.settings.jobhead }}</h4>
+                     <p class="company">{{block.settings.company }}</p>
+                     <p class="location">{{block.settings.location }}</p>
+                     <p class="time">{{block.settings.date }}</p>
+                     <a class="job_liink button button_primary apply_now" href="{{block.settings.url}}">Apply now</a>
+                     </div>
+                  {% endfor %}
+                 </div>
+               </div>
+ <script>
+  $('.jobslider').slick({
+    dots: true,
+    arrows: true,
+    autoplay: true,
+    adaptiveHeight: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplaySpeed: 3000,
+    infinite: true,
+ responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+        
+      }
+    },
+   ]
+  });
+
+  
+</script>
+{% schema %}
+    {
+      "name": "Careers",
+      "settings": [],
+      "blocks": [
+            {
+			  "type": "testimonial",
+              "name": "Blocks",
+              "settings": [
+                {
+                  "type": "text",
+                  "id": "jobhead",
+                  "label": "Job Heading",
+                  "default": "Manager"
+                },
+                {
+                  "type": "text",
+                  "id": "company",
+                  "label": "Company Name",
+                  "default": "Bombay Shaving Company"
+                },
+                {
+                  "type": "text",
+                  "id": "location",
+                  "label": "Job Location",
+                  "default": "Gurugram, India"
+                },
+                {
+                  "type": "text",
+                  "id": "date",
+                  "label": "Date",
+                  "default": "1 week ago"
+                },
+                {
+                  "type": "url",
+                  "id": "url",
+                  "label": "job link"
+                }
+
+                
+
+              ]
+            }
+          ],
+      "presets": [
+          {
+            "name": "Careers",
+            "category": "image"
+          }
+        ]
+    }
+    {% endschema %}

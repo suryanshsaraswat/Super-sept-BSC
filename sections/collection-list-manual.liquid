@@ -1,0 +1,94 @@
+<style>
+  collection-container h1 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 600;
+    color: #0d5ea8;
+}
+  .collectionlist {
+    DISPLAY: FLEX;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-flow: wrap;
+}
+  .collection-list-wrapper {
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    width: 100%;
+}
+  .collection-list-wrapper img{
+    transition: 400ms smooth
+  }
+  .collection-list-wrapper img:hover{
+    transform:scale(1.01);
+    border: 1px solid #0d5ea8;
+    padding:3px;
+  }
+  @media(max-width:450px){
+    .collection-list-wrapper{
+      flex-basis:48%;
+      margin-bottom:6px
+    }
+  }
+</style>
+<div class="collection-container">
+  {% if section.settings.collection_heading != blank %}
+  <h1>{{ section.settings.collection_heading }}</h1>
+    {% else %}
+    <h1 style="display:none">{{ section.settings.collection_heading }}</h1>
+  {% endif %}
+  <div class="collectionlist">
+  {% for block in section.blocks %}
+    
+      <div class="collection-list-wrapper">
+      <a href="{{ block.settings.collection_url }}">
+        <img src="{{ block.settings.collection_img | img_url: 'master'}}" style="width:100%; height:auto" alt="collection-image">
+      </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "collection list manual",
+    "settings": [
+      {
+        "type":"text",
+        "id":"collection_heading",
+        "label":"collection heading",
+        "default":"collection list"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"prodduct",
+        "name":"collection block",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"collection_img",
+            "label":"upload collection image"
+          },
+          {
+            "type":"url",
+            "id":"collection_url",
+            "label":"collection url"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "category":"product",
+        "name":"collection list manual"
+      }
+    ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

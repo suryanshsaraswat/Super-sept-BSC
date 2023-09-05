@@ -1,0 +1,137 @@
+<style>
+.section-3{padding:20px 0}
+.s3-heading{display:block;padding-bottom:35px;text-align:center;font-family:Roboto,sans-serif;font-size:40px;font-weight:700;text-transform:uppercase;padding-top:20px}
+.s3-slide{text-align:center;font-size:20px;font-family:'Roboto';font-weight:400;min-height:720px;margin-right:39px}
+@media(max-width:450px) {
+.s3-slide{margin:0 12px;min-height:543px;margin-right:0}
+  .back {
+    min-height: 531px!important;
+}
+  .s3-heading {
+    font-size: 23px;
+}
+  
+}
+.card{position:relative;width:100%;height:100%;perspective:500px}
+.content{position:absolute;width:100%;height:100%;box-shadow:0 0 15px rgba(0,0,0,0.1);transition:transform 1s;transform-style:preserve-3d}
+.card:hover .content{transform:rotateY(180deg);transition:transform .5s}
+.front,.back{position:absolute;height:100%;width:100%;text-align:center;font-size:20px;border-radius:5px;backface-visibility:hidden}
+.back{background:#fff;color:#000;transform:rotateY(180deg);min-height:702px;border:1px solid #000}
+.back p{position:absolute;top:200px;font-family:Roboto,sans-serif;padding:0 10px;line-height:24px}
+.front img{border-radius:10px;box-shadow:3px 1px 8px 0 #007364}
+</style>
+<div class="section-3">
+   <div class="s3-heading">
+      <h2>why be a razorpreneur?</h2>
+   </div>
+   <div class="s3-main">
+      <div class="s3-slider">
+         <div class="s3-slide s3-slide-1">
+            <div class="card">
+               <div class="content">
+                  <div class="front">
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Tanmay_Bhatt___Thumbnail.png?v=1692280343">
+                  </div>
+                  <div class="back">
+                     <p>"The trick to selling is to slide into it slowly. Never seem desperate. Create a vibe where you earn the prospect's trust. Participating in Razorpreneur will help you learn this skill and a lot more. "
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="s3-slide s3-slide-2">
+            <div class="card">
+               <div class="content">
+                  <div class="front">
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Vani___Thumbnail.png?v=1692280344">
+                  </div>
+                  <div class="back">
+                     <p>"All of us will need to sell in some form or the other. And when the product is great, like these Sensi Smart 3 razors then selling becomes a breeze. So hop on and enjoy the ride!"
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="s3-slide s3-slide-3">
+            <div class="card">
+               <div class="content">
+                  <div class="front">
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Vivek_Gambhir___Thumbnail.png?v=1692280343">
+                  </div>
+                  <div class="back">
+                     <p>"This is an amazing platform for you to be able to showcase your selling skills. Take advantage of this platform, get a lot of rewards and learn a lot from the process."
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="s3-slide s3-slide-4">
+            <div class="card">
+               <div class="content">
+                  <div class="front">
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Rohit_Kapoor___Thumbnail.png?v=1692280344">
+                  </div>
+                  <div class="back">
+                     <p>"It’s an opportunity to demonstrate your selling ability and convince people about your idea. The experience will last you a lifetime."
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="s3-slide s3-slide-5">
+            <div class="card">
+               <div class="content">
+                  <div class="front">
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Arjun___Thumbnail.png?v=1692280343">
+                  </div>
+                  <div class="back">
+                     <p>"It’s a great opportunity to test out your skills and do something in the real world because there’s only one real way to learn - by doing it!"
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="s3-slide s3-slide-6">
+            <div class="card">
+               <div class="content">
+                  <div class="front">
+                     <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Shantanu_Khosla___Thumbnail.png?v=1692280344">
+                  </div>
+                  <div class="back">
+                     <p>"You’ll learn lessons, which you can learn no other way and will stand you in good stead in whatever facet of life you move on in."
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<script>
+  $('.s3-slider').slick({
+  centerMode: true,
+  centerPadding: '50px',
+  arrows: false,
+  infinite: true,
+  slidesToShow: 3,
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 3
+      }
+    }, {
+      breakpoint: 480,
+      settings: {
+        arrows: false,
+        centerMode: true,
+        centerPadding: '40px',
+        slidesToShow: 1
+      }
+    }
+  ]
+});
+</script>

@@ -1,0 +1,150 @@
+<style>
+  body{background:#fff}
+  .slidec{margin:20px;}
+  .prod-rev { margin-left: 4px;}
+  .soldout {background: #000;padding: 10px 0 !important;}
+  .prod-rate-p {display: flex;margin-bottom: 7px;}
+  .prod-rate {margin-right: 5px;display: flex;align-items: baseline;}
+  .product-details {padding: 12px;box-shadow: 0 0 12px 0 #ccc;border-radius: 15px;margin-top: -25px;position: relative;background: #fff;min-height: 152px;}
+  .product-details h1 {font-size: 17px;font-weight: 500;margin-bottom: 0;line-height: 1.4;margin-bottom: 5px;min-height:28px;}
+  .mx-product h2{font-size: 24px;font-weight: 700;line-height: 1.4;margin:20px 0 0px; text-align:center}
+      p.quote{    margin-bottom: 8px;}
+  .pricediv{font-weight:500;width:40%;margin:0}
+  .pricediv .price-compareat {text-decoration: line-through;text-decoration-color: #0a589b;text-decoration-thickness: 3px;padding-right: 6px;}
+  .pricediv .pridce .priddce {font-weight: 700;display: block;font-size: 20px;}
+  .ArticleItem__Content{text-align:left}
+  .whytrim .desk-cont {margin-top: 25px;border-radius: 15px;box-shadow: 0 0 12px 0 #ccc;}
+  .metaflex{display:flex;flex-flow:wrap;align-items:center}
+  .btncart{width: 60%;}
+  
+  .product-imagea {position: relative;border-radius: 20px;overflow: hidden;}
+  .product-imagea:hover .hvx{opacity:1}
+  .hvx {position: absolute;width: 100%;height: 100%;left: 0;top: 0;opacity: 0;transition:0.3s;}
+  .ad_to_cart_coll{margin-top:0!important;padding: 12px 0 !important;}
+  .btncart span.ofr{color: #494949;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    margin-top: 3px;}
+  @media(max-width:480px){
+    .slidec{margin:8px 10px;}
+    .whytrim{margin-top:10px}
+    .product-details h1{font-size: 18px;}
+    .trimmeta .rating__star {width: 18px;height: 18px;}
+    .verfied img {width: 15px;vertical-align: sub;}
+  }
+</style>
+<div class="mx-product">
+<h2>Our Stellar Range</h2>
+      <div class="mx-product-slider">
+        
+        {%- for block in section.blocks -%}
+{%- assign product = all_products[block.settings.featured_product] -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
+        <div class="slidec">
+          <a href="{{ product.url }}">
+          <div class="product-card">
+            <div class="product-imagea">
+              <img src="{{ block.settings.featured_image | img_url: 'master'}}">
+          <img class="hvx" src="{{ block.settings.featured_image2 | img_url: 'master'}}">
+            </div>
+            <div class="product-details">
+              <h1>{{ product.title }}</h1>
+              <div class="prod-rate-p">
+                <div class="prod-rate">{% render 'icon' with 'rating-star' %}{{ product.metafields.reviews.rating.value }}</div>
+                <span>|</span>
+                <div class="prod-rev">{{ product.metafields.reviews.rating_count.value }} Reviews</div>
+              </div>
+                
+              <div class="metaflex">
+                {%- if product.compare_at_price > product.price -%}
+                <p class="pricediv">MRP <span class="price-compareat">{{ product.compare_at_price | money }}</span> <span class="pridce">{{ product.price | money }}</span></p>
+                  {%- else -%}
+                  <p class="pricediv"><span class="pridce">MRP {{ product.price | money }}</span></p>
+                  {% endif %}
+              <div class="btncart">
+          {% if product.available %}
+                <button type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll Button Button--primary" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ current_variant.id }}" data-var_id="{{ current_variant.id }}" data-action="open-drawer" data-drawer-id="sidebar-cart"><span>Add to cart</span></button>
+<!--                 <span class="ofr">Special offers at checkout</span> -->
+            {% else %}
+                <button type="submit" name="add" aria-label="Add to cart" class=" Button Button--primary soldout" id="ad_to_cart" ><span>Sold Out</span></button>
+                  {% endif %}
+              </div>
+              </div>
+            </div>
+          </div>
+          </a>
+        </div>
+        {%- endfor -%}
+      </div>
+
+  </div>
+  <div class="whytrim">
+  <div class="Container">
+    <img class="desk-cont" src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Desktop_4f7d4685-3ed4-4e05-b3ec-1c5cd6821878.jpg?v=1662975363" width="100%">
+  </div>
+  <img class="mob-cont" src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Why-Our-Trimmer_960b1ccc-368c-4e08-8e8c-1f4207e24caf.png?v=1662975363" width="100%">
+</div>
+
+<script>
+     $('.mx-product-slider').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              centerMode: false,
+              infinite: true,
+               arrows:false,
+			  responsive: [ {
+                breakpoint: 480,
+                settings: {
+                  initialSlide: 1,
+                  centerMode: true,
+                  centerPadding: '40px',
+                  slidesToShow: 1,
+                  settings: 'unslick'
+                }
+              }]
+         
+            });
+
+</script>
+{% schema %}
+  {
+    "name": "Product Block",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Product Slider",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product",
+            "label": "Select Product"
+          },
+          {
+            "type": "image_picker",
+            "id": "featured_image",
+            "label": "Upload Image"
+          },
+           {
+            "type": "image_picker",
+            "id": "featured_image2",
+            "label": "Upload Back Image"
+          },
+          {
+            "type": "text",
+            "id": "quote",
+            "label": "Ranvijay quote"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "product Slider",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

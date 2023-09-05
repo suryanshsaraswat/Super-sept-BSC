@@ -1,0 +1,128 @@
+
+
+<style>
+  .g-kit-child:hover {
+    transform: scale(0.95);
+    transition: 0.3s;
+}
+  .g-kit-fam {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 22px;
+    margin-bottom: 40px;
+}
+  .g-kit-parent {
+    display:flex;
+    width:50%;
+    margin-bottom: 40px;
+}
+  .g-kit-child {
+    width: 50%;
+    margin: 0 20px;
+    background: #fff;
+    box-shadow: 3px 5px 0px #ddd, -2px 5px 2px #ddd;
+}
+  .g-kit-child-img {
+    padding: 10px;
+}
+  .g-kit-child-title {
+    font-size: 17px;
+    text-align: center;
+    font-weight: 500;
+    margin: 15px 0;
+}
+@media(max-width:500px){
+  .g-kit-fam {display: block; margin: 0;}
+  .g-kit-parent{width:100%; margin-bottom:20px}
+  .g-kit-child{margin:0 9px}
+  .g-kit-child-title{font-size:15px; margin:16px 0}
+}
+</style>
+
+{% comment %} ^^GROOMING GUIDE KIT HTML START^^ {% endcomment %}
+<div class="g-kit">
+  <div class="g-kit-fam">
+    {%- for block in section.blocks -%}
+{%- assign product = all_products[block.settings.featured_product] -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
+  <div class="g-kit-parent">
+    <div class="g-kit-child">
+      <a href="{{ block.settings.kit1_url }}"><div class="g-kit-child-img"><img src="{{ block.settings.kit_image-1 | img_url:'master' }}" style="width:100%; height:auto"></div>
+      <div class="g-kit-child-title"><h2>{{ block.settings.product_name-1 }}</h2></div></a>
+    </div>
+    <div class="g-kit-child">
+      <a href="{{ block.settings.kit2_url }}"><div class="g-kit-child-img"><img src="{{ block.settings.kit_image-2 | img_url:'master' }}" style="width:100%; height:auto"></div>
+      <div class="g-kit-child-title"><h2>{{ block.settings.product_name-2 }}</h2></div></a>
+    </div>
+  </div>
+  {% endfor %}
+  </div>
+</div>
+
+
+
+
+
+
+{% schema %}
+  {
+    "name": "Featured Kit Block",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Grooming Kits(2 each)",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product-1",
+            "label": "Select Product 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "kit_image-1",
+            "label": "Upload Image 1"
+          },
+          {
+            "type":"text",
+            "id":"product_name-1",
+            "label":"enter Product name 1"
+          },
+          {
+            "type":"url",
+            "id":"kit1_url",
+            "label": "grooming guide 1"
+          },
+          {
+            "type": "product",
+            "id": "featured_product-2",
+            "label": "Select Product 1"
+          },
+          {
+            "type": "image_picker",
+            "id": "kit_image-2",
+            "label": "Upload Image 2"
+          },
+          {
+            "type":"text",
+            "id":"product_name-2",
+            "label":"enter Product name 2"
+          },
+          {
+            "type":"url",
+            "id":"kit2_url",
+            "label": "grooming guide 2"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "Featured Kit Blocks",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

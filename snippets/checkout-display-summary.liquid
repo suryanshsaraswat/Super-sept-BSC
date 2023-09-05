@@ -1,0 +1,30 @@
+<script>
+  $( document ).ready(function() {
+    $("#order-summary").css({"display": "block", "height": "auto", "visibility": "revert"});
+  });
+</script>
+<style>
+  @media (min-width: 1000px){.order-summary__section--product-list { min-height: 15em!important;}}
+  .field__message--error-custom{color: #FF5F90;}
+  .field__input-wrapper--icon-right:after{
+    position: absolute;
+    font-size: 18px;
+    content: "+91";
+    width: 46px;
+    height: 31px;
+    background-color: #EEEEEE;
+    color: #565656;
+    border-radius: 5px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    padding-top: 15px;
+    text-align: center;
+  }
+  #checkout_shipping_address_phone_clone, #checkout_shipping_address_phone{padding-left:53px !important;}
+  .product__description .product__description__property {display:none}
+  .product__description .product__description__property:nth-child(1){display:block}
+  .product__description .product__description__property:nth-child(2){display:block}
+  .product__description .product__description__property:nth-child(3){display:block}
+  .product__description .product__description__property:nth-child(4){display:block}
+</style>

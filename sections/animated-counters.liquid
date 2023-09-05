@@ -1,0 +1,163 @@
+<style>
+.animatedd {max-width:1200px;margin: 0 auto;overflow: auto;}
+.counters {color: #fff;padding: 40px 20px;}
+.counters .animatedd {display: grid;grid-template-columns: repeat(3,2fr);grid-gap: 300px;text-align: center;color: #0f479a;}
+.counters i {color: #0f479a;font-size:38px;font-weight: bold;}
+.counters .counter {font-size: 25px;margin: 10px 0; font-weight:bold;}
+.boxit h3{font-size:25px;font-weight: bold;}
+  
+  
+  #shopify-section-template--15634940657818__16575240508de32ce3 .ImageHero {min-height:400px;background-repeat:no-repeat;background-attachment:fixed;} 
+  #shopify-section-template--15634940657818__16575240508de32ce3 .SectionHeader__Heading{ font-size:80px;}
+  @media (max-width: 480px){
+  .animatedd{max-width:480px;}
+    .counters .animatedd{display:grid; grid-template-columns: repeat(1,1fr); grid-gap: 20px; text-align:center;}
+    .boxit h3{font-size:18px;font-weight:bold;}
+    .counters .counter{font-size:20px;margin:5px 0;font-weight: bold;}
+  }
+</style>
+
+
+<script src="https://kit.fontawesome.com/b7b69ff552.js" crossorigin="anonymous"></script>
+<section class="counters">
+  <div class="animatedd">
+    <div class="boxit">
+      <i class="fa-solid fa-user"></i>
+      <div class="counter" data-target="6000">0</div>
+      <h3>lorem Ipsum</h3>
+    </div>
+    <div class="boxit">
+      <i class="fab fa-facebook fa-4x"></i>
+      <div class="counter" data-target="9000">0</div>
+      <h3>loremipsum</h3>
+    </div>
+    <div class="boxit">
+      <i class="fab fa-linkedin fa-4x"></i>
+      <div class="counter" data-target="5000">0</div>
+      <h3>loremipsum</h3>
+    </div>
+  </div>
+</section>
+
+<script>
+  const counters = document.querySelectorAll('.counter');
+const speed = 100; // The lower the slower
+
+counters.forEach(counter => {
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+		// Lower inc to slow and higher to slow
+		const inc = target / speed;
+
+		// console.log(inc);
+		// console.log(count);
+
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + inc;
+			// Call function every ms
+			setTimeout(updateCount, 1);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% schema %}
+   {
+    "name": "animated counter",
+    "settings": [],
+	"blocks": [
+            {
+			  "type": "counters",
+              "name": "Blocks",
+              "settings": [
+                {
+                  "type": "text",
+                  "id": "counter1",
+                  "label": "counter1"
+
+                },
+                {
+                  "type": "text",
+                  "id": "counter2",
+                  "label": "counter2"
+                },
+                {
+                  "type": "text",
+                  "id": "counter3",
+                  "label": "counter3"
+                }
+                
+
+              ]
+            }
+          ],
+    
+	"presets": [
+        {
+          "category": "Product",
+          "name": "animated counter"
+          
+          
+        }
+      ]
+  }
+{% endschema %}

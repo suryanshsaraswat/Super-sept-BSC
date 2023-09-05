@@ -1,0 +1,40 @@
+<style>
+  .rimch-text {max-width: 100%;width: 600px;margin: 26px auto;}
+  .rimch-text h2 { font-size: 30px;text-align: center;word-spacing: 0px;line-height: 1.5;font-family:lato}
+  @media(max-width:500px){
+  .rimch-text h2 {font-size: 18px;font-weight: 500;width: 365px;margin: 0 auto;}
+  }
+</style>
+<div class="rimch-text">
+  {%- for block in section.blocks -%}
+  <h2>{{ block.settings.heading-text }}</h2>
+</div>
+  {% endfor %}
+
+
+{% schema %}
+  {
+    "name": "Rich text",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "text block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "heading-text",
+            "label": "Enter text here"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "Rich text",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

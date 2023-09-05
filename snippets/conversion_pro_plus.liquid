@@ -1,0 +1,779 @@
+<script>
+function snippet_render()
+{
+    console.log("working fine");
+    let cart_page_selectors = [
+        'form[action="/cart"].cart__contents',
+        'table[class="shop_table shop_table_responsive cart"]',
+        'div[class="tt-shopcart-table-02"]',
+        'div[class="cart__wrapper is-flex is-flex-wrap"]',
+        'form[action="/cart"]',
+    ];
+    let ajax_cart_selectors = [
+        'div[id="cart-notification-product"].cart-notification-product',
+        'div[class="widget_shopping_cart_content"]',
+        'div[class="popup-cart__items mt-15 mb-15 border-bottom"]',
+        'div[class="drawer__header appear-animation appear-delay-1"]',
+        //'div[class="cart-products ajaxcart-products drawer__inner-section"]',
+        'div[id="CartContainer"]',
+        'div[class="has-items"]',
+        'div[class="tt-cart-box"]',
+        'div[class="CartItemWrapper"]',
+        //'form[class="Cart Drawer__Content"]',
+        'ul[class="cart_items js-cart_items"]'
+    ];
+    let popupCartSelectors = [
+        'div[class="gecko-scroll has-scrollbar"]',
+        'ul[class="cart-list"]',
+    ];
+
+    if(1 == 1)
+    {
+        var alpha_style_element = document.createElement('style');
+        alpha_style_element.innerText = `.reset-this {
+animation : none;
+animation-delay : 0;
+animation-direction : normal;
+animation-duration : 0;
+animation-fill-mode : none;
+animation-iteration-count : 1;
+animation-name : none;
+animation-play-state : running;
+animation-timing-function : ease;
+backface-visibility : visible;
+background : 0;
+background-attachment : scroll;
+background-clip : border-box;
+background-color : transparent;
+background-image : none;
+background-origin : padding-box;
+background-position : 0 0;
+background-position-x : 0;
+background-position-y : 0;
+background-repeat : repeat;
+background-size : auto auto;
+border : 0;
+border-style : none;
+border-width : medium;
+border-color : inherit;
+border-bottom : 0;
+border-bottom-color : inherit;
+border-bottom-left-radius : 0;
+border-bottom-right-radius : 0;
+border-bottom-style : none;
+border-bottom-width : medium;
+border-collapse : separate;
+border-image : none;
+border-left : 0;
+border-left-color : inherit;
+border-left-style : none;
+border-left-width : medium;
+border-radius : 0;
+border-right : 0;
+border-right-color : inherit;
+border-right-style : none;
+border-right-width : medium;
+border-spacing : 0;
+border-top : 0;
+border-top-color : inherit;
+border-top-left-radius : 0;
+border-top-right-radius : 0;
+border-top-style : none;
+border-top-width : medium;
+bottom : auto;
+box-shadow : none;
+box-sizing : content-box;
+caption-side : top;
+clear : none;
+clip : auto;
+color : inherit;
+columns : auto;
+column-count : auto;
+column-fill : balance;
+column-gap : normal;
+column-rule : medium none currentColor;
+column-rule-color : currentColor;
+column-rule-style : none;
+column-rule-width : none;
+column-span : 1;
+column-width : auto;
+content : normal;
+counter-increment : none;
+counter-reset : none;
+cursor : auto;
+direction : ltr;
+display : inline;
+empty-cells : show;
+float : none;
+font : normal;
+font-family : inherit;
+font-size : medium;
+font-style : normal;
+font-variant : normal;
+font-weight : normal;
+height : auto;
+hyphens : none;
+left : auto;
+letter-spacing : normal;
+line-height : normal;
+list-style : none;
+list-style-image : none;
+list-style-position : outside;
+list-style-type : disc;
+margin : 0;
+margin-bottom : 0;
+margin-left : 0;
+margin-right : 0;
+margin-top : 0;
+max-height : none;
+max-width : none;
+min-height : 0;
+min-width : 0;
+opacity : 1;
+orphans : 0;
+outline : 0;
+outline-color : invert;
+outline-style : none;
+outline-width : medium;
+overflow : visible;
+overflow-x : visible;
+overflow-y : visible;
+padding : 0;
+padding-bottom : 0;
+padding-left : 0;
+padding-right : 0;
+padding-top : 0;
+page-break-after : auto;
+page-break-before : auto;
+page-break-inside : auto;
+perspective : none;
+perspective-origin : 50% 50%;
+position : static;
+right : auto;
+tab-size : 8;
+table-layout : auto;
+text-align : inherit;
+text-align-last : auto;
+text-decoration : none;
+text-decoration-color : inherit;
+text-decoration-line : none;
+text-decoration-style : solid;
+text-indent : 0;
+text-shadow : none;
+text-transform : none;
+top : auto;
+transform : none;
+transform-style : flat;
+transition : none;
+transition-delay : 0s;
+transition-duration : 0s;
+transition-property : none;
+transition-timing-function : ease;
+unicode-bidi : normal;
+vertical-align : baseline;
+visibility : visible;
+white-space : normal;
+widows : 0;
+width : auto;
+word-spacing : normal;
+z-index : auto;
+/* basic modern patch */
+all: initial;
+all: unset;
+}
+
+/* basic modern patch */
+
+#reset-this-root {
+all: initial;
+* {
+all: unset;
+}
+}
+
+#quote p
+{
+    margin-bottom : -10px;
+    margin-top : 0px;
+}
+
+.alpha-progress-text{
+    border: 2px solid rgb(204, 204, 204);
+    height: auto;
+}
+
+.alpha-progress-inner-text{
+    text-align: center;
+}
+
+.pseu_class_basic::after {
+content: "";
+position: absolute;
+background-color: #ff4500;
+left: 0px;
+z-index: 0;
+width: 0px;
+height: 30px;
+border-radius: 15px;
+animation: progres 4s infinite linear;
+}
+.pseu_class_line::after {
+content: "";
+position: absolute;
+background-color: #ff4500;
+left: 0px;
+z-index: 0;
+top: 22px;
+width: 0px;
+height: 5px;
+border-radius: 0px;
+animation: progres 4s infinite linear;
+}
+.pseu_class_static::after {
+content: "";
+position: absolute;
+background-color: #ff4500;
+left: 0px;
+z-index: 0;
+width: 0px;
+height: 30px;
+border-radius: 0px;
+animation: progres 4s infinite linear;
+}
+
+#lineProgressBar
+{
+background: #d3c9c9;
+top: 28px;
+height: 5px;
+}
+
+#alphaColorBasic
+{
+background: #d1c9c9;
+height: 30px;
+border-radius: 15px;
+position: relative;
+z-index: 0;
+}
+#alphaColorLine
+{
+position: relative;
+top: -24px;
+z-index: 0;
+}
+#alphaColorStatic
+{
+background: #d1c9c9;
+height: 30px;
+border-radius: 0px;
+position: relative;
+z-index: 0;
+}
+
+#alphaColorBasic::after
+{
+content: "";
+position: absolute;
+background-color: var(--alphaColor,#ff4500);
+width: var(--variableWidthAlpha,0px);
+height: 30px;
+left: 0px;
+top: 0px;
+z-index: -1;
+border-radius: 15px;
+animation: progres var(--countTimer,8s) var(--animCountVar,infinite) linear;
+animation-delay: 2s;
+}
+
+
+#alphaColorLine::after
+{
+content: "";
+position: absolute;
+background-color:var(--alphaColor,#ff4500);
+width: var(--variableWidthAlpha,0px);
+height: 5px;
+left: 0px;
+top: 24px;
+z-index: -1;
+border-radius: 15px;
+animation: progres var(--countTimer,8s) var(--animCountVar,infinite) linear;
+animation-delay: 2s;
+}
+
+#alphaColorStatic::after
+{
+content: "";
+position: absolute;
+background-color:var(--alphaColor,#ff4500);
+width: var(--variableWidthAlpha,0px);
+height: 30px;
+left: 0px;
+top: 0px;
+z-index: -1;
+border-radius: 0px;
+animation: progres var(--countTimer,8s) var(--animCountVar,infinite) linear;
+animation-delay: 2s;
+}
+
+#editorTextAlpha
+{
+position: relative;
+z-index: 2;
+}
+
+
+
+@keyframes  progres {
+
+0%,
+100% {
+transition-timing-function: cubic-bezier(1, 0, 0.65, 0.85);
+}
+
+0% {
+width: 0;
+}
+
+100% {
+width: 100%;
+}
+}
+`
+        document.body.appendChild(alpha_style_element);
+
+        //var alpha_element_to_append = document.createElement('div');
+        alpha_element_to_append_html = `<div class="alpha-progress-text" style="margin-bottom: 20px;">
+                                    <div class="alpha-progress-inner-text" id="outerDivWraper">
+                                        <div id="quote" style="height:auto; padding-top:5px; text-align: center;margin-bottom: 20px;"><p>🔥Hurry up! Your cart will be lost in <span class="alpha__timer"></span></p></div>
+                                    </div>
+                                </div>`;
+        //alpha_element_to_append.innerHTML = designB;
+        {% if template == 'cart' %}
+            {% if cart.item_count != 0 %}
+                if(`all_products` == 'all_products')
+                {
+                    addInCartPage();
+                }
+                else
+                {
+                    fetch('/cart.js', {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            },
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        var alpha_product_handles = data.items;
+                        var cart_handles = [1];
+                        for(const item of alpha_product_handles)
+                        {
+                            if(cart_handles.includes(item.handle))
+                            {
+                                addInCartPage();
+                                break;
+                            }
+                        }
+                    })
+                    .catch((error) => {
+                    console.error('Error:', error);
+                    });
+                }
+            {% endif %}
+        {% else %}
+            if(`none` !== 'none')
+            {
+                if(`all_products` == 'all_products')
+                {
+                    {% if cart.item_count != 0 %}
+                        if(!document.getElementById('quote'))
+                        {
+                            addInAjaxCart();
+                        }
+                    {% else %}
+                        (function(ns, fetch) {
+                            if (typeof fetch !== 'function') return;
+
+                            ns.fetch = function() {
+                                const response = fetch.apply(this, arguments);
+
+                                response.then(res => {
+                                    if ([
+                                            `${window.location.origin}/cart/add`,
+                                            `${window.location.origin}/cart/add.js`,
+                                        ].includes(res.url)) {
+                                        res.clone().json().then(data => {
+                                            fetch('/cart.js', {
+                                                method: 'GET',
+                                                headers: {
+                                                    'Content-Type': 'application/json',
+                                                    },
+                                            })
+                                            .then(response => response.json())
+                                            .then(data => {
+                                                if(!document.getElementById('quote'))
+                                                {
+                                                    addInAjaxCart();
+                                                    setTimeout(() => {  addInPopUpCart() }, 1000);
+                                                }
+                                            })
+                                            .catch((error) => {
+                                            console.error('Error:', error);
+                                            });
+                                        });
+                                    }
+                                });
+
+                                return response;
+                            }
+                        }(window, window.fetch))
+                        const open = window.XMLHttpRequest.prototype.open;
+                        function openReplacement() {
+                        this.addEventListener("load", function () {
+                            if (
+                            [
+                                "/cart/add.js",
+                                "/cart/add",
+                            ].includes(this._url)
+                            ) {
+                                fetch('/cart.js', {
+                                    method: 'GET',
+                                    headers: {
+                                        'Content-Type': 'application/json',
+                                        },
+                                })
+                                .then(response => response.json())
+                                .then(data => {
+                                    if(!document.getElementById('quote'))
+                                    {
+                                        addInAjaxCart();
+                                        setTimeout(() => {  addInPopUpCart() }, 1000);
+                                    }
+                                })
+                                .catch((error) => {
+                                console.error('Error:', error);
+                                });
+                            }
+                        });
+                        return open.apply(this, arguments);
+                        }
+                        window.XMLHttpRequest.prototype.open = openReplacement;
+                    {% endif %}
+                }
+                else
+                {
+                    (function(ns, fetch) {
+                        if (typeof fetch !== 'function') return;
+
+                        ns.fetch = function() {
+                            const response = fetch.apply(this, arguments);
+
+                            response.then(res => {
+                                if ([
+                                        `${window.location.origin}/cart/add`,
+                                        `${window.location.origin}/cart/add.js`,
+                                    ].includes(res.url)) {
+                                    res.clone().json().then(data => {
+                                        fetch('/cart.js', {
+                                            method: 'GET',
+                                            headers: {
+                                                'Content-Type': 'application/json',
+                                                },
+                                        })
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            var alpha_product_handles = data.items;
+                                            var cart_handles = [1];
+                                            for(const item of alpha_product_handles)
+                                            {
+                                                if(cart_handles.includes(item.handle))
+                                                {
+                                                    if(!document.getElementById('quote'))
+                                                    {
+                                                        addInAjaxCart();
+                                                        setTimeout(() => {  addInPopUpCart() }, 1000);
+                                                    }
+                                                    break;
+                                                }
+                                            }
+                                        })
+                                        .catch((error) => {
+                                        console.error('Error:', error);
+                                        });
+                                    });
+                                }
+                            });
+
+                            return response;
+                        }
+
+                    }(window, window.fetch))
+                        const open = window.XMLHttpRequest.prototype.open;
+                        function openReplacement() {
+                        this.addEventListener("load", function () {
+                            if (
+                            [
+                                "/cart/add.js",
+                                "/cart/add",
+                            ].includes(this._url)
+                            ) {
+                                fetch('/cart.js', {
+                                            method: 'GET',
+                                            headers: {
+                                                'Content-Type': 'application/json',
+                                                },
+                                        })
+                                        .then(response => response.json())
+                                        .then(data => {
+                                            var alpha_product_handles = data.items;
+                                            var cart_handles = [1];
+                                            for(const item of alpha_product_handles)
+                                            {
+                                                if(cart_handles.includes(item.handle))
+                                                {
+                                                    if(!document.getElementById('quote'))
+                                                    {
+                                                        addInAjaxCart();
+                                                        setTimeout(() => {  addInPopUpCart() }, 1000);
+                                                    }
+                                                    break;
+                                                }
+                                            }
+                                        })
+                                        .catch((error) => {
+                                        console.error('Error:', error);
+                                });
+                            }
+                        });
+                        return open.apply(this, arguments);
+                        }
+                        window.XMLHttpRequest.prototype.open = openReplacement;
+                    fetch('/cart.js', {
+                        method: 'GET',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            },
+                    })
+                    .then(response => response.json())
+                    .then(data => {
+                        var alpha_product_handles = data.items;
+                        var cart_handles = [1];
+                        for(const item of alpha_product_handles)
+                        {
+                            if(cart_handles.includes(item.handle))
+                            {
+                                if(!document.getElementById('quote'))
+                                {
+                                    addInAjaxCart();
+                                    setTimeout(() => {  addInPopUpCart() }, 1000);
+                                }
+                                break;
+                            }
+                        }
+                    })
+                    .catch((error) => {
+                    console.error('Error:', error);
+                    });
+                }
+            }
+        {% endif %}
+    }
+
+    function addInAjaxCart()
+    {
+        for(i=0; i<ajax_cart_selectors.length; i++)
+        {
+            var found_element = document.querySelectorAll(ajax_cart_selectors[i]);
+            if(found_element.length != 0)
+            {
+                console.log("Inside Ajax Cart");
+                for(var i=0; i<found_element.length; i++)
+                {
+                    if(`none` == 'top')
+                    {
+                        found_element[i].insertAdjacentHTML('beforebegin',alpha_element_to_append_html);
+                        var alpha__timer = document.querySelectorAll('.alpha__timer');
+                        alpha__timer.forEach(function(val){startTimer(10 * 60, val);})
+                    }
+                    else
+                    {
+                        found_element[i].insertAdjacentHTML('afterend',alpha_element_to_append_html);
+                        var alpha__timer = document.querySelectorAll('.alpha__timer');
+                        alpha__timer.forEach(function(val){startTimer(10 * 60, val);})
+                    }
+                }
+                
+                break;
+            }
+        }
+    }
+
+    function addInPopUpCart()
+    {
+        for(i=0; i<popupCartSelectors.length; i++)
+        {
+        console.log("inside popup function");
+            var found_element = document.querySelector(popupCartSelectors[i]);
+            console.log(found_element);
+            if(found_element)
+            {
+                console.log("Inside PopUp Cart");
+                if(`none` == 'top')
+                {
+                    found_element.insertAdjacentHTML('beforebegin',alpha_element_to_append_html);
+                    var alpha__timer = document.querySelectorAll('.alpha__timer');
+                    alpha__timer.forEach(function(val){startTimer(10 * 60, val);})
+                }
+                else
+                {
+                    found_element.insertAdjacentHTML('afterend',alpha_element_to_append_html);
+                    var alpha__timer = document.querySelectorAll('.alpha__timer');
+                    alpha__timer.forEach(function(val){startTimer(10 * 60, val);})
+                }
+                break;
+            }
+        }
+    }
+
+    function addInCartPage()
+    {
+        for(i=0; i<cart_page_selectors.length; i++)
+        {
+            var found_element = document.querySelector(cart_page_selectors[i]);
+            if(found_element)
+            {
+                if(`top` == 'top')
+                {
+                    found_element.insertAdjacentHTML('beforebegin',alpha_element_to_append_html);
+                    var alpha__timer = document.querySelectorAll('.alpha__timer');
+                    alpha__timer.forEach(function(val){startTimer(10 * 60, val);})
+                }
+                else
+                {
+                    found_element.insertAdjacentHTML('afterend',alpha_element_to_append_html);
+                    var alpha__timer = document.querySelectorAll('.alpha__timer');
+                    alpha__timer.forEach(function(val){startTimer(10 * 60, val);})
+                }
+                break;
+            }
+        }
+    }
+
+
+
+    //if(`none` !== 'none')
+    //{
+    //    document.addEventListener("DOMNodeInserted",function (e) {
+    //        for(var i=0; i<domNodeSelectors.length; i++){
+    //            var cart_selector = document.querySelector(domNodeSelectors[i]);
+    //            // console.log('DOMNodeInserted' ,',',cart_selector,',',e.target )
+    //            if(cart_selector == e.target){
+    //                console.log("");
+    //                for(i=0; i<popupCartSelectors.length; i++)
+    //                {
+    //                    var found_element = document.querySelector(popupCartSelectors[i]);
+    //                    if(found_element)
+    //                    {
+    //                        console.log("Inside Ajax Cart");
+    //                        if(`none` == 'top')
+    //                        {
+    //                            found_element.insertAdjacentHTML('beforebegin',alpha_element_to_append_html);
+    //                            var alpha__timer = document.getElementById('alpha__timer');
+    //                            if(alpha__timer)
+    //                            {
+    //                                startTimer(10*60, alpha__timer);
+    //                            }
+    //                        }
+    //                        else
+    //                        {
+    //                            found_element.insertAdjacentHTML('afterend',alpha_element_to_append_html);
+    //                            var alpha__timer = document.getElementById('alpha__timer');
+    //                            if(alpha__timer)
+    //                            {
+    //                                startTimer(10*60, alpha__timer);
+    //                            }
+    //                        }
+    //                        break;
+    //                    }
+    //                }
+    //                break;
+    //            }
+    //        }
+    //    });
+    //}
+    
+
+    var timerInterval = null;
+
+    function startTimer(duration, display) {
+        var timer = duration,
+            minutes, seconds;
+        timerInterval = setInterval(function() {
+            minutes = parseInt(timer / 60, 10);
+            seconds = parseInt(timer % 60, 10);
+
+            minutes = minutes < 10 ? "0" + minutes : minutes;
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            display.textContent = minutes + ":" + seconds;
+
+            if (--timer < 0) {
+                if(`reset_timer` == 'nothing')
+                {
+                    clearInterval(timerInterval);
+                    var quotePara = document.querySelector("#quote");
+                    var expiryText = `Cart Reservation Expired`;
+                    if (quotePara.children.length !== 0) {
+                        if (quotePara.childNodes[0].id == "basicProgressBar" || quotePara.childNodes[0].id ==
+                            "lineProgressBar" || quotePara.childNodes[0].id == "staticProgressBar") {
+                            document.getElementById("editorTextAlpha").innerHTML = expiryText;
+                            var p = document.querySelector(".forBgAlpha");
+                            //var box7 = document.getElementById("box7").value;
+                            if (p) {
+                                p.style.setProperty("--variableWidthAlpha", "100%");
+                                p.style.setProperty("--animCountVar", "0");
+                                //p.style.setProperty("--alphaColor", box7);
+                            }
+                        } else {
+                            document.getElementById("quote").innerHTML = expiryText;
+                        }
+                    }
+                }
+                else if(`reset_timer` == 'reset_timer')
+                {
+                    timer = duration;
+                }
+                else if(`reset_timer` == 'delete_items')
+                {
+                    clearInterval(timerInterval);
+                    var quotePara = document.querySelector("#quote");
+                    var expiryText = `Cart Reservation Expired`;
+                    if (quotePara.children.length !== 0) {
+                        if (quotePara.childNodes[0].id == "basicProgressBar" || quotePara.childNodes[0].id ==
+                            "lineProgressBar" || quotePara.childNodes[0].id == "staticProgressBar") {
+                            document.getElementById("editorTextAlpha").innerHTML = expiryText;
+                            var p = document.querySelector(".forBgAlpha");
+                            //var box7 = document.getElementById("box7").value;
+                            if (p) {
+                                p.style.setProperty("--variableWidthAlpha", "100%");
+                                p.style.setProperty("--animCountVar", "0");
+                                //p.style.setProperty("--alphaColor", box7);
+                            }
+                        } else {
+                            document.getElementById("quote").innerHTML = expiryText;
+                        }
+                    }
+                    fetch("/cart/clear.js",
+                    {
+                        method: "POST",
+                    })
+                    .then(function(res){ return res.json(); })
+                    .then(function(data){ window.location.href=window.location.origin })
+                }
+            }
+        }, 1000);
+    }
+}
+</script>

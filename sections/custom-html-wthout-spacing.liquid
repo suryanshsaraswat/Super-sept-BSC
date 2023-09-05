@@ -1,0 +1,24 @@
+<div class="Rte" style="text-align: center">
+      {{ section.settings.html }}
+    </div>
+{% schema %}
+{
+  "name": "Custom HTML(no-spacing)",
+  "class": "shopify-section--bordered",
+  "settings": [
+    {
+      "type": "html",
+      "id": "html",
+      "label": "HTML content",
+      "default": "<p>Write your own custom HTML content.</p>"
+    }
+  ],
+  "presets": [
+    {
+      "category": "Advanced",
+      "name": "Custom HTML(no-spacing)",
+      "settings": {}
+    }
+  ]
+}
+{% endschema %}

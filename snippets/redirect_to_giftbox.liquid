@@ -1,0 +1,222 @@
+<style>
+ .bxp-bldr-bottom-btn-head {
+	padding: 5px 5px 0px 5px;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	z-index: 999999;
+	background: #000000ad;
+	font-weight: bold;
+	cursor: pointer;
+	left: 45%;
+	border-radius: 5px 5px 0 0;
+}
+
+.bxp-bldr-bottom-btn img {
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+}
+
+.bxp-bldr-bottom-btn {
+	height: auto;
+}
+
+.bxp-bldr-bottom-btn.default {
+	left: 0 !important;
+	z-index: 9 !important;
+	right: 0;
+	margin: 0 auto;
+	text-align: center !important;
+	width: 175px;
+}
+
+.bounce {
+	left: 0;
+	width: 60px;
+	height: 60px;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	border-radius: 50%;
+	animation: bounce 2s infinite;
+	-webkit-animation: bounce 2s infinite;
+	-moz-animation: bounce 2s infinite;
+	-o-animation: bounce 2s infinite;
+	right: 0;
+	margin: 0 auto;
+}
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-webkit-transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-30px);
+	}
+
+	60% {
+		-webkit-transform: translateY(-15px);
+	}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-moz-transform: translateY(0);
+	}
+
+	40% {
+		-moz-transform: translateY(-30px);
+	}
+
+	60% {
+		-moz-transform: translateY(-15px);
+	}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		-o-transform: translateY(0);
+	}
+
+	40% {
+		-o-transform: translateY(-30px);
+	}
+
+	60% {
+		-o-transform: translateY(-15px);
+	}
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+
+	40% {
+		transform: translateY(-30px);
+	}
+
+	60% {
+		transform: translateY(-15px);
+	}
+}
+
+@media only screen and (max-width:600px) {
+	.bxp-bldr-bottom-btn img {
+		height: 35px;
+		width: 35px;
+	}
+
+	.bxp-bldr-bottom-btn.default {
+		padding: 10px 10px 0px 10px !important;
+		border-radius: 50px !important;
+		margin-bottom: 5px !important;
+		width: 60px;
+	}
+
+	.bxp-bldr-bottom-btn.default span {
+		display: none !important;
+	}
+
+	.bxp-bldr-bottom-btn.default img {
+		height: 35px !important;
+		width: 35px !important;
+	}
+
+	.bxp-step-box {
+		padding: 12px;
+	}
+
+	.bxp-step-box-imgs .bxp-summary-container {
+		margin: 5px 5px 0 0;
+	}
+}</style>
+
+
+
+<script type="text/javascript">
+  if(typeof jQuery == 'undefined'){
+    document.write('<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></'+'script>');
+  }
+</script>
+<script type="text/javascript">
+  
+  $.post('https://www.qetail.com/apps/gift_box_builder/auth/get_builder_details', {
+    domain: "{{ shop.permanent_domain }}"
+  }).done(function (response) {
+    var data = JSON.parse(response);
+    if(data.app_status==1){
+    
+      var builder_redirect_to = data.builder_redirect_to;
+      if(builder_redirect_to == 'checkout')
+      {  
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const giftbox = urlParams.get('giftbox');
+        if(giftbox == 'true')
+        {
+          var productHandle = data.product_handle;
+          $('form').append('<input type="hidden" name="checkout_url" value="/pages/'+productHandle+'">');
+        }  
+      }  
+
+      /** Sticky Builder Button **/
+      var global_settings = JSON.parse(data.global_settings);
+      if(global_settings.sticky_icon=="none"){
+        var sticky_icon = '<span class="site-nav__label" style="padding:10px;">'+global_settings.sticky_title+'</span>';
+        var sticky_background_color = global_settings.sticky_background_color;
+      }else{
+        var sticky_icon = '<img src="'+global_settings.sticky_icon+'" width="35">';
+        var sticky_background_color = "";
+      }
+      var sticky_position_top = (global_settings.sticky_position_top > 0) ? global_settings.sticky_position_top+"px" : "unset";
+      var sticky_position_bottom = (global_settings.sticky_position_bottom > 0) ? global_settings.sticky_position_bottom+"px" : "unset";
+      var sticky_position_left = (global_settings.sticky_position_left > 0) ? global_settings.sticky_position_left+"px" : "unset";
+      var sticky_position_right = (global_settings.sticky_position_right > 0) ? global_settings.sticky_position_right+"px" : "unset";
+      var display_type = global_settings.display_type;
+
+      if(display_type=="custom")
+      {
+        var gbb_display_btn = '<div class="bxp-bldr-bottom-btn-head '+display_type+'" id="gbb-link-btn" >\n' +
+            '<a>'+sticky_icon+' <p>'+global_settings.sticky_title+'</p></a>' +
+            '</div>';
+        //$('.gbb-display-btn').append(gbb_display_btn);
+      }else{
+        if(data.section_count==0){
+          var gbb_display_btn = '<div class="bxp-bldr-bottom-btn-head '+display_type+'" id="gbb-link-btn" >\n' +
+              '<a title="'+global_settings.sticky_title+'">'+sticky_icon+' <span style="position: relative;bottom: 10px;color:#fff;"> '+global_settings.sticky_title+' </span></a>' +
+              '</div>';
+          //$('body').append(gbb_display_btn);
+        }
+      }
+      /**END**/
+      
+      
+      if(global_settings.sticky_btn_animation=="on"){
+          setTimeout( function(){
+            $('#gbb-link-btn').addClass('bounce');
+            $('#gbb-link-btn-app').addClass('bounce');
+          },1500);
+      }
+    }
+    
+    $(document).on('click','#gbb-link-btn',function(){
+      $.post('https://www.qetail.com/apps/gift_box_builder/builder/update_builder_clicked', {
+        domain: "{{ shop.permanent_domain }}"
+      }).done(function (response) {
+        window.location.href = "/pages/"+data.product_handle;
+      });
+    }); 
+    $(document).on('click','#gbb-link-btn-app',function(){
+      $.post('https://www.qetail.com/apps/gift_box_builder/builder/update_builder_clicked', {
+        domain: "{{ shop.permanent_domain }}"
+      }).done(function (response) {
+          window.location.href = "/pages/"+data.product_handle;
+      });
+    });
+ });  
+  
+</script>

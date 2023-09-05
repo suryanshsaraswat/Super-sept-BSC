@@ -1,0 +1,71 @@
+<style>
+  .logo-carousels .slick-slide img{padding:20px 15px; height:150px; width:auto}
+  .catagory{background:#F1F1F1}   
+</style>
+
+<div class="catagory Container">
+ <div class="logo-carousels slider">
+    {%- for block in section.blocks -%}
+          <div class="slide"><img src="{{ block.settings.image1 | img_url: '300x' }}" ></div>
+    {%- endfor -%}
+        </div>
+</div>
+<script>
+
+            $('.logo-carousels').slick({
+              slidesToShow: 6,
+              slidesToScroll: 1,
+              autoplay: true,
+              autoplaySpeed: 0,
+              speed: 1500,
+              cssEase: 'linear',
+              centerMode: true,
+			  variableWidth: true,
+              responsive: [ {
+                breakpoint: 520,
+                settings: {
+                  slidesToShow: 2
+                }
+              }]
+            });
+
+        </script>
+
+{% schema %}
+   {
+    "name": "Logo Slider",
+    "settings": [],
+	"blocks": [
+            {
+			  "type": "testimonial",
+              "name": "Logo",
+              "settings": [
+                {
+                  "type": "image_picker",
+                  "id": "image1",
+                  "label": "Image 1"
+
+                },
+				
+                {
+                  "type": "url",
+                  "id": "linkurl1",
+                  "label": "Link 1"
+                }
+
+                
+
+              ]
+            }
+          ],
+    
+	"presets": [
+        {
+          "category": "Product",
+          "name": "Logo Slider"
+          
+          
+        }
+      ]
+  }
+{% endschema %}

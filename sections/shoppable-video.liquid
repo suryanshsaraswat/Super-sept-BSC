@@ -1,0 +1,59 @@
+<div class="main-shop">
+  {%- for block in section.blocks -%}
+{%- assign product = all_products[block.settings.featured_product] -%}
+{% assign current_variant = product.selected_or_first_available_variant %}
+  <div class="inner-shop">
+    <div class="video-section">
+      <video autoplay loop muted playsinline poster="{{ block.settings.featuredvideo_thumbnail | img_url:'master'}}" height="400"><source src="{{ block.settings.featuredvideo }}" type="video/mp4"></video>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% schema %}
+{
+    "name": "shoppable video Slider",
+    "settings": [
+      {
+      "type": "text",
+      "id": "headingg",
+      "label": "enter heading here",
+      "default": "video section"
+    }
+    ],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Product Slider",
+        "settings": [
+          {
+            "type": "product",
+            "id": "featured_product",
+            "label": "Select Product"
+          },
+          {
+            "type": "url",
+            "id": "featuredvideo",
+            "label": "Past video url"
+          },
+          {
+            "type": "image_picker",
+            "id": "featuredvideo_thumbnail",
+            "label": "pick thumbnail"
+          },
+          {
+            "type": "text",
+            "id": "video_name",
+            "label": "Enter video name"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "shoppable video Slider",
+		"category": "Product"
+		
+      }
+	]
+  }
+  {% endschema %}

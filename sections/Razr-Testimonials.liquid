@@ -1,0 +1,92 @@
+<style>
+  .ing-cont {text-align: center;}
+  .ing-cont h2 {font-size: 21px;font-weight: 600}
+  .ing-cont p {font-size: 16px;text-align:center;}
+  .ing-1 img{filter:blur(10px)grayscale(1);transform:scale(0.9); border-radius:30px}
+    .ing-1.slick-active img{filter:none; transform:scale(1.1)}
+  .ing-1.slick-active h2{display:block;color:#2e3192}
+  .ing-1.slick-active p{display:block}
+  .ing-1 h2{display:none}
+  .ing-1 p{display:none}
+  .main-ing h2 {font-size: 30px;text-align: center;font-weight: 600;margin: 43px 0;text-transform:capitalize;color:#2e3192}
+  .ing-cont h2{font-size:25px; margin:10px 0 12px 0}
+  .ing-inner{max-width:100%; width:1400px; position:relative;display:block; margin:0 auto}
+  .main-ing{margin-bottom:28px}
+  .ing-1{min-height:433px;padding:14px 0}
+  button.slick-arrow {display: none;}
+  @media(max-width:500px){
+    .ing-cont h2{font-size:15px!important; margin:10px 0 7px 0}
+    .ing-cont p{font-size:14px}
+    .ing-1{min-height:200px;}
+    .main-ing{margin-bottom:0;min-height:216px}
+    .main-ing h2{font-size:24px}
+  }
+</style>
+
+<div class="main-ing">
+  <div class="ing-inner">
+    <div class="ing-slick">
+      {% for block in section.blocks %}
+        <div class="ing-1">
+          <img src="{{ block.settings.ing | img_url:'master' }}" style="width:100%">
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  $('.ing-slick').slick({
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+              centerPadding: '400px',
+              arrows: false,
+              infinite: true,
+              autoplay: true,
+             autoplaySpeed: 2000,
+            responsive: [ {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+              slidesToScroll: 1,
+              centerMode: true,
+              infinite: true,
+              autoplay: true,
+                  arrows: false,
+              centerPadding: '50px'
+                }
+              }]
+            });
+</script>
+{% schema %}
+ {
+   "name": "Razr Testimonials",
+   "settings": [
+     {
+       "type":"text",
+       "id":"cms_head",
+       "label":"enter heading"
+     }
+   ],
+   "blocks": [
+     {
+       "type": "Product",
+       "name": "CMS slider",
+       "settings": [
+         {
+           "type": "image_picker",
+           "id": "ing",
+           "label": "Upload Image"
+         }
+       ]
+     }
+],
+   "presets": [
+  {
+	"name": "Razr Testimonials",
+	"category": "Product"
+
+     }
+]
+ }
+{% endschema %}

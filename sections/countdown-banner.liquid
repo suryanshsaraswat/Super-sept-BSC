@@ -1,0 +1,220 @@
+<style>
+  .dotd_container {
+    background: #fff;
+}
+  .banner_dotd {
+    position: relative;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+  .banner_headingg {
+    position: relative;
+    display: block;
+    max-width: 100%;
+    width: 40%;
+    margin: 0 auto;
+}
+span#count-down {
+    font-weight: 800;
+    margin-left: 6px;
+}
+  .banner_headingg h1 {
+    font-size: 30px;
+    font-weight: 500;
+    color: #0d5ea8;
+    text-align: center;
+}
+  span.dayss, span.hourss, span.minutess, span.secondss {
+    color: #000;
+}
+  .banner_img {
+    background-image: url('https://cdn.shopify.com/s/files/1/0459/6563/9834/files/DOTD_BANNER.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .product-dotd {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 20px auto;
+    justify-content: space-between;
+    align-items: center;
+}
+  .product-img {
+    width: 20%;
+    height:240px
+}
+ .product-heading-dotd{width:36%;font-size:30px;text-align:center;margin-left:34px}
+  .product-img img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: -53px;
+    right: 23px;
+    transform: translate3d(11px, 14px, 56px)rotate3d(7, 2, 1, 11deg);
+}
+  .vertical-line:before {
+    background-color: #000;
+    width: 3px;
+    height: 94px;
+    content: "";
+    position: absolute;
+    top: 78px;
+    transform: translate(31px, -5px);
+}
+  span.disco {
+    font-weight: 600;
+    text-transform: uppercase;}
+
+  @media(max-width:500px){
+    .banner_img {
+    background-image: url(https://cdn.shopify.com/s/files/1/0459/6563/9834/files/DOTD_BANNER.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 100%;
+    height: 104px;
+}
+    .product-dotd {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    margin: 0px auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 0px;
+}
+    product-heading-dotd {
+    width: 36%;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 6px;
+}
+    .vertical-line:before {
+    background-color: #000;
+    width: 1px;
+    height: 68px;
+    content: "";
+    position: absolute;
+    top: 29px;
+    transform: translate(6px, -5px);
+}
+    .banner_headingg h1 {
+    font-size: 13px;
+    font-weight: 500;
+    color: #0d5ea8;
+    text-align: center;
+}
+    .product-img {
+    width: 20%;
+    height: auto;
+}
+    .product-img img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -13px;
+    right: 8px;
+    transform: translate3d(11px, 14px, 56px)rotate3d(7, 2, 1, 11deg);
+}
+    .product-heading-dotd {
+    width: 36%;
+    font-size: 13px;
+    text-align: center;
+    margin-left: 4px;
+}
+  }
+</style>
+{% assign countdownTimer = section.settings.date_picker %}
+<div class="dotd_container">
+  <div class="banner_dotd">
+    <div class="dotd_banner">
+      {% for block in section.blocks %}
+        {%- assign productt = all_products[block.settings.featured_product_dotd] -%}
+        {% assign current_variant = productt.selected_or_first_available_variant %}
+    <a href="{{ productt.url }}"><div class="banner_img">
+        <div class="product-dotd">
+          <div class="product-heading-dotd">
+            Deal of the Day upto <span class="disco">{{ productt.compare_at_price | minus: productt.price | times: 100 | divided_by: productt.compare_at_price | replace: '0,', ''| append: "%"}} off</span> is here.
+          </div>
+          <div class="vertical-line"></div>
+          <div class="banner_headingg">
+            <h1>Ending in<span id="count-down">{{ section.settings.date_picker }}</span></h1>
+          </div>
+          <div class="product-img">
+            <img src="{{ block.settings.pr_img  | img_url:"master" }}" alt="product image">
+          </div>
+        </div>
+    </div></a>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+<script>
+  var countDown = 'countdownTimer';
+  var remainingTime = new Date(countDown).getTime() - currentDate.getTime();
+  var days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+  document.getElementById('count-down').innerHTML = days + ' days ' + hours + ' hours ' + minutes + ' minutes ' + seconds + ' seconds';
+</script>
+<script>
+   var countDownDate = new Date("{{section.settings.date_picker |  date: "%Y-%m-%dT%H:%M:%S" }}").getTime();
+		var x = setInterval(function() {
+		  var now = new Date().getTime();
+		  var distance = countDownDate - now;
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		  document.getElementById("count-down").innerHTML =  '<span class="hourss">' + hours + 'Hours : </span> <span class="minutess">' + minutes + 'Mins : </span> <span class="secondss">' + seconds + 'Sec</span>';
+		  if (distance < 0) {
+		    clearInterval(x);
+		    document.getElementById("count-down").innerHTML = "Countdown finished!";
+		  }
+		}, 1000); 
+</script>
+{% schema %}
+  {
+    "name": "Deal of the day",
+    "settings": [
+      {
+        "type": "text",
+        "id": "date_picker",
+        "label": "Choose date",
+        "info": "e.g. dd-mm-yyyy"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"testimnoials",
+        "name":"DOTD bannner",
+        "settings":[
+          {
+            "type": "product",
+            "id": "featured_product_dotd",
+            "label": "Select Product"
+          },
+          {
+            "type":"image_picker",
+            "id":"pr_img",
+            "label":"Select a w-background image of the product"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "category":"product",
+        "name":"Deal of the day"
+      }
+    ]
+  }
+{% endschema %}

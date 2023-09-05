@@ -1,0 +1,45 @@
+<style>
+  .youtube-vid{max-width:100%;width:1200px;min-height:500px;margin:0 auto}
+  .youtube-vid iframe{height:500px;border-radius:10px;-webkit-box-shadow:-1px 31px 5px -23px #ddd;-moz-box-shadow:-1px 31px 5px -23px #ddd;box-shadow:-1px 31px 5px -23px #ddd}
+  @media(max-width:500px){
+    .youtube-vid {width: 500px;padding: 10px;min-height:220px}
+    .youtube-vid iframe{height:215px}
+  }
+</style>
+<div class="youtube-vid">
+  {% for block in section.blocks %}
+  <iframe width="100%" height="450" src="https://www.youtube.com/embed/{{ block.settings.video_id }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+{% endfor %}
+
+{% schema %}
+  {
+      "name": "Youtube Video",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "Video Block",
+        "settings": [
+          {
+            "type": "text",
+            "id": "video_id",
+            "label": "Enter youtube video id"
+          },
+          {
+            "type":"url",
+            "id": "video_url",
+            "label": "enter youtube video embed url"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "Youtube Video",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

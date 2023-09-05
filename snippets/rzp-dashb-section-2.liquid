@@ -1,0 +1,86 @@
+<style>
+  .rzp-dasb-section-2-main {
+    max-width: 100%;
+    background-color: #70F3FF;
+  }
+  .zrp-flex-main {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .main-1-flex {
+    width: 40%;
+  }
+  .main-2-flex {
+    width: 40%;
+  }
+  .main-2-flex h2 {
+    font-size: 19px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    line-height: 21px;
+  }
+  .back-g {
+    position: relative;
+  }
+  span#number-rzor {
+    position: absolute;
+    top: 31px;
+    left: 38px;
+    font-size: 35px;
+    font-weight: 800;
+    font-family: Roboto, sans-serif;
+  }
+  .main-2-flex p {
+    font-size: 10px;
+    margin-top: -14px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+  }
+  .main-2-flex p span {
+    font-style: italic;
+  }
+</style>
+<div class="rzp-dasb-section-2-main">
+  <div class="zrp-flex-main">
+    <div class="main-1-flex">
+      <div class="back-g">
+        <h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_53.png?v=1693589412"></h2>
+        <span id="number-rzor">0</span>
+      </div>
+    </div>
+    <div class="main-2-flex">
+      <h2>all india<br>
+        razorpreneur <br>
+        super tally</h2>
+      <p>Last updated on
+        <span>1<sup>st</sup>
+          Sept 2023</span>
+      </p>
+    </div>
+  </div>
+</div>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counter = document.getElementById("number-rzor");
+    const target = 1200;
+    const duration = 3000;
+    const interval = 20;
+    const step = (target / duration) * interval;
+
+    let currentCount = 0;
+
+    const updateCounter = () => {
+      currentCount += step;
+      if (currentCount >= target) {
+        currentCount = target;
+        clearInterval(counterInterval);
+      }
+      counter.textContent = Math.floor(currentCount);
+    };
+
+    const counterInterval = setInterval(updateCounter, interval);
+  });
+</script>

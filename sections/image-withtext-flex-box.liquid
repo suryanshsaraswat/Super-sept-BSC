@@ -1,0 +1,84 @@
+{% comment %} ^^CSS CODE START^^ {% endcomment %}
+<style>
+  .headingg {border-bottom: 2px solid #ddd;}
+  .heading-fine {display: flex;align-items: center;}
+  .heading-fine-img {width: 50%;}
+  .heading-fine-text {width: 50%;padding-left: 30px;}
+  .heading-fine-text h2 {font-size: 60px;font-weight: 700;margin: 0;color: #b2b2b2;font-family:lato;}
+  .heading-fine-text h3 {font-size: 25px;margin-top: -26px;letter-spacing: 3.5px;font-weight: 500;font-family:lato;}
+  p.del-tx {text-align: center;font-size: 30px;max-width:100%;width: 600px;margin: 21px auto;font-family:lato;}
+
+ @media(min-width:500px) and (max-width:993px){
+   .heading-fine-text h2 {font-size: 40px;}
+  .heading-fine-text h3 {font-size: 18px;} 
+ } 
+  @media(min-width:993px) and (max-width:1235px){
+    .heading-fine-text h2 {font-size: 50px;}
+  .heading-fine-text h3 {font-size: 28px;} 
+  }
+  @media(max-width:500px){
+    .heading-fine{flex-flow:wrap-reverse}
+    .heading-fine-img {width: 100%;}
+  .heading-fine-text {width: 100%;padding-left:0;margin-bottom:20px}
+    .heading-fine-text h3 {font-size: 18px;margin-top: -15px;text-align: center;letter-spacing: 3px;}
+    .heading-fine-text h2 {font-size: 37px;text-align: center;font-weight: 500;margin-top: 18px;} 
+    .headingg {border-bottom: 1px solid #d2d2d2;}
+    p.del-tx {text-align: center;font-size: 18px;max-width: 100%;width: 370px;margin: 21px auto;}
+  }
+</style>
+{% comment %} ^^HTML CODE START^^ {% endcomment %}
+
+<div class="headingg">
+  {%- for block in section.blocks -%}
+  <div class="heading-fine">
+    <div class="heading-fine-img">
+      <img src="{{ block.settings.featured_image_flex | img_url:'master' }}" style="width:100% height:auto">
+    </div>
+    <div class="heading-fine-text">
+      <h2>{{ block.settings.heading-1 }}</h2>
+      <h3>{{ block.settings.heading-2 }}</h3>
+    </div>
+    {% endfor %}
+  </div>
+  <p class="del-tx">Delight your loved ones with our thoughtful collection of elegant gift sets.</p>
+</div>
+
+<script>$(".heading-fine-img").click(function() {
+    window.scrollTo({top: 400, behavior: 'smooth'});
+});</script>
+{% schema %}
+  {
+    "name": "Image with text flex-box",
+    "settings": [],
+    "blocks": [
+      {
+        "type": "Product",
+        "name": "image with text block",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "featured_image_flex",
+            "label": "Upload Image"
+          },
+          {
+            "type": "text",
+            "id": "heading-1",
+            "label": "Heading 1"
+          },
+          {
+            "type": "text",
+            "id": "heading-2",
+            "label": "Heading 2"
+          }
+        ]
+      }
+	],
+    "presets": [
+	  {
+		"name": "Image with text flex-box",
+		"category": "Product"
+		
+      }
+	]
+  }
+{% endschema %}

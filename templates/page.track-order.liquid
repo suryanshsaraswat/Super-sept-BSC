@@ -1,0 +1,244 @@
+
+
+<style>
+  .vfy_order_status_section {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px 15px;
+  max-width: 1170px;
+  font-family: sans-serif;
+  }
+
+  .vfy_order_status_form_inner {
+  max-width: 480px;
+  background: transparent;
+  padding: 10px;
+  margin: 0 auto;
+  }
+
+  .vfy_order_status_form-group {
+  margin-bottom: 10px
+  }
+
+  .vfy_order_status_title {
+  font-size: 24px;
+  line-height: inherit;
+  margin-bottom: 30px;
+  }
+
+  .vfy_order_status_input {
+  padding: 12px 10px;
+  width: 100%;
+  margin: 10px 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  border: 1px solid #c3d0db;
+  border-radius: 2px;
+  -webkit-appearance: none;
+  max-width: 100%;
+  line-height: 1.2;
+  }
+
+  .vfy_order_status_inpt_label {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  }
+
+  .vfy_order_track_btn {
+  background: #2f2f30;
+  border-radius: 2px;
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  border:none !important;
+  padding: 10px 20px !important;
+  text-decoration: none;
+  transition: background 80ms linear, opacity 1s linear;
+  white-space: nowrap;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  }
+  .vfy_order_track_btn:hover{
+  color:#fff;
+  opacity: 8;
+  }
+
+  .vfy_order_table {
+  margin-top: 25px;
+  margin-bottom: 10px;
+  }
+
+  .vfy_order_table .vfy_back_btn {
+  float: right;
+  margin-bottom: 10px;
+  border-bottom:none !important;
+  }
+  .vfy_order_table .vfy_back_btn:hover{
+  color:#fff !important;
+  }
+
+  .vfy_order_table .vfy_order_id {
+  padding-bottom: 10px;
+  margin-bottom: 0;
+  display: contents;
+  }
+
+  .vfy_order_table .vfy_table {
+  width: 100%;
+  table-layout: auto;
+  }
+
+  .vfy_order_table table tr th {
+  font-weight: 700;
+  min-width: 150px;
+  }
+
+  .vfy_order_table table tr td {
+  font-weight: 400;
+  word-break: break-all;
+  font-size: 16px;
+  }
+
+  .vfy_order_table table,
+  th,
+  td {
+  border: 1px solid #c3d0db;
+  padding: 10px 20px;
+  text-align: left;
+  font-family: sans-serif;
+  border-collapse: collapse;
+  font-size: 16px;
+  font-style: normal;
+  }
+
+  @media only screen and (min-width:200px) and (max-width:480px) {
+  .vfy_order_status_form_inner {
+  max-width: 100%!important;
+  }
+  }
+  .vfy_order_status_section{
+  color: #707271;
+  background-color: #ffffff;
+  }
+  .vfy-loader {
+  border: 2px solid #f3f3f3;
+  border-top: 2px solid #0e1113;
+  border-radius: 50%;
+  width: 13px;
+  height: 13px;
+  animation: spin 2s linear infinite;
+  display: none;
+  }
+
+  @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+  }
+  .vfy_order_track_btn{cursor: pointer;}
+
+</style>
+
+<div class="vfy_order_status_section" id="villefy_login_page">
+  <div class="vfy_order_status_form_inner">
+    <div class="vfy_order_status_title">Track Order</div>
+    <form id="vfy_order_status_form" method="post" action="/order/check">
+      <div class="vfy_order_status_form-group"><label for="vfy_order_status_no" class="vfy_order_status_inpt_label">Order ID</label> <input id="vfy_order_status_no" class="vfy_order_status_input" type="text" name="order" placeholder="BSC200xxxxxx" required="" /></div>
+      <div class="vfy_order_status_form-group"><label for="vfy_order_status_email" class="vfy_order_status_inpt_label">Email</label> <input id="vfy_order_status_email" class="vfy_order_status_input" type="text" name="email" placeholder="your-email@example.com" required="" /></div>
+      <div class="vfy-loader"></div>
+      <button id="vfy_order_status_button" class="vfy_order_track_btn" type="button" style="color: #ffffff; background-color: #51c2ca;"> Submit</button> <input type="hidden" name="shop_name" value="bombay-shaving" /> <input type="hidden" name="required_input" value="order_id_and_email" /> <input type="hidden" name="display_order_details_page" value="shopify_page" /></form>
+    <div id="vfy_error_message" style="padding: 10px 0px; color: red;"></div>
+  </div>
+</div>
+<script>// <![CDATA[
+  $(function() {
+    $('input').keyup(function() {
+      this.value = this.value.toLowerCase();
+    });
+  });
+
+  function loadjQuery(e,a){var t=document.createElement("script");t.src=e;var d=document.getElementsByTagName("head")[0],n=!1;d.appendChild(t),t.onload=t.onreadystatechange=function(){n||this.readyState&&"loaded"!=this.readyState&&"complete"!=this.readyState||(n=!0,a(),t.onload=t.onreadystatechange=null,d.removeChild(t))}}
+  var villefy = {};
+
+  villefy.checkOrder = function(v_data)
+  {
+    jQuery.get("https://order-status.villefy.com/order/check", v_data, function(data, status){},"jsonp");
+  };
+
+  villefy.response_order = function(data)
+  {
+    jQuery(".vfy-loader").hide();
+
+    if(data.status ==200)
+    {
+      if(data.type!= 'undefined' && data.type=='redirect')
+      {
+        location.href = data.view;
+      }
+      else
+      {
+        var login_page = jQuery("#villefy_login_page");
+        login_page.hide();
+        login_page.after(data.view);
+      }
+    }
+    else{
+      jQuery("#vfy_error_message").html(data.error_message);
+    }
+  };
+
+
+  villefy.manageForm = function()
+  {
+    jQuery(document).on("click touchstart tap", "#vfy_order_status_button", function(e)
+                        {
+      var is_valid=1;
+
+      if(jQuery("#vfy_order_status_no").val()==""){
+        is_valid=0;
+      }
+
+      if(jQuery("input[name=required_input]").val()=="order_id_and_email"){
+        if(jQuery("#vfy_order_status_email").val()==""){
+          is_valid=0;
+        }
+      }
+
+      if(is_valid==1) {
+
+        jQuery("#vfy_error_message").html("");
+
+        jQuery(".vfy-loader").css("display", "inline-block");
+
+        var v_data = jQuery("#vfy_order_status_form").serializeArray();
+
+        villefy.checkOrder(v_data);
+      }
+      else{
+        jQuery("#vfy_error_message").html("Please enter order details");
+      }
+    });
+
+    jQuery(document).on("click", ".vfy_back_btn", function(){
+      jQuery("#vfy_order_details_page").hide();
+      jQuery("#villefy_login_page").show();
+    });
+  };
+
+
+
+  if (typeof jQuery == 'undefined'){
+
+    loadjQuery('http://code.jquery.com/jquery-1.10.2.min.js', function() {
+      villefy.manageForm();
+    });
+  } else {
+    villefy.manageForm();
+  }
+  // ]]>
+</script>

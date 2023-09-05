@@ -1,0 +1,18 @@
+<style>
+  .bottom-bar{display:none}
+
+  @media(max-width:480px){
+    .bottom-bar{position:fixed;width:100%;background:#fff;bottom:0;left:0;text-align:center;display:flex;flex-flow:wrap;align-items:center;justify-content:center;z-index:9;padding:7px 0 2px;box-shadow:0 0 12px 0 #ccc;border-radius:20px 20px 0 0}
+.bottom-bar a{width:25%;padding:0 5px;font-weight:500;text-transform:uppercase;letter-spacing:1px;font-size:11px}
+.bottom-bar a img{display:block;margin:0 auto 4px;width:25px}
+.accn{display:none}
+    #launcher{display:none!important}
+  }
+</style>
+
+<div class="bottom-bar">
+  <a href="https://bombayshavingcompany.com/account#storeCredit"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/star.png?v=1686748514" width="30">Rewards</a>
+  <a href="/account"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/account.png?v=1673941638" width="30">{% if customer.first_name %}{{ customer.first_name }}{% else %}Account{% endif %}</a>
+  <a class="annn" href="#"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/price-tag.png?v=1673941638" width="30">Offers</a>
+<!--   <a href="{% if template.name == 'product' %}https://api.whatsapp.com/send/?phone=917303488233&text=Hey! I would like to know about {{ product.title }}{% else %}https://api.whatsapp.com/send/?phone=917303488233&text=Hi Bombay Shaving Company, I need some help{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/whatsapp_9b1d732f-face-477b-9642-d6d27a838648.png?v=1673941638" width="30">Help</a> -->
+</div>

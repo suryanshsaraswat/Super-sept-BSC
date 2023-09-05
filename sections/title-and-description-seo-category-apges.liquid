@@ -1,0 +1,63 @@
+<style>
+  .seo-title{max-width:100%; width:1200px;position:relative; margin: 0 auto}
+  .seo-title p {font-size: 15px;text-align: left;padding: 0 16px;margin-top: -11px;}
+  .seo-title h1 {    position: relative;
+    margin: 1.5em 0 0.9em;
+    font-size: 28px;
+    line-height: 1.2;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;}
+  .seo-title h1:before {
+    margin-left: calc(-50% - 14px);
+}
+ .seo-title h1:before, .seo-title h1:after {
+    position: absolute;
+    top: 50%;
+    content: '';
+    width: 50%;
+    height: 2px;
+    display: inline-block;
+    background: #303030;
+}
+  @media(max-width:500px){
+    .seo-title h1{font-size:18px};
+    .seo-title p{font-sized:13px}
+  }
+</style>
+{% for block in section.blocks %}
+<div class="seo-title">
+  <h1>{{ block.settings.s_title_hone }}</h1>
+  <p>{{ block.settings.s_desc_hone }}</p>
+</div>
+  {% endfor %}
+{% schema %}
+  {
+    "name": "Title And Description",
+    "settings": [],
+    "blocks":[
+      {
+        "type":"text",
+        "name":"heading block",
+        "settings":[
+          {
+            "type":"text",
+            "id":"s_title_hone",
+            "label":"Enter title"
+          },
+          {
+            "type":"text",
+            "id":"s_desc_hone",
+            "label":"Enter Description"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "category":"collection",
+        "name":"Title And Description"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,230 @@
+<style>
+
+  li.player img {
+    width: 15% !important;
+    position: absolute;
+    left: -13px;
+    top: -5px;
+  }
+  li.player {
+    padding: 10px 16px;
+    border-radius: 10px;
+    position: relative;
+    font-weight: 500;
+    display: flex;
+    max-width: 100%;
+    margin: 17px 22px;
+    justify-content: space-between;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+  }
+  span#lb-name {
+    width: 50%;
+    padding-left: 37px;
+  }
+  .main-leaderboard {
+    max-width: 100%;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Roboto, sans-serif;
+  }
+  h2.ldb-heading {
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+  }
+  .p-1 {
+    background: rgb(255, 17, 46);
+    background: linear-gradient(90deg, rgba(255,17,46,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-2 {
+    background: rgb(33, 225, 243);
+    background: linear-gradient(90deg, rgba(33,225,243,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-3 {
+    background: rgb(254, 206, 64);
+    background: linear-gradient(90deg, rgba(254,206,64,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-4 {
+    background: rgb(255, 188, 17);
+    background: linear-gradient(90deg, rgba(255,188,17,0.9150253851540616) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-5 {
+    background: rgb(255, 160, 17);
+    background: linear-gradient(90deg, rgba(255,160,17,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-6 {
+    background: rgb(255, 131, 17);
+    background: linear-gradient(90deg, rgba(255,131,17,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-7 {
+    background: rgb(255, 74, 17);
+    background: linear-gradient(90deg, rgba(255,74,17,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-8 {
+    background: rgb(255, 17, 46);
+    background: linear-gradient(90deg, rgba(255,17,46,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-9 {
+    background: rgb(255, 17, 103);
+    background: linear-gradient(90deg, rgba(255,17,103,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .p-10 {
+    background: rgb(209, 28, 159);
+    background: linear-gradient(90deg, rgba(209,28,159,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  a.ldb {
+    margin: 0 auto 19px;
+    background: #fece40;
+  }
+  p.last-para {
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    line-height: 17px;
+  }
+  .main-leaderboard p span#last-updated {
+    font-size: 11px;
+    color: #717070;
+    font-weight: 600;
+    font-family: Roboto, sans-serif;
+    font-style: italic;
+    padding-right: 10px
+  }
+</style>
+<div class="main-leaderboard">
+  <h2 class="ldb-heading">TOP 10 Razorpreneurs</h2>
+  <ul id="leaderboard-list"></ul>
+  <p style="text-align:right; margin-top:-15px; margin-bottom:10px">
+    <span id="last-updated"></span>
+  </p>
+  <p class="last-para">Not in the top 10 yet?<br>increase your chances by buying more razors</p>
+  <a href="/pages/razorpreneur-dashboard#buy-more" class="rzp-dashb-button buy-more Button Button-primary ldb">BUY MORE</a>
+</div>
+
+{% comment %} <script>
+var jsonData = [
+{
+"ranking": 1,
+"name": "Sunita Sharma",
+"city": "Delhi",
+"razorsSold": 800
+},
+{
+"ranking": 2,
+"name": "Rajesh Kumar",
+"city": "Mumbai",
+"razorsSold": 750
+},
+{
+"ranking": 3,
+"name": "Priya Patel",
+"city": "Ahmedabad",
+"razorsSold": 720
+},
+{
+"ranking": 4,
+"name": "Amit Singh",
+"city": "Bangalore",
+"razorsSold": 680
+}, {
+"ranking": 5,
+"name": "Anjali Gupta",
+"city": "Kolkata",
+"razorsSold": 650
+}, {
+"ranking": 6,
+"name": "Vishal Reddy",
+"city": "Hyderabad",
+"razorsSold": 620
+}, {
+"ranking": 7,
+"name": "Neha Verma",
+"city": "Chennai",
+"razorsSold": 590
+}, {
+"ranking": 8,
+"name": "Alok Yadav",
+"city": "Pune",
+"razorsSold": 560
+}, {
+"ranking": 9,
+"name": "Meena Gupta",
+"city": "Jaipur",
+"razorsSold": 530
+}, {
+"ranking": 10,
+"name": "Sanjay Sharma",
+"city": "Lucknow",
+"razorsSold": 500
+}
+];
+
+// Function to populate the leaderboard
+function populateLeaderboard(data) {
+var leaderboardList = $("#leaderboard-list");
+
+// Iterate over the JSON data and create list items
+$.each(data, function(index, player) {
+var listItem = $("<li>").addClass("player p-" + player.ranking);
+listItem.append("<img src='https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_54.png?v=1693591172' style='width:100%; height:auto'>");
+listItem.append("<span id='lb-name'>" + player.name + "</span>");
+listItem.append("<span id='lb-city'>" + player.city + "</span>");
+listItem.append("<span id='lb-razors-sold'>" + player.razorsSold + "</span>");
+
+leaderboardList.append(listItem);
+});
+}
+
+// Call the function to populate the leaderboard
+populateLeaderboard(jsonData);
+</script> {% endcomment %}<script>
+  $(document).ready(function() {
+
+// Function to fetch and update leaderboard data
+    function updateLeaderboard() {
+      const googleSheetsURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vSmKY07e-EQkr6VxMsVNE0T4Zyb7GtMBWTfxSR572nRHKwkGXg2e5ihuSUs0pvY19szxC5S2dVTPMRt/pubhtml'; // Replace with your URL
+      const leaderboardList = $('#leaderboard-list');
+      const lastUpdatedElement = $('#last-updated');
+
+      $.get(googleSheetsURL, function(data) {
+        const leaderboardData = parseGoogleSheetsData(data);
+        leaderboardList.empty();
+        leaderboardData.forEach(function(player) {
+          const listItem = $("<li>").addClass("player p-" + player.rank);
+          listItem.append("<img src='https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_54.png?v=1693591172' style='width:100%; height:auto'>");
+          listItem.append("<span id='lb-name'>" + player.name + "</span>");
+          listItem.append("<span id='lb-city'>" + player.city + "</span>");
+          listItem.append("<span id='lb-razors-sold'>" + player.razorsSold + "</span>");
+
+          leaderboardList.append(listItem);
+        });
+        const currentTime = new Date();
+        const formattedTime = currentTime.toLocaleString();
+        lastUpdatedElement.text('Last Updated: ' + formattedTime);
+      });
+    }
+    updateLeaderboard();
+
+// setInterval(updateLeaderboard, 3600000);
+  });
+  function parseGoogleSheetsData(data) {
+    const leaderboardData = [];
+    const tableRows = $(data).find('table tr');
+
+    for (let i = 1; i <= 10; i++) {
+      const columns = $(tableRows[i]).find('td');
+      const rank = parseInt($(columns[0]).text().trim());
+      const name = $(columns[1]).text().trim();
+      const city = $(columns[2]).text().trim();
+      const razorsSold = parseInt($(columns[3]).text().trim());
+
+      leaderboardData.push({rank, name, city, razorsSold});
+    }
+
+    return leaderboardData;
+  }
+</script>

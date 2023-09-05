@@ -1,0 +1,34 @@
+<div class="{% if section.settings.include_margins %}Container{% endif %} {% if section.settings.evm_widgets %} evm-main-Container{% endif %}">
+  {%- for block in section.blocks -%}
+    {%- render block -%}
+  {%- endfor -%}
+</div>
+
+{% schema %}
+{
+  "name": "Apps",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "include_margins",
+      "label": "Include margins",
+      "default": true
+    },{
+      "type": "checkbox",
+      "id": "evm_widgets",
+      "label": "Evm widgets padding",
+      "default": false
+    }
+  ],
+  "blocks": [
+    {
+      "type": "@app"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Apps"
+    }
+  ]
+}
+{% endschema %}

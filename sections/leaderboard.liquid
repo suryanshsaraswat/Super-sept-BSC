@@ -1,0 +1,55 @@
+<div>mfk</div>
+<div id="gbg" class="nuts"></div>
+<script>
+ // var settings = {
+ //   "url": "http://apis.bombayshavingcompany.com/index.php/Api/getleaderboard",
+ //   "method": "GET",
+ //   "timeout": 0,
+ //   "headers": {
+ //     "Cookie": "ci_session=1ah3h5hkcn7hrgr1shkkc5g33atmmbdl"
+ //   },
+ // };
+
+ // $.ajax(settings).done(function (response) {
+ //   console.log(response);
+ // });
+
+     $(function() {
+        $.ajax({
+        url: "http://apis.bombayshavingcompany.com/revenue/",
+        method: "GET",
+        timeout: 0,
+        headers: {"Cookie": "ci_session=1ah3h5hkcn7hrgr1shkkc5g33atmmbdl"},
+        dataType: "json",
+        success: function(data) {
+            var str = "";          
+           for(var i= 0; i < data.length; i++){
+
+             str += '<span class="marquee__text">' + data[i].Customer + ', ' + data[i].City + ' Spent Rs. ' + data[i].Revenue + '</span>';
+           }
+          console.log(data)
+          $(".nuts").html(str);
+        }
+        });
+    });
+  
+</script>
+
+{% schema %}
+  {
+    "name": "Leaderboard",
+    "settings": [],
+    "presets": [
+          {
+            "name": "Leaderboard",
+            "category": "image"
+          }
+        ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

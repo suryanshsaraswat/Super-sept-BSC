@@ -1,0 +1,111 @@
+{% if content_for_layout contains 'data-step="contact_information"' %}
+<ul class="bc">
+  <a href="/cart">
+    <li class="bc_item bc_complete">Cart</li>
+  </a>
+  <li class="bc_item bc_current">Customer Information</li>
+  <li class="bc_item">Shipping Method</li>
+  <li class="bc_item">Payment Method</li>
+</ul>
+
+{% elsif content_for_layout contains 'data-step="shipping_method"' %}
+<ul class="bc">
+  <a href="/cart">
+    <li class="bc_item bc_complete">Cart</li>
+  </a> 
+  <a href="/cart/checkout?step=contact_information">
+    <li class="bc_item bc_complete">Customer Information</li>
+  </a>
+  <li class="bc_item bc_current">Shipping Method</li>
+  <li class="bc_item">Payment Method</li>
+</ul>
+
+{% elsif content_for_layout contains 'data-step="payment_method"' %}
+<ul class="bc">
+  <a href="/cart">
+    <li class="bc_item bc_complete">Cart</li>
+  </a>
+  <a href="/cart/checkout?step=contact_information">
+    <li class="bc_item bc_complete">Customer Information</li>
+  </a>
+  <a href="/cart/checkout?step=shipping_method">
+    <li class="bc_item bc_complete">Shipping Method</li>
+  </a>
+  <li class="bc_item bc_current">Payment Method</li>
+</ul>
+
+{% elsif content_for_layout contains 'data-step="review"' %}
+<ul class="bc">
+  <a href="/cart">
+    <li class="bc_item bc_complete">Cart</li>
+  </a>
+  <a href="/cart/checkout?step=contact_information">
+    <li class="bc_item bc_complete">Customer Information</li>
+  </a>
+  <a href="/cart/checkout?step=shipping_method">
+    <li class="bc_item bc_complete">Shipping Method</li>
+  </a>
+  <a href="/cart/checkout?step=payment_method">
+    <li class="bc_item bc_complete">Payment Method</li>
+  </a>
+</ul>
+{% endif %}
+
+{% assign background = '#FDFBF1' %}
+{% assign green = '#313E2E' %}
+{% assign orange = '#ff692e' %}
+        
+{% style %}
+
+  .bc {
+    margin: 15px 0 0;
+    padding: 0px;
+    list-style-type: none;
+    width: 100%;
+    max-width: 800px;
+    height: 120px;
+    counter-reset: breadcrumb;
+    position: relative;
+  }
+  .bc:before {
+    position: absolute;
+    top: 23px;
+    left: 12.5%;
+    content: '';
+    width: 75%;
+    height: 1px;
+    background: {{ green }};
+  }
+  .bc .bc_item {
+    float: left;
+    padding-top: 60px;
+    width: 25%;
+    text-align: center;
+    position: relative;
+  }
+  .bc .bc_item:after {
+    counter-increment: breadcrumb;
+    content: counter(breadcrumb);
+    position: absolute;
+    top: 0px;
+    left: calc(50% - 23px);
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: 3px solid {{ green }};
+    border-radius: 50%;
+    line-height: 40px;
+    background: {{ background }};
+  }
+  .bc .bc_current:after {
+    background: {{ orange }};
+    border-color: {{ orange }};
+    color: white;
+  }
+
+  .bc .bc_complete:after {
+    background: {{ green }};
+    color: white;
+  }
+
+{% endstyle %}

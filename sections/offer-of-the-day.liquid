@@ -1,0 +1,37 @@
+<div class="offer of the day"
+{% schema %}
+{
+   "name": "Offer of the day",
+   "settings": [],
+   "blocks": [
+     {
+       "type": "Product",
+       "name": "Offer Block",
+       "settings": [
+         {
+          "type": "image_picker",
+          "id": "offerimage",
+          "label": "select offer image"
+        },
+        {
+          "type": "richtext",
+          "id":"offerdetails",
+          "label":"enter details"
+        },
+        {
+          "type":"text",
+          "id": "heading",
+          "label": "enter heading"
+        }
+       ]
+     }
+],
+   "presets": [
+  {
+	"name": "Offer of the day",
+	"category": "Product"
+
+     }
+]
+ }
+{% endschema %}

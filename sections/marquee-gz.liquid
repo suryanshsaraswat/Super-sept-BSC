@@ -1,0 +1,82 @@
+<style>
+  span.marquee__text {
+    font-size: 24px;
+    letter-spacing: 1px;
+    word-spacing: 4px;
+    font-weight: 500;
+}
+.marquee__wrapper{white-space:nowrap;overflow:hidden;background: rgb(7,25,58);
+background: linear-gradient(98deg, rgba(7,25,58,1) 10%, rgba(3,103,96,1) 47%);width: 100%; color: #fff;text-transform:uppercase;padding:26px 0}
+  .marquee{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
+  .marquee__inner{-webkit-animation:marquee-data-v-2d2501c6 30s linear infinite;animation:marquee-data-v-2d2501c6 30s linear infinite}
+  .marquee__text{display:inline-block;margin-right:5.3em;font-size:15px; font-weight:600}
+  
+  @keyframes marquee-data-v-2d2501c6 {
+    0%{-webkit-transform:translateX(0);transform:translateX(0)}
+    100%{-webkit-transform:translateX(-100%);transform:translateX(-100%)}
+  }
+  @media(max-width:480px){
+  span.marquee__text {
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 2px;
+    font-weight: 500;
+    margin-right:3.3em;
+}
+    .marquee__wrapper{
+      padding:11px 0;
+      
+    }
+  }
+  .marquee__text:nth-child(1){
+    background-image: url("https://cdn.shopify.com/s/files/1/0459/6563/9834/files/winner.png?v=1663570825");
+    
+  }
+</style>
+<div style="display:none" id="marq" data-v-2d2501c6="" class="marquee__wrapper marquee__wrapper-theme--default"><div data-v-2d2501c6="" class="marquee">
+    <div data-v-2d2501c6="" class="marquee__inner">
+    </div>
+  <div data-v-2d2501c6="" class="marquee__inner">
+    </div>
+  <div data-v-2d2501c6="" class="marquee__inner">
+    </div>
+   </div>
+</div>
+
+<script>
+  $(function() {
+        $.ajax({
+        url: "http://apis.bombayshavingcompany.com/revenue/",
+        method: "GET",
+        timeout: 0,
+        headers: {"Cookie": "ci_session=1ah3h5hkcn7hrgr1shkkc5g33atmmbdl"},
+        dataType: "json",
+        success: function(data) {
+            var str = "";          
+           for(var i= 0; i < data.length; i++){
+
+             str += '<span class="marquee__text">' + (i+1) + '. ' + data[i].Customer + ', ' + data[i].City + ' Spent Rs. ' + Math.round(data[i].Revenue) + '</span>';
+           }
+          console.log(data)
+          $(".marquee__inner").html(str);
+          $("#marq").show();
+        }
+        });
+    });
+</script>
+
+{% schema %}
+   {
+    "name": "marquee",
+    "settings": [],
+    
+	"presets": [
+        {
+          "category": "Product",
+          "name": "Marquee"
+          
+          
+        }
+      ]
+  }
+{% endschema %}

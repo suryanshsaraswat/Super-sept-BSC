@@ -1,0 +1,1758 @@
+{% if customer %}
+  {% if template contains 'login' %}
+  <style>
+    .otp-loader {
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 2s linear infinite;
+      margin:20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    </style>
+    <div class="otp-loader">&nbsp;</div>
+    {% endif %}
+    <script>
+      if(location.hash.indexOf("#ref=gokwik")  != -1 ){
+        window.addEventListener("load", (event) => {
+          setTimeout(function(){
+            window.gokwikSdk.initCheckout(merchantInfo);
+          }, 4000);
+        });
+      }
+    
+      if(location.hash.indexOf("#razor=page") != -1 ){
+        {% if customer.tags contains 'Razorpreneur' %}
+          setTimeout(function(){
+            const element = document.getElementById("buy-section-2");
+            if(element){
+              element.scrollIntoView({behavior: "smooth"});
+            }
+          }, 2000);
+        {% else %}
+          location.href = "/account";
+        {% endif %}
+      }
+    </script>
+{% else %}
+  <style>
+    .simply-otp-wrapper {
+      display: block;
+      
+    }
+    .otp-loader {
+      border: 16px solid #f3f3f3; /* Light grey */
+      border-top: 16px solid #3498db; /* Blue */
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      animation: spin 2s linear infinite;
+      margin:20px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .template-login .custom_field.university {
+    display: none;
+}
+
+.template-login .custom_field.college_student {
+    display: none;
+}
+
+    .template-login .additional_email {
+    display: none;
+}
+  </style>
+
+  <div id="sotp-widget" class="sotp-widget otp-loader">&nbsp;</div>
+  <div id="otp-original-login" style="display:none">
+    {%- form 'customer_login', name: 'login', class: 'sotp-form', id: 'sotp-form' -%}
+      <input
+        type="email"
+        id="otp-original-email"
+        name="customer[email]">
+      <input
+        type="password"
+        id="otp-original-password"
+        name="customer[password]">
+      <input
+        type="hidden"
+        name="return_to"
+        id="otp-return_to">
+      <button type="submit" id="otp-original-submit">Login</button>
+    {%- endform -%}
+  </div>
+  <div id="recaptcha-container"></div>
+  {{ 'otp-login.css' | asset_url | stylesheet_tag }}	
+  <script>
+    window.simplyOtp = window.simplyOtp || {};
+    window.simplyOtp.designMode = 0;
+  window.simplyOtp.wrapperHtml = `
+        <div class="olWrapper" data-selected-country="in" style="--otp-login-btn-color: #1E418E; display: flex;">
+            <div class="ol">
+                
+                
+                <div class="login-box step-box-wrapper" data-active="mobile">
+    <h3 class="login-header">Login with OTP</h3>
+    <p class="login-description">Enter your log in details</p>
+    
+    <div class="login-inputBox additional_email">
+      <input class="olInput" id="dummyemail" placeholder="Email Id" maxlength="" oninput="updateEmail()" type="email" style="
+    font-size: 1em;
+    padding: 18px 5px;
+    box-shadow: none;
+    outline: none;
+    width: 100%;
+    background: transparent;
+    margin: 0;
+    margin-bottom:10px;
+    text-indent: 5px;
+    border: 1px;
+    border: 1px solid #999;
+    border-radius: 30px;
+">
+    </div>
+    <div class="login-inputBox">
+    
+    <div class="input-box-content mobile-no-inner active" data-current="mobile">
+    <div class="country-selector-main">
+    <div class="selected-country">
+    <div class="country-flag-box">
+    <span class="country-flag in"></span>
+    </div>
+    </div>
+    
+    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+    </div>
+    <ul class="country-selector-list" aria-label="List of countries"><li class="active" data-dial-code="91" data-country-code="in">
+        <div class="country-flag-box">
+        <div class="country-flag in"></div>
+        </div>
+        <span class="country-name">India</span>
+        <span class="dial-code">+91</span>
+        </li></ul>
+    <input class="olInput user-name-input" placeholder="Phone number" maxlength="10" name="phone" type="number">
+    </div>
+    
+    <div class="input-box-content email-no-inner" data-current="email">
+    <input class="olInput user-name-input" placeholder="Email Id" maxlength="" name="email" type="email">
+    </div>
+    
+    <div class="input-box-content whatsapp-no-inner" data-current="whatsapp">
+    <div class="country-selector-main">
+    <div class="selected-country">
+    <div class="country-flag-box">
+    <span class="country-flag in"></span>
+    </div>
+    </div>
+    
+    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+    </div>
+    <ul class="country-selector-list" aria-label="List of countries"><li class="" data-dial-code="93" data-country-code="af">
+        <div class="country-flag-box">
+        <div class="country-flag af"></div>
+        </div>
+        <span class="country-name">Afghanistan</span>
+        <span class="dial-code">+93</span>
+        </li><li class="" data-dial-code="355" data-country-code="al">
+        <div class="country-flag-box">
+        <div class="country-flag al"></div>
+        </div>
+        <span class="country-name">Albania</span>
+        <span class="dial-code">+355</span>
+        </li><li class="" data-dial-code="213" data-country-code="dz">
+        <div class="country-flag-box">
+        <div class="country-flag dz"></div>
+        </div>
+        <span class="country-name">Algeria</span>
+        <span class="dial-code">+213</span>
+        </li><li class="" data-dial-code="1684" data-country-code="as">
+        <div class="country-flag-box">
+        <div class="country-flag as"></div>
+        </div>
+        <span class="country-name">American Samoa</span>
+        <span class="dial-code">+1684</span>
+        </li><li class="" data-dial-code="376" data-country-code="ad">
+        <div class="country-flag-box">
+        <div class="country-flag ad"></div>
+        </div>
+        <span class="country-name">Andorra</span>
+        <span class="dial-code">+376</span>
+        </li><li class="" data-dial-code="244" data-country-code="ao">
+        <div class="country-flag-box">
+        <div class="country-flag ao"></div>
+        </div>
+        <span class="country-name">Angola</span>
+        <span class="dial-code">+244</span>
+        </li><li class="" data-dial-code="1268" data-country-code="ag">
+        <div class="country-flag-box">
+        <div class="country-flag ag"></div>
+        </div>
+        <span class="country-name">Antigua and Barbuda</span>
+        <span class="dial-code">+1268</span>
+        </li><li class="" data-dial-code="54" data-country-code="ar">
+        <div class="country-flag-box">
+        <div class="country-flag ar"></div>
+        </div>
+        <span class="country-name">Argentina</span>
+        <span class="dial-code">+54</span>
+        </li><li class="" data-dial-code="374" data-country-code="am">
+        <div class="country-flag-box">
+        <div class="country-flag am"></div>
+        </div>
+        <span class="country-name">Armenia</span>
+        <span class="dial-code">+374</span>
+        </li><li class="" data-dial-code="297" data-country-code="aw">
+        <div class="country-flag-box">
+        <div class="country-flag aw"></div>
+        </div>
+        <span class="country-name">Aruba</span>
+        <span class="dial-code">+297</span>
+        </li><li class="" data-dial-code="61" data-country-code="au">
+        <div class="country-flag-box">
+        <div class="country-flag au"></div>
+        </div>
+        <span class="country-name">Australia</span>
+        <span class="dial-code">+61</span>
+        </li><li class="" data-dial-code="43" data-country-code="at">
+        <div class="country-flag-box">
+        <div class="country-flag at"></div>
+        </div>
+        <span class="country-name">Austria</span>
+        <span class="dial-code">+43</span>
+        </li><li class="" data-dial-code="994" data-country-code="az">
+        <div class="country-flag-box">
+        <div class="country-flag az"></div>
+        </div>
+        <span class="country-name">Azerbaijan</span>
+        <span class="dial-code">+994</span>
+        </li><li class="" data-dial-code="1242" data-country-code="bs">
+        <div class="country-flag-box">
+        <div class="country-flag bs"></div>
+        </div>
+        <span class="country-name">Bahamas</span>
+        <span class="dial-code">+1242</span>
+        </li><li class="" data-dial-code="880" data-country-code="bd">
+        <div class="country-flag-box">
+        <div class="country-flag bd"></div>
+        </div>
+        <span class="country-name">Bangladesh</span>
+        <span class="dial-code">+880</span>
+        </li><li class="" data-dial-code="1246" data-country-code="bb">
+        <div class="country-flag-box">
+        <div class="country-flag bb"></div>
+        </div>
+        <span class="country-name">Barbados</span>
+        <span class="dial-code">+1246</span>
+        </li><li class="" data-dial-code="375" data-country-code="by">
+        <div class="country-flag-box">
+        <div class="country-flag by"></div>
+        </div>
+        <span class="country-name">Belarus</span>
+        <span class="dial-code">+375</span>
+        </li><li class="" data-dial-code="32" data-country-code="be">
+        <div class="country-flag-box">
+        <div class="country-flag be"></div>
+        </div>
+        <span class="country-name">Belgium</span>
+        <span class="dial-code">+32</span>
+        </li><li class="" data-dial-code="501" data-country-code="bz">
+        <div class="country-flag-box">
+        <div class="country-flag bz"></div>
+        </div>
+        <span class="country-name">Belize</span>
+        <span class="dial-code">+501</span>
+        </li><li class="" data-dial-code="229" data-country-code="bj">
+        <div class="country-flag-box">
+        <div class="country-flag bj"></div>
+        </div>
+        <span class="country-name">Benin</span>
+        <span class="dial-code">+229</span>
+        </li><li class="" data-dial-code="1441" data-country-code="bm">
+        <div class="country-flag-box">
+        <div class="country-flag bm"></div>
+        </div>
+        <span class="country-name">Bermuda</span>
+        <span class="dial-code">+1441</span>
+        </li><li class="" data-dial-code="975" data-country-code="bt">
+        <div class="country-flag-box">
+        <div class="country-flag bt"></div>
+        </div>
+        <span class="country-name">Bhutan</span>
+        <span class="dial-code">+975</span>
+        </li><li class="" data-dial-code="591" data-country-code="bo">
+        <div class="country-flag-box">
+        <div class="country-flag bo"></div>
+        </div>
+        <span class="country-name">Bolivia</span>
+        <span class="dial-code">+591</span>
+        </li><li class="" data-dial-code="387" data-country-code="ba">
+        <div class="country-flag-box">
+        <div class="country-flag ba"></div>
+        </div>
+        <span class="country-name">Bosnia and Herzegovina</span>
+        <span class="dial-code">+387</span>
+        </li><li class="" data-dial-code="267" data-country-code="bw">
+        <div class="country-flag-box">
+        <div class="country-flag bw"></div>
+        </div>
+        <span class="country-name">Botswana</span>
+        <span class="dial-code">+267</span>
+        </li><li class="" data-dial-code="55" data-country-code="br">
+        <div class="country-flag-box">
+        <div class="country-flag br"></div>
+        </div>
+        <span class="country-name">Brazil</span>
+        <span class="dial-code">+55</span>
+        </li><li class="" data-dial-code="673" data-country-code="bn">
+        <div class="country-flag-box">
+        <div class="country-flag bn"></div>
+        </div>
+        <span class="country-name">Brunei Darussalam</span>
+        <span class="dial-code">+673</span>
+        </li><li class="" data-dial-code="359" data-country-code="bg">
+        <div class="country-flag-box">
+        <div class="country-flag bg"></div>
+        </div>
+        <span class="country-name">Bulgaria</span>
+        <span class="dial-code">+359</span>
+        </li><li class="" data-dial-code="226" data-country-code="bf">
+        <div class="country-flag-box">
+        <div class="country-flag bf"></div>
+        </div>
+        <span class="country-name">Burkina Faso</span>
+        <span class="dial-code">+226</span>
+        </li><li class="" data-dial-code="855" data-country-code="kh">
+        <div class="country-flag-box">
+        <div class="country-flag kh"></div>
+        </div>
+        <span class="country-name">Cambodia</span>
+        <span class="dial-code">+855</span>
+        </li><li class="" data-dial-code="237" data-country-code="cm">
+        <div class="country-flag-box">
+        <div class="country-flag cm"></div>
+        </div>
+        <span class="country-name">Cameroon</span>
+        <span class="dial-code">+237</span>
+        </li><li class="" data-dial-code="1" data-country-code="ca">
+        <div class="country-flag-box">
+        <div class="country-flag ca"></div>
+        </div>
+        <span class="country-name">Canada</span>
+        <span class="dial-code">+1</span>
+        </li><li class="" data-dial-code="238" data-country-code="cv">
+        <div class="country-flag-box">
+        <div class="country-flag cv"></div>
+        </div>
+        <span class="country-name">Cape Verde</span>
+        <span class="dial-code">+238</span>
+        </li><li class="" data-dial-code="1345" data-country-code="ky">
+        <div class="country-flag-box">
+        <div class="country-flag ky"></div>
+        </div>
+        <span class="country-name">Cayman Islands</span>
+        <span class="dial-code">+1345</span>
+        </li><li class="" data-dial-code="236" data-country-code="cf">
+        <div class="country-flag-box">
+        <div class="country-flag cf"></div>
+        </div>
+        <span class="country-name">Central African Republic</span>
+        <span class="dial-code">+236</span>
+        </li><li class="" data-dial-code="56" data-country-code="cl">
+        <div class="country-flag-box">
+        <div class="country-flag cl"></div>
+        </div>
+        <span class="country-name">Chile</span>
+        <span class="dial-code">+56</span>
+        </li><li class="" data-dial-code="57" data-country-code="co">
+        <div class="country-flag-box">
+        <div class="country-flag co"></div>
+        </div>
+        <span class="country-name">Colombia</span>
+        <span class="dial-code">+57</span>
+        </li><li class="" data-dial-code="269" data-country-code="km">
+        <div class="country-flag-box">
+        <div class="country-flag km"></div>
+        </div>
+        <span class="country-name">Comoros</span>
+        <span class="dial-code">+269</span>
+        </li><li class="" data-dial-code="242" data-country-code="cg">
+        <div class="country-flag-box">
+        <div class="country-flag cg"></div>
+        </div>
+        <span class="country-name">Congo</span>
+        <span class="dial-code">+242</span>
+        </li><li class="" data-dial-code="682" data-country-code="ck">
+        <div class="country-flag-box">
+        <div class="country-flag ck"></div>
+        </div>
+        <span class="country-name">Cook Islands</span>
+        <span class="dial-code">+682</span>
+        </li><li class="" data-dial-code="506" data-country-code="cr">
+        <div class="country-flag-box">
+        <div class="country-flag cr"></div>
+        </div>
+        <span class="country-name">Costa Rica</span>
+        <span class="dial-code">+506</span>
+        </li><li class="" data-dial-code="385" data-country-code="hr">
+        <div class="country-flag-box">
+        <div class="country-flag hr"></div>
+        </div>
+        <span class="country-name">Croatia</span>
+        <span class="dial-code">+385</span>
+        </li><li class="" data-dial-code="357" data-country-code="cy">
+        <div class="country-flag-box">
+        <div class="country-flag cy"></div>
+        </div>
+        <span class="country-name">Cyprus</span>
+        <span class="dial-code">+357</span>
+        </li><li class="" data-dial-code="420" data-country-code="cz">
+        <div class="country-flag-box">
+        <div class="country-flag cz"></div>
+        </div>
+        <span class="country-name">Czech Republic</span>
+        <span class="dial-code">+420</span>
+        </li><li class="" data-dial-code="243" data-country-code="cd">
+        <div class="country-flag-box">
+        <div class="country-flag cd"></div>
+        </div>
+        <span class="country-name">Democratic Republic of the Congo</span>
+        <span class="dial-code">+243</span>
+        </li><li class="" data-dial-code="45" data-country-code="dk">
+        <div class="country-flag-box">
+        <div class="country-flag dk"></div>
+        </div>
+        <span class="country-name">Denmark</span>
+        <span class="dial-code">+45</span>
+        </li><li class="" data-dial-code="253" data-country-code="dj">
+        <div class="country-flag-box">
+        <div class="country-flag dj"></div>
+        </div>
+        <span class="country-name">Djibouti</span>
+        <span class="dial-code">+253</span>
+        </li><li class="" data-dial-code="1767" data-country-code="dm">
+        <div class="country-flag-box">
+        <div class="country-flag dm"></div>
+        </div>
+        <span class="country-name">Dominica</span>
+        <span class="dial-code">+1767</span>
+        </li><li class="" data-dial-code="1849" data-country-code="do">
+        <div class="country-flag-box">
+        <div class="country-flag do"></div>
+        </div>
+        <span class="country-name">Dominican Republic</span>
+        <span class="dial-code">+1849</span>
+        </li><li class="" data-dial-code="593" data-country-code="ec">
+        <div class="country-flag-box">
+        <div class="country-flag ec"></div>
+        </div>
+        <span class="country-name">Ecuador</span>
+        <span class="dial-code">+593</span>
+        </li><li class="" data-dial-code="20" data-country-code="eg">
+        <div class="country-flag-box">
+        <div class="country-flag eg"></div>
+        </div>
+        <span class="country-name">Egypt</span>
+        <span class="dial-code">+20</span>
+        </li><li class="" data-dial-code="503" data-country-code="sv">
+        <div class="country-flag-box">
+        <div class="country-flag sv"></div>
+        </div>
+        <span class="country-name">El Salvador</span>
+        <span class="dial-code">+503</span>
+        </li><li class="" data-dial-code="240" data-country-code="gq">
+        <div class="country-flag-box">
+        <div class="country-flag gq"></div>
+        </div>
+        <span class="country-name">Equatorial Guinea</span>
+        <span class="dial-code">+240</span>
+        </li><li class="" data-dial-code="268" data-country-code="sz">
+        <div class="country-flag-box">
+        <div class="country-flag sz"></div>
+        </div>
+        <span class="country-name">Swaziland</span>
+        <span class="dial-code">+268</span>
+        </li><li class="" data-dial-code="251" data-country-code="et">
+        <div class="country-flag-box">
+        <div class="country-flag et"></div>
+        </div>
+        <span class="country-name">Ethiopia</span>
+        <span class="dial-code">+251</span>
+        </li><li class="" data-dial-code="500" data-country-code="fk">
+        <div class="country-flag-box">
+        <div class="country-flag fk"></div>
+        </div>
+        <span class="country-name">Falkland Islands (Malvinas)</span>
+        <span class="dial-code">+500</span>
+        </li><li class="" data-dial-code="298" data-country-code="fo">
+        <div class="country-flag-box">
+        <div class="country-flag fo"></div>
+        </div>
+        <span class="country-name">Faroe Islands</span>
+        <span class="dial-code">+298</span>
+        </li><li class="" data-dial-code="679" data-country-code="fj">
+        <div class="country-flag-box">
+        <div class="country-flag fj"></div>
+        </div>
+        <span class="country-name">Fiji</span>
+        <span class="dial-code">+679</span>
+        </li><li class="" data-dial-code="358" data-country-code="fi">
+        <div class="country-flag-box">
+        <div class="country-flag fi"></div>
+        </div>
+        <span class="country-name">Finland</span>
+        <span class="dial-code">+358</span>
+        </li><li class="" data-dial-code="33" data-country-code="fr">
+        <div class="country-flag-box">
+        <div class="country-flag fr"></div>
+        </div>
+        <span class="country-name">France</span>
+        <span class="dial-code">+33</span>
+        </li><li class="" data-dial-code="594" data-country-code="gf">
+        <div class="country-flag-box">
+        <div class="country-flag gf"></div>
+        </div>
+        <span class="country-name">French Guiana</span>
+        <span class="dial-code">+594</span>
+        </li><li class="" data-dial-code="241" data-country-code="ga">
+        <div class="country-flag-box">
+        <div class="country-flag ga"></div>
+        </div>
+        <span class="country-name">Gabon</span>
+        <span class="dial-code">+241</span>
+        </li><li class="" data-dial-code="220" data-country-code="gm">
+        <div class="country-flag-box">
+        <div class="country-flag gm"></div>
+        </div>
+        <span class="country-name">Gambia</span>
+        <span class="dial-code">+220</span>
+        </li><li class="" data-dial-code="995" data-country-code="ge">
+        <div class="country-flag-box">
+        <div class="country-flag ge"></div>
+        </div>
+        <span class="country-name">Georgia</span>
+        <span class="dial-code">+995</span>
+        </li><li class="" data-dial-code="49" data-country-code="de">
+        <div class="country-flag-box">
+        <div class="country-flag de"></div>
+        </div>
+        <span class="country-name">Germany</span>
+        <span class="dial-code">+49</span>
+        </li><li class="" data-dial-code="233" data-country-code="gh">
+        <div class="country-flag-box">
+        <div class="country-flag gh"></div>
+        </div>
+        <span class="country-name">Ghana</span>
+        <span class="dial-code">+233</span>
+        </li><li class="" data-dial-code="350" data-country-code="gi">
+        <div class="country-flag-box">
+        <div class="country-flag gi"></div>
+        </div>
+        <span class="country-name">Gibraltar</span>
+        <span class="dial-code">+350</span>
+        </li><li class="" data-dial-code="30" data-country-code="gr">
+        <div class="country-flag-box">
+        <div class="country-flag gr"></div>
+        </div>
+        <span class="country-name">Greece</span>
+        <span class="dial-code">+30</span>
+        </li><li class="" data-dial-code="299" data-country-code="gl">
+        <div class="country-flag-box">
+        <div class="country-flag gl"></div>
+        </div>
+        <span class="country-name">Greenland</span>
+        <span class="dial-code">+299</span>
+        </li><li class="" data-dial-code="1473" data-country-code="gd">
+        <div class="country-flag-box">
+        <div class="country-flag gd"></div>
+        </div>
+        <span class="country-name">Grenada</span>
+        <span class="dial-code">+1473</span>
+        </li><li class="" data-dial-code="590" data-country-code="gp">
+        <div class="country-flag-box">
+        <div class="country-flag gp"></div>
+        </div>
+        <span class="country-name">Guadeloupe</span>
+        <span class="dial-code">+590</span>
+        </li><li class="" data-dial-code="502" data-country-code="gt">
+        <div class="country-flag-box">
+        <div class="country-flag gt"></div>
+        </div>
+        <span class="country-name">Guatemala</span>
+        <span class="dial-code">+502</span>
+        </li><li class="" data-dial-code="44" data-country-code="gg">
+        <div class="country-flag-box">
+        <div class="country-flag gg"></div>
+        </div>
+        <span class="country-name">Guernsey</span>
+        <span class="dial-code">+44</span>
+        </li><li class="" data-dial-code="592" data-country-code="gy">
+        <div class="country-flag-box">
+        <div class="country-flag gy"></div>
+        </div>
+        <span class="country-name">Guyana</span>
+        <span class="dial-code">+592</span>
+        </li><li class="" data-dial-code="509" data-country-code="ht">
+        <div class="country-flag-box">
+        <div class="country-flag ht"></div>
+        </div>
+        <span class="country-name">Haiti</span>
+        <span class="dial-code">+509</span>
+        </li><li class="" data-dial-code="504" data-country-code="hn">
+        <div class="country-flag-box">
+        <div class="country-flag hn"></div>
+        </div>
+        <span class="country-name">Honduras</span>
+        <span class="dial-code">+504</span>
+        </li><li class="" data-dial-code="852" data-country-code="hk">
+        <div class="country-flag-box">
+        <div class="country-flag hk"></div>
+        </div>
+        <span class="country-name">Hong Kong</span>
+        <span class="dial-code">+852</span>
+        </li><li class="" data-dial-code="36" data-country-code="hu">
+        <div class="country-flag-box">
+        <div class="country-flag hu"></div>
+        </div>
+        <span class="country-name">Hungary</span>
+        <span class="dial-code">+36</span>
+        </li><li class="active" data-dial-code="91" data-country-code="in">
+        <div class="country-flag-box">
+        <div class="country-flag in"></div>
+        </div>
+        <span class="country-name">India</span>
+        <span class="dial-code">+91</span>
+        </li><li class="" data-dial-code="62" data-country-code="id">
+        <div class="country-flag-box">
+        <div class="country-flag id"></div>
+        </div>
+        <span class="country-name">Indonesia</span>
+        <span class="dial-code">+62</span>
+        </li><li class="" data-dial-code="964" data-country-code="iq">
+        <div class="country-flag-box">
+        <div class="country-flag iq"></div>
+        </div>
+        <span class="country-name">Iraq</span>
+        <span class="dial-code">+964</span>
+        </li><li class="" data-dial-code="353" data-country-code="ie">
+        <div class="country-flag-box">
+        <div class="country-flag ie"></div>
+        </div>
+        <span class="country-name">Ireland</span>
+        <span class="dial-code">+353</span>
+        </li><li class="" data-dial-code="44" data-country-code="im">
+        <div class="country-flag-box">
+        <div class="country-flag im"></div>
+        </div>
+        <span class="country-name">Isle of Man</span>
+        <span class="dial-code">+44</span>
+        </li><li class="" data-dial-code="972" data-country-code="il">
+        <div class="country-flag-box">
+        <div class="country-flag il"></div>
+        </div>
+        <span class="country-name">Israel</span>
+        <span class="dial-code">+972</span>
+        </li><li class="" data-dial-code="39" data-country-code="it">
+        <div class="country-flag-box">
+        <div class="country-flag it"></div>
+        </div>
+        <span class="country-name">Italy</span>
+        <span class="dial-code">+39</span>
+        </li><li class="" data-dial-code="225" data-country-code="ci">
+        <div class="country-flag-box">
+        <div class="country-flag ci"></div>
+        </div>
+        <span class="country-name">Ivory Coast</span>
+        <span class="dial-code">+225</span>
+        </li><li class="" data-dial-code="1876" data-country-code="jm">
+        <div class="country-flag-box">
+        <div class="country-flag jm"></div>
+        </div>
+        <span class="country-name">Jamaica</span>
+        <span class="dial-code">+1876</span>
+        </li><li class="" data-dial-code="81" data-country-code="jp">
+        <div class="country-flag-box">
+        <div class="country-flag jp"></div>
+        </div>
+        <span class="country-name">Japan</span>
+        <span class="dial-code">+81</span>
+        </li><li class="" data-dial-code="44" data-country-code="je">
+        <div class="country-flag-box">
+        <div class="country-flag je"></div>
+        </div>
+        <span class="country-name">Jersey</span>
+        <span class="dial-code">+44</span>
+        </li><li class="" data-dial-code="962" data-country-code="jo">
+        <div class="country-flag-box">
+        <div class="country-flag jo"></div>
+        </div>
+        <span class="country-name">Jordan</span>
+        <span class="dial-code">+962</span>
+        </li><li class="" data-dial-code="77" data-country-code="kz">
+        <div class="country-flag-box">
+        <div class="country-flag kz"></div>
+        </div>
+        <span class="country-name">Kazakhstan</span>
+        <span class="dial-code">+77</span>
+        </li><li class="" data-dial-code="254" data-country-code="ke">
+        <div class="country-flag-box">
+        <div class="country-flag ke"></div>
+        </div>
+        <span class="country-name">Kenya</span>
+        <span class="dial-code">+254</span>
+        </li><li class="" data-dial-code="82" data-country-code="kr">
+        <div class="country-flag-box">
+        <div class="country-flag kr"></div>
+        </div>
+        <span class="country-name">Korea, Republic of South Korea</span>
+        <span class="dial-code">+82</span>
+        </li><li class="" data-dial-code="965" data-country-code="kw">
+        <div class="country-flag-box">
+        <div class="country-flag kw"></div>
+        </div>
+        <span class="country-name">Kuwait</span>
+        <span class="dial-code">+965</span>
+        </li><li class="" data-dial-code="996" data-country-code="kg">
+        <div class="country-flag-box">
+        <div class="country-flag kg"></div>
+        </div>
+        <span class="country-name">Kyrgyzstan</span>
+        <span class="dial-code">+996</span>
+        </li><li class="" data-dial-code="856" data-country-code="la">
+        <div class="country-flag-box">
+        <div class="country-flag la"></div>
+        </div>
+        <span class="country-name">Laos</span>
+        <span class="dial-code">+856</span>
+        </li><li class="" data-dial-code="371" data-country-code="lv">
+        <div class="country-flag-box">
+        <div class="country-flag lv"></div>
+        </div>
+        <span class="country-name">Latvia</span>
+        <span class="dial-code">+371</span>
+        </li><li class="" data-dial-code="961" data-country-code="lb">
+        <div class="country-flag-box">
+        <div class="country-flag lb"></div>
+        </div>
+        <span class="country-name">Lebanon</span>
+        <span class="dial-code">+961</span>
+        </li><li class="" data-dial-code="266" data-country-code="ls">
+        <div class="country-flag-box">
+        <div class="country-flag ls"></div>
+        </div>
+        <span class="country-name">Lesotho</span>
+        <span class="dial-code">+266</span>
+        </li><li class="" data-dial-code="218" data-country-code="ly">
+        <div class="country-flag-box">
+        <div class="country-flag ly"></div>
+        </div>
+        <span class="country-name">Libya</span>
+        <span class="dial-code">+218</span>
+        </li><li class="" data-dial-code="423" data-country-code="li">
+        <div class="country-flag-box">
+        <div class="country-flag li"></div>
+        </div>
+        <span class="country-name">Liechtenstein</span>
+        <span class="dial-code">+423</span>
+        </li><li class="" data-dial-code="370" data-country-code="lt">
+        <div class="country-flag-box">
+        <div class="country-flag lt"></div>
+        </div>
+        <span class="country-name">Lithuania</span>
+        <span class="dial-code">+370</span>
+        </li><li class="" data-dial-code="352" data-country-code="lu">
+        <div class="country-flag-box">
+        <div class="country-flag lu"></div>
+        </div>
+        <span class="country-name">Luxembourg</span>
+        <span class="dial-code">+352</span>
+        </li><li class="" data-dial-code="853" data-country-code="mo">
+        <div class="country-flag-box">
+        <div class="country-flag mo"></div>
+        </div>
+        <span class="country-name">Macau</span>
+        <span class="dial-code">+853</span>
+        </li><li class="" data-dial-code="261" data-country-code="mg">
+        <div class="country-flag-box">
+        <div class="country-flag mg"></div>
+        </div>
+        <span class="country-name">Madagascar</span>
+        <span class="dial-code">+261</span>
+        </li><li class="" data-dial-code="265" data-country-code="mw">
+        <div class="country-flag-box">
+        <div class="country-flag mw"></div>
+        </div>
+        <span class="country-name">Malawi</span>
+        <span class="dial-code">+265</span>
+        </li><li class="" data-dial-code="60" data-country-code="my">
+        <div class="country-flag-box">
+        <div class="country-flag my"></div>
+        </div>
+        <span class="country-name">Malaysia</span>
+        <span class="dial-code">+60</span>
+        </li><li class="" data-dial-code="356" data-country-code="mt">
+        <div class="country-flag-box">
+        <div class="country-flag mt"></div>
+        </div>
+        <span class="country-name">Malta</span>
+        <span class="dial-code">+356</span>
+        </li><li class="" data-dial-code="230" data-country-code="mu">
+        <div class="country-flag-box">
+        <div class="country-flag mu"></div>
+        </div>
+        <span class="country-name">Mauritius</span>
+        <span class="dial-code">+230</span>
+        </li><li class="" data-dial-code="262" data-country-code="yt">
+        <div class="country-flag-box">
+        <div class="country-flag yt"></div>
+        </div>
+        <span class="country-name">Mayotte</span>
+        <span class="dial-code">+262</span>
+        </li><li class="" data-dial-code="52" data-country-code="mx">
+        <div class="country-flag-box">
+        <div class="country-flag mx"></div>
+        </div>
+        <span class="country-name">Mexico</span>
+        <span class="dial-code">+52</span>
+        </li><li class="" data-dial-code="691" data-country-code="fm">
+        <div class="country-flag-box">
+        <div class="country-flag fm"></div>
+        </div>
+        <span class="country-name">Micronesia, Federated States of Micronesia</span>
+        <span class="dial-code">+691</span>
+        </li><li class="" data-dial-code="373" data-country-code="md">
+        <div class="country-flag-box">
+        <div class="country-flag md"></div>
+        </div>
+        <span class="country-name">Moldova</span>
+        <span class="dial-code">+373</span>
+        </li><li class="" data-dial-code="976" data-country-code="mn">
+        <div class="country-flag-box">
+        <div class="country-flag mn"></div>
+        </div>
+        <span class="country-name">Mongolia</span>
+        <span class="dial-code">+976</span>
+        </li><li class="" data-dial-code="382" data-country-code="me">
+        <div class="country-flag-box">
+        <div class="country-flag me"></div>
+        </div>
+        <span class="country-name">Montenegro</span>
+        <span class="dial-code">+382</span>
+        </li><li class="" data-dial-code="1664" data-country-code="ms">
+        <div class="country-flag-box">
+        <div class="country-flag ms"></div>
+        </div>
+        <span class="country-name">Montserrat</span>
+        <span class="dial-code">+1664</span>
+        </li><li class="" data-dial-code="212" data-country-code="ma">
+        <div class="country-flag-box">
+        <div class="country-flag ma"></div>
+        </div>
+        <span class="country-name">Morocco</span>
+        <span class="dial-code">+212</span>
+        </li><li class="" data-dial-code="258" data-country-code="mz">
+        <div class="country-flag-box">
+        <div class="country-flag mz"></div>
+        </div>
+        <span class="country-name">Mozambique</span>
+        <span class="dial-code">+258</span>
+        </li><li class="" data-dial-code="95" data-country-code="mm">
+        <div class="country-flag-box">
+        <div class="country-flag mm"></div>
+        </div>
+        <span class="country-name">Myanmar</span>
+        <span class="dial-code">+95</span>
+        </li><li class="" data-dial-code="264" data-country-code="na">
+        <div class="country-flag-box">
+        <div class="country-flag na"></div>
+        </div>
+        <span class="country-name">Namibia</span>
+        <span class="dial-code">+264</span>
+        </li><li class="" data-dial-code="977" data-country-code="np">
+        <div class="country-flag-box">
+        <div class="country-flag np"></div>
+        </div>
+        <span class="country-name">Nepal</span>
+        <span class="dial-code">+977</span>
+        </li><li class="" data-dial-code="31" data-country-code="nl">
+        <div class="country-flag-box">
+        <div class="country-flag nl"></div>
+        </div>
+        <span class="country-name">Netherlands</span>
+        <span class="dial-code">+31</span>
+        </li><li class="" data-dial-code="687" data-country-code="nc">
+        <div class="country-flag-box">
+        <div class="country-flag nc"></div>
+        </div>
+        <span class="country-name">New Caledonia</span>
+        <span class="dial-code">+687</span>
+        </li><li class="" data-dial-code="64" data-country-code="nz">
+        <div class="country-flag-box">
+        <div class="country-flag nz"></div>
+        </div>
+        <span class="country-name">New Zealand</span>
+        <span class="dial-code">+64</span>
+        </li><li class="" data-dial-code="505" data-country-code="ni">
+        <div class="country-flag-box">
+        <div class="country-flag ni"></div>
+        </div>
+        <span class="country-name">Nicaragua</span>
+        <span class="dial-code">+505</span>
+        </li><li class="" data-dial-code="227" data-country-code="ne">
+        <div class="country-flag-box">
+        <div class="country-flag ne"></div>
+        </div>
+        <span class="country-name">Niger</span>
+        <span class="dial-code">+227</span>
+        </li><li class="" data-dial-code="234" data-country-code="ng">
+        <div class="country-flag-box">
+        <div class="country-flag ng"></div>
+        </div>
+        <span class="country-name">Nigeria</span>
+        <span class="dial-code">+234</span>
+        </li><li class="" data-dial-code="672" data-country-code="nf">
+        <div class="country-flag-box">
+        <div class="country-flag nf"></div>
+        </div>
+        <span class="country-name">Norfolk Island</span>
+        <span class="dial-code">+672</span>
+        </li><li class="" data-dial-code="389" data-country-code="mk">
+        <div class="country-flag-box">
+        <div class="country-flag mk"></div>
+        </div>
+        <span class="country-name">Macedonia</span>
+        <span class="dial-code">+389</span>
+        </li><li class="" data-dial-code="47" data-country-code="no">
+        <div class="country-flag-box">
+        <div class="country-flag no"></div>
+        </div>
+        <span class="country-name">Norway</span>
+        <span class="dial-code">+47</span>
+        </li><li class="" data-dial-code="968" data-country-code="om">
+        <div class="country-flag-box">
+        <div class="country-flag om"></div>
+        </div>
+        <span class="country-name">Oman</span>
+        <span class="dial-code">+968</span>
+        </li><li class="" data-dial-code="92" data-country-code="pk">
+        <div class="country-flag-box">
+        <div class="country-flag pk"></div>
+        </div>
+        <span class="country-name">Pakistan</span>
+        <span class="dial-code">+92</span>
+        </li><li class="" data-dial-code="970" data-country-code="ps">
+        <div class="country-flag-box">
+        <div class="country-flag ps"></div>
+        </div>
+        <span class="country-name">Palestine</span>
+        <span class="dial-code">+970</span>
+        </li><li class="" data-dial-code="507" data-country-code="pa">
+        <div class="country-flag-box">
+        <div class="country-flag pa"></div>
+        </div>
+        <span class="country-name">Panama</span>
+        <span class="dial-code">+507</span>
+        </li><li class="" data-dial-code="675" data-country-code="pg">
+        <div class="country-flag-box">
+        <div class="country-flag pg"></div>
+        </div>
+        <span class="country-name">Papua New Guinea</span>
+        <span class="dial-code">+675</span>
+        </li><li class="" data-dial-code="595" data-country-code="py">
+        <div class="country-flag-box">
+        <div class="country-flag py"></div>
+        </div>
+        <span class="country-name">Paraguay</span>
+        <span class="dial-code">+595</span>
+        </li><li class="" data-dial-code="51" data-country-code="pe">
+        <div class="country-flag-box">
+        <div class="country-flag pe"></div>
+        </div>
+        <span class="country-name">Peru</span>
+        <span class="dial-code">+51</span>
+        </li><li class="" data-dial-code="63" data-country-code="ph">
+        <div class="country-flag-box">
+        <div class="country-flag ph"></div>
+        </div>
+        <span class="country-name">Philippines</span>
+        <span class="dial-code">+63</span>
+        </li><li class="" data-dial-code="48" data-country-code="pl">
+        <div class="country-flag-box">
+        <div class="country-flag pl"></div>
+        </div>
+        <span class="country-name">Poland</span>
+        <span class="dial-code">+48</span>
+        </li><li class="" data-dial-code="351" data-country-code="pt">
+        <div class="country-flag-box">
+        <div class="country-flag pt"></div>
+        </div>
+        <span class="country-name">Portugal</span>
+        <span class="dial-code">+351</span>
+        </li><li class="" data-dial-code="1939" data-country-code="pr">
+        <div class="country-flag-box">
+        <div class="country-flag pr"></div>
+        </div>
+        <span class="country-name">Puerto Rico</span>
+        <span class="dial-code">+1939</span>
+        </li><li class="" data-dial-code="974" data-country-code="qa">
+        <div class="country-flag-box">
+        <div class="country-flag qa"></div>
+        </div>
+        <span class="country-name">Qatar</span>
+        <span class="dial-code">+974</span>
+        </li><li class="" data-dial-code="262" data-country-code="re">
+        <div class="country-flag-box">
+        <div class="country-flag re"></div>
+        </div>
+        <span class="country-name">Reunion</span>
+        <span class="dial-code">+262</span>
+        </li><li class="" data-dial-code="40" data-country-code="ro">
+        <div class="country-flag-box">
+        <div class="country-flag ro"></div>
+        </div>
+        <span class="country-name">Romania</span>
+        <span class="dial-code">+40</span>
+        </li><li class="" data-dial-code="7" data-country-code="ru">
+        <div class="country-flag-box">
+        <div class="country-flag ru"></div>
+        </div>
+        <span class="country-name">Russia</span>
+        <span class="dial-code">+7</span>
+        </li><li class="" data-dial-code="250" data-country-code="rw">
+        <div class="country-flag-box">
+        <div class="country-flag rw"></div>
+        </div>
+        <span class="country-name">Rwanda</span>
+        <span class="dial-code">+250</span>
+        </li><li class="" data-dial-code="290" data-country-code="sh">
+        <div class="country-flag-box">
+        <div class="country-flag sh"></div>
+        </div>
+        <span class="country-name">Saint Helena, Ascension and Tristan Da Cunha</span>
+        <span class="dial-code">+290</span>
+        </li><li class="" data-dial-code="1869" data-country-code="kn">
+        <div class="country-flag-box">
+        <div class="country-flag kn"></div>
+        </div>
+        <span class="country-name">Saint Kitts and Nevis</span>
+        <span class="dial-code">+1869</span>
+        </li><li class="" data-dial-code="1758" data-country-code="lc">
+        <div class="country-flag-box">
+        <div class="country-flag lc"></div>
+        </div>
+        <span class="country-name">Saint Lucia</span>
+        <span class="dial-code">+1758</span>
+        </li><li class="" data-dial-code="590" data-country-code="mf">
+        <div class="country-flag-box">
+        <div class="country-flag mf"></div>
+        </div>
+        <span class="country-name">Saint Martin</span>
+        <span class="dial-code">+590</span>
+        </li><li class="" data-dial-code="508" data-country-code="pm">
+        <div class="country-flag-box">
+        <div class="country-flag pm"></div>
+        </div>
+        <span class="country-name">Saint Pierre and Miquelon</span>
+        <span class="dial-code">+508</span>
+        </li><li class="" data-dial-code="1784" data-country-code="vc">
+        <div class="country-flag-box">
+        <div class="country-flag vc"></div>
+        </div>
+        <span class="country-name">Saint Vincent and the Grenadines</span>
+        <span class="dial-code">+1784</span>
+        </li><li class="" data-dial-code="685" data-country-code="ws">
+        <div class="country-flag-box">
+        <div class="country-flag ws"></div>
+        </div>
+        <span class="country-name">Samoa</span>
+        <span class="dial-code">+685</span>
+        </li><li class="" data-dial-code="239" data-country-code="st">
+        <div class="country-flag-box">
+        <div class="country-flag st"></div>
+        </div>
+        <span class="country-name">Sao Tome and Principe</span>
+        <span class="dial-code">+239</span>
+        </li><li class="" data-dial-code="966" data-country-code="sa">
+        <div class="country-flag-box">
+        <div class="country-flag sa"></div>
+        </div>
+        <span class="country-name">Saudi Arabia</span>
+        <span class="dial-code">+966</span>
+        </li><li class="" data-dial-code="221" data-country-code="sn">
+        <div class="country-flag-box">
+        <div class="country-flag sn"></div>
+        </div>
+        <span class="country-name">Senegal</span>
+        <span class="dial-code">+221</span>
+        </li><li class="" data-dial-code="381" data-country-code="rs">
+        <div class="country-flag-box">
+        <div class="country-flag rs"></div>
+        </div>
+        <span class="country-name">Serbia</span>
+        <span class="dial-code">+381</span>
+        </li><li class="" data-dial-code="248" data-country-code="sc">
+        <div class="country-flag-box">
+        <div class="country-flag sc"></div>
+        </div>
+        <span class="country-name">Seychelles</span>
+        <span class="dial-code">+248</span>
+        </li><li class="" data-dial-code="232" data-country-code="sl">
+        <div class="country-flag-box">
+        <div class="country-flag sl"></div>
+        </div>
+        <span class="country-name">Sierra Leone</span>
+        <span class="dial-code">+232</span>
+        </li><li class="" data-dial-code="65" data-country-code="sg">
+        <div class="country-flag-box">
+        <div class="country-flag sg"></div>
+        </div>
+        <span class="country-name">Singapore</span>
+        <span class="dial-code">+65</span>
+        </li><li class="" data-dial-code="421" data-country-code="sk">
+        <div class="country-flag-box">
+        <div class="country-flag sk"></div>
+        </div>
+        <span class="country-name">Slovakia</span>
+        <span class="dial-code">+421</span>
+        </li><li class="" data-dial-code="386" data-country-code="si">
+        <div class="country-flag-box">
+        <div class="country-flag si"></div>
+        </div>
+        <span class="country-name">Slovenia</span>
+        <span class="dial-code">+386</span>
+        </li><li class="" data-dial-code="27" data-country-code="za">
+        <div class="country-flag-box">
+        <div class="country-flag za"></div>
+        </div>
+        <span class="country-name">South Africa</span>
+        <span class="dial-code">+27</span>
+        </li><li class="" data-dial-code="34" data-country-code="es">
+        <div class="country-flag-box">
+        <div class="country-flag es"></div>
+        </div>
+        <span class="country-name">Spain</span>
+        <span class="dial-code">+34</span>
+        </li><li class="" data-dial-code="94" data-country-code="lk">
+        <div class="country-flag-box">
+        <div class="country-flag lk"></div>
+        </div>
+        <span class="country-name">Sri Lanka</span>
+        <span class="dial-code">+94</span>
+        </li><li class="" data-dial-code="597" data-country-code="sr">
+        <div class="country-flag-box">
+        <div class="country-flag sr"></div>
+        </div>
+        <span class="country-name">Suriname</span>
+        <span class="dial-code">+597</span>
+        </li><li class="" data-dial-code="46" data-country-code="se">
+        <div class="country-flag-box">
+        <div class="country-flag se"></div>
+        </div>
+        <span class="country-name">Sweden</span>
+        <span class="dial-code">+46</span>
+        </li><li class="" data-dial-code="41" data-country-code="ch">
+        <div class="country-flag-box">
+        <div class="country-flag ch"></div>
+        </div>
+        <span class="country-name">Switzerland</span>
+        <span class="dial-code">+41</span>
+        </li><li class="" data-dial-code="886" data-country-code="tw">
+        <div class="country-flag-box">
+        <div class="country-flag tw"></div>
+        </div>
+        <span class="country-name">Taiwan</span>
+        <span class="dial-code">+886</span>
+        </li><li class="" data-dial-code="255" data-country-code="tz">
+        <div class="country-flag-box">
+        <div class="country-flag tz"></div>
+        </div>
+        <span class="country-name">Tanzania</span>
+        <span class="dial-code">+255</span>
+        </li><li class="" data-dial-code="66" data-country-code="th">
+        <div class="country-flag-box">
+        <div class="country-flag th"></div>
+        </div>
+        <span class="country-name">Thailand</span>
+        <span class="dial-code">+66</span>
+        </li><li class="" data-dial-code="670" data-country-code="tl">
+        <div class="country-flag-box">
+        <div class="country-flag tl"></div>
+        </div>
+        <span class="country-name">Timor-Leste</span>
+        <span class="dial-code">+670</span>
+        </li><li class="" data-dial-code="228" data-country-code="tg">
+        <div class="country-flag-box">
+        <div class="country-flag tg"></div>
+        </div>
+        <span class="country-name">Togo</span>
+        <span class="dial-code">+228</span>
+        </li><li class="" data-dial-code="676" data-country-code="to">
+        <div class="country-flag-box">
+        <div class="country-flag to"></div>
+        </div>
+        <span class="country-name">Tonga</span>
+        <span class="dial-code">+676</span>
+        </li><li class="" data-dial-code="1868" data-country-code="tt">
+        <div class="country-flag-box">
+        <div class="country-flag tt"></div>
+        </div>
+        <span class="country-name">Trinidad and Tobago</span>
+        <span class="dial-code">+1868</span>
+        </li><li class="" data-dial-code="90" data-country-code="tr">
+        <div class="country-flag-box">
+        <div class="country-flag tr"></div>
+        </div>
+        <span class="country-name">Turkey</span>
+        <span class="dial-code">+90</span>
+        </li><li class="" data-dial-code="993" data-country-code="tm">
+        <div class="country-flag-box">
+        <div class="country-flag tm"></div>
+        </div>
+        <span class="country-name">Turkmenistan</span>
+        <span class="dial-code">+993</span>
+        </li><li class="" data-dial-code="1649" data-country-code="tc">
+        <div class="country-flag-box">
+        <div class="country-flag tc"></div>
+        </div>
+        <span class="country-name">Turks and Caicos Islands</span>
+        <span class="dial-code">+1649</span>
+        </li><li class="" data-dial-code="256" data-country-code="ug">
+        <div class="country-flag-box">
+        <div class="country-flag ug"></div>
+        </div>
+        <span class="country-name">Uganda</span>
+        <span class="dial-code">+256</span>
+        </li><li class="" data-dial-code="380" data-country-code="ua">
+        <div class="country-flag-box">
+        <div class="country-flag ua"></div>
+        </div>
+        <span class="country-name">Ukraine</span>
+        <span class="dial-code">+380</span>
+        </li><li class="" data-dial-code="971" data-country-code="ae">
+        <div class="country-flag-box">
+        <div class="country-flag ae"></div>
+        </div>
+        <span class="country-name">United Arab Emirates</span>
+        <span class="dial-code">+971</span>
+        </li><li class="" data-dial-code="44" data-country-code="gb">
+        <div class="country-flag-box">
+        <div class="country-flag gb"></div>
+        </div>
+        <span class="country-name">United Kingdom</span>
+        <span class="dial-code">+44</span>
+        </li><li class="" data-dial-code="1" data-country-code="us">
+        <div class="country-flag-box">
+        <div class="country-flag us"></div>
+        </div>
+        <span class="country-name">United States</span>
+        <span class="dial-code">+1</span>
+        </li><li class="" data-dial-code="598" data-country-code="uy">
+        <div class="country-flag-box">
+        <div class="country-flag uy"></div>
+        </div>
+        <span class="country-name">Uruguay</span>
+        <span class="dial-code">+598</span>
+        </li><li class="" data-dial-code="998" data-country-code="uz">
+        <div class="country-flag-box">
+        <div class="country-flag uz"></div>
+        </div>
+        <span class="country-name">Uzbekistan</span>
+        <span class="dial-code">+998</span>
+        </li><li class="" data-dial-code="58" data-country-code="ve">
+        <div class="country-flag-box">
+        <div class="country-flag ve"></div>
+        </div>
+        <span class="country-name">Venezuela</span>
+        <span class="dial-code">+58</span>
+        </li><li class="" data-dial-code="84" data-country-code="vn">
+        <div class="country-flag-box">
+        <div class="country-flag vn"></div>
+        </div>
+        <span class="country-name">Vietnam</span>
+        <span class="dial-code">+84</span>
+        </li><li class="" data-dial-code="1284" data-country-code="vg">
+        <div class="country-flag-box">
+        <div class="country-flag vg"></div>
+        </div>
+        <span class="country-name">Virgin Islands, British</span>
+        <span class="dial-code">+1284</span>
+        </li><li class="" data-dial-code="1340" data-country-code="vi">
+        <div class="country-flag-box">
+        <div class="country-flag vi"></div>
+        </div>
+        <span class="country-name">Virgin Islands, U.S.</span>
+        <span class="dial-code">+1340</span>
+        </li><li class="" data-dial-code="967" data-country-code="ye">
+        <div class="country-flag-box">
+        <div class="country-flag ye"></div>
+        </div>
+        <span class="country-name">Yemen</span>
+        <span class="dial-code">+967</span>
+        </li><li class="" data-dial-code="260" data-country-code="zm">
+        <div class="country-flag-box">
+        <div class="country-flag zm"></div>
+        </div>
+        <span class="country-name">Zambia</span>
+        <span class="dial-code">+260</span>
+        </li><li class="" data-dial-code="263" data-country-code="zw">
+        <div class="country-flag-box">
+        <div class="country-flag zw"></div>
+        </div>
+        <span class="country-name">Zimbabwe</span>
+        <span class="dial-code">+263</span>
+        </li></ul>
+    <input class="olInput user-name-input" placeholder="Whatsapp number" maxlength="10" name="whatsapp" type="number">
+    </div>
+    </div>
+    <button class="send-btn otp-btn" style="color: rgb(255, 255, 255); background: rgb(30, 65, 142);">
+    <span>Request OTP</span>
+    
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+    </button>
+    
+    <div class="other-options-box">
+    <p class="other-options-p"><span>Or Login Using</span></p>
+    <div class="other-options-wrap">
+    
+    <div class="other-option-inner email-no-inner" data-current="email">
+    
+    <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M2.50016 1.1665H13.8335C14.6127 1.1665 15.2502 1.804 15.2502 2.58317V11.0832C15.2502 11.8623 14.6127 12.4998 13.8335 12.4998H2.50016C1.721 12.4998 1.0835 11.8623 1.0835 11.0832V2.58317C1.0835 1.804 1.721 1.1665 2.50016 1.1665Z" stroke="#4A4A4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path><path d="M15.2502 2.58301L8.16683 7.54134L1.0835 2.58301" stroke="#4A4A4A" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+    <p class="text-wrap">Email</p>
+    </div>
+    
+    <div class="other-option-inner whatsapp-no-inner" data-current="whatsapp">
+    
+    <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5.12292 4.39376C5.26072 4.39745 5.41349 4.4049 5.55885 4.72755C5.65523 4.94233 5.8176 5.33775 5.94986 5.65985C6.05278 5.9105 6.13748 6.11675 6.15867 6.15897C6.2071 6.25537 6.23691 6.36661 6.17358 6.49638C6.16611 6.51169 6.15906 6.52633 6.15226 6.54042C6.10146 6.64586 6.0653 6.7209 5.97986 6.81902C5.94473 6.85935 5.90813 6.90357 5.87167 6.94763C5.80755 7.02512 5.74383 7.10211 5.68922 7.1565C5.59237 7.25284 5.49173 7.35676 5.6035 7.54957C5.71533 7.74238 6.10653 8.37652 6.68403 8.88828C7.30489 9.44102 7.84477 9.67395 8.11767 9.7917C8.17066 9.81456 8.21358 9.83308 8.24507 9.84876C8.43885 9.94516 8.55433 9.93032 8.66609 9.80055C8.77792 9.67072 9.15044 9.23684 9.28089 9.04403C9.40756 8.85122 9.53794 8.88089 9.71681 8.94762C9.89562 9.01435 10.8494 9.4816 11.0431 9.57801C11.0814 9.59707 11.1172 9.61425 11.1504 9.63017C11.2852 9.69481 11.3769 9.73875 11.4157 9.80425C11.4641 9.88581 11.4641 10.2715 11.304 10.7239C11.1401 11.1763 10.3502 11.6102 9.99248 11.6436C9.95861 11.6468 9.92491 11.6508 9.89023 11.655C9.56245 11.6947 9.14634 11.745 7.66387 11.1615C5.83715 10.4431 4.63131 8.66086 4.38752 8.30053C4.36827 8.27208 4.35502 8.25249 4.34793 8.24299L4.34381 8.23747C4.23289 8.08906 3.55433 7.18109 3.55433 6.24429C3.55433 5.348 3.99585 4.88137 4.19724 4.66853C4.21 4.65504 4.2218 4.64257 4.23246 4.63108C4.41127 4.43827 4.61995 4.39007 4.75033 4.39007C4.88078 4.39007 5.01116 4.39007 5.12292 4.39376Z" fill="#4A4A4A"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M0.0753723 15.0598C0.0137505 15.2835 0.217474 15.4899 0.441954 15.4313L3.91205 14.5249C5.00742 15.1182 6.24066 15.4334 7.49629 15.4334H7.5C11.6319 15.4334 15 12.0848 15 7.9686C15 5.97352 14.2212 4.09708 12.8055 2.68788C11.3897 1.27875 9.50816 0.5 7.49994 0.5C3.36814 0.5 4.77741e-07 3.84862 4.77741e-07 7.9649C-0.000469058 9.27439 0.345173 10.561 1.00223 11.6954L0.0753723 15.0598ZM2.0914 11.9955C2.17185 11.7035 2.13166 11.3914 1.97985 11.1292C1.42239 10.1667 1.12935 9.07517 1.12975 7.9649C1.12975 4.47791 3.98671 1.62975 7.49994 1.62975C9.20955 1.62975 10.8045 2.29027 12.0085 3.48861C13.2111 4.68562 13.8702 6.27386 13.8702 7.9686C13.8702 11.4555 11.0133 14.3037 7.5 14.3037H7.49629C6.42941 14.3037 5.38102 14.0358 4.45013 13.5315C4.19818 13.3951 3.90378 13.3594 3.62654 13.4318L1.54599 13.9753L2.0914 11.9955Z" fill="#4A4A4A"></path>
+    </svg>
+
+    <p class="text-wrap">Whatsapp</p>
+    </div>
+    <div class="other-option-inner mobile-no-inner" data-current="mobile">
+    
+    <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 202.592 202.592" style="enable-background:new 0 0 202.592 202.592;" xml:space="preserve">
+        <g>
+            <g>
+                <path style="fill:#010002;" d="M198.048,160.105l-31.286-31.29c-6.231-6.206-16.552-6.016-23.001,0.433l-15.761,15.761
+                                    c-0.995-0.551-2.026-1.124-3.11-1.732c-9.953-5.515-23.577-13.074-37.914-27.421C72.599,101.48,65.03,87.834,59.5,77.874
+                                    c-0.587-1.056-1.145-2.072-1.696-3.038l10.579-10.565l5.2-5.207c6.46-6.46,6.639-16.778,0.419-23.001L42.715,4.769
+                                    c-6.216-6.216-16.541-6.027-23.001,0.433l-8.818,8.868l0.243,0.24c-2.956,3.772-5.429,8.124-7.265,12.816
+                                    c-1.696,4.466-2.752,8.729-3.235,12.998c-4.13,34.25,11.52,65.55,53.994,108.028c58.711,58.707,106.027,54.273,108.067,54.055
+                                    c4.449-0.53,8.707-1.593,13.038-3.275c4.652-1.818,9.001-4.284,12.769-7.233l0.193,0.168l8.933-8.747
+                                    C204.079,176.661,204.265,166.343,198.048,160.105z M190.683,176.164l-3.937,3.93l-1.568,1.507
+                                    c-2.469,2.387-6.743,5.74-12.984,8.181c-3.543,1.364-7.036,2.24-10.59,2.663c-0.447,0.043-44.95,3.84-100.029-51.235
+                                    C14.743,94.38,7.238,67.395,10.384,41.259c0.394-3.464,1.263-6.95,2.652-10.593c2.462-6.277,5.812-10.547,8.181-13.02l5.443-5.497
+                                    c2.623-2.63,6.714-2.831,9.112-0.433l31.286,31.286c2.394,2.401,2.205,6.492-0.422,9.13L45.507,73.24l1.95,3.282
+                                    c1.084,1.829,2.23,3.879,3.454,6.106c5.812,10.482,13.764,24.83,29.121,40.173c15.317,15.325,29.644,23.27,40.094,29.067
+                                    c2.258,1.249,4.32,2.398,6.17,3.5l3.289,1.95l21.115-21.122c2.634-2.623,6.739-2.817,9.137-0.426l31.272,31.279
+                                    C193.5,169.446,193.31,173.537,190.683,176.164z"></path>
+            </g>
+        </g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g>
+    </svg>
+
+    <p class="text-wrap">Phone</p>
+    </div>
+    </div>
+    </div>
+    </div>
+                <div class="verify-box step-box-wrapper hideBox">
+            <h3 class="login-header">Enter OTP</h3>
+            <p class="verify-box-details login-description">The OTP is sent on  <span>Mobile number</span></p>
+            <div class="mn-container">
+                <p class="user-details">+91 999999999</p>
+                
+    <svg class="edit-phone bi bi-pencil-fill" fill="currentColor" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg">
+        <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z"></path>
+    </svg>
+
+            </div>
+            <input class="verify-otp-id" name="olOtpId" type="hidden">
+            <input class="phoneNo" name="phoneNo" type="hidden">
+            <div class="verify-content">
+                <input type="tel" autocomplete="one-time-code" class="otp-input-main otp-input otp6" maxlength="6">
+            </div>
+            <button class="verify-btn otp-btn" style="color: rgb(255, 255, 255); background: rgb(30, 65, 142);">
+                <span>Verify OTP</span>
+                
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+            </button>
+            <div class="resend-otp" id="resend-otp">
+                <p>Didn't Receive the OTP?</p>
+                <a class="resend-btn disabled">Resend OTP</a>
+                <p class="count-down-otp"></p>
+            </div>
+        </div>
+                <div class="update-user-box step-box-wrapper hideBox">
+            <h3 class="login-header">Enter Account Details</h3>
+            <div class="login-inputBox fname">
+                <div class="input-box-content">
+                    <input id="first-name" class="olInput update-user-first-name-input" maxlength="" name="name" type="text">
+                    <label for="first-name" class="input__label">First Name</label>
+                </div>
+            </div>
+            <span class="error-message error-fname-message hideBox">Please enter First Name</span>
+            <div class="login-inputBox lname">
+                <div class="input-box-content">
+                    <input id="last-name" class="olInput update-user-last-name-input" maxlength="" name="name" type="text">
+                    <label for="last-name" class="input__label">Last Name</label>
+                </div>
+            </div>
+            <span class="error-message error-lname-message hideBox">Please enter Last Name</span>
+            <div class="login-inputBox">
+                <div class="input-box-content">
+                    <input id="email-id" class="olInput update-user-email-input" maxlength="" name="email" type="email" required="">
+                    <label for="email-id" class="input__label">Email</label>
+                </div>
+            </div>
+            <span class="error-message error-email-message hideBox">Please enter a valid email</span>
+            <div class="login-inputBox">
+                
+    <div class="input-box-content mobile-no-inner" data-current="mobile">
+    <div class="country-selector-main">
+    <div class="selected-country">
+    <div class="country-flag-box">
+    <span class="country-flag in"></span>
+    </div>
+    </div>
+    
+    <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M1 1L7 7L13 1" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+    </div>
+    <ul class="country-selector-list" aria-label="List of countries"><li class="active" data-dial-code="91" data-country-code="in">
+        <div class="country-flag-box">
+        <div class="country-flag in"></div>
+        </div>
+        <span class="country-name">India</span>
+        <span class="dial-code">+91</span>
+        </li></ul>
+    <input class="olInput user-name-input" placeholder="Phone number" maxlength="10" name="phone" type="number">
+    </div>
+            </div>
+            <span class="error-message-phone hideBox">Please enter a valid Phone Number</span>
+            <div class="customFieldsBox">
+                
+            <div class="custom_field college_student">
+                <label>Are you a college student ?</label>
+                <div class="custom_select">
+                    <select name="CollegeStudent" onchange="window.simplyOtp.changeCollegeSelection()">
+                        <option value="">Are you a college student ?</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    </select>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <span class="errormessage error-message-Are you a college student ? hideBox">Please enter valid data ?.</span>
+            </div>
+            
+            <div class="custom_field category">
+                <label>Category</label>
+                <div class="custom_select">
+                    <select name="Category">
+                        <option value="">Category</option>
+                        
+                    <option value="Shave">
+                        Shave
+                    </option>
+                
+                    <option value="Beard">
+                        Beard
+                    </option>
+                
+                    <option value="Bath">
+                        Bath
+                    </option>
+                
+                    <option value="Skin">
+                        Skin
+                    </option>
+                
+                    </select>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <span class="errormessage error-message-Category hideBox">Please enter valid Category.</span>
+            </div>
+            
+            <div class="custom_field dob">
+                <label>Date of Birth</label>
+                <div class="custom_input input-box-content">
+                    <input type="date" class="olInput" name="Date of Birth">
+                </div>
+                <span class="errormessage error-message-Date of Birth hideBox">Please enter valid Date of Birth.</span>
+            </div>
+            
+            <div class="custom_field gender">
+                <label>Gender</label>
+                <div class="custom_select">
+                    <select name="Gender">
+                        <option value="">Gender</option>
+                        
+                    <option value="Male">
+                        Male
+                    </option>
+                
+                    <option value="Female">
+                        Female
+                    </option>
+                
+                    <option value="Preferred" not="" to="" say="">
+                        Preferred not to say
+                    </option>
+                
+                    </select>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <span class="errormessage error-message-Gender hideBox">Please enter valid Gender.</span>
+            </div>
+            <div class="custom_field razorpreneur" style="display:none">
+                <label>razorpreneur</label>
+                <div class="custom_select">
+                    <select name="razorpreneur">
+                        <option value="">Are you Razorpreneur</option>
+                        
+                    <option value="Yes">
+                        Yes
+                    </option>
+                
+                    <option value="No">
+                        No
+                    </option>
+                
+                    </select>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <span class="errormessage error-message-razorpreneur hideBox">Please enter valid razorpreneur.</span>
+            </div>
+            <div class="custom_field university" style="display:none">
+                <label>Select a University</label>
+                <div class="custom_select">
+                    <select name="SelectAUniversity">
+                        <option value="">Select a University</option>
+                        
+                    <option value="IIM" lucknow="">
+                        IIM Lucknow
+                    </option>
+                
+                    <option value="Christ" college="">
+                        Christ College
+                    </option>
+                    <option value="Lovely Professional University">Lovely Professional University</option><option value="Amity University (Noida)">Amity University (Noida)</option><option value="Sharda University">Sharda University</option><option value="Manav Rachna International University">Manav Rachna International University</option><option value="Ashoka University">Ashoka University</option><option value="Jaipur National University">Jaipur National University</option><option value="NMIMS, Mumbai">NMIMS, Mumbai</option><option value="Galgotiya University">Galgotiya University</option><option value="Amity University (Gurgaon)">Amity University (Gurgaon)</option><option value="Ansal University Gurgaon">Ansal University Gurgaon</option><option value="Apeejay Stya University">Apeejay Stya University</option><option value="Kurukshetra University">Kurukshetra University</option><option value="IIM Udaipur">IIM Udaipur</option><option value="GL Bajaj Institution of Technology &amp; Management">GL Bajaj Institution of Technology &amp; Management</option><option value="B R Ambedkar National Institute Of Technology">B R Ambedkar National Institute Of Technology</option><option value="CT Group of Institutions">CT Group of Institutions</option><option value="DAV University">DAV University</option><option value="A Pee Jay Institute of Management">A Pee Jay Institute of Management</option><option value="Central University of Haryana">Central University of Haryana</option><option value="Chaudhary Devi Lal University">Chaudhary Devi Lal University</option><option value="G D Goenka University, Gurgaon">G D Goenka University, Gurgaon</option><option value="Maharishi Markandeshwar University, Mullana">Maharishi Markandeshwar University, Mullana</option><option value="Bharti Vidyapeeth, Sonipat_Campus">Bharti Vidyapeeth, Sonipat_Campus</option><option value="JECRC University">JECRC University</option><option value="Bhupal Nobeles University">Bhupal Nobeles University</option><option value="Jodhpur National University">Jodhpur National University</option><option value="Jai Naraiin Vyas Unniversity old Campus">Jai Naraiin Vyas Unniversity old Campus</option><option value="IIM Jammu">IIM Jammu</option><option value="MICA">MICA</option><option value="MNIMS, Bangalore">MNIMS, Bangalore</option><option value="IIM, Lucknow">IIM, Lucknow</option><option value="SRCC">SRCC</option><option value="ISB&amp;M Pune">ISB&amp;M Pune</option><option value="NMIMS, Bangalore">NMIMS, Bangalore</option><option value="IIT Delhi, MBA">IIT Delhi, MBA</option><option value="IMT, Ghaziabad">IMT, Ghaziabad</option><option value="SIBM, Hydrabad">SIBM, Hydrabad</option><option value="IIT Bombay">IIT Bombay</option><option value="NIT Hamirpur">NIT Hamirpur</option><option value="Sri Guru Gobind Singh College of Commerce, University of Delhi">Sri Guru Gobind Singh College of Commerce, University of Delhi</option><option value="IIM Rohtak">IIM Rohtak</option><option value="MDI Gurgaon">MDI Gurgaon</option><option value="DoMS IIT Roorkee">DoMS IIT Roorkee</option><option value="IIT Delhi">IIT Delhi</option><option value="MDI Murshidabad">MDI Murshidabad</option><option value="K J Somaiya">K J Somaiya</option><option value="IIM Bodh Gaya">IIM Bodh Gaya</option><option value="IBS, Gurgaon">IBS, Gurgaon</option><option value="Indian Institute of Mass Communication">Indian Institute of Mass Communication</option><option value="Gargi College, DU">Gargi College, DU</option><option value="NMIMS Indore">NMIMS Indore</option><option value="IIM, Kashipur">IIM, Kashipur</option><option value="others">others</option>
+                    </select>
+                    <svg aria-hidden="true" focusable="false" viewBox="0 0 10 6">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M9.354.646a.5.5 0 00-.708 0L5 4.293 1.354.646a.5.5 0 00-.708.708l4 4a.5.5 0 00.708 0l4-4a.5.5 0 000-.708z" fill="currentColor">
+                        </path>
+                    </svg>
+                </div>
+                <span class="errormessage error-message-Select a University hideBox">Please enter valid Select a University.</span>
+            </div>
+            
+            </div>
+            <input class="otp-id" name="otp_id" type="hidden">
+            <div class="update-checkbox-wrapper">
+                <input class="input-checkbox marketing-option" type="checkbox" value="1" checked="checked" name="" id="marketing">
+                <label class="checkbox-main-label" for="marketing">keep me updated on new updates, exclusive offers<p></p>
+            </label></div>
+            <div class="button-wrapper">
+                <button class="update-btn otp-btn" style="color: rgb(255, 255, 255); background: rgb(30, 65, 142);">
+                    <span>Update</span>
+                    
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M5 12H19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M12 5L19 12L12 19" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg>
+
+                </button>
+            </div>
+        </div>
+            </div>
+            <div class="small-otp-loader">
+                <div class="loader-innerDiv"></div>
+            </div>
+        </div>`;
+;  {% comment %}
+      window.simplyOtp.pageUrl = location.href;
+  {% endcomment %}
+    simplyOtp.wrapperHtml = simplyOtp.wrapperHtml.replace('Request OTP', "Signup");
+
+  window.updateEmail = function(){
+      const sourceInput = document.getElementById("dummyemail");
+      const destinationInputs = document.querySelectorAll('.olInput.update-user-email-input');
+      destinationInputs.forEach(input => {
+          input.value = sourceInput.value;
+      });
+  }
+
+  window.simplyOtp.changeCollegeSelection = function(){
+    let str = $('.college_student select').val();
+    if( str == "Yes"){
+      $('.custom_field.university').show();
+    }
+    else{
+      $('.custom_field.university').hide();
+    }
+  }
+
+    {% if template contains 'rzp-new-frame' %}
+    setTimeout(function(){
+      $('.custom_field.razorpreneur select').val("Yes");
+    }, 5000);
+    {%  else  %}
+    setTimeout(function(){
+      $('.custom_field.razorpreneur select').val("No");
+    }, 5000);
+    {% endif %}
+  
+  
+    window.simplyOtp.initializeCss = () => {
+      simplyOtp.cartJson = {{ cart | json }};
+      window.olWrapper = document.querySelectorAll('.olWrapper');
+      olWrapper.forEach(ele => ele.style.display = "none")
+
+// If available then change olWrapper display property
+
+/* Load css */
+      var cssId = 'myCss'; // you could encode the css path itself to generate id..
+      if (!document.getElementById(cssId)) {
+        var head = document.getElementsByTagName('head')[0];
+        var link = document.createElement('link');
+        link.id = cssId;
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = "{{'otp-login.css' | asset_url}}";
+        link.media = 'all';
+        head.appendChild(link);
+      }if (Shopify.designMode) {
+        document.addEventListener("shopify:section:load", () => {
+          let olWrapperDiv = document.querySelectorAll('.olWrapper'); // Parent element
+          if (olWrapperDiv) { // To check css is available in the DOM or not
+            olWrapperDiv.forEach(ele => ele.style.display = "flex") // If available then change olWrapper display property
+          }
+        });
+      }
+    }
+    window.simplyOtp.signUpEvent = (data) => {
+      {% comment %}
+        data
+          .email
+          data
+          .phone
+          data
+          .firstName
+          data
+          .lastName{% endcomment %}
+        console.log('signup', data);
+        window.contlo.sendEvent('custom_form_submitted', data.email, data.phone, null, null, null)
+      }
+      window.simplyOtp.loginEvent = (data) => {
+        console.log('login', data);
+      }
+  </script>
+  <script>
+    {% if shop.metafields.simply-otp-login.otp_widgets  %}
+    simplyOtp.otp_widgets = {{shop.metafields.simply-otp-login.otp_widgets}};
+    {% else  %}
+    simplyOtp.otp_widgets = {};
+    {% endif  %}
+    {% if shop.metafields.simply-otp-login.custom_fields  %}
+    simplyOtp.custom_fields = {{ shop.metafields.simply-otp-login.custom_fields }};
+    {% else  %}
+    simplyOtp.custom_fields = [];
+  {% endif  %}
+    simplyOtp.language = {
+      loginSubTitle: simplyOtp.otp_widgets.login_sub_title,
+      loginTitle: simplyOtp.otp_widgets.login_title,
+      phoneEnable: simplyOtp.otp_widgets.phone_enable,
+      emailEnable: simplyOtp.otp_widgets.email_enable,
+      whatsappEnable: simplyOtp.otp_widgets.whatsapp_enable,
+      phonePlaceholder: simplyOtp.otp_widgets.phone_placeholder,
+      emailPlaceholder: simplyOtp.otp_widgets.email_placeholder,
+      whatsappPlaceholder: simplyOtp.otp_widgets.whatsapp_placeholder,
+      otpTitle: simplyOtp.otp_widgets.otp_title,
+      otpSubTitle: simplyOtp.otp_widgets.otp_sub_title,
+      accountTitle: simplyOtp.otp_widgets.account_title,
+      marketingText: simplyOtp.otp_widgets.marketing_text,
+      emailOfferEnable: simplyOtp.otp_widgets.email_offer_enable,
+      phoneOfferEnable: simplyOtp.otp_widgets.sms_offer_enable,
+      whatsappOfferEnable: simplyOtp.otp_widgets.whatsapp_offer_enable,
+      enableCountries: simplyOtp.otp_widgets.enable_countries,
+      otherOptionText: "Or Login Using",
+      btn_bg_color: simplyOtp.otp_widgets.btn_bg_color,
+      btn_text_color: simplyOtp.otp_widgets.btn_text_color,
+      fname_required:false,
+      lname_required:false,
+      email_required:true,
+      phone_required:true,
+      updateBtnText: "Update"
+    };
+    simplyOtp.settings = {
+      goKwik:false,
+      onlyIndia: true,
+      selectedCountry: "in",
+      primaryColor: simplyOtp.otp_widgets.btn_bg_color,
+      resendTime: 5,
+      image: simplyOtp.otp_widgets.image_url
+        ? simplyOtp.otp_widgets.image_url
+        : null
+    };
+    simplyOtp.permanentDomain = "{{ shop.permanent_domain }}";
+    simplyOtp.myFirebaseApi = '{{ shop.metafields.simply-otp-login.firebase_config }}';
+    
+  </script>
+  <script
+    src="{{'otp-login.js' | asset_url}}"
+    type="text/javascript"
+    defer="defer"></script>
+{% endif %}
+{% schema %}
+  {
+    "name": "Simply OTP",
+    "tag": "section",
+    "class": "section",
+    "presets": [
+      {
+        "name": "Simply OTP"
+      }
+    ]
+  }
+{% endschema %}

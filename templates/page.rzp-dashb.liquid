@@ -1,0 +1,36 @@
+<style>
+  .dashb-main {
+    position: relative;
+  }
+  .section-1 {
+    max-width: 100%;
+    margin: 0 auto;
+    background: #000;
+  }
+  .section-4 {
+    border-bottom: 1px solid;
+  }
+  .divider {
+    position: absolute;
+    width: 250px;
+    height: 3px;
+    top: 57.5%;
+    background: #000;
+    left: 17%;
+  }
+  .section-6 {
+    margin-top: 46px;
+  }
+  .section-6 .main-prod p {
+    display: none;
+  }
+</style>
+<div class="dashb-main">
+  <div class="section-1">{% render 'rzp-dashb-section-1' %}</div>
+  <div class="section-2">{% render 'rzp-dashb-section-2' %}</div>
+  <div class="section-3">{% render 'rzp-dashb-leaderboard' %}</div>
+  <div class="section-4" id="selling-tips">{% render 'rzp-dashb-accordian' %}</div>
+  <div class="section-5">{% render 'rzp-dashb-brb-shop' %}</div>
+  <div class="divider"></div>
+  <div class="section-6" id="buy-more">{% render 'rzp-section-2' %}</div>
+</div>

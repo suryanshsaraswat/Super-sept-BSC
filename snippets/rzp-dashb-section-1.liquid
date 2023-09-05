@@ -1,0 +1,81 @@
+<style>
+  h2.w-rzp {
+    font-size: 22px;
+    color: #ffff;
+    text-align: center;
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 0;
+  }
+  span.rzp-name {
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+  }
+  p.n-y-name {
+    color: #fff;
+    text-align: center;
+    font-size: 17px;
+    margin-top: -6px;
+    padding-bottom: 20px;
+    font-family: Roboto, sans-serif;
+    margin-bottom: 0;
+  }
+  a.rzp-dashb-button {
+    display: block;
+  }
+  p.n-y-name a {
+    font-style: italic;
+    color: #FECE40
+  }
+  a.rzp-dashb-button {
+    display: block;
+    max-width: 100%;
+    width: 169px;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: Roboto, sans-serif;
+    padding-bottom: 15px;
+    margin-bottom: 18px;
+    color: #000
+  }
+  .main-head {
+    max-width: 100%;
+    width: 700px;
+    margin: 0 auto
+  }
+  a.upg-skills {
+    background-color: #FECE40;
+    font-weight: 600;
+  }
+  a.buy-more {
+    background-color: #fff;
+    font-weight: 700;
+  }
+
+  .dashb-buttons {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    width: 700px;
+  }
+</style>
+<div class="rzp-dash-main">
+  <div class="main-head">
+    <h2 class="w-rzp">Welcome
+      <span class="rzp-name">
+        {% if customer %}
+          {{ customer.name }}{% else %}Razorpreneur{% endif %}
+      </span>
+    </h2>
+    <p class="n-y-name">Not your name? Please update it
+      <a href="https://bombayshavingcompany.com/account#profile">Here</a>
+    </p>
+    {% comment %} <h3 class="n-r-bought">you’ve bought <span class="razor-number"></span>Razors</h3> {% endcomment %}
+    <div class="dashb-buttons">
+      <a href="/pages/razorpreneur-dashboard#selling-tips" class="rzp-dashb-button upg-skills Button Button-primary">UPGRADE SKILLS</a>
+      <a href="/pages/razorpreneur-dashboard#buy-more" class="rzp-dashb-button buy-more Button Button-primary">BUY MORE</a>
+    </div>
+  </div>
+</div>
