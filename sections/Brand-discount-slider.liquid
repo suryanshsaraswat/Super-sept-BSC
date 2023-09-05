@@ -3,14 +3,16 @@
   <h2 class="brand-h">{{ section.settings.logo-headingg }}</h2>
   <div class="brand-block">
     <div class="brand-slider">
-      <div class="brand-slider brand-{{block.id}}">
-        <h2><img
-            src="{{ block.settings.logo_brand | img_url: 'master' }}"
-            alt="brand logo"
-            style="width: 100px; height:100px;"></h2>
-        <p class="brand-discount">{{ block.settings.discount_desc }}</p>
+      {% for block in section.blocks %}
+        <div class="brand-slider brand-{{block.id}}">
+          <h2><img
+              src="{{ block.settings.logo_brand | img_url: 'master' }}"
+              alt="brand logo"
+              style="width: 100px; height:100px;"></h2>
+          <p class="brand-discount">{{ block.settings.discount_desc }}</p>
+        </div>
       </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 <script>
