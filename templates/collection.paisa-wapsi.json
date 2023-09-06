@@ -1,1 +1,289 @@
-{"sections":{"6867f67e-1d79-43fc-9aa2-498dac676090":{"type":"featured-collections","blocks":{"template--16173944504474__6867f67e-1d79-43fc-9aa2-498dac676090-collection-1":{"type":"collection","settings":{"collection":"paisa-wapsi-shave-care","title":"Shave Care","grid_items_count":8,"button_text":""}}},"block_order":["template--16173944504474__6867f67e-1d79-43fc-9aa2-498dac676090-collection-1"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"6e419626-31ce-42ec-9419-1c23d678ebdb":{"type":"featured-collections","blocks":{"9c35133b-03ed-44b8-8bb1-6a8b47bc9db1":{"type":"collection","disabled":true,"settings":{"collection":"","title":"","grid_items_count":8,"button_text":"View all products"}},"eda4532f-d2ec-4031-8c9f-414a11e6d4c5":{"type":"collection","settings":{"collection":"paisa-wapsi-beard","title":"Beard Care","grid_items_count":8,"button_text":""}}},"block_order":["9c35133b-03ed-44b8-8bb1-6a8b47bc9db1","eda4532f-d2ec-4031-8c9f-414a11e6d4c5"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"main":{"type":"main-collection","disabled":true,"settings":{"show_collection_info":true,"show_collection_image":false,"apply_overlay":false,"show_color_swatch":false,"show_vendor":false,"collection_image_size":"small","show_sort_by":true,"show_layout_switch":true,"toolbar_position":"top","show_filters":true,"show_filter_color_swatch":true,"expand_filters":true,"filter_position":"drawer","filter_menu":"","grid_items_per_page":48,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"3312ee99-f42b-49c0-ab2e-8d1a81312ad3":{"type":"featured-collections","blocks":{"template--16173944504474__3312ee99-f42b-49c0-ab2e-8d1a81312ad3-collection-1":{"type":"collection","settings":{"collection":"paisa-wapsi-skin","title":"Skin care","grid_items_count":8,"button_text":""}}},"block_order":["template--16173944504474__3312ee99-f42b-49c0-ab2e-8d1a81312ad3-collection-1"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"940d34e1-4911-4440-a9cd-54844bd93d84":{"type":"featured-collections","blocks":{"template--16173944504474__940d34e1-4911-4440-a9cd-54844bd93d84-collection-1":{"type":"collection","settings":{"collection":"paisa-wapsi-bath","title":"Bath care","grid_items_count":8,"button_text":""}}},"block_order":["template--16173944504474__940d34e1-4911-4440-a9cd-54844bd93d84-collection-1"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"a81d24d1-82e9-48a6-9b9e-d69be5ae046d":{"type":"featured-collections","blocks":{"template--16173944504474__a81d24d1-82e9-48a6-9b9e-d69be5ae046d-collection-1":{"type":"collection","settings":{"collection":"paisa-wapsi-hair","title":"hair care","grid_items_count":8,"button_text":""}}},"block_order":["template--16173944504474__a81d24d1-82e9-48a6-9b9e-d69be5ae046d-collection-1"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"a80a7979-f61a-4446-a367-5b78eaf3ae50":{"type":"featured-collections","blocks":{"template--16173944504474__a80a7979-f61a-4446-a367-5b78eaf3ae50-collection-1":{"type":"collection","settings":{"collection":"paisa-wapsi-fragrances","title":"Fragrances","grid_items_count":8,"button_text":""}}},"block_order":["template--16173944504474__a80a7979-f61a-4446-a367-5b78eaf3ae50-collection-1"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"recently-viewed-products":{"type":"recently-viewed-products","settings":{"title":"Recently viewed","show_product_info":true,"show_vendor":false,"show_color_swatch":false}}},"order":["6867f67e-1d79-43fc-9aa2-498dac676090","6e419626-31ce-42ec-9419-1c23d678ebdb","main","3312ee99-f42b-49c0-ab2e-8d1a81312ad3","940d34e1-4911-4440-a9cd-54844bd93d84","a81d24d1-82e9-48a6-9b9e-d69be5ae046d","a80a7979-f61a-4446-a367-5b78eaf3ae50","recently-viewed-products"]}
+{
+  "sections": {
+    "6867f67e-1d79-43fc-9aa2-498dac676090": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16173944504474__6867f67e-1d79-43fc-9aa2-498dac676090-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-wapsi-shave-care",
+            "title": "Shave Care",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16173944504474__6867f67e-1d79-43fc-9aa2-498dac676090-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "6e419626-31ce-42ec-9419-1c23d678ebdb": {
+      "type": "featured-collections",
+      "blocks": {
+        "9c35133b-03ed-44b8-8bb1-6a8b47bc9db1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        },
+        "eda4532f-d2ec-4031-8c9f-414a11e6d4c5": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-wapsi-beard",
+            "title": "Beard Care",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "9c35133b-03ed-44b8-8bb1-6a8b47bc9db1",
+        "eda4532f-d2ec-4031-8c9f-414a11e6d4c5"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "disabled": true,
+      "settings": {
+        "show_collection_info": true,
+        "show_collection_image": false,
+        "apply_overlay": false,
+        "show_color_swatch": false,
+        "show_vendor": false,
+        "collection_image_size": "small",
+        "show_sort_by": true,
+        "show_layout_switch": true,
+        "toolbar_position": "top",
+        "show_filters": true,
+        "show_filter_color_swatch": true,
+        "expand_filters": true,
+        "filter_position": "drawer",
+        "filter_menu": "",
+        "grid_items_per_page": 48,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "3312ee99-f42b-49c0-ab2e-8d1a81312ad3": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16173944504474__3312ee99-f42b-49c0-ab2e-8d1a81312ad3-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-wapsi-skin",
+            "title": "Skin care",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16173944504474__3312ee99-f42b-49c0-ab2e-8d1a81312ad3-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "940d34e1-4911-4440-a9cd-54844bd93d84": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16173944504474__940d34e1-4911-4440-a9cd-54844bd93d84-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-wapsi-bath",
+            "title": "Bath care",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16173944504474__940d34e1-4911-4440-a9cd-54844bd93d84-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "a81d24d1-82e9-48a6-9b9e-d69be5ae046d": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16173944504474__a81d24d1-82e9-48a6-9b9e-d69be5ae046d-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-wapsi-hair",
+            "title": "hair care",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16173944504474__a81d24d1-82e9-48a6-9b9e-d69be5ae046d-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "a80a7979-f61a-4446-a367-5b78eaf3ae50": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16173944504474__a80a7979-f61a-4446-a367-5b78eaf3ae50-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-wapsi-fragrances",
+            "title": "Fragrances",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16173944504474__a80a7979-f61a-4446-a367-5b78eaf3ae50-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2": {
+      "type": "accordion",
+      "blocks": {
+        "00fe1d24-6800-48ba-a779-66fd938c5d2c": {
+          "type": "testimonial",
+          "settings": {
+            "que": "",
+            "ans": "",
+            "open": false
+          }
+        },
+        "523b320c-afa7-4dc3-a10e-8f133a9fdb18": {
+          "type": "testimonial",
+          "settings": {
+            "que": "",
+            "ans": "",
+            "open": false
+          }
+        },
+        "b8054da8-4027-4440-882e-a4b7f5bdf804": {
+          "type": "testimonial",
+          "settings": {
+            "que": "",
+            "ans": "",
+            "open": false
+          }
+        },
+        "50faeff5-f124-49df-901f-9adac2effd28": {
+          "type": "testimonial",
+          "settings": {
+            "que": "",
+            "ans": "",
+            "open": false
+          }
+        },
+        "cb7b823e-c1b4-4c8f-b41c-9fd28c34d56b": {
+          "type": "testimonial",
+          "settings": {
+            "que": "",
+            "ans": "",
+            "open": false
+          }
+        },
+        "2084c6cf-0a60-492b-b268-52652195f595": {
+          "type": "testimonial",
+          "settings": {
+            "que": "",
+            "ans": "",
+            "open": false
+          }
+        }
+      },
+      "block_order": [
+        "00fe1d24-6800-48ba-a779-66fd938c5d2c",
+        "523b320c-afa7-4dc3-a10e-8f133a9fdb18",
+        "b8054da8-4027-4440-882e-a4b7f5bdf804",
+        "50faeff5-f124-49df-901f-9adac2effd28",
+        "cb7b823e-c1b4-4c8f-b41c-9fd28c34d56b",
+        "2084c6cf-0a60-492b-b268-52652195f595"
+      ],
+      "settings": {
+      }
+    },
+    "recently-viewed-products": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "title": "Recently viewed",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false
+      }
+    }
+  },
+  "order": [
+    "6867f67e-1d79-43fc-9aa2-498dac676090",
+    "6e419626-31ce-42ec-9419-1c23d678ebdb",
+    "main",
+    "3312ee99-f42b-49c0-ab2e-8d1a81312ad3",
+    "940d34e1-4911-4440-a9cd-54844bd93d84",
+    "a81d24d1-82e9-48a6-9b9e-d69be5ae046d",
+    "a80a7979-f61a-4446-a367-5b78eaf3ae50",
+    "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2",
+    "recently-viewed-products"
+  ]
+}
