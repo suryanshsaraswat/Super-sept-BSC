@@ -210,7 +210,7 @@
           "settings": {
             "que": "What is the validity of this offer?",
             "ans": "<p>This exciting offer is open for you to enjoy all month long, right up until September 30th!<\/p>",
-            "open": false
+            "open": true
           }
         },
         "523b320c-afa7-4dc3-a10e-8f133a9fdb18": {
