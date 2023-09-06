@@ -129,6 +129,24 @@
         "button_background": "#ffffff"
       }
     },
+    "2a4ccd55-76ba-43e7-9790-ba7c69e571f4": {
+      "type": "single-banner",
+      "blocks": {
+        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/Desktop.gif",
+            "imags2": "shopify:\/\/shop_images\/Mobile.gif",
+            "linkk": ""
+          }
+        }
+      },
+      "block_order": [
+        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e"
+      ],
+      "settings": {
+      }
+    },
     "f0f9d148-a854-4731-a987-5d03b56b3438": {
       "type": "custom-html",
       "disabled": true,
@@ -598,112 +616,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "165347412692254ad1": {
-      "type": "collection-list",
-      "blocks": {
-        "165347412694319f85-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "shave",
-            "image": "shopify:\/\/shop_images\/PSRS.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Shave Care",
-            "button_text": "Shop now",
-            "button_link": "shopify:\/\/pages\/shaving-products-for-men",
-            "apply_overlay": true
-          }
-        },
-        "165347412694319f85-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "mens-beardcare-products",
-            "image": "shopify:\/\/shop_images\/BeardCare_1.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Beard Care",
-            "button_text": "Shop now",
-            "button_link": "shopify:\/\/pages\/beard-care-products-for-men",
-            "apply_overlay": true
-          }
-        },
-        "165347412694319f85-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "hair-care-products",
-            "image": "shopify:\/\/shop_images\/HairCare_499c6fbf-f663-4da7-9fc3-d0158a4a7eb3.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Hair Care",
-            "button_text": "Shop now",
-            "button_link": "shopify:\/\/pages\/hair-care-products-for-men",
-            "apply_overlay": true
-          }
-        },
-        "aa9b315c-b6ba-4f82-96ec-5ffd03fea8fb": {
-          "type": "collection",
-          "settings": {
-            "collection": "skin-care-products",
-            "image": "shopify:\/\/shop_images\/SkinCare_5e363e91-e0a9-4718-bc7f-79971b2e912a.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Skin Care",
-            "button_text": "Shop now",
-            "button_link": "shopify:\/\/pages\/skin-care-products-for-men",
-            "apply_overlay": true
-          }
-        },
-        "9a045e72-f379-410b-acba-65a6a1dde4c2": {
-          "type": "collection",
-          "settings": {
-            "collection": "bath-care",
-            "image": "shopify:\/\/shop_images\/BathCare.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Bath Care",
-            "button_text": "Shop now",
-            "button_link": "shopify:\/\/pages\/bath-care-products-for-men",
-            "apply_overlay": true
-          }
-        },
-        "47b14e71-eb90-481c-9718-6cb98b4f31d9": {
-          "type": "collection",
-          "settings": {
-            "collection": "cred-rewards-march",
-            "image": "shopify:\/\/shop_images\/Perfume.jpg",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "Fragrances",
-            "button_text": "Shop now",
-            "button_link": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men",
-            "apply_overlay": true
-          }
-        }
-      },
-      "block_order": [
-        "165347412694319f85-0",
-        "165347412694319f85-1",
-        "165347412694319f85-2",
-        "aa9b315c-b6ba-4f82-96ec-5ffd03fea8fb",
-        "9a045e72-f379-410b-acba-65a6a1dde4c2",
-        "47b14e71-eb90-481c-9718-6cb98b4f31d9"
-      ],
-      "disabled": true,
-      "settings": {
-        "image_size": "small",
-        "add_spacing": false,
-        "expand_collection": false,
-        "stack_on_mobile": true,
-        "text_color": "#ffffff",
-        "button_color": "#ffffff"
-      }
-    },
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
       "type": "Brand-discount-slider",
       "blocks": {
@@ -766,6 +678,7 @@
         "95b69c3b-39c1-4805-baf2-4fada4a06246",
         "477cd93c-7cdb-4905-b877-af0bc7b05d86"
       ],
+      "disabled": true,
       "settings": {
         "logo-headingg": "Brand Coupons"
       }
@@ -885,6 +798,7 @@
   },
   "order": [
     "slideshow",
+    "2a4ccd55-76ba-43e7-9790-ba7c69e571f4",
     "f0f9d148-a854-4731-a987-5d03b56b3438",
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
@@ -900,7 +814,6 @@
     "1658742662f1427ad0",
     "71cd6ed5-e5dd-4bc7-a651-d0956aaae816",
     "863bf1d5-edfd-4aa1-8467-b3fc38ec9540",
-    "165347412692254ad1",
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "cc7a68b2-cd27-457f-9d71-e01d3b62e45d",
     "165121474616655051",
