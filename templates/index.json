@@ -672,6 +672,53 @@
         "include_margins": false,
         "evm_widgets": false
       }
+    },
+    "01645ffb-4b6f-4337-9b0c-6a0c0f741895": {
+      "type": "deal-of-the-day",
+      "blocks": {
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Deal of the day",
+        "show_headings_on_mobile": true,
+        "product": "charcoal-facewash-men"
+      }
     }
   },
   "order": [
@@ -693,6 +740,7 @@
     "07a1735f-d055-41aa-8587-6d7d1027db6d",
     "28c929e4-7e35-486a-9cc0-3e0aa94530a5",
     "007a788c-f1b2-4222-9642-acd527fba986",
-    "165658871236433278"
+    "165658871236433278",
+    "01645ffb-4b6f-4337-9b0c-6a0c0f741895"
   ]
 }
