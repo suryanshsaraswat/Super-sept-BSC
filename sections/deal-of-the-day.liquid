@@ -20,11 +20,15 @@
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-product" data-section-settings='{{ section_settings }}'>
   <div class="Container">
+    <div class="paisa-wapsi">
+    <h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/DOTD_1.png?v=1694010476" alt="paisa wapsi"></h2>
+    </div>
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center {% unless section.settings.show_headings_on_mobile %}hidden-phone{% endunless %}">
         {%- if section.settings.subheading != blank -%}
           <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
         {%- endif -%}
+      
 
         {%- if section.settings.title != blank -%}
           <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
