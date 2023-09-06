@@ -369,6 +369,72 @@
         "start_checkbox": true
       }
     },
+    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
+      "type": "Brand-discount-slider",
+      "blocks": {
+        "e6b56035-5e0c-4a44-9615-5abc1356881f": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/BSCLogo_cfb0ea44-7b30-4ce0-b268-61271f63beb0.png",
+            "discount_desc": "Rs.500 OFF on MOV 1999"
+          }
+        },
+        "42f9acee-3e49-4609-89f7-db7446eaf0c0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs. 500 off on MOV 1999"
+          }
+        },
+        "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.500 OFF on MOV 1999"
+          }
+        },
+        "b8a5132c-f086-4c13-953b-b8cf5d692516": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.599 OFF on MOV 1999"
+          }
+        },
+        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.499 OFF on MOV 1999"
+          }
+        },
+        "95b69c3b-39c1-4805-baf2-4fada4a06246": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.499 OFF on MOV 1999"
+          }
+        },
+        "477cd93c-7cdb-4905-b877-af0bc7b05d86": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
+            "discount_desc": "Rs.499 OFF on MOV 1999"
+          }
+        }
+      },
+      "block_order": [
+        "e6b56035-5e0c-4a44-9615-5abc1356881f",
+        "42f9acee-3e49-4609-89f7-db7446eaf0c0",
+        "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
+        "b8a5132c-f086-4c13-953b-b8cf5d692516",
+        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
+        "95b69c3b-39c1-4805-baf2-4fada4a06246",
+        "477cd93c-7cdb-4905-b877-af0bc7b05d86"
+      ],
+      "settings": {
+        "logo-headingg": "Brand Coupons"
+      }
+    },
     "06e88943-53f8-435e-98ca-fa0da8927714": {
       "type": "featured-collections",
       "blocks": {
@@ -499,72 +565,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
-      "type": "Brand-discount-slider",
-      "blocks": {
-        "e6b56035-5e0c-4a44-9615-5abc1356881f": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/BSCLogo_cfb0ea44-7b30-4ce0-b268-61271f63beb0.png",
-            "discount_desc": "Rs.500 OFF on MOV 1999"
-          }
-        },
-        "42f9acee-3e49-4609-89f7-db7446eaf0c0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
-            "discount_desc": "Rs. 500 off on MOV 1999"
-          }
-        },
-        "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
-            "discount_desc": "Rs.500 OFF on MOV 1999"
-          }
-        },
-        "b8a5132c-f086-4c13-953b-b8cf5d692516": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
-            "discount_desc": "Rs.599 OFF on MOV 1999"
-          }
-        },
-        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
-            "discount_desc": "Rs.499 OFF on MOV 1999"
-          }
-        },
-        "95b69c3b-39c1-4805-baf2-4fada4a06246": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
-            "discount_desc": "Rs.499 OFF on MOV 1999"
-          }
-        },
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/boAt_logo_small_small_19be6527-5d8d-4ae5-9ffc-9a073cf1cb69.svg",
-            "discount_desc": "Rs.499 OFF on MOV 1999"
-          }
-        }
-      },
-      "block_order": [
-        "e6b56035-5e0c-4a44-9615-5abc1356881f",
-        "42f9acee-3e49-4609-89f7-db7446eaf0c0",
-        "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
-        "b8a5132c-f086-4c13-953b-b8cf5d692516",
-        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
-        "95b69c3b-39c1-4805-baf2-4fada4a06246",
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86"
-      ],
-      "settings": {
-        "logo-headingg": "Brand Coupons"
-      }
-    },
     "cc7a68b2-cd27-457f-9d71-e01d3b62e45d": {
       "type": "custom-html-wthout-spacing",
       "settings": {
@@ -682,12 +682,12 @@
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
     "featured-collections",
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
+    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "06e88943-53f8-435e-98ca-fa0da8927714",
     "98db884a-8d53-451f-9486-c54afd6ebaca",
     "165874250444a81912",
     "16587425630b5ed5c3",
     "1658742662f1427ad0",
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "cc7a68b2-cd27-457f-9d71-e01d3b62e45d",
     "165121474616655051",
     "07a1735f-d055-41aa-8587-6d7d1027db6d",
