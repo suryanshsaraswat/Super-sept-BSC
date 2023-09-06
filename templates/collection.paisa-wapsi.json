@@ -208,45 +208,70 @@
         "00fe1d24-6800-48ba-a779-66fd938c5d2c": {
           "type": "testimonial",
           "settings": {
-            "que": "",
-            "ans": "",
+            "que": "What is the validity of this offer?",
+            "ans": "<p>This exciting offer is open for you to enjoy all month long, right up until September 30th!<\/p>",
             "open": false
           }
         },
         "523b320c-afa7-4dc3-a10e-8f133a9fdb18": {
           "type": "testimonial",
           "settings": {
-            "que": "",
-            "ans": "",
+            "que": "If I forgot to apply the code, will I still be eligible for a 100% cashback?",
+            "ans": "<p>Customers who have applied the Paisa Waapas Code during their initial order are eligible to receive 100% cashback on their subsequent order valid only on <a href=\"https:\/\/www.bombayshavingcompany.com\" title=\"https:\/\/www.bombayshavingcompany.com\">our website<\/a><\/p>",
             "open": false
           }
         },
         "b8054da8-4027-4440-882e-a4b7f5bdf804": {
           "type": "testimonial",
           "settings": {
-            "que": "",
-            "ans": "",
+            "que": "When can I expect to receive the 100% coupon code?",
+            "ans": "<p>You will receive the coupon code after the product has been delivered, typically within 24 hours.<\/p>",
             "open": false
           }
         },
         "50faeff5-f124-49df-901f-9adac2effd28": {
           "type": "testimonial",
           "settings": {
-            "que": "",
-            "ans": "",
+            "que": "Can I avail 100% cashback on Deal of the day deals or wholesale offers",
+            "ans": "<p>Please note that only customers utilizing Cashback coupons will receive a unique coupon code after product delivery. The 100% cashback offer is not applicable to 'Deal of the Day' and Wholesale offers.<\/p>",
             "open": false
           }
         },
         "cb7b823e-c1b4-4c8f-b41c-9fd28c34d56b": {
           "type": "testimonial",
           "settings": {
-            "que": "",
-            "ans": "",
+            "que": "Is this offer applicable to Cash-on-Delivery (COD) orders too?",
+            "ans": "<p>All cashback orders for the month of September must be prepaid.<\/p>",
             "open": false
           }
         },
         "2084c6cf-0a60-492b-b268-52652195f595": {
           "type": "testimonial",
+          "settings": {
+            "que": "What is the expiration date of the coupon code?",
+            "ans": "<p>The unique code provided to the customer is valid for a period of 30 days.<\/p>",
+            "open": false
+          }
+        },
+        "05f43954-ed7f-4ab3-a931-c5c3fe58fbb4": {
+          "type": "testimonial",
+          "settings": {
+            "que": "Can I combine my coupon code with the 100% cashback offer?",
+            "ans": "<p>Regrettably, you can only apply one coupon code at a time.<\/p>",
+            "open": false
+          }
+        },
+        "7d257527-6ec2-49b0-8932-72667afc240b": {
+          "type": "testimonial",
+          "settings": {
+            "que": "Is it possible to use my rewards points and still take advantage of the 100% cashback offer?",
+            "ans": "<p>Unfortunately, you cannot combine your points with coupons.<\/p>",
+            "open": false
+          }
+        },
+        "6d89bc69-5d2d-4c2f-84db-32b0d963d207": {
+          "type": "testimonial",
+          "disabled": true,
           "settings": {
             "que": "",
             "ans": "",
@@ -260,9 +285,13 @@
         "b8054da8-4027-4440-882e-a4b7f5bdf804",
         "50faeff5-f124-49df-901f-9adac2effd28",
         "cb7b823e-c1b4-4c8f-b41c-9fd28c34d56b",
-        "2084c6cf-0a60-492b-b268-52652195f595"
+        "2084c6cf-0a60-492b-b268-52652195f595",
+        "05f43954-ed7f-4ab3-a931-c5c3fe58fbb4",
+        "7d257527-6ec2-49b0-8932-72667afc240b",
+        "6d89bc69-5d2d-4c2f-84db-32b0d963d207"
       ],
       "settings": {
+        "accord-head": "Frequently Asked Questions"
       }
     },
     "recently-viewed-products": {
