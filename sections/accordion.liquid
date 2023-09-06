@@ -146,18 +146,14 @@
 
 {% schema %}
   {
-
-    "presets": [
+    "name": "Accordian",
+    "type": "collection",
+    "settings": [
       {
-        "category": "Collection",
-        "name": "Accordion",
-        "settings": [
-          {
-            "type": "text",
-            "id": "accord-head"
-          }
-        ]
-
+        "type": "text",
+        "id": "accord-head",
+        "label": "Accordian section heading",
+        "default": "Frequently Asked Questions"
       }
     ],
     "blocks": [
@@ -180,6 +176,12 @@
             "label": "Open by Default"
           }
         ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "Collection",
+        "name": "Accordion"
       }
     ]
   }
