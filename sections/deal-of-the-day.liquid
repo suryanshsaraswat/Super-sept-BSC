@@ -41,7 +41,7 @@
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-product" data-section-settings='{{ section_settings }}'>
   <div class="paisa-wapsi">
     <h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/DOTD_1.png?v=1694010476" alt="paisa wapsi"></h2>
-    <p class="countdown-timer-dotd" id="countdown-dotd"></p>
+    {% if section.settings.start_checkbox != false %}<p class="countdown-timer-dotd" id="countdown-dotd"></p>{% endif %}
     </div>
   <div class="Container">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
