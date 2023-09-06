@@ -321,6 +321,53 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "01645ffb-4b6f-4337-9b0c-6a0c0f741895": {
+      "type": "deal-of-the-day",
+      "blocks": {
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Deal of the day",
+        "show_headings_on_mobile": true,
+        "product": "charcoal-facewash-men"
+      }
+    },
     "06e88943-53f8-435e-98ca-fa0da8927714": {
       "type": "featured-collections",
       "blocks": {
@@ -449,53 +496,6 @@
         "show_color_swatch": false,
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
-      }
-    },
-    "5d5250f4-3545-4306-8e74-a2c932a641b4": {
-      "type": "featured-product",
-      "blocks": {
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-product_meta-1": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-share_buttons-1": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-variant_selector-1": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-product_meta-1",
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-share_buttons-1",
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-variant_selector-1",
-        "template--16174120501402__5d5250f4-3545-4306-8e74-a2c932a641b4-buy_buttons-1"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "DEAL OF THE DAY",
-        "show_headings_on_mobile": true,
-        "product": "charcoal-facewash-men"
       }
     },
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
@@ -672,53 +672,6 @@
         "include_margins": false,
         "evm_widgets": false
       }
-    },
-    "01645ffb-4b6f-4337-9b0c-6a0c0f741895": {
-      "type": "deal-of-the-day",
-      "blocks": {
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "Deal of the day",
-        "show_headings_on_mobile": true,
-        "product": "charcoal-facewash-men"
-      }
     }
   },
   "order": [
@@ -728,19 +681,18 @@
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
     "featured-collections",
+    "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
     "06e88943-53f8-435e-98ca-fa0da8927714",
     "98db884a-8d53-451f-9486-c54afd6ebaca",
     "165874250444a81912",
     "16587425630b5ed5c3",
     "1658742662f1427ad0",
-    "5d5250f4-3545-4306-8e74-a2c932a641b4",
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "cc7a68b2-cd27-457f-9d71-e01d3b62e45d",
     "165121474616655051",
     "07a1735f-d055-41aa-8587-6d7d1027db6d",
     "28c929e4-7e35-486a-9cc0-3e0aa94530a5",
     "007a788c-f1b2-4222-9642-acd527fba986",
-    "165658871236433278",
-    "01645ffb-4b6f-4337-9b0c-6a0c0f741895"
+    "165658871236433278"
   ]
 }
