@@ -1,0 +1,52 @@
+ <style>
+        .countdown {
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .countdown span {
+            display: inline-block;
+            margin: 0 10px;
+        }
+    </style>
+    <div class="countdown" id="countdown">
+        <span class="days">00</span>
+        <span class="hours">00</span>
+        <span class="minutes">00</span>
+        <span class="seconds">00</span>
+    </div>
+
+    <script>
+        const targetDate = new Date("2023-09-07T13:00:00").getTime();
+
+        // Update the countdown every 1 second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+
+        function updateCountdown() {
+            const currentDate = new Date().getTime();
+            const timeRemaining = targetDate - currentDate;
+
+            if (timeRemaining <= 0) {
+                clearInterval(countdownInterval);
+                document.getElementById('countdown').innerHTML = 'Countdown Expired';
+                return;
+            }
+
+            const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+            document.querySelector('.days').innerText = formatTimeUnit(days);
+            document.querySelector('.hours').innerText = formatTimeUnit(hours);
+            document.querySelector('.minutes').innerText = formatTimeUnit(minutes);
+            document.querySelector('.seconds').innerText = formatTimeUnit(seconds);
+        }
+
+        function formatTimeUnit(unit) {
+            return unit < 10 ? `0${unit}` : unit;
+        }
+
+        // Initial call to set up the timer
+        updateCountdown();
+    </script>
