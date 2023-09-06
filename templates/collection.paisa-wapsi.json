@@ -18,6 +18,14 @@
       "settings": {
       }
     },
+    "10ef4252-450e-4bab-9528-403e924d6b7f": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "liquid": "{% render 'countdown-timer' %}"
+      }
+    },
     "6867f67e-1d79-43fc-9aa2-498dac676090": {
       "type": "featured-collections",
       "blocks": {
@@ -324,6 +332,7 @@
   },
   "order": [
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
+    "10ef4252-450e-4bab-9528-403e924d6b7f",
     "6867f67e-1d79-43fc-9aa2-498dac676090",
     "6e419626-31ce-42ec-9419-1c23d678ebdb",
     "main",
