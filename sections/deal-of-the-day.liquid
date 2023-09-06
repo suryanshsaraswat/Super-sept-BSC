@@ -322,7 +322,8 @@
   {{- product_modals -}}
 </section>
 <script>
-  function startTimer() {
+  document.addEventListener('DOMContentLoaded', function (){
+    function startTimer() {
   const timerDiv = document.getElementById('countdown-dotd');
   let timeInSeconds = 70; // 1 minute 10 seconds
 
@@ -350,6 +351,7 @@ if (startTimerCheckbox) {
     }
   });
 }
+  });
 </script>
 {% schema %}
 {
