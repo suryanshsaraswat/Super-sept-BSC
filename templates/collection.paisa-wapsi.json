@@ -1,5 +1,23 @@
 {
   "sections": {
+    "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18": {
+      "type": "single-banner",
+      "blocks": {
+        "9093f1a2-67b5-4ebe-90a2-df904ed652a2": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/1920x650_Desktop_Banner_WithoutCTA.webp",
+            "imags2": "shopify:\/\/shop_images\/800x987_Mobile.webp",
+            "linkk": ""
+          }
+        }
+      },
+      "block_order": [
+        "9093f1a2-67b5-4ebe-90a2-df904ed652a2"
+      ],
+      "settings": {
+      }
+    },
     "6867f67e-1d79-43fc-9aa2-498dac676090": {
       "type": "featured-collections",
       "blocks": {
@@ -305,6 +323,7 @@
     }
   },
   "order": [
+    "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
     "6867f67e-1d79-43fc-9aa2-498dac676090",
     "6e419626-31ce-42ec-9419-1c23d678ebdb",
     "main",
