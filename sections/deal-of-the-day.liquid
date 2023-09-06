@@ -1,3 +1,8 @@
+<style>
+  #shopify-section-template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895 .Container {
+    background: #ff6902;
+}
+</style>
 {%- assign product = all_products[section.settings.product] -%}
 
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
@@ -19,10 +24,10 @@
 {%- endcapture -%}
 
 <section class="Section Section--spacingNormal" data-section-id="{{ section.id }}" data-section-type="featured-product" data-section-settings='{{ section_settings }}'>
-  <div class="Container">
-    <div class="paisa-wapsi">
+  <div class="paisa-wapsi">
     <h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/DOTD_1.png?v=1694010476" alt="paisa wapsi"></h2>
     </div>
+  <div class="Container">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center {% unless section.settings.show_headings_on_mobile %}hidden-phone{% endunless %}">
         {%- if section.settings.subheading != blank -%}
