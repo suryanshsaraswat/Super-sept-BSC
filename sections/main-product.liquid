@@ -310,6 +310,7 @@
                 <div class="desktop-view">
                   {%- render 'product-meta', form: form, block: block, product: product -%}
                 </div>
+                {% render 'discount-section' %}
                 
 
                 {%- when 'description' -%}
@@ -326,7 +327,6 @@
                     {{ truncated }}<a href="#" class="read-more-linkk neww">Read More <span>&raquo;</span></a>
                     </div>
                     </div>{%- endif -%}
-                {% render 'discount-section' %}
                 {%- if product.id != '7321933840538' -%}{% render 'pincode-checker' %}{%- endif -%}
                 {%- when 'share_buttons' -%}
                   <div class="ProductMeta__ShareButtons hidden-pocket" {{ block.shopify_attributes }}>
