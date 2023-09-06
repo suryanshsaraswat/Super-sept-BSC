@@ -321,7 +321,36 @@
   {{- product_popovers -}}
   {{- product_modals -}}
 </section>
+<script>
+  function startTimer() {
+  const timerDiv = document.getElementById('countdown-dotd');
+  let timeInSeconds = 70; // 1 minute 10 seconds
 
+  function updateTimer() {
+    timerDiv.textContent = `Time remaining: ${timeInSeconds} seconds`;
+
+    if (timeInSeconds === 0) {
+      timerDiv.textContent = 'Time is up!';
+    } else {
+      timeInSeconds--;
+      setTimeout(updateTimer, 1000);
+    }
+  }
+
+  updateTimer();
+}
+
+// Listen for changes to the "Start Timer" checkbox
+const startTimerCheckbox = document.getElementById('start_timer');
+if (startTimerCheckbox) {
+  startTimerCheckbox.addEventListener('change', function () {
+    if (this.checked) {
+      // Checkbox is checked, start the timer
+      startTimer();
+    }
+  });
+}
+</script>
 {% schema %}
 {
   "name": "Deal of the Day",
@@ -507,6 +536,12 @@
       "type": "product",
       "id": "product",
       "label": "Product"
+    },
+    {
+      "type":"checkbox",
+      "id":"start_checkbox",
+      "label":"Start the timer ?",
+      "default":false
     }
   ],
   "presets": [
