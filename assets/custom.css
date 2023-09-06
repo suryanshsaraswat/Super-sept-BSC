@@ -905,9 +905,8 @@ div#countdown {
     margin-bottom: 12px;
     padding: 10px 7px;
     border-radius: 9px;
-    border: 4px dashed #0d5ea8;
     margin: 5px auto;
-    width:300px;
+    width:310px;
 }
 .timexxx{background:#f1f1f1!important}
 @media(max-width:500px){.ProductMeta__Text {display: none;}button.ProductForm__AddToCart.Button.Button--primary.Button--full{display:none}}
