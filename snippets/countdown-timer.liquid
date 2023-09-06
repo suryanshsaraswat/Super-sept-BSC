@@ -44,10 +44,10 @@
             const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
             const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-            //document.querySelector('.days').innerText = formatTimeUnit(days);
-            document.querySelector('.hours').innerText = formatTimeUnit(hours);
-            document.querySelector('.minutes').innerText = formatTimeUnit(minutes);
-            document.querySelector('.seconds').innerText = formatTimeUnit(seconds);
+            //document.querySelector('.days').innerText = formatTimeUnit(days) + 'd';
+            document.querySelector('.hours').innerText = formatTimeUnit(hours)+ 'h';
+            document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
+            document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
         }
 
         function formatTimeUnit(unit) {
