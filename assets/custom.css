@@ -908,6 +908,10 @@ div#countdown {
     margin: 5px auto;
     width:310px;
 }
+button.ProductForm__AddToCart.Button.Button--primary {
+    display: block;
+    width: 100%;
+}
 .timexxx{background:#f1f1f1!important}
 @media(max-width:500px){.ProductMeta__Text {display: none;}button.ProductForm__AddToCart.Button.Button--primary.Button--full{display:none}}
 .set > a {display: flex;justify-content: space-between;}
