@@ -85,7 +85,7 @@
           <a href="{{ product.url }}" class="FeaturedProduct__Gallery">
           <div class="labels">
           <div class="x-units">20 Units Only</div>
-          <div id="timer">16:00</div>
+          <div id="timer-container"><span id="timer"></span></div>
           </div>
             {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
 
@@ -342,38 +342,43 @@
   {{- product_modals -}}
 </section>
 <script>
-        // $(document).ready(function() {
-        //     var timerMinutes = 16;
-        //     var timerSeconds = 0;
-
-        //     function updateTimerDisplay() {
-        //         var minutesStr = timerMinutes.toString().padStart(2, '0');
-        //         var secondsStr = timerSeconds.toString().padStart(2, '0');
-        //         $("#timer").text(minutesStr + ":" + secondsStr);
-        //     }
-
-        //     function startTimer() {
-        //         var timerInterval = setInterval(function() {
-        //             if (timerMinutes === 0 && timerSeconds === 0) {
-        //                 clearInterval(timerInterval);
-        //                 timerMinutes = 16;
-        //                 timerSeconds = 0;
-        //                 updateTimerDisplay();
-        //                 startTimer(); // Restart the timer automatically
-        //             } else {
-        //                 if (timerSeconds === 0) {
-        //                     timerMinutes--;
-        //                     timerSeconds = 59;
-        //                 } else {
-        //                     timerSeconds--;
-        //                 }
-        //                 updateTimerDisplay();
-        //             }
-        //         }, 1000);
-        //     }
-
-        //     startTimer(); // Start the timer initially.
-        // });
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var timerContainer = document.getElementById('timer-container');
+    var timer = document.getElementById('timer');
+    var showTimerOption = {{ section.settings.start_checkbox }};
+    
+    // Function to update the timer display
+    function updateTimerDisplay() {
+        timer.textContent = 'Timer: ' + showTimerOption + ' seconds left';
+    }
+    
+    // Function to start the timer
+    function startTimer() {
+        var timerDuration = showTimerOption * 1000; // Convert to milliseconds
+        
+        // Display the timer initially
+        timerContainer.style.display = 'block';
+        updateTimerDisplay();
+        
+        // Start the countdown
+        var countdown = setInterval(function () {
+            showTimerOption--;
+            updateTimerDisplay();
+            
+            if (showTimerOption <= 0) {
+                clearInterval(countdown); // Stop the timer when it reaches 0
+                timerContainer.style.display = 'none'; // Hide the timer
+            }
+        }, 1000); // Update the timer every second (1000 milliseconds)
+    }
+    
+    // Check if the "Show Timer" option is enabled
+    if (showTimerOption > 0) {
+        startTimer();
+    }
+});
+</script>
     </script>
 {% schema %}
 {
@@ -506,14 +511,7 @@
       "type": "quantity_selector",
       "name": "Quantity selector",
       "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "show_label",
-          "label": "Show label",
-          "default": false
-        }
-      ]
+      "settings": []
     },
     {
       "type": "text",
