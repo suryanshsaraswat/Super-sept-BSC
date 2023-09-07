@@ -378,34 +378,6 @@
         "text4": ""
       }
     },
-    "06e88943-53f8-435e-98ca-fa0da8927714": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--15991129473178__06e88943-53f8-435e-98ca-fa0da8927714-1675768907f3734792-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "generic-gifting",
-            "title": "Gifts for your loved ones!",
-            "grid_items_count": 4,
-            "button_text": "View All Products"
-          }
-        }
-      },
-      "block_order": [
-        "template--15991129473178__06e88943-53f8-435e-98ca-fa0da8927714-1675768907f3734792-0"
-      ],
-      "settings": {
-        "bg": "white",
-        "hcl": "#0d5ea8",
-        "title": "Discover Our Gift Kits for Your Favourite People!",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
       "type": "Brand-discount-slider",
       "blocks": {
@@ -478,6 +450,34 @@
       ],
       "settings": {
         "logo-headingg": "Brand Coupons"
+      }
+    },
+    "06e88943-53f8-435e-98ca-fa0da8927714": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--15991129473178__06e88943-53f8-435e-98ca-fa0da8927714-1675768907f3734792-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "generic-gifting",
+            "title": "Gifts for your loved ones!",
+            "grid_items_count": 4,
+            "button_text": "View All Products"
+          }
+        }
+      },
+      "block_order": [
+        "template--15991129473178__06e88943-53f8-435e-98ca-fa0da8927714-1675768907f3734792-0"
+      ],
+      "settings": {
+        "bg": "white",
+        "hcl": "#0d5ea8",
+        "title": "Discover Our Gift Kits for Your Favourite People!",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
       }
     },
     "98db884a-8d53-451f-9486-c54afd6ebaca": {
@@ -700,8 +700,8 @@
     "featured-collections",
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
     "7ebf82e3-7df8-4207-8462-3331c5e90551",
-    "06e88943-53f8-435e-98ca-fa0da8927714",
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
+    "06e88943-53f8-435e-98ca-fa0da8927714",
     "98db884a-8d53-451f-9486-c54afd6ebaca",
     "165874250444a81912",
     "16587425630b5ed5c3",
