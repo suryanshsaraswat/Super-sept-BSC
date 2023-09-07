@@ -196,6 +196,104 @@
         "show_timer": false
       }
     },
+    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
+      "type": "Brand-discount-slider",
+      "blocks": {
+        "e6b56035-5e0c-4a44-9615-5abc1356881f": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_e0654329-c39a-48bf-8b26-a8370ed4d37a.png",
+            "discount_desc": "Rs.500 OFF on MOV 1999"
+          }
+        },
+        "42f9acee-3e49-4609-89f7-db7446eaf0c0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_5303afec-a142-4f05-a459-a00bdc1af81a.png",
+            "discount_desc": "Pack of 5 at 999, MRP of 1996"
+          }
+        },
+        "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_3.png",
+            "discount_desc": "Rs.500 OFF on MOV 1999"
+          }
+        },
+        "b8a5132c-f086-4c13-953b-b8cf5d692516": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_5.png",
+            "discount_desc": "Free Product wth Shipping of 98"
+          }
+        },
+        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_4_0141bd8f-b22f-444c-a6bb-dc06fc73210f.png",
+            "discount_desc": "Coupons worth Rs.15000"
+          }
+        },
+        "95b69c3b-39c1-4805-baf2-4fada4a06246": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_5bbf555b-4d66-426d-a9b8-c7f75e0cfbf3.png",
+            "discount_desc": "60% OFF + Free Doc consulatation"
+          }
+        },
+        "477cd93c-7cdb-4905-b877-af0bc7b05d86": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_6_71ef0e21-975c-45f3-b2e0-1d83613b7222.png",
+            "discount_desc": "Rs.499 OFF on MOV 1999"
+          }
+        },
+        "82682ca9-58bb-44ff-9892-00d042c364db": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_7_3677a142-97e2-406f-804d-16921b6bca56.png",
+            "discount_desc": "Free Product wth Shipping of 98"
+          }
+        },
+        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_8_027f3466-d1ff-4340-a212-7592c4167427.png",
+            "discount_desc": "Free 6 month memebership worth 549"
+          }
+        },
+        "f819db04-c311-495c-a47c-44fdf78f1782": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_9.png",
+            "discount_desc": "Flat 50% OFF on website + freebie"
+          }
+        },
+        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_10.png",
+            "discount_desc": "Flat 60% off sitewide"
+          }
+        }
+      },
+      "block_order": [
+        "e6b56035-5e0c-4a44-9615-5abc1356881f",
+        "42f9acee-3e49-4609-89f7-db7446eaf0c0",
+        "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
+        "b8a5132c-f086-4c13-953b-b8cf5d692516",
+        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
+        "95b69c3b-39c1-4805-baf2-4fada4a06246",
+        "477cd93c-7cdb-4905-b877-af0bc7b05d86",
+        "82682ca9-58bb-44ff-9892-00d042c364db",
+        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8",
+        "f819db04-c311-495c-a47c-44fdf78f1782",
+        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009"
+      ],
+      "settings": {
+        "logo-headingg": "Brand Coupons"
+      }
+    },
     "f0f9d148-a854-4731-a987-5d03b56b3438": {
       "type": "custom-html",
       "disabled": true,
@@ -387,104 +485,6 @@
         "text2": "50,000 worth coupons to be won",
         "text3": "₹1 deals EVERYDAY",
         "text4": "Freebies with every order"
-      }
-    },
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
-      "type": "Brand-discount-slider",
-      "blocks": {
-        "e6b56035-5e0c-4a44-9615-5abc1356881f": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_e0654329-c39a-48bf-8b26-a8370ed4d37a.png",
-            "discount_desc": "Rs.500 OFF on MOV 1999"
-          }
-        },
-        "42f9acee-3e49-4609-89f7-db7446eaf0c0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_5303afec-a142-4f05-a459-a00bdc1af81a.png",
-            "discount_desc": "Pack of 5 at 999, MRP of 1996"
-          }
-        },
-        "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_3.png",
-            "discount_desc": "Rs.500 OFF on MOV 1999"
-          }
-        },
-        "b8a5132c-f086-4c13-953b-b8cf5d692516": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_5.png",
-            "discount_desc": "Free Product wth Shipping of 98"
-          }
-        },
-        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_4_0141bd8f-b22f-444c-a6bb-dc06fc73210f.png",
-            "discount_desc": "Coupons worth Rs.15000"
-          }
-        },
-        "95b69c3b-39c1-4805-baf2-4fada4a06246": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_5bbf555b-4d66-426d-a9b8-c7f75e0cfbf3.png",
-            "discount_desc": "60% OFF + Free Doc consulatation"
-          }
-        },
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_6_71ef0e21-975c-45f3-b2e0-1d83613b7222.png",
-            "discount_desc": "Rs.499 OFF on MOV 1999"
-          }
-        },
-        "82682ca9-58bb-44ff-9892-00d042c364db": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_7_3677a142-97e2-406f-804d-16921b6bca56.png",
-            "discount_desc": "Free Product wth Shipping of 98"
-          }
-        },
-        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_8_027f3466-d1ff-4340-a212-7592c4167427.png",
-            "discount_desc": "Free 6 month memebership worth 549"
-          }
-        },
-        "f819db04-c311-495c-a47c-44fdf78f1782": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_9.png",
-            "discount_desc": "Flat 50% OFF on website + freebie"
-          }
-        },
-        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_10.png",
-            "discount_desc": "Flat 60% off sitewide"
-          }
-        }
-      },
-      "block_order": [
-        "e6b56035-5e0c-4a44-9615-5abc1356881f",
-        "42f9acee-3e49-4609-89f7-db7446eaf0c0",
-        "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
-        "b8a5132c-f086-4c13-953b-b8cf5d692516",
-        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
-        "95b69c3b-39c1-4805-baf2-4fada4a06246",
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86",
-        "82682ca9-58bb-44ff-9892-00d042c364db",
-        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8",
-        "f819db04-c311-495c-a47c-44fdf78f1782",
-        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009"
-      ],
-      "settings": {
-        "logo-headingg": "Brand Coupons"
       }
     },
     "06e88943-53f8-435e-98ca-fa0da8927714": {
@@ -730,12 +730,12 @@
     "slideshow",
     "2a4ccd55-76ba-43e7-9790-ba7c69e571f4",
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
+    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "f0f9d148-a854-4731-a987-5d03b56b3438",
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
     "featured-collections",
     "7ebf82e3-7df8-4207-8462-3331c5e90551",
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "06e88943-53f8-435e-98ca-fa0da8927714",
     "98db884a-8d53-451f-9486-c54afd6ebaca",
     "165874250444a81912",
