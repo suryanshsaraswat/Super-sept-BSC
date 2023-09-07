@@ -249,6 +249,15 @@
             "cat_tile_image": "shopify:\/\/shop_images\/hair_a2baadaf-a0ba-412b-972c-b0494a9e1070.png",
             "linkopen": false
           }
+        },
+        "ab46a3b8-5d97-456e-a5e8-385540e94ad1": {
+          "type": "homepage",
+          "settings": {
+            "heading_nav": "100% Cashback",
+            "linkurl_nav": "shopify:\/\/collections\/paisa-wapsi-sale",
+            "cat_tile_image": "shopify:\/\/shop_images\/Logo_Unit.png",
+            "linkopen": false
+          }
         }
       },
       "block_order": [
@@ -261,7 +270,8 @@
         "c8fca471-0be3-4dde-9030-bff159d5f76e",
         "8d9a6ca7-390c-4898-a47a-2fcd129a37ce",
         "84733214-9fc7-4cc0-aee6-5c47e9c0188a",
-        "dbb2c8a7-1f17-4597-ae64-bebe34c0d6f8"
+        "dbb2c8a7-1f17-4597-ae64-bebe34c0d6f8",
+        "ab46a3b8-5d97-456e-a5e8-385540e94ad1"
       ],
       "settings": {
       }
