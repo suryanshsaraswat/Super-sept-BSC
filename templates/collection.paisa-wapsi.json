@@ -247,6 +247,45 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "f0361034-5450-4871-94fa-1b6265e6c756": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16174120435866__f0361034-5450-4871-94fa-1b6265e6c756-collection-1": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        },
+        "ceb2a293-0cb4-4bc1-9731-75d5b14fc92c": {
+          "type": "collection",
+          "settings": {
+            "collection": "paisa-waapsi-sale-shop-for-women",
+            "title": "Shop for Women",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120435866__f0361034-5450-4871-94fa-1b6265e6c756-collection-1",
+        "ceb2a293-0cb4-4bc1-9731-75d5b14fc92c"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "Featured collection",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2": {
       "type": "accordion",
       "blocks": {
@@ -360,6 +399,7 @@
     "940d34e1-4911-4440-a9cd-54844bd93d84",
     "a81d24d1-82e9-48a6-9b9e-d69be5ae046d",
     "a80a7979-f61a-4446-a367-5b78eaf3ae50",
+    "f0361034-5450-4871-94fa-1b6265e6c756",
     "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2",
     "recently-viewed-products"
   ]
