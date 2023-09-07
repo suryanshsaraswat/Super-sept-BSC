@@ -345,14 +345,13 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
-          "9aced01d-f17f-4431-bb82-d03b27c3aa3f": {
+          "00b65f50-279e-408e-b722-d81111773ba1": {
             "type": "testimonial",
-            "disabled": true,
             "settings": {
-              "Offer": "Tuesday Temptation: Get a perfume worth Rs. 799 on the purchase of trimmer",
-              "image": "shopify:\/\/shop_images\/tt_logo.png",
-              "coupon": "TUESDAY",
-              "linkurl": "shopify:\/\/pages\/trimmers-for-men"
+              "Offer": "Get 100% cashback on your order! Use Code:PAISAWAPSI",
+              "image": "shopify:\/\/shop_images\/Logo_Unit.png",
+              "coupon": "PAISAWAPSI",
+              "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
             }
           },
           "4a35f82b-a534-4b7f-af03-9e8cec58bd11": {
@@ -362,16 +361,6 @@
               "image": "shopify:\/\/shop_images\/Untitled_design_4.png",
               "coupon": "",
               "linkurl": "shopify:\/\/pages\/razors-for-men"
-            }
-          },
-          "6a1d9fdc-8e92-4bdd-a1c9-529d7ced8235": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "WEEKEND SALE: BUY ANY 3 PRODUCTS AT 30% OFF!",
-              "image": "shopify:\/\/shop_images\/offer.png",
-              "coupon": "PAYDAY",
-              "linkurl": "shopify:\/\/collections\/all-products"
             }
           },
           "55c336c9-f065-4834-be0a-d3aef3293d04": {
@@ -391,69 +380,13 @@
               "coupon": "",
               "linkurl": "https:\/\/bombayshavingcompany.com\/apps\/gbb\/builder\/1"
             }
-          },
-          "37c6cd28-3c8c-495a-bb0b-667d173e862b": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Be Date night ready with Smooth and Sexy Intimate Combo and get upto 40% off",
-              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
-              "coupon": "",
-              "linkurl": "shopify:\/\/products\/landscaper-durex-combo"
-            }
-          },
-          "425f49a4-fe06-48d7-bb7f-7a4fd3477926": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "FREE Mini charcoal facial kit on orders above Rs. 499 | Use code: WK499",
-              "image": "shopify:\/\/shop_images\/tag.png",
-              "coupon": "WK499",
-              "linkurl": "shopify:\/\/collections\/weekend-sale-1"
-            }
-          },
-          "72e9a877-b969-4038-91d6-6462840b760a": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Get Discounts upto 50% OFF on Valentine's Day Gifts!",
-              "image": "shopify:\/\/shop_images\/offer.png",
-              "coupon": "",
-              "linkurl": "shopify:\/\/pages\/gifts-for-men-online"
-            }
-          },
-          "a1937f41-b177-43f7-bc19-75147c6b8ab0": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Download our App and Get upto 20% OFF and Other Exciting Prizes",
-              "image": "shopify:\/\/shop_images\/payment-method.png",
-              "coupon": "",
-              "linkurl": "https:\/\/onelink.to\/knm3j8"
-            }
-          },
-          "e1c63e88-683a-470a-a409-cb388b5f4daa": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Get 20% OFF sitewide* | Use code: BSC20",
-              "image": "shopify:\/\/shop_images\/20-percent.png",
-              "coupon": "BSC20",
-              "linkurl": "https:\/\/bombayshavingcompany.com\/collections\/best-seller?utm_source=D2C+Web+Links&utm_medium=BSC20+Announcement&utm_campaign=Best+Sellers"
-            }
           }
         },
         "block_order": [
-          "9aced01d-f17f-4431-bb82-d03b27c3aa3f",
+          "00b65f50-279e-408e-b722-d81111773ba1",
           "4a35f82b-a534-4b7f-af03-9e8cec58bd11",
-          "6a1d9fdc-8e92-4bdd-a1c9-529d7ced8235",
           "55c336c9-f065-4834-be0a-d3aef3293d04",
-          "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
-          "37c6cd28-3c8c-495a-bb0b-667d173e862b",
-          "425f49a4-fe06-48d7-bb7f-7a4fd3477926",
-          "72e9a877-b969-4038-91d6-6462840b760a",
-          "a1937f41-b177-43f7-bc19-75147c6b8ab0",
-          "e1c63e88-683a-470a-a409-cb388b5f4daa"
+          "4e3350df-fe9a-4254-9ca5-dccc73df0f36"
         ],
         "settings": {
           "text": "Click here to view offers!"
