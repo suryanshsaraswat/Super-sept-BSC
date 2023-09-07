@@ -127,10 +127,14 @@
       id="copy-cat">BSC25</div>
       </span> {% endcomment %}
     </div>
-    {% elsif tag == "paisa_wapsi" %}
+    {% elsif tag == "paisa_wapsi" and tag == 'Discount@25' %}
         <div class="discount-setup">
       <h2>Get 100% CASHBACK</h2>
       <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">PAISAWAPSI</span></div>
+    </div>
+    <div class="discount-setup">
+      <h2>Get FLAT 25% OFF</h2>
+      <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">BSC25</span></div>
     </div>
         {% else %}
         <div class="display:none"></div>
