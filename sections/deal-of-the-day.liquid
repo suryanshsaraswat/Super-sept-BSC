@@ -19,7 +19,7 @@
 }
   .x-units {
     position: absolute;
-    z-index: 10;
+    z-index: 1;
     background-color: #fadf2e;
     top: 6px;
     right: 6px;
@@ -85,6 +85,7 @@
           <a href="{{ product.url }}" class="FeaturedProduct__Gallery">
           <div class="labels">
           <div class="x-units">20 Units Only</div>
+          <div id="timer">16:00</div>
           </div>
             {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
 
@@ -341,36 +342,39 @@
   {{- product_modals -}}
 </section>
 <script>
-  document.addEventListener('DOMContentLoaded', function (){
-    function startTimer() {
-  const timerDiv = document.getElementById('countdown-dotd');
-  let timeInSeconds = 70; // 1 minute 10 seconds
+        $(document).ready(function() {
+            var timerMinutes = 16;
+            var timerSeconds = 0;
 
-  function updateTimer() {
-    timerDiv.textContent = `Time remaining: ${timeInSeconds} seconds`;
+            function updateTimerDisplay() {
+                var minutesStr = timerMinutes.toString().padStart(2, '0');
+                var secondsStr = timerSeconds.toString().padStart(2, '0');
+                $("#timer").text(minutesStr + ":" + secondsStr);
+            }
 
-    if (timeInSeconds === 0) {
-      timerDiv.textContent = 'Time is up!';
-    } else {
-      timeInSeconds--;
-      setTimeout(updateTimer, 1000);
-    }
-  }
+            function startTimer() {
+                var timerInterval = setInterval(function() {
+                    if (timerMinutes === 0 && timerSeconds === 0) {
+                        clearInterval(timerInterval);
+                        timerMinutes = 16;
+                        timerSeconds = 0;
+                        updateTimerDisplay();
+                        startTimer(); // Restart the timer automatically
+                    } else {
+                        if (timerSeconds === 0) {
+                            timerMinutes--;
+                            timerSeconds = 59;
+                        } else {
+                            timerSeconds--;
+                        }
+                        updateTimerDisplay();
+                    }
+                }, 1000);
+            }
 
-  updateTimer();
-}
-
-// Listen for changes to the "Start Timer" checkbox
-const startTimerCheckbox = document.getElementById('start_checkbox');
-if (startTimerCheckbox) {
-  startTimerCheckbox.addEventListener('change', function () {
-    if (this.checked) {
-      startTimer();
-    }
-  });
-}
-  });
-</script>
+            startTimer(); // Start the timer initially.
+        });
+    </script>
 {% schema %}
 {
   "name": "Deal of the Day",
