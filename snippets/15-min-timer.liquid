@@ -3,39 +3,32 @@
     <div class="countdown" id="countdown">
       <h2>The offer starts in:</h2>
         <!-- <span class="days">00</span> -->
-        <span class="hours">00</span>
+        <!-- <span class="hours">00</span> -->
         <span class="minutes">00</span>
         <span class="seconds">00</span>
     </div>
 
     <script>
         const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
-const targetDate = new Date().getTime() + fifteenMinutes;
+        const targetDate = new Date().getTime() + fifteenMinutes;
 
-// Update the countdown every 1 second
-const countdownInterval = setInterval(updateCountdown, 1000);
-
-function updateCountdown() {
-    const currentDate = new Date().getTime();
-    const timeRemaining = targetDate - currentDate;
-
-    if (timeRemaining <= 0) {
+        // Update the countdown every 1 second
+        const countdownInterval = setInterval(updateCountdown, 1000);
+      function updateCountdown() {
+        const currentDate = new Date().getTime();
+        const timeRemaining = targetDate - currentDate;
+        if (timeRemaining <= 0) {
         clearInterval(countdownInterval);
         document.getElementById('countdown').innerHTML = 'Offer has ended';
         return;
     }
-
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
-    document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
-    document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
+        document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
 }
-
 function formatTimeUnit(unit) {
     return unit < 10 ? `0${unit}` : unit;
 }
-
-// Initial call to set up the timer
 updateCountdown();
     </script>
