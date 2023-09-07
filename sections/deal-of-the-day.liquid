@@ -342,37 +342,6 @@
 
   {{- product_popovers -}}
   {{- product_modals -}}
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-            var timerContainer = document.getElementById('timer-container');
-            var timer = document.getElementById('timer');
-            var duration = 16 * 60; // 16 minutes in seconds
-
-            function updateTimerDisplay() {
-                var minutes = Math.floor(duration / 60);
-                var seconds = duration % 60;
-                timer.textContent = minutes + "m " + seconds + "s";
-
-                if (duration <= 0) {
-                    timerContainer.innerHTML = "Offer has ended";
-                }
-            }
-
-            function startTimer() {
-                var interval = setInterval(function () {
-                    duration--;
-                    updateTimerDisplay();
-
-                    if (duration < 0) {
-                        clearInterval(interval);
-                    }
-                }, 1000); // Update the timer every 1 second (1000 milliseconds)
-            }
-
-            // Start the timer when the page loads
-            startTimer();
-        });
-</script>
 </section>
   
 {% schema %}

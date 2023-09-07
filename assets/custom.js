@@ -176,35 +176,32 @@ $(".collectionheadimg").click(function () {
     1000
   );
 });
-$(document).ready(function() {
-            var timerMinutes = 16;
-            var timerSeconds = 0;
+document.addEventListener('DOMContentLoaded', function () {
+            var timerContainer = document.getElementById('timer-container');
+            var timer = document.getElementById('timer');
+            var duration = 16 * 60; // 16 minutes in seconds
 
             function updateTimerDisplay() {
-                var minutesStr = timerMinutes.toString().padStart(2, '0');
-                var secondsStr = timerSeconds.toString().padStart(2, '0');
-                $("#timer").text(minutesStr + ":" + secondsStr);
+                var minutes = Math.floor(duration / 60);
+                var seconds = duration % 60;
+                timer.textContent = minutes + "m " + seconds + "s";
+
+                if (duration <= 0) {
+                    timerContainer.innerHTML = "Offer has ended";
+                }
             }
 
             function startTimer() {
-                var timerInterval = setInterval(function() {
-                    if (timerMinutes === 0 && timerSeconds === 0) {
-                        clearInterval(timerInterval);
-                        timerMinutes = 16;
-                        timerSeconds = 0;
-                        updateTimerDisplay();
-                        startTimer(); // Restart the timer automatically
-                    } else {
-                        if (timerSeconds === 0) {
-                            timerMinutes--;
-                            timerSeconds = 59;
-                        } else {
-                            timerSeconds--;
-                        }
-                        updateTimerDisplay();
+                var interval = setInterval(function () {
+                    duration--;
+                    updateTimerDisplay();
+
+                    if (duration < 0) {
+                        clearInterval(interval);
                     }
-                }, 1000);
+                }, 1000); // Update the timer every 1 second (1000 milliseconds)
             }
 
-            startTimer(); // Start the timer initially.
+            // Start the timer when the page loads
+            startTimer();
         });
