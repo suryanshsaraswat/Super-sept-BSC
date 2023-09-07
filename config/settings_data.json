@@ -264,7 +264,7 @@
         ],
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/BSC_Logo___for_site_2.gif",
+          "logo": "shopify:\/\/shop_images\/Website_StaticLogo_1.png",
           "logo_max_width": 70,
           "mobile_logo_max_width": 70,
           "show_country_selector": false,
@@ -389,7 +389,7 @@
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36"
         ],
         "settings": {
-          "text": "CLICK TO Get 100% cashback on your order!"
+          "text": "Unlock 100% Cashback with code PAISAWAPSI"
         }
       },
       "navbar": {
