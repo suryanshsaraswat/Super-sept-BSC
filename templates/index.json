@@ -450,6 +450,13 @@
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_9.png",
             "discount_desc": "Flat 50% OFF on website + freebie"
           }
+        },
+        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_10.png",
+            "discount_desc": "Flat 60% off sitewide"
+          }
         }
       },
       "block_order": [
@@ -462,7 +469,8 @@
         "477cd93c-7cdb-4905-b877-af0bc7b05d86",
         "82682ca9-58bb-44ff-9892-00d042c364db",
         "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8",
-        "f819db04-c311-495c-a47c-44fdf78f1782"
+        "f819db04-c311-495c-a47c-44fdf78f1782",
+        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009"
       ],
       "settings": {
         "logo-headingg": "Brand Coupons"
