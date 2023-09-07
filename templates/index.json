@@ -96,6 +96,7 @@
         },
         "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/desktop-banner_f837fbbe-17f0-43fc-967d-b34249b349b6.jpg",
             "mobile_image": "shopify:\/\/shop_images\/mobile-banner_b3dfde2c-b421-4b73-bea3-a471d92b6359.jpg",
