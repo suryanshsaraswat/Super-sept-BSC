@@ -176,3 +176,35 @@ $(".collectionheadimg").click(function () {
     1000
   );
 });
+$(document).ready(function() {
+            var timerMinutes = 16;
+            var timerSeconds = 0;
+
+            function updateTimerDisplay() {
+                var minutesStr = timerMinutes.toString().padStart(2, '0');
+                var secondsStr = timerSeconds.toString().padStart(2, '0');
+                $("#timer").text(minutesStr + ":" + secondsStr);
+            }
+
+            function startTimer() {
+                var timerInterval = setInterval(function() {
+                    if (timerMinutes === 0 && timerSeconds === 0) {
+                        clearInterval(timerInterval);
+                        timerMinutes = 16;
+                        timerSeconds = 0;
+                        updateTimerDisplay();
+                        startTimer(); // Restart the timer automatically
+                    } else {
+                        if (timerSeconds === 0) {
+                            timerMinutes--;
+                            timerSeconds = 59;
+                        } else {
+                            timerSeconds--;
+                        }
+                        updateTimerDisplay();
+                    }
+                }, 1000);
+            }
+
+            startTimer(); // Start the timer initially.
+        });
