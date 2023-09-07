@@ -1,6 +1,6 @@
  <style>
  </style>
-    <div class="countdown" id="countdown">
+    <div class="countdofif" id="countdofif">
         <!-- <span class="days">00</span> -->
         <!-- <span class="hours">00</span> -->
         <span class="minutes">00</span>
@@ -11,14 +11,14 @@
         const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
         const targetDate = new Date().getTime() + fifteenMinutes;
 
-        // Update the countdown every 1 second
-        const countdownInterval = setInterval(updateCountdown, 1000);
-      function updateCountdown() {
+        // Update the countdofif every 1 second
+        const countdofifInterval = setInterval(updatecountdofif, 1000);
+      function updatecountdofif() {
         const currentDate = new Date().getTime();
         const timeRemaining = targetDate - currentDate;
         if (timeRemaining <= 0) {
-        clearInterval(countdownInterval);
-        document.getElementById('countdown').innerHTML = 'Offer has ended';
+        clearInterval(countdofifInterval);
+        document.getElementById('countdofif').innerHTML = 'Offer has ended';
         return;
     }
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
@@ -29,5 +29,5 @@
 function formatTimeUnit(unit) {
     return unit < 10 ? `0${unit}` : unit;
 }
-updateCountdown();
+updatecountdofif();
     </script>
