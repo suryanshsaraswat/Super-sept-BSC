@@ -184,7 +184,7 @@ document.addEventListener('DOMContentLoaded', function () {
             function updateTimerDisplay() {
                 var minutes = Math.floor(duration / 60);
                 var seconds = duration % 60;
-                timer.textContent = minutes + "m " + seconds + "s";
+                timer.innerHTML = minutes + "m " + seconds + "s";
 
                 if (duration <= 0) {
                     timerContainer.innerHTML = "Offer has ended";
