@@ -457,6 +457,13 @@
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_6_71ef0e21-975c-45f3-b2e0-1d83613b7222.png",
             "discount_desc": "Rs.499 OFF on MOV 1999"
           }
+        },
+        "82682ca9-58bb-44ff-9892-00d042c364db": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_7_3677a142-97e2-406f-804d-16921b6bca56.png",
+            "discount_desc": "Rs.599 off on mov 1999"
+          }
         }
       },
       "block_order": [
@@ -466,7 +473,8 @@
         "b8a5132c-f086-4c13-953b-b8cf5d692516",
         "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
         "95b69c3b-39c1-4805-baf2-4fada4a06246",
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86"
+        "477cd93c-7cdb-4905-b877-af0bc7b05d86",
+        "82682ca9-58bb-44ff-9892-00d042c364db"
       ],
       "settings": {
         "logo-headingg": "Brand Coupons"
