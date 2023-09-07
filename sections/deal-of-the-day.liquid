@@ -88,6 +88,7 @@
           <div id="timer-container">
           Time Left: <span id="timer">16:00</span>
           </div>
+            {% render 'countdown-timer' %}
             {% endif %}
           </div>
             {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
