@@ -392,7 +392,7 @@
           "type": "homepage",
           "settings": {
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_5303afec-a142-4f05-a459-a00bdc1af81a.png",
-            "discount_desc": "Rs. 500 off on MOV 1999"
+            "discount_desc": "Pack of 5 at 999, MRP of 1996"
           }
         },
         "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
@@ -413,14 +413,14 @@
           "type": "homepage",
           "settings": {
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_4_0141bd8f-b22f-444c-a6bb-dc06fc73210f.png",
-            "discount_desc": "Rs.499 OFF on MOV 1999"
+            "discount_desc": "Coupons worth Rs.15000"
           }
         },
         "95b69c3b-39c1-4805-baf2-4fada4a06246": {
           "type": "homepage",
           "settings": {
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_5bbf555b-4d66-426d-a9b8-c7f75e0cfbf3.png",
-            "discount_desc": "Rs.499 OFF on MOV 1999"
+            "discount_desc": "60% OFF + Free Doc consulatation"
           }
         },
         "477cd93c-7cdb-4905-b877-af0bc7b05d86": {
@@ -434,7 +434,21 @@
           "type": "homepage",
           "settings": {
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_7_3677a142-97e2-406f-804d-16921b6bca56.png",
-            "discount_desc": "Rs.599 off on mov 1999"
+            "discount_desc": "Free Product wth Shipping of 98"
+          }
+        },
+        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_8_027f3466-d1ff-4340-a212-7592c4167427.png",
+            "discount_desc": "Free 6 month memebership worth 549"
+          }
+        },
+        "f819db04-c311-495c-a47c-44fdf78f1782": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_9.png",
+            "discount_desc": "Flat 50% OFF on website + freebie"
           }
         }
       },
@@ -446,7 +460,9 @@
         "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
         "95b69c3b-39c1-4805-baf2-4fada4a06246",
         "477cd93c-7cdb-4905-b877-af0bc7b05d86",
-        "82682ca9-58bb-44ff-9892-00d042c364db"
+        "82682ca9-58bb-44ff-9892-00d042c364db",
+        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8",
+        "f819db04-c311-495c-a47c-44fdf78f1782"
       ],
       "settings": {
         "logo-headingg": "Brand Coupons"
