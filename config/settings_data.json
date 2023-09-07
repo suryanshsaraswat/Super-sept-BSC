@@ -404,6 +404,15 @@
               "linkopen": false
             }
           },
+          "9b04b01b-bd63-4aac-827f-60df44614295": {
+            "type": "testimonial",
+            "settings": {
+              "mobile_nav": "shopify:\/\/shop_images\/Logo_Unit.png",
+              "text": "100% Cashback",
+              "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale",
+              "linkopen": false
+            }
+          },
           "4d245f9c-a505-414f-836d-13c5b9fd0231": {
             "type": "testimonial",
             "settings": {
@@ -515,6 +524,7 @@
         },
         "block_order": [
           "c5d2e43b-9c67-463b-90fd-ee276f8e047c",
+          "9b04b01b-bd63-4aac-827f-60df44614295",
           "4d245f9c-a505-414f-836d-13c5b9fd0231",
           "61483588-c8b3-4603-b2be-e6642e8c2845",
           "9d08cfe9-2e2f-4020-9527-af6099ab3c88",
