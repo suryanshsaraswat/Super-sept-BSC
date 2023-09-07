@@ -49,36 +49,33 @@
     </div>
 
     <script>
-        const targetDate = new Date("2023-09-07T13:00:00").getTime();
+        const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
+const targetDate = new Date().getTime() + fifteenMinutes;
 
-        // Update the countdown every 1 second
-        const countdownInterval = setInterval(updateCountdown, 1000);
+// Update the countdown every 1 second
+const countdownInterval = setInterval(updateCountdown, 1000);
 
-        function updateCountdown() {
-            const currentDate = new Date().getTime();
-            const timeRemaining = targetDate - currentDate;
+function updateCountdown() {
+    const currentDate = new Date().getTime();
+    const timeRemaining = targetDate - currentDate;
 
-            if (timeRemaining <= 0) {
-                clearInterval(countdownInterval);
-                document.getElementById('countdown').innerHTML = 'Get your 100% Cashback';
-                return;
-            }
+    if (timeRemaining <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdown').innerHTML = 'Offer has ended';
+        return;
+    }
 
-            //const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-            //document.querySelector('.days').innerText = formatTimeUnit(days) + 'd';
-            document.querySelector('.hours').innerText = formatTimeUnit(hours)+ 'h';
-            document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
-            document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
-        }
+    document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
+    document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+}
 
-        function formatTimeUnit(unit) {
-            return unit < 10 ? `0${unit}` : unit;
-        }
+function formatTimeUnit(unit) {
+    return unit < 10 ? `0${unit}` : unit;
+}
 
-        // Initial call to set up the timer
-        updateCountdown();
+// Initial call to set up the timer
+updateCountdown();
     </script>
