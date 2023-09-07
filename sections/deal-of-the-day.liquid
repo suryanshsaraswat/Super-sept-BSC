@@ -86,7 +86,7 @@
           <div class="x-units">20 Units Only</div>
           {% if section.settings.show_timer == true %}
           <div id="timer-container">
-            {% render '15-min-time' %}</div>
+            {% render '15-min-timer' %}</div>
             {% endif %}
           </div>
             {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
