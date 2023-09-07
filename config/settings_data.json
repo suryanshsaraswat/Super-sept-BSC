@@ -512,8 +512,8 @@
             "settings": {
               "mobile_nav": "shopify:\/\/shop_images\/bsc-page-icon.png",
               "text": "Women",
-              "linkurl": "https:\/\/mybombae.in\/pages\/blue-heaven-x-bombae?utm_source=BombayShavingCompany&utm_medium=Website&utm_campaign=BSC&utm_id=BSC",
-              "linkopen": true
+              "linkurl": "shopify:\/\/collections\/paisa-waapsi-sale-shop-for-women",
+              "linkopen": false
             }
           },
           "585a3d49-5aa7-4472-a028-3d238a4e6a0f": {
