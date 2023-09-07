@@ -6,8 +6,8 @@
         "67196537-fdd7-4650-8470-a114bb26a984": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1920x650_Main.webp",
-            "mobile_image": "shopify:\/\/shop_images\/800x987_Mobile_WithCTA.webp",
+            "image": "shopify:\/\/shop_images\/1920x650_Desktop_Banner_WithoutCTA_1.webp",
+            "mobile_image": "shopify:\/\/shop_images\/800x987_Main.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -135,9 +135,9 @@
         "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/Desktop.gif",
-            "imags2": "shopify:\/\/shop_images\/Mobile.gif",
-            "linkk": ""
+            "imags": "shopify:\/\/shop_images\/Desktop_3_fad594e4-16f5-4d35-9b46-4360cd54c957.jpg",
+            "imags2": "shopify:\/\/shop_images\/Mobile_d841c33b-60c3-4ba5-92cc-46b8754ff0f3.jpg",
+            "linkk": "shopify:\/\/collections\/paisa-wapsi-sale"
           }
         }
       },
