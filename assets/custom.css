@@ -1039,4 +1039,6 @@ input#dateofbirth {
     color: #000;
     font-weight: 600;
 }
-
+.ProductMeta__PriceList.Heading {
+    margin-bottom: 16px;
+}
