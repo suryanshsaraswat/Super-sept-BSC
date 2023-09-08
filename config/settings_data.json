@@ -348,7 +348,7 @@
           "00b65f50-279e-408e-b722-d81111773ba1": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Get 100% cashback on your order! Use Code:PAISAWAPSI",
+              "Offer": "1.Get 100% cashback on your order! Use Code:PAISAWAPSI | Get vouchers worth 50K | Get a guaranteed freebie!",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
               "coupon": "PAISAWAPSI",
               "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
@@ -356,6 +356,7 @@
           },
           "4a35f82b-a534-4b7f-af03-9e8cec58bd11": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "New Launch: Razors that are sensitive to skin!",
               "image": "shopify:\/\/shop_images\/Untitled_design_4.png",
@@ -365,6 +366,7 @@
           },
           "55c336c9-f065-4834-be0a-d3aef3293d04": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "New here? Get your first order at 15% off!",
               "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
@@ -374,6 +376,7 @@
           },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Unleash Your love for Grooming: Craft Your Own Gift Box today!",
               "image": "shopify:\/\/shop_images\/3213595.png",
