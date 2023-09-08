@@ -17,7 +17,7 @@
         <span class="seconds">00</span> <span>left</span>
     </div>
 
-    <script>
+    <!-- <script>
       const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
 
 function updatecountdown() {
@@ -66,4 +66,66 @@ function formatTimeUnit(unit) {
 updatecountdown();
 const countdownInterval = setInterval(updatecountdown, 1000);
 
-    </script>
+    </script> -->
+<script>
+const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
+
+function updatecountdown() {
+    const currentDate = new Date();
+    let targetDate = new Date(currentDate);
+    
+    if (currentDate.getHours() >= 13 && currentDate.getMinutes() >= 15) {
+        // If it's 1:15 PM or later, set the target time for 1:00 PM tomorrow
+        targetDate.setDate(targetDate.getDate() + 1);
+    }
+    
+    targetDate.setHours(13, 0, 0, 0);
+    let timeRemaining = targetDate - currentDate;
+
+    if (timeRemaining <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdofif').innerHTML = 'Deal has ended';
+        // Calculate the target time for the next day after a 5-minute delay
+        targetDate.setDate(targetDate.getDate() + 1);
+        targetDate.setMinutes(targetDate.getMinutes() + 5);
+        setTimeout(() => {
+            countdownInterval = setInterval(updatecountdown, 1000);
+        }, 5 * 60 * 1000); // 5 minutes in milliseconds
+        return;
+    }
+
+    if (timeRemaining > fifteenMinutes) {
+        const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        timeRemaining %= 1000 * 60 * 60;
+        const minutes = Math.floor(timeRemaining / (1000 * 60));
+        timeRemaining %= 1000 * 60;
+        const seconds = Math.floor(timeRemaining / 1000);
+        
+        let countdownMessage = 'Deal starts in ';
+        
+        if (hours > 0) {
+            countdownMessage += hours + 'h:';
+        }
+        
+        if (minutes > 0) {
+            countdownMessage += minutes + 'm:';
+        }
+        
+        countdownMessage += seconds + 's';
+        
+        document.getElementById('countdofif').innerHTML = countdownMessage;
+    } else {
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+        document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
+        document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+    }
+}
+
+function formatTimeUnit(unit) {
+    return unit < 10 ? `0${unit}` : unit;
+}
+
+let countdownInterval = setInterval(updatecountdown, 1000);
+updatecountdown(); // Initial call to set up the timer
+</script>
