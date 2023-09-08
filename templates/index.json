@@ -311,6 +311,13 @@
             "logo_brand": "shopify:\/\/shop_images\/Untitled_design_10.png",
             "discount_desc": "Flat 60% off on products for TWO of you"
           }
+        },
+        "f5c0241d-9172-4b97-8126-2abebf932958": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Logo_-_Richa_Parashari.png",
+            "discount_desc": "Flat 50% OFF on gournet products"
+          }
         }
       },
       "block_order": [
@@ -324,7 +331,8 @@
         "82682ca9-58bb-44ff-9892-00d042c364db",
         "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8",
         "f819db04-c311-495c-a47c-44fdf78f1782",
-        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009"
+        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009",
+        "f5c0241d-9172-4b97-8126-2abebf932958"
       ],
       "settings": {
         "logo-headingg": "Partner Brands"
