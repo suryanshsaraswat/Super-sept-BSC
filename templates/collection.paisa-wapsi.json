@@ -342,7 +342,7 @@
           "type": "testimonial",
           "settings": {
             "que": "If I forgot to apply the code, will I still be eligible for a 100% cashback?",
-            "ans": "<p>Customers who have applied the Paisa Waapas Code during their initial order are eligible to receive 100% cashback on their subsequent order valid only on <a href=\"https:\/\/www.bombayshavingcompany.com\" title=\"https:\/\/www.bombayshavingcompany.com\">our website<\/a><\/p>",
+            "ans": "<p>No, if you have not applied the <strong>PAISAWAPSI<\/strong> Code during their initial order, you are eligible to receive 100% cashback on their subsequent order which is valid only on <a href=\"https:\/\/www.bombayshavingcompany.com\" title=\"https:\/\/www.bombayshavingcompany.com\"><strong>Our website<\/strong><\/a><\/p>",
             "open": false
           }
         },
@@ -350,7 +350,7 @@
           "type": "testimonial",
           "settings": {
             "que": "When can I expect to receive the 100% coupon code?",
-            "ans": "<p>You will receive the coupon code after the product has been delivered, typically within 24 hours.<\/p>",
+            "ans": "<p>You will receive the coupon code on the day of delivery of the product.<\/p>",
             "open": false
           }
         },
@@ -358,7 +358,7 @@
           "type": "testimonial",
           "settings": {
             "que": "Can I avail 100% cashback on Deal of the day deals or wholesale offers",
-            "ans": "<p>Please note that only customers utilizing Cashback coupons will receive a unique coupon code after product delivery. The 100% cashback offer is not applicable to 'Deal of the Day' and Wholesale offers.<\/p>",
+            "ans": "<p>Please note that only customers utilizing the <strong>PAISWAPSI<\/strong> coupon will receive a unique coupon code after product delivery. The 100% cashback offer is not applicable to <strong>'Deal of the Day'<\/strong> and <strong>Wholesale offers.<\/strong><\/p>",
             "open": false
           }
         },
@@ -366,7 +366,7 @@
           "type": "testimonial",
           "settings": {
             "que": "Is this offer applicable to Cash-on-Delivery (COD) orders too?",
-            "ans": "<p>All cashback orders for the month of September must be prepaid.<\/p>",
+            "ans": "<p>All cashback orders for the month of September must be <strong>prepaid.<\/strong><\/p>",
             "open": false
           }
         },
@@ -374,7 +374,7 @@
           "type": "testimonial",
           "settings": {
             "que": "What is the expiration date of the coupon code?",
-            "ans": "<p>The unique code provided to the customer is valid for a period of 30 days.<\/p>",
+            "ans": "<p>The unique code provided to the customer is valid for a period of 30 days from the day of receiving the code. <\/p>",
             "open": false
           }
         },
@@ -396,10 +396,25 @@
         },
         "6d89bc69-5d2d-4c2f-84db-32b0d963d207": {
           "type": "testimonial",
-          "disabled": true,
+          "settings": {
+            "que": "If i place an order using the unique coupon code that i receive, can that be on cash on delivery?",
+            "ans": "<p>Second order that will be placed using the unique coupon code will also have to be <strong>prepaid<\/strong><\/p>",
+            "open": false
+          }
+        },
+        "d8d822ff-f62e-45ec-98d8-e9f9ba64c948": {
+          "type": "testimonial",
           "settings": {
             "que": "",
             "ans": "",
+            "open": false
+          }
+        },
+        "c73c2c45-be8d-48bf-aaa9-b550da7ecbc5": {
+          "type": "testimonial",
+          "settings": {
+            "que": "Will I be able to use the unique coupon code to get 100% cashback if i place the order from another email address?",
+            "ans": "<p>Also, the second order or to claim the 100% cash back, one must use the email address that they had used to place the first order with <strong>PAISAWAPSI<\/strong> code<\/p>",
             "open": false
           }
         }
@@ -413,7 +428,9 @@
         "2084c6cf-0a60-492b-b268-52652195f595",
         "05f43954-ed7f-4ab3-a931-c5c3fe58fbb4",
         "7d257527-6ec2-49b0-8932-72667afc240b",
-        "6d89bc69-5d2d-4c2f-84db-32b0d963d207"
+        "6d89bc69-5d2d-4c2f-84db-32b0d963d207",
+        "d8d822ff-f62e-45ec-98d8-e9f9ba64c948",
+        "c73c2c45-be8d-48bf-aaa9-b550da7ecbc5"
       ],
       "settings": {
         "accord-head": "Frequently Asked Questions"
