@@ -478,7 +478,7 @@
       "settings": {
         "bg": "linear-gradient(0deg, rgb(99 195 255 \/ 45%), rgba(255, 255, 255, 1) 100%)",
         "hcl": "#0d5ea8",
-        "title": "Discover the latest and the greatest",
+        "title": "",
         "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
@@ -506,7 +506,7 @@
       "settings": {
         "bg": "white",
         "hcl": "#0d5ea8",
-        "title": "Discover Our Gift Kits for Your Favourite People!",
+        "title": "",
         "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
@@ -552,7 +552,7 @@
       "settings": {
         "bg": "",
         "hcl": "#0d5ea8",
-        "title": "Smooth Shaves Start Here: Explore our Shave Care Range",
+        "title": "",
         "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
@@ -580,7 +580,7 @@
       "settings": {
         "bg": "",
         "hcl": "#0d5ea8",
-        "title": "Transform Your Beard Game: Discover Our Range of Beard Care Products",
+        "title": "",
         "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
@@ -608,7 +608,7 @@
       "settings": {
         "bg": "",
         "hcl": "#0d5ea8",
-        "title": "Nourish Your Skin: Explore Our Range of Skin Care Products",
+        "title": "",
         "layout_mode": "grid",
         "show_product_info": true,
         "show_vendor": false,
