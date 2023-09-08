@@ -47,14 +47,14 @@ function updatecountdown() {
         let countdownMessage = 'Deal starts in ';
         
         if (hours > 0) {
-            countdownMessage += hours + ' hours, ';
+            countdownMessage += hours + ' h:, ';
         }
         
         if (minutes > 0) {
-            countdownMessage += minutes + ' minutes, and ';
+            countdownMessage += minutes + ' m:, and ';
         }
         
-        countdownMessage += seconds + ' seconds';
+        countdownMessage += seconds + ' s';
         
         document.getElementById('countdofif').innerHTML = countdownMessage;
     } else {
