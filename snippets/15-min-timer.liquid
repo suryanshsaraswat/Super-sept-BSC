@@ -73,53 +73,45 @@ const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
 function updatecountdown() {
     const currentDate = new Date();
     let targetDate = new Date(currentDate);
-    
-    if (currentDate.getHours() >= 13 && currentDate.getMinutes() >= 15) {
-        // If it's 1:15 PM or later, set the target time for 1:00 PM tomorrow
-        targetDate.setDate(targetDate.getDate() + 1);
-    }
-    
-    targetDate.setHours(13, 0, 0, 0);
-    let timeRemaining = targetDate - currentDate;
 
-    if (timeRemaining <= 0) {
+    // Set the target time to 1:15 PM
+    targetDate.setHours(13, 15, 0, 0);
+
+    if (currentDate >= targetDate) {
         clearInterval(countdownInterval);
         document.getElementById('countdofif').innerHTML = 'Deal has ended';
-        // Calculate the target time for the next day after a 5-minute delay
+
+        // Calculate the target time for 1:00 PM of the next day
+        targetDate = new Date(currentDate);
         targetDate.setDate(targetDate.getDate() + 1);
-        targetDate.setMinutes(targetDate.getMinutes() + 5);
+        targetDate.setHours(13, 0, 0, 0);
+
+        // Set a 5-minute delay before starting the countdown for the next day
         setTimeout(() => {
             countdownInterval = setInterval(updatecountdown, 1000);
         }, 5 * 60 * 1000); // 5 minutes in milliseconds
+
         return;
     }
 
-    if (timeRemaining > fifteenMinutes) {
-        const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
-        timeRemaining %= 1000 * 60 * 60;
-        const minutes = Math.floor(timeRemaining / (1000 * 60));
-        timeRemaining %= 1000 * 60;
-        const seconds = Math.floor(timeRemaining / 1000);
-        
-        let countdownMessage = 'Deal starts in ';
-        
-        if (hours > 0) {
-            countdownMessage += hours + 'h:';
-        }
-        
-        if (minutes > 0) {
-            countdownMessage += minutes + 'm:';
-        }
-        
-        countdownMessage += seconds + 's';
-        
-        document.getElementById('countdofif').innerHTML = countdownMessage;
-    } else {
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
-        document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+    let timeRemaining = targetDate - currentDate;
+
+    const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+    timeRemaining %= 1000 * 60 * 60;
+    const minutes = Math.floor(timeRemaining / (1000 * 60));
+    timeRemaining %= 1000 * 60;
+    const seconds = Math.floor(timeRemaining / 1000);
+
+    let countdownMessage = 'Deal starts in ';
+
+    if (hours > 0) {
+        countdownMessage += hours + 'h:';
     }
+
+    countdownMessage += minutes + 'm:';
+    countdownMessage += seconds + 's';
+
+    document.getElementById('countdofif').innerHTML = countdownMessage;
 }
 
 function formatTimeUnit(unit) {
