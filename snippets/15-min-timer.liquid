@@ -18,7 +18,7 @@
     </div>
 
     <script>
-       const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
+      const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
 
 function updatecountdown() {
     const currentDate = new Date();
@@ -32,14 +32,31 @@ function updatecountdown() {
 
     if (timeRemaining <= 0) {
         clearInterval(countdownInterval);
-        document.getElementById('countdofif').innerHTML = 'Offer has ended';
+        document.getElementById('countdofif').innerHTML = 'Deal has ended';
         return;
     }
 
     if (timeRemaining > fifteenMinutes) {
-        // Display "Offer starts in X minutes" before 1 PM
+        // Display "Offer starts in X hours, Y minutes, and Z seconds" before 1 PM
+        const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
+        timeRemaining %= 1000 * 60 * 60;
         const minutes = Math.floor(timeRemaining / (1000 * 60));
-        document.getElementById('countdofif').innerHTML = 'Offer starts in ' + minutes + ' minutes';
+        timeRemaining %= 1000 * 60;
+        const seconds = Math.floor(timeRemaining / 1000);
+        
+        let countdownMessage = 'Deal starts in ';
+        
+        if (hours > 0) {
+            countdownMessage += hours + ' hours, ';
+        }
+        
+        if (minutes > 0) {
+            countdownMessage += minutes + ' minutes, and ';
+        }
+        
+        countdownMessage += seconds + ' seconds';
+        
+        document.getElementById('countdofif').innerHTML = countdownMessage;
     } else {
         // Display the countdown timer
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
