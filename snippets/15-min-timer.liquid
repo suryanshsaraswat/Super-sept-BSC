@@ -18,26 +18,41 @@
     </div>
 
     <script>
-        const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
-        const targetDate = new Date().getTime() + fifteenMinutes;
+       const fifteenMinutes = 15 * 60 * 1000; // 15 minutes in milliseconds
 
-        // Update the countdofif every 1 second
-        const countdofifInterval = setInterval(updatecountdofif, 1000);
-      function updatecountdofif() {
-        const currentDate = new Date().getTime();
-        const timeRemaining = targetDate - currentDate;
-        if (timeRemaining <= 0) {
-        clearInterval(countdofifInterval);
-        document.getElementById('countdofif').innerHTML = 'Offer has ended';
+function updatecountdown() {
+    const currentDate = new Date();
+    
+    // Define the target date as 1 PM (13:00) every day
+    const targetDate = new Date(currentDate);
+    targetDate.setHours(13, 0, 0, 0);
+
+    // Add 15 minutes to the target date
+    targetDate.setTime(targetDate.getTime() + fifteenMinutes);
+
+    const timeRemaining = targetDate - currentDate;
+
+    if (timeRemaining <= 0) {
+        clearInterval(countdownInterval);
+        document.getElementById('countdown').innerHTML = 'Offer has ended';
         return;
     }
-        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-        document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
-        document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
+    document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
 }
+
 function formatTimeUnit(unit) {
     return unit < 10 ? `0${unit}` : unit;
 }
-updatecountdofif();
+
+// Update the countdown initially
+updatecountdown();
+
+// Update the countdown every 1 second
+const countdownInterval = setInterval(updatecountdown, 1000);
+
     </script>
