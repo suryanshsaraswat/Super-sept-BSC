@@ -58,7 +58,6 @@ function updatecountdown() {
         
         document.getElementById('countdofif').innerHTML = countdownMessage;
     } else {
-        // Display the countdown timer
         const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
         const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
         document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
@@ -69,11 +68,7 @@ function updatecountdown() {
 function formatTimeUnit(unit) {
     return unit < 10 ? `0${unit}` : unit;
 }
-
-// Update the countdown initially
 updatecountdown();
-
-// Update the countdown every 1 second
 const countdownInterval = setInterval(updatecountdown, 1000);
 
     </script>
