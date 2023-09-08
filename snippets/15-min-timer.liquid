@@ -89,6 +89,7 @@ function updatecountdown() {
         // Set a 5-minute delay before starting the countdown for the next day
         setTimeout(() => {
             countdownInterval = setInterval(updatecountdown, 1000);
+            updatecountdown(); // Initial call to set up the timer
         }, 5 * 60 * 1000); // 5 minutes in milliseconds
 
         return;
@@ -120,4 +121,5 @@ function formatTimeUnit(unit) {
 
 let countdownInterval = setInterval(updatecountdown, 1000);
 updatecountdown(); // Initial call to set up the timer
+
 </script>
