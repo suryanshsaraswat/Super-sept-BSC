@@ -400,7 +400,7 @@
                 <div class="stickbottom">
  {% if product.selected_or_first_available_variant.available %}
  <button type="submit" class="Button Button--primary Button--full stickyy-b" data-action="add-to-cart">
-   <span class="atc">Add to Cart</span> | {% if product.price < product.compare_at_price %}<span class="mrpp">{{ product.price | money_with_currency }}</span><span class="catp Text---subdued">{{ product.compare_at_price | money_with_currency }}</span>{% else %}<span class="catp">{{ product.compare_at_price | money_with_currency }}</span>{% endif %}<span class="discc">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | replace: '0,', ''| append: "%"}} <br>OFF</span>
+   <span class="atc">Add to Cart</span> | {% if product.price < product.compare_at_price %}<span class="mrpp">{{ product.price | money_with_currency }}</span><span class="catp Text---subdued">{{ product.compare_at_price | money_with_currency }}</span>{% else %}<span class="catp">{{ product.compare_at_price | money_with_currency }}</span>{% endif %}{% if product.compare_at_price > product.price %}<span class="discc">{{ product.compare_at_price | minus: product.price | times: 100 | divided_by: product.compare_at_price | replace: '0,', ''| append: "%"}} <br>OFF</span>{% endif %}
    
    </button>
    {% else %}
