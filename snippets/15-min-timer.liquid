@@ -27,23 +27,23 @@ function updatecountdown() {
     const targetDate = new Date(currentDate);
     targetDate.setHours(13, 0, 0, 0);
 
-    // Calculate the time remaining until the target date
-    const timeRemaining = targetDate - currentDate;
+    // Calculate the time remaining until 1 PM
+    let timeRemaining = targetDate - currentDate;
 
     if (timeRemaining <= 0) {
         clearInterval(countdownInterval);
-        document.getElementById('countdofif').innerHTML = 'Offer has ended';
+        document.getElementById('countdown').innerHTML = 'Offer has ended';
         return;
     }
 
-    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
-
     if (timeRemaining > fifteenMinutes) {
         // Display "Offer starts in X minutes" before 1 PM
-        document.getElementById('countdofif').innerHTML = 'Offer starts in ' + minutes + ' minutes';
+        const minutes = Math.floor(timeRemaining / (1000 * 60));
+        document.getElementById('countdown').innerHTML = 'Offer starts in ' + minutes + ' minutes';
     } else {
         // Display the countdown timer
+        const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
         document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
         document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
     }
@@ -58,6 +58,5 @@ updatecountdown();
 
 // Update the countdown every 1 second
 const countdownInterval = setInterval(updatecountdown, 1000);
-
 
     </script>
