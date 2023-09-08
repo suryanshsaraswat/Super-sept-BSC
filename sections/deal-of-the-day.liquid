@@ -83,7 +83,7 @@
         {%- if product.media.size > 0 -%}
           <a href="{{ product.url }}" class="FeaturedProduct__Gallery">
           <div class="labels">
-          <div class="x-units">{{ product.inventory_qunatity }} Units Only</div>
+          <div class="x-units">{{ product.variants[0].inventory_qunatity }} Units Only</div>
           {% if section.settings.show_timer == true %}
           <div id="timer-container">
             {% render '15-min-timer' %}</div>
