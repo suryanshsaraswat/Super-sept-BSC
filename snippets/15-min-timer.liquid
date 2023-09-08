@@ -49,7 +49,7 @@ function updatecountdown() {
         timeRemaining %= 1000 * 60;
         const seconds = Math.floor(timeRemaining / 1000);
         
-        const countdownMessage = `Next deal in ${hours}h, ${minutes}m, and ${seconds}s`;
+        const countdownMessage = `Next deal in ${hours}h:${minutes}m:${seconds}s`;
         
         document.getElementById('countdofif').innerHTML = countdownMessage;
     } else if (timeRemaining > fifteenMinutes) {
