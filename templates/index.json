@@ -331,6 +331,12 @@
         "logo-headingg": "Partner Brands"
       }
     },
+    "bc80b36d-469e-4b30-9628-17cebf026bb4": {
+      "type": "custom-html-wthout-spacing",
+      "settings": {
+        "html": "<style>\n.tnc{margin-top:10px;text-align:right;padding-right:10px}\n<\/style>\n<p class=\"tnc\">For more infomration, <a href=\"https:\/\/bombayshavingcompany.com\/collections\/paisa-wapsi-sale#FAQ\">click here <\/a><\/p>"
+      }
+    },
     "f0f9d148-a854-4731-a987-5d03b56b3438": {
       "type": "custom-html",
       "disabled": true,
@@ -734,6 +740,7 @@
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
     "7ebf82e3-7df8-4207-8462-3331c5e90551",
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
+    "bc80b36d-469e-4b30-9628-17cebf026bb4",
     "f0f9d148-a854-4731-a987-5d03b56b3438",
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
