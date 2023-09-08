@@ -45,6 +45,44 @@
         "liquid": "{% render 'countdown-timer' %}"
       }
     },
+    "c951b4a8-0d60-4c33-b802-2ce3079de1ec": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16174120435866__c951b4a8-0d60-4c33-b802-2ce3079de1ec-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        },
+        "a5ae1de3-e952-49b1-b2fe-981fdfe84891": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120435866__c951b4a8-0d60-4c33-b802-2ce3079de1ec-collection-1",
+        "a5ae1de3-e952-49b1-b2fe-981fdfe84891"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "6867f67e-1d79-43fc-9aa2-498dac676090": {
       "type": "featured-collections",
       "blocks": {
@@ -392,6 +430,7 @@
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
     "504f6898-7f5c-426d-8406-c8a5f6977d71",
     "10ef4252-450e-4bab-9528-403e924d6b7f",
+    "c951b4a8-0d60-4c33-b802-2ce3079de1ec",
     "6867f67e-1d79-43fc-9aa2-498dac676090",
     "6e419626-31ce-42ec-9419-1c23d678ebdb",
     "main",
