@@ -357,9 +357,9 @@
           "55c336c9-f065-4834-be0a-d3aef3293d04": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Get vouchers worth 50K",
+              "Offer": "Get vouchers worth 50K | Use code: PAISAWAPSI",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
-              "coupon": "",
+              "coupon": "PAISAWAPSI",
               "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
             }
           },
