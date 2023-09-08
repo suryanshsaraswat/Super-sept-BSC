@@ -122,7 +122,7 @@
       "settings": {
         "show_fullscreen": false,
         "show_arrow": false,
-        "autoplay": true,
+        "autoplay": false,
         "cycle_speed": 8,
         "text_color": "#ffffff",
         "button_color": "#363636",
