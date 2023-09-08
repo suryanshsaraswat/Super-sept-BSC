@@ -27,22 +27,26 @@ function updatecountdown() {
     const targetDate = new Date(currentDate);
     targetDate.setHours(13, 0, 0, 0);
 
-    // Add 15 minutes to the target date
-    targetDate.setTime(targetDate.getTime() + fifteenMinutes);
-
+    // Calculate the time remaining until the target date
     const timeRemaining = targetDate - currentDate;
 
     if (timeRemaining <= 0) {
         clearInterval(countdownInterval);
-        document.getElementById('countdown').innerHTML = 'Offer has ended';
+        document.getElementById('countdofif').innerHTML = 'Offer has ended';
         return;
     }
 
     const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
-    document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
-    document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+    if (timeRemaining > fifteenMinutes) {
+        // Display "Offer starts in X minutes" before 1 PM
+        document.getElementById('countdofif').innerHTML = 'Offer starts in ' + minutes + ' minutes';
+    } else {
+        // Display the countdown timer
+        document.querySelector('.minutes').innerText = formatTimeUnit(minutes) + 'm';
+        document.querySelector('.seconds').innerText = formatTimeUnit(seconds) + 's';
+    }
 }
 
 function formatTimeUnit(unit) {
@@ -54,5 +58,6 @@ updatecountdown();
 
 // Update the countdown every 1 second
 const countdownInterval = setInterval(updatecountdown, 1000);
+
 
     </script>
