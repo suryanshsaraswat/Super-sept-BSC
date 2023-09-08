@@ -177,31 +177,41 @@ $(".collectionheadimg").click(function () {
   );
 });
 document.addEventListener('DOMContentLoaded', function () {
-            var timerContainer = document.getElementById('timer-container');
-            var timer = document.getElementById('timer');
-            var duration = 16 * 60; // 16 minutes in seconds
+    var timerContainer = document.getElementById('timer-container');
+    var timer = document.getElementById('timer');
 
-            function updateTimerDisplay() {
-                var minutes = Math.floor(duration / 60);
-                var seconds = duration % 60;
-                timer.innerHTML = minutes + "m " + seconds + "s";
+    // Define the start time as 1 PM (13:00) every day
+    var startTime = new Date();
+    startTime.setHours(13, 0, 0);
 
-                if (duration <= 0) {
-                    timerContainer.innerHTML = "Offer has ended";
-                }
-            }
+    // Define the duration as 15 minutes in milliseconds
+    var duration = 15 * 60 * 1000; // 15 minutes in milliseconds
 
-            function startTimer() {
-                var interval = setInterval(function () {
-                    duration--;
-                    updateTimerDisplay();
+    function updateTimerDisplay() {
+        var currentTime = new Date();
+        var timeDiff = startTime - currentTime;
 
-                    if (duration < 0) {
-                        clearInterval(interval);
-                    }
-                }, 1000); // Update the timer every 1 second (1000 milliseconds)
-            }
+        if (timeDiff > 0) {
+            // Display "Offer starts in X minutes"
+            var minutes = Math.floor(timeDiff / 60000); // Convert milliseconds to minutes
+            timer.innerHTML = "Offer starts in " + minutes + " minutes";
+        } else if (timeDiff <= 0 && timeDiff > -duration) {
+            // Display the countdown timer
+            var minutes = Math.floor(-timeDiff / 60000); // Convert milliseconds to minutes
+            var seconds = Math.floor((-timeDiff % 60000) / 1000); // Convert remaining milliseconds to seconds
+            timer.innerHTML = minutes + "m " + seconds + "s";
+        } else {
+            // Display "Offer has ended" after the duration
+            timer.innerHTML = "Offer has ended";
+        }
+    }
 
-            // Start the timer when the page loads
-            startTimer();
-        });
+    function startTimer() {
+        setInterval(function () {
+            updateTimerDisplay();
+        }, 1000); // Update the timer every 1 second (1000 milliseconds)
+    }
+
+    // Start the timer when the page loads
+    startTimer();
+});
