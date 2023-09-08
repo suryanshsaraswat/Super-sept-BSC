@@ -354,20 +354,19 @@
               "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
             }
           },
-          "4a35f82b-a534-4b7f-af03-9e8cec58bd11": {
+          "55c336c9-f065-4834-be0a-d3aef3293d04": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Get a guaranteed freebie!",
+              "Offer": "Get vouchers worth 50K",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
               "coupon": "",
               "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
             }
           },
-          "55c336c9-f065-4834-be0a-d3aef3293d04": {
+          "4a35f82b-a534-4b7f-af03-9e8cec58bd11": {
             "type": "testimonial",
-            "disabled": true,
             "settings": {
-              "Offer": "Get vouchers worth 50K",
+              "Offer": "Get a guaranteed freebie!",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
               "coupon": "",
               "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
@@ -386,8 +385,8 @@
         },
         "block_order": [
           "00b65f50-279e-408e-b722-d81111773ba1",
-          "4a35f82b-a534-4b7f-af03-9e8cec58bd11",
           "55c336c9-f065-4834-be0a-d3aef3293d04",
+          "4a35f82b-a534-4b7f-af03-9e8cec58bd11",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36"
         ],
         "settings": {
