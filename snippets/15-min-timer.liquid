@@ -22,12 +22,8 @@
 
 function updatecountdown() {
     const currentDate = new Date();
-    
-    // Define the target date as 1 PM (13:00) every day
     const targetDate = new Date(currentDate);
     targetDate.setHours(13, 0, 0, 0);
-
-    // Calculate the time remaining until 1 PM
     let timeRemaining = targetDate - currentDate;
 
     if (timeRemaining <= 0) {
@@ -37,7 +33,6 @@ function updatecountdown() {
     }
 
     if (timeRemaining > fifteenMinutes) {
-        // Display "Offer starts in X hours, Y minutes, and Z seconds" before 1 PM
         const hours = Math.floor(timeRemaining / (1000 * 60 * 60));
         timeRemaining %= 1000 * 60 * 60;
         const minutes = Math.floor(timeRemaining / (1000 * 60));
