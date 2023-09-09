@@ -147,6 +147,15 @@
       "settings": {
       }
     },
+    "7ebf82e3-7df8-4207-8462-3331c5e90551": {
+      "type": "rzp-marqeee",
+      "settings": {
+        "text1": "100% CASHBACK",
+        "text2": "50,000 worth coupons to be won",
+        "text3": "₹1 deals EVERYDAY",
+        "text4": "Freebies with every order"
+      }
+    },
     "featured-collections": {
       "type": "featured-collections",
       "blocks": {
@@ -221,15 +230,6 @@
         "show_headings_on_mobile": true,
         "product": "charcoal-facewash-men",
         "show_timer": true
-      }
-    },
-    "7ebf82e3-7df8-4207-8462-3331c5e90551": {
-      "type": "rzp-marqeee",
-      "settings": {
-        "text1": "100% CASHBACK",
-        "text2": "50,000 worth coupons to be won",
-        "text3": "₹1 deals EVERYDAY",
-        "text4": "Freebies with every order"
       }
     },
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
@@ -743,9 +743,9 @@
   "order": [
     "slideshow",
     "2a4ccd55-76ba-43e7-9790-ba7c69e571f4",
+    "7ebf82e3-7df8-4207-8462-3331c5e90551",
     "featured-collections",
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
-    "7ebf82e3-7df8-4207-8462-3331c5e90551",
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "bc80b36d-469e-4b30-9628-17cebf026bb4",
     "f0f9d148-a854-4731-a987-5d03b56b3438",
