@@ -316,7 +316,9 @@
             {% for tag in product.tags %}
                 {% comment %}{%- when 'buy_buttons' -%} {% endcomment %}
                   {% if tag == 'DOTD - Duplicate' %}
-                    <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full">NOTIFY ME</button>
+                    <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
+                    <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full">////</button>
+                  </div>
                     {% else %}
                   <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
                     <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full">{{- 'product.form.add_to_cart' | t -}}</button>
