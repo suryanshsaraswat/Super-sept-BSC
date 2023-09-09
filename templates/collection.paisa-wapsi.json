@@ -6,7 +6,7 @@
         "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-product_meta-1": {
           "type": "product_meta",
           "settings": {
-            "show_vendor": true,
+            "show_vendor": false,
             "show_sku": false,
             "show_product_rating": false,
             "show_taxes_included": false
