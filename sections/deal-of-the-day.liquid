@@ -4,6 +4,9 @@
     padding:20px;
     color:#fff
 }
+  div#shopify-section-template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8 section.Section.Section--spacingNormal {
+    padding: 0;
+}
   h1.ProductMeta__Title.Heading.u-h2 {
     color: #ffff;
 }
@@ -83,7 +86,7 @@
         {%- if product.media.size > 0 -%}
           <a href="{{ product.url }}" class="FeaturedProduct__Gallery">
           <div class="labels">
-          {% if product.variants.firsts.inventory_quantity <= 20 %}<div class="x-units">{{ product.variants.first.inventory_quantity }} Units Only</div>{% endif %}
+          {% if product.variants.first.inventory_quantity <= 20 %}<div class="x-units">{{ product.variants.first.inventory_quantity }} Units Only</div>{% endif %}
           {% if section.settings.show_timer == true %}
           <div id="timer-container">
             {% render '15-min-timer' %}</div>
