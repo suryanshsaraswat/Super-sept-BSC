@@ -149,6 +149,7 @@
     },
     "7ebf82e3-7df8-4207-8462-3331c5e90551": {
       "type": "rzp-marqeee",
+      "disabled": true,
       "settings": {
         "text1": "100% CASHBACK",
         "text2": "50,000 worth coupons to be won",
