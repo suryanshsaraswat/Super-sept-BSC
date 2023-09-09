@@ -186,7 +186,7 @@
                     {%- endif -%}
                   </p>
 
-                {%- when 'buy_buttons' -%}
+                {% comment %}{%- when 'buy_buttons' -%}{% endcomment %}
                   {%- if block.settings.show_payment_button == false or product.selling_plan_groups.size > 0 -%}
                     {%- assign use_primary_button = true -%}
                   {%- else -%}
@@ -201,7 +201,12 @@
                         }
                       </style>
                     {%- endif -%}
-
+                {% for tag in product.tags %}
+                {% if tag == 'DOTD - Duplicate' %}
+                    <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
+                    <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full">////</button>
+                  </div>
+                  {% else %}
                     <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %}" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
                       {%- if product.selected_or_first_available_variant.available -%}
                         <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
@@ -214,6 +219,8 @@
                         {{- 'product.form.sold_out' | t -}}
                       {%- endif -%}
                     </button>
+                  {% endif %}
+                  {% endfor %}
 
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
