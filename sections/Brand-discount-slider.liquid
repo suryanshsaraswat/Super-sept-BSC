@@ -41,6 +41,7 @@
 </style>
 <div class="main-block">
   <h2 class="brand-h">{{ section.settings.logo-headingg }}</h2>
+  {% if section.settings.logo-sub_heading != blank %}<p class="cary-deals">{{ section.settings.logo-sub_heading }}</p>{% endif %}
   <div class="brand-block">
     <div class="brand-slider">
       {% for block in section.blocks %}
@@ -101,6 +102,11 @@
         "type": "html",
         "id": "logo-headingg",
         "label": "Enter Section Heading"
+      },
+      {
+        "type":"text",
+        "id":"logo-sub_heading",
+        "label":"Enter Sub Heading"
       }
     ],
     "blocks": [
