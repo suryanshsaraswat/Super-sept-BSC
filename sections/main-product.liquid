@@ -324,7 +324,7 @@
                     {% assign desc = product.description | replace: 'data-section-type', 'data-section-type-placeholder' %}
                      {% assign truncated = desc | truncate: 700 %}
                     <div class="description-truncate">
-                    {{ truncated }}<a href="#" class="read-more-linkk neww">Read More <span>&raquo;</span></a>
+                    {{ truncated }}<!-- <a href="#" class="read-more-linkk neww">Read More <span>&raquo;</span></a> -->
                     </div>
                     </div>{%- endif -%}
                 {%- if product.id != '7321933840538' -%}{% render 'pincode-checker' %}{%- endif -%}
