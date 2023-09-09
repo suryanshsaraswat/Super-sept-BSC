@@ -201,8 +201,7 @@
                         }
                       </style>
                     {%- endif -%}{% endcomment %}
-                {% for tag in product.tags %}
-                  {% if tag =='DOTD - Duplicate' %}
+                  {% if product.type =='DOTD - Duplicate' %}
                     <button type="submit" data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}" class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %}" {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
                       {%- if product.selected_or_first_available_variant.available -%}
                         <span>{% if product.template_suffix == 'pre-order' %}{{ 'product.form.pre_order' | t }}{% else %}{{ 'product.form.add_to_cart' | t }}{% endif %}</span>
@@ -229,7 +228,6 @@
                       {%- endif -%}
                     </button>
                     {% endif %}
-                  {% endfor %}
 
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
