@@ -348,7 +348,7 @@
           "00b65f50-279e-408e-b722-d81111773ba1": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Get 100% cashback on your order! Use Code:PAISAWAPSI",
+              "Offer": "Real Deals with PAISAWAPSI code  100% Cashback on all orders Vouchers worth 50000 from Partner Brands  Guaranteed Freebie with every order!",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
               "coupon": "PAISAWAPSI",
               "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
@@ -356,6 +356,7 @@
           },
           "55c336c9-f065-4834-be0a-d3aef3293d04": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Get vouchers worth 50K | Use code: PAISAWAPSI",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
@@ -365,6 +366,7 @@
           },
           "4a35f82b-a534-4b7f-af03-9e8cec58bd11": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Get a guaranteed freebie!",
               "image": "shopify:\/\/shop_images\/Logo_Unit.png",
