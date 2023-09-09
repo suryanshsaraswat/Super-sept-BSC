@@ -313,9 +313,9 @@
                   <p class="ProductForm__Inventory Text--subdued" {{ block.shopify_attributes }}>
                     {{- 'product.form.inventory_quantity_count' | t: count: 4 -}}
                   </p>
-            {% for tags in product.tags %}
+            {% for tag in product.tags %}
                 {% comment %}{%- when 'buy_buttons' -%} {% endcomment %}
-                  {% if tags == 'DOTD - Duplicate' %}
+                  {% if tag == 'DOTD - Duplicate' %}
                     <button type="submit" data-use-primary-button="true" class="ProductForm__AddToCart Button Button--primary Button--full">NOTIFY ME</button>
                     {% else %}
                   <div class="ProductForm__BuyButtons" {{ block.shopify_attributes }}>
