@@ -1,5 +1,59 @@
 {
   "sections": {
+    "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8": {
+      "type": "deal-of-the-day",
+      "blocks": {
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-product_meta-1": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-share_buttons-1": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-variant_selector-1": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        },
+        "ba7020d4-8f5a-4899-91f0-bd7b2b1f7c11": {
+          "type": "image",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-product_meta-1",
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-share_buttons-1",
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-variant_selector-1",
+        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-buy_buttons-1",
+        "ba7020d4-8f5a-4899-91f0-bd7b2b1f7c11"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_headings_on_mobile": false,
+        "product": "charcoal-facewash-men",
+        "show_timer": true
+      }
+    },
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18": {
       "type": "single-banner",
       "blocks": {
@@ -444,9 +498,17 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
+    },
+    "0b17128a-d058-4640-8dee-03feb4e2637e": {
+      "type": "countdown-banner",
+      "disabled": true,
+      "settings": {
+        "date_picker": ""
+      }
     }
   },
   "order": [
+    "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8",
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
     "504f6898-7f5c-426d-8406-c8a5f6977d71",
     "10ef4252-450e-4bab-9528-403e924d6b7f",
@@ -460,6 +522,7 @@
     "a81d24d1-82e9-48a6-9b9e-d69be5ae046d",
     "f0361034-5450-4871-94fa-1b6265e6c756",
     "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "0b17128a-d058-4640-8dee-03feb4e2637e"
   ]
 }
