@@ -1,12 +1,38 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Brands",
+    "settings": [],
+    "blocks": [
+      {
+        "name": "Brand Block",
+        "type": "image",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "brand_img_slid",
+            "label": "Select the Image"
+          }, {
+            "type": "text",
+            "id": "brand_title",
+            "label": "Enter Brand Name",
+            "default": "Boat Lifestyle"
+          }, {
+            "type": "html",
+            "id": "brand_desc",
+            "label": "Enter Brand / Offer Description"
+          }, {
+            "type": "text",
+            "id": "brand_coup",
+            "label": "Enter Brand Discount"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "category": "page",
+        "name": "Brands"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
