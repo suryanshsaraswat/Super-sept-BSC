@@ -1,0 +1,20 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_large": false
+      }
+    },
+    "1657523681299f51d6": {
+      "type": "animated-counters",
+      "disabled": true,
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657523681299f51d6"
+  ]
+}
