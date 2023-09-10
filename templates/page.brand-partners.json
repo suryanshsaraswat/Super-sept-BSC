@@ -12,10 +12,16 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "0cd2a8d5-8621-423c-aa02-cf03fba65cfb": {
+      "type": "brands",
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1657523681299f51d6"
+    "1657523681299f51d6",
+    "0cd2a8d5-8621-423c-aa02-cf03fba65cfb"
   ]
 }
