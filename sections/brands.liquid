@@ -1,23 +1,25 @@
 <div class="brand">
   <div class="brand-parent">
-    <div class="brand-child">
-      <div class="brand-img">
-        <h2 class="imgg-brand">
-          <img
-            src="{{ block.settings.brand_img_slid | img_url: '400x' }}"
-            alt="{{ block.settings.brand_title }}"
-            class="imgg"></h2>
-      </div>
-      <div class="brand-text">
-        <div class="brand-desc">
-          <h3 class="brand-title">{{ block.settings.brand_title }}</h3>
-          <div class="brand-desc-html">{{ block.settings.brand_desc }}</div>
+    {% for block in section.blocks %}
+      <div class="brand-child">
+        <div class="brand-img">
+          <h2 class="imgg-brand">
+            <img
+              src="{{ block.settings.brand_img_slid | img_url: '400x' }}"
+              alt="{{ block.settings.brand_title }}"
+              class="imgg"></h2>
         </div>
-        <div class="brand-disc">
-          {{ block.settings.brand_coup }}
+        <div class="brand-text">
+          <div class="brand-desc">
+            <h3 class="brand-title">{{ block.settings.brand_title }}</h3>
+            <div class="brand-desc-html">{{ block.settings.brand_desc }}</div>
+          </div>
+          <div class="brand-disc">
+            {{ block.settings.brand_coup }}
+          </div>
         </div>
       </div>
-    </div>
+    {% endfor %}
   </div>
 </div>
 {% schema %}
