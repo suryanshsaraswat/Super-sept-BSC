@@ -15,6 +15,20 @@
     },
     "0cd2a8d5-8621-423c-aa02-cf03fba65cfb": {
       "type": "brands",
+      "blocks": {
+        "f332c928-e123-4c84-ab23-28461cae4d4f": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
+            "brand_title": "Toowanza",
+            "brand_desc": "<ul>\n<li>Loren Ipsum<\/li>\n<li>Loren Ipsum<\/li>\n<li>Loren Ipsum<\/li>\n<\/ul>",
+            "brand_coup": "60% off on products"
+          }
+        }
+      },
+      "block_order": [
+        "f332c928-e123-4c84-ab23-28461cae4d4f"
+      ],
       "settings": {
       }
     }
