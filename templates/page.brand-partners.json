@@ -24,10 +24,40 @@
             "brand_desc": "<ul>\n<li>Loren Ipsum<\/li>\n<li>Loren Ipsum<\/li>\n<li>Loren Ipsum<\/li>\n<\/ul>",
             "brand_coup": "60% off on products"
           }
+        },
+        "803a3e45-44e0-4e7d-b7d4-1927c8fdb130": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
+            "brand_title": "Boat Lifestyle",
+            "brand_desc": "",
+            "brand_coup": "60% OFF ON PRODUCTS"
+          }
+        },
+        "37882294-9343-460e-95c5-7b19e1b4c5d8": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
+            "brand_title": "Boat Lifestyle",
+            "brand_desc": "",
+            "brand_coup": "60% OFF ON PRODUCTS"
+          }
+        },
+        "b819524b-3987-4ce6-990e-a7cc8493958e": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
+            "brand_title": "Boat Lifestyle",
+            "brand_desc": "",
+            "brand_coup": "60% OFF ON PRODUCTS"
+          }
         }
       },
       "block_order": [
-        "f332c928-e123-4c84-ab23-28461cae4d4f"
+        "f332c928-e123-4c84-ab23-28461cae4d4f",
+        "803a3e45-44e0-4e7d-b7d4-1927c8fdb130",
+        "37882294-9343-460e-95c5-7b19e1b4c5d8",
+        "b819524b-3987-4ce6-990e-a7cc8493958e"
       ],
       "settings": {
       }
