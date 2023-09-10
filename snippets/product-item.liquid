@@ -206,10 +206,10 @@
         {%- if show_price_on_hover == false and color_swatch_list != blank -%}
           {{- color_swatch_list -}}
         {%- endif -%}
-      {% if product.id == 7741694804122 %}
+      {% if product.id == 7741694804122 and product.id != 7902171398298 %}
         <button  type="submit"  class="Button Button--primary b2b">Not Available</button>
         {% else %}
-      {% if product.available and product.id != 7902171398298 %}
+      {% if product.available  %}
   <button  type="submit" name="add" aria-label="Add to cart" class="{% if product.selected_or_first_available_variant.available %}ad_to_cart_coll{% endif %} Button Button--primary" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ product.variants.first.id }}" data-var_id="{{ product.variants.first.id }}"
           onclick="dataLayer.push({ 'ecommerce': null });dataLayer.push({
     'event': 'add_to_cart',
