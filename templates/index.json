@@ -354,6 +354,13 @@
             "logo_brand": "shopify:\/\/shop_images\/Urban_Hair_Logo.png",
             "discount_desc": "Flat 50% OFF on Hair care products"
           }
+        },
+        "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Mangalam_Logo_1_-_ANIKET_PADWAL.png",
+            "discount_desc": "Flat 500 OFF on House of Mangalam"
+          }
         }
       },
       "block_order": [
@@ -373,7 +380,8 @@
         "5018e7fb-427f-41a3-ab98-483ce7f4b6d0",
         "70beb7ef-863c-4095-be70-baa638b49e28",
         "00b495a4-a586-4323-96b9-072fcc1bf52a",
-        "3d7ae93d-107d-48e5-84d0-798902bce715"
+        "3d7ae93d-107d-48e5-84d0-798902bce715",
+        "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
