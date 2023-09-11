@@ -334,6 +334,13 @@
             "logo_brand": "shopify:\/\/shop_images\/logo-transparent_-_Vvegano_Support.png",
             "discount_desc": "Flat 60% off on Vegan alternatives"
           }
+        },
+        "70beb7ef-863c-4095-be70-baa638b49e28": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Koparo_Logo_100x100_2_-_Kshitij_Ranjan.png",
+            "discount_desc": "Flat 200 OFF on Natural Handwash"
+          }
         }
       },
       "block_order": [
@@ -350,7 +357,8 @@
         "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009",
         "f5c0241d-9172-4b97-8126-2abebf932958",
         "c7f311e5-32d7-4337-a15a-cd68de5d067c",
-        "5018e7fb-427f-41a3-ab98-483ce7f4b6d0"
+        "5018e7fb-427f-41a3-ab98-483ce7f4b6d0",
+        "70beb7ef-863c-4095-be70-baa638b49e28"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
