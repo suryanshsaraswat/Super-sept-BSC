@@ -341,6 +341,13 @@
             "logo_brand": "shopify:\/\/shop_images\/Koparo_Logo_100x100_2_-_Kshitij_Ranjan.png",
             "discount_desc": "Flat 200 OFF on Natural Handwash"
           }
+        },
+        "2776f274-43c5-439a-85b2-944065206863": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_1.png",
+            "discount_desc": "Free Paan-Raisins worth 349"
+          }
         }
       },
       "block_order": [
@@ -358,7 +365,8 @@
         "f5c0241d-9172-4b97-8126-2abebf932958",
         "c7f311e5-32d7-4337-a15a-cd68de5d067c",
         "5018e7fb-427f-41a3-ab98-483ce7f4b6d0",
-        "70beb7ef-863c-4095-be70-baa638b49e28"
+        "70beb7ef-863c-4095-be70-baa638b49e28",
+        "2776f274-43c5-439a-85b2-944065206863"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
