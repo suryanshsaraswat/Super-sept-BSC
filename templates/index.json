@@ -368,6 +368,13 @@
             "logo_brand": "shopify:\/\/shop_images\/5_1_-_Social_Social.png",
             "discount_desc": "Flat 50% OFF to improve Gut Health"
           }
+        },
+        "3a309c04-21e5-4b4b-acee-8ee6d877aa10": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_7f25789b-b068-495f-992a-32f8984e7e23.png",
+            "discount_desc": "Flat 40% OFF on Conscious Chemist"
+          }
         }
       },
       "block_order": [
@@ -389,7 +396,8 @@
         "00b495a4-a586-4323-96b9-072fcc1bf52a",
         "3d7ae93d-107d-48e5-84d0-798902bce715",
         "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a",
-        "cbec0675-6414-4c46-bf3a-922162f9c430"
+        "cbec0675-6414-4c46-bf3a-922162f9c430",
+        "3a309c04-21e5-4b4b-acee-8ee6d877aa10"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
