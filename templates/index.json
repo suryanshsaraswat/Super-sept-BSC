@@ -365,6 +365,7 @@
         "cbec0675-6414-4c46-bf3a-922162f9c430": {
           "type": "homepage",
           "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/5_1_-_Social_Social.png",
             "discount_desc": "Flat 50% OFF to improve Gut Health"
           }
         }
