@@ -347,6 +347,13 @@
             "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_3d5b527c-9d59-4122-a6c2-5eececed2d46.png",
             "discount_desc": "Flat 50% OFF on Organic Cashews"
           }
+        },
+        "3d7ae93d-107d-48e5-84d0-798902bce715": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Urban_Hair_Logo.png",
+            "discount_desc": "Flat 50% OFF on Hair care products"
+          }
         }
       },
       "block_order": [
@@ -365,7 +372,8 @@
         "c7f311e5-32d7-4337-a15a-cd68de5d067c",
         "5018e7fb-427f-41a3-ab98-483ce7f4b6d0",
         "70beb7ef-863c-4095-be70-baa638b49e28",
-        "00b495a4-a586-4323-96b9-072fcc1bf52a"
+        "00b495a4-a586-4323-96b9-072fcc1bf52a",
+        "3d7ae93d-107d-48e5-84d0-798902bce715"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
