@@ -434,15 +434,6 @@
               "linkopen": false
             }
           },
-          "9d08cfe9-2e2f-4020-9527-af6099ab3c88": {
-            "type": "testimonial",
-            "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/new_arrivals.png",
-              "text": "Razors",
-              "linkurl": "shopify:\/\/pages\/razors-for-men",
-              "linkopen": false
-            }
-          },
           "723462a7-6687-4d01-9fa0-18023bbafc5b": {
             "type": "testimonial",
             "settings": {
@@ -458,6 +449,15 @@
               "mobile_nav": "shopify:\/\/shop_images\/bsc-page-icon.png",
               "text": "Women",
               "linkurl": "shopify:\/\/collections\/paisa-waapsi-sale-shop-for-women",
+              "linkopen": false
+            }
+          },
+          "9d08cfe9-2e2f-4020-9527-af6099ab3c88": {
+            "type": "testimonial",
+            "settings": {
+              "mobile_nav": "shopify:\/\/shop_images\/new_arrivals.png",
+              "text": "Razors",
+              "linkurl": "shopify:\/\/pages\/razors-for-men",
               "linkopen": false
             }
           },
@@ -530,9 +530,9 @@
           "9b04b01b-bd63-4aac-827f-60df44614295",
           "4d245f9c-a505-414f-836d-13c5b9fd0231",
           "61483588-c8b3-4603-b2be-e6642e8c2845",
-          "9d08cfe9-2e2f-4020-9527-af6099ab3c88",
           "723462a7-6687-4d01-9fa0-18023bbafc5b",
           "debb41d3-b108-48a6-91eb-115025e8ba25",
+          "9d08cfe9-2e2f-4020-9527-af6099ab3c88",
           "585a3d49-5aa7-4472-a028-3d238a4e6a0f",
           "de6ec94f-3b94-42f6-8d56-71dff7d5b5f4",
           "442afb8b-d88b-4bbd-ade6-d4e5381d4263",
