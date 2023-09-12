@@ -1,4 +1,4 @@
-<style>
+{% comment %} <style>
   .bottom-bar{display:none}
 
   @media(max-width:480px){
@@ -15,4 +15,4 @@
   <a href="/account"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/account.png?v=1673941638" width="30">{% if customer.first_name %}{{ customer.first_name }}{% else %}Account{% endif %}</a>
   <a class="annn" href="#"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/price-tag.png?v=1673941638" width="30">Offers</a>
 <!--   <a href="{% if template.name == 'product' %}https://api.whatsapp.com/send/?phone=917303488233&text=Hey! I would like to know about {{ product.title }}{% else %}https://api.whatsapp.com/send/?phone=917303488233&text=Hi Bombay Shaving Company, I need some help{% endif %}"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/whatsapp_9b1d732f-face-477b-9642-d6d27a838648.png?v=1673941638" width="30">Help</a> -->
-</div>
+</div> {% endcomment %}
