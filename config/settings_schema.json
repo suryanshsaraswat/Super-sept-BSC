@@ -250,7 +250,7 @@
         ]
     },
     {
-        "name":"telegram Popup",
+        "name":"Telegram Popup",
         "settings":[
             {
                 "type":"checkbox",
