@@ -54,8 +54,7 @@
       {%- else -%}
         <div class="paisa-wapsi"><p>Complete your checkout to get 100% Cashback</p></div>
       {% assign cart_total = cart.items_subtotal_price | divided_by:100 %}
-      <!-- {% if cart.items_subtotal_price < 200 %}<div class="paisa-wapsi"><p>Add products worth Rs.{{ cart.items_subtotal_price | abs | minus: 199 }} to get free shipping!</p></div>{% else %}<div class="paisa-wapsi"><p>Free Shipping!</p></div>{% endif %} -->
-        {{ cart_total }}
+      {% if cart_total < 200 %}<div class="paisa-wapsi"><p>Add products worth Rs.{{ cart_total | minus: 199 }} to get free shipping!</p></div>{% else %}<div class="paisa-wapsi"><p>Free Shipping!</p></div>{% endif %}
         <!-- <div class="timexx" style="background: #c0d52f;color: #fff; font-weight: 600; text-align: center; padding: 5px;text-transform: uppercase; ">Hurry! Your cart is reserved for <span id="timer"></span></div> -->
         <div class="Drawer__Container">
           <input
