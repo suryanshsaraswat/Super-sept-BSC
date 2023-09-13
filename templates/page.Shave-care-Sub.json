@@ -134,22 +134,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "21fc884e-023e-430e-808f-3f4a707e98f9": {
-      "type": "category-banner-single",
-      "blocks": {
-        "8d92bece-576f-444b-a7af-dff7eff61393": {
-          "type": "testimonial",
-          "settings": {
-            "imags": "shopify:\/\/shop_images\/Razor_Model.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "8d92bece-576f-444b-a7af-dff7eff61393"
-      ],
-      "settings": {
-      }
-    },
     "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac": {
       "type": "category-banner-single",
       "blocks": {
@@ -192,6 +176,22 @@
         "show_color_swatch": false,
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
+      }
+    },
+    "21fc884e-023e-430e-808f-3f4a707e98f9": {
+      "type": "category-banner-single",
+      "blocks": {
+        "8d92bece-576f-444b-a7af-dff7eff61393": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/Razor_Model.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "8d92bece-576f-444b-a7af-dff7eff61393"
+      ],
+      "settings": {
       }
     },
     "51a7521a-8f03-43de-bb45-559fcae206f7": {
@@ -241,9 +241,9 @@
     "6460e6cb-c74b-44a6-8a39-84eb2147dfe0",
     "acaed1b8-bbef-425d-8f80-9089f79dc9d3",
     "6be5d94b-bc5b-41df-97dd-de1f8482f434",
-    "21fc884e-023e-430e-808f-3f4a707e98f9",
     "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac",
     "0562ed96-cc57-45ca-b637-6e6f710af8e0",
+    "21fc884e-023e-430e-808f-3f4a707e98f9",
     "51a7521a-8f03-43de-bb45-559fcae206f7",
     "ae419fa0-bbc9-4e82-90ac-692905f43a5d"
   ]
