@@ -52,7 +52,7 @@
       {%- if cart.item_count == 0 -%}
         <p class="Cart__Empty Heading u-h5">{{ 'cart.general.empty' | t }}</p>
       {%- else -%}
-        <div class="paisa-wapsi"><p>Complete your checkout to get 100% Cashback.</p><p class="coupon">use code: <span style="font-weight:600">PAISAWAPSI</span></p></div>
+        <div class="paisa-wapsi"><p>Complete your checkout to get 100% Cashback</p><p class="coupon">use code: <span style="font-weight:600">PAISAWAPSI</span></p></div>
       {% assign cart_total = cart.items_subtotal_price | divided_by:100 %}
       {% if cart_total < 200 %}<div class="paisa-wapsi shipping"><p>Add more products worth Rs.{{ cart_total | minus: 199 | abs }} to get free shipping!</p></div>{% else %}<div class="paisa-wapsi shipping"><p>Free Shipping!</p></div>{% endif %}
         <!-- <div class="timexx" style="background: #c0d52f;color: #fff; font-weight: 600; text-align: center; padding: 5px;text-transform: uppercase; ">Hurry! Your cart is reserved for <span id="timer"></span></div> -->
