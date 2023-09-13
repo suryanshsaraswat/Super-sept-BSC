@@ -1,0 +1,173 @@
+<style>
+  .popup-mobile {
+    display: none;
+  }
+  @media(max-width:450px) {
+    .popup-mobile {
+      display: block;
+    }
+    .custom-popup-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 6;
+    }
+
+    .custom-popup {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      border-top: 1px solid #ccc;
+      z-index: 7;
+      border-radius: 20px;
+      background-color: #deefff;
+    }
+
+    .custom-popup-content {
+      padding: 10px;
+      min-height: 300px
+    }
+    .custom-popup-content h2 {
+      text-align: center;
+      margin-top: 20px;
+    }
+    a#custom-popup-button {
+      max-width: 100%;
+      display: block;
+      width: 200px;
+      margin: -10px auto 0;
+      background: #007783;
+      color: #fff;
+      padding: 7px 0;
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    button#custom-popup-close {
+      position: absolute;
+      top: 6px;
+      right: 13px;
+      padding: 1px 5px;
+      color: #000;
+      background: #fff;
+      border-radius: 7px;
+    }
+    div#custom-popup p {
+      text-align: center;
+      padding-top: 10px;
+      margin-top: -20px;
+      font-weight: 700;
+      color: #007783;
+    }
+
+    .custom-popup.slide-up {
+      animation: custom-slide-up 0.5s ease-out forwards;
+    }
+
+    .custom-popup.slide-down {
+      animation: custom-slide-down 0.5s ease-out forwards;
+    }
+
+    @keyframes custom-slide-up {
+      from {
+        transform: translateY(100%);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes custom-slide-down {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(100%);
+      }
+    }
+
+  }
+</style>
+<div class="popup-mobile">
+  <div class="custom-popup-overlay" id="custom-popup-overlay"></div>
+  <div id="custom-popup" class="custom-popup">
+    <div class="custom-popup-content">
+      <button class="custom-popup-close" id="custom-popup-close">Close</button>
+      <h2><img
+          src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/promotion_9387148.png?v=1693146123"
+          class="custom-img-pop"
+          style="width:100px; height:auto"></h2>
+      <p>Join our group<br>for more value saving offers!</p>
+      <a href="https://t.me/bombayshavingco" id="custom-popup-button">join now</a>
+    </div>
+  </div>
+</div>
+<script>
+  function setCookie(name, value, days) {
+    var expires = "";
+    if (days) {
+      var date = new Date();
+      date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+      expires = "; expires=" + date.toUTCString();
+    }
+    document.cookie = name + "=" + value + expires + "; path=/";
+  }
+  function getCookie(name) {
+    var nameEQ = name + "=";
+    var cookies = document.cookie.split(";");
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i];
+      while (cookie.charAt(0) == " ") {
+        cookie = cookie.substring(1, cookie.length);
+      }
+      if (cookie.indexOf(nameEQ) == 0) {
+        return cookie.substring(nameEQ.length, cookie.length);
+      }
+    }
+    return null;
+  }
+
+  document.addEventListener("DOMContentLoaded", function() {
+    const customPopup = document.getElementById("custom-popup");
+    const customPopupButton = document.getElementById("custom-popup-button");
+    const customPopupClose = document.getElementById("custom-popup-close");
+    const customPopupOverlay = document.getElementById("custom-popup-overlay");
+
+    function showPopup() {
+      customPopup.classList.add("slide-up");
+      customPopupOverlay.style.display = "block";
+      customPopup.style.display = "block";
+    }
+
+    customPopupButton.addEventListener("click", function() {
+      setCookie("telegramPopupClicked", "true", 30);
+      hidePopup();
+    });
+    if (! getCookie("telegramPopupClicked")) {
+      setTimeout(showPopup, 5000);
+    }
+
+    customPopupClose.addEventListener("click", function() {
+      hidePopup();
+    });
+
+    customPopupOverlay.addEventListener("click", function() {
+      hidePopup();
+    });
+
+    function hidePopup() {
+      customPopup.classList.add("slide-down");
+      setTimeout(() => {
+        customPopupOverlay.style.display = "none";
+        customPopup.style.display = "none";
+      }, 500);
+    }
+  });
+</script>

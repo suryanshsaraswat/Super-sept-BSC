@@ -362,6 +362,7 @@ gtag('config','AW-881045097', {'allow_enhanced_conversions':true});
           <!--Preloader end -->
           {% endif %}{% endcomment %}
     {%- comment -%}Common SVG definitions that we are re-using in several places{%- endcomment -%}
+    {% render 'telegram-popup' %}
     <svg class="u-visually-hidden">
       <linearGradient id="rating-star-gradient-half">
         <stop offset="50%" stop-color="var(--product-star-rating)" />
@@ -534,7 +535,7 @@ $(".new-annbar, .annn").click(function(e){
 <!-- OPTIMIZE MEDIA PIXEL END -->
   	{%- render 'flits_capture_code' with 'load_snippet',template:'flits_snippet' -%}
 <script>
-  
+
 </script>
 </body>
 </html>
