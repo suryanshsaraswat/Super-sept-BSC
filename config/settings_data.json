@@ -63,6 +63,7 @@
     "goEnable": true,
     "main-titile": "Place order",
     "sub-titile": "",
+    "tele_pop": false,
     "checkout_logo_image": "shopify:\/\/shop_images\/BSC_Logo___for_site_2_1.gif",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
