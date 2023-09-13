@@ -5,6 +5,12 @@
     padding: 20px;
     color: #fff
   }
+  .exp p {
+    text-align: center;
+    margin-bottom: -32px;
+    margin-top: 11px;
+    font-size: 11px;
+  }
   div#shopify-section-template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8 section.Section.Section--spacingNormal {
     padding: 0;
   }
@@ -54,7 +60,7 @@
 {%- capture section_settings -%}
   {
   "enableHistoryState": false,
-                  "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
+                            "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
   "templateSuffix": {{ product.template_suffix | json }},
   "showInventoryQuantity":
   {% if inventory_block != blank %}true{% else %}false{% endif %},
