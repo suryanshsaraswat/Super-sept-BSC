@@ -1035,7 +1035,7 @@ input#dateofbirth {
     background: #f8e11c;
     padding: 7px 0;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 11px;
     color: #000;
     font-weight: 600;
 }
@@ -1048,4 +1048,5 @@ h2.cbb-frequently-bought-title.translatable.Heading.u-h3 {
 .shipping {
     background: #ff5b00;
     color: #fff;
+  font-size:12px
 }
