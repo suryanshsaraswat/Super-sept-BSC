@@ -74,7 +74,7 @@
         {%- if section.settings.subheading != blank -%}
           <h3 class="SectionHeader__SubHeading Heading u-h6">{{ section.settings.subheading | escape }}</h3>
         {%- endif -%}
-      
+
 
         {%- if section.settings.title != blank -%}
           <h2 class="SectionHeader__Heading Heading u-h1">{{ section.settings.title | escape }}</h2>
@@ -82,7 +82,7 @@
       </header>
     {%- endif -%}
 
-    <div class="FeaturedProduct {% if section.settings.show_description == false or product.description == blank %}FeaturedProduct--center{% endif %}">
+    <div class="FeaturedProduct {% if section.settings.show_description == false or product.description == blank %}FeaturedProduct--center{% endif %}" id="DOTD">
       {%- if product != empty -%}
         {%- comment -%}
         --------------------------------------------------------------------------------------------------------------------
@@ -230,7 +230,7 @@
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
                     {%- endif -%}
-                 
+
                   </div>
                 {%- when 'store_pickup' -%}
                   {%- comment -%}The availability container will be added automatically if there is store pickup available{%- endcomment -%}
@@ -253,7 +253,7 @@
             {%- endunless -%}
                 </div>
 
-                
+
           {%- endform -%}
 
           <div class="FeaturedProduct__ViewWrapper">
@@ -364,7 +364,7 @@
   {{- product_popovers -}}
   {{- product_modals -}}
 </section>
-  
+
 {% schema %}
 {
   "name": "Deal of the Day",
