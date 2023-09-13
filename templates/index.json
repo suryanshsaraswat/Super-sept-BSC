@@ -130,114 +130,16 @@
         "button_background": "#ffffff"
       }
     },
-    "2a4ccd55-76ba-43e7-9790-ba7c69e571f4": {
-      "type": "single-banner",
-      "blocks": {
-        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e": {
-          "type": "testimonial",
-          "settings": {
-            "imags": "shopify:\/\/shop_images\/How_to_redeem.webp",
-            "imags2": "shopify:\/\/shop_images\/How_to_redeem_mobile.webp",
-            "linkk": "shopify:\/\/collections\/paisa-wapsi-sale"
-          }
-        }
-      },
-      "block_order": [
-        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e"
-      ],
-      "settings": {
-      }
-    },
-    "7ebf82e3-7df8-4207-8462-3331c5e90551": {
-      "type": "rzp-marqeee",
-      "disabled": true,
-      "settings": {
-        "text1": "100% CASHBACK",
-        "text2": "50,000 worth coupons to be won",
-        "text3": "₹1 deals EVERYDAY",
-        "text4": "Freebies with every order"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "featured-collection-0": {
-          "type": "collection",
-          "settings": {
-            "collection": "best-seller",
-            "title": "Shop Best Sellers",
-            "grid_items_count": 4,
-            "button_text": "View all Best Sellers"
-          }
-        }
-      },
-      "block_order": [
-        "featured-collection-0"
-      ],
-      "settings": {
-        "bg": "linear-gradient(180deg, rgb(99 195 255 \/ 45%), rgba(255, 255, 255, 1) 100%)",
-        "hcl": "#0d5ea8",
-        "title": "",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
-    "01645ffb-4b6f-4337-9b0c-6a0c0f741895": {
-      "type": "deal-of-the-day",
-      "blocks": {
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1": {
-          "type": "share_buttons",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "show_headings_on_mobile": true,
-        "product": "coffee-face-wash",
-        "show_timer": true
-      }
-    },
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
       "type": "Brand-discount-slider",
       "blocks": {
+        "82d0732b-20a8-404b-957f-a4022a03b942": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_eb9def0d-2ffb-4206-87b3-6fc213bf77b2.png",
+            "discount_desc": "Flat 500 Off!"
+          }
+        },
         "e6b56035-5e0c-4a44-9615-5abc1356881f": {
           "type": "homepage",
           "settings": {
@@ -377,9 +279,17 @@
             "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_7f25789b-b068-495f-992a-32f8984e7e23.png",
             "discount_desc": "Flat 40% OFF on Conscious Chemist"
           }
+        },
+        "2b54d259-127c-44da-aa0a-9df0296db7af": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_ca5f1bf2-f4b5-41cd-83ef-add58ba39d78.png",
+            "discount_desc": "Flat 50% off"
+          }
         }
       },
       "block_order": [
+        "82d0732b-20a8-404b-957f-a4022a03b942",
         "e6b56035-5e0c-4a44-9615-5abc1356881f",
         "42f9acee-3e49-4609-89f7-db7446eaf0c0",
         "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
@@ -399,11 +309,117 @@
         "3d7ae93d-107d-48e5-84d0-798902bce715",
         "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a",
         "cbec0675-6414-4c46-bf3a-922162f9c430",
-        "3a309c04-21e5-4b4b-acee-8ee6d877aa10"
+        "3a309c04-21e5-4b4b-acee-8ee6d877aa10",
+        "2b54d259-127c-44da-aa0a-9df0296db7af"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
         "logo-sub_heading": "Real. Crazy. Deals."
+      }
+    },
+    "2a4ccd55-76ba-43e7-9790-ba7c69e571f4": {
+      "type": "single-banner",
+      "blocks": {
+        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/How_to_redeem.webp",
+            "imags2": "shopify:\/\/shop_images\/How_to_redeem_mobile.webp",
+            "linkk": "shopify:\/\/collections\/paisa-wapsi-sale"
+          }
+        }
+      },
+      "block_order": [
+        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e"
+      ],
+      "settings": {
+      }
+    },
+    "7ebf82e3-7df8-4207-8462-3331c5e90551": {
+      "type": "rzp-marqeee",
+      "disabled": true,
+      "settings": {
+        "text1": "100% CASHBACK",
+        "text2": "50,000 worth coupons to be won",
+        "text3": "₹1 deals EVERYDAY",
+        "text4": "Freebies with every order"
+      }
+    },
+    "featured-collections": {
+      "type": "featured-collections",
+      "blocks": {
+        "featured-collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "best-seller",
+            "title": "Shop Best Sellers",
+            "grid_items_count": 4,
+            "button_text": "View all Best Sellers"
+          }
+        }
+      },
+      "block_order": [
+        "featured-collection-0"
+      ],
+      "settings": {
+        "bg": "linear-gradient(180deg, rgb(99 195 255 \/ 45%), rgba(255, 255, 255, 1) 100%)",
+        "hcl": "#0d5ea8",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "01645ffb-4b6f-4337-9b0c-6a0c0f741895": {
+      "type": "deal-of-the-day",
+      "blocks": {
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1": {
+          "type": "share_buttons",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
+        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_headings_on_mobile": true,
+        "product": "coffee-face-wash",
+        "show_timer": true
       }
     },
     "bc80b36d-469e-4b30-9628-17cebf026bb4": {
@@ -810,11 +826,11 @@
   },
   "order": [
     "slideshow",
+    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "2a4ccd55-76ba-43e7-9790-ba7c69e571f4",
     "7ebf82e3-7df8-4207-8462-3331c5e90551",
     "featured-collections",
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "bc80b36d-469e-4b30-9628-17cebf026bb4",
     "f0f9d148-a854-4731-a987-5d03b56b3438",
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
