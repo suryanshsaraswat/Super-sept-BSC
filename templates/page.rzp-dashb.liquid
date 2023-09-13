@@ -2,6 +2,18 @@
   .dashb-main {
     position: relative;
   }
+  .section-5::after {
+    width: 260px;
+    height: 3px;
+    content: "";
+    bottom: -10px;
+    background: #000;
+    position: absolute;
+    left: 16%;
+  }
+  .section-5 {
+    position: relative;
+  }
   .section-1 {
     max-width: 100%;
     margin: 0 auto;
@@ -9,14 +21,6 @@
   }
   .section-4 {
     border-bottom: 1px solid;
-  }
-  .divider {
-    position: absolute;
-    width: 250px;
-    height: 3px;
-    top: 57.5%;
-    background: #000;
-    left: 17%;
   }
   .section-6 {
     margin-top: 46px;
@@ -31,6 +35,5 @@
   <div class="section-3">{% render 'rzp-dashb-leaderboard' %}</div>
   <div class="section-4" id="selling-tips">{% render 'rzp-dashb-accordian' %}</div>
   <div class="section-5">{% render 'rzp-dashb-brb-shop' %}</div>
-  <div class="divider"></div>
   <div class="section-6" id="buy-more">{% render 'rzp-section-2' %}</div>
 </div>
