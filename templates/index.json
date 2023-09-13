@@ -140,6 +140,13 @@
             "discount_desc": "Flat 500 Off!"
           }
         },
+        "2b54d259-127c-44da-aa0a-9df0296db7af": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_ca5f1bf2-f4b5-41cd-83ef-add58ba39d78.png",
+            "discount_desc": "Flat 50% off"
+          }
+        },
         "e6b56035-5e0c-4a44-9615-5abc1356881f": {
           "type": "homepage",
           "settings": {
@@ -279,17 +286,11 @@
             "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_7f25789b-b068-495f-992a-32f8984e7e23.png",
             "discount_desc": "Flat 40% OFF on Conscious Chemist"
           }
-        },
-        "2b54d259-127c-44da-aa0a-9df0296db7af": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_ca5f1bf2-f4b5-41cd-83ef-add58ba39d78.png",
-            "discount_desc": "Flat 50% off"
-          }
         }
       },
       "block_order": [
         "82d0732b-20a8-404b-957f-a4022a03b942",
+        "2b54d259-127c-44da-aa0a-9df0296db7af",
         "e6b56035-5e0c-4a44-9615-5abc1356881f",
         "42f9acee-3e49-4609-89f7-db7446eaf0c0",
         "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
@@ -309,8 +310,7 @@
         "3d7ae93d-107d-48e5-84d0-798902bce715",
         "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a",
         "cbec0675-6414-4c46-bf3a-922162f9c430",
-        "3a309c04-21e5-4b4b-acee-8ee6d877aa10",
-        "2b54d259-127c-44da-aa0a-9df0296db7af"
+        "3a309c04-21e5-4b4b-acee-8ee6d877aa10"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
