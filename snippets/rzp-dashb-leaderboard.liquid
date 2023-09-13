@@ -104,87 +104,8 @@
   <p class="last-para">Not in the top 10 yet?<br>increase your chances by buying more razors</p>
   <a href="/pages/razorpreneur-dashboard#buy-more" class="rzp-dashb-button buy-more Button Button-primary ldb">BUY MORE</a>
 </div>
-
-{% comment %} <script>
-var jsonData = [
-{
-"ranking": 1,
-"name": "Sunita Sharma",
-"city": "Delhi",
-"razorsSold": 800
-},
-{
-"ranking": 2,
-"name": "Rajesh Kumar",
-"city": "Mumbai",
-"razorsSold": 750
-},
-{
-"ranking": 3,
-"name": "Priya Patel",
-"city": "Ahmedabad",
-"razorsSold": 720
-},
-{
-"ranking": 4,
-"name": "Amit Singh",
-"city": "Bangalore",
-"razorsSold": 680
-}, {
-"ranking": 5,
-"name": "Anjali Gupta",
-"city": "Kolkata",
-"razorsSold": 650
-}, {
-"ranking": 6,
-"name": "Vishal Reddy",
-"city": "Hyderabad",
-"razorsSold": 620
-}, {
-"ranking": 7,
-"name": "Neha Verma",
-"city": "Chennai",
-"razorsSold": 590
-}, {
-"ranking": 8,
-"name": "Alok Yadav",
-"city": "Pune",
-"razorsSold": 560
-}, {
-"ranking": 9,
-"name": "Meena Gupta",
-"city": "Jaipur",
-"razorsSold": 530
-}, {
-"ranking": 10,
-"name": "Sanjay Sharma",
-"city": "Lucknow",
-"razorsSold": 500
-}
-];
-
-// Function to populate the leaderboard
-function populateLeaderboard(data) {
-var leaderboardList = $("#leaderboard-list");
-
-// Iterate over the JSON data and create list items
-$.each(data, function(index, player) {
-var listItem = $("<li>").addClass("player p-" + player.ranking);
-listItem.append("<img src='https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_54.png?v=1693591172' style='width:100%; height:auto'>");
-listItem.append("<span id='lb-name'>" + player.name + "</span>");
-listItem.append("<span id='lb-city'>" + player.city + "</span>");
-listItem.append("<span id='lb-razors-sold'>" + player.razorsSold + "</span>");
-
-leaderboardList.append(listItem);
-});
-}
-
-// Call the function to populate the leaderboard
-populateLeaderboard(jsonData);
-</script> {% endcomment %}<script>
+<script>
   $(document).ready(function() {
-
-// Function to fetch and update leaderboard data
     function updateLeaderboard() {
       const googleSheetsURL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQ3AmJTMdhuzKPGhAPMeaoAMl5sFb73iMs8IvXPzkJA8_uOLs578VcBFgVvryP9KrVJ2cG9jrVGQqIJ/pubhtml'; // Replace with your URL
       const leaderboardList = $('#leaderboard-list');
@@ -208,8 +129,6 @@ populateLeaderboard(jsonData);
       });
     }
     updateLeaderboard();
-
-// setInterval(updateLeaderboard, 3600000);
   });
   function parseGoogleSheetsData(data) {
     const leaderboardData = [];
