@@ -116,9 +116,6 @@
         leaderboardList.empty();
         var ctr = 0;
         leaderboardData.forEach(function(player) {
-          if (ctr == 0) {
-            continue
-          }
           const listItem = $("<li>").addClass("player p-" + player.rank);
           listItem.append("<img src='https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_54.png?v=1693591172' style='width:100%; height:auto'>");
           listItem.append("<span id='lb-name'>" + player.name + "</span>");
@@ -139,12 +136,12 @@
     const leaderboardData = [];
     const tableRows = $(data).find('table tr');
 
-    for (let i = 1; i <= 10; i++) {
+    for (let i = 2; i <= 10; i++) {
       const columns = $(tableRows[i]).find('td');
       const rank = parseInt($(columns[0]).text().trim());
       const name = $(columns[1]).text().trim();
-      const city = $(columns[2]).text().trim();
-      const razorsSold = parseInt($(columns[3]).text().trim());
+      const city = $(columns[5]).text().trim();
+      const razorsSold = parseInt($(columns[7]).text().trim());
 
       leaderboardData.push({rank, name, city, razorsSold});
     }
