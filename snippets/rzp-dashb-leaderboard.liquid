@@ -114,7 +114,11 @@
       $.get(googleSheetsURL, function(data) {
         const leaderboardData = parseGoogleSheetsData(data);
         leaderboardList.empty();
+        var ctr = 0;
         leaderboardData.forEach(function(player) {
+          if (ctr == 0) {
+            continue
+          }
           const listItem = $("<li>").addClass("player p-" + player.rank);
           listItem.append("<img src='https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_54.png?v=1693591172' style='width:100%; height:auto'>");
           listItem.append("<span id='lb-name'>" + player.name + "</span>");
@@ -122,6 +126,7 @@
           listItem.append("<span id='lb-razors-sold'>" + player.razorsSold + "</span>");
 
           leaderboardList.append(listItem);
+          ctr++;
         });
         const currentTime = new Date();
         const formattedTime = currentTime.toLocaleString();
