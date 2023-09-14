@@ -102,27 +102,17 @@
     "c951b4a8-0d60-4c33-b802-2ce3079de1ec": {
       "type": "featured-collections",
       "blocks": {
-        "template--16174120435866__c951b4a8-0d60-4c33-b802-2ce3079de1ec-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "new-arrivals",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": "View all products"
-          }
-        },
         "a5ae1de3-e952-49b1-b2fe-981fdfe84891": {
           "type": "collection",
           "settings": {
             "collection": "best-seller",
             "title": "",
             "grid_items_count": 8,
-            "button_text": "View all products"
+            "button_text": ""
           }
         }
       },
       "block_order": [
-        "template--16174120435866__c951b4a8-0d60-4c33-b802-2ce3079de1ec-collection-1",
         "a5ae1de3-e952-49b1-b2fe-981fdfe84891"
       ],
       "settings": {
