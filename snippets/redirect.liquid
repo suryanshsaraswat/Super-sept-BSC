@@ -26,4 +26,9 @@
   {% elsif product.url == '/products/free-gift' %}
     window.location.href = "https://bombayshavingcompany.com";
   {% endif %}
+
+  {% unless page.url == '/pages/razorpreneur-dashboard' and customer %}
+    window.location.href = "https://bombayshavingcompany.com";
+  {% endunless %}
+    
 </script>
