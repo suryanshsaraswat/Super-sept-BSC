@@ -28,11 +28,9 @@
   {% endif %}
 
   {% if page.url == '/pages/razorpreneur-dashboard' %}
-  {% if customer %}
+  {% unless customer %}
     window.location.href = "https://bombayshavingcompany.com/pages/razorpreneur-dashboard";
-  {% else %}
-    window.location.href = "https://bombayshavingcompany.com/pages/razorpreneur";
-  {% endif %}
+  {% endunless %}
   {% endif %}
     
 </script>
