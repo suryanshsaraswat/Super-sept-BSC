@@ -22,6 +22,50 @@
       "settings": {
       }
     },
+    "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac": {
+      "type": "category-banner-single",
+      "blocks": {
+        "1892186d-1dfa-4078-bb87-84dbcca2379c": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/Sensi_range_36b3519d-b4c7-405b-94de-3e8bbf890caa.png"
+          }
+        }
+      },
+      "block_order": [
+        "1892186d-1dfa-4078-bb87-84dbcca2379c"
+      ],
+      "settings": {
+      }
+    },
+    "0562ed96-cc57-45ca-b637-6e6f710af8e0": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16174121451674__0562ed96-cc57-45ca-b637-6e6f710af8e0-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "razors-1",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16174121451674__0562ed96-cc57-45ca-b637-6e6f710af8e0-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "c8aeba3f-6d93-409e-a36e-b41d519964a5": {
       "type": "category-banner-single",
       "blocks": {
@@ -134,50 +178,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac": {
-      "type": "category-banner-single",
-      "blocks": {
-        "1892186d-1dfa-4078-bb87-84dbcca2379c": {
-          "type": "testimonial",
-          "settings": {
-            "imags": "shopify:\/\/shop_images\/Sensi_range_36b3519d-b4c7-405b-94de-3e8bbf890caa.png"
-          }
-        }
-      },
-      "block_order": [
-        "1892186d-1dfa-4078-bb87-84dbcca2379c"
-      ],
-      "settings": {
-      }
-    },
-    "0562ed96-cc57-45ca-b637-6e6f710af8e0": {
-      "type": "featured-collections",
-      "blocks": {
-        "template--16174121451674__0562ed96-cc57-45ca-b637-6e6f710af8e0-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "razors-1",
-            "title": "",
-            "grid_items_count": 8,
-            "button_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--16174121451674__0562ed96-cc57-45ca-b637-6e6f710af8e0-collection-1"
-      ],
-      "settings": {
-        "bg": "",
-        "hcl": "",
-        "title": "",
-        "layout_mode": "grid",
-        "show_product_info": true,
-        "show_vendor": false,
-        "show_color_swatch": false,
-        "grid_mobile_items_per_row": "2",
-        "grid_desktop_items_per_row": 4
-      }
-    },
     "21fc884e-023e-430e-808f-3f4a707e98f9": {
       "type": "category-banner-single",
       "blocks": {
@@ -235,14 +235,14 @@
     "a1ec68c4-0dc7-4f1a-880c-beddd7834b23",
     "main",
     "1657523681299f51d6",
+    "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac",
+    "0562ed96-cc57-45ca-b637-6e6f710af8e0",
     "c8aeba3f-6d93-409e-a36e-b41d519964a5",
     "bdfa49df-ff6a-45f3-9b57-f6eeaffb4f0b",
     "4fc1a439-91d9-4314-870d-3f2fb1499960",
     "6460e6cb-c74b-44a6-8a39-84eb2147dfe0",
     "acaed1b8-bbef-425d-8f80-9089f79dc9d3",
     "6be5d94b-bc5b-41df-97dd-de1f8482f434",
-    "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac",
-    "0562ed96-cc57-45ca-b637-6e6f710af8e0",
     "21fc884e-023e-430e-808f-3f4a707e98f9",
     "51a7521a-8f03-43de-bb45-559fcae206f7",
     "ae419fa0-bbc9-4e82-90ac-692905f43a5d"
