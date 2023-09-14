@@ -97,9 +97,11 @@
           {{ customer.name }}{% else %}Razorpreneur{% endif %}
       </span>
     </h2>
-    <p class="n-y-name">Not your name? Please update it
-      <a href="https://bombayshavingcompany.com/account#profile">Here</a>
-    </p>
+    {% if customer %}
+      <p class="n-y-name">Not your name? Please update it
+        <a href="https://bombayshavingcompany.com/account#profile">Here</a>
+      </p>
+    {% endif %}
     {% comment %} <h3 class="n-r-bought">you’ve bought <span class="razor-number"></span>Razors</h3> {% endcomment %}
     <div class="dashb-buttons">
       <a href="/pages/razorpreneur-dashboard#selling-tips" class="rzp-dashb-button upg-skills Button Button-primary">UPGRADE SKILLS</a>
