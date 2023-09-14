@@ -27,12 +27,14 @@
   }
   span#number-rzor {
     position: absolute;
-    top: 31px;
-    left: 38px;
     font-size: 35px;
     font-weight: 800;
     font-family: Roboto, sans-serif;
+    top: 27%;
+    left: 36%;
+    font-size: 5rem;
   }
+
   .main-2-flex p {
     font-size: 10px;
     margin-top: -14px;
@@ -42,45 +44,66 @@
   .main-2-flex p span {
     font-style: italic;
   }
-</style>
-<div class="rzp-dasb-section-2-main">
-  <div class="zrp-flex-main">
-    <div class="main-1-flex">
-      <div class="back-g">
-        <h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_53.png?v=1693589412"></h2>
-        <span id="number-rzor">0</span>
+  @media(max-width:450px) {
+    span#number-rzor {
+      top: 31px;
+      left: 38px;
+      font-size: 35px;
+    }
+  </style>
+  <div>
+    class="rzp-dasb-section-2-main"<div>
+      class="zrp-flex-main"<div>
+        class="main-1-flex"<div>
+          class="back-g"<h2>
+            <img>src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_53.png?v=1693589412"</h2>
+          <span>
+            id="number-rzor"0</span>
+        </div>
+      </div>
+      <div>
+        class="main-2-flex"<h2>
+          all india<br>razorpreneur<br>super tally</h2>
+        <p>
+          Last updated on<span>
+            1<sup>
+              st</sup>
+            Sept 2023</span>
+        </p>
       </div>
     </div>
-    <div class="main-2-flex">
-      <h2>all india<br>
-        razorpreneur <br>
-        super tally</h2>
-      <p>Last updated on
-        <span>1<sup>st</sup>
-          Sept 2023</span>
-      </p>
-    </div>
   </div>
-</div>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const counter = document.getElementById("number-rzor");
-    const target = 1200;
-    const duration = 3000;
-    const interval = 20;
-    const step = (target / duration) * interval;
+  <script>
+    document.addEventListener(
+      "DOMContentLoaded", function()
+      {
+        constcounter=document.getElementById(
+          "number-rzor");
+        consttarget=1200;
+        constduration=3000;
+        constinterval=20;
+        conststep=(
+          target/duration)
+        *interval;
 
-    let currentCount = 0;
+        letcurrentCount=0;
 
-    const updateCounter = () => {
-      currentCount += step;
-      if (currentCount >= target) {
-        currentCount = target;
-        clearInterval(counterInterval);
+        constupdateCounter=()
+        =>{
+          currentCount+=step;
+          if(
+            currentCount>=target)
+          {
+            currentCount=target;
+            clearInterval(
+              counterInterval);
+          }
+          counter.textContent=Math.floor(
+            currentCount);
+        };
+
+        constcounterInterval=setInterval(
+          updateCounter, interval);
       }
-      counter.textContent = Math.floor(currentCount);
-    };
-
-    const counterInterval = setInterval(updateCounter, interval);
-  });
-</script>
+    );
+  </script>
