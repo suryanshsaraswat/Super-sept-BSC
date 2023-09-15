@@ -18,6 +18,259 @@
       "settings": {
       }
     },
+    "794b155d-05e6-44f2-9954-1fad93c8e910": {
+      "type": "Brand-discount-slider",
+      "blocks": {
+        "991f1776-4aa5-4418-b070-5aa44e083cb0": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_528f9d99-9b75-4643-a31a-eac4becd67ac.png",
+            "discount_desc": "Flat 500 Off"
+          }
+        },
+        "fcb8015e-e2e2-4bd9-b6ff-44c6958a996c": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_ca5f1bf2-f4b5-41cd-83ef-add58ba39d78.png",
+            "discount_desc": "Flat 50% OFF on stylish undies"
+          }
+        },
+        "ed6013d9-ddfe-4a60-91c2-4e55efb0cb48": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_e0654329-c39a-48bf-8b26-a8370ed4d37a.png",
+            "discount_desc": "Free Condoms worth 449"
+          }
+        },
+        "e7d91c7c-b66b-4e6c-8fb9-9e87b3498f4f": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_5303afec-a142-4f05-a459-a00bdc1af81a.png",
+            "discount_desc": "Flat 70% off on pack of 5"
+          }
+        },
+        "83358773-c254-491b-b9fd-993166ae7359": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_5bbf555b-4d66-426d-a9b8-c7f75e0cfbf3.png",
+            "discount_desc": "Flat 60% off sitewide"
+          }
+        },
+        "934cb5fc-c790-439f-9880-b203342a3020": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_4_0141bd8f-b22f-444c-a6bb-dc06fc73210f.png",
+            "discount_desc": "Free personalised financing worth 15K"
+          }
+        },
+        "e7de77e2-128e-401b-8fa9-ab8c94a4f1e6": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_5.png",
+            "discount_desc": "Free Pro Keratin Hair care Combo worth 198"
+          }
+        },
+        "cf1c5d5a-3b41-4423-a6c8-aad22181e5b7": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_3.png",
+            "discount_desc": "Free Face wash worth 249"
+          }
+        },
+        "51e9985c-abae-4796-9909-665dae17642a": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_6_71ef0e21-975c-45f3-b2e0-1d83613b7222.png",
+            "discount_desc": "Free IoT Jars worth 10K"
+          }
+        },
+        "9ae1fee5-4f0d-42ce-a587-779b4ff29858": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_7_3677a142-97e2-406f-804d-16921b6bca56.png",
+            "discount_desc": "Free Face Toner worth 226"
+          }
+        },
+        "1d1c5994-fcac-46a2-8fd4-90911f1210be": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_8_027f3466-d1ff-4340-a212-7592c4167427.png",
+            "discount_desc": "Free 6 month memebership worth 549"
+          }
+        },
+        "22ad1713-e59e-417d-826e-296959453936": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_9.png",
+            "discount_desc": "Flat 50% OFF farm fresh veggies"
+          }
+        },
+        "62cb97ce-b489-4973-99de-30e688874cb1": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_10.png",
+            "discount_desc": "60% off on products for TWO of you"
+          }
+        },
+        "ead7504b-014c-4e94-8360-7e403519b140": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Logo_-_Richa_Parashari.png",
+            "discount_desc": "Flat 50% OFF on gournet products"
+          }
+        },
+        "68471b06-7083-4ce3-bae9-0d44c84d4c43": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/logo-transparent_-_Vvegano_Support.png",
+            "discount_desc": "Flat 60% off sitewide"
+          }
+        },
+        "5e65d345-85c8-44e5-a971-a42e3aa1f40d": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Koparo_Logo_100x100_2_-_Kshitij_Ranjan.png",
+            "discount_desc": "Flat 200 off on Handwash"
+          }
+        },
+        "ea13c7be-17f9-418c-8a04-1355e7d86cc8": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_7f25789b-b068-495f-992a-32f8984e7e23.png",
+            "discount_desc": "Flat 40% OFF on your order"
+          }
+        },
+        "42e2e447-bd1e-4e95-8768-892b73f1d07f": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_18.png",
+            "discount_desc": "Flat 50% OFF on Computer Glasses"
+          }
+        },
+        "9ecd10eb-3ed9-4da4-896b-7dfc0fe03186": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_17.png",
+            "discount_desc": "Flat 500 Off on fragrances and camphor"
+          }
+        },
+        "2a123630-6094-4df5-980b-200ea1d45055": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_16.png",
+            "discount_desc": "Free 1 month supply of Green Tea"
+          }
+        },
+        "c2a87967-75a8-4772-9640-158440eb5120": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_15.png",
+            "discount_desc": "Free Rose Lip Balm"
+          }
+        },
+        "b8501b7d-b1f9-4ffc-8591-b6de15e913a2": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_14.png",
+            "discount_desc": "Free Hair Removal Cream worth 510"
+          }
+        },
+        "8879642a-e56a-4d5a-b1a5-8ae685dd7ea7": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_13.png",
+            "discount_desc": "Free Natural Raisins worth 255"
+          }
+        },
+        "8847da63-e4a9-4b14-870d-b5a3db2bf789": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/1_-_Tripti_Suri.png",
+            "discount_desc": "Flat 40% OFF on Skin Care Products"
+          }
+        },
+        "9412abc1-fe84-4b32-89e6-19ed97293ff3": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_11.png",
+            "discount_desc": "Flat 40% OFF on your order"
+          }
+        },
+        "84bf80b3-b152-43c5-a299-4bd73b80bf26": {
+          "type": "homepage",
+          "disabled": true,
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/CamPure_logo_1.png",
+            "discount_desc": ""
+          }
+        },
+        "22eb46af-182a-4068-ba40-38cab8f49b35": {
+          "type": "homepage",
+          "disabled": true,
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/5_1_-_Social_Social.png",
+            "discount_desc": ""
+          }
+        },
+        "c588d339-4ec3-499f-af60-5f76e6c1ead9": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Urban_Hair_Logo.png",
+            "discount_desc": "Flat 50% OFF on Hair care products"
+          }
+        },
+        "8b2998a2-f503-49d1-8a79-10d8a8472213": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_3d5b527c-9d59-4122-a6c2-5eececed2d46.png",
+            "discount_desc": "Flat 50% OFF on Organic Cashwes"
+          }
+        },
+        "87ca13f0-8bd7-497d-b56c-c261b188cfb4": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo.png",
+            "discount_desc": "Free nose cleaning strip worth 300"
+          }
+        }
+      },
+      "block_order": [
+        "991f1776-4aa5-4418-b070-5aa44e083cb0",
+        "fcb8015e-e2e2-4bd9-b6ff-44c6958a996c",
+        "ed6013d9-ddfe-4a60-91c2-4e55efb0cb48",
+        "e7d91c7c-b66b-4e6c-8fb9-9e87b3498f4f",
+        "83358773-c254-491b-b9fd-993166ae7359",
+        "934cb5fc-c790-439f-9880-b203342a3020",
+        "e7de77e2-128e-401b-8fa9-ab8c94a4f1e6",
+        "cf1c5d5a-3b41-4423-a6c8-aad22181e5b7",
+        "51e9985c-abae-4796-9909-665dae17642a",
+        "9ae1fee5-4f0d-42ce-a587-779b4ff29858",
+        "1d1c5994-fcac-46a2-8fd4-90911f1210be",
+        "22ad1713-e59e-417d-826e-296959453936",
+        "62cb97ce-b489-4973-99de-30e688874cb1",
+        "ead7504b-014c-4e94-8360-7e403519b140",
+        "68471b06-7083-4ce3-bae9-0d44c84d4c43",
+        "5e65d345-85c8-44e5-a971-a42e3aa1f40d",
+        "ea13c7be-17f9-418c-8a04-1355e7d86cc8",
+        "42e2e447-bd1e-4e95-8768-892b73f1d07f",
+        "9ecd10eb-3ed9-4da4-896b-7dfc0fe03186",
+        "2a123630-6094-4df5-980b-200ea1d45055",
+        "c2a87967-75a8-4772-9640-158440eb5120",
+        "b8501b7d-b1f9-4ffc-8591-b6de15e913a2",
+        "8879642a-e56a-4d5a-b1a5-8ae685dd7ea7",
+        "8847da63-e4a9-4b14-870d-b5a3db2bf789",
+        "9412abc1-fe84-4b32-89e6-19ed97293ff3",
+        "84bf80b3-b152-43c5-a299-4bd73b80bf26",
+        "22eb46af-182a-4068-ba40-38cab8f49b35",
+        "c588d339-4ec3-499f-af60-5f76e6c1ead9",
+        "8b2998a2-f503-49d1-8a79-10d8a8472213",
+        "87ca13f0-8bd7-497d-b56c-c261b188cfb4"
+      ],
+      "settings": {
+        "logo-headingg": "Free coupons with every order",
+        "logo-sub_heading": "Real. Crazy. Deals."
+      }
+    },
     "504f6898-7f5c-426d-8406-c8a5f6977d71": {
       "type": "single-banner",
       "blocks": {
@@ -499,6 +752,7 @@
   },
   "order": [
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
+    "794b155d-05e6-44f2-9954-1fad93c8e910",
     "504f6898-7f5c-426d-8406-c8a5f6977d71",
     "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8",
     "10ef4252-450e-4bab-9528-403e924d6b7f",
