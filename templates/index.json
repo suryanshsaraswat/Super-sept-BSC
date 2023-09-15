@@ -303,7 +303,40 @@
         },
         "da7ab49c-db87-47cd-a907-0c8ea125e857": {
           "type": "homepage",
-          "disabled": true,
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_13.png",
+            "discount_desc": "Free Natural Raisins worth 255"
+          }
+        },
+        "2a45cc61-2e32-44fd-bdbc-35c4611f8173": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_14.png",
+            "discount_desc": "Free Hair Removal Cream worth 510"
+          }
+        },
+        "735b09c9-2d77-4768-975c-bf740af82670": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_15.png",
+            "discount_desc": "Free Rose Lip Balm"
+          }
+        },
+        "20e4e04a-5492-47ef-ab50-8ba866085133": {
+          "type": "homepage",
+          "settings": {
+            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_16.png",
+            "discount_desc": "Free 1 month supply of Green Tea"
+          }
+        },
+        "61be4279-16f0-455a-931e-acd0196aa9ce": {
+          "type": "homepage",
+          "settings": {
+            "discount_desc": ""
+          }
+        },
+        "7eec7ba4-42f1-4644-bf0d-8933137b8ee3": {
+          "type": "homepage",
           "settings": {
             "discount_desc": ""
           }
@@ -334,7 +367,12 @@
         "3a309c04-21e5-4b4b-acee-8ee6d877aa10",
         "2bf13c4f-19e2-4b3b-9758-4be5133ca065",
         "aa32bc44-aa33-4fc8-b172-818a3bae03a4",
-        "da7ab49c-db87-47cd-a907-0c8ea125e857"
+        "da7ab49c-db87-47cd-a907-0c8ea125e857",
+        "2a45cc61-2e32-44fd-bdbc-35c4611f8173",
+        "735b09c9-2d77-4768-975c-bf740af82670",
+        "20e4e04a-5492-47ef-ab50-8ba866085133",
+        "61be4279-16f0-455a-931e-acd0196aa9ce",
+        "7eec7ba4-42f1-4644-bf0d-8933137b8ee3"
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
