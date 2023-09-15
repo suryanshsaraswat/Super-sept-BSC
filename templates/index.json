@@ -303,6 +303,7 @@
         },
         "da7ab49c-db87-47cd-a907-0c8ea125e857": {
           "type": "homepage",
+          "disabled": true,
           "settings": {
             "discount_desc": ""
           }
