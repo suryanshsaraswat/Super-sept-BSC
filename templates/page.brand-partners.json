@@ -1,5 +1,23 @@
 {
   "sections": {
+    "7c9f98e9-2549-42ff-9c10-0f511308b9fb": {
+      "type": "single-banner",
+      "blocks": {
+        "a4b14442-51ce-4f04-a63d-0a94fed00432": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/Desktop_8c6d0209-f08a-418d-bf6c-73d757d9f213.jpg",
+            "imags2": "shopify:\/\/shop_images\/Mobile_8b33fcfc-5cfb-4c69-a9f5-147754de1095.jpg",
+            "linkk": "#"
+          }
+        }
+      },
+      "block_order": [
+        "a4b14442-51ce-4f04-a63d-0a94fed00432"
+      ],
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -325,6 +343,7 @@
     }
   },
   "order": [
+    "7c9f98e9-2549-42ff-9c10-0f511308b9fb",
     "main",
     "1657523681299f51d6",
     "0cd2a8d5-8621-423c-aa02-cf03fba65cfb"
