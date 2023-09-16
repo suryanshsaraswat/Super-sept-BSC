@@ -19,8 +19,8 @@
         "f332c928-e123-4c84-ab23-28461cae4d4f": {
           "type": "image",
           "settings": {
-            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
-            "brand_title": "Toowanza",
+            "brand_img_slid": "shopify:\/\/shop_images\/The_Moms_Co.jpg",
+            "brand_title": "The Mom's Co",
             "brand_desc": "",
             "brand_coup": "60% off on products"
           }
@@ -28,8 +28,8 @@
         "803a3e45-44e0-4e7d-b7d4-1927c8fdb130": {
           "type": "image",
           "settings": {
-            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
-            "brand_title": "Boat Lifestyle",
+            "brand_img_slid": "shopify:\/\/shop_images\/House_of_Mangalam.jpg",
+            "brand_title": "House of Mangalam",
             "brand_desc": "",
             "brand_coup": "60% OFF ON PRODUCTS"
           }
@@ -37,8 +37,8 @@
         "37882294-9343-460e-95c5-7b19e1b4c5d8": {
           "type": "image",
           "settings": {
-            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
-            "brand_title": "Boat Lifestyle",
+            "brand_img_slid": "shopify:\/\/shop_images\/Organic_Harvest.jpg",
+            "brand_title": "Organic Harvest",
             "brand_desc": "",
             "brand_coup": "60% OFF ON PRODUCTS"
           }
@@ -46,10 +46,136 @@
         "b819524b-3987-4ce6-990e-a7cc8493958e": {
           "type": "image",
           "settings": {
-            "brand_img_slid": "shopify:\/\/shop_images\/Logo_brands.png",
-            "brand_title": "Boat Lifestyle",
+            "brand_img_slid": "shopify:\/\/shop_images\/MyGlamm.jpg",
+            "brand_title": "My Glamm",
             "brand_desc": "",
             "brand_coup": "60% OFF ON PRODUCTS"
+          }
+        },
+        "3693d05a-4b54-430f-9cc2-6b1a4d9cea3e": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Lemon_Chillii.jpg",
+            "brand_title": "Lemon Chillii",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "e74746c1-4e79-4bd2-8495-6b332382b4c0": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Yogabars.jpg",
+            "brand_title": "Yoga Bar",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "01df253f-51ec-4ed4-acbe-25b7064619b7": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Urban_Hairs.jpg",
+            "brand_title": "Urban Hairs",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "13f5dc95-3bd6-4fa5-b971-29069182e5d5": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Koparo.jpg",
+            "brand_title": "koparo Clean",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "a1f4c6ae-d34b-41bd-a897-dc20ab6932ad": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/RichFeyn.jpg",
+            "brand_title": "Rich Feyn",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "a3637d2b-365d-45ba-9459-66de257a845c": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/St._Botanica.jpg",
+            "brand_title": "St.Botanica",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "b322e14f-c5be-4f41-a12c-ab149108dae7": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/The_Raisins_Hut.jpg",
+            "brand_title": "The Raisins Hut",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "401a6127-6b74-47c7-8e51-9b305d098ede": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Conscious_Chemist.jpg",
+            "brand_title": "Conscious Chemist",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "7d2ee39e-82f9-47db-8928-c88a5702e429": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/The_Gourmet_Jar.jpg",
+            "brand_title": "The Gourmet Jar",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "34069874-5469-45ec-9be6-e00e68f84ac8": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/yatra.jpg",
+            "brand_title": "Yatra",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "48bc8883-e2da-4284-b55b-fce147e381d9": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/boat.jpg",
+            "brand_title": "Boat Lifestyle",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "7cd59b44-f400-41a1-aa1c-5086904e2dae": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Healthkart.jpg",
+            "brand_title": "HealthKart",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "628e2004-055f-464f-b1fb-79d838819401": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Deconstruct.jpg",
+            "brand_title": "deconstruct",
+            "brand_desc": "",
+            "brand_coup": ""
+          }
+        },
+        "f899d410-0d35-49b8-9577-b3eceb071864": {
+          "type": "image",
+          "settings": {
+            "brand_img_slid": "shopify:\/\/shop_images\/Pi_-_India_s_1st_SuperMoney_App.jpg",
+            "brand_title": "Pi - India's Supermoney App",
+            "brand_desc": "",
+            "brand_coup": ""
           }
         }
       },
@@ -57,7 +183,21 @@
         "f332c928-e123-4c84-ab23-28461cae4d4f",
         "803a3e45-44e0-4e7d-b7d4-1927c8fdb130",
         "37882294-9343-460e-95c5-7b19e1b4c5d8",
-        "b819524b-3987-4ce6-990e-a7cc8493958e"
+        "b819524b-3987-4ce6-990e-a7cc8493958e",
+        "3693d05a-4b54-430f-9cc2-6b1a4d9cea3e",
+        "e74746c1-4e79-4bd2-8495-6b332382b4c0",
+        "01df253f-51ec-4ed4-acbe-25b7064619b7",
+        "13f5dc95-3bd6-4fa5-b971-29069182e5d5",
+        "a1f4c6ae-d34b-41bd-a897-dc20ab6932ad",
+        "a3637d2b-365d-45ba-9459-66de257a845c",
+        "b322e14f-c5be-4f41-a12c-ab149108dae7",
+        "401a6127-6b74-47c7-8e51-9b305d098ede",
+        "7d2ee39e-82f9-47db-8928-c88a5702e429",
+        "34069874-5469-45ec-9be6-e00e68f84ac8",
+        "48bc8883-e2da-4284-b55b-fce147e381d9",
+        "7cd59b44-f400-41a1-aa1c-5086904e2dae",
+        "628e2004-055f-464f-b1fb-79d838819401",
+        "f899d410-0d35-49b8-9577-b3eceb071864"
       ],
       "settings": {
       }
