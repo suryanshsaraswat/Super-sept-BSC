@@ -27,10 +27,10 @@
     window.location.href = "https://bombayshavingcompany.com";
   {% endif %}
 
-  {% if page.url == '/pages/razorpreneur-dashboard' %}
+  {% comment %} {% if page.url == '/pages/razorpreneur-dashboard' %}
   {% unless customer %}
-    window.location.href = "https://bombayshavingcompany.com/pages/razorpreneur";
+  window.location.href = "https://bombayshavingcompany.com/pages/razorpreneur";
   {% endunless %}
-  {% endif %}
-    
+  {% endif %} {% endcomment %}
+
 </script>
