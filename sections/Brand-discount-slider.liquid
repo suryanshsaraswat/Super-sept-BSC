@@ -68,6 +68,9 @@
         </div>
       {% endfor %}
     </div>
+    <div class="brand-button">
+      <a href="{{ section.settings.button-link }}" class="Button Button-primary brand">EXPLORE ALL BRANDS</a>
+    </div>
   </div>
 </div>
 <script>
@@ -120,6 +123,10 @@
         "type": "text",
         "id": "logo-sub_heading",
         "label": "Enter Sub Heading"
+      }, {
+        "type": "url",
+        "id": "button-link",
+        "label": "Enter Button Link"
       }
     ],
     "blocks": [
