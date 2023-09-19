@@ -268,7 +268,8 @@
       ],
       "settings": {
         "logo-headingg": "Free coupons with every order",
-        "logo-sub_heading": "Real. Crazy. Deals."
+        "logo-sub_heading": "Real. Crazy. Deals.",
+        "button-link": ""
       }
     },
     "504f6898-7f5c-426d-8406-c8a5f6977d71": {
@@ -339,7 +340,7 @@
         "subheading": "",
         "title": "",
         "show_headings_on_mobile": false,
-        "product": "beard-softener",
+        "product": "turmeric-shaving-foam",
         "show_timer": true
       }
     },
