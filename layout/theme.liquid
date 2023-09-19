@@ -310,6 +310,30 @@ gtag('config','AW-881045097', {'allow_enhanced_conversions':true});
           console.log('Added device Id in Local storage' + device_ID);
         }
         mixpanel.identify(device_ID)
+
+        window.addEventListener("message", (e) => {
+          if(e?.data?.analyticsName == "klaviyo" && e?.data?.eventName === "paymentCompleted"){
+              for(var i=0; i<e.data.data?.commonAnalyticsData?.products.length; i++){
+                  let details = {};
+                  details = {
+                      productId: e.data.data.commonAnalyticsData.products[i]['Product ID'],
+                      variantId: e.data.data.commonAnalyticsData.products[i]['Product Variant Id'],
+                      qty: e.data.data.commonAnalyticsData.products[i]['Product Quantity'],
+                      experiment: {
+                          showWidget: window.localStorage.getItem("showWidget"),
+                          currentExperiment: window.localStorage.getItem("currentExperiment"),
+                      },
+                      email: e.data.data?.userAddress?.email,
+                      phone: e.data.data?.userAddress?.phone
+                  }
+        
+                  for(var j = 0; j<e.data.data.commonAnalyticsData.products[i]['Product Quantity']; ++j){
+                  	  console.log({details: details});
+                      mixpanel.track("order_placed_gokwik", {details: details});
+                  }   
+              }
+          }
+        });
     </script>
 {% comment %} Troopod Mixpanel Start {% endcomment %}
 
