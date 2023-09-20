@@ -218,9 +218,18 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
     }
   });
     $(".rzp-buttonn").click(function(){
-      $(".section-content-3").addClass('visible').slideDown(300);
-      alert("Congatulations! STEP 3 is unlocked!")
-    });
+  // Check if the alert has been shown before
+  if (!localStorage.getItem('alertShown')) {
+    // If not shown, add the "visible" class and slide down
+    $(".section-content-3").addClass('visible').slideDown(300);
+
+    // Show the alert
+    alert("Congratulations! STEP 3 is unlocked!");
+
+    // Set a flag in localStorage to indicate that the alert has been shown
+    localStorage.setItem('alertShown', 'true');
+  }
+});
     $(".three").click(function(){
       if(stepOneComplete === true){
       $(".section-content-3").removeClass('visible').slideUp(300);}
