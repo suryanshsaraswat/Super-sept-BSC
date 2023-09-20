@@ -135,14 +135,17 @@
   <div class="data-v-{{block}}" id="order-track"></div>
 </div>
 <script>
-        function changeLabel() {
+       function changeLabelAndPlaceholder() {
             var selectedOption = document.querySelector('input[name="trackingType"]:checked').value;
             var label = (selectedOption === "Order Number") ? "Enter Order Number:" : "Enter AWB Number:";
+            var placeholder = (selectedOption === "Order Number") ? "Enter Order Number" : "Enter AWB Number";
             document.querySelector('label[for="trackingInput"]').textContent = label;
+            document.querySelector('#trackingInput').setAttribute('placeholder', placeholder);
         }
 
+        // Event listener to detect changes in the selected radio button
         var radioButtons = document.querySelectorAll('input[name="trackingType"]');
         radioButtons.forEach(function(radioButton) {
-            radioButton.addEventListener("change", changeLabel);
+            radioButton.addEventListener("change", changeLabelAndPlaceholder);
         });
     </script>
