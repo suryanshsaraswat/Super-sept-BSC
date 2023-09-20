@@ -217,13 +217,13 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
       content.slideDown(300);
     }
   });
-    $(".rzp-buttonn").click(function(){
-  if (!localStorage.getItem('alertShown')) {
-    $(".section-content-3").addClass('visible').slideDown(300);
-    localStorage.setItem('alertShown', 'true');
-    alert("Congratulations! STEP 3 is unlocked!");
-  }
-});
+//     $(".rzp-buttonn").click(function(){
+//   if (!localStorage.getItem('alertShown')) {
+//     $(".section-content-3").addClass('visible').slideDown(300);
+//     localStorage.setItem('alertShown', 'true');
+//     alert("Congratulations! STEP 3 is unlocked!");
+//   }
+// });
     $(".three").click(function(){
       if(stepOneComplete === true){
       $(".section-content-3").removeClass('visible').slideUp(300);}
@@ -252,6 +252,24 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
       scrollTop: $(".section-1").offset().top
     }, 200);
     });
+  $(document).ready(function(){
+  // Check if the alert has been shown before
+  if (localStorage.getItem('alertShown') === 'true') {
+    // If it has been shown, add the "visible" class
+    $(".section-content-3").addClass('visible');
+  }
+
+  // Add a click event handler for the button
+  $(".rzp-buttonn").click(function(){
+    // Check if the alert has been shown before
+    if (!localStorage.getItem('alertShown')) {
+      // If not shown, add the "visible" class, set the flag, and show the alert
+      $(".section-content-3").addClass('visible');
+      localStorage.setItem('alertShown', 'true');
+      alert("Congratulations! STEP 3 is unlocked!");
+    }
+  });
+});
 </script>
 
 
