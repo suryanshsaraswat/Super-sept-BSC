@@ -236,9 +236,21 @@
 
 
 
+
+
+
+
+
+
     
     {% else %}
       
+
+
+
+
+
+
 
 
 
@@ -275,12 +287,12 @@
           <a class="login-section">Login</a>
         </p>
       {% endunless %}
-      {% if customer %}
-        <p class="leaderboard">Already a Razorpreneur? Checkout the leaderboard</p>
-        <a href="/pages/razorpreneur-leaderboard" class="lead-button">CLICK HERE</a>
-      {% endif %}
     </div>
   </div>
+  {% if customer %}
+    <p class="leaderboard">Already a Razorpreneur? Checkout the leaderboard</p>
+    <a href="/pages/razorpreneur-leaderboard" class="lead-button">CLICK HERE</a>
+  {% endif %}
   {% render 'RZP-section-4' %}
   {% render 'RZP-section-3' %}
   {% render 'RZP-section-5' %}
