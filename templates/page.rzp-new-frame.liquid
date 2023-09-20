@@ -217,20 +217,13 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
       content.slideDown(300);
     }
   });
-//     $(".rzp-buttonn").click(function(){
-//   // Check if the alert has been shown before
-//   if (!localStorage.getItem('alertShown')) {
-//     // If not shown, add the "visible" class and slide down
-//     $(".section-content-3").addClass('visible').slideDown(300);
-
-//     // Show the alert
-//     alert("Congratulations! STEP 3 is unlocked!");
-
-//     // Set a flag in localStorage to indicate that the alert has been shown
-//     localStorage.setItem('alertShown', 'true');
-//   }
-// });
-    
+    $(".rzp-buttonn").click(function(){
+  if (!localStorage.getItem('alertShown')) {
+    $(".section-content-3").addClass('visible').slideDown(300);
+    localStorage.setItem('alertShown', 'true');
+    alert("Congratulations! STEP 3 is unlocked!");
+  }
+});
     $(".three").click(function(){
       if(stepOneComplete === true){
       $(".section-content-3").removeClass('visible').slideUp(300);}
@@ -260,30 +253,7 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
     }, 200);
     });
 </script>
-<script>
-  $(document).ready(function(){
-  // Check if the alert has been shown before
-  if (!localStorage.getItem('alertShown')) {
-    // If not shown, add the "visible" class and slide down
-    $(".section-content-3").addClass('visible').slideDown(300);
 
-    // Show the alert
-    alert("Congratulations! STEP 3 is unlocked!");
-
-    // Set a flag in localStorage to indicate that the alert has been shown
-    localStorage.setItem('alertShown', 'true');
-  }
-
-  // Add a click event handler for the button
-  $(".rzp-buttonn").click(function(){
-    // Check if "section-content-3" is not visible
-    if (!$(".section-content-3").hasClass('visible')) {
-      // Add the "visible" class and slide down
-      $(".section-content-3").addClass('visible').slideDown(300);
-    }
-  });
-});
-</script>
 
 
 
