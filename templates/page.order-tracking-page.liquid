@@ -1,4 +1,5 @@
 <style>
+  /*Removing header and footer */
   .Header__Wrapper {
     display: none;
   }
@@ -11,4 +12,34 @@
   footer#section-footer {
     display: none;
   }
+  /*Removing header and footer */
 </style>
+{% assign block = {{ page.id }} %}
+<div class="ordder-container">
+  <div class="number-step">
+    <div class="order-tracking-details">
+      <div class="details-main">
+        <div class="details-heading">
+          <h1>Track your Shipment here</h1>
+        </div>
+        <div class="order-tracking-options">
+          <p class="search">Search by</p>
+          <input
+            type="radio"
+            id="orderNumberRadio"
+            name="trackingType"
+            value="Order Number"
+            checked>
+          <label for="orderNumberRadio">Order Number</label>
+          <input
+            type="radio"
+            id="awbNumberRadio"
+            name="trackingType"
+            value="AWB Number">
+          <label for="awbNumberRadio">AWB Number</label>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="data-v-{{block}}" id="order-track"></div>
+</div>
