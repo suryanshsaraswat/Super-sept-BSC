@@ -1,49 +1,104 @@
 <style>
   @import url('@import "https://fonts.googleapis.com/css2?family=Bebas + Neue &family=Roboto:wght@300;400;500;700;900&display=swap";');
-div#cntl-placeholder-form-fixed-item{display:none!important}
-.olWrapper {margin-top: -34px;margin-bottom: -22px;}
-  button.send-btn.otp-btn,button.verify-btn.otp-btn,button.update-btn.otp-btn {
-    background: #00BED6!important;
-    padding: 12px!important;
-    font-family: Roboto,sans-serif;
-    font-size: 17px!important;
+  div#cntl-placeholder-form-fixed-item {
+    display: none !important
+  }
+  .olWrapper {
+    margin-top: -34px;
+    margin-bottom: -22px;
+  }
+  button.send-btn.otp-btn,
+  button.verify-btn.otp-btn,
+  button.update-btn.otp-btn {
+    background: #00BED6 !important;
+    padding: 12px !important;
+    font-family: Roboto, sans-serif;
+    font-size: 17px !important;
     text-transform: uppercase;
-}
+  }
   a.login-section {
     color: #70f3ff;
     font-style: italic;
-}
+  }
   .input-box-content input {
-    border-radius: 30px!important;
-}
+    border-radius: 30px !important;
+  }
   input#last-name {
     display: none;
-}
+  }
 
   .login-inputBox.lname {
     display: none;
-}
+  }
   .razorpreneur .custom_select select {
-    padding: 5px 5px !important;
+    padding: 5px !important;
     height: 3.0rem !important;
-}
+  }
   .custom_field.college_student label,
-  .custom_field.university label{
+  .custom_field.university label {
     display: none;
-}
-  
+  }
+
   label[for="last-name"] {
     display: none;
-}
-.otp-loader{width:40px!important; height:40px!important; border:6px solid #00bed6!important;border-top: 6px solid #000!important;}
-h2.collapse-head{text-align:center;font-family:Roboto,sans-serif;text-transform:uppercase;margin:14px 0;font-size:22px;font-weight:900;line-height:28px}
-.desktop-banner{display:block}
-.mobile-banner{display:none;max-width:100%}
-.rzp-buttons{display:flex;align-items:center;justify-content:space-evenly;max-width:100%;width:700px;margin:0 auto;padding-bottom:22px}
-a.rzp-button{width:164px;padding:7px 22px;text-align:center;border:1px solid #ffff;border-radius:30px;font-family:Roboto,sans-serif;font-size:17px;font-weight:500;transition:.4s;display:block;color:#fff}
-a.rzp-button:hover{background-color:#fdc818;color:#3180c2}
-select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
-.Form__Item input{border-radius:30px;border:1px solid #000}
+  }
+  .otp-loader {
+    width: 40px !important;
+    height: 40px !important;
+    border: 6px solid #00bed6 !important;
+    border-top: 6px solid #000 !important;
+  }
+  h2.collapse-head {
+    text-align: center;
+    font-family: Roboto, sans-serif;
+    text-transform: uppercase;
+    margin: 14px 0;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 28px
+  }
+  .desktop-banner {
+    display: block
+  }
+  .mobile-banner {
+    display: none;
+    max-width: 100%
+  }
+  .rzp-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 100%;
+    width: 700px;
+    margin: 0 auto;
+    padding-bottom: 22px
+  }
+  a.rzp-button {
+    width: 164px;
+    padding: 7px 22px;
+    text-align: center;
+    border: 1px solid #ffff;
+    border-radius: 30px;
+    font-family: Roboto, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    transition: 0.4s;
+    display: block;
+    color: #fff
+  }
+  a.rzp-button:hover {
+    background-color: #fdc818;
+    color: #3180c2
+  }
+  select#dropdown {
+    margin-top: 12px;
+    border-radius: 30px;
+    border: 1px solid #000
+  }
+  .Form__Item input {
+    border-radius: 30px;
+    border: 1px solid #000
+  }
   .section-header {
     max-width: 100%;
     width: 250px;
@@ -52,9 +107,9 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
     font-family: Roboto, sans-serif;
     padding: 7px 6px;
     margin: 23px auto;
-    position:relative;
+    position: relative;
     text-align: center;
-}
+  }
   .section-header::before {
     position: absolute;
     content: "";
@@ -64,7 +119,7 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
     left: -470px;
     background: #000;
     z-index: -1;
-}
+  }
   .section-header::after {
     position: absolute;
     content: "";
@@ -74,7 +129,7 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
     right: -470px;
     background: #000;
     z-index: -1;
-}
+  }
   p.sec-1head {
     text-align: center;
     margin-top: -9px;
@@ -82,42 +137,66 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
     font-size: 15px;
     font-weight: 600;
     font-family: Roboto, sans-serif;
-}
+  }
   p.already-rzp {
     text-align: center;
     font-size: 20px;
     font-weight: 500;
     font-family: Roboto, sans-serif;
     margin-bottom: 0;
-}
+  }
   p.section-3-para {
     font-size: 23px;
     text-align: center;
-    font-family: Roboto,sans-serif;
+    font-family: Roboto, sans-serif;
     font-weight: 500;
-}
-@media(max-width:450px) {
-  .section-header::before {
-    width: 146px;
-    left: -120px;
-}
-  p.sec-1head{font-size:15px;line-height:21px}
-  p.section-3-para{font-size:17px;line-height:21px}
-  .section-header{width:116px}
-  .section-header::after {
-    width: 146px;
-    right: -120px;
-}
-.desktop-banner{display:none}
-.dekstop-steps{display:none}
-.mobile-banner{display:block}
-.login{width:100%}
-.login h2{padding:0 10px;font-size:18px;line-height:23px}
-}
-  .section-content-3{
-    display: block; height: 0px; overflow: hidden;
   }
-  .visible{height: auto;}
+  @media(max-width:450px) {
+    .section-header::before {
+      width: 146px;
+      left: -120px;
+    }
+    p.sec-1head {
+      font-size: 15px;
+      line-height: 21px
+    }
+    p.section-3-para {
+      font-size: 17px;
+      line-height: 21px
+    }
+    .section-header {
+      width: 116px
+    }
+    .section-header::after {
+      width: 146px;
+      right: -120px;
+    }
+    .desktop-banner {
+      display: none
+    }
+    .dekstop-steps {
+      display: none
+    }
+    .mobile-banner {
+      display: block
+    }
+    .login {
+      width: 100%
+    }
+    .login h2 {
+      padding: 0 10px;
+      font-size: 18px;
+      line-height: 23px
+    }
+  }
+  .section-content-3 {
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+  .visible {
+    height: auto;
+  }
 </style>
 <div class="hero-video">
   <div class="desktop-banner"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Web-Banner_3_58cb57d1-3ee1-454c-961c-d40f1a6acb63.jpg?v=1693203873" style="width: 100%;height:auto"></div>
@@ -128,137 +207,147 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
   <div class="mobile-banner"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Mobile-Banner_4.jpg?v=1693214077" style="width: 100%;height:auto"></div>
 </div>
 <div class="collapsible-section">
-    <h2 class="collapse-head">3 Easy Steps <br>To Become A Razorpreneur</h2>
+  <h2 class="collapse-head">3 Easy Steps <br>To Become A Razorpreneur</h2>
   {% unless customer %}
-  <div class="section">
-    <div class="section-header">STEP 1: APPLY</div>
-    <div class="section-content  section-1">
-      <p class="sec-1head">Apply with your details below to join the challenge</p>
-      <div class="login razorpreneur"> 
-        {% section 'otp-login' %} 
-        <script> 
-          window.simplyOtp.settings.pageUrl = location.href + "#razor=page"; 
-        </script> 
+    <div class="section">
+      <div class="section-header">STEP 1: APPLY</div>
+      <div class="section-content  section-1">
+        <p class="sec-1head">Apply with your details below to join the challenge</p>
+        <div class="login razorpreneur">
+          {% section 'otp-login' %}
+          <script>
+            window.simplyOtp.settings.pageUrl = location.href + "#razor=page";
+          </script>
+        </div>
       </div>
     </div>
-  </div>
-    {% else %}
+  {% else %}
     <script>
-      if(location.hash.indexOf("#razor=page") != -1 ){
-         {%  if customer.metafields.simply-otp-login.razorpreneur  == "Yes" %}
-          setTimeout(function(){
+      if (location.hash.indexOf("#razor=page") != -1){{%  if customer.metafields.simply-otp-login.razorpreneur  == "Yes" %}
+          setTimeout(function() {
             const element = document.getElementById("buy-section-2");
-            if(element){
+            if (element) {
               element.scrollIntoView({behavior: "smooth"});
             }
           }, 2000);
-        {% else %}
-          location.href = "https://www.bombayshavingcompany.com/pages/razorpreneur";
-        {% endif %}
+
+
+    
+    {% else %}
+      
+
+
+          location.href = "https://www.bombayshavingcompany.com/pages/razorpreneur";{% endif %}
       }
     </script>
   {% endunless %}
-  <div class="section" id="buy-section-2" {% if customer %}
-
-  {% else %}
-  style="display:none"
-  {% endif %}>
+  <div
+    class="section"
+    id="buy-section-2"
+    {% if customer %}
+    {% else %}
+    style="display:none"
+    {% endif %}>
     <div class="section-header">STEP 2: BUY</div>
     <div class="section-content">
       {% render 'RZP-section-2' %}
     </div>
   </div>
-  <div class="section-3" {% if customer %}
-
-  {% else %}
-  style="display:none"
-  {% endif %}>
-    <div class="section-header three" >STEP 3: SELL</div>
+  <div
+    class="section-3"
+    {% if customer %}
+    {% else %}
+    style="display:none"
+    {% endif %}>
+    <div class="section-header three">STEP 3: SELL</div>
     <div class="section-content-3">
       <p class="section-3-para">Complete your purchase by clicking “Checkout”<br>in your cart. Your selling journey,<br> as a Razorpreneur starts as soon<br> as you receive your razors.</p>
-      {% unless customer %}<p class="already-rzp">Already a Razorpreneur? <a class="login-section">Login</a></p>{% endunless %} 
+      {% unless customer %}
+        <p class="already-rzp">Already a Razorpreneur?
+          <a class="login-section">Login</a>
+        </p>
+        <p class="leaderboard">Already a Razorpreneur? Checkout the leaderboard</p>
+        <a href="/pages/razorpreneur-leaderboard" class="lead-button">CLICK HERE</a>
+      {% endunless %}
     </div>
   </div>
   {% render 'RZP-section-4' %}
   {% render 'RZP-section-3' %}
-    {% render 'RZP-section-5' %}
+  {% render 'RZP-section-5' %}
 </div>
 <script>
   var stepOneComplete = false;
   var stepTwoComplete = false;
   $(document).ready(function() {
-  $('.section-content').not(':first').hide();
-  $('.section-header:first').addClass('active');
-  
-  $('.section-header').click(function() {
-    const content = $(this).next('.section-content');
-    content.toggleClass('active');
-    $('.section-content').not(content).removeClass('active').slideUp(300);
-    if (content.hasClass('active')) {
-      content.slideDown(300);
-    }
-  });
-    $(".rzp-buttonn").click(function(){
+    $('.section-content').not(':first').hide();
+    $('.section-header:first').addClass('active');
+
+    $('.section-header').click(function() {
+      const content = $(this).next('.section-content');
+      content.toggleClass('active');
+      $('.section-content').not(content).removeClass('active').slideUp(300);
+      if (content.hasClass('active')) {
+        content.slideDown(300);
+      }
+    });
+    $(".rzp-buttonn").click(function() {
       $(".section-content-3").addClass('visible').slideDown(300);
       alert("Congatulations! STEP 3 is unlocked!")
     });
-    $(".three").click(function(){
-      if(stepOneComplete === true){
-      $(".section-content-3").removeClass('visible').slideUp(300);}
-      else{
+    $(".three").click(function() {
+      if (stepOneComplete === true) {
+        $(".section-content-3").removeClass('visible').slideUp(300);
+      } else {
         $("html, body").animate({
-      scrollTop: $(".section-1").offset().top
-    }, 200);
+          scrollTop: $(".section-1").offset().top
+        }, 200);
         $(".section-content").slideDown(300);
       }
     });
-});
-  $('.rzp-buttonn').on("click", function(){
-      stepTwoComplete = true;
-    });
-    $('#step-1').on("click", function(){
-      stepOneComplete = true;
-    });
-    $(".three").on("click", function(){
-      if (stepOneComplete !== true || stepTwoComplete !== true){
-        alert("Please complete Step 1 and Step 2 to unlock Step 3");
-      }
-    });
-  $(".login-section").click(function(){
-      $(".section-1").slideDown(300);
-      $("html, body").animate({
+  });
+  $('.rzp-buttonn').on("click", function() {
+    stepTwoComplete = true;
+  });
+  $('#step-1').on("click", function() {
+    stepOneComplete = true;
+  });
+  $(".three").on("click", function() {
+    if (stepOneComplete !== true || stepTwoComplete !== true) {
+      alert("Please complete Step 1 and Step 2 to unlock Step 3");
+    }
+  });
+  $(".login-section").click(function() {
+    $(".section-1").slideDown(300);
+    $("html, body").animate({
       scrollTop: $(".section-1").offset().top
     }, 200);
-    });
+  });
 </script>
 
 
 
-
-
-  <script>
-    var email = localStorage.getItem("userEmail");
-    var mobile = localStorage.getItem("userPhone");
-    const submitButton = document.getElementById("rzp-button");
-    const hiddenSection = document.getElementById("show-jq");
-    const emailField = document.getElementById("email-id");
-    const formFeilds = document.getElementById("section-1");
-    const applyNow1 = document.getElementById("apply-now");
-    const applyNow2 = document.getElementById("appply-now");
-    submitButton.addEventListener("click", function(event) {
-      if (emailField.value !== "")
-        localStorage.setItem("formSubmitted", "true");
-      console.log(email);
-    });
-    // Check if the page was reloaded due to form submission
-    if (localStorage.getItem("formSubmitted") === "true") {
-      //hiddenSection.style.display = "block";
-      formFeilds.style.display = "none";
-    }
-</script>
 <script>
+  var email = localStorage.getItem("userEmail");
+  var mobile = localStorage.getItem("userPhone");
+  const submitButton = document.getElementById("rzp-button");
+  const hiddenSection = document.getElementById("show-jq");
+  const emailField = document.getElementById("email-id");
+  const formFeilds = document.getElementById("section-1");
+  const applyNow1 = document.getElementById("apply-now");
+  const applyNow2 = document.getElementById("appply-now");
+  submitButton.addEventListener("click", function(event) {
+    if (emailField.value !== "") 
+      localStorage.setItem("formSubmitted", "true");
+    
 
 
 
-  
+    console.log(email);
+  });
+
+// Check if the page was reloaded due to form submission
+  if (localStorage.getItem("formSubmitted") === "true") { // hiddenSection.style.display = "block";
+    formFeilds.style.display = "none";
+  }
 </script>
+<script></script>
