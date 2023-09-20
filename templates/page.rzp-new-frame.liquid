@@ -252,6 +252,12 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
       scrollTop: $(".section-1").offset().top
     }, 200);
     });
+  $(document).ready(function(){
+  // Check if the alert has been shown before
+  if (localStorage.getItem('alertShown') === 'true') {
+    // If it has been shown, add the "visible" class
+    $(".section-content-3").addClass('visible');
+  }
 </script>
 
 
