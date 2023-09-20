@@ -1,4 +1,42 @@
-<style></style>
+<style>
+  .order-tracking-details {
+    max-width: 100%;
+    width: 800px;
+    margin: 0 auto;
+  }
+  .details-main {
+    max-width: 100%;
+    position: relative;
+    display: block;
+  }
+  .details-heading h1 {
+    font-size: 25px;
+    font-weight: 700;
+    text-align: center;
+  }
+  .order-tracking-options {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+    width: 500px;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+  p.search {
+    margin: 0;
+    text-align: center;
+    padding-right: 13px;
+  }
+  label[for = "orderNumberRadio"] {
+    padding-right: 15px;
+    padding-left: 6px;
+  }
+  label[for = "awbNumberRadio"] {
+    padding-left: 6px
+  }
+</style>
 {% assign block = {{ page.id }} %}
 <div class="ordder-container">
   <div class="number-step">
