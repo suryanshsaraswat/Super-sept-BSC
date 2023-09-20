@@ -181,21 +181,13 @@ select#dropdown{margin-top:12px;border-radius:30px;border:1px solid #000}
       }
     </script>
   {% endunless %}
-  <div class="section" id="buy-section-2" {% if customer %}
-
-  {% else %}
-  style="display:none"
-  {% endif %}>
+  <div class="section" id="buy-section-2">
     <div class="section-header">STEP 2: BUY</div>
     <div class="section-content">
       {% render 'RZP-section-2' %}
     </div>
   </div>
-  <div class="section-3" {% if customer %}
-
-  {% else %}
-  style="display:none"
-  {% endif %}>
+  <div class="section-3">
     <div class="section-header three" >STEP 3: SELL</div>
     <div class="section-content-3">
       <p class="section-3-para">Complete your purchase by clicking “Checkout”<br>in your cart. Your selling journey,<br> as a Razorpreneur starts as soon<br> as you receive your razors.</p>
