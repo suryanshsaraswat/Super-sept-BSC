@@ -712,8 +712,8 @@ copy.active::after{position:absolute;content:"Copied!";font-size:10px;padding:1p
 .disscouunt{background-color:#dc143c;padding:2px 6px;margin-left:15px;border-radius:5px;font-weight:600;color:#fff;display:inline-block;font-size:12px}
 .stickbottom{display:none}
 @media(max-width:1008px) {
-.stickbottom{position:fixed;bottom:52px;left:0;padding:12px 18px;z-index:2;width:100%;display:table;transition:.4s}
-.stickbottom.activated{bottom:52px}
+.stickbottom{position:fixed;bottom:3px;left:0;padding:12px 18px;z-index:2;width:100%;display:table;transition:.4s}
+.stickbottom.activated{bottom:7px}
 }
 @media (min-width: 480px) and (max-width: 1008px) {
 .stickbottom.activated{bottom:0}
