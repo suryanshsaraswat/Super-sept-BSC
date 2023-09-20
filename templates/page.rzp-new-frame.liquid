@@ -232,9 +232,17 @@
           }, 2000);
 
 
+
+
+
+
     
     {% else %}
       
+
+
+
+
 
 
           location.href = "https://www.bombayshavingcompany.com/pages/razorpreneur";{% endif %}
@@ -266,9 +274,11 @@
         <p class="already-rzp">Already a Razorpreneur?
           <a class="login-section">Login</a>
         </p>
+      {% endunless %}
+      {% if customer %}
         <p class="leaderboard">Already a Razorpreneur? Checkout the leaderboard</p>
         <a href="/pages/razorpreneur-leaderboard" class="lead-button">CLICK HERE</a>
-      {% endunless %}
+      {% endif %}
     </div>
   </div>
   {% render 'RZP-section-4' %}
