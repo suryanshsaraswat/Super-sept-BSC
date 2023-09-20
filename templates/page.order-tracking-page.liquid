@@ -134,6 +134,15 @@
   </div>
   <div class="data-v-{{block}}" id="order-track"></div>
 </div>
-<style>
-  
-</style>
+<script>
+        function changeLabel() {
+            var selectedOption = document.querySelector('input[name="trackingType"]:checked').value;
+            var label = (selectedOption === "Order Number") ? "Enter Order Number:" : "Enter AWB Number:";
+            document.querySelector('label[for="trackingInput"]').textContent = label;
+        }
+
+        var radioButtons = document.querySelectorAll('input[name="trackingType"]');
+        radioButtons.forEach(function(radioButton) {
+            radioButton.addEventListener("change", changeLabel);
+        });
+    </script>
