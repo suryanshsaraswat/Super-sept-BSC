@@ -1,18 +1,18 @@
 {% for block in section.blocks %}
-  {%- assign dotd-1 = all_products[block.settings.dotd_product-1] -%}
-  {%- assign dotd-1-variant = dotd-1.selected_or_first_available_variant -%}
-  {%- assign dotd-2 = all_products[block.settings.dotd_product-2]  -%}
-  {%- assign dotd-2-variant = dotd-2.selected_or_first_available_variant -%}
-  {%- assign dotd-3 = all_products[block.settings.dotd_product-3]  -%}
-  {%- assign dotd-3-variant = dotd-3.selected_or_first_available_variant -%}
+  {%- assign dotd-one = all_products[block.settings.dotd-prod-one] -%}
+  {%- assign dotd-one-variant = dotd-1.selected_or_first_available_variant -%}
+  {%- assign dotd-two = all_products[block.settings.dotd-prod-two]  -%}
+  {%- assign dotd-two-variant = dotd-2.selected_or_first_available_variant -%}
+  {%- assign dotd-three = all_products[block.settings.dotd-prod-three]  -%}
+  {%- assign dotd-three-variant = dotd-3.selected_or_first_available_variant -%}
   <div class="dotd-container-prod">
     <div class="dotd-slider">
       <div class="dotd-1-product">
         <div class="dotd-1-img">
-          <img src="{{ dotd-1.featured_image | img_url:'400x' }}" alt="{{ dotd-1.title }}">
+          <img src="{{ dotd-one.featured_image | img_url:'400x' }}" alt="{{ dotd-one.title }}">
         </div>
         <div class="dotd-meta meta-1">
-          <h2>{{ dotd-1.title }}</h2>
+          <h2>{{ dotd-one.title }}</h2>
         </div>
       </div>
     </div>
@@ -35,17 +35,17 @@
         "settings":[
           {
             "type":"product",
-            "id":"dotd_prod-1",
+            "id":"dotd-prod-one",
             "label":"Select the main product"
           },
           {
             "type":"product",
-            "id":"dotd_prod-2",
+            "id":"dotd-prod-two",
             "label":"Select yesterday's product"
           },
           {
             "type":"product",
-            "id":"dotd_prod-3",
+            "id":"dotd-prod-three",
             "label":"Select tomorrow product"
           }
         ]
