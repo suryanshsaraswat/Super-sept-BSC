@@ -176,3 +176,11 @@ $(".collectionheadimg").click(function () {
     1000
   );
 });
+$("a.mob-cont").click(function(){
+  $(html,body).animate(
+    {
+      scrollTop: $('#block-a5ae1de3-e952-49b1-b2fe-981fdfe84891').offset().top-200,
+    },
+    1000
+  );
+});
