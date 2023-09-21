@@ -1,6 +1,7 @@
 {% for block in section.blocks %}
   <div class="bammer">
-    <a class="desk-cont" href="{{ block.settings.linkk }}"><img
+    {% if block.settings.change_banner == 'blank' %}
+  <a class="desk-cont" href="{{ block.settings.linkk }}"><img
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags | img_url: 'master' }}"
         style="width:100%"></a>
@@ -8,11 +9,17 @@
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags2 | img_url: 'master' }}"
         style="width:100%"></a>
+ {% else %}
+  
+    <img class="Image--lazyLoad Image--fadeIn desk-cont" data-src="{{ block.settings.imags | img_url: 'master' }}" style="width:100%">
+ <img class="Image--lazyLoad Image--fadeIn mob-cont" data-src="{{ block.settings.imags2 | img_url: 'master' }}" style="width:100%">
+  {% endif %}
   </div>
 {% endfor %}
+      
 {% if collection.id == 295818363034 %}
   <script>
-    $("a.mob-cont, a.desk-cont").click(function() {
+    $("img.mob-cont, img.desk-cont").click(function() {
       window.scrollTo({top: 1800, behavior: 'smooth'});
     });
   </script>
@@ -49,8 +56,12 @@
             "type": "url",
             "id": "linkk",
             "label": "Link"
+          },
+          {
+            "type":"text",
+            "id":"change_banner",
+            "label":"Enter either Yes or no"
           }
-
         ]
       }
     ],

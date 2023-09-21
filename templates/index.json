@@ -390,7 +390,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/How_to_redeem.webp",
             "imags2": "shopify:\/\/shop_images\/How_to_redeem_mobile.webp",
-            "linkk": "shopify:\/\/collections\/paisa-wapsi-sale"
+            "linkk": "shopify:\/\/collections\/paisa-wapsi-sale",
+            "change_banner": ""
           }
         }
       },
@@ -840,7 +841,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/WebsiteBanner_Desktop.webp",
             "imags2": "shopify:\/\/shop_images\/WebsiteBanner_Mobile.webp",
-            "linkk": ""
+            "linkk": "",
+            "change_banner": ""
           }
         }
       },
@@ -858,7 +860,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/App_Banner_Desktop.jpg",
             "imags2": "shopify:\/\/shop_images\/App_Banner_Mobile.jpg",
-            "linkk": "https:\/\/onelink.to\/knm3j8"
+            "linkk": "https:\/\/onelink.to\/knm3j8",
+            "change_banner": "yes"
           }
         }
       },
