@@ -1,10 +1,16 @@
 {% for block in section.blocks %}
   <div class="bammer">
-    <a class="desk-cont" href="{{ block.settings.linkk }}"><img
+    {% if block.settings.linkk != blank %}
+      <a class="desk-cont" href="{{ block.settings.linkk }}">
+      {% endif %}
+      <img
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags | img_url: 'master' }}"
         style="width:100%"></a>
-    <a class="mob-cont" href="{{ block.settings.linkk }}"><img
+    {% if block.settings.linkk != blank %}
+      <a class="mob-cont" href="{{ block.settings.linkk }}">
+      {% endif %}
+      <img
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags2 | img_url: 'master' }}"
         style="width:100%"></a>
