@@ -1,9 +1,5 @@
 {% for block in section.blocks %}
   <div class="bammer">
-    {% if block.settings.change_banner == 'blank' %}
-      <img class="Image--lazyLoad Image--fadeIn desk-cont" data-src="{{ block.settings.imags | img_url: 'master' }}" style="width:100%">
-    <img class="Image--lazyLoad Image--fadeIn mob-cont" data-src="{{ block.settings.imags2 | img_url: 'master' }}" style="width:100%">
-    {% else %}
     <a class="desk-cont" href="{{ block.settings.linkk }}"><img
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags | img_url: 'master' }}"
@@ -13,7 +9,6 @@
         data-src="{{ block.settings.imags2 | img_url: 'master' }}"
         style="width:100%"></a>
   </div>
-  {% endif %}
 {% endfor %}
 {% if collection.id == 295818363034 %}
   <script>
