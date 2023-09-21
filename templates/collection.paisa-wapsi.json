@@ -8,7 +8,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/Desktop_5dade843-7b9e-4fab-8bd3-bc79c9a4a977.webp",
             "imags2": "shopify:\/\/shop_images\/Main_Banner_web.webp",
-            "linkk": ""
+            "linkk": "",
+            "change_banner": ""
           }
         }
       },
@@ -26,7 +27,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/Desktop_3_fad594e4-16f5-4d35-9b46-4360cd54c957.jpg",
             "imags2": "shopify:\/\/shop_images\/Mobile_d841c33b-60c3-4ba5-92cc-46b8754ff0f3.jpg",
-            "linkk": "shopify:\/\/products\/full-body-wax-strips"
+            "linkk": "shopify:\/\/products\/full-body-wax-strips",
+            "change_banner": ""
           }
         }
       },
@@ -86,7 +88,7 @@
         "subheading": "",
         "title": "",
         "show_headings_on_mobile": false,
-        "product": "green-clay-face-wash",
+        "product": "charcoal-face-sheet-mask",
         "show_timer": true
       }
     },
