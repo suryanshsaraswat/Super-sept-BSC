@@ -53,9 +53,9 @@
         "6ee939cb-fef8-4782-9a1b-eebb12cf4171": {
           "type": "product",
           "settings": {
-            "dotd_prod-1": "3-step-shaving-regime",
-            "dotd_prod-2": "5-in-1-skin-brightning-cream",
-            "dotd_prod-3": "premium-shaving-kit-for-men-black-edition"
+            "dotd-prod-one": "advance-castor-oil-for-hair-fall-control",
+            "dotd-prod-two": "",
+            "dotd-prod-three": ""
           }
         }
       },
