@@ -47,11 +47,11 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
 </style>
 {% for block in section.blocks %}
   {%- assign dotd-one = all_products[block.settings.dotd-prod-one] -%}
-  {%- assign dotd-one-variant = dotd-1.selected_or_first_available_variant -%}
+  {%- assign dotd-one-variant = dotd-one.selected_or_first_available_variant -%}
   {%- assign dotd-two = all_products[block.settings.dotd-prod-two]  -%}
-  {%- assign dotd-two-variant = dotd-2.selected_or_first_available_variant -%}
+  {%- assign dotd-two-variant = dotd-two.selected_or_first_available_variant -%}
   {%- assign dotd-three = all_products[block.settings.dotd-prod-three]  -%}
-  {%- assign dotd-three-variant = dotd-3.selected_or_first_available_variant -%}
+  {%- assign dotd-three-variant = dotd-three.selected_or_first_available_variant -%}
   <div class="dotd-container-prod">
     <div class="dotd-slider">
       <div class="dotd-1-product">
