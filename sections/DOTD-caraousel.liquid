@@ -1,7 +1,42 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "DOTD carausel",
+    "settings": [
+      {
+        "type":"image_picker",
+        "id":"DOTD_banner",
+        "label":"Select DOTD Bbanner"
+      }
+    ],
+    "blocks":[
+      {
+        "name":"Product Block",
+        "type":"product",
+        "settings":[
+          {
+            "type":"product",
+            "id":"dotd_prod-1",
+            "label":"Select the main product"
+          },
+          {
+            "type":"product",
+            "id":"dotd_prod-2",
+            "label":"Select yesterday's product"
+          },
+          {
+            "type":"product",
+            "id":"dotd_prod-3",
+            "label":"Select tomorrow product"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "name":"DOTD carausel",
+        "category":"product"
+      }
+    ]
   }
 {% endschema %}
 
