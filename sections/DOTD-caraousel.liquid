@@ -5,6 +5,18 @@
   {% assign dotd-2-variant = dotd-2.selected_or_first_available_variant %}
   {% assign dotd-3 = all_products[block.settings.dotd_product-3]  %}
   {% assign dotd-3-variant = dotd-3.selected_or_first_available_variant %}
+  <div class="dotd-container-prod">
+    <div class="dotd-slider">
+      <div class="dotd-1-product">
+        <div class="dotd-1-img">
+          <img src="{{ dotd-1.featured_image | img_url:'400x' }}" alt="{{ dotd-1.title }}">
+        </div>
+        <div class="dotd-meta meta-1">
+          <h2>{{ dotd-1.title }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
   {% endfor %}
 {% schema %}
   {
