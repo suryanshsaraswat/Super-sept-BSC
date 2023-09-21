@@ -15,7 +15,7 @@
           <h2>{{ dotd-one.title }}</h2>
         </div>
       </div>
-      <div class="dotd-2-product">
+      {% comment %} <div class="dotd-2-product">
         <div class="dotd-img img-2">
           <img src="{{ dotd-two.featured_image | img_url:'400x' }}" alt="{{ dotd-two.title }}">
         </div>
@@ -30,7 +30,7 @@
         <div class="dotd-meta meta-3">
           <h2>{{ dotd-three.title }}</h2>
         </div>
-      </div>
+      </div> {% endcomment %}
     </div>
   </div>
   {% endfor %}
