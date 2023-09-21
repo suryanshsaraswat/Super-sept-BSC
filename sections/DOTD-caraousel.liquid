@@ -1,4 +1,11 @@
-
+{% for block in section.blocks %}
+  {% assign dotd-1 = all_products[block.settings.dotd_product-1]  %}
+  {% assign dotd-1-variant = dotd-1.selected_or_first_available_variant %}
+  {% assign dotd-2 = all_products[block.settings.dotd_product-2]  %}
+  {% assign dotd-2-variant = dotd-2.selected_or_first_available_variant %}
+  {% assign dotd-3 = all_products[block.settings.dotd_product-3]  %}
+  {% assign dotd-3-variant = dotd-3.selected_or_first_available_variant %}
+  {% endfor %}
 {% schema %}
   {
     "name": "DOTD carausel",
