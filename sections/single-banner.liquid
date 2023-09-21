@@ -10,15 +10,22 @@
         style="width:100%"></a>
   </div>
 {% endfor %}
-
-<script>
-  $("a.mob-cont, a.desk-cont").click(function() {
-    window.scrollTo({top: 1000, behavior: 'smooth'});
-  });
-  $("#Slideb513f875-38e8-4f0e-8bba-d2366b9a1a0e, #Slidetemplate--16069491359898__f8b42789-7755-4298-b3fb-814f9682a087-168051719832b30ab5-1").click(function() {
-    window.scrollTo({top: 1000, behavior: 'smooth'});
-  });
-</script>
+{% if collection.url contains 'paisa-wapsi-sale' %}
+  <script>
+    $("a.mob-cont, a.desk-cont").click(function() {
+      window.scrollTo({top: 550, behavior: 'smooth'});
+    });
+  </script>
+{% else %}
+  <script>
+    $("a.mob-cont, a.desk-cont").click(function() {
+      window.scrollTo({top: 550, behavior: 'smooth'});
+    });
+    $("#Slideb513f875-38e8-4f0e-8bba-d2366b9a1a0e, #Slidetemplate--16069491359898__f8b42789-7755-4298-b3fb-814f9682a087-168051719832b30ab5-1").click(function() {
+      window.scrollTo({top: 1000, behavior: 'smooth'});
+    });
+  </script>
+{% endif %}
 {% schema %}
   {
     "name": "single banner",
