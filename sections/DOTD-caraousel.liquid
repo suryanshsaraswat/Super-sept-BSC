@@ -61,6 +61,40 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
           </p>
         </div>
       </div>
+      <div class="dotd-2-product">
+        <div class="dotd-img img-2">
+          <img src="{{ dotd-two.featured_image | img_url:'400x' }}" alt="{{ dotd-two.title }}">
+        </div>
+        <div class="dotd-meta meta-2">
+          <h2>{{ dotd-two.title }}</h2>
+        </div>
+        <div class="dotd-price-meta meta-2">
+          <p class="priced">
+            {% if dotd-two.compare_at_price > dotd-two.price %}
+            <span class="subdued"> MRP: {{ dotd-two.compare_at_price | money_with_currency }}</span> <span class="dotd-mrpp">{{ dotd-two.price | money_with_currency }}</span>
+            {% else %}
+            <span class="dotd-cap"> MRP: {{ dotd-two.compare_at_price | money_with_currency }}</span>
+            {% endif %}
+          </p>
+        </div>
+      </div>
+      <div class="dotd-3-product">
+        <div class="dotd-img img-3">
+          <img src="{{ dotd-three.featured_image | img_url:'400x' }}" alt="{{ dotd-three.title }}">
+        </div>
+        <div class="dotd-meta meta-3">
+          <h2>{{ dotd-three.title }}</h2>
+        </div>
+        <div class="dotd-price-meta meta-3">
+          <p class="priced">
+            {% if dotd-three.compare_at_price > dotd-three.price %}
+            <span class="subdued"> MRP: {{ dotd-three.compare_at_price | money_with_currency }}</span> <span class="dotd-mrpp">{{ dotd-three.price | money_with_currency }}</span>
+            {% else %}
+            <span class="dotd-cap"> MRP: {{ dotd-three.compare_at_price | money_with_currency }}</span>
+            {% endif %}
+          </p>
+        </div>
+      </div>
       {% comment %} <div class="dotd-2-product">
         <div class="dotd-img img-2">
           <img src="{{ dotd-two.featured_image | img_url:'400x' }}" alt="{{ dotd-two.title }}">
