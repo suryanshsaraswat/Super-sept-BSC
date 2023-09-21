@@ -52,6 +52,11 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
           <h2>{{ dotd-one.title }}</h2>
         </div>
         <div class="dotd-price-meta meta-1">
+          <div class="review-meta meta-1">
+            <div class="dotd-prod rating">{% render 'icon' with 'rating-star' %}{{ dotd-one.metafields.reviews.rating.value }}</div>
+            <span>|</span>
+            <div class="dotd-prod reviews">{{ dotd-one.metafields.reviews.rating_count.value }} Reviews</div>
+          </div>
           <p class="priced">
             {% if dotd-one.compare_at_price > dotd-one.price %}
             <span class="subdued"> MRP: {{ dotd-one.compare_at_price | money_with_currency }}</span> <span class="dotd-mrpp">{{ dotd-one.price | money_with_currency }}</span>
@@ -95,22 +100,6 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
           </p>
         </div>
       </div>
-      {% comment %} <div class="dotd-2-product">
-        <div class="dotd-img img-2">
-          <img src="{{ dotd-two.featured_image | img_url:'400x' }}" alt="{{ dotd-two.title }}">
-        </div>
-        <div class="dotd-meta meta-2">
-          <h2>{{ dotd-two.title }}</h2>
-        </div>
-      </div>
-      <div class="dotd-3-product">
-        <div class="dotd-img img-3">
-          <img src="{{ dotd-three.featured_image | img_url:'400x' }}" alt="{{ dotd-three.title }}">
-        </div>
-        <div class="dotd-meta meta-3">
-          <h2>{{ dotd-three.title }}</h2>
-        </div>
-      </div> {% endcomment %}
     </div>
   </div>
   {% endfor %}
