@@ -17,9 +17,9 @@
         <div class="dotd-price-meta meta-1">
           <p class="priced">
             {% if dotd-one.compare_at_price > dotd-one.price %}
-            <span class="subdued">{{ dotd-one.compare_at_price }}</span> <span class="dotd-mrpp">{{ dotd-one.price }}</span>
+            <span class="subdued">{{ dotd-one.compare_at_price | money_with_currency }}</span> <span class="dotd-mrpp">{{ dotd-one.price | money_with_currency }}</span>
             {% else %}
-            <span class="dotd-cap">{{ dotd-one.compare_at_price }}</span>
+            <span class="dotd-cap">{{ dotd-one.compare_at_price | money_with_currency }}</span>
             {% endif %}
           </p>
         </div>
