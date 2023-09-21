@@ -55,7 +55,7 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
           <div class="review-meta meta-1">
             <div class="dotd-prod rating">{% render 'icon' with 'rating-star' %}{{ dotd-one.metafields.reviews.rating.value }}</div>
             <span>|</span>
-<div class="dotd-prod reviews">{% if dotd-one.metafields.reviews.rating_count.value != 'blank'  %}{{ dotd-one.metafields.reviews.rating_count.value }} {% else %} No {% endif %} Reviews</div>
+<div class="dotd-prod reviews">{% if dotd-one.metafields.reviews.rating_count.value != blank  %}{{ dotd-one.metafields.reviews.rating_count.value }} {% else %} No {% endif %} Reviews</div>
           </div>
           <p class="priced">
             {% if dotd-one.compare_at_price > dotd-one.price %}
