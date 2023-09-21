@@ -1,54 +1,60 @@
 {% for block in section.blocks %}
   <div class="bammer">
-    <a class="desk-cont" href="{{ block.settings.linkk }}"><img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.imags | img_url: 'master' }}" style="width:100%"></a>
-    <a class="mob-cont" href="{{ block.settings.linkk }}"><img class="Image--lazyLoad Image--fadeIn" data-src="{{ block.settings.imags2 | img_url: 'master' }}" style="width:100%"></a>
+    <a class="desk-cont" href="{{ block.settings.linkk }}"><img
+        class="Image--lazyLoad Image--fadeIn"
+        data-src="{{ block.settings.imags | img_url: 'master' }}"
+        style="width:100%"></a>
+    <a class="mob-cont" href="{{ block.settings.linkk }}"><img
+        class="Image--lazyLoad Image--fadeIn"
+        data-src="{{ block.settings.imags2 | img_url: 'master' }}"
+        style="width:100%"></a>
   </div>
-  {% endfor %}
+{% endfor %}
 
- <script>$("a.mob-cont, a.desk-cont").click(function() {
-    window.scrollTo({top: 550, behavior: 'smooth'});
-});
- $("#Slideb513f875-38e8-4f0e-8bba-d2366b9a1a0e, #Slidetemplate--16069491359898__f8b42789-7755-4298-b3fb-814f9682a087-168051719832b30ab5-1").click(function() {
-    window.scrollTo({top: 400, behavior: 'smooth'});
-});</script>
+<script>
+  $("a.mob-cont, a.desk-cont").click(function() {
+    window.scrollTo({top: 1000, behavior: 'smooth'});
+  });
+  $("#Slideb513f875-38e8-4f0e-8bba-d2366b9a1a0e, #Slidetemplate--16069491359898__f8b42789-7755-4298-b3fb-814f9682a087-168051719832b30ab5-1").click(function() {
+    window.scrollTo({top: 1000, behavior: 'smooth'});
+  });
+</script>
 {% schema %}
-   {
+  {
     "name": "single banner",
     "settings": [],
-	"blocks": [
-            {
-			  "type": "testimonial",
-              "name": "Blocks",
-              "settings": [
-                {
-                  "type": "image_picker",
-                  "id": "imags",
-                  "label": "Desktop Image"
+    "blocks": [
+      {
+        "type": "testimonial",
+        "name": "Blocks",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "imags",
+            "label": "Desktop Image"
 
-                },
-{
-                  "type": "image_picker",
-                  "id": "imags2",
-                  "label": "Mobile Image"
+          }, {
+            "type": "image_picker",
+            "id": "imags2",
+            "label": "Mobile Image"
 
-                },
-                {
-                  "type": "url",
-                  "id": "linkk",
-                  "label": "Link"
-                }  
+          }, {
+            "type": "url",
+            "id": "linkk",
+            "label": "Link"
+          }
 
-              ]
-            }
-          ],
-    
-	"presets": [
-        {
-          "category": "Product",
-          "name": "Single banner"
-          
-          
-        }
-      ]
+        ]
+      }
+    ],
+
+    "presets": [
+      {
+        "category": "Product",
+        "name": "Single banner"
+
+
+      }
+    ]
   }
 {% endschema %}
