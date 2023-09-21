@@ -14,6 +14,15 @@
         <div class="dotd-meta meta-1">
           <h2>{{ dotd-one.title }}</h2>
         </div>
+        <div class="dotd-price-meta meta-1">
+          <p class="priced">
+            {% if dotd-one.compare_at_price > dotd-one.price %}
+            <span class="subdued">{{ dotd-one.compare_at_price }}</span> <span class="dotd-mrpp">{{ dotd-one.price }}</span>
+            {% else %}
+            <span class="dotd-cap">{{ dotd-one.compare_at_price }}</span>
+            {% endif %}
+          </p>
+        </div>
       </div>
       {% comment %} <div class="dotd-2-product">
         <div class="dotd-img img-2">
