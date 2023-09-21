@@ -1,5 +1,15 @@
 {% for block in section.blocks %}
   <div class="bammer">
+    {% if block.settings.linkk == 'blank' %}
+      <a class="desk-cont"><img
+        class="Image--lazyLoad Image--fadeIn"
+        data-src="{{ block.settings.imags | img_url: 'master' }}"
+        style="width:100%"></a>
+    <a class="mob-cont"><img
+        class="Image--lazyLoad Image--fadeIn"
+        data-src="{{ block.settings.imags2 | img_url: 'master' }}"
+        style="width:100%"></a>
+    {% else %}
     <a class="desk-cont" href="{{ block.settings.linkk }}"><img
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags | img_url: 'master' }}"
@@ -8,6 +18,7 @@
         class="Image--lazyLoad Image--fadeIn"
         data-src="{{ block.settings.imags2 | img_url: 'master' }}"
         style="width:100%"></a>
+    {% endif %}
   </div>
 {% endfor %}
 {% if collection.id == 295818363034 %}
