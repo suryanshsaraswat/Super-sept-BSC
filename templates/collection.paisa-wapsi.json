@@ -19,25 +19,6 @@
       "settings": {
       }
     },
-    "504f6898-7f5c-426d-8406-c8a5f6977d71": {
-      "type": "single-banner",
-      "blocks": {
-        "1585c2b0-c880-4bc6-b270-110782737147": {
-          "type": "testimonial",
-          "settings": {
-            "imags": "shopify:\/\/shop_images\/Desktop_3_fad594e4-16f5-4d35-9b46-4360cd54c957.jpg",
-            "imags2": "shopify:\/\/shop_images\/Mobile_d841c33b-60c3-4ba5-92cc-46b8754ff0f3.jpg",
-            "linkk": "shopify:\/\/products\/full-body-wax-strips",
-            "change_banner": ""
-          }
-        }
-      },
-      "block_order": [
-        "1585c2b0-c880-4bc6-b270-110782737147"
-      ],
-      "settings": {
-      }
-    },
     "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8": {
       "type": "deal-of-the-day",
       "blocks": {
@@ -627,6 +608,25 @@
         "button-link": ""
       }
     },
+    "504f6898-7f5c-426d-8406-c8a5f6977d71": {
+      "type": "single-banner",
+      "blocks": {
+        "1585c2b0-c880-4bc6-b270-110782737147": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/Desktop_3_fad594e4-16f5-4d35-9b46-4360cd54c957.jpg",
+            "imags2": "shopify:\/\/shop_images\/Mobile_d841c33b-60c3-4ba5-92cc-46b8754ff0f3.jpg",
+            "linkk": "shopify:\/\/products\/full-body-wax-strips",
+            "change_banner": ""
+          }
+        }
+      },
+      "block_order": [
+        "1585c2b0-c880-4bc6-b270-110782737147"
+      ],
+      "settings": {
+      }
+    },
     "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2": {
       "type": "accordion",
       "blocks": {
@@ -755,7 +755,6 @@
   },
   "order": [
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
-    "504f6898-7f5c-426d-8406-c8a5f6977d71",
     "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8",
     "10ef4252-450e-4bab-9528-403e924d6b7f",
     "c951b4a8-0d60-4c33-b802-2ce3079de1ec",
@@ -768,6 +767,7 @@
     "a81d24d1-82e9-48a6-9b9e-d69be5ae046d",
     "f0361034-5450-4871-94fa-1b6265e6c756",
     "794b155d-05e6-44f2-9954-1fad93c8e910",
+    "504f6898-7f5c-426d-8406-c8a5f6977d71",
     "2717f2cd-eaf0-4026-9b85-0c4dbb518ce2",
     "recently-viewed-products",
     "0b17128a-d058-4640-8dee-03feb4e2637e"
