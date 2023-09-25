@@ -6,8 +6,8 @@
         "9093f1a2-67b5-4ebe-90a2-df904ed652a2": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/Desktop_5dade843-7b9e-4fab-8bd3-bc79c9a4a977.webp",
-            "imags2": "shopify:\/\/shop_images\/Main_Banner_web.webp",
+            "imags": "shopify:\/\/shop_images\/Desktop_1.webp",
+            "imags2": "shopify:\/\/shop_images\/Mobile_1.webp",
             "linkk": "",
             "change_banner": ""
           }
@@ -614,8 +614,8 @@
         "1585c2b0-c880-4bc6-b270-110782737147": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/Desktop_3_fad594e4-16f5-4d35-9b46-4360cd54c957.jpg",
-            "imags2": "shopify:\/\/shop_images\/Mobile_d841c33b-60c3-4ba5-92cc-46b8754ff0f3.jpg",
+            "imags": "shopify:\/\/shop_images\/Desktop_HTC.webp",
+            "imags2": "shopify:\/\/shop_images\/Mobile_HTC.webp",
             "linkk": "shopify:\/\/products\/full-body-wax-strips",
             "change_banner": ""
           }
