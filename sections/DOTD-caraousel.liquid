@@ -81,7 +81,8 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
         <div class="dotd-img img-1">
           <img src="{{ dotd-one.featured_image | img_url:'400x' }}" alt="{{ dotd-one.title }}">
         </div>
-        <div class="dotd-meta meta-1">
+        <div class="meta-prodd">
+          <div class="dotd-meta meta-1">
           <h2>{{ dotd-one.title }}</h2>
         </div>
         <div class="dotd-price-meta meta-1">
@@ -98,40 +99,45 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
             {% endif %}
           </p>
         </div>
+        </div>
+
       </div>
       <div class="dotd-2-product">
         <div class="dotd-img img-2">
           <img src="{{ dotd-two.featured_image | img_url:'400x' }}" alt="{{ dotd-two.title }}">
         </div>
-        <div class="dotd-meta meta-2">
-          <h2>{{ dotd-two.title }}</h2>
-        </div>
-        <div class="dotd-price-meta meta-2">
-          <div class="review-meta meta-1">
-            <div class="dotd-prod rating">{% render 'icon' with 'rating-star' %}{{ dotd-one.metafields.reviews.rating.value }}</div>
-            <span>|</span>
-            <div class="dotd-prod reviews">{% if dotd-one.metafields.reviews.rating_count.value != blank  %}{{ dotd-one.metafields.reviews.rating_count.value }} {% else %} No {% endif %} Reviews</div>
+        <div class="meta-prodd">
+          <div class="dotd-meta meta-2">
+            <h2>{{ dotd-two.title }}</h2>
           </div>
-          <p class="priced">
-            {% if dotd-two.compare_at_price > dotd-two.price %}
-            <span class="subdued"> MRP: {{ dotd-two.compare_at_price | money_with_currency }}</span> <span class="dotd-mrpp">{{ dotd-two.price | money_with_currency }}</span>
+          <div class="dotd-price-meta meta-2">
+            <div class="review-meta meta-1">
+              <div class="dotd-prod rating">{% render 'icon' with 'rating-star' %}{{ dotd-one.metafields.reviews.rating.value }}</div>
+              <span>|</span>
+              <div class="dotd-prod reviews">{% if dotd-one.metafields.reviews.rating_count.value != blank  %}{{ dotd-one.metafields.reviews.rating_count.value }} {% else %} No {% endif %} Reviews</div>
+            </div>
+            <p class="priced">
+              {% if dotd-two.compare_at_price > dotd-two.price %}
+              <span class="subdued"> MRP: {{ dotd-two.compare_at_price | money_with_currency }}</span> <span class="dotd-mrpp">{{ dotd-two.price | money_with_currency }}</span>
+              {% else %}
+              <span class="dotd-cap"> MRP: {{ dotd-two.compare_at_price | money_with_currency }}</span>
+              {% endif %}
+            </p>
+          </div>
+          <div class="button-dotd">
+            {% if dotd-two.available %}
+              <button type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll dotd" id="ad_to_cartt" aria-haspopup="dialog" data-add-to-cart="{{ dotd-two-variant.id }}" data-var_id="{{ dotd-two-variant.id }}"><span>Add to cart</span></button>
             {% else %}
-            <span class="dotd-cap"> MRP: {{ dotd-two.compare_at_price | money_with_currency }}</span>
+              <button class="gift soldout"  id="ad_to_cartt" ><span>sold out</span></button>
             {% endif %}
-          </p>
-        </div>
-        <div class="button-dotd">
-          {% if dotd-two.available %}
-            <button type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll dotd" id="ad_to_cartt" aria-haspopup="dialog" data-add-to-cart="{{ dotd-two-variant.id }}" data-var_id="{{ dotd-two-variant.id }}"><span>Add to cart</span></button>
-          {% else %}
-            <button class="gift soldout"  id="ad_to_cartt" ><span>sold out</span></button>
-          {% endif %}
+          </div>
         </div>
       </div>
       <div class="dotd-3-product">
         <div class="dotd-img img-3">
           <img src="{{ dotd-three.featured_image | img_url:'400x' }}" alt="{{ dotd-three.title }}">
         </div>
+       <div class="meta-prodd">
         <div class="dotd-meta meta-3">
           <h2>{{ dotd-three.title }}</h2>
         </div>
@@ -149,6 +155,7 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
             {% endif %}
           </p>
         </div>
+       </div>
       </div>
     </div>
    </div>
