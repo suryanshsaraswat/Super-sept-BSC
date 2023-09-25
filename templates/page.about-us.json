@@ -1,1 +1,434 @@
-{"sections":{"015f2e61-e0e6-4d20-9f6f-cdca24e47b7e":{"type":"background-video","disabled":true,"settings":{"section_size":"preserveRatio","video_url":"https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"}},"166013232906dd5c55":{"type":"slideshow","blocks":{"16601323294dff1535-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/MainBanner_Top.jpg","mobile_image":"shopify:\/\/shop_images\/MainBanner_TopMobile.jpg","apply_overlay":false,"content_position":"bottomLeft","subheading":"","title":"","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}}},"block_order":["16601323294dff1535-0"],"settings":{"show_fullscreen":false,"show_arrow":false,"autoplay":true,"cycle_speed":5,"text_color":"#ffffff","button_color":"#363636","button_background":"#ffffff"}},"main":{"type":"main-page","disabled":true,"settings":{"show_large":false}},"1657002728e8f20463":{"type":"custom-html","settings":{"subheading":"","title":"","html":"<div class=\"textss\">\n<p>The single blade beauty captured the imagination of men across India, and bought with it a dimension of delight unknown to the otherwise mundane chore of shaving. Ever since, Bombay Shaving Company has enriched the landscape of Grooming and Hair removal products in India - with the spirit of putting what the consumer and needs and wants first; and an unwavering commitment to making products that delight, deliver, and inspire everyday confidence. \n<\/p>\n<\/div>"}},"165700266589bd0930":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"","image_position":"right","content":"","link_text":"","link_url":""}},"1657002938b45262f8":{"type":"custom-html","settings":{"subheading":"","title":"","html":"<div class=\"jaiho\">\n<h1>OUR TIMELINE<\/h1>\n<\/div>\n<style>\n.jaiho h1{\nfont-size: 50px;\nfont-weight: bold;\n}\n<\/style>"}},"1660646065c6e32f63":{"type":"slideshow","blocks":{"1660646065fc7a85c8-0":{"type":"image","settings":{"image":"shopify:\/\/shop_images\/Timeline_Desktop_0404a3de-6f36-4783-81e6-e32bf4213ab0.jpg","mobile_image":"shopify:\/\/shop_images\/Timeline_Mobile.jpg","apply_overlay":false,"content_position":"bottomLeft","subheading":"","title":"","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}},"1660646065fc7a85c8-1":{"type":"image","disabled":true,"settings":{"apply_overlay":true,"content_position":"bottomLeft","subheading":"Slide title","title":"Tell your story","button_1_text":"","button_1_link":"","button_2_text":"","button_2_link":""}}},"block_order":["1660646065fc7a85c8-0","1660646065fc7a85c8-1"],"settings":{"show_fullscreen":false,"show_arrow":false,"autoplay":true,"cycle_speed":5,"text_color":"#ffffff","button_color":"#363636","button_background":"#ffffff"}},"16569204105c7c853c":{"type":"timeline","blocks":{"1656920410064d5b78-0":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/1_2_copy_1000x_e7b4cd7d-481e-4289-a296-46587d0d9210.webp","apply_overlay":true,"title":"2015","subheading":"","heading":"Bombay Shaving Company was born with the flagship PSRS","content":""}},"1656920410064d5b78-1":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/pexels-cottonbro-3998393_1.jpg","apply_overlay":true,"title":"2017","subheading":"","heading":"Made holistic grooming popular with superfoods powered regimens across Shave, Skin, Hair, Bath and Body products","content":""}},"1656920410064d5b78-2":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/pexels-pixabay-264787.jpg","apply_overlay":true,"title":"2018","subheading":"","heading":"Created an emotional bond with customers and became synonymous with gifting","content":""}},"a9869678-bab9-47ee-8b0f-537f4261d9c5":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/Man-looking-at-beard-trimmer-combs.jpg","apply_overlay":true,"title":"2020","subheading":"","heading":"Became an enabler during COVID 19, introducing a host of DIY products","content":""}},"a51d3a21-2303-4762-a471-62c028d76bd5":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/279177126_117176694302403_2349580774958226530_n.jpg","apply_overlay":true,"title":"2021","subheading":"","heading":"Brought on Reckitt Benckiser as strategic partner, became official product partner of Lakme Salon across India. Introduced BOMBAE (earlier BSC Women). Signed Indian Cricket legend R. Ashwin and Bollywood sensation Alaya F as brand ambassadors. Came of Age as ‘Hair Removal Experts'.","content":""}},"e5dbe561-d2a3-4140-9890-36f279bd3cce":{"type":"item","settings":{"image":"shopify:\/\/shop_images\/WebsiteBanner_Mobile_1.jpg","apply_overlay":true,"title":"2022","subheading":"","heading":"Became official Grooming Partner of the most followed sports franchise in the world, Mumbai Indians. Recognized as a ‘Top 10 Most Loved Brand in India, and Top 50 in the World'","content":""}}},"block_order":["1656920410064d5b78-0","1656920410064d5b78-1","1656920410064d5b78-2","a9869678-bab9-47ee-8b0f-537f4261d9c5","a51d3a21-2303-4762-a471-62c028d76bd5","e5dbe561-d2a3-4140-9890-36f279bd3cce"],"disabled":true,"settings":{"text_color":"#ffffff"}},"1657008212f4b36649":{"type":"image-with-text-overlay","disabled":true,"settings":{"section_size":"small","image":"shopify:\/\/shop_images\/pexels-canva-studio-3153207.jpg","text_color":"#ffffff","overlay_color":"#000000","overlay_opacity":57,"subheading":"","title":"2 Crore Bathrooms, 5 Products in each bathroom, Creating 10 minutes of happiness","content":""}},"1656921004ca437eeb":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"Innovation","image":"shopify:\/\/shop_images\/INNOVATION.jpg","image_position":"right","content":"<p>Micro innovations in form, feel, formulation and functions lie at the heart of everything we do.<\/p>","link_text":"","link_url":""}},"1656921254dc66b902":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"Expertise in hair removal and management","image":"shopify:\/\/shop_images\/EXPERTISE-IN-HAIR-REMOVAL-AND-MANAGEMENT.jpg","image_position":"left","content":"<p>From products with powdered superfoods to ergonomically designed trimmers, BSC is  breaking new ground in hair removal solutions for the Indian consumer, everyday. <\/p>","link_text":"","link_url":""}},"165692143566288825":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"Brand that loves back!","image":"shopify:\/\/shop_images\/BRAND-THAT-LOVES-BACK.jpg","image_position":"right","content":"<p> Creating over 2000 pieces of informative and evocative content every month from our fully equipped in-house studio, to help people make better grooming choices, everyday. One of India's top 10 Most Loved Brands, 2022 (independent study by Hootsuitr and Talkwalker) <\/p>","link_text":"","link_url":""}},"1656921504bb0bc26d":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"FMCG 2.0","image":"shopify:\/\/shop_images\/FMCG-2.0.jpg","image_position":"left","content":"<p>Bombay Shaving Company is accessible anywhere, from everywhere. We currently serve over 6.5million customers across India, USA, Europe, Middle East & Asia, Australia and New Zealand. Across all major online platforms and over 30,000 Stores.<\/p>","link_text":"","link_url":""}},"1657001990fd977e68":{"type":"image-with-text-overlay","disabled":true,"settings":{"section_size":"small","image":"shopify:\/\/shop_images\/pexels-canva-studio-3153207.jpg","text_color":"#ffffff","overlay_color":"#000000","overlay_opacity":60,"subheading":"","title":"We are humbly limitless, play to win, honest and open.","content":"<p>Here's what's happening at the office<\/p>"}},"16570020915fe1c769":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"New Joinees","image":"shopify:\/\/shop_images\/New-Joinees.jpg","image_position":"left","content":"<p>Making us wiser. Better. Stronger.<\/p>","link_text":"","link_url":""}},"1657002099ceefe9f1":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"The Game Changer Initiative","image":"shopify:\/\/shop_images\/GameChangerInitative.jpg","image_position":"right","content":"<p>From Metaverse to Local Pride, BSCians are going above and beyond to create impact beyond work. <\/p>","link_text":"","link_url":""}},"1657002104972c337b":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"Creating Wealth","image":"shopify:\/\/shop_images\/Esops.jpg","image_position":"left","content":"<p>Wealth creation for employees is 'the most important' employee value proposition for us.<\/p>","link_text":"","link_url":""}},"1657000072015806a8":{"type":"text-with-image","disabled":true,"settings":{"subheading":"","title":"Our Investors, Partners, and the ones who share our core values","image_position":"left","content":"","link_text":"","link_url":""}},"1656920226a9a6af96":{"type":"logo-slider","blocks":{"ecbf9a9b-a850-478c-afad-1b4cd1d9f7ff":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0002_Patni_Invetments_1.jpg","linkurl1":""}},"8ebc890d-afc4-41c7-b143-3c1c53a87a9b":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0001_Gil_Investments_1_9a79a9b4-9229-4066-be60-f1fb9450fbf6.jpg","linkurl1":""}},"e4d22e08-3fe1-4bf8-aba1-3a8e69777143":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0000_Singularity_1.jpg","linkurl1":""}},"8da19d40-0dd0-4527-b9b0-9be78ee9eeab":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0007_Firesideventures.jpg","linkurl1":""}},"67c67e99-4497-47a3-b6e3-a1f673886082":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0006_Colgate_Palmolive.jpg","linkurl1":""}},"65eef26e-b65f-44a0-83b7-7d43ed7df2f1":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0005_Sixth_Sense.jpg","linkurl1":""}},"036ea235-75e4-47b4-9b74-2ff109c12544":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0004_Reckitt.jpg","linkurl1":""}},"d3adc48b-5924-4902-8254-be72e2742f9b":{"type":"testimonial","settings":{"image1":"shopify:\/\/shop_images\/Investors_0003_Malabar_Investments.jpg","linkurl1":""}}},"block_order":["ecbf9a9b-a850-478c-afad-1b4cd1d9f7ff","8ebc890d-afc4-41c7-b143-3c1c53a87a9b","e4d22e08-3fe1-4bf8-aba1-3a8e69777143","8da19d40-0dd0-4527-b9b0-9be78ee9eeab","67c67e99-4497-47a3-b6e3-a1f673886082","65eef26e-b65f-44a0-83b7-7d43ed7df2f1","036ea235-75e4-47b4-9b74-2ff109c12544","d3adc48b-5924-4902-8254-be72e2742f9b"],"settings":{}}},"order":["015f2e61-e0e6-4d20-9f6f-cdca24e47b7e","166013232906dd5c55","main","1657002728e8f20463","165700266589bd0930","1657002938b45262f8","1660646065c6e32f63","16569204105c7c853c","1657008212f4b36649","1656921004ca437eeb","1656921254dc66b902","165692143566288825","1656921504bb0bc26d","1657001990fd977e68","16570020915fe1c769","1657002099ceefe9f1","1657002104972c337b","1657000072015806a8","1656920226a9a6af96"]}
+{
+  "sections": {
+    "015f2e61-e0e6-4d20-9f6f-cdca24e47b7e": {
+      "type": "background-video",
+      "disabled": true,
+      "settings": {
+        "section_size": "preserveRatio",
+        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc"
+      }
+    },
+    "166013232906dd5c55": {
+      "type": "slideshow",
+      "blocks": {
+        "16601323294dff1535-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/MainBanner_Top.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/MainBanner_TopMobile.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "16601323294dff1535-0"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "1657002728e8f20463": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"textss\">\n<p>We’re reimagining hair removal for men in India with products that delight, deliver, and empower you every day. \nExpress yourself freely, and play with your hair - shave, trim, spray - do it your way. \nOur painless, easy-to-use, and customizable products are designed with you in mind. No fancy jargon or complex formulas – just simple and effective solutions. \nBut you may ask what’s the catch? Frankly, there’s none. \nThese products are good for your skin, good for your wallet, and good for the planet too. \nJoin us and redefine your grooming journey today.\n \n<\/p>\n<\/div>"
+      }
+    },
+    "165700266589bd0930": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "image_position": "right",
+        "content": "",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1657002938b45262f8": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<div class=\"jaiho\">\n<h1>OUR TIMELINE<\/h1>\n<\/div>\n<style>\n.jaiho h1{\nfont-size: 50px;\nfont-weight: bold;\n}\n<\/style>"
+      }
+    },
+    "1660646065c6e32f63": {
+      "type": "slideshow",
+      "blocks": {
+        "1660646065fc7a85c8-0": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Timeline_Desktop_0404a3de-6f36-4783-81e6-e32bf4213ab0.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Timeline_Mobile.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "1660646065fc7a85c8-1": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "Slide title",
+            "title": "Tell your story",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1660646065fc7a85c8-0",
+        "1660646065fc7a85c8-1"
+      ],
+      "settings": {
+        "show_fullscreen": false,
+        "show_arrow": false,
+        "autoplay": true,
+        "cycle_speed": 5,
+        "text_color": "#ffffff",
+        "button_color": "#363636",
+        "button_background": "#ffffff"
+      }
+    },
+    "16569204105c7c853c": {
+      "type": "timeline",
+      "blocks": {
+        "1656920410064d5b78-0": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1_2_copy_1000x_e7b4cd7d-481e-4289-a296-46587d0d9210.webp",
+            "apply_overlay": true,
+            "title": "2015",
+            "subheading": "",
+            "heading": "Bombay Shaving Company was born with the flagship PSRS",
+            "content": ""
+          }
+        },
+        "1656920410064d5b78-1": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-cottonbro-3998393_1.jpg",
+            "apply_overlay": true,
+            "title": "2017",
+            "subheading": "",
+            "heading": "Made holistic grooming popular with superfoods powered regimens across Shave, Skin, Hair, Bath and Body products",
+            "content": ""
+          }
+        },
+        "1656920410064d5b78-2": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pexels-pixabay-264787.jpg",
+            "apply_overlay": true,
+            "title": "2018",
+            "subheading": "",
+            "heading": "Created an emotional bond with customers and became synonymous with gifting",
+            "content": ""
+          }
+        },
+        "a9869678-bab9-47ee-8b0f-537f4261d9c5": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Man-looking-at-beard-trimmer-combs.jpg",
+            "apply_overlay": true,
+            "title": "2020",
+            "subheading": "",
+            "heading": "Became an enabler during COVID 19, introducing a host of DIY products",
+            "content": ""
+          }
+        },
+        "a51d3a21-2303-4762-a471-62c028d76bd5": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/279177126_117176694302403_2349580774958226530_n.jpg",
+            "apply_overlay": true,
+            "title": "2021",
+            "subheading": "",
+            "heading": "Brought on Reckitt Benckiser as strategic partner, became official product partner of Lakme Salon across India. Introduced BOMBAE (earlier BSC Women). Signed Indian Cricket legend R. Ashwin and Bollywood sensation Alaya F as brand ambassadors. Came of Age as ‘Hair Removal Experts'.",
+            "content": ""
+          }
+        },
+        "e5dbe561-d2a3-4140-9890-36f279bd3cce": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/WebsiteBanner_Mobile_1.jpg",
+            "apply_overlay": true,
+            "title": "2022",
+            "subheading": "",
+            "heading": "Became official Grooming Partner of the most followed sports franchise in the world, Mumbai Indians. Recognized as a ‘Top 10 Most Loved Brand in India, and Top 50 in the World'",
+            "content": ""
+          }
+        }
+      },
+      "block_order": [
+        "1656920410064d5b78-0",
+        "1656920410064d5b78-1",
+        "1656920410064d5b78-2",
+        "a9869678-bab9-47ee-8b0f-537f4261d9c5",
+        "a51d3a21-2303-4762-a471-62c028d76bd5",
+        "e5dbe561-d2a3-4140-9890-36f279bd3cce"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_color": "#ffffff"
+      }
+    },
+    "1657008212f4b36649": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/pexels-canva-studio-3153207.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 57,
+        "subheading": "",
+        "title": "2 Crore Bathrooms, 5 Products in each bathroom, Creating 10 minutes of happiness",
+        "content": ""
+      }
+    },
+    "1656921004ca437eeb": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Innovation",
+        "image": "shopify:\/\/shop_images\/INNOVATION.jpg",
+        "image_position": "right",
+        "content": "<p>Micro innovations in form, feel, formulation and functions lie at the heart of everything we do.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1656921254dc66b902": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Expertise in hair removal and management",
+        "image": "shopify:\/\/shop_images\/EXPERTISE-IN-HAIR-REMOVAL-AND-MANAGEMENT.jpg",
+        "image_position": "left",
+        "content": "<p>From products with powdered superfoods to ergonomically designed trimmers, BSC is  breaking new ground in hair removal solutions for the Indian consumer, everyday. <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "165692143566288825": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Brand that loves back!",
+        "image": "shopify:\/\/shop_images\/BRAND-THAT-LOVES-BACK.jpg",
+        "image_position": "right",
+        "content": "<p> Creating over 2000 pieces of informative and evocative content every month from our fully equipped in-house studio, to help people make better grooming choices, everyday. One of India's top 10 Most Loved Brands, 2022 (independent study by Hootsuitr and Talkwalker) <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1656921504bb0bc26d": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "FMCG 2.0",
+        "image": "shopify:\/\/shop_images\/FMCG-2.0.jpg",
+        "image_position": "left",
+        "content": "<p>Bombay Shaving Company is accessible anywhere, from everywhere. We currently serve over 6.5million customers across India, USA, Europe, Middle East & Asia, Australia and New Zealand. Across all major online platforms and over 30,000 Stores.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1657001990fd977e68": {
+      "type": "image-with-text-overlay",
+      "disabled": true,
+      "settings": {
+        "section_size": "small",
+        "image": "shopify:\/\/shop_images\/pexels-canva-studio-3153207.jpg",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 60,
+        "subheading": "",
+        "title": "We are humbly limitless, play to win, honest and open.",
+        "content": "<p>Here's what's happening at the office<\/p>"
+      }
+    },
+    "16570020915fe1c769": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "New Joinees",
+        "image": "shopify:\/\/shop_images\/New-Joinees.jpg",
+        "image_position": "left",
+        "content": "<p>Making us wiser. Better. Stronger.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1657002099ceefe9f1": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "The Game Changer Initiative",
+        "image": "shopify:\/\/shop_images\/GameChangerInitative.jpg",
+        "image_position": "right",
+        "content": "<p>From Metaverse to Local Pride, BSCians are going above and beyond to create impact beyond work. <\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1657002104972c337b": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Creating Wealth",
+        "image": "shopify:\/\/shop_images\/Esops.jpg",
+        "image_position": "left",
+        "content": "<p>Wealth creation for employees is 'the most important' employee value proposition for us.<\/p>",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1657000072015806a8": {
+      "type": "text-with-image",
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Our Investors, Partners, and the ones who share our core values",
+        "image_position": "left",
+        "content": "",
+        "link_text": "",
+        "link_url": ""
+      }
+    },
+    "1656920226a9a6af96": {
+      "type": "logo-slider",
+      "blocks": {
+        "ecbf9a9b-a850-478c-afad-1b4cd1d9f7ff": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0002_Patni_Invetments_1.jpg",
+            "linkurl1": ""
+          }
+        },
+        "8ebc890d-afc4-41c7-b143-3c1c53a87a9b": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0001_Gil_Investments_1_9a79a9b4-9229-4066-be60-f1fb9450fbf6.jpg",
+            "linkurl1": ""
+          }
+        },
+        "e4d22e08-3fe1-4bf8-aba1-3a8e69777143": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0000_Singularity_1.jpg",
+            "linkurl1": ""
+          }
+        },
+        "8da19d40-0dd0-4527-b9b0-9be78ee9eeab": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0007_Firesideventures.jpg",
+            "linkurl1": ""
+          }
+        },
+        "67c67e99-4497-47a3-b6e3-a1f673886082": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0006_Colgate_Palmolive.jpg",
+            "linkurl1": ""
+          }
+        },
+        "65eef26e-b65f-44a0-83b7-7d43ed7df2f1": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0005_Sixth_Sense.jpg",
+            "linkurl1": ""
+          }
+        },
+        "036ea235-75e4-47b4-9b74-2ff109c12544": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0004_Reckitt.jpg",
+            "linkurl1": ""
+          }
+        },
+        "d3adc48b-5924-4902-8254-be72e2742f9b": {
+          "type": "testimonial",
+          "settings": {
+            "image1": "shopify:\/\/shop_images\/Investors_0003_Malabar_Investments.jpg",
+            "linkurl1": ""
+          }
+        }
+      },
+      "block_order": [
+        "ecbf9a9b-a850-478c-afad-1b4cd1d9f7ff",
+        "8ebc890d-afc4-41c7-b143-3c1c53a87a9b",
+        "e4d22e08-3fe1-4bf8-aba1-3a8e69777143",
+        "8da19d40-0dd0-4527-b9b0-9be78ee9eeab",
+        "67c67e99-4497-47a3-b6e3-a1f673886082",
+        "65eef26e-b65f-44a0-83b7-7d43ed7df2f1",
+        "036ea235-75e4-47b4-9b74-2ff109c12544",
+        "d3adc48b-5924-4902-8254-be72e2742f9b"
+      ],
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "015f2e61-e0e6-4d20-9f6f-cdca24e47b7e",
+    "166013232906dd5c55",
+    "main",
+    "1657002728e8f20463",
+    "165700266589bd0930",
+    "1657002938b45262f8",
+    "1660646065c6e32f63",
+    "16569204105c7c853c",
+    "1657008212f4b36649",
+    "1656921004ca437eeb",
+    "1656921254dc66b902",
+    "165692143566288825",
+    "1656921504bb0bc26d",
+    "1657001990fd977e68",
+    "16570020915fe1c769",
+    "1657002099ceefe9f1",
+    "1657002104972c337b",
+    "1657000072015806a8",
+    "1656920226a9a6af96"
+  ]
+}
