@@ -155,9 +155,22 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
   <script>
     //SLick slider initialize
     $('.dotd-slider').slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      centerMode: false,
       infinite: true,
-      slidesToShow: 3,
-      slidesToScroll: 3
+       arrows:false,
+responsive: [ {
+        breakpoint: 480,
+        settings: {
+          initialSlide: 1,
+          centerMode: true,
+          centerPadding: '40px',
+          slidesToShow: 1,
+          settings: 'unslick'
+        }
+      }]
+
     });
   </script>
 {% schema %}
