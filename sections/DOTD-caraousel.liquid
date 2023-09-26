@@ -13,7 +13,7 @@
     margin-top: -9px;
     border-radius: 0px 0px 5px 5px;
 }
-.dotd-banner h2{text-align;:center}
+.dotd-banner h2{text-align:center}
 
 .dotd-banner img{width:34%}
   .dotd-img {
@@ -77,7 +77,9 @@ span.dotd-mrpp{font-size:18px; font-weight: 700;}
     p.priced {
     margin-bottom: 9px;
 }
-
+@media(max-width:450px){
+  .dotd-banner img{width:100%}
+}
 </style>
 {% for block in section.blocks %}
   {%- assign dotd-one = all_products[block.settings.dotd-prod-one] -%}
