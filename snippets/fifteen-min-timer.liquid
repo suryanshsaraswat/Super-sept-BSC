@@ -1,7 +1,7 @@
 <div id="timer-fifteen" style="display:none">Deal ends in: <br>
-  <span class="dotd-timer" id="minutes">00</span>m
-  <span class="dotd-timer" id="seconds">00</span>s
-  <span class="dotd-timer" id="milliseconds">000</span>ms
+  <span class="dotd-timer" id="minutess">00</span>m
+  <span class="dotd-timer" id="secondss">00</span>s
+  <span class="dotd-timer" id="millisecondss">000</span>ms
 </div>
 <script>
   $(document).ready(function() {
@@ -22,9 +22,9 @@
           $("#seconds").text("00");
           $("#milliseconds").text("000");
         } else { // Calculate remaining time
-          var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-          var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
-          var milliseconds = timeDifference % 1000;
+          var minutess = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+          var secondss = Math.floor((timeDifference % (1000 * 60)) / 1000);
+          var millisecondss = timeDifference % 1000;
 
 // Display the remaining time
           $("#minutes").text(minutes.toString().padStart(2, '0'));
