@@ -1,0 +1,110 @@
+<style>
+  .timeline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .step {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .line {
+    flex-grow: 1;
+    height: 3px;
+    background-color: #ccc;
+  }
+
+  .completed {
+    background-color: blue;
+  }
+</style>
+<div class="timeline">
+  <div class="step">
+    <div class="order-confirm">
+      <h2><img
+          src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shopping-bag.png?v=1695730115"
+          style="width:30px;height:30px"
+          alt="order confirmed"></h2>
+      Order confirmed
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="step">
+    <div class="order-confirm">
+      <h2><img
+          src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shopping-bag.png?v=1695730115"
+          style="width:30px;height:30px"
+          alt="order confirmed"></h2>
+      Order confirmed
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="step">
+    <div class="order-confirm">
+      <h2><img
+          src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shopping-bag.png?v=1695730115"
+          style="width:30px;height:30px"
+          alt="order confirmed"></h2>
+      Order confirmed
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="step">
+    <div class="order-confirm">
+      <h2><img
+          src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shopping-bag.png?v=1695730115"
+          style="width:30px;height:30px"
+          alt="order confirmed"></h2>
+      Order confirmed
+    </div>
+  </div>
+  <div class="line"></div>
+  <div class="step">
+    <div class="order-confirm">
+      <h2><img
+          src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/shopping-bag.png?v=1695730115"
+          style="width:30px;height:30px"
+          alt="order confirmed"></h2>
+      Order confirmed
+    </div>
+  </div>
+</div>
+<script>
+  // Function to mark a step as completed
+  function markStepCompleted(stepNumber) {
+    const steps = document.querySelectorAll('.step');
+    const lines = document.querySelectorAll('.line');
+
+// Reset all steps and lines to default color
+    for (let i = 0; i < steps.length; i++) {
+      steps[i].classList.remove('completed');
+      lines[i].classList.remove('completed');
+    }
+
+// Mark the specified step and the lines before it as completed
+    for (let i = 0; i < stepNumber; i++) {
+      steps[i].classList.add('completed');
+      if (i > 0) {
+        lines[i - 1].classList.add('completed');
+      }
+    }
+  }
+
+// Check if a step has been completed and mark it accordingly
+  window.addEventListener('load', () => {
+
+// You can replace '3' with the actual step number that has been completed
+    const completedStep = 3;
+    markStepCompleted(completedStep);
+  });
+</script>

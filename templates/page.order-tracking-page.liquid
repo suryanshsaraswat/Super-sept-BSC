@@ -145,8 +145,11 @@
   </div>
   <div class="data-v-{{block}}" id="order-track">
     <div class="col-12">
-      <div class="heading">
+      <div class="heading-otp">
         <h2>Hi, {{ customer.name }}</h2>
+      </div>
+      <div class="otp-timeline">
+        {% render 'order-timeline' %}
       </div>
     </div>
   </div>
