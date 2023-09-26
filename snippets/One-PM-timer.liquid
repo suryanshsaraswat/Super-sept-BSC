@@ -1,0 +1,45 @@
+<div class="dotd-contdown" id="dotd-countdown">
+  <span class="dotd-countdown-item" id="hours"></span>
+  <span class="dotd-countdown-item" id="minutes"></span>
+  <span class="dotd-countdown-item" id="seconds"></span>
+</div>
+<script>
+  // Function to calculate and display the countdown
+  function updateCountdown() {
+
+// Get the current date and time
+    const now = new Date();
+
+// Set the target time to 1 PM
+    const targetTime = new Date();
+    targetTime.setHours(13, 0, 0, 0);
+
+// 1 PM
+
+// Calculate the time difference
+    let timeDiff = targetTime - now;
+
+    if (timeDiff < 0) { // If the target time has already passed for today, set it for tomorrow
+      targetTime.setDate(targetTime.getDate() + 1);
+      timeDiff = targetTime - now;
+    }
+
+// Calculate hours, minutes, and seconds
+    const hours = Math.floor(timeDiff / (1000 * 60 * 60));
+    timeDiff -= hours * 1000 * 60 * 60;
+    const minutes = Math.floor(timeDiff / (1000 * 60));
+    timeDiff -= minutes * 1000 * 60;
+    const seconds = Math.floor(timeDiff / 1000);
+
+// Display the countdown in the respective spans
+    $("#hours").text(`${hours} H`);
+    $("#minutes").text(`${minutes} M`);
+    $("#seconds").text(`${seconds} S`);
+  }
+
+// Update the countdown every second
+  setInterval(updateCountdown, 1000);
+
+// Initial call to display the countdown
+  updateCountdown();
+</script>
