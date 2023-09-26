@@ -8,9 +8,9 @@
     function updateTimer() {
       var currentTime = new Date();
       var targetStartTime = new Date();
-      targetStartTime.setHours(13, 0, 0, 0);
+      targetStartTime.setHours(15, 30, 0, 0);
       var targetEndTime = new Date();
-      targetEndTime.setHours(13, 15, 0, 0);
+      targetEndTime.setHours(15, 45, 0, 0);
 
       if (currentTime >= targetStartTime && currentTime <= targetEndTime) { // Show the timer if it's between 1:00 PM and 1:15 PM IST
         $("#timer").show();
