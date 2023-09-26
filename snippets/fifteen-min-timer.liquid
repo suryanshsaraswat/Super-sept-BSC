@@ -17,19 +17,19 @@
         var timeDifference = targetEndTime - currentTime;
 
         if (timeDifference <= 0) { // Timer has ended
-          $("#timer-label").text("Timer Ended: ");
-          $("#minutes").text("00");
-          $("#seconds").text("00");
-          $("#milliseconds").text("000");
+          $("#timer-fifteen").text("Timer Ended: ");
+          $("#minutess").text("00");
+          $("#secondss").text("00");
+          $("#millisecondss").text("000");
         } else { // Calculate remaining time
           var minutess = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
           var secondss = Math.floor((timeDifference % (1000 * 60)) / 1000);
           var millisecondss = timeDifference % 1000;
 
 // Display the remaining time
-          $("#minutes").text(minutes.toString().padStart(2, '0'));
-          $("#seconds").text(seconds.toString().padStart(2, '0'));
-          $("#milliseconds").text(milliseconds.toString().padStart(3, '0'));
+          $("#minutess").text(minutes.toString().padStart(2, '0'));
+          $("#secondss").text(seconds.toString().padStart(2, '0'));
+          $("#millisecondss").text(milliseconds.toString().padStart(3, '0'));
         }
       } else { // Hide the timer if it's not between 1:00 PM and 1:15 PM IST
         $("#timer-fifteen").hide();
