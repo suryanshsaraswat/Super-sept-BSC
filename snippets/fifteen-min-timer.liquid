@@ -12,31 +12,28 @@
       var targetEndTime = new Date();
       targetEndTime.setHours(15, 45, 0, 0);
 
-      if (currentTime >= targetStartTime && currentTime <= targetEndTime) { // Show the timer if it's between 1:00 PM and 1:15 PM IST
-        $("#timer").show();
+      if (currentTime >= targetStartTime && currentTime <= targetEndTime) {
+        $("#timer-fifteen").show();
         var timeDifference = targetEndTime - currentTime;
 
         if (timeDifference <= 0) { // Timer has ended
-          $("#timer-fifteen").text("Timer Ended: ");
           $("#minutess").text("00");
           $("#secondss").text("00");
           $("#millisecondss").text("000");
-        } else { // Calculate remaining time
-          var minutess = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
-          var secondss = Math.floor((timeDifference % (1000 * 60)) / 1000);
-          var millisecondss = timeDifference % 1000;
+        } else {
+          var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+          var milliseconds = timeDifference % 1000;
 
-// Display the remaining time
           $("#minutess").text(minutes.toString().padStart(2, '0'));
           $("#secondss").text(seconds.toString().padStart(2, '0'));
           $("#millisecondss").text(milliseconds.toString().padStart(3, '0'));
         }
-      } else { // Hide the timer if it's not between 1:00 PM and 1:15 PM IST
+      } else {
         $("#timer-fifteen").hide();
       }
     }
 
-// Update the timer every 100 milliseconds
     setInterval(updateTimer, 100);
   });
 </script>
