@@ -521,7 +521,7 @@ navcol{animation:instacol 4s linear infinite}
 .stl-separator p:last-child{margin-bottom:.6em}
 @media (max-width:640px) {
 .Footer__Block.Footer__Block--links{order:1;width:50%}
-#section-footer .Footer__Inner{display:flex;flex-wrap:wrap}
+#section-footer .Footer__Inner{display:flex;flex-wrap:wrap;align-items: center;}
 .Footer__Copyright a{display:block}
 .Footer__Copyright a.generl-l{display:inline-block;margin-top:10px}
 .Footer__Block.Footer__Block--newsletter{order:0;width:100%}
