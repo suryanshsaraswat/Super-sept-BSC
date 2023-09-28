@@ -150,8 +150,8 @@
               {%- case block.type -%}
                 {%- when '@app' -%}
                 {%- render block -%}
-                {%- when 'product_meta' -%}
-                {%- render 'product-meta', form: form, block: block, product: product -%}
+                {%- when 'DOTD_meta' -%}
+                {%- render 'DOTD_meta', form: form, block: block, product: product -%}
 
                 {%- when 'description' -%}
                 {%- if product.description != blank -%}
