@@ -60,7 +60,7 @@
 {%- capture section_settings -%}
   {
   "enableHistoryState": false,
-                                  "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
+                                        "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
   "templateSuffix": {{ product.template_suffix | json }},
   "showInventoryQuantity":
   {% if inventory_block != blank %}true{% else %}false{% endif %},
@@ -467,7 +467,7 @@
 
 {% schema %}
   {
-    "name": "Deal of the Day",
+    "name": "DOTD Auto ATC",
     "class": "shopify-section--bordered",
     "blocks": [
       {
@@ -644,7 +644,7 @@
     "presets": [
       {
         "category": "Product",
-        "name": "Deal of the day",
+        "name": "DOTD Auto ATC",
         "blocks": [
           {
             "type": "product_meta",
