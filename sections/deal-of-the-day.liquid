@@ -288,7 +288,7 @@
                       {% else %}
                       <button>Notify me</button>
                       {% endif %}
-                    {% if product.type == 'DOTD - Duplicate' %}
+                    {% comment %}{% if product.type == 'DOTD - Duplicate' %}
                       <button
                         type="submit"
                         data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}"
@@ -318,7 +318,7 @@
                           {{- 'product.form.sold_out' | t -}}
                         {%- endif -%}
                       </button>
-                    {% endif %}
+                    {% endif %}{% endcomment %}
 
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
