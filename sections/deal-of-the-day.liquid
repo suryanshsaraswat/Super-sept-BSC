@@ -150,9 +150,14 @@
               {%- case block.type -%}
                 {%- when '@app' -%}
                 {%- render block -%}
-
-                {%- when 'product_meta' -%}
+                {% if show_atc %}
+                {% comment %}{%- when 'product_meta' -%}{% endcomment %}
                 {%- render 'product-meta', form: form, block: block, product: product -%}
+          {% else %}
+                  <div class="ProductMeta__PriceList Heading">
+                    <span class="ProductMeta__Price Price Text--subdued u-h4">Rs.1</span>
+                  </div>
+          {% endif %}
 
                 {%- when 'description' -%}
                 {%- if product.description != blank -%}
