@@ -62,6 +62,7 @@
         {% endif %}
         {% else %}
         <div class="dotd-price">
+          {{ curr_time }}
           <span class="ProductMeta__Price Price Price--compareAt Text--subdued u-h4">MRP 3 {{ product.selected_or_first_available_variant.compare_at_price | money_with_currency }}</span>
         </div>
         {% endif %}
