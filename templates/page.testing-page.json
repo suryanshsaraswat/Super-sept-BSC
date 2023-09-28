@@ -65,24 +65,24 @@
       "settings": {
       }
     },
-    "db84d454-d8a5-4521-bc59-b4e475e6a786": {
-      "type": "DOTD-auto-atc",
+    "368c8807-7bdc-4e9a-ba4d-478c33f6c50f": {
+      "type": "DOTD-NEW",
       "blocks": {
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-product_meta-1": {
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-product_meta-1": {
           "type": "product_meta",
           "settings": {
-            "show_vendor": false,
+            "show_vendor": true,
             "show_sku": false,
             "show_product_rating": false,
             "show_taxes_included": false
           }
         },
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-share_buttons-1": {
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-share_buttons-1": {
           "type": "share_buttons",
           "settings": {
           }
         },
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-variant_selector-1": {
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-variant_selector-1": {
           "type": "variant_selector",
           "settings": {
             "selector_mode": "dropdown",
@@ -91,7 +91,7 @@
             "size_chart": ""
           }
         },
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-buy_buttons-1": {
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
             "show_price_in_button": false,
@@ -100,15 +100,15 @@
         }
       },
       "block_order": [
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-product_meta-1",
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-share_buttons-1",
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-variant_selector-1",
-        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-buy_buttons-1"
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-product_meta-1",
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-share_buttons-1",
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-variant_selector-1",
+        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-buy_buttons-1"
       ],
       "settings": {
         "subheading": "",
-        "title": "",
-        "show_headings_on_mobile": false,
+        "title": "Deal of the day",
+        "show_headings_on_mobile": true,
         "product": "charcoal-face-pack-100g",
         "show_timer": false
       }
@@ -121,6 +121,6 @@
     "343eb766-4d79-4cd2-a099-2977ec92acd2",
     "43e21d3f-5c52-4fb1-ba50-97fd7fc1d361",
     "77caece0-b222-42ce-a482-83606b4bce73",
-    "db84d454-d8a5-4521-bc59-b4e475e6a786"
+    "368c8807-7bdc-4e9a-ba4d-478c33f6c50f"
   ]
 }
