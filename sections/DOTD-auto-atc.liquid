@@ -51,6 +51,7 @@
     position: relative;
   }
 </style>
+{%- assign curr_time = {{ "now" | date: "%Y-%m-%d %H:%M" }} -%}
 {%- assign product = all_products[section.settings.product] -%}
 
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
@@ -60,7 +61,7 @@
 {%- capture section_settings -%}
   {
   "enableHistoryState": false,
-                                                "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
+                                                  "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
   "templateSuffix": {{ product.template_suffix | json }},
   "showInventoryQuantity":
   {% if inventory_block != blank %}true{% else %}false{% endif %},
@@ -113,7 +114,7 @@
                 <div id="timer-container">
                   {% render '15-min-timer' %}</div>
               {% endif %}
-              <p>This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
+              <p>This page was last updated at {{ curr_time }}.</p>
             </div>
             {%- capture supported_sizes -%}
               {%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
