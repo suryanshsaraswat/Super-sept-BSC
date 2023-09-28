@@ -64,6 +64,54 @@
       ],
       "settings": {
       }
+    },
+    "db84d454-d8a5-4521-bc59-b4e475e6a786": {
+      "type": "DOTD-auto-atc",
+      "blocks": {
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-product_meta-1": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-share_buttons-1": {
+          "type": "share_buttons",
+          "settings": {
+          }
+        },
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-variant_selector-1": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-product_meta-1",
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-share_buttons-1",
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-variant_selector-1",
+        "template--16174120829082__db84d454-d8a5-4521-bc59-b4e475e6a786-buy_buttons-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_headings_on_mobile": false,
+        "product": "charcoal-face-pack-100g",
+        "show_timer": false
+      }
     }
   },
   "order": [
@@ -72,6 +120,7 @@
     "5f373e30-2370-4272-b053-1ec2189c0fa2",
     "343eb766-4d79-4cd2-a099-2977ec92acd2",
     "43e21d3f-5c52-4fb1-ba50-97fd7fc1d361",
-    "77caece0-b222-42ce-a482-83606b4bce73"
+    "77caece0-b222-42ce-a482-83606b4bce73",
+    "db84d454-d8a5-4521-bc59-b4e475e6a786"
   ]
 }
