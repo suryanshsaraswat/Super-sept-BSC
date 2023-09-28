@@ -209,12 +209,62 @@
         "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
         "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
       ],
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
         "show_headings_on_mobile": true,
         "product": "shea-butter-moisturizer",
         "show_timer": true
+      }
+    },
+    "586ecfb3-41e0-4a1f-a640-92657c9f3d28": {
+      "type": "DOTD-NEW",
+      "blocks": {
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-product_meta-1": {
+          "type": "product_meta",
+          "settings": {
+            "show_vendor": false,
+            "show_sku": false,
+            "show_product_rating": false,
+            "show_taxes_included": false
+          }
+        },
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-share_buttons-1": {
+          "type": "share_buttons",
+          "disabled": true,
+          "settings": {
+          }
+        },
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-variant_selector-1": {
+          "type": "variant_selector",
+          "settings": {
+            "selector_mode": "dropdown",
+            "show_color_swatch": false,
+            "show_color_carousel": false,
+            "size_chart": ""
+          }
+        },
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-buy_buttons-1": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_price_in_button": false,
+            "show_payment_button": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-product_meta-1",
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-share_buttons-1",
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-variant_selector-1",
+        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-buy_buttons-1"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "show_headings_on_mobile": true,
+        "product": "shea-butter-moisturizer",
+        "show_timer": false
       }
     },
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
@@ -897,6 +947,7 @@
     "featured-collections",
     "7ebf82e3-7df8-4207-8462-3331c5e90551",
     "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
+    "586ecfb3-41e0-4a1f-a640-92657c9f3d28",
     "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "bc80b36d-469e-4b30-9628-17cebf026bb4",
     "2a4ccd55-76ba-43e7-9790-ba7c69e571f4",
