@@ -52,9 +52,9 @@
   }
 </style>
 {%- assign product = all_products[section.settings.product] -%}
-{%- assign curr_time =  "now" | date: "%H:%M" -%}
+{%- assign curr_time =  "now" | date: "%H%M" -%}
 {%- assign show_atc = false -%}
-{% if curr_time >= '11:58' and curr_time<= '12:02' %}
+{% if curr_time >= '1158' and curr_time<= '1204' %}
   {%- assign show_atc = true -%}
   {% endif %}
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
