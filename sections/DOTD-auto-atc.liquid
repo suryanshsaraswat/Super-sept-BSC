@@ -51,10 +51,11 @@
     position: relative;
   }
 </style>
-{%- assign curr_time =  "now" | date: "%Y-%m-%d %H:%M" -%}
+{%- assign curr_time = "now" | date: "%Y-%m-%d %H:%M" -%}
 {% assign show_atc = false %}
 {% if curr_time == '13:00' %}
-{% assign show_atc = true %}
+  {% assign show_atc = true %}
+{% endif %}
 {%- assign product = all_products[section.settings.product] -%}
 
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
@@ -64,7 +65,7 @@
 {%- capture section_settings -%}
   {
   "enableHistoryState": false,
-                                                  "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
+      "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
   "templateSuffix": {{ product.template_suffix | json }},
   "showInventoryQuantity":
   {% if inventory_block != blank %}true{% else %}false{% endif %},
@@ -118,10 +119,10 @@
                   {% render '15-min-timer' %}</div>
               {% endif %}
               {% if show_atc %}
-              <p>This page was last updted at {{ curr_time }}.</p>
-              {%  else %}
-              <p>time is working</p>
-            {% endif %}
+                <p>This page was last updted at {{ curr_time }}.</p>
+              {% else %}
+                <p>time is working</p>
+              {% endif %}
             </div>
             {%- capture supported_sizes -%}
               {%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
