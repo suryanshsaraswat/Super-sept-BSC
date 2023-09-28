@@ -71,7 +71,7 @@
         "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-product_meta-1": {
           "type": "product_meta",
           "settings": {
-            "show_vendor": true,
+            "show_vendor": false,
             "show_sku": false,
             "show_product_rating": false,
             "show_taxes_included": false
@@ -107,10 +107,10 @@
       ],
       "settings": {
         "subheading": "",
-        "title": "Deal of the day",
+        "title": "",
         "show_headings_on_mobile": true,
         "product": "charcoal-face-pack-100g",
-        "show_timer": false
+        "show_timer": true
       }
     }
   },
