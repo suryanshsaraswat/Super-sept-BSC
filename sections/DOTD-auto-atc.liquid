@@ -63,7 +63,7 @@
 {%- capture section_settings -%}
   {
   "enableHistoryState": false,
-                                                    "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
+                                                      "usePlaceholder":{% if product == empty %}true{% else %}false{% endif %},
   "templateSuffix": {{ product.template_suffix | json }},
   "showInventoryQuantity":
   {% if inventory_block != blank %}true{% else %}false{% endif %},
@@ -146,7 +146,6 @@
 
         <div class="FeaturedProduct__Info">
           {%- assign has_ouputted_variant_selector = false -%}
-
           {%- form 'product', product, class: 'ProductForm' -%}
             {%- render 'product-data', product: product -%}
 
