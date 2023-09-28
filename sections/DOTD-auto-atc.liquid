@@ -113,7 +113,7 @@
                 <div id="timer-container">
                   {% render '15-min-timer' %}</div>
               {% endif %}
-              <p>This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
+              <p>This page was last updated at {{ curr_time }}.</p>
             </div>
             {%- capture supported_sizes -%}
               {%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
