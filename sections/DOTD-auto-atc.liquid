@@ -53,10 +53,6 @@
 </style>
 {%- assign product = all_products[section.settings.product] -%}
 {%- assign curr_time =  "now" | date: "%Y-%m-%d %H:%M" -%}
-{%- assign show_atc = false -%}
-{% if curr_time == '13:00' %}
-  {%- assign show_atc = true -%}
-  {% endif %}
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
 {%- assign inventory_block = section.blocks | where: 'type', 'inventory' | first -%}
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
