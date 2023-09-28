@@ -51,7 +51,7 @@
     position: relative;
   }
 </style>
-{%- assign curr_time = {{ "now" | date: "%Y-%m-%d %H:%M" }} -%}
+{%- assign curr_time =  "now" | date: "%Y-%m-%d %H:%M" -%}
 {% assign show_atc = false %}
 {% if curr_time == '13:00' %}
 {% assign show_atc = true %}
