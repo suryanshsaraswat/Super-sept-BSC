@@ -52,11 +52,7 @@
   }
 </style>
 {%- assign product = all_products[section.settings.product] -%}
-{%- assign curr_time = "now" | date:"%H%M" -%}
-{%- assign show_atc = false -%}
-{% if show_atc %}
-  {% assign show_atc = true %}
-{% endif %}
+
 {%- assign meta_block = section.blocks | where: 'type', 'product_meta' | first -%}
 {%- assign inventory_block = section.blocks | where: 'type', 'inventory' | first -%}
 {%- assign buy_buttons_block = section.blocks | where: 'type', 'buy_buttons' | first -%}
@@ -150,8 +146,9 @@
               {%- case block.type -%}
                 {%- when '@app' -%}
                 {%- render block -%}
-                
-                {%- render 'DOTD_meta' -%}
+
+                {%- when 'product_meta' -%}
+                {%- render 'product-meta', form: form, block: block, product: product -%}
 
                 {%- when 'description' -%}
                 {%- if product.description != blank -%}
@@ -262,32 +259,7 @@
                     }
                     </style>
                     {%- endif -%}{% endcomment %}
-                    {% if show_atc %}
-                      <button
-                        type="submit"
-                        data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}"
-                        class="ProductForm__AddToCart Button {% if product.selected_or_first_available_variant.available and use_primary_button %}Button--primary{% else %}Button--secondary{% endif %}"
-                        {% if product.selected_or_first_available_variant.available %}data-action="add-to-cart"{% else %}disabled="disabled"{% endif %}>
-                        {%- if product.selected_or_first_available_variant.available -%}
-                          <span>
-                            {% if product.template_suffix == 'pre-order' %}
-                              {{ 'product.form.pre_order' | t }}
-                            {% else %}
-                              {{ 'product.form.add_to_cart' | t }}{% endif %}
-                          </span>
-
-                          {%- if block.settings.show_price_in_button -%}
-                            <span class="Button__SeparatorDot"></span>
-                            <span>{{ product.selected_or_first_available_variant.price | money }}</span>
-                          {%- endif -%}
-                        {%- else -%}
-                          {{- 'product.form.sold_out' | t -}}
-                        {%- endif -%}
-                      </button>
-                      {% else %}
-                      <button class="Button Button-primary notify-me">NOTIFY ME 🔔</button>
-                      {% endif %}
-                    {% comment %}{% if product.type == 'DOTD - Duplicate' %}
+                    {% if product.type == 'DOTD - Duplicate' %}
                       <button
                         type="submit"
                         data-use-primary-button="{% if use_primary_button %}true{% else %}false{% endif %}"
@@ -317,7 +289,7 @@
                           {{- 'product.form.sold_out' | t -}}
                         {%- endif -%}
                       </button>
-                    {% endif %}{% endcomment %}
+                    {% endif %}
 
                     {%- if block.settings.show_payment_button and product.template_suffix != 'pre-order' -%}
                       {{ form | payment_button }}
