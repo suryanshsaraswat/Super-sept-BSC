@@ -182,9 +182,22 @@
   }
   .inner-details {
     max-width: 100%;
-    width: 700px;
+    width: 1000px;
     margin: 0 auto;
-  }
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #c1c1c1;
+}
+h2.order-heading{position: relative;margin-bottom: 20px;}
+h2.order-heading::after{content:""; position: absolute; width:100px; height:1px; background-color: #000;}
+tbody.order-table td {
+    padding-right: 45px;
+    display: table-cell;
+    padding-bottom: 21px;
+    font-size: 17px;
+    font-weight: 800;
+}
   @media(max-width:450px) {
     .order-tracking-details {
       width: 350px;
