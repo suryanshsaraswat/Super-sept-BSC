@@ -33,6 +33,15 @@
       {{ product.metafields.my_fields.long-description.value }}
     </div>
   </div>
+  {% if product.metafields.my_fields.faq != blank %}<div class="set custom">
+    <a href="#" class="active">
+      Frequently Asked Question
+      <i class="fa-minus"></i>
+    </a>
+    <div class="content cust" style="display:block">
+      {{ product.metafields.my_fields.faq }}
+    </div>
+  </div>{% endif %}
   {% else %}
     <div class="set custom" style="display:none">
     <a href="#" class="active">

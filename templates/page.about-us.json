@@ -1,5 +1,11 @@
 {
   "sections": {
+    "67678273-e6e5-46d3-97aa-c97f9735b1e4": {
+      "type": "featured-video-custom",
+      "settings": {
+        "video_urll": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/08314cf350fc48b6b315a009d20d22cc.mp4"
+      }
+    },
     "015f2e61-e0e6-4d20-9f6f-cdca24e47b7e": {
       "type": "background-video",
       "disabled": true,
@@ -30,6 +36,7 @@
       "block_order": [
         "16601323294dff1535-0"
       ],
+      "disabled": true,
       "settings": {
         "show_fullscreen": false,
         "show_arrow": false,
@@ -411,6 +418,7 @@
     }
   },
   "order": [
+    "67678273-e6e5-46d3-97aa-c97f9735b1e4",
     "015f2e61-e0e6-4d20-9f6f-cdca24e47b7e",
     "166013232906dd5c55",
     "main",

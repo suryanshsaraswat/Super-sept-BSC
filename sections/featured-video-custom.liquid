@@ -1,0 +1,30 @@
+<div class="feat_video">
+  <video class="video_inner" width="100%" autoplay playsinline muted>
+    <source src="{{ section.settings.video_urll }}" type ="video/mp4">
+  </video>
+</div>
+{% schema %}
+  {
+    "name": "Featured VIDEO",
+    "settings": [
+      {
+        "type":"url",
+        "id":"video_urll",
+        "label":"Enter video URL"
+      }
+    ],
+    "presets":[
+      {
+        "category":"video",
+        "name":"Featured VIDEO"
+      }
+    ]
+    
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
