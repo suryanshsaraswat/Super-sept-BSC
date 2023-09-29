@@ -1222,12 +1222,6 @@
           "optimization_level": "extreme"
         }
       },
-      "6707720970142525307": {
-        "type": "shopify:\/\/apps\/wowcart-slide-cart-drawer\/blocks\/app-embed\/4937864d-0d20-45b2-9969-e04d09531787",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "225325725576874": {
         "type": "shopify:\/\/apps\/ms-coupon-discount-on-cart\/blocks\/voila_new_theme\/41ea0aaa-9bb3-4283-8fe9-9a18db60eec3",
         "disabled": true,
