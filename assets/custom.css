@@ -1054,3 +1054,7 @@ h2.cbb-frequently-bought-title.translatable.Heading.u-h3 {
 p.coupon {
     margin-top: -5px;
 }
+.download-offer-app{display: none;}
+@media(max-width:450px){
+  .download-offer-app{display: flex;}
+}
