@@ -56,10 +56,10 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8": {
-      "type": "deal-of-the-day",
+    "7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2": {
+      "type": "DOTD-NEW",
       "blocks": {
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-product_meta-1": {
+        "template--16174120435866__7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2-product_meta-1": {
           "type": "product_meta",
           "settings": {
             "show_vendor": false,
@@ -68,12 +68,7 @@
             "show_taxes_included": false
           }
         },
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-share_buttons-1": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-variant_selector-1": {
+        "template--16174120435866__7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2-variant_selector-1": {
           "type": "variant_selector",
           "settings": {
             "selector_mode": "dropdown",
@@ -82,31 +77,24 @@
             "size_chart": ""
           }
         },
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-buy_buttons-1": {
+        "template--16174120435866__7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2-buy_buttons-1": {
           "type": "buy_buttons",
           "settings": {
             "show_price_in_button": false,
             "show_payment_button": false
           }
-        },
-        "ba7020d4-8f5a-4899-91f0-bd7b2b1f7c11": {
-          "type": "image",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-product_meta-1",
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-share_buttons-1",
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-variant_selector-1",
-        "template--16174120435866__c8eb8c4f-6691-48ca-8652-c88ef8bbaba8-buy_buttons-1",
-        "ba7020d4-8f5a-4899-91f0-bd7b2b1f7c11"
+        "template--16174120435866__7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2-product_meta-1",
+        "template--16174120435866__7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2-variant_selector-1",
+        "template--16174120435866__7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2-buy_buttons-1"
       ],
       "settings": {
         "subheading": "",
         "title": "",
-        "show_headings_on_mobile": false,
-        "product": "charcoal-face-pack-100g",
+        "show_headings_on_mobile": true,
+        "product": "shea-butter-moisturizer",
         "show_timer": true
       }
     },
@@ -766,7 +754,7 @@
     "cc554b5c-5b4b-46b0-9d10-f1d8d750fc18",
     "abc91fed-5da0-4a70-9813-526390a02fb0",
     "c951b4a8-0d60-4c33-b802-2ce3079de1ec",
-    "c8eb8c4f-6691-48ca-8652-c88ef8bbaba8",
+    "7bd1ada1-fbd3-4dc1-8a7b-186f91fd6ad2",
     "10ef4252-450e-4bab-9528-403e924d6b7f",
     "3312ee99-f42b-49c0-ab2e-8d1a81312ad3",
     "a80a7979-f61a-4446-a367-5b78eaf3ae50",
