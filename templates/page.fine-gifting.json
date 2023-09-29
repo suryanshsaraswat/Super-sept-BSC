@@ -86,7 +86,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/Desktop_20803116-21ae-41bc-b043-dc9820847f4c.jpg",
             "imags2": "shopify:\/\/shop_images\/Mobile_9a45ae21-0ff6-4d16-98ce-42a5a56b0fb6.jpg",
-            "linkk": "#"
+            "linkk": "#",
+            "change_banner": ""
           }
         },
         "1b01dac1-dfe2-4bb4-a7c1-aeaadecc250a": {
@@ -95,7 +96,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/1920X650_26_b6985b8b-55e0-444e-b92c-ed7ce570ecc8.jpg",
             "imags2": "shopify:\/\/shop_images\/800X600_27_1d82ecfb-299b-4950-814b-5889decddc99.jpg",
-            "linkk": "#"
+            "linkk": "#",
+            "change_banner": ""
           }
         }
       },
@@ -183,6 +185,7 @@
         },
         "3c6ccacd-b880-40f9-9b06-d893d0559119": {
           "type": "Product",
+          "disabled": true,
           "settings": {
             "featured_product": "grey-beard-trimmer",
             "featured_image-1": "shopify:\/\/shop_images\/card_1_c5625443-1474-4a01-bb1f-4fe5f6488f07.jpg",
@@ -490,7 +493,8 @@
           "settings": {
             "imags": "shopify:\/\/shop_images\/GenericGifting_1920x650_d3473a8c-3447-420b-951b-3191199893d0.webp",
             "imags2": "shopify:\/\/shop_images\/GenericGifting_800x600_6ca1c14d-482c-401f-af64-f1f44533b948.webp",
-            "linkk": "#"
+            "linkk": "#",
+            "change_banner": ""
           }
         }
       },
