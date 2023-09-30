@@ -72,14 +72,13 @@
         "10a7dbad-2281-4f15-8aa4-4547e4ceedf8": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/Foam_Model.jpg"
+            "imags": "shopify:\/\/shop_images\/foam_web.jpg"
           }
         }
       },
       "block_order": [
         "10a7dbad-2281-4f15-8aa4-4547e4ceedf8"
       ],
-      "disabled": true,
       "settings": {
       }
     },
@@ -185,14 +184,13 @@
         "8d92bece-576f-444b-a7af-dff7eff61393": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/Razor_Model.jpg"
+            "imags": "shopify:\/\/shop_images\/razor_kit_web.jpg"
           }
         }
       },
       "block_order": [
         "8d92bece-576f-444b-a7af-dff7eff61393"
       ],
-      "disabled": true,
       "settings": {
       }
     },
