@@ -3,6 +3,22 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/web_e360c613-0763-4ce9-912c-d47c28bffabc.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_f4629067-0db7-4cd3-8f7d-b0469646f6ac.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
         "67196537-fdd7-4650-8470-a114bb26a984": {
           "type": "image",
           "settings": {
@@ -93,32 +109,16 @@
             "button_2_text": "",
             "button_2_link": ""
           }
-        },
-        "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/desktop-banner_f837fbbe-17f0-43fc-967d-b34249b349b6.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile-banner_b3dfde2c-b421-4b73-bea3-a471d92b6359.jpg",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "https:\/\/mybombae.in\/pages\/blue-heaven-x-bombae?utm_source=BombayShavingCompany&utm_medium=Website&utm_campaign=BSC&utm_id=BSC",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
         }
       },
       "block_order": [
+        "ab7168f3-b05d-42b3-9351-583cedcbdc26",
         "67196537-fdd7-4650-8470-a114bb26a984",
         "c8020995-17d9-45cd-9d3e-bc02aba3dbdf",
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852",
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f",
         "32ffea8a-df40-4983-91f2-b49a91203d66",
-        "e791ec55-e8d4-48b2-826b-f2567c828c26",
-        "ab7168f3-b05d-42b3-9351-583cedcbdc26"
+        "e791ec55-e8d4-48b2-826b-f2567c828c26"
       ],
       "settings": {
         "show_fullscreen": false,
