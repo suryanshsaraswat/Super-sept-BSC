@@ -1,7 +1,26 @@
 {
   "sections": {
+    "1372b100-c444-4550-88a9-5869a3842a36": {
+      "type": "single-banner",
+      "blocks": {
+        "bb9e1148-3f0a-40ee-a421-d0927975ca3a": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/Sensi_range.png",
+            "linkk": "",
+            "change_banner": ""
+          }
+        }
+      },
+      "block_order": [
+        "bb9e1148-3f0a-40ee-a421-d0927975ca3a"
+      ],
+      "settings": {
+      }
+    },
     "main": {
       "type": "main-collection",
+      "disabled": true,
       "settings": {
         "show_collection_info": true,
         "show_collection_image": false,
@@ -22,6 +41,81 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "f2ff0a67-8b50-41cf-b0c3-df1da92f426a": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16191177719962__f2ff0a67-8b50-41cf-b0c3-df1da92f426a-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "shaving-razors",
+            "title": "",
+            "grid_items_count": 4,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16191177719962__f2ff0a67-8b50-41cf-b0c3-df1da92f426a-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "48a3377a-1069-428a-bb58-10ea1fbe231f": {
+      "type": "single-banner",
+      "blocks": {
+        "7fc22d23-e2f1-457c-854d-fc6123f7a377": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/web_e360c613-0763-4ce9-912c-d47c28bffabc.jpg",
+            "imags2": "shopify:\/\/shop_images\/mobile_f4629067-0db7-4cd3-8f7d-b0469646f6ac.jpg",
+            "linkk": "",
+            "change_banner": ""
+          }
+        }
+      },
+      "block_order": [
+        "7fc22d23-e2f1-457c-854d-fc6123f7a377"
+      ],
+      "settings": {
+      }
+    },
+    "2ec8e8d3-7fd2-4d2b-9ca6-b28eaa54250e": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16191177719962__2ec8e8d3-7fd2-4d2b-9ca6-b28eaa54250e-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "razor-cartridges-sensi",
+            "title": "",
+            "grid_items_count": 4,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16191177719962__2ec8e8d3-7fd2-4d2b-9ca6-b28eaa54250e-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
       "settings": {
@@ -33,7 +127,11 @@
     }
   },
   "order": [
+    "1372b100-c444-4550-88a9-5869a3842a36",
     "main",
+    "f2ff0a67-8b50-41cf-b0c3-df1da92f426a",
+    "48a3377a-1069-428a-bb58-10ea1fbe231f",
+    "2ec8e8d3-7fd2-4d2b-9ca6-b28eaa54250e",
     "recently-viewed-products"
   ]
 }
