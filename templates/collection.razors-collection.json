@@ -116,6 +116,34 @@
         "grid_desktop_items_per_row": 4
       }
     },
+    "0d4b0e82-1622-4736-aca7-2290572e9de8": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16191177719962__0d4b0e82-1622-4736-aca7-2290572e9de8-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "combo-kits",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16191177719962__0d4b0e82-1622-4736-aca7-2290572e9de8-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
       "settings": {
@@ -132,6 +160,7 @@
     "f2ff0a67-8b50-41cf-b0c3-df1da92f426a",
     "48a3377a-1069-428a-bb58-10ea1fbe231f",
     "2ec8e8d3-7fd2-4d2b-9ca6-b28eaa54250e",
+    "0d4b0e82-1622-4736-aca7-2290572e9de8",
     "recently-viewed-products"
   ]
 }
