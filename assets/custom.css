@@ -1057,4 +1057,5 @@ p.coupon {
 .download-offer-app{display: none;}
 @media(max-width:450px){
   .download-offer-app{display: flex;}
+  .description-truncate ul li {margin: 0 16px;}
 }
