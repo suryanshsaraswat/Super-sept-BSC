@@ -19,17 +19,18 @@ h2.off{font-size:21px;margin-bottom:0;font-weight:500;color:#007364;position:rel
 </style>
 <div class="disc-main">
   {% comment %}<h2 class="off">Available Offers!</h2>{% endcomment %}
-  {%- for tag in product.tags -%}
-      {%- unless tag == 'no-discount' -%}
   <div class="discount-section">
-         <div class="discount-setup">
-              <h2>Get FLAT 25% OFF</h2>
-              <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">SHOP25</span></div>
+    {%- assign discountApplied = false -%}
+    {%- for tag in product.tags -%}
+        {%- unless tag == 'no-discount' or discountApplied -%}
+            <div class="discount-setup">
+                <h2>Get FLAT 25% OFF</h2>
+                <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">SHOP25</span></div>
             </div>
-    
-  </div>
- {% endunless %}
-    {% endfor %}
+            {%- assign discountApplied = true -%}
+        {%- endunless -%}
+    {%- endfor -%}
+</div>
 </div>
 
  
