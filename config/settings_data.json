@@ -392,24 +392,6 @@
               "linkopen": false
             }
           },
-          "723462a7-6687-4d01-9fa0-18023bbafc5b": {
-            "type": "testimonial",
-            "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
-              "text": "Trimmers",
-              "linkurl": "shopify:\/\/pages\/trimmers-for-men",
-              "linkopen": false
-            }
-          },
-          "debb41d3-b108-48a6-91eb-115025e8ba25": {
-            "type": "testimonial",
-            "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/bsc-page-icon.png",
-              "text": "Women",
-              "linkurl": "https:\/\/mybombae.in\/",
-              "linkopen": false
-            }
-          },
           "9d08cfe9-2e2f-4020-9527-af6099ab3c88": {
             "type": "testimonial",
             "settings": {
@@ -419,12 +401,12 @@
               "linkopen": false
             }
           },
-          "585a3d49-5aa7-4472-a028-3d238a4e6a0f": {
+          "723462a7-6687-4d01-9fa0-18023bbafc5b": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/gifting.png",
-              "text": "Gifting kits",
-              "linkurl": "shopify:\/\/pages\/gifts-for-men-online",
+              "mobile_nav": "shopify:\/\/shop_images\/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
+              "text": "Trimmers",
+              "linkurl": "shopify:\/\/pages\/trimmers-for-men",
               "linkopen": false
             }
           },
@@ -437,12 +419,12 @@
               "linkopen": false
             }
           },
-          "442afb8b-d88b-4bbd-ade6-d4e5381d4263": {
+          "585a3d49-5aa7-4472-a028-3d238a4e6a0f": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/fragrance.png",
-              "text": "Fragrances",
-              "linkurl": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men",
+              "mobile_nav": "shopify:\/\/shop_images\/gifting.png",
+              "text": "Gifting kits",
+              "linkurl": "shopify:\/\/pages\/gifts-for-men-online",
               "linkopen": false
             }
           },
@@ -464,21 +446,21 @@
               "linkopen": false
             }
           },
-          "c30f9a5f-7318-4be7-b905-88fb2e4305ef": {
+          "442afb8b-d88b-4bbd-ade6-d4e5381d4263": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/bath.png",
-              "text": "Bath",
-              "linkurl": "shopify:\/\/pages\/bath-care-products-for-men",
+              "mobile_nav": "shopify:\/\/shop_images\/fragrance.png",
+              "text": "Fragrances",
+              "linkurl": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men",
               "linkopen": false
             }
           },
-          "027f4095-fa20-41b6-9205-31cf0f1ebb3e": {
+          "debb41d3-b108-48a6-91eb-115025e8ba25": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/hair_a2baadaf-a0ba-412b-972c-b0494a9e1070.png",
-              "text": "Hair",
-              "linkurl": "shopify:\/\/pages\/hair-care-products-for-men",
+              "mobile_nav": "shopify:\/\/shop_images\/bsc-page-icon.png",
+              "text": "Women",
+              "linkurl": "https:\/\/mybombae.in\/",
               "linkopen": false
             }
           }
@@ -487,16 +469,14 @@
           "c5d2e43b-9c67-463b-90fd-ee276f8e047c",
           "4d245f9c-a505-414f-836d-13c5b9fd0231",
           "61483588-c8b3-4603-b2be-e6642e8c2845",
-          "723462a7-6687-4d01-9fa0-18023bbafc5b",
-          "debb41d3-b108-48a6-91eb-115025e8ba25",
           "9d08cfe9-2e2f-4020-9527-af6099ab3c88",
-          "585a3d49-5aa7-4472-a028-3d238a4e6a0f",
+          "723462a7-6687-4d01-9fa0-18023bbafc5b",
           "de6ec94f-3b94-42f6-8d56-71dff7d5b5f4",
-          "442afb8b-d88b-4bbd-ade6-d4e5381d4263",
+          "585a3d49-5aa7-4472-a028-3d238a4e6a0f",
           "ab7da4f2-8c7b-4117-aef1-4cfa2ec469cb",
           "24024d88-b1ad-4dcc-8cb9-4bdf7d2743dc",
-          "c30f9a5f-7318-4be7-b905-88fb2e4305ef",
-          "027f4095-fa20-41b6-9205-31cf0f1ebb3e"
+          "442afb8b-d88b-4bbd-ade6-d4e5381d4263",
+          "debb41d3-b108-48a6-91eb-115025e8ba25"
         ],
         "settings": {
         }
