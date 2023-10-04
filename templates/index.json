@@ -19,21 +19,6 @@
             "button_2_link": ""
           }
         },
-        "67196537-fdd7-4650-8470-a114bb26a984": {
-          "type": "image",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_5dade843-7b9e-4fab-8bd3-bc79c9a4a977.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Main_Banner_web.webp",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/paisa-wapsi-sale",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        },
         "c8020995-17d9-45cd-9d3e-bc02aba3dbdf": {
           "type": "image",
           "disabled": true,
@@ -113,7 +98,6 @@
       },
       "block_order": [
         "ab7168f3-b05d-42b3-9351-583cedcbdc26",
-        "67196537-fdd7-4650-8470-a114bb26a984",
         "c8020995-17d9-45cd-9d3e-bc02aba3dbdf",
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852",
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f",
@@ -128,15 +112,6 @@
         "text_color": "#ffffff",
         "button_color": "#363636",
         "button_background": "#ffffff"
-      }
-    },
-    "7ebf82e3-7df8-4207-8462-3331c5e90551": {
-      "type": "rzp-marqeee",
-      "settings": {
-        "text1": "No Lottery, No lies",
-        "text2": "Real Offer, Real Deals",
-        "text3": "No Lottery, No lies",
-        "text4": "Real Offer, Real Deals"
       }
     },
     "featured-collections": {
@@ -167,380 +142,10 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "01645ffb-4b6f-4337-9b0c-6a0c0f741895": {
-      "type": "deal-of-the-day",
-      "blocks": {
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1": {
-          "type": "share_buttons",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-product_meta-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-share_buttons-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-variant_selector-1",
-        "template--16174120501402__01645ffb-4b6f-4337-9b0c-6a0c0f741895-buy_buttons-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "show_headings_on_mobile": true,
-        "product": "shea-butter-moisturizer",
-        "show_timer": true
-      }
-    },
-    "586ecfb3-41e0-4a1f-a640-92657c9f3d28": {
-      "type": "DOTD-NEW",
-      "blocks": {
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-product_meta-1": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-share_buttons-1": {
-          "type": "share_buttons",
-          "disabled": true,
-          "settings": {
-          }
-        },
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-variant_selector-1": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-product_meta-1",
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-share_buttons-1",
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-variant_selector-1",
-        "template--16174120501402__586ecfb3-41e0-4a1f-a640-92657c9f3d28-buy_buttons-1"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "show_headings_on_mobile": true,
-        "product": "hydrating-fitkari-after-shave-gel",
-        "show_timer": true
-      }
-    },
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182": {
-      "type": "Brand-discount-slider",
-      "blocks": {
-        "82d0732b-20a8-404b-957f-a4022a03b942": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_528f9d99-9b75-4643-a31a-eac4becd67ac.png",
-            "discount_desc": "Flat 500 Off"
-          }
-        },
-        "2b54d259-127c-44da-aa0a-9df0296db7af": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_ca5f1bf2-f4b5-41cd-83ef-add58ba39d78.png",
-            "discount_desc": "Flat 50% off"
-          }
-        },
-        "e6b56035-5e0c-4a44-9615-5abc1356881f": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_e0654329-c39a-48bf-8b26-a8370ed4d37a.png",
-            "discount_desc": "Free condoms worth 449"
-          }
-        },
-        "42f9acee-3e49-4609-89f7-db7446eaf0c0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_1_5303afec-a142-4f05-a459-a00bdc1af81a.png",
-            "discount_desc": "Pack of 5 at 999"
-          }
-        },
-        "d65f5bb3-d49f-4aab-baaa-2360144f40c0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_3.png",
-            "discount_desc": "Free Face wash worth 249"
-          }
-        },
-        "b8a5132c-f086-4c13-953b-b8cf5d692516": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_5.png",
-            "discount_desc": "Free Keratin Hair care worth 198"
-          }
-        },
-        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_4_0141bd8f-b22f-444c-a6bb-dc06fc73210f.png",
-            "discount_desc": "Free Personal Financing worth 15K"
-          }
-        },
-        "95b69c3b-39c1-4805-baf2-4fada4a06246": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_2_5bbf555b-4d66-426d-a9b8-c7f75e0cfbf3.png",
-            "discount_desc": "Flat 60% off"
-          }
-        },
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_6_71ef0e21-975c-45f3-b2e0-1d83613b7222.png",
-            "discount_desc": "Free IoT Jars worth 10K"
-          }
-        },
-        "82682ca9-58bb-44ff-9892-00d042c364db": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_7_3677a142-97e2-406f-804d-16921b6bca56.png",
-            "discount_desc": "Free Face Toner worth 226"
-          }
-        },
-        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_8_027f3466-d1ff-4340-a212-7592c4167427.png",
-            "discount_desc": "Free 6 month membership worth 549"
-          }
-        },
-        "f819db04-c311-495c-a47c-44fdf78f1782": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_9.png",
-            "discount_desc": "Flat 50% OFF + freebie"
-          }
-        },
-        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_10.png",
-            "discount_desc": "Flat 60% off on products for TWO of you"
-          }
-        },
-        "f5c0241d-9172-4b97-8126-2abebf932958": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Logo_-_Richa_Parashari.png",
-            "discount_desc": "Flat 50% OFF on gourmet products"
-          }
-        },
-        "c7f311e5-32d7-4337-a15a-cd68de5d067c": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo.png",
-            "discount_desc": "Free nose cleaning strip worth 300"
-          }
-        },
-        "5018e7fb-427f-41a3-ab98-483ce7f4b6d0": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/logo-transparent_-_Vvegano_Support.png",
-            "discount_desc": "Flat 60% off on Vegan alternatives"
-          }
-        },
-        "70beb7ef-863c-4095-be70-baa638b49e28": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Koparo_Logo_100x100_2_-_Kshitij_Ranjan.png",
-            "discount_desc": "Flat 200 OFF on Natural Handwash"
-          }
-        },
-        "00b495a4-a586-4323-96b9-072fcc1bf52a": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_3d5b527c-9d59-4122-a6c2-5eececed2d46.png",
-            "discount_desc": "Flat 50% OFF on Organic Cashews"
-          }
-        },
-        "3d7ae93d-107d-48e5-84d0-798902bce715": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Urban_Hair_Logo.png",
-            "discount_desc": "Flat 50% OFF on Hair care products"
-          }
-        },
-        "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/CamPure_logo_1.png",
-            "discount_desc": "Flat 500 OFF on Campure"
-          }
-        },
-        "cbec0675-6414-4c46-bf3a-922162f9c430": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/5_1_-_Social_Social.png",
-            "discount_desc": "Flat 50% OFF to improve Gut Health"
-          }
-        },
-        "3a309c04-21e5-4b4b-acee-8ee6d877aa10": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Partner_brands_logo_7f25789b-b068-495f-992a-32f8984e7e23.png",
-            "discount_desc": "Flat 40% OFF on Conscious Chemist"
-          }
-        },
-        "2bf13c4f-19e2-4b3b-9758-4be5133ca065": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_11.png",
-            "discount_desc": "Flat 40% OFF"
-          }
-        },
-        "aa32bc44-aa33-4fc8-b172-818a3bae03a4": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/1_-_Tripti_Suri.png",
-            "discount_desc": "Flat 40% OFF on Skin Care"
-          }
-        },
-        "da7ab49c-db87-47cd-a907-0c8ea125e857": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_13.png",
-            "discount_desc": "Free Natural Raisins worth 255"
-          }
-        },
-        "2a45cc61-2e32-44fd-bdbc-35c4611f8173": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_14.png",
-            "discount_desc": "Free Hair Removal Cream worth 510"
-          }
-        },
-        "735b09c9-2d77-4768-975c-bf740af82670": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_15.png",
-            "discount_desc": "Free Rose Lip Balm"
-          }
-        },
-        "20e4e04a-5492-47ef-ab50-8ba866085133": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_16.png",
-            "discount_desc": "Free 1 month supply of Green Tea"
-          }
-        },
-        "61be4279-16f0-455a-931e-acd0196aa9ce": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_17.png",
-            "discount_desc": "Flat 500 Off on fragrances and camphor"
-          }
-        },
-        "7eec7ba4-42f1-4644-bf0d-8933137b8ee3": {
-          "type": "homepage",
-          "settings": {
-            "logo_brand": "shopify:\/\/shop_images\/Untitled_design_18.png",
-            "discount_desc": "Flat 50% OFF on Computer Glasses"
-          }
-        }
-      },
-      "block_order": [
-        "82d0732b-20a8-404b-957f-a4022a03b942",
-        "2b54d259-127c-44da-aa0a-9df0296db7af",
-        "e6b56035-5e0c-4a44-9615-5abc1356881f",
-        "42f9acee-3e49-4609-89f7-db7446eaf0c0",
-        "d65f5bb3-d49f-4aab-baaa-2360144f40c0",
-        "b8a5132c-f086-4c13-953b-b8cf5d692516",
-        "4da3072c-d0c7-46e0-a5b6-4dd457de5f31",
-        "95b69c3b-39c1-4805-baf2-4fada4a06246",
-        "477cd93c-7cdb-4905-b877-af0bc7b05d86",
-        "82682ca9-58bb-44ff-9892-00d042c364db",
-        "c9dabc23-9ac9-4230-bf8a-0eddee23cdf8",
-        "f819db04-c311-495c-a47c-44fdf78f1782",
-        "aa18acc7-4d80-4cd8-ac9b-10a4b56a9009",
-        "f5c0241d-9172-4b97-8126-2abebf932958",
-        "c7f311e5-32d7-4337-a15a-cd68de5d067c",
-        "5018e7fb-427f-41a3-ab98-483ce7f4b6d0",
-        "70beb7ef-863c-4095-be70-baa638b49e28",
-        "00b495a4-a586-4323-96b9-072fcc1bf52a",
-        "3d7ae93d-107d-48e5-84d0-798902bce715",
-        "7b2709dd-ddca-4e2d-86c8-a6b76bba1d8a",
-        "cbec0675-6414-4c46-bf3a-922162f9c430",
-        "3a309c04-21e5-4b4b-acee-8ee6d877aa10",
-        "2bf13c4f-19e2-4b3b-9758-4be5133ca065",
-        "aa32bc44-aa33-4fc8-b172-818a3bae03a4",
-        "da7ab49c-db87-47cd-a907-0c8ea125e857",
-        "2a45cc61-2e32-44fd-bdbc-35c4611f8173",
-        "735b09c9-2d77-4768-975c-bf740af82670",
-        "20e4e04a-5492-47ef-ab50-8ba866085133",
-        "61be4279-16f0-455a-931e-acd0196aa9ce",
-        "7eec7ba4-42f1-4644-bf0d-8933137b8ee3"
-      ],
-      "settings": {
-        "logo-headingg": "Free coupons with every order",
-        "logo-sub_heading": "Real. Crazy. Deals.",
-        "button-link": "shopify:\/\/pages\/brand-partners"
-      }
-    },
     "bc80b36d-469e-4b30-9628-17cebf026bb4": {
       "type": "custom-html-wthout-spacing",
       "settings": {
         "html": "<style>\n.tnc{margin-top:10px;text-align:right;padding-right:10px}\n<\/style>\n<p class=\"tnc\">For more infomration, <a href=\"https:\/\/bombayshavingcompany.com\/collections\/paisa-wapsi-sale#FAQ\">click here <\/a><\/p>"
-      }
-    },
-    "2a4ccd55-76ba-43e7-9790-ba7c69e571f4": {
-      "type": "single-banner",
-      "blocks": {
-        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e": {
-          "type": "testimonial",
-          "settings": {
-            "imags": "shopify:\/\/shop_images\/How_to_redeem.webp",
-            "imags2": "shopify:\/\/shop_images\/How_to_redeem_mobile.webp",
-            "linkk": "shopify:\/\/collections\/paisa-wapsi-sale",
-            "change_banner": ""
-          }
-        }
-      },
-      "block_order": [
-        "cdfc0df9-3cd6-4dc2-b831-eb2edad9f25e"
-      ],
-      "settings": {
       }
     },
     "f0f9d148-a854-4731-a987-5d03b56b3438": {
@@ -555,15 +160,6 @@
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02": {
       "type": "cat-tiles",
       "blocks": {
-        "ab46a3b8-5d97-456e-a5e8-385540e94ad1": {
-          "type": "homepage",
-          "settings": {
-            "heading_nav": "100% Cashback",
-            "linkurl_nav": "shopify:\/\/collections\/paisa-wapsi-sale",
-            "cat_tile_image": "shopify:\/\/shop_images\/Logo_Unit.png",
-            "linkopen": false
-          }
-        },
         "2c48f83d-197a-455b-8f6d-b03c6b252c31": {
           "type": "homepage",
           "settings": {
@@ -656,7 +252,6 @@
         }
       },
       "block_order": [
-        "ab46a3b8-5d97-456e-a5e8-385540e94ad1",
         "2c48f83d-197a-455b-8f6d-b03c6b252c31",
         "7d285641-1503-4b78-b7e9-c76a3eafa2ad",
         "5c833230-b9e0-4e81-9cf6-3b4bce26ae27",
@@ -943,13 +538,8 @@
   },
   "order": [
     "slideshow",
-    "7ebf82e3-7df8-4207-8462-3331c5e90551",
     "featured-collections",
-    "01645ffb-4b6f-4337-9b0c-6a0c0f741895",
-    "586ecfb3-41e0-4a1f-a640-92657c9f3d28",
-    "a0a786e9-d6a7-4e28-8f38-d0dcdc276182",
     "bc80b36d-469e-4b30-9628-17cebf026bb4",
-    "2a4ccd55-76ba-43e7-9790-ba7c69e571f4",
     "f0f9d148-a854-4731-a987-5d03b56b3438",
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
