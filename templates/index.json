@@ -142,21 +142,6 @@
         "grid_desktop_items_per_row": 4
       }
     },
-    "bc80b36d-469e-4b30-9628-17cebf026bb4": {
-      "type": "custom-html-wthout-spacing",
-      "settings": {
-        "html": "<style>\n.tnc{margin-top:10px;text-align:right;padding-right:10px}\n<\/style>\n<p class=\"tnc\">For more infomration, <a href=\"https:\/\/bombayshavingcompany.com\/collections\/paisa-wapsi-sale#FAQ\">click here <\/a><\/p>"
-      }
-    },
-    "f0f9d148-a854-4731-a987-5d03b56b3438": {
-      "type": "custom-html",
-      "disabled": true,
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<a class=\"button button_primary\" href=\"\/pages\/gifting\">Explore More<\/a>"
-      }
-    },
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02": {
       "type": "cat-tiles",
       "blocks": {
@@ -539,8 +524,6 @@
   "order": [
     "slideshow",
     "featured-collections",
-    "bc80b36d-469e-4b30-9628-17cebf026bb4",
-    "f0f9d148-a854-4731-a987-5d03b56b3438",
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02",
     "ceb678ff-b04b-4548-8e64-b37aedaef435",
     "06e88943-53f8-435e-98ca-fa0da8927714",
