@@ -1129,12 +1129,6 @@
           "version": "v3"
         }
       },
-      "18228966181090706294": {
-        "type": "shopify:\/\/apps\/upsell-cross-sell-selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "11348531219507317188": {
         "type": "shopify:\/\/apps\/easy-bundles\/blocks\/app-embed\/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
         "disabled": true,
@@ -1168,6 +1162,12 @@
       "11724500921838622758": {
         "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
         "disabled": true,
+        "settings": {
+        }
+      },
+      "18228966181090706294": {
+        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+        "disabled": false,
         "settings": {
         }
       }
