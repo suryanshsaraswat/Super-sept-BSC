@@ -103,6 +103,23 @@
       "settings": {
       }
     },
+    "16964219592c39e206": {
+      "type": "apps",
+      "blocks": {
+        "2217d07b-94d4-4fc3-a4e9-0e15e146ac22": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "2217d07b-94d4-4fc3-a4e9-0e15e146ac22"
+      ],
+      "settings": {
+        "include_margins": true,
+        "evm_widgets": false
+      }
+    },
     "1689870779546f51b6": {
       "type": "apps",
       "blocks": {
@@ -338,6 +355,7 @@
   "order": [
     "main",
     "7b632def-7da0-4de9-9332-d3eaaea14ce3",
+    "16964219592c39e206",
     "1689870779546f51b6",
     "1659684819aef7882f",
     "16527729209ba2f855",
