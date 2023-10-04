@@ -20,45 +20,11 @@ h2.off{font-size:21px;margin-bottom:0;font-weight:500;color:#007364;position:rel
 <div class="disc-main">
   {% comment %}<h2 class="off">Available Offers!</h2>{% endcomment %}
   <div class="discount-section">
-    {% for tag in product.tags %}
-      <div class="discounts">
-        {% if tag == 'paisa_wapsi' %}
-          <div class="discount-setup" style="background-color:#fadf2e">
-            <h2>Get 100% CASHBACK</h2>
-            <div class="disc">
-              Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">PAISAWAPSI</span>
-            </div>
-            <div>Also get coupons worth <b>Rs. 50,000</b> & <b>guaranteed freebie</b> with every order!</div>
-          </div>
-          {% comment %}
-            {% elsif tag == 'Discount@25' %}
-            <div class="discount-setup">
-              <h2>Get FLAT 25% OFF</h2>
-              <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">BSC25</span></div>
-            </div>
-          {% endcomment %}
-          {% comment %}
-        {% elsif tag == 'shipping-199' %}
-          <div class="discount-setup">
-            <h2>Free shipping above Rs.199</h2>
-            <div class="disc">No coupon required<sup>*</sup></div>
-            
-              <div class="disc">Use code:
-              <span
-              onclick="copyToClipboard(this)"
-              class="dsc"
-              id="copy-cat">BSC25</div>
-              </span>
-          </div>
-          {% endcomment %}
-        {% else %}
-          <div class="display:none"></div>
-        {% endif %}
-      </div>
-    {% endfor %}
-  </div>
-  <div class="discount-setup">
+     <div class="discount-setup">
               <h2>Get FLAT 25% OFF</h2>
               <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">SHOP25</span></div>
             </div>
+  </div>
+</div>
+ 
 </div>
