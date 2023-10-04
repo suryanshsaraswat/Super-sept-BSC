@@ -53,7 +53,7 @@
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SensiSmart_Banner_2.webp",
+            "image": "shopify:\/\/shop_images\/website.webp",
             "mobile_image": "shopify:\/\/shop_images\/Sensi_Mobile_2.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
@@ -65,10 +65,24 @@
             "button_2_link": ""
           }
         },
+        "d6bed712-5d9c-4aac-b1cc-d1c1ac74bfb6": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/SensiFlo4_copy.webp",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
         "32ffea8a-df40-4983-91f2-b49a91203d66": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SensiFlo6_3.webp",
+            "image": "shopify:\/\/shop_images\/website_1.webp",
             "mobile_image": "shopify:\/\/shop_images\/Flo6_Mobile_3.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
@@ -101,6 +115,7 @@
         "c8020995-17d9-45cd-9d3e-bc02aba3dbdf",
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852",
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f",
+        "d6bed712-5d9c-4aac-b1cc-d1c1ac74bfb6",
         "32ffea8a-df40-4983-91f2-b49a91203d66",
         "e791ec55-e8d4-48b2-826b-f2567c828c26"
       ],
