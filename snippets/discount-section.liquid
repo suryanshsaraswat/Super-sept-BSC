@@ -21,7 +21,7 @@ h2.off{font-size:21px;margin-bottom:0;font-weight:500;color:#007364;position:rel
   {% comment %}<h2 class="off">Available Offers!</h2>{% endcomment %}
   <div class="discount-section">
     {%- for tag in product.tags -%}
-      {%- if tag != 'no-discount' -%}
+      {%- if tag == 'no-discount' -%}
          <div class="discount-setup">
               <h2>Get FLAT 25% OFF</h2>
               <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">SHOP25</span></div>
