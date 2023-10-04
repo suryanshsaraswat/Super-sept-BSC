@@ -1135,12 +1135,6 @@
         "settings": {
         }
       },
-      "11724500921838622758": {
-        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "11348531219507317188": {
         "type": "shopify:\/\/apps\/easy-bundles\/blocks\/app-embed\/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
         "disabled": true,
@@ -1169,6 +1163,12 @@
           "applied_coupon_css": "background-color: rgba(113, 113, 113, .11);\npadding: 4px;\nborder-radius: 4px;\nline-height: 20px;\nmargin-left:0px !important;",
           "applied_succes_msg_css": "color:#769e46;",
           "coupon_after_checked_css": "color:#71a326;\nborder-color:#71a326;"
+        }
+      },
+      "11724500921838622758": {
+        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": true,
+        "settings": {
         }
       }
     }
