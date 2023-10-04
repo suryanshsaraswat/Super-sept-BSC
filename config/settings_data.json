@@ -345,53 +345,22 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
-          "00b65f50-279e-408e-b722-d81111773ba1": {
-            "type": "testimonial",
-            "settings": {
-              "Offer": "100% Cashback + Coupons worth Rs 50,000 + Guaranteed Freebie",
-              "image": "shopify:\/\/shop_images\/Logo_Unit.png",
-              "coupon": "PAISAWAPSI",
-              "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
-            }
-          },
-          "55c336c9-f065-4834-be0a-d3aef3293d04": {
-            "type": "testimonial",
-            "settings": {
-              "Offer": "Get FLAT 25% OFF | Use code:SHOP25",
-              "image": "shopify:\/\/shop_images\/Logo_Unit.png",
-              "coupon": "SHOP25",
-              "linkurl": "shopify:\/\/collections\/grooming-galore"
-            }
-          },
-          "4a35f82b-a534-4b7f-af03-9e8cec58bd11": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Get a guaranteed freebie!",
-              "image": "shopify:\/\/shop_images\/Logo_Unit.png",
-              "coupon": "",
-              "linkurl": "shopify:\/\/collections\/paisa-wapsi-sale"
-            }
-          },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "disabled": true,
             "settings": {
-              "Offer": "Unleash Your love for Grooming: Craft Your Own Gift Box today!",
+              "Offer": "Get FLAT 25% OFF on orders",
               "image": "shopify:\/\/shop_images\/3213595.png",
-              "coupon": "",
-              "linkurl": "https:\/\/bombayshavingcompany.com\/apps\/gbb\/builder\/1"
+              "coupon": "SHOP25",
+              "linkurl": "shopify:\/\/collections\/grooming-galore"
             }
           }
         },
         "block_order": [
-          "00b65f50-279e-408e-b722-d81111773ba1",
-          "55c336c9-f065-4834-be0a-d3aef3293d04",
-          "4a35f82b-a534-4b7f-af03-9e8cec58bd11",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36"
         ],
         "settings": {
-          "text": "Unlock 100% Cashback with code PAISAWAPSI"
+          "text": "Get FLAT 25% OFF on orders | Use CODE:SHOP25"
         }
       },
       "navbar": {
