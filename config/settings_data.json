@@ -632,7 +632,7 @@
               "collection": "best-seller",
               "title": "Best Sellers",
               "grid_items_count": 4,
-              "button_text": "View all products"
+              "button_text": ""
             }
           }
         },
