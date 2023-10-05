@@ -6,7 +6,7 @@
 </style>
 {% for block in section.blocks %}
   <div class="bammerrr">
-  <img class="Image--lazyLoad Image--fadeIn catt-imgg" src="{{ block.settings.imags | img_url: 'master' }}" style="width:100%; height:auto"> 
+  <img class="Image--lazyLoad Image--fadeIn catt-imgg" src="{{ block.settings.imags | img_url: 'master' }}" alt="Category banner" style="width:100%; height:auto"> 
   </div>
   {% endfor %}
 {% schema %}
