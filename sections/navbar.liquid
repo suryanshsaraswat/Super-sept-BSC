@@ -37,7 +37,7 @@
     {%- for block in section.blocks -%}
       <li>
         <a href="{{ block.settings.linkurl }}" {% if block.settings.linkopen == true %}target="_blank"{% endif %}>
-          <h2><img src="{{ block.settings.mobile_nav  | img_url: '400x' }}" alt="category tiles"></h2>
+          <h2><img src="{{ block.settings.mobile_nav  | img_url: '400x' }}" alt="{{ block.settings.text }}"></h2>
           <p>{{ block.settings.text }}</p>
         </a>
       </li>
