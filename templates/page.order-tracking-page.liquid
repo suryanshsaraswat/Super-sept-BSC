@@ -42,11 +42,48 @@ span.id{color:blue;font-weight:500}
 h2.order-heading{position:relative;margin-bottom:20px}
 h2.order-heading::after{content:"";position:absolute;width:229px;height:1px;background-color:#A7A7A7;bottom:-9px;left:0}
 tbody.order-table td{padding-right:45px;display:table-cell;padding-bottom:21px;font-size:17px;font-weight:800}
+.heading-otp {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -10px;
+}
 @media(max-width:450px) {
 .order-tracking-details{width:350px;text-align:center}
 .order-tracking-options{justify-content:center}
 .input-box-tracking{width:310px}
 .trancker-button{margin-left:30px}
+/*2nd page css */
+.deli-flex {
+    flex-direction: column;
+}
+.deets {
+    width: 96%;
+    margin: 0 auto;
+}
+.delhi-flex {
+    flex-direction: column;
+}
+.map-details {
+    width: 100%;
+    margin: 0 auto;
+}
+.map-details iframe {
+    margin: 0 auto;
+    display: block;
+    width: 100%;
+}
+.tracking-details {
+    width: 100%;
+    margin-top: 20px;
+}
+.order-details {
+    width: 95%;
+}
+tbody.order-table td {
+    padding-right: 11px;
+    padding-bottom: 13px;
+}
 }
 </style>
 {% assign block = {{ page.id }} %}
@@ -92,7 +129,7 @@ tbody.order-table td{padding-right:45px;display:table-cell;padding-bottom:21px;f
   <div class="data-v-{{block}}" id="order-track">
     <div class="col-12">
       <div class="heading-otp">
-        <h2>Hi, {{ customer.name }}</h2>
+        <h2>Hi, Harsha Krishan</h2>
       </div>
       {% comment %} <div class="otp-timeline">
       {% render 'order-timeline' %}
