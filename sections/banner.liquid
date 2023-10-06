@@ -7,7 +7,7 @@
               <img src="{{ block.setting.img_mob | img_url:'900x' }}" class="mobile_aplus"></a>
               {% else %}
                <img src="{{ block.settings.img | img_url: '900x' }}" class="desktop_aplus">
-              <img src="{{ block.settings.img_mob  | img_url:'900x'}}" class="mobile_aplus">
+              <img src="{% if block.settings.img_mob != blank %}{{ block.settings.img_mob  | img_url:'900x'}}{% else %}{{ block.settings.img | img_url: '900x' }}{% endif %}" class="mobile_aplus">
               {% endif %}
             
           </div>{% endif %}
@@ -36,6 +36,11 @@
                   "type": "image_picker",
                   "id": "img",
                   "label": "Image"
+                },
+                {
+                  "type": "image_picker",
+                  "id": "img_mob",
+                  "label": "Mobile Image"
                 },
                 {
                   "type": "url",
