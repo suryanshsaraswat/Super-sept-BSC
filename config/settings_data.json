@@ -345,6 +345,15 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
+          "d2b10f03-c906-4bf4-a497-032e45bb7f0b": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "Get 3 products at 30% off",
+              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
+              "coupon": "PAYDAY",
+              "linkurl": "shopify:\/\/collections\/payday-sale"
+            }
+          },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
@@ -356,10 +365,11 @@
           }
         },
         "block_order": [
+          "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36"
         ],
         "settings": {
-          "text": "Get FLAT 25% OFF on orders | Use CODE:SHOP25"
+          "text": "Get 3 products at 30% off | Use code: PAYDAY"
         }
       },
       "navbar": {
