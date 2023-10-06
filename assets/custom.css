@@ -1058,4 +1058,5 @@ p.coupon {
 @media(max-width:450px){
   .download-offer-app{display: flex;}
   .description-truncate ul li {margin: 0 16px;}
+  .jdgm-row-stars {display: flex;justify-content: space-between;}
 }
