@@ -5,16 +5,15 @@
       "blocks": {
         "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
           "type": "image",
-          "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/web_e360c613-0763-4ce9-912c-d47c28bffabc.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/mobile_f4629067-0db7-4cd3-8f7d-b0469646f6ac.jpg",
+            "image": "shopify:\/\/shop_images\/Untitled_design_1bf8848c-74f2-4f2f-a2b7-7335afb6dfb3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Add_a_little_bit_of_body_text_1.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "",
+            "button_1_link": "shopify:\/\/collections\/payday-sale",
             "button_2_text": "",
             "button_2_link": ""
           }
