@@ -144,6 +144,7 @@
           "type": "testimonial",
           "settings": {
             "img": "{{ product.metafields.my_fields.media_image_1.value }}",
+            "img_mob": "{{ product.metafields.custom.mobile_a_.value }}",
             "link": ""
           }
         },
