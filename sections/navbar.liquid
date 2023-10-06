@@ -32,7 +32,7 @@
     padding: 0
   }
 </style>
-{% unless template == product %}
+{%- unless template=="product" -%}
 <div class="homebar">
   <ul>
     {%- for block in section.blocks -%}
@@ -45,7 +45,7 @@
     {%- endfor -%}
   </ul>
 </div>
-{% endunless %}
+{%- endunless -%}
 
 {% schema %}
   {
