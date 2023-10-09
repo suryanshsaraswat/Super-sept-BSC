@@ -92,7 +92,7 @@
         <p class="display:none"></p>
         {% endif %}
       {% endcomment %}
-      {%- render 'product-rating', product: product -%}
+      {% comment %} {%- render 'product-rating', product: product -%} {% endcomment %}
 {%- if settings.show_product_rating -%}
           {%- unless use_horizontal -%}
             <div class="ProductItem__Rating Heading Text--subdued u-h7">
