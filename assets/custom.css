@@ -1080,3 +1080,7 @@ span.value {
 .ratingg-judge svg path {
   stroke: #0d5ea8!important;
 }
+.product-ratingg {
+  max-width: 100%;
+  width: 130px;
+}
