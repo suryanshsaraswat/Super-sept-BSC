@@ -25,8 +25,23 @@
       {%- render 'product-rating', product: product -%}
     </div>
   {%- endif -%}{% endcomment %}
-  <div class="ProductMeta__Rating Heading Text--subdued u-h7">
+  {% comment %} <div class="ProductMeta__Rating Heading Text--subdued u-h7">
       {%- render 'product-rating', product: product -%}
+    </div> {% endcomment %}
+    <style>
+      .prod-rate-p{display:flex;justify-content:center;align-items:center}
+      .prod-rate {margin-right: 9px;}
+      @media(max-width:450px){
+        .prod-rate{font-size:13px}
+        .prod-rev{font-size:13px}
+      }
+    </style>
+    <div class="product-ratingg">
+      <div class="prod-rate-p">
+          <div class="prod-rate">{% render 'icon' with 'rating-star' %}{{ product.metafields.reviews.rating.value }}</div>
+          <span>|</span>
+          <div class="prod-rev">{{ product.metafields.reviews.rating_count.value }} Reviews</div>
+        </div>
     </div>
 
   {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
