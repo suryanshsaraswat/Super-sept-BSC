@@ -1082,7 +1082,10 @@ span.value {
 }
 .product-ratingg {
   max-width: 100%;
-  width: 130px;
+  width: 140px;
 }
 .product-ratingg svg{fill:#000}
 .prod-rate{display:flex; align-items:center}
+.prod-rate svg {
+  margin-right: 5px;
+}
