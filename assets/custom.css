@@ -1074,13 +1074,14 @@ span.value {
   display: flex;
   align-items: center;
 }
-.ratingg-judge svg {
+.ratingg-judge svg, .product-ratingg svg {
   fill: #000;
 }
-.ratingg-judge svg path {
+.ratingg-judge svg path, .product-ratingg svg path {
   stroke: #0d5ea8!important;
 }
 .product-ratingg {
   max-width: 100%;
   width: 130px;
 }
+.product-ratingg svg{fill:#000}
