@@ -1085,3 +1085,4 @@ span.value {
   width: 130px;
 }
 .product-ratingg svg{fill:#000}
+.prod-rate{display:flex; align-items:center}
