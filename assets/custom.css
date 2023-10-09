@@ -1077,3 +1077,6 @@ span.value {
 .ratingg-judge svg {
   fill: #000;
 }
+.ratingg-judge svg path {
+  stroke: #0d5ea8!important;
+}
