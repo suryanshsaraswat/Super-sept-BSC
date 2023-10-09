@@ -157,7 +157,7 @@
         {%- if show_price_on_hover and color_swatch_list != blank -%}
           {{- color_swatch_list -}}
         {%- endif -%}
-
+        <div class="flexxify">
         {%- if product.template_suffix != 'coming-soon' -%}
           <div class="ProductItem__PriceList {% if show_price_on_hover %}ProductItem__PriceList--showOnHover{% endif %} Heading">
             {%- if product.compare_at_price > product.price -%}
@@ -186,6 +186,7 @@
               {%- endif -%}
             {%- endif -%}
           </div>
+          <div class="ratingg-judge"></div></div>
 
           {%- if product.selected_or_first_available_variant.unit_price_measurement -%}
             <div class="ProductItem__UnitPriceMeasurement">
