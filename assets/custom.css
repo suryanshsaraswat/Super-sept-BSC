@@ -1059,3 +1059,21 @@ p.coupon {
   .download-offer-app{display: flex;}
   .description-truncate ul li {margin: 0 16px;}
 }
+.flexxify {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+span.value {
+  margin-left: 4px;
+  font-weight: 500;
+  font-size: 12px;
+}
+.ratingg-judge {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+.ratingg-judge svg {
+  fill: #000;
+}
