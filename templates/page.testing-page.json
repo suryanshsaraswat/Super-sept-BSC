@@ -112,6 +112,14 @@
         "product": "shea-butter-moisturizer",
         "show_timer": true
       }
+    },
+    "802060a9-c646-45fa-a6f0-2f97b872f758": {
+      "type": "custom-liquid",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "Your Liquid",
+        "liquid": "{% render 'rzp-timer' %}"
+      }
     }
   },
   "order": [
@@ -121,6 +129,7 @@
     "343eb766-4d79-4cd2-a099-2977ec92acd2",
     "43e21d3f-5c52-4fb1-ba50-97fd7fc1d361",
     "77caece0-b222-42ce-a482-83606b4bce73",
-    "368c8807-7bdc-4e9a-ba4d-478c33f6c50f"
+    "368c8807-7bdc-4e9a-ba4d-478c33f6c50f",
+    "802060a9-c646-45fa-a6f0-2f97b872f758"
   ]
 }
