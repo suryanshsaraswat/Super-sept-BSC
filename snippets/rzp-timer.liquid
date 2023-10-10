@@ -6,10 +6,15 @@
     text-align: center;
     font-size: 47px;
     font-weight: 600;
+    position: absolute;
+    z-index: 1;
+    top: 341px;
+    right: 377px;
+    color: #fff;
 }
 .countdown-element {
     padding: 5px;
-    border: 1px solid #000;
+    border: 1px solid #f9c714;
     border-radius: 5px;
     position: relative;
     margin-left: 16px;
@@ -17,13 +22,28 @@
 span#d-ays::after, span#h-ours::after {
     position: absolute;
     content: ":";
-    top: -6px;
-    right: -23px;
+     top: 0px;
+    right: -15px;
 }
 span#s-econds {
     font-size: 33px;
     font-weight: 500;
     margin-left: 0px;
+}
+@media(max-width:450px){
+    div#countdown-rzp {
+    top: 89%;
+    right: -119px;
+}
+    .countdown-element {
+    padding: 4px;
+    border: 1px solid #f9c714;
+    margin-left: 5px;}
+
+    span#d-ays::after, span#h-ours::after {
+    top: 2px;
+    right: -7px;
+}
 }
 </style>
 <div id="countdown-rzp">
