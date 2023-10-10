@@ -152,6 +152,23 @@
         "show_vendor": false,
         "show_color_swatch": false
       }
+    },
+    "f40b5fa5-23c9-4c69-8a5e-13a96f4fd036": {
+      "type": "banner",
+      "blocks": {
+        "8fe5d072-21e5-495e-85aa-29cbfba92e0b": {
+          "type": "testimonial",
+          "settings": {
+            "img": "shopify:\/\/shop_images\/1_1_47de599e-9d33-4123-97f1-fe00df656a65.jpg",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "8fe5d072-21e5-495e-85aa-29cbfba92e0b"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
@@ -161,6 +178,7 @@
     "48a3377a-1069-428a-bb58-10ea1fbe231f",
     "2ec8e8d3-7fd2-4d2b-9ca6-b28eaa54250e",
     "0d4b0e82-1622-4736-aca7-2290572e9de8",
-    "recently-viewed-products"
+    "recently-viewed-products",
+    "f40b5fa5-23c9-4c69-8a5e-13a96f4fd036"
   ]
 }
