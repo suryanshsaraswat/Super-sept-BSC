@@ -1,8 +1,8 @@
-<div id="countdown">
-        <span class="countdown-element" id="days">0d</span>
-        <span class="countdown-element" id="hours">0h</span>
-        <span class="countdown-element" id="minutes">0m</span>
-        <span class="countdown-element" id="seconds">0s</span>
+<div id="countdown-rzp">
+        <span class="countdown-element" id="d-ays">0d</span>
+        <span class="countdown-element" id="h-ours">0h</span>
+        <span class="countdown-element" id="m-inutes">0m</span>
+        <span class="countdown-element" id="s-econds">0s</span>
     </div>
 
     <script>
@@ -21,15 +21,15 @@
             var seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
 
             // Update the content of the span elements
-            document.getElementById("days").innerHTML = days + "d";
-            document.getElementById("hours").innerHTML = hours + "h";
-            document.getElementById("minutes").innerHTML = minutes + "m";
-            document.getElementById("seconds").innerHTML = seconds + "s";
+            document.getElementById("d-ays").innerHTML = days + "d";
+            document.getElementById("h-ours").innerHTML = hours + "h";
+            document.getElementById("m-inutes").innerHTML = minutes + "m";
+            document.getElementById("s-econds").innerHTML = seconds + "s";
 
             // If the countdown is over, display a message
             if (timeRemaining <= 0) {
                 clearInterval(timer);
-                document.getElementById("countdown").innerHTML = "Timer expired! It's now October 15, 2023, 12:00 PM.";
+                document.getElementById("countdown-rzp").innerHTML = "Timer expired! It's now October 15, 2023, 12:00 PM.";
             }
         }, 1000); // Update every 1 second
     </script>
