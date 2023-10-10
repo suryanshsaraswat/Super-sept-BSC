@@ -37,11 +37,13 @@
       }
     </style>
     <div class="product-ratingg">
+      {%- if product.metafields.reviews.rating.value != blank  -%}
       <div class="prod-rate-p">
           <div class="prod-rate">{% render 'icon' with 'rating-stars' %}{{ product.metafields.reviews.rating.value }}</div>
           <span>|</span>
           <div class="prod-rev">{{ product.metafields.reviews.rating_count.value }} Reviews</div>
         </div>
+      {%- endif -%}
     </div>
 
   {%- if block.settings.show_sku and product.selected_or_first_available_variant.sku != blank -%}
