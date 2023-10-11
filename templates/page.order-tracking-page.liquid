@@ -146,6 +146,9 @@ h2.order-heading {
         <div class="deli-flex">
           <div class="deets">
             <div class="dte" id="delivery-date">
+              <h3>Delivered on</h3>
+              <h2></h2>
+              <p></p>
             </div>
             <div class="status">
               <p>Status:</p>
@@ -253,7 +256,7 @@ h2.order-heading {
     var orderDetails = {
       "Delivery_Status": "Delivered",
       "Estimated_Delivery_Date": "2023-10-15",
-      "Delivery_Date": "2023-10-12",
+      "Delivery_Date": "12-10-2023",
       "Lat_Long": {
         "Latitude": 12.9716,
         "Longitude": 77.5946
@@ -277,6 +280,5 @@ h2.order-heading {
     }
     //Creating Day components of Date
     $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2>");
-    
   })
 </script>
