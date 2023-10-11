@@ -278,6 +278,6 @@ h2.order-heading {
     //Creating Day components of Date
     $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2>");
     $("#delivery_status").html("<p>Status:</p><h2>" + orderDetails.Delivery_Status + "</h2>");
-    $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"BSC2003490200"</td></tr><tr><td>Order Placed On</td><td>"22 Aug 2023"</td></tr><tr><td>Order Total</td><td>"₹499"</td></tr><tr><td>Payment Method</td><td>"Prepaid"</td></tr><tr><td>Shipping Address</td><td>"247/8 Saket, Sona Chowk, New Delhi 11085"</td></tr><tr><td>Contact Details;</td><td>"99537XXXXX"</td></tr><tr><td>Expected Arrival</td><td>"29 Aug 2023"</td></tr></tbody>");
+    $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderDetails.Order_Name +"</td></tr><tr><td>Order Placed On</td><td>"+ orderDetails.Order_Placed_Date +"</td></tr><tr><td>Order Total</td><td>"+ orderDetails.Amount +"</td></tr><tr><td>Payment Method</td><td>"+ orderDetails.Order_Prepaid_Cod +"</td></tr><tr><td>Shipping Address</td><td>"+ orderDetails.Shipping_Address +"</td></tr><tr><td>Contact Details;</td><td>"+ orderDetails.Customer_Mobile_Number +"</td></tr></tbody>");
   })
 </script>
