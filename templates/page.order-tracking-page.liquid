@@ -280,5 +280,6 @@ h2.order-heading {
     $("#delivery_status").html("<p>Status:</p><h2>" + orderDetails.Delivery_Status + "</h2>");
     $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderDetails.Order_Name +"</td></tr><tr><td>Order Placed On</td><td>"+ orderDetails.Order_Placed_Date +"</td></tr><tr><td>Order Total</td><td>"+ orderDetails.Amount +"</td></tr><tr><td>Payment Method</td><td>"+ orderDetails.Order_Prepaid_Cod +"</td></tr><tr><td>Shipping Address</td><td>"+ orderDetails.Shipping_Address +"</td></tr><tr><td>Contact Details;</td><td>"+ orderDetails.Customer_Mobile_Number +"</td></tr></tbody>");
     $("#delivery_partner").html(orderDetails.Delivery_Partner);
+    $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
   })
 </script>
