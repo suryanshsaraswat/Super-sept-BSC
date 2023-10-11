@@ -19,7 +19,7 @@ div#order-track{max-width:100%;width:1300px;margin:0 auto}
 .deets{width:40%;background-color:#633edf;border-radius:25px;box-shadow:4px 1px 7px 1px #d4d4d4}
 .dte{padding:20px}
 .dte h3{font-size:30px;font-weight:700;color:#fff}
-.dte h2{font-size:87px;font-weight:700;color:#fff;margin-bottom:0}
+.dte h2{font-size:50px;font-weight:700;color:#fff;margin-bottom:0}
 .dte p{color:#fff;font-size:20px}
 .status{padding:20px;line-height:11px;color:#fff;font-weight:700}
 .map-details iframe{max-width:100%;width:340px;height:300px;border-radius:20px;box-shadow:2px 2px 5px 0 #d4d4d4}
@@ -148,7 +148,7 @@ h2.order-heading {
             <div class="dte" id="delivery-date">
               <h3>Delivered on</h3>
               <h2></h2>
-              <p>Sunday, July 2023</p>
+              <p></p>
             </div>
             <div class="status">
               <p>Status:</p>
@@ -256,7 +256,7 @@ h2.order-heading {
     var orderDetails = {
       "Delivery_Status": "Delivered",
       "Estimated_Delivery_Date": "2023-10-15",
-      "Delivery_Date": "2023-10-12",
+      "Delivery_Date": "12-10-2023",
       "Lat_Long": {
         "Latitude": 12.9716,
         "Longitude": 77.5946
@@ -278,6 +278,14 @@ h2.order-heading {
         "Zipcode": "12345"
       }
     }
-    $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2>");
+    //Creating Day components of Date
+    var dateComponents = Delivery_Date.split("-");
+    var year = parseInt(dateComponents[0]);
+    var month = parseInt(dateComponents[1]);
+    var day = parseInt(dateComponents[2]);
+    var formattedDate = month + "-" + day + "-" + year;
+    var dateObj = new Date(Delivery_Date);
+    var dayOfWeek = dateObj.toLocaleDateString('en-US', { weekday: 'long' });
+    $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2><p>"+ dayOfWeek +"</p>");
   })
 </script>
