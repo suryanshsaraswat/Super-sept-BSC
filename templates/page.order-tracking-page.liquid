@@ -146,11 +146,11 @@ h2.order-heading {
         <div class="deli-flex">
           <div class="deets">
             <div class="dte" id="delivery-date">
-              <h3>Delivered on</h3>
+              {% comment %} <h3>Delivered on</h3>
               <h2></h2>
-              <p></p>
+              <p></p> {% endcomment %}
             </div>
-            <div class="status">
+            <div class="status" id="delivery_status">
               <p>Status:</p>
               <h2>DELIVERED</h2>
             </div>
@@ -280,5 +280,6 @@ h2.order-heading {
     }
     //Creating Day components of Date
     $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2>");
+    $("#delivery_status").html("<p>Status:</p><h2>" + orderDetails.Delivery_Status + "</h2>");
   })
 </script>
