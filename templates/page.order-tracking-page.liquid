@@ -145,10 +145,9 @@ h2.order-heading {
       <div class="delivery-deets">
         <div class="deli-flex">
           <div class="deets">
-            <div class="dte">
+            <div class="dte" id="delivery-date">
               <h3>Delivered on</h3>
-              <h2>09<sup>th</sup>
-              </h2>
+              <h2></h2>
               <p>Sunday, July 2023</p>
             </div>
             <div class="status">
@@ -251,4 +250,34 @@ h2.order-heading {
   radioButtons.forEach(function(radioButton) {
     radioButton.addEventListener("change", changeLabelAndPlaceholder);
   });
+</script>
+<script>
+  $(document).ready(function(){
+    var orderDetails = {
+      "Delivery_Status": "Delivered",
+      "Estimated_Delivery_Date": "2023-10-15",
+      "Delivery_Date": "2023-10-12",
+      "Lat_Long": {
+        "Latitude": 12.9716,
+        "Longitude": 77.5946
+      },
+      "Delivery_Partner": "FastDelivery Inc.",
+      "Tracking_ID": "FD123456",
+      "Order_Name": "Product ABC",
+      "Amount": 50.0,
+      "Discount_Used": 10.0,
+      "Order_Placed_Date": "2023-10-05",
+      "Customer_Mobile_Number": "+1 123-456-7890",
+      "Customer_Name": "John Doe",
+      "Customer_Email_Id": "johndoe@example.com",
+      "Order_Prepaid_Cod": "Prepaid",
+      "Shipping_Address": {
+        "Street": "123 Main St",
+        "City": "Anytown",
+        "State": "CA",
+        "Zipcode": "12345"
+      }
+    }
+    $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Status + "</h2>");
+  })
 </script>
