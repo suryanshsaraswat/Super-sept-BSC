@@ -191,8 +191,8 @@ h2.order-heading {
           <h2 class="order-heading">Order Summary</h2>
           <div class="order-table">
             <table>
-              <tbody class="order-table">
-                <tr>
+              <tbody class="order-table" id ="order-summary">
+                {% comment %} <tr>
                   <td>Order Name</td>
                   <td>BSC2003490200</td>
                 </tr>
@@ -219,7 +219,7 @@ h2.order-heading {
                 <tr>
                   <td>Expected Arrival</td>
                   <td>29 Aug 2023</td>
-                </tr>
+                </tr> {% endcomment %}
               </tbody>
             </table>
           </div>
@@ -278,5 +278,6 @@ h2.order-heading {
     //Creating Day components of Date
     $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2>");
     $("#delivery_status").html("<p>Status:</p><h2>" + orderDetails.Delivery_Status + "</h2>");
+    $("#rder-summary").html(<tr><td>Order Name</td><td>BSC2003490200</td></tr><tr><td>Order Placed On</td><td>22 Aug 2023</td></tr><tr><td>Order Total</td><td>₹499</td></tr><tr><td>Payment Method</td><td>Prepaid</td></tr><tr><td>Shipping Address</td><td>247/8 Saket, Sona Chowk, New Delhi 11085</td></tr><tr><td>Contact Details;</td><td>99537XXXXX</td></tr><tr><td>Expected Arrival</td><td>29 Aug 2023</td></tr>)
   })
 </script>
