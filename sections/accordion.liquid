@@ -40,20 +40,11 @@
       How to use
       <i class="fa-minus"></i>
     </a>
-    <div class="content cust" style="display:block">
+    <div class="content cust" style="display:none">
       {{ product.metafields.my_fields.faq.value }}
     </div>
   </div>
     {% endif %}
-    <div class="set custom" style="display:none">
-    <a href="#" class="active">
-      Additional Descprition
-      <i class="fa-minus"></i> 
-    </a>
-    <div class="content" style="display:block">
-      {{ product.metafields.my_fields.long-description.value }}
-    </div>
-  </div>
    {%- for block in section.blocks -%}
   {% if block.settings.ans != blank %}
   {% if block.settings.open == true %}
