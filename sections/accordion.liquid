@@ -22,9 +22,9 @@
 </style>
 
 <div class="accordion-container" id="FAQ">
-  {% if product.metafields.my_fields.long-description != blank %}<h2>{{ section.settings.accord-head }}</h2>
-  
-  <!-- <div class="set custom">
+  {% if section.settings.accord-head != blank %}<h2>{{ section.settings.accord-head }}</h2>{% endif %}
+  {% if product.metafields.my_fields.long-description != blank %}
+  <div class="set custom">
     <a href="#" class="active">
       Additional Descprition
       <i class="fa-minus"></i> 
@@ -32,8 +32,10 @@
     <div class="content cust" style="display:block">
       {{ product.metafields.my_fields.long-description.value }}
     </div>
-  </div> -->
-  {% if product.metafields.my_fields.faq != blank %}<div class="set custom">
+  </div>
+  {% endif %}
+  {% if product.metafields.my_fields.faq != blank %}
+    <div class="set custom">
     <a href="#" class="active">
       How to use
       <i class="fa-minus"></i>
@@ -41,8 +43,8 @@
     <div class="content cust" style="display:block">
       {{ product.metafields.my_fields.faq.value }}
     </div>
-  </div>{% endif %}
-  {% else %}
+  </div>
+    {% endif %}
     <div class="set custom" style="display:none">
     <a href="#" class="active">
       Additional Descprition
@@ -52,7 +54,6 @@
       {{ product.metafields.my_fields.long-description.value }}
     </div>
   </div>
-    {% endif %}
    {%- for block in section.blocks -%}
   {% if block.settings.ans != blank %}
   {% if block.settings.open == true %}
