@@ -358,9 +358,9 @@
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Get FLAT 25% OFF on orders",
+              "Offer": "Get FLAT 25% OFF on selective products",
               "image": "shopify:\/\/shop_images\/3213595.png",
-              "coupon": "SHOP25",
+              "coupon": "",
               "linkurl": "shopify:\/\/collections\/grooming-galore"
             }
           }
