@@ -85,7 +85,7 @@
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     const counter = document.getElementById("number-rzor");
-    const target = "*****";
+    const target = 7600;
     const duration = 3000;
     const interval = 20;
     const step = (target / duration) * interval;
@@ -98,7 +98,7 @@
         currentCount = target;
         clearInterval(counterInterval);
       }
-      counter.textContent = Math.floor(currentCount);
+      counter.textContent = "*****"; //Math.floor(currentCount);
     };
 
     const counterInterval = setInterval(updateCounter, interval);
