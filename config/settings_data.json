@@ -345,16 +345,6 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
-          "d2b10f03-c906-4bf4-a497-032e45bb7f0b": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "Get 3 products at 30% off",
-              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
-              "coupon": "PAYDAY",
-              "linkurl": "shopify:\/\/collections\/payday-sale"
-            }
-          },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
@@ -372,12 +362,22 @@
               "coupon": "",
               "linkurl": "shopify:\/\/pages\/razors-for-men"
             }
+          },
+          "d2b10f03-c906-4bf4-a497-032e45bb7f0b": {
+            "type": "testimonial",
+            "disabled": true,
+            "settings": {
+              "Offer": "Unleash confidence with Premium SKINCARE range at extra 25% OFF",
+              "image": "shopify:\/\/shop_images\/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
+              "coupon": "SHOP25",
+              "linkurl": "shopify:\/\/pages\/skin-care-products-for-men"
+            }
           }
         },
         "block_order": [
-          "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
-          "bfac92d8-3689-43dc-9787-3b5e34d0af4a"
+          "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
+          "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
         ],
         "settings": {
           "text": "get 25% off on your order | Use Code: Shop25"
