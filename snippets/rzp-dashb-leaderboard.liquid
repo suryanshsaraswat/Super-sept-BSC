@@ -131,6 +131,10 @@
         leaderboardList.empty();
         var ctr = 0;
         leaderboardData.forEach(function(player) {
+          if(ctr < 3)
+          {
+            player.razorsSold = "****";
+          }
           const listItem = $("<li>").addClass("player p-" + player.rank);
           listItem.append("<img src='https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Group_54.png?v=1693591172' style='width:100%; height:auto'>");
           listItem.append("<span id='lb-name'>" + player.name + "</span>");
