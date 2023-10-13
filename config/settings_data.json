@@ -363,11 +363,21 @@
               "coupon": "SHOP25",
               "linkurl": "shopify:\/\/pages\/trimmers-for-men"
             }
+          },
+          "bfac92d8-3689-43dc-9787-3b5e34d0af4a": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "Sensitive on skin RAZORS starting @99",
+              "image": "shopify:\/\/shop_images\/new_arrivals_84b4c1cf-1f49-4f6e-902d-781fd0c8b485.png",
+              "coupon": "",
+              "linkurl": "shopify:\/\/pages\/razors-for-men"
+            }
           }
         },
         "block_order": [
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
-          "4e3350df-fe9a-4254-9ca5-dccc73df0f36"
+          "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
+          "bfac92d8-3689-43dc-9787-3b5e34d0af4a"
         ],
         "settings": {
           "text": "get 25% off on your order | Use Code: Shop25"
