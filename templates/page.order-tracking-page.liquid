@@ -266,8 +266,26 @@ h2.order-heading {
         url: url,
         type: "GET",
         success: function(data) {
-            console.log("AJAX request was successful. Response data:", data);
-            alert("+", data);
+            // Parse the JSON data
+            var jsonData = JSON.parse(data);
+
+            // Access specific values from the JSON
+            var shipStatus = jsonData.Ship_Status;
+            var deliveryDate = jsonData.Delivery_Date;
+            var customerName = jsonData.Customer_Name;
+            var orderAmount = jsonData.Amount;
+
+            // You can use these values in your code as needed
+            console.log("Ship Status: " + shipStatus);
+            console.log("Delivery Date: " + deliveryDate);
+            console.log("Customer Name: " + customerName);
+            console.log("Order Amount: " + orderAmount);
+
+            // Example: Populate these values in HTML elements with specific IDs
+            $("#shipStatusElement").text(shipStatus);
+            $("#deliveryDateElement").text(deliveryDate);
+            $("#customerNameElement").text(customerName);
+            $("#orderAmountElement").text(orderAmount);
         },
         error: function(xhr, status, error) {
             console.error("AJAX request failed. Status:", status, "Error:", error);
