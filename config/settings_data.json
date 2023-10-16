@@ -348,9 +348,9 @@
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Elevate Your Grooming Game with Premium TRIMMERS at extra 25% OFF",
+              "Offer": "Elevate Your Grooming Game with Premium TRIMMERS starting at INR 899",
               "image": "shopify:\/\/shop_images\/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
-              "coupon": "SHOP25",
+              "coupon": "",
               "linkurl": "shopify:\/\/pages\/trimmers-for-men"
             }
           },
@@ -379,7 +379,7 @@
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
         ],
         "settings": {
-          "text": "get 25% off on your order | Use Code: Shop25"
+          "text": "fREE SHIPPING ON ORDERS ABOVE rS 199!"
         }
       },
       "navbar": {
