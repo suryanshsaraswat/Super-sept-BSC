@@ -259,27 +259,22 @@ h2.order-heading {
     $("#delivery_partner").html(orderDetails.Delivery_Partner);
     $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
     //Displaying second section
-    $('.tracker-button').click(function(){
-      
-  })
 </script>
 <script>
         $(document).ready(function() {
           $(".tracker-button").click(function(){
             var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
-          $.ajax({
-            url: url,
-            type: "GET",
-            success: function(data) {
-               console.log("AJAX request was successful. Response data:", data);
+            $.ajax({
+              url: url,
+              type: "GET",
+              success: function(data) {
+                console.log("AJAX request was successful. Response data:", data);
               },
               error: function(xhr, status, error) {
                  console.error("AJAX request failed. Status:", status, "Error:", error);
                 }
                });
               });
-          });
-          
             });
     </script>
 
