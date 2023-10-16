@@ -258,22 +258,22 @@ h2.order-heading {
     $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderDetails.Order_Name +"</td></tr><tr><td>Order Placed On</td><td>"+ orderDetails.Order_Placed_Date +"</td></tr><tr><td>Order Total</td><td>"+ orderDetails.Amount +"</td></tr><tr><td>Payment Method</td><td>"+ orderDetails.Order_Prepaid_Cod +"</td></tr><tr><td>Shipping Address</td><td>"+ orderDetails.Shipping_Address +"</td></tr><tr><td>Contact Details;</td><td>"+ orderDetails.Customer_Mobile_Number +"</td></tr></tbody>");
     $("#delivery_partner").html(orderDetails.Delivery_Partner);
     $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
-</script>
-<script>
-  $(".tracker-button").click(function(){
-            var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
-            $.ajax({
-              url: url,
-              type: "GET",
-              success: function(data) {
-                console.log("AJAX request was successful. Response data:", data);
-                alert(data);
-              },
-              error: function(xhr, status, error) {
-                 console.error("AJAX request failed. Status:", status, "Error:", error);
-                }
-               });
-              });
+
+    $(".tracker-button").click(function() {
+    var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
+    $.ajax({
+        url: url,
+        type: "GET",
+        success: function(data) {
+            console.log("AJAX request was successful. Response data:", data);
+            alert(data);
+        },
+        error: function(xhr, status, error) {
+            console.error("AJAX request failed. Status:", status, "Error:", error);
+        }
+    });
+});
+            });
 </script>
 
 
