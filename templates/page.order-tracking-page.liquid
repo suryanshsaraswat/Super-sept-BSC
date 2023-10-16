@@ -265,46 +265,26 @@ h2.order-heading {
 </script>
 <script>
         $(document).ready(function() {
-            $('.tracker-button').click(function() {
-                // API Endpoint (replace with your API endpoint)
-                const apiUrl = 'https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/';
-
-                // API Key, Username, and Password
-                const apiKey = 'CODEX@123';
-                const username = 'admin';
-                const password = '1234';
-
-                // Request Parameters
-                const requestData = {
-                  order_id: 'BSC200763296',
+            $('.tracker-button').click(function(){
+              var form = new FormData();
+              form.append("order_id", "152582688306917");
+              var settings = {
+                "url": "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/",
+                "method": "POST",
+                "timeout": 0,
+                "headers": {
+                  "x-api-key": "CODEX@123",
+                  "Authorization": "Basic YWRtaW46MTIzNA==",
+                  "Cookie": "ci_session=83hg6pj7tlojlb6icq0k92b32h9eku5c"
+                },
+                "processData": false,
+                "mimeType": "multipart/form-data",
+                "contentType": false,
+                 "data": form
                 };
-
-                // Build the request body
-                const requestBody = JSON.stringify(requestData);
-
-                // Set up the request headers
-                const headers = {
-                    'Authorization': 'Basic ' + btoa(username + ':' + password),
-                    'Content-Type': 'application/json',
-                    'X-API-KEY': apiKey,
-                };
-
-                // Send the request
-                $.ajax({
-                    type: 'POST',
-                    url: apiUrl,
-                    headers: headers,
-                    data: requestBody,
-                    success: function(data) {
-                      alert('API Request Successful');
-                        console.log('API Response:', data);
-                        // You can handle the API response data here
-                    },
-                    error: function(error) {
-                      alert('API Request error');
-                        console.error('API Request Error:', error);
-                    }
-                });
+                $.ajax(settings).done(function (response) {
+                  console.log(response);
+                });   
             });
         });
     </script>
