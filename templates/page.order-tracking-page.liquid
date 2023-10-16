@@ -262,12 +262,23 @@ h2.order-heading {
             var deliveryDate = jsonData.Delivery_Date;
             var customerName = jsonData.Customer_Name;
             var orderAmount = jsonData.Amount;
+            var estimatedDeliveryDate = jsonData.Estimated_Delivery_Date;
+            var deliveryPartner = jsonData.Delivery_Partner;
+            var trackingId = jsonData.Tracking_ID;
+            var orderName = jsonData.Order_Name;
+            var discount = jsonData.Discount_Used;
+            var orderPlacedDate = jsonData.Order_Placed_Date;
+            var customerMobile = jsonData.Customer_Mobile_Number;
+            var customerEmail = jsonData.Customer_Email_Id;
+            var orderPrepaidCod = jsonData.Order_Prepaid_Cod;
+            var shippingAddress = jsonData.Shipping_Address;
 
             // You can use these values in your code as needed
             console.log("Ship Status: " + shipStatus);
             console.log("Delivery Date: " + deliveryDate);
             console.log("Customer Name: " + customerName);
             console.log("Order Amount: " + orderAmount);
+            console.log("Address street" + shippingAddress.Street);
 
             // Example: Populate these values in HTML elements with specific IDs
             $("#shipStatusElement").text(shipStatus);
