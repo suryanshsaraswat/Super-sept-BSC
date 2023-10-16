@@ -3,6 +3,21 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "03607324-dff5-4ca9-92cc-a80524971a97": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_138b4f76-f479-4700-8f28-c86e94bb2c06.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_1_565c60c2-f0f8-47e8-aca6-639d771d8491.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/tuesday-temptation-2",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
         "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
           "type": "image",
           "disabled": true,
@@ -111,6 +126,7 @@
         }
       },
       "block_order": [
+        "03607324-dff5-4ca9-92cc-a80524971a97",
         "ab7168f3-b05d-42b3-9351-583cedcbdc26",
         "c8020995-17d9-45cd-9d3e-bc02aba3dbdf",
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852",

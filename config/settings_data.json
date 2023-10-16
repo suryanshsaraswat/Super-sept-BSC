@@ -344,6 +344,15 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
+          "24e140a5-298a-4df7-8bcc-d753702e6508": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "Flat 40% off on skin care",
+              "image": "shopify:\/\/shop_images\/tt_logo.png",
+              "coupon": "TUESDAY",
+              "linkurl": "shopify:\/\/collections\/tuesday-temptation-2"
+            }
+          },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
@@ -373,12 +382,13 @@
           }
         },
         "block_order": [
+          "24e140a5-298a-4df7-8bcc-d753702e6508",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
         ],
         "settings": {
-          "text": "fREE SHIPPING ON ORDERS ABOVE rS 199!"
+          "text": "Get 40% off on skin care | Use code : TUESDAY"
         }
       },
       "navbar": {
