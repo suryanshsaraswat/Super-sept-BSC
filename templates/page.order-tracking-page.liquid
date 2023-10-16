@@ -245,9 +245,10 @@ h2.order-heading {
 <script>
   $(document).ready(function(){
     $(".tracker-button").click(function() {
+      var inputValue = $("#tracker-input").val();
       $("#loader").show();
       $('.number-step').hide();
-    var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
+    var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/"+inputValue;
     $.ajax({
         url: url,
         type: "GET",
