@@ -260,6 +260,7 @@ h2.order-heading {
     $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
 
     $(".tracker-button").click(function() {
+      alert('click working');
     var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
     $.ajax({
         url: url,
