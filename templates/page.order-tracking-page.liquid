@@ -143,6 +143,9 @@ h2.order-heading {
       </div>
     </div>
   </div>
+  <div id="loader" style="display: none;">
+    Loading...
+</div>
   <div class="data-section" id="order-track" style="display:none">
     <div class="col-12">
       <div class="heading-otp">
@@ -227,46 +230,15 @@ h2.order-heading {
 </script>
 <script>
   $(document).ready(function(){
-    var orderDetails = {
-      "Delivery_Status": "Delivered",
-      "Estimated_Delivery_Date": "2023-10-15",
-      "Delivery_Date": "12-10-2023",
-      "Lat_Long": {
-        "Latitude": 12.9716,
-        "Longitude": 77.5946
-      },
-      "Delivery_Partner": "Delhivery Surface",
-      "Tracking_ID": "FD123456",
-      "Order_Name": "Product ABC",
-      "Amount": 50.0,
-      "Discount_Used": 10.0,
-      "Order_Placed_Date": "2023-10-05",
-      "Customer_Mobile_Number": "+1 123-456-7890",
-      "Customer_Name": "John Doe",
-      "Customer_Email_Id": "johndoe@example.com",
-      "Order_Prepaid_Cod": "Prepaid",
-      "Shipping_Address": {
-        "Street": "123 Main St",
-        "City": "Anytown",
-        "State": "CA",
-        "Zipcode": "12345"
-      }
-    }
-    //Creating Day components of Date
-    $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderDetails.Delivery_Date + "</h2>");
-    $("#delivery_status").html("<p>Status:</p><h2>" + orderDetails.Delivery_Status + "</h2>");
-    $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderDetails.Order_Name +"</td></tr><tr><td>Order Placed On</td><td>"+ orderDetails.Order_Placed_Date +"</td></tr><tr><td>Order Total</td><td>"+ orderDetails.Amount +"</td></tr><tr><td>Payment Method</td><td>"+ orderDetails.Order_Prepaid_Cod +"</td></tr><tr><td>Shipping Address</td><td>"+ orderDetails.Shipping_Address +"</td></tr><tr><td>Contact Details;</td><td>"+ orderDetails.Customer_Mobile_Number +"</td></tr></tbody>");
-    $("#delivery_partner").html(orderDetails.Delivery_Partner);
-    $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
-
     $(".tracker-button").click(function() {
-      alert('click working');
+      $("#loader").show();
     var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
     $.ajax({
         url: url,
         type: "GET",
         success: function(data) {
             // Parse the JSON data
+            $('#loader').hide();
             var jsonData = JSON.parse(data);
 
             // Access specific values from the JSON
