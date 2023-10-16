@@ -100,6 +100,8 @@ h2.order-heading {
     margin: 0 auto;
 }
 }
+.show{display:block!important}
+.remove{display:none!important}
 </style>
 {% assign block = {{ page.id }} %}
 <div class="ordder-container">
@@ -141,7 +143,7 @@ h2.order-heading {
       </div>
     </div>
   </div>
-  <div class="data-v-{{block}}" id="order-track" style="display:none">
+  <div class="data-section" id="order-track" style="display:none">
     <div class="col-12">
       <div class="heading-otp">
         <h2>Hi, Harsha Krishan</h2>
@@ -256,5 +258,10 @@ h2.order-heading {
     $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderDetails.Order_Name +"</td></tr><tr><td>Order Placed On</td><td>"+ orderDetails.Order_Placed_Date +"</td></tr><tr><td>Order Total</td><td>"+ orderDetails.Amount +"</td></tr><tr><td>Payment Method</td><td>"+ orderDetails.Order_Prepaid_Cod +"</td></tr><tr><td>Shipping Address</td><td>"+ orderDetails.Shipping_Address +"</td></tr><tr><td>Contact Details;</td><td>"+ orderDetails.Customer_Mobile_Number +"</td></tr></tbody>");
     $("#delivery_partner").html(orderDetails.Delivery_Partner);
     $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
+    //Displaying second section
+    $('.tracker-button').click(function(){
+      $('.number-step').addClass('.remove');
+      $('.data-section').addClass('.show');
+    })
   })
 </script>
