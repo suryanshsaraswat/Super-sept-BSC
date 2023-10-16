@@ -281,6 +281,7 @@ h2.order-heading {
             console.log("Address street" + shippingAddress.Street);
 
             // Example: Populate these values in HTML elements with specific IDs
+            $("#delivery-date").html("<h3>Delivered On</h3><h2>" + deliveryDate + "</h2>");
             $("#shipStatusElement").text(shipStatus);
             $("#deliveryDateElement").text(deliveryDate);
             $("#customerNameElement").text(customerName);
