@@ -260,58 +260,52 @@ h2.order-heading {
     $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+orderDetails.Tracking_ID+'</span></p>');
     //Displaying second section
     $('.tracker-button').click(function(){
-      $('.number-step').addClass('remove');
-      $('.data-section').addClass('show');
-    })
+      
   })
 </script>
 <script>
-        document.getElementById("tracking-id").addEventListener("click", function () {
-            // API Endpoint
-            const apiUrl = 'https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/';
+        $(document).ready(function() {
+            $('.tracker-button').click(function() {
+                // API Endpoint (replace with your API endpoint)
+                const apiUrl = 'https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/';
 
-            // API Key, Username, and Password
-            const apiKey = 'CODEX@123';
-            const username = 'admin';
-            const password = '1234';
+                // API Key, Username, and Password
+                const apiKey = 'CODEX@123';
+                const username = 'admin';
+                const password = '1234';
 
-            // Request Parameters
-            const requestData = {
-                order_id: 'BSC200763296',
-            };
+                // Request Parameters
+                const requestData = {
+                  order_id: 'BSC200763296',
+                };
 
-            // Build the request body
-            const requestBody = JSON.stringify(requestData);
+                // Build the request body
+                const requestBody = JSON.stringify(requestData);
 
-            // Set up the request headers
-            const headers = new Headers();
-            headers.append('Authorization', `Basic ${btoa(`${username}:${password}`)}`);
-            headers.append('Content-Type', 'application/json');
-            headers.append('X-API-KEY', apiKey);
+                // Set up the request headers
+                const headers = {
+                    'Authorization': 'Basic ' + btoa(username + ':' + password),
+                    'Content-Type': 'application/json',
+                    'X-API-KEY': apiKey,
+                };
 
-            // Create the request object
-            const request = new Request(apiUrl, {
-                method: 'POST',
-                headers: headers,
-                body: requestBody,
-            });
-
-            // Send the request
-            fetch(request)
-                .then(response => {
-                    if (response.status === 200) {
-                        return response.json();
-                    } else {
-                        throw new Error('Failed to retrieve data from the API');
+                // Send the request
+                $.ajax({
+                    type: 'POST',
+                    url: apiUrl,
+                    headers: headers,
+                    data: requestBody,
+                    success: function(data) {
+                      alert('API Request Successful');
+                        console.log('API Response:', data);
+                        // You can handle the API response data here
+                    },
+                    error: function(error) {
+                      alert('API Request error');
+                        console.error('API Request Error:', error);
                     }
-                })
-                .then(data => {
-                    console.log('API Response:', data);
-                    // You can handle the API response data here
-                })
-                .catch(error => {
-                    console.error('API Request Error:', error);
                 });
+            });
         });
     </script>
 
