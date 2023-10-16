@@ -265,27 +265,21 @@ h2.order-heading {
 </script>
 <script>
         $(document).ready(function() {
-            $('.tracker-button').click(function(){
-              var form = new FormData();
-              form.append("order_id", "152582688306917");
-              var settings = {
-                "url": "http://bitools.bombayshavingcompany.com/index.php/authentication/tracking/",
-                "method": "POST",
-                "timeout": 0,
-                "headers": {
-                  "x-api-key": "CODEX@123",
-                  "Authorization": "Basic YWRtaW46MTIzNA==",
-                  "Cookie": "ci_session=83hg6pj7tlojlb6icq0k92b32h9eku5c"
-                },
-                "processData": false,
-                "mimeType": "multipart/form-data",
-                "contentType": false,
-                 "data": form
-                };
-                $.ajax(settings).done(function (response) {
-                  console.log(response);
-                });   
+          $("#ajaxButton").click(function(){
+            var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/BSC200763296";
+          $.ajax({
+            url: url,
+            type: "GET",
+            success: function(data) {
+               console.log("AJAX request was successful. Response data:", data);
+              },
+              error: function(xhr, status, error) {
+                 console.error("AJAX request failed. Status:", status, "Error:", error);
+                }
+               });
+              });
+          });
+          
             });
-        });
     </script>
 
