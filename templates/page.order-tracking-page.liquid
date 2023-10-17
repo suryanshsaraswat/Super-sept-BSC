@@ -324,9 +324,9 @@ h2.order-heading {
             $("#deliveryDateElement").text(deliveryDate);
             $("#customerNameElement").text(customerName);
             $("#orderAmountElement").text(orderAmount);
-            $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
+            $(".heading-otp").html("<h2>Hi, "+customerName+"</h2><p>");
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            if ( shipStatus === "Open" || shipStatus === null){
+            if ( shipStatus === "Open" || shipStatus === null || shipStatus === "OrderConfirmed"){
               var shipStatusUpdate = "Open";
               }else if ( shipStatus === "Packed"){
               var shipStatusUpdate = "Picked";
