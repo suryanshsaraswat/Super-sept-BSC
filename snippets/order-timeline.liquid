@@ -175,7 +175,8 @@
             // and handle the response here.
             // For the sake of this example, we'll update the status manually.
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            let currentStatus = shipStatus; // Change this to the actual current status
+            let currentStatus = shipStatus;
+            alert(currentStatus); // Change this to the actual current status
             let currentIndex = statuses.indexOf(currentStatus);
             if (currentIndex !== -1) {
                 // Update the progress bar and triggers based on the current status
