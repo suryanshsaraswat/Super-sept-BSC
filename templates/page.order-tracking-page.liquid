@@ -328,7 +328,15 @@ h2.order-heading {
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             if ( shipStatus === "Open" || shipStatus === null){
               var shipStatusUpdate = "Open";
-            }
+              }else if ( shipStatus === "Packed"){
+              var shipStatusUpdate = "Picked";
+              }else if (shipStatus === "Picked" || shipStatus === "Shipped" || shipStatus === "InTransit" || shipStatus === "LostInTransit"){
+              var shipStatusUpdate = "Shipped";
+              }else if(shipStatus === "Out Of Delivery"){
+              var shipStatusUpdate = "Out Of Delivery";
+              } else if(shipStatus === "Delivered"){
+              var shipStatusUpdate = "Delivered";
+              }
             let currentStatus = shipStatusUpdate;
             console.log("shipping status found: " +currentStatus);
             alert(currentStatus); 
