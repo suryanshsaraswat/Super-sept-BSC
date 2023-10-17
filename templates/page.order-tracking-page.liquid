@@ -326,7 +326,10 @@ h2.order-heading {
             $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            let currentStatus = shipStatus;
+            if ( shipStatus === "Open" || shipStatus === null){
+              var shipStatusUpdate = "Open";
+            }
+            let currentStatus = shipStatusUpdate;
             console.log("shipping status found: " +currentStatus);
             alert(currentStatus); 
             let currentIndex = statuses.indexOf(currentStatus);
