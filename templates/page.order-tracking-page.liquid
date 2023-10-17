@@ -270,6 +270,34 @@ h2.order-heading {
             var customerEmail = jsonData.Customer_Email_Id;
             var orderPrepaidCod = jsonData.Order_Prepaid_Cod;
             var shippingAddress = jsonData.Shipping_Address;
+          //parsing date in day, month, year format
+          var date = new Date(deliveryDate);
+          var months = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+          ];
+          // Get the day, month, and year from the date object
+          var day = date.getDate();
+          var month = months[date.getMonth()];
+          var year = date.getFullYear();
+          // Create a function to add 'th', 'st', 'nd', or 'rd' to the day
+          function getDayWithSuffix(day) {
+            if (day >= 11 && day <= 13) {
+              return day + 'th';
+            }
+            switch (day % 10) {
+              case 1: return day + 'st';
+              case 2: return day + 'nd';
+              case 3: return day + 'rd';
+              default: return day + 'th';
+            }
+          }
+
+// Format the date as 'day month year' (e.g., '11th September 2023')
+var formattedDate = getDayWithSuffix(day) + ' ' + month + ' ' + year;
+
+// Now, 'formattedDate' contains the date in the desired format
+console.log(formattedDate);
             console.log("Ship Status: " + shipStatus);
             console.log("Delivery Date: " + deliveryDate);
             console.log("Customer Name: " + customerName);
