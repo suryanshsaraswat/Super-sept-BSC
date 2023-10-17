@@ -155,15 +155,15 @@
     <div class="progress-container">
         <div class="timeline">
           <div class="progress" id="progress"></div>
-          <div class="trigger" id="orderPlaced" style="left: 0;"></div>
+          <div class="trigger" id="Open" style="left: 0;"></div>
           <div class="trigger-label" style="left: 0;">Order<br>confirmed</div>
-          <div class="trigger" id="orderPacked" style="left: 25%;"></div>
+          <div class="trigger" id="Picked" style="left: 25%;"></div>
           <div class="trigger-label" style="left: 25%;">Order<br>Packed</div>
-          <div class="trigger" id="orderDispatched" style="left: 50%;"></div>
+          <div class="trigger" id="Shipped" style="left: 50%;"></div>
           <div class="trigger-label" style="left: 50%;">Order<br>Dispatched</div>
           <div class="trigger" id="orderOutOfDelivery" style="left: 75%;"></div>
           <div class="trigger-label" style="left: 75%;">Out for<br>Delivery</div>
-          <div class="trigger" id="orderDelivered" style="left: 100%;"></div>
+          <div class="trigger" id="Delivered" style="left: 100%;"></div>
           <div class="trigger-label" style="left: 100%;">Delivered</div>
         </div>
     </div>
@@ -174,8 +174,8 @@
             // Example: use fetch or XMLHttpRequest to make a GET request to your backend
             // and handle the response here.
             // For the sake of this example, we'll update the status manually.
-            const statuses = ["orderPlaced", "orderPacked", "orderDispatched", "orderOutOfDelivery", "orderDelivered"];
-            let currentStatus = "orderPacked"; // Change this to the actual current status
+            const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
+            let currentStatus = shipStatus; // Change this to the actual current status
             let currentIndex = statuses.indexOf(currentStatus);
             if (currentIndex !== -1) {
                 // Update the progress bar and triggers based on the current status
