@@ -405,6 +405,7 @@
           },
           "4d245f9c-a505-414f-836d-13c5b9fd0231": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "mobile_nav": "shopify:\/\/shop_images\/Logo-for-web_1.png",
               "text": "Razorpreneur",
