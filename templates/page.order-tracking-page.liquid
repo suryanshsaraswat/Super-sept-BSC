@@ -327,7 +327,6 @@ h2.order-heading {
             $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            var currentIndex = 0;
             if (shipStatus === "Open" || shipStatus === NULL) {
               $('#progress').addClass('width-0');
             } else if (shipStatus === "Packed") {
