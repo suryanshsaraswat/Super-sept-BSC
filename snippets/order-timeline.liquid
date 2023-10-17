@@ -58,7 +58,6 @@
         </div>
     </div>
     <script>
-        function getOrderStatus(orderId) {
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             let currentStatus = shipStatus;
             console.log("shipping status found: " +currentStatus);
@@ -70,8 +69,4 @@
                 progress.style.width = `${(currentIndex) * 25}%`;
                 trigger.style.backgroundColor = "#4CAF50";
             }
-        }
-
-        // Call the getOrderStatus function with your order ID
-        getOrderStatus("yourOrderID");
     </script>
