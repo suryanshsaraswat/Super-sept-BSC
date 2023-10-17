@@ -348,13 +348,7 @@ h2.order-heading {
             const trigger = document.getElementById(currentStatus);
             let currentIndex = statuses.indexOf(currentStatus);
             progress.style.width = `${(currentIndex) * 25}%`;
-                trigger.style.backgroundColor = "#4CAF50";
-            // if (currentIndex !== -1) {
-            //     const progress = document.getElementById("progress");
-            //     const trigger = document.getElementById(currentStatus);
-            //     progress.style.width = `${(currentIndex) * 25}%`;
-            //     trigger.style.backgroundColor = "#4CAF50";
-            // }
+            trigger.style.backgroundColor = "#4CAF50";
         },
         error: function(xhr, status, error) {
             console.error("AJAX request failed. Status:", status, "Error:", error);
