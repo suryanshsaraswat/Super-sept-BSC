@@ -329,26 +329,16 @@ h2.order-heading {
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             var currentIndex = 0;
             if (ship_status === "Open" || ship_status === NULL) {
-              currentStatus = "Open";
-              currentIndex = 1;
+              $('#progress').css("width","0%");
             } else if (ship_status === "Packed") {
-              currentStatus = "Packed";
-              currentIndex = 2;
+              $('#progress').css("width","25%");
             } else if (ship_status === "Picked" || ship_status === "InTransit" || ship_status === "Shipped") {
-              currentStatus = "Shipped";
-              currentIndex = 3;
+              $('#progress').css("width","50%");
             } else if (ship_status === "Out Of Delivery") {
-              currentStatus = "Out of Delivery";
-              currentIndex = 4;
+              $('#progress').css("width","75%");
             } else if (ship_status === "Delivered") {
-              currentStatus = "Delivered";
-              currentIndex = 5;
+              $('#progress').css("width","100%");
             }
-            const progress = document.getElementById("progress");
-            const trigger = document.getElementById(currentStatus);
-            let currentIndex = statuses.indexOf(currentStatus);
-            progress.style.width = `${(currentIndex) * 25}%`;
-            trigger.style.backgroundColor = "#4CAF50";
         },
         error: function(xhr, status, error) {
             console.error("AJAX request failed. Status:", status, "Error:", error);
