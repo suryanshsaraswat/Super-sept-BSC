@@ -317,7 +317,21 @@ h2.order-heading {
           else {
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate + "</h2>");
           }
-            
+           if (shipStatus === "Open" || shipStatus === NULL) {
+              $('#progress').addClass('width-0');
+            } 
+          if (shipStatus === "Packed") {
+              $('#progress').addClass('width-25');
+            }
+          if (shipStatus === "Picked" || shipStatus === "InTransit" || shipStatus === "Shipped" || shipStatus === "LostInTransit") {
+              $('#progress').addClass('width-50');
+            }
+          if (shipStatus === "Out Of Delivery") {
+              $('#progress').addClass('width-75');
+            }
+          if (shipStatus === "Delivered") {
+              $('#progress').addClass('width-100');
+            } 
             $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ orderPlacedDate +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
             $("#delivery_partner").html(deliveryPartner);
             $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+ trackingId +'</span></p>');
@@ -327,19 +341,6 @@ h2.order-heading {
             $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
             // const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            if (shipStatus === "Open" || shipStatus === NULL) {
-              console.log(shipStatus);
-              $('#progress').addClass('.width-0');
-            } else if (shipStatus === "Packed") {
-              $('#progress').addClass('width-25');
-            } else if (shipStatus === "Picked" || shipStatus === "InTransit" || shipStatus === "Shipped") {
-              console.log(shipStatus);
-              $('#progress').addClass('width-50');
-            } else if (shipStatus === "Out Of Delivery") {
-              $('#progress').addClass('width-75');
-            } else if (shipStatus === "Delivered") {
-              $('#progress').addClass('width-100');
-            }
         },
         error: function(xhr, status, error) {
             console.error("AJAX request failed. Status:", status, "Error:", error);
