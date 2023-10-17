@@ -326,12 +326,14 @@ h2.order-heading {
             $("#customerNameElement").text(customerName);
             $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
-            const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
+            // const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             if (shipStatus === "Open" || shipStatus === NULL) {
-              $('#progress').addClass('width-0');
+              console.log(shipStatus);
+              $('#progress').addClass('.width-0');
             } else if (shipStatus === "Packed") {
               $('#progress').addClass('width-25');
             } else if (shipStatus === "Picked" || shipStatus === "InTransit" || shipStatus === "Shipped") {
+              console.log(shipStatus);
               $('#progress').addClass('width-50');
             } else if (shipStatus === "Out Of Delivery") {
               $('#progress').addClass('width-75');
