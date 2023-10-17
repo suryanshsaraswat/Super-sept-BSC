@@ -163,7 +163,7 @@ h2.order-heading {
   <div class="data-section" id="order-track" style="display:none">
     <div class="col-12">
       <div class="heading-otp">
-        <h2>Hi, Harsha Krishan</h2>
+        
       </div>
       <div class="otp-timeline">
       {% render 'order-timeline' %}
@@ -295,6 +295,7 @@ h2.order-heading {
             $("#deliveryDateElement").text(deliveryDate);
             $("#customerNameElement").text(customerName);
             $("#orderAmountElement").text(orderAmount);
+            $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
         },
         error: function(xhr, status, error) {
             console.error("AJAX request failed. Status:", status, "Error:", error);
