@@ -284,9 +284,9 @@ h2.order-heading {
             console.log("customer Mobile" + customerMobile);
             console.log("COD or Prepaid:" +orderPrepaidCod);
             console.log("shipping address:"+shippingAddress.Street+","+shippingAddress.Zipcode);
-            if(deliveryPartner === "Delhivery Direct"){
+            if(deliveryPartner === "Delhivery Direct Sur"){
               $('.header-logoo').html('<h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Delhivery.png?v=1697526138" alt="delivery logo" style="width:30px; height:30px"></h2>');
-            }
+            };
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + orderPlacedDate + "</h2>");
             $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ orderPlacedDate +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
             $("#delivery_partner").html(deliveryPartner);
