@@ -58,15 +58,16 @@
         </div>
     </div>
     <script>
-            const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            let currentStatus = shipStatus;
-            console.log("shipping status found: " +currentStatus);
-            alert(currentStatus); 
-            let currentIndex = statuses.indexOf(currentStatus);
-            if (currentIndex !== -1) {
-                const progress = document.getElementById("progress");
-                const trigger = document.getElementById(currentStatus);
-                progress.style.width = `${(currentIndex) * 25}%`;
-                trigger.style.backgroundColor = "#4CAF50";
-            }
+      
+            // const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
+            // let currentStatus = shipStatus;
+            // console.log("shipping status found: " +currentStatus);
+            // alert(currentStatus); 
+            // let currentIndex = statuses.indexOf(currentStatus);
+            // if (currentIndex !== -1) {
+            //     const progress = document.getElementById("progress");
+            //     const trigger = document.getElementById(currentStatus);
+            //     progress.style.width = `${(currentIndex) * 25}%`;
+            //     trigger.style.backgroundColor = "#4CAF50";
+            // }
     </script>
