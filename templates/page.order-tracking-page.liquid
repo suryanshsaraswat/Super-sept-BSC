@@ -181,7 +181,7 @@ h2.order-heading {
           </div>
           <div class="delhivery">
             <div class="delhi-flex">
-              <div class="map-details">
+              <!-- <div class="map-details">
                 <iframe
                   width="520"
                   height="400"
@@ -191,7 +191,7 @@ h2.order-heading {
                   marginwidth="0"
                   id="gmap_canvas"
                   src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=Udyog%20vihar%20phase%202%20GURGAON+(Bombay%20Shaving%20Company)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-              </div>
+              </div> -->
               <div class="tracking-details">
                 <div class="header-deets">
                   <div class="header-logoo" id="delivery-partner-logo">
@@ -286,7 +286,7 @@ h2.order-heading {
               $('#delivery-partner-logo').html('<h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Delhivery.png?v=1697526138" alt="delivery logo" style="width:30px; height:30px"></h2>');
             };
           if(deliveryDate === null){
-            $("#delivery-date").html('<p>Order is under processing</p><h3>Status</h3><h2>' + shipStatus + '</h2>');
+            $("#delivery-date").html('<p>Order is under processing</p><h3 style="">Status</h3><h2>' + shipStatus + '</h2>');
           }
           else {
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + deliveryDate + "</h2>");
