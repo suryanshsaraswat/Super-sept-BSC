@@ -282,7 +282,7 @@ h2.order-heading {
             console.log("customer Mobile" + customerMobile);
             console.log("COD or Prepaid:" +orderPrepaidCod);
             console.log("shipping address:"+shippingAddress.Street+","+shippingAddress.Zipcode);
-            if(deliveryPartner === "Delhivery Direct Sur"){
+            if(deliveryPartner === "Delhivery Direct Sur" || deliveryPartner === "Delhivery Surface"){
               $('#delivery-partner-logo').html('<h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Delhivery.png?v=1697526138" alt="delivery logo" style="width:30px; height:30px"></h2>');
             };
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + deliveryDate + "</h2>");
