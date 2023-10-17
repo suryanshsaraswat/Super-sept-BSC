@@ -329,15 +329,15 @@ h2.order-heading {
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             var currentIndex = 0;
             if (shipStatus === "Open" || shipStatus === NULL) {
-              $('#progress').css("width","0%");
+              $('#progress').addClass('width-0');
             } else if (shipStatus === "Packed") {
-              $('#progress').css("width","25%");
+              $('#progress').addClass('width-25');
             } else if (shipStatus === "Picked" || shipStatus === "InTransit" || shipStatus === "Shipped") {
-              $('#progress').css("width","50%");
+              $('#progress').addClass('width-50');
             } else if (shipStatus === "Out Of Delivery") {
-              $('#progress').css("width","75%");
+              $('#progress').addClass('width-75');
             } else if (shipStatus === "Delivered") {
-              $('#progress').css("width","100%");
+              $('#progress').addClass('width-100');
             }
         },
         error: function(xhr, status, error) {
