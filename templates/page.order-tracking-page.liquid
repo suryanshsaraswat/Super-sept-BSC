@@ -327,7 +327,17 @@ h2.order-heading {
             $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
-            let currentStatus = shipStatus;
+            if (ship_status === "Open" || ship_status === NULL) {
+              currentStatus = "Open";
+            } else if (ship_status === "Packed") {
+              currentStatus = "Packed";
+            } else if (ship_status === "Picked" || ship_status === "InTransit" || ship_status === "Shipped") {
+              currentStatus = "Shipped";
+            } else if (ship_status === "Out Of Delivery") {
+              currentStatus = "Out of Delivery";
+            } else if (ship_status === "Delivered") {
+              currentStatus = "Delivered";
+            }
             console.log("shipping status found: " +currentStatus);
             alert(currentStatus); 
             let currentIndex = statuses.indexOf(currentStatus);
