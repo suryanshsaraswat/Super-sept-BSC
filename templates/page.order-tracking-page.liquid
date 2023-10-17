@@ -325,7 +325,17 @@ h2.order-heading {
             $("#customerNameElement").text(customerName);
             $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2>");
-            // const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
+            const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
+            let currentStatus = shipStatus;
+            console.log("shipping status found: " +currentStatus);
+            alert(currentStatus); 
+            let currentIndex = statuses.indexOf(currentStatus);
+            if (currentIndex !== -1) {
+                const progress = document.getElementById("progress");
+                const trigger = document.getElementById(currentStatus);
+                progress.style.width = `${(currentIndex) * 25}%`;
+                trigger.style.backgroundColor = "#4CAF50";
+            }
         },
         error: function(xhr, status, error) {
             console.error("AJAX request failed. Status:", status, "Error:", error);
