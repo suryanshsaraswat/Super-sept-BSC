@@ -246,7 +246,6 @@ h2.order-heading {
   $(document).ready(function(){
     $(".tracker-button").click(function() {
       var inputValue = $("#trackingInput").val();
-      alert(inputValue);
       $("#loader").show();
       $('.number-step').hide();
     var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/"+inputValue;
