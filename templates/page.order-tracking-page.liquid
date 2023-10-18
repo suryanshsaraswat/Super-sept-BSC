@@ -249,7 +249,7 @@ h2.order-heading {
       var inputValue = $("#trackingInput").val();
       var regexPattern = /^BSC\d{9}$/;
       if(!regexPattern.test(inputValue)){
-        $("#trackingError").text("Invalid input. Please enter 'BSC' followed by 9 digits.");
+        $("#trackingError").text("Enter Correct Order ID");
       } else{
         $("#loader").show();
       $('.number-step').hide();
