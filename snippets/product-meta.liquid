@@ -12,13 +12,13 @@
     </h2>
   {%- endif -%}
 <div class="metaflex">
-  <h1 class="ProductMeta__Title Heading u-h2">
+  <h2 class="ProductMeta__Title Heading u-h2">
     {%- if template.name == 'product' -%}
       {{- product.title -}}
     {%- else -%}
       <a href="{{ product.url }}">{{ product.title }}</a>
     {%- endif -%}
-  </h1>
+  </h2>
 </div>
   {% comment %}{%- if block.settings.show_product_rating -%}
     <div class="ProductMeta__Rating Heading Text--subdued u-h7">
