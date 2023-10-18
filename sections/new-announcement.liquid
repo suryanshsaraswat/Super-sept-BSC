@@ -88,6 +88,8 @@
             </a>
         {% endfor %}
     </div>
+    <img src="" class="prev" style="width:40px; height:40px">
+     <img src="" class="next" style="width:40px; height:40px">
 </div>
 <script>
   $('.ann-slider').slick({
@@ -96,7 +98,9 @@
     autoplaySpeed:2000,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true
+    arrows: true,
+    prevArrow: $('.prev'),
+    nextArrow: $('.next'),
   })
 </script>
 {% else %}
