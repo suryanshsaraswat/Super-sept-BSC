@@ -56,6 +56,16 @@
   </ul>
 </div>
 {%  elsif section.settings.layout == 'slider' %}
+  <style>
+    .ann-slider {
+    padding: 3px 0px;
+    background: #0d5ea8;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+  </style>
   <div class="announce">
     <div class="ann-slider">
         {% for block in section.blocks %}
