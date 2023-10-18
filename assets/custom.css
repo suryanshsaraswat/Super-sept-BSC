@@ -1014,7 +1014,7 @@ input#dateofbirth {
 }
 @media(max-width:450px){
   .desktop-view {display: none;}
-  .Product__Wrapper > .mobile-view { display: block;}
+  .Product__Wrapper > .mobile-view { display: block;margin-left:10px}
   .mobile-view{display:block;background-color:#fff; padding-top:13px}
   .mobile-view > .ProductMeta{padding-left:15px}
   .mobile-view > .ProductMeta h1{font-weight:600; letter-spacing:1px;text-transform: capitalize;line-height: 22px;}
