@@ -2,6 +2,28 @@
   "sections": {
     "ec69d34c-bcdd-499c-84a5-4bc664640085": {
       "type": "new-announcement",
+      "blocks": {
+        "c6ecda2f-b173-4df3-add7-b914be0aed76": {
+          "type": "testimonial",
+          "settings": {
+            "Offer": "owowwoowowow",
+            "coupon": "wowowoo",
+            "linkurl": ""
+          }
+        },
+        "e15ad1a1-206c-4ce6-974f-9723383ea888": {
+          "type": "testimonial",
+          "settings": {
+            "Offer": "",
+            "coupon": "",
+            "linkurl": ""
+          }
+        }
+      },
+      "block_order": [
+        "c6ecda2f-b173-4df3-add7-b914be0aed76",
+        "e15ad1a1-206c-4ce6-974f-9723383ea888"
+      ],
       "settings": {
         "text": "Whats up",
         "layout": "slider"
