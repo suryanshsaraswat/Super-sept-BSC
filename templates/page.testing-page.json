@@ -7,7 +7,7 @@
           "type": "testimonial",
           "settings": {
             "Offer": "Get 25% off on selected products",
-            "coupon": "SHOP25",
+            "coupon": "",
             "linkurl": "shopify:\/\/collections\/akasa-air-x-bsc"
           }
         },
