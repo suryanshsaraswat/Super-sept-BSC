@@ -331,9 +331,6 @@ h2.order-heading {
             $("#delivery_partner").html(deliveryPartner);
             $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+ trackingId +'</span></p>');
             $("#delivery_status").html("<p>Status:</p><h2>" + shipStatus + "</h2>");
-            $("#deliveryDateElement").text(deliveryDate);
-            $("#customerNameElement").text(customerName);
-            $("#orderAmountElement").text(orderAmount);
             $(".heading-otp").html("<h2>Hi, "+customerName+"</h2><p>Based on your Order ID/AWB, here are your order details</p>");
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             if ( shipStatus === "Open" || shipStatus === null || shipStatus === "OrderConfirmed"){
