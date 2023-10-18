@@ -155,6 +155,7 @@ h2.order-heading {
             pattern="^BSC\d{9}$"
             id="trackingInput"
             placeholder="Enter Order Number">
+            <span class="error-message" id="trackingError" style="color: red;"></span>
         </div>
         <div class="trancker-button">
           <button onclick="" class="tracker-button" id="tracking-id">Submit</button>
@@ -246,7 +247,11 @@ h2.order-heading {
   $(document).ready(function(){
     $(".tracker-button").click(function() {
       var inputValue = $("#trackingInput").val();
-      $("#loader").show();
+      var regexPattern = /^BSC\d{9}$/;
+      if(!regexPattern.test(inputValue)){
+        $("#trackingError").text("Invalid input. Please enter 'BSC' followed by 9 digits.");
+      } else{
+        $("#loader").show();
       $('.number-step').hide();
     var url = "https://bitools.bombayshavingcompany.com/index.php/authentication/tracking/"+inputValue;
     $.ajax({
@@ -351,6 +356,8 @@ h2.order-heading {
             console.error("AJAX request failed. Status:", status, "Error:", error);
         }
     });
+      }
+      
 });
             });
 </script>
