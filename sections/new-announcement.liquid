@@ -59,7 +59,10 @@
 <div class="announce">
     <div class="ann-slider">
         {% for block in section.blocks %}
-        <a href="{{ block.settings.linkurl }}"><div class="announcement-child-slide child-1">{{ block.settings.Offer }}</div></a>
+        <a href="{{ block.settings.linkurl }}"><div class="announcement-child-slide child-1">
+            <p>{{ block.settings.Offer }}{% if block.settings.coupon != blank %}<span class="coupon">{{block.settings.coupon}}</span></p>
+            </div>
+            </a>
     </div>
 
 </div>
