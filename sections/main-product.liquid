@@ -138,9 +138,9 @@
         {%- assign media_count = media_count | plus: 1 -%}
       {%- endfor -%}
     {%- endcapture -%}
-    <div class="mobile-view">
+    <!-- <div class="mobile-view">
       {%- render 'product-meta', form: form, block: block, product: product -%}
-    </div>
+    </div> -->
     {%- if product.media.size > 0 -%}
       <div class="Product__Gallery {% if section.settings.stack_images %}Product__Gallery--stack{% endif %} {% if section.settings.show_thumbnails and media_count > 1 %}Product__Gallery--withThumbnails{% else %}Product__Gallery--withDots{% endif %}">
       {%- if product.tags=="damensch" -%}  
