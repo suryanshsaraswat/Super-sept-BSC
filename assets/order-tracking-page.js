@@ -77,9 +77,6 @@ $(document).ready(function(){
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate + "</h2>");
           }
             $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ orderPlacedDate +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
-            if(dekiveryPartner === null){
-              $("#delivery_partner")
-            }
             $("#delivery_partner").html(deliveryPartner);
             $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+ trackingId +'</span></p>');
             $("#delivery_status").html("<p>Status:</p><h2>" + shipStatus + "</h2>");
