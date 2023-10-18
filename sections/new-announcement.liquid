@@ -60,7 +60,7 @@
     <div class="ann-slider">
         {% for block in section.blocks %}
         <a href="{{ block.settings.linkurl }}"><div class="announcement-child-slide child-1">
-            <p>{{ block.settings.Offer }}{% if block.settings.coupon != blank %}| Use Code: <span class="coupon copytext" onclick="copyToClipboard(this)">{{ block.settings.coupon }}</span>{% endif %}</p>
+            <p>{{ block.settings.Offer }}{% if block.settings.coupon != blank %}| Use Code: <span class="coupon" onclick="copyToClipboard(this)">{{ block.settings.coupon }}</span>{% endif %}</p>
             </div>
             </a>
         {% endfor %}
