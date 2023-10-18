@@ -11,8 +11,20 @@
       {%- endunless -%}
     </h2>
   {%- endif -%}
+  <style>
+    .u-h2.desktop{display:block};
+    .u-h2.mobile{display:none}
+    @media(max-width:450px){.u-h2.desktop{display:none}.u-h2.mobile{display:block}}
+  </style>
 <div class="metaflex">
-  <h2 class="ProductMeta__Title Heading u-h2">
+  <h1 class="ProductMeta__Title Heading u-h2 desktop">
+    {%- if template.name == 'product' -%}
+      {{- product.title -}}
+    {%- else -%}
+      <a href="{{ product.url }}">{{ product.title }}</a>
+    {%- endif -%}
+  </h2>
+  <h2 class="ProductMeta__Title Heading u-h2 desktop">
     {%- if template.name == 'product' -%}
       {{- product.title -}}
     {%- else -%}
