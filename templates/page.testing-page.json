@@ -1,33 +1,16 @@
 {
   "sections": {
+    "ec69d34c-bcdd-499c-84a5-4bc664640085": {
+      "type": "new-announcement",
+      "settings": {
+        "text": "",
+        "layout": "drop-dwon"
+      }
+    },
     "main": {
       "type": "main-page",
       "settings": {
         "show_large": false
-      }
-    },
-    "1657523681299f51d6": {
-      "type": "animated-counters",
-      "disabled": true,
-      "settings": {
-      }
-    },
-    "5f373e30-2370-4272-b053-1ec2189c0fa2": {
-      "type": "countdown-banner",
-      "blocks": {
-        "49ae2ea9-9d1b-41d6-afb7-91be21482363": {
-          "type": "testimnoials",
-          "settings": {
-            "featured_product_dotd": "charcoal-facial-kit",
-            "pr_img": "shopify:\/\/shop_images\/Charcoal-Face-Care-Kit.png"
-          }
-        }
-      },
-      "block_order": [
-        "49ae2ea9-9d1b-41d6-afb7-91be21482363"
-      ],
-      "settings": {
-        "date_picker": "11-07-2023"
       }
     },
     "343eb766-4d79-4cd2-a099-2977ec92acd2": {
@@ -38,98 +21,11 @@
         "title": "",
         "liquid": "{% render 'typeform-test' %}"
       }
-    },
-    "43e21d3f-5c52-4fb1-ba50-97fd7fc1d361": {
-      "type": "custom-liquid",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "Your Liquid",
-        "liquid": "{% render 'discount-section' %}"
-      }
-    },
-    "77caece0-b222-42ce-a482-83606b4bce73": {
-      "type": "DOTD-caraousel",
-      "blocks": {
-        "6ee939cb-fef8-4782-9a1b-eebb12cf4171": {
-          "type": "product",
-          "settings": {
-            "dotd-prod-one": "advance-castor-oil-for-hair-fall-control",
-            "dotd-prod-two": "5-in-1-skin-brightning-cream",
-            "dotd-prod-three": "aloe-vera-hair-removal-cream-30g-pack-of-6"
-          }
-        }
-      },
-      "block_order": [
-        "6ee939cb-fef8-4782-9a1b-eebb12cf4171"
-      ],
-      "settings": {
-      }
-    },
-    "368c8807-7bdc-4e9a-ba4d-478c33f6c50f": {
-      "type": "DOTD-NEW",
-      "blocks": {
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-product_meta-1": {
-          "type": "product_meta",
-          "settings": {
-            "show_vendor": false,
-            "show_sku": false,
-            "show_product_rating": false,
-            "show_taxes_included": false
-          }
-        },
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-share_buttons-1": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-variant_selector-1": {
-          "type": "variant_selector",
-          "settings": {
-            "selector_mode": "dropdown",
-            "show_color_swatch": false,
-            "show_color_carousel": false,
-            "size_chart": ""
-          }
-        },
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-buy_buttons-1": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_price_in_button": false,
-            "show_payment_button": false
-          }
-        }
-      },
-      "block_order": [
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-product_meta-1",
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-share_buttons-1",
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-variant_selector-1",
-        "template--16174120829082__368c8807-7bdc-4e9a-ba4d-478c33f6c50f-buy_buttons-1"
-      ],
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "show_headings_on_mobile": true,
-        "product": "shea-butter-moisturizer",
-        "show_timer": true
-      }
-    },
-    "802060a9-c646-45fa-a6f0-2f97b872f758": {
-      "type": "custom-liquid",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "Your Liquid",
-        "liquid": "{% render 'rzp-timer' %}"
-      }
     }
   },
   "order": [
+    "ec69d34c-bcdd-499c-84a5-4bc664640085",
     "main",
-    "1657523681299f51d6",
-    "5f373e30-2370-4272-b053-1ec2189c0fa2",
-    "343eb766-4d79-4cd2-a099-2977ec92acd2",
-    "43e21d3f-5c52-4fb1-ba50-97fd7fc1d361",
-    "77caece0-b222-42ce-a482-83606b4bce73",
-    "368c8807-7bdc-4e9a-ba4d-478c33f6c50f",
-    "802060a9-c646-45fa-a6f0-2f97b872f758"
+    "343eb766-4d79-4cd2-a099-2977ec92acd2"
   ]
 }
