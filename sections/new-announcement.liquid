@@ -1,0 +1,124 @@
+<style>
+  
+  .new-annbar{cursor:pointer;text-align:center; font-size:12px;animation: instacol 4s linear infinite; -webkit-animation: instacol 4s linear infinite;padding: 5px 0; color: #fff; text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;}
+  .new-annbar-wrapper{padding: 60px 0;width: 100%; height: 100%;display:none;background: #000000c7; text-align: center;position:fixed;z-index:999999;left:0;top:0;backdrop-filter: blur(5px);}
+  .new-annbar-wrapper ul{width: 100%; max-width: 500px; margin: 0 auto;}
+  .new-annbar-wrapper ul li{list-style:none;background:white;margin: 15px 0px;border-radius:8px}
+  .new-annbar-wrapper ul li .mediaobj{display:flex;flex-flow:wrap;align-items: center;position:relative}
+  .new-annbar-wrapper ul li img{width:100px;margin-right: 25px;padding:15px}
+  .closxe{position:absolute;right:20px;top:20px;color:white;font-size:33px;cursor:pointer;}
+  .new-annbar-wrapper h4{color: #fff; font-size: 26px;}
+  .oftext{width:calc(100% - 125px);text-align: left; padding-right: 25px;}
+  .copytext{position:absolute;right:0;bottom:10px;background:#000;color: #fff; font-size: 10px; padding: 2px 25px 2px 5px;}
+  .copytext img{width:12px!important;margin:0!important}
+  .copytext::after{width:12px;height:12px;background:url(https://cdn.shopify.com/s/files/1/0577/1368/8771/files/copy_2.png?v=1653390146);content:"";    background-size: 100%; background-repeat: no-repeat;position: absolute; top: 5px; right: 5px;}
+  .copytext::before {
+    position: absolute;
+    content: "COPIED";
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    z-index: 9;
+    left: 0;
+    top: 0;
+    text-align: center;
+    padding-top: 2px;display:none;}
+  .copytext.active::before{display:block}
+  @media(max-width:480px){
+    .new-annbar-wrapper ul{padding: 0 15px;}
+  }
+  @keyframes instacol{
+  0%, 100% {background: #196497 ;}
+  20% {background: #1c7291 ;}
+  50% {background: #243365 ;}
+  80% {background: #1b68a2 ;}
+}
+</style>
+
+<div class="new-annbar">{{section.settings.text }}</div>
+
+<div class="new-annbar-wrapper">
+  <div class="closxe">&times;</div>
+  <ul>
+    {%- for block in section.blocks -%}
+    <li>
+      <a href="{{block.settings.linkurl}}">
+      <div class="mediaobj">
+      <img class="Image--lazyLoad Image--fadeIn" data-src="{{block.settings.image | img_url: '100x' }}">
+        <div class="oftext">{{block.settings.Offer }}</div>
+        
+        {% if block.settings.coupon != blank %}<div onclick="copyToClipboard(this)" class="copytext">{{block.settings.coupon}}</div>{% endif %}
+      </div>
+      </a>
+    </li>
+        {%- endfor -%}
+    
+  </ul>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Announcement Bar",
+    "settings": [
+			{
+              "type": "text",
+              "id": "text",
+              "label": "Announcement Bar Text"
+			},
+            {
+                "type":"radio",
+                "id":"layout",
+                "label": "Select Layout",
+                "options": [
+                    {
+                        "value": "drop-dwon",
+                        "label":"DropDown"
+                    },
+                    {
+                        "value": "slider",
+                        "label":"slider"
+                    }
+                ]
+            }
+],
+    "blocks": [
+        {
+          "type": "testimonial",
+          "name": "Offers",
+          "settings": [
+            {
+              "type": "text",
+              "id": "Offer",
+              "label": "Offer Text"
+			},
+			{
+                  "type": "image_picker",
+                  "id": "image",
+                  "label": "Image",
+				  "info": "Use 100px by 100px Image only"
+                },
+			{
+              "type": "text",
+              "id": "coupon",
+              "label": "Coupon (If any)"
+			},
+            {
+              "type": "url",
+              "id": "linkurl",
+              "label": "Link"
+            }
+			
+            
+          ]
+        }
+      ],
+    "presets": [
+      {
+        "name": "6. Navbar",
+        "category": "I. Collections"
+      }
+    ]
+  }
+{% endschema %}
