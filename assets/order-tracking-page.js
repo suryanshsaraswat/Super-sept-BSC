@@ -34,7 +34,7 @@ $(document).ready(function(){
             var shippingAddress = jsonData.Shipping_Address;
             var orderDateNew = new Date(orderPlacedDate);
             var estimatedDeliveryDate = new Date(orderDateNew);
-            estimatedDeliveryDate.setDate(orderDateNew.getDate() + 3);
+            estimatedDeliveryDate.setDate(orderDateNew.getDate() + 4);
             var formattedEstimatedDeliveryDate = estimatedDeliveryDate.toDateString();
             console.log("Estimated Delivery Date: " + formattedEstimatedDeliveryDate);
 
