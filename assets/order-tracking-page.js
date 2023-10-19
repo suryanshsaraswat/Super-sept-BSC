@@ -100,7 +100,7 @@ $(document).ready(function(){
               $('#delivery-partner-logo').html('<h2><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Delhivery.png?v=1697526138" alt="delivery logo" style="width:30px; height:30px"></h2>');
             };
           if(deliveryDate === null){
-            $("#delivery-date").html('<p>Order is under processing</p><h3 style="">Status</h3><h2>' + shipStatus + '</h2>');
+            $("#delivery-date").html('<p>Order is under processing</p><h3 style="margin-bottom: 8px;">Status</h3><h2>' + shipStatus + '</h2>');
           }
           else {
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate + "</h2>");
