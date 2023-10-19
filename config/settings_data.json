@@ -346,6 +346,7 @@
         "blocks": {
           "24e140a5-298a-4df7-8bcc-d753702e6508": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Flat 40% off on skin care",
               "image": "shopify:\/\/shop_images\/tt_logo.png",
@@ -388,7 +389,7 @@
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
         ],
         "settings": {
-          "text": "Get 40% off on skin care | Use code : TUESDAY"
+          "text": "Get Free Shipping on orders above INR 199"
         }
       },
       "navbar": {
