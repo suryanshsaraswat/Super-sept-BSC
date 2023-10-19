@@ -346,6 +346,7 @@
         "blocks": {
           "24e140a5-298a-4df7-8bcc-d753702e6508": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Flat 40% off on skin care",
               "image": "shopify:\/\/shop_images\/tt_logo.png",
