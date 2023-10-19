@@ -116,7 +116,7 @@ $(document).ready(function(){
               $('#est-del-status').html('<p>Estimated date of Delivery: <span class="del-date">' +formattedEstimatedDeliveryDate+ '</span></p>');
               }else if ( shipStatus === "Packed"){
               var shipStatusUpdate = "Picked";
-              $('#est-del-status').html('<p>Estimated date of Delivery: <span class="del-date">' +formattedEstimatedDeliveryDate+ '</span></p>');
+              $('#est-del-status').html('<p>Estimated date of Delivery: <br><span class="del-date">' +formattedEstimatedDeliveryDate+ '</span></p>');
               }else if (shipStatus === "Picked" || shipStatus === "Shipped" || shipStatus === "InTransit" || shipStatus === "LostInTransit"){
               var shipStatusUpdate = "Shipped";
               $('#est-del-status').html('<p style="margin-left:10px; color:#fff; font-size:15px">Estimated date of Delivery: <span class="del-date">' +formattedEstimatedDeliveryDate+ '</span></p>');
