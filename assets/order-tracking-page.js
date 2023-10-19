@@ -33,12 +33,10 @@ $(document).ready(function(){
             var orderPrepaidCod = jsonData.Order_Prepaid_Cod;
             var shippingAddress = jsonData.Shipping_Address;
             var orderDateNew = new Date(orderPlacedDate);
-            var estimatedDeliveryDate = new Date(orderDate);
-            estimatedDeliveryDate.setDate(orderDate.getDate() + 3);
+            var estimatedDeliveryDate = new Date(orderDateNew);
+            estimatedDeliveryDate.setDate(orderDateNew.getDate() + 3);
             var formattedEstimatedDeliveryDate = estimatedDeliveryDate.toDateString();
-
-// You can then use formattedEstimatedDeliveryDate to display the estimated delivery date
-console.log("Estimated Delivery Date: " + formattedEstimatedDeliveryDate);
+            console.log("Estimated Delivery Date: " + formattedEstimatedDeliveryDate);
 
           //parsing delivered date in day, month, year format
           var date = new Date(deliveryDate);
