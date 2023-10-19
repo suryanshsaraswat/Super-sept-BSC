@@ -384,7 +384,15 @@
           "1bdb6a23-da28-4eb2-bfef-2a8a62ee8486": {
             "type": "testimonial",
             "settings": {
-              "Offer": "Free",
+              "Offer": "Free shipping on orders above INR 199",
+              "coupon": "",
+              "linkurl": ""
+            }
+          },
+          "8e62fb10-cf3b-4e8b-b9f3-1e486139b79d": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "",
               "coupon": "",
               "linkurl": ""
             }
@@ -395,7 +403,8 @@
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
-          "1bdb6a23-da28-4eb2-bfef-2a8a62ee8486"
+          "1bdb6a23-da28-4eb2-bfef-2a8a62ee8486",
+          "8e62fb10-cf3b-4e8b-b9f3-1e486139b79d"
         ],
         "settings": {
           "text": "Get 40% off on skin care | Use code : TUESDAY"
