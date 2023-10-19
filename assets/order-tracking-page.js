@@ -32,7 +32,7 @@ $(document).ready(function(){
             var customerEmail = jsonData.Customer_Email_Id;
             var orderPrepaidCod = jsonData.Order_Prepaid_Cod;
             var shippingAddress = jsonData.Shipping_Address;
-          //parsing date in day, month, year format
+          //parsing delivered date in day, month, year format
           var date = new Date(deliveryDate);
           var months = [
             'January', 'February', 'March', 'April', 'May', 'June',
@@ -55,6 +55,29 @@ $(document).ready(function(){
             }
           }
           var formattedDate = getDayWithSuffix(day) + ' ' + month + ' ' + year;
+          //Parsing Order Placed Date in dd, mm, yyyy format
+          var orderDate = new Date(orderPlacedDate);
+          var orderMonths = [
+            'January', 'February', 'March', 'April', 'May', 'June',
+            'July', 'August', 'September', 'October', 'November', 'December'
+          ];
+          // Get the day, month, and year from the date object
+          var orderDay = orderDate.getDate();
+          var orderMonth = orderMonths[orderDate.getMonth()];
+          var orderYear = orderDate.getFullYear();
+          // Create a function to add 'th', 'st', 'nd', or 'rd' to the day
+          function getDayOrderWithSuffix(orderDay) {
+            if (orderDay >= 11 && orderDay <= 13) {
+              return orderDay + 'th';
+            }
+            switch (orderDay % 10) {
+              case 1: return orderDay + 'st';
+              case 2: return orderDay + 'nd';
+              case 3: return orderDay + 'rd';
+              default: return orderDay + 'th';
+            }
+          }
+          var formattedOrderDate = getDayWithSuffix(orderDay) + ' ' + orderMonth + ' ' + orderYear;
             console.log("Ship Status: " + shipStatus);
             console.log("Delivery Date: " + deliveryDate);
             console.log("Customer Name: " + customerName);
@@ -76,7 +99,7 @@ $(document).ready(function(){
           else {
             $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate + "</h2>");
           }
-            $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ orderPlacedDate +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
+            $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ formattedOrderDate +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
             $("#delivery_partner").html(deliveryPartner);
             $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+ trackingId +'</span></p>');
             $("#delivery_status").html("<p>Status:</p><h2>" + shipStatus + "</h2>");
