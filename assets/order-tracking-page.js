@@ -113,10 +113,13 @@ $(document).ready(function(){
             const statuses = ["Open", "Picked", "Shipped", "Out Of Delivery", "Delivered"];
             if ( shipStatus === "Open" || shipStatus === null || shipStatus === "OrderConfirmed"){
               var shipStatusUpdate = "Open";
+              $('#est-del-status').html('<p>Estimated date of Delivery: </p>' +formattedEstimatedDeliveryDate);
               }else if ( shipStatus === "Packed"){
               var shipStatusUpdate = "Picked";
+              $('#est-del-status').html('<p>Estimated date of Delivery: </p>' +formattedEstimatedDeliveryDate);
               }else if (shipStatus === "Picked" || shipStatus === "Shipped" || shipStatus === "InTransit" || shipStatus === "LostInTransit"){
               var shipStatusUpdate = "Shipped";
+              $('#est-del-status').html('<p>Estimated date of Delivery: </p>' +formattedEstimatedDeliveryDate);
               }else if(shipStatus === "Out Of Delivery"){
               var shipStatusUpdate = "Out Of Delivery";
               } else if(shipStatus === "Delivered"){
