@@ -119,7 +119,7 @@ $(document).ready(function(){
               $('#est-del-status').html('<p>Estimated date of Delivery: </p>' +formattedEstimatedDeliveryDate);
               }else if (shipStatus === "Picked" || shipStatus === "Shipped" || shipStatus === "InTransit" || shipStatus === "LostInTransit"){
               var shipStatusUpdate = "Shipped";
-              $('#est-del-status').html('<p style="margin-left:10px; color:#fff; font-size:15px">Estimated date of Delivery: </p>' +formattedEstimatedDeliveryDate);
+              $('#est-del-status').html('<p style="margin-left:10px; color:#fff; font-size:15px">Estimated date of Delivery: </p><span class="del-date">' +formattedEstimatedDeliveryDate+ '</span>');
               }else if(shipStatus === "Out Of Delivery"){
               var shipStatusUpdate = "Out Of Delivery";
               } else if(shipStatus === "Delivered"){
