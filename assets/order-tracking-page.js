@@ -86,7 +86,7 @@ $(document).ready(function(){
             $("#delivery-date").html('<p>Order is under processing</p><h3 style="">Status</h3><h2>' + shipStatus + '</h2>');
           }
           else {
-            $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate + "</h2>");
+            $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate1 + "</h2>");
           }
             $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ formattedDate2 +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
             $("#delivery_partner").html(deliveryPartner);
