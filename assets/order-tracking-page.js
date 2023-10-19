@@ -33,40 +33,28 @@ $(document).ready(function(){
             var orderPrepaidCod = jsonData.Order_Prepaid_Cod;
             var shippingAddress = jsonData.Shipping_Address;
           //parsing date in day, month, year format
-          var date1 = new Date(deliveryDate);
-          var date2 = new Date(orderPlacedDate);
+          var date = new Date(deliveryDate);
           var months = [
             'January', 'February', 'March', 'April', 'May', 'June',
             'July', 'August', 'September', 'October', 'November', 'December'
           ];
           // Get the day, month, and year from the date object
-          var day1 = date1.getDate();
-          var day2= date2.getDate();
+          var day = date.getDate();
           var month = months[date.getMonth()];
           var year = date.getFullYear();
           // Create a function to add 'th', 'st', 'nd', or 'rd' to the day
-          function getDayWithSuffix(day1,day2) {
-            if (day1 >= 11 && day1 <= 13) {
+          function getDayWithSuffix(day) {
+            if (day >= 11 && day <= 13) {
               return day + 'th';
             }
-            switch (day1 % 10) {
-              case 1: return day1 + 'st';
-              case 2: return day1 + 'nd';
-              case 3: return day1 + 'rd';
-              default: return day1 + 'th';
-            }
-            if (day2 >= 11 && day2 <= 13) {
-              return day2 + 'th';
-            }
-            switch (day2 % 10) {
-              case 1: return day2 + 'st';
-              case 2: return day2 + 'nd';
-              case 3: return day2 + 'rd';
-              default: return day2 + 'th';
+            switch (day % 10) {
+              case 1: return day + 'st';
+              case 2: return day + 'nd';
+              case 3: return day + 'rd';
+              default: return day + 'th';
             }
           }
-          var formattedDate1 = getDayWithSuffix(day1) + ' ' + month + ' ' + year;
-          var formattedDate2 = getDayWithSuffix(day2) + ' ' + month + ' ' + year;
+          var formattedDate = getDayWithSuffix(day) + ' ' + month + ' ' + year;
             console.log("Ship Status: " + shipStatus);
             console.log("Delivery Date: " + deliveryDate);
             console.log("Customer Name: " + customerName);
@@ -86,9 +74,9 @@ $(document).ready(function(){
             $("#delivery-date").html('<p>Order is under processing</p><h3 style="">Status</h3><h2>' + shipStatus + '</h2>');
           }
           else {
-            $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate1 + "</h2>");
+            $("#delivery-date").html("<h3>Delivered On</h3><h2>" + formattedDate + "</h2>");
           }
-            $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ formattedDate2 +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
+            $("#order-summary").html("<tbody><tr><td>Order Name</td><td>"+ orderName +"</td></tr><tr><td>Order Placed On</td><td>"+ orderPlacedDate +"</td></tr><tr><td>Order Total</td><td>"+ orderAmount +"</td></tr><tr><td>Payment Method</td><td>"+ orderPrepaidCod +"</td></tr><tr><td>Shipping Address</td><td>"+ shippingAddress.Street +"</td></tr><tr><td>Contact Details;</td><td>"+ customerMobile +"</td></tr></tbody>");
             $("#delivery_partner").html(deliveryPartner);
             $("#tracking").html('<p>Tracking ID:<br><span style="font-weight:500; color:blue">'+ trackingId +'</span></p>');
             $("#delivery_status").html("<p>Status:</p><h2>" + shipStatus + "</h2>");
