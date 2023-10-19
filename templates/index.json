@@ -52,6 +52,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/SensiFlo4_copy.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Flo4_Mobile_copy.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
