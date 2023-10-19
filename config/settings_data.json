@@ -380,25 +380,16 @@
               "coupon": "SHOP25",
               "linkurl": "shopify:\/\/pages\/skin-care-products-for-men"
             }
-          },
-          "1bdb6a23-da28-4eb2-bfef-2a8a62ee8486": {
-            "type": "testimonial",
-            "settings": {
-              "Offer": "Free shipping on orders above INR 199",
-              "coupon": "",
-              "linkurl": ""
-            }
           }
         },
         "block_order": [
           "24e140a5-298a-4df7-8bcc-d753702e6508",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
-          "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
-          "1bdb6a23-da28-4eb2-bfef-2a8a62ee8486"
+          "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
         ],
         "settings": {
-          "text": "Get 40% off on skin care | Use code : TUESDAY"
+          "text": "Get Free Shipping on orders above INR 199"
         }
       },
       "navbar": {
