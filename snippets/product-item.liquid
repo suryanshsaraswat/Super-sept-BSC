@@ -17,7 +17,7 @@
       {%- assign has_alternate_image = false -%}
     {%- endif -%}
 
-    <a href="{{ product.url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}">
+    <a href="{{ product.url }}" class="ProductItem__ImageWrapper {% if has_alternate_image %}ProductItem__ImageWrapper--withAlternateImage{% endif %}" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
      
 
   {% if product.compare_at_price > product.price %}
