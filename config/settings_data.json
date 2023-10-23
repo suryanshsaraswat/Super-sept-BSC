@@ -348,10 +348,10 @@
             "type": "testimonial",
             "disabled": true,
             "settings": {
-              "Offer": "Flat 40% off on skin care",
+              "Offer": "Get a set of 4 perfumes free on shopping for Rs.999",
               "image": "shopify:\/\/shop_images\/tt_logo.png",
               "coupon": "TUESDAY",
-              "linkurl": "shopify:\/\/collections\/tuesday-temptation-2"
+              "linkurl": "shopify:\/\/collections\/grooming-galore"
             }
           },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
