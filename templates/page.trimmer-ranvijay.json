@@ -29,8 +29,8 @@
         "14b587a4-92f2-4251-b086-bc5cd217d769": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Trimmer-Landing-Page-Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Trimmer-Landing-Page-Mobile-Banner.jpg",
+            "image": "shopify:\/\/shop_images\/Desktop_6.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_a076edba-3e3e-40fe-bbae-7902c2baf6f8.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -168,6 +168,7 @@
     },
     "16627032037dec46a6": {
       "type": "threeinarow",
+      "disabled": true,
       "settings": {
       }
     },
@@ -214,6 +215,7 @@
     },
     "1662704788e3c19723": {
       "type": "trimmer-testimonials",
+      "disabled": true,
       "settings": {
       }
     }
