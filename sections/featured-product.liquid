@@ -41,7 +41,7 @@
         {%- endcomment -%}
 
         {%- if product.media.size > 0 -%}
-          <a href="{{ product.url }}" class="FeaturedProduct__Gallery">
+          <a href="{{ product.url }}" class="FeaturedProduct__Gallery"  itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
             {%- capture supported_sizes -%}{%- render 'image-size', sizes: '200,300,400,600,700,800,900,1000', image: product.featured_media -%}{%- endcapture -%}
 
             {%- assign media_aspect_ratio = product.featured_media.aspect_ratio | default: product.featured_media.preview_image.aspect_ratio -%}
