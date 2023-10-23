@@ -76,6 +76,7 @@
     },
     "1657002938b45262f8": {
       "type": "custom-html",
+      "disabled": true,
       "settings": {
         "subheading": "",
         "title": "",
@@ -119,6 +120,7 @@
         "1660646065fc7a85c8-0",
         "1660646065fc7a85c8-1"
       ],
+      "disabled": true,
       "settings": {
         "show_fullscreen": false,
         "show_arrow": false,
