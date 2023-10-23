@@ -221,10 +221,13 @@
     },
     "65ad007e-a33f-4d18-953a-68e70d6ebbdc": {
       "type": "custom-html",
+      "custom_css": [
+
+      ],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<div style=\"margin-bottom:15px; margin-top:15px;\" itemtype=\"https:\/\/schema.org\/Product\" itemscope=\"\">\n                        <div class=\"category-description std\">\n                            <div><span itemprop=\"name\">Trimmers for Men<\/span><\/div>\n                        <\/div>\n                        <div itemtype=\"https:\/\/schema.org\/AggregateRating\" itemscope=\"\" itemprop=\"aggregateRating\">Products in this category have been rated <span itemprop=\"ratingValue\">4.8<\/span> out of <span itemprop=\"bestRating\">5<\/span> based on <span itemprop=\"ratingCount\">250<\/span> reviews.<\/div>\n                        <div itemtype=\"https:\/\/schema.org\/AggregateOffer\" itemscope=\"\" itemprop=\"offers\">We have a collection of <span itemprop=\"offerCount\"> 5<\/span> Products\n                            <span itemprop=\"category\"> <\/span> on sale, ranging from INR <span itemprop=\"lowPrice\">599<\/span>\n                            <meta content=\"INR\" itemprop=\"priceCurrency\"> to INR <span itemprop=\"highPrice\">3999<\/span>\n                            <meta content=\"INR\" itemprop=\"priceCurrency\">\n                        <\/div>\n                    <\/div>"
+        "html": "<div style=\"margin-bottom:15px; margin-top:15px;\" itemtype=\"https:\/\/schema.org\/Product\" itemscope=\"\">\n                        <div class=\"category-description std\">\n                            <div><span itemprop=\"name\"><h1>Trimmers for Men<\/h1><\/span><\/div>\n                        <\/div>\n                        <div itemtype=\"https:\/\/schema.org\/AggregateRating\" itemscope=\"\" itemprop=\"aggregateRating\">Products in this category have been rated <span itemprop=\"ratingValue\">4.8<\/span> out of <span itemprop=\"bestRating\">5<\/span> based on <span itemprop=\"ratingCount\">250<\/span> reviews.<\/div>\n                        <div itemtype=\"https:\/\/schema.org\/AggregateOffer\" itemscope=\"\" itemprop=\"offers\">We have a collection of <span itemprop=\"offerCount\"> 5<\/span> Products\n                            <span itemprop=\"category\"> <\/span> on sale, ranging from INR <span itemprop=\"lowPrice\">599<\/span>\n                            <meta content=\"INR\" itemprop=\"priceCurrency\"> to INR <span itemprop=\"highPrice\">3999<\/span>\n                            <meta content=\"INR\" itemprop=\"priceCurrency\">\n                        <\/div>\n                    <\/div>"
       }
     }
   },
