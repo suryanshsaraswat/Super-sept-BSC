@@ -570,7 +570,7 @@ $(".new-annbar, .annn").click(function(e){
     "@context": "http://schema.org",
     "@type": "ItemList",
     "name": "{{ collection.title }}",
-    "description": "{{ collection.description }}",
+    "description": "{{ collection.description | strip_html }}",
     "url": "{{ collection.url }}",
     "itemListElement": [
         {% for product in collection.products %}
