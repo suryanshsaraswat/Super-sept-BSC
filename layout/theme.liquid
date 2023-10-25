@@ -577,7 +577,7 @@ $(".new-annbar, .annn").click(function(e){
         {
         "@type": "ListItem",
         "position": {{ forloop.index }},
-        "url": "{{ product.url }}",
+        "url": "https://www.bombayshavingcompany.com{{ product.url }}",
         "name": "{{ product.title }}"
         }{% unless forloop.last %},{% endunless %}
         {% endfor %}
