@@ -563,5 +563,26 @@ $(".new-annbar, .annn").click(function(e){
 <script>
 
 </script>
+{% if page.template == 'collection' %}
+<script type="application/ld+json">
+
+    {
+    "@context": "http://schema.org",
+    "@type": "ItemList",
+    "name": "{{ collection.title }}",
+    "description": "{{ collection.description }}",
+    "url": "{{ collection.url }}",
+    "itemListElement": [
+        {% for product in collection.products %}
+        {
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "url": "{{ product.url }}",
+        "name": "{{ product.title }}"
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+    ]
+    }
+</script>
 </body>
 </html>
