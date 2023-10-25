@@ -194,6 +194,50 @@
       "settings": {
       }
     },
+    "143e1dd1-1ec4-4353-9bc0-31afd1d21039": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16174121451674__143e1dd1-1ec4-4353-9bc0-31afd1d21039-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "combo-kits",
+            "title": "",
+            "grid_items_count": 8,
+            "button_text": "View all products"
+          }
+        }
+      },
+      "block_order": [
+        "template--16174121451674__143e1dd1-1ec4-4353-9bc0-31afd1d21039-collection-1"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "5cf14d29-1721-43e3-b1bc-5f8c2a131266": {
+      "type": "category-banner-single",
+      "blocks": {
+        "b91178ce-54b2-4e12-8661-ee64987bcd99": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/1_1_e473757c-8266-4ad9-9d5b-674619cafe9a.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "b91178ce-54b2-4e12-8661-ee64987bcd99"
+      ],
+      "settings": {
+      }
+    },
     "51a7521a-8f03-43de-bb45-559fcae206f7": {
       "type": "featured-collections",
       "blocks": {
@@ -244,6 +288,8 @@
     "acaed1b8-bbef-425d-8f80-9089f79dc9d3",
     "6be5d94b-bc5b-41df-97dd-de1f8482f434",
     "21fc884e-023e-430e-808f-3f4a707e98f9",
+    "143e1dd1-1ec4-4353-9bc0-31afd1d21039",
+    "5cf14d29-1721-43e3-b1bc-5f8c2a131266",
     "51a7521a-8f03-43de-bb45-559fcae206f7",
     "ae419fa0-bbc9-4e82-90ac-692905f43a5d"
   ]
