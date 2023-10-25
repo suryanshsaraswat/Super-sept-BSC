@@ -571,7 +571,7 @@ $(".new-annbar, .annn").click(function(e){
     "@type": "ItemList",
     "name": "{{ collection.title }}",
     "description": "{{ collection.description | strip_html }}",
-    "url": "{{ collection.url }}",
+    "url": "https://www.bombayshavingcompany.com/{{ collection.url }}",
     "itemListElement": [
         {% for product in collection.products %}
         {
