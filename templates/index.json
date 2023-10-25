@@ -5,6 +5,7 @@
       "blocks": {
         "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Desktop_5_1d35414d-276c-4079-8147-252bd6599e63.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Mobile_1_0cecda82-a01b-4e11-b128-412fbb605ae8.jpg",
