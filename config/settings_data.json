@@ -705,17 +705,17 @@
               "button_2_link": ""
             }
           },
-          "700cc044-cd60-43fc-9325-f255975a7a9b": {
+          "596c4a11-1fd1-4809-8282-a9a25cf2f194": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SensiFlo6_5.webp",
-              "mobile_image": "shopify:\/\/shop_images\/Flo6_Mobile_4.webp",
+              "image": "shopify:\/\/shop_images\/website_5.webp",
+              "mobile_image": "shopify:\/\/shop_images\/Sensi_Mobile_copy_1_bc9dd9d8-b5dd-485b-a51e-244cd61d4f63.webp",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "shopify:\/\/products\/sensi-flo6-razor-with-refills",
+              "button_1_link": "shopify:\/\/products\/sensi-smart-razor-with-refills",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -723,8 +723,8 @@
           "6523a763-d8af-440a-a361-55731539ab76": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SensiFlo4_1.webp",
-              "mobile_image": "shopify:\/\/shop_images\/Flo4_Mobile_1.webp",
+              "image": "shopify:\/\/shop_images\/SensiFlo4_copy_2.webp",
+              "mobile_image": "shopify:\/\/shop_images\/Flo4_Mobile_copy_3.webp",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
@@ -734,12 +734,28 @@
               "button_2_text": "",
               "button_2_link": ""
             }
+          },
+          "700cc044-cd60-43fc-9325-f255975a7a9b": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/website_6.webp",
+              "mobile_image": "shopify:\/\/shop_images\/Flo6_Mobile_copy_3.webp",
+              "apply_overlay": false,
+              "content_position": "bottomLeft",
+              "subheading": "",
+              "title": "",
+              "button_1_text": "",
+              "button_1_link": "shopify:\/\/products\/sensi-flo6-razor-with-refills",
+              "button_2_text": "",
+              "button_2_link": ""
+            }
           }
         },
         "block_order": [
           "98026137-351c-4a19-ada7-147c5355cf1e",
-          "700cc044-cd60-43fc-9325-f255975a7a9b",
-          "6523a763-d8af-440a-a361-55731539ab76"
+          "596c4a11-1fd1-4809-8282-a9a25cf2f194",
+          "6523a763-d8af-440a-a361-55731539ab76",
+          "700cc044-cd60-43fc-9325-f255975a7a9b"
         ],
         "settings": {
           "show_fullscreen": false,
