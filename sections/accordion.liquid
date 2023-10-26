@@ -37,7 +37,7 @@
   {% if product.metafields.my_fields.faq != blank %}
     <div class="set custom">
     <a href="#" class="active">
-      How to use
+      Frequently Asked Questions
       <i class="fa-minus"></i>
     </a>
     <div class="content cust" style="display:block">
@@ -45,6 +45,17 @@
     </div>
   </div>
     {% endif %}
+    {% if product.metafields.custom.how_to_use != blank %}
+      <div class="set custom">
+    <a href="#" class="active">
+      How to use
+      <i class="fa-minus"></i>
+    </a>
+    <div class="content cust" style="display:block">
+      {{ product.metafields.custom.how_to_use }}
+    </div>
+  </div>
+      {% endif %}
    {%- for block in section.blocks -%}
   {% if block.settings.ans != blank %}
   {% if block.settings.open == true %}
