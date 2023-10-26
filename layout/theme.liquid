@@ -2,6 +2,15 @@
 
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+
+<!-- Google Tag Manager Troopod-->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MKJ6SG95');</script>
+<!-- End Google Tag Manager Troopod -->
+    
 		<!-- CLEVERTAP INTEGRATION VARIABLES -->
 
 <!-- CLEVERTAP INTEGRATION VARIABLES -->
@@ -339,7 +348,8 @@ gtag('config','AW-881045097', {'allow_enhanced_conversions':true});
 
 <link rel="canonical" href="{{ canonical_url }}" />
     <script id="ModaSDK" defer data-apikey="AIzaSyAN8V4tqMEk12LKriRfoSOUwJ01X00WeoM" data-shopUrl="bombay-shaving.myshopify.com" data-userid="{{customer.id}}" data-name="{{customer.name}}" data-firstname="{{customer.first_name}}" data-lastname="{{customer.last_name}}" data-email="{{customer.email}}" data-phone="{{customer.phone}}" ></script>
-</head>
+  {% include 'troopod-datalayer' %}
+  </head>
 
   {%- capture classes -%}features--heading-{{ settings.heading_size }}{%- endcapture -%}
 
@@ -389,6 +399,11 @@ gtag('config','AW-881045097', {'allow_enhanced_conversions':true});
     {%- if settings.tele_pop -%}
     {% render 'telegram-popup' %}
     {% endif %}
+
+    <!-- Google Tag Manager Troopod (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MKJ6SG95"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager Troopod (noscript) -->
     <svg class="u-visually-hidden">
       <linearGradient id="rating-star-gradient-half">
         <stop offset="50%" stop-color="var(--product-star-rating)" />
