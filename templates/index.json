@@ -36,6 +36,7 @@
         },
         "7f28979f-7cff-4767-b103-dd6bcf9cdc26": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/RP-Homepage-Winner-Banner_02.jpg",
             "mobile_image": "shopify:\/\/shop_images\/RP-Homepage-M-Banner_winner.jpg",
