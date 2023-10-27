@@ -52,11 +52,70 @@
         "title": "",
         "liquid": "{% render 'typeform-test' %}"
       }
+    },
+    "a2f72a70-ec72-4ca7-b101-20b801f97e62": {
+      "type": "assurance-icons",
+      "blocks": {
+        "f5c4602d-a9e5-49d6-9505-0f81bb1466de": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport.png",
+            "alt-tags": ""
+          }
+        },
+        "073c972e-536f-4ebe-a345-cd0336b637b7": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_ae4c821d-d2fe-40a1-8046-378b49b93cfb.png",
+            "alt-tags": ""
+          }
+        },
+        "6ca15a1d-78d1-427d-a664-94d26ae28fc7": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder.png",
+            "alt-tags": ""
+          }
+        },
+        "f9107b0a-34fd-4ee4-a2a2-841e9c984f9c": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_d9e9bcff-ce4b-466f-b440-596ee867e231.png",
+            "alt-tags": ""
+          }
+        },
+        "de700beb-b721-4df3-aa6f-3154044e5667": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/SecureTranscation_89a36de1-a147-43da-935c-669d562c8368.png",
+            "alt-tags": ""
+          }
+        },
+        "02b2411d-4035-4037-aeff-be4c21199b42": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/FreeEngraving.png",
+            "alt-tags": ""
+          }
+        }
+      },
+      "block_order": [
+        "f5c4602d-a9e5-49d6-9505-0f81bb1466de",
+        "073c972e-536f-4ebe-a345-cd0336b637b7",
+        "6ca15a1d-78d1-427d-a664-94d26ae28fc7",
+        "f9107b0a-34fd-4ee4-a2a2-841e9c984f9c",
+        "de700beb-b721-4df3-aa6f-3154044e5667",
+        "02b2411d-4035-4037-aeff-be4c21199b42"
+      ],
+      "settings": {
+        "assurance-heading": ""
+      }
     }
   },
   "order": [
     "ec69d34c-bcdd-499c-84a5-4bc664640085",
     "main",
-    "343eb766-4d79-4cd2-a099-2977ec92acd2"
+    "343eb766-4d79-4cd2-a099-2977ec92acd2",
+    "a2f72a70-ec72-4ca7-b101-20b801f97e62"
   ]
 }
