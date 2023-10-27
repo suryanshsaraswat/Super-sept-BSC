@@ -187,13 +187,14 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "trimmers",
-              "push_1_image": "shopify:\/\/shop_images\/1_9_9b61c905-3abf-4abb-aace-e19ffd826263.jpg",
-              "push_1_heading": "LANDSCAPER 2.0 - Pubic hair Trimmer",
+              "push_1_image": "shopify:\/\/shop_images\/1_09bd48ff-7035-45bc-ac36-9fb7becadb99.webp",
+              "push_1_heading": "Full Body Trimmer",
               "push_1_subheading": "New Arrival",
-              "push_1_url": "shopify:\/\/products\/pubic-hair-trimmer-for-men",
-              "push_2_heading": "",
-              "push_2_subheading": "",
-              "push_2_url": "shopify:\/\/products\/grey-beard-trimmer"
+              "push_1_url": "shopify:\/\/products\/full-body-trimmer",
+              "push_2_image": "shopify:\/\/shop_images\/1_1_8aa186cc-a161-4473-bb7a-37b5580e52ac.webp",
+              "push_2_heading": "Power Styler Trimmer",
+              "push_2_subheading": "NEW ARRIVAL",
+              "push_2_url": "shopify:\/\/products\/power-styler-beard-trimmer"
             }
           },
           "1625da8a-dfbf-40a5-8b18-cc049cd2ea6c": {
