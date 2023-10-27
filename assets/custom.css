@@ -1103,3 +1103,6 @@ input.jdgm-submit-rev.btn.btn_c.button {
   border-radius: 10px;
 }
 div#shopify-section-template--16174120501402__007a788c-f1b2-4222-9642-acd527fba986 .desk-cont{display:none!important}
+button.RoundButton.RoundButton--small.RoundButton--flat {
+  display: none;
+}

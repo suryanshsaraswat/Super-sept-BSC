@@ -1,3 +1,55 @@
+<div class="assurance-icons-parent">
+    {% if section.settings.assurance-heading != blank %} <div class="heading">
+        <h2>{{ section.settings.assurance-heading }}</h2>
+    </div>{% endif %}
+    <div class="icons-section">
+        <div class="icon-slider">
+            {% for block in section.blocks %}
+                <div class="ass-icon icon{{ forloop.index }}">
+                    <img src="{{ block.setting.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.alt-tags }}">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function(){
+        $('.icon-slider').slick(){
+            slidesToshow:6,
+            slidesToScroll:1,
+            responsive[
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 3,
+                        infinite: true,
+                        autoplay:true,
+                        autoplaySpeed:2000
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 2,
+                        autoplay:true,
+                        autoplaySpeed:2000
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        autoplay:true,
+                        autoplaySpeed:3000
+                    }
+                }
+            ]
+        }
+    })
+</script>
 {%  schema  %} 
 {
     "name":"Assurance Icons",
