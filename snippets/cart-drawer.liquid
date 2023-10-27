@@ -63,13 +63,14 @@
           }
           .assurance-icons img {width: 20%;}
       </style>
+        
+      {% assign cart_total = cart.items_subtotal_price | divided_by:100 %}
+      {% if cart_total < 200 %}<div class="paisa-wapsi shipping"><p>Add more products worth Rs.{{ cart_total | minus: 199 | abs }} to get free shipping!</p></div>{% else %}<div class="paisa-wapsi shipping"><p>Free Shipping!</p></div>{% endif %}
         <div class="assurance-icons">
           <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/SecureTranscation.png?v=1698384573" class="assurance-ic" id="assurance-1" alt="Secure Transaction">
           <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/ZeroHassleClaims.png?v=1698384572" class="assurance-ic" id="assurance-2" alt="Zero Hassle Claims">
           <img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/FreeDelivery.png?v=1698384571" class="assurance-ic" id="assurance-3" alt="Free Delivery">
           </div>
-      {% assign cart_total = cart.items_subtotal_price | divided_by:100 %}
-      {% if cart_total < 200 %}<div class="paisa-wapsi shipping"><p>Add more products worth Rs.{{ cart_total | minus: 199 | abs }} to get free shipping!</p></div>{% else %}<div class="paisa-wapsi shipping"><p>Free Shipping!</p></div>{% endif %}
         <!-- <div class="timexx" style="background: #c0d52f;color: #fff; font-weight: 600; text-align: center; padding: 5px;text-transform: uppercase; ">Hurry! Your cart is reserved for <span id="timer"></span></div> -->
         <div class="Drawer__Container">
           <input
