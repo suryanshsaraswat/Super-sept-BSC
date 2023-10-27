@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".tracker-button").click(function() {
       var inputValue = $("#trackingInput").val();
-      var regexPattern = /^BSC\d{9}$/;
+      var regexPattern = /^(BSC|bsc)\d{9}$/i;
       if(!regexPattern.test(inputValue)){
         $("#trackingError").text("Enter Correct Order ID");
       } else{
