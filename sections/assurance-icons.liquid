@@ -6,7 +6,7 @@
         <div class="icon-slider">
             {% for block in section.blocks %}
                 <div class="ass-icon icon{{ forloop.index }}">
-                    <img src="{{ block.setting.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.alt-tags }}">
+                    <img src="{{ block.settings.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.alt-tags }}">
                 </div>
             {% endfor %}
         </div>
