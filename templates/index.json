@@ -504,6 +504,56 @@
         "text_color": "#0d5ea8"
       }
     },
+    "ef16b282-f4d7-40a7-bffe-ba4258bc2991": {
+      "type": "assurance-icons",
+      "blocks": {
+        "71a21ad9-62ca-4784-93f6-73e30cd78f84": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport.png",
+            "alt-tags": "Quick Customer Support"
+          }
+        },
+        "8619ce9c-1286-463a-b19a-f63cd88ff352": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_ae4c821d-d2fe-40a1-8046-378b49b93cfb.png",
+            "alt-tags": "Don't pay for anything extra"
+          }
+        },
+        "efc6c912-ace1-4d67-a516-081bcc3bc109": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder.png",
+            "alt-tags": "Track Order in real time"
+          }
+        },
+        "7e4d6ad2-b168-4267-b08f-34847023e779": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_d9e9bcff-ce4b-466f-b440-596ee867e231.png",
+            "alt-tags": "Hassel free claims"
+          }
+        },
+        "b21ab50d-306c-43a1-89dd-a21b738e53a6": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/SecureTranscation_89a36de1-a147-43da-935c-669d562c8368.png",
+            "alt-tags": "100% Secure Transaction"
+          }
+        }
+      },
+      "block_order": [
+        "71a21ad9-62ca-4784-93f6-73e30cd78f84",
+        "8619ce9c-1286-463a-b19a-f63cd88ff352",
+        "efc6c912-ace1-4d67-a516-081bcc3bc109",
+        "7e4d6ad2-b168-4267-b08f-34847023e779",
+        "b21ab50d-306c-43a1-89dd-a21b738e53a6"
+      ],
+      "settings": {
+        "assurance-heading": ""
+      }
+    },
     "07a1735f-d055-41aa-8587-6d7d1027db6d": {
       "type": "custom-liquid",
       "settings": {
@@ -536,6 +586,7 @@
       "blocks": {
         "ea169b49-edc3-4c48-906e-32902e3bab33": {
           "type": "testimonial",
+          "disabled": true,
           "settings": {
             "imags": "shopify:\/\/shop_images\/App_Banner_Desktop.jpg",
             "imags2": "shopify:\/\/shop_images\/393X131.png",
@@ -583,6 +634,7 @@
     "1658742662f1427ad0",
     "cc7a68b2-cd27-457f-9d71-e01d3b62e45d",
     "165121474616655051",
+    "ef16b282-f4d7-40a7-bffe-ba4258bc2991",
     "07a1735f-d055-41aa-8587-6d7d1027db6d",
     "28c929e4-7e35-486a-9cc0-3e0aa94530a5",
     "007a788c-f1b2-4222-9642-acd527fba986",
