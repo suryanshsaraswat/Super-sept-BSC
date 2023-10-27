@@ -1,0 +1,37 @@
+{%  schema  %} 
+{
+    "name":"Assurance Icons",
+    "settings":[
+        {
+            "type": "text",
+            "id":"assurance-heading",
+            "label": "Enter Icon Section Heading"
+        }
+    ],
+    "blocks": [
+        {
+            "name": "Icon Block",
+            "type": "image",
+            "settings": [
+                {
+                    "type": "image_picker",
+                    "id": "assurance-icons-img",
+                    "label": "Select Assurance Icons"
+                },
+                {
+                    "type": "text",
+                    "id": "alt-tags",
+                    "label": "Enter alt tag for the icon"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Assurance Icons",
+            "category":"home"
+        }
+    ]
+
+}
+ {% endschema %}
