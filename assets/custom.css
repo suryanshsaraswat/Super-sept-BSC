@@ -1096,3 +1096,9 @@ div#shopify-section-template--16174122139802__65ad007e-a33f-4d18-953a-68e70d6ebb
 {
   display: none !important;
 }
+input.jdgm-submit-rev.btn.btn_c.button {
+  width: 100%;
+  background: #0d5ea8;
+  padding: 10px 0;
+  border-radius: 10px;
+}
