@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $(".tracker-button").click(function() {
       var inputValue = $("#trackingInput").val();
+      alert($("#orderNumberRadio").val());
       var regexPattern = /^(BSC|bsc)\d{9}$/i;
       if(!regexPattern.test(inputValue)){
         $("#trackingError").text("Please specify correct Order ID or AWB No.");
