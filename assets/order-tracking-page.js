@@ -12,21 +12,7 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(data) {
-            var IS_JSON = true;
-            try
-            {
-                 var jsonData = $.parseJSON(data);
-            }
-            catch(err)
-            {
-                 IS_JSON = false;
-            }   
-
-            if(!IS_JSON)
-            {
-              $("#trackingError").text("Please specify correct Order ID or AWB No.");
-              exit;
-            }
+            
             // Parse the JSON data
             $('#loader').hide();
             $('#order-track').show();
