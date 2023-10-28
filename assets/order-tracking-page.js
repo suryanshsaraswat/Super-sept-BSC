@@ -3,13 +3,14 @@ $(document).ready(function(){
       var inputValue = $("#trackingInput").val();
       var regexPattern = /^(BSC|bsc)\d{9}$/i;
       var selectedValue = $("input[name='trackingType']:checked").val();
-      alert(selectedValue)
+      //alert(selectedValue)
+      //5001212785930
       if(selectedValue != "OrderNo")
       {
-        var regexPattern = /^[A-Z0-9]{12}$/i;
+        regexPattern = /^[A-Z0-9]{13}$/i;
         //var regexPattern = /^(BSC|bsc)\d{9}$/i;
       }
-      
+      alert(regexPattern)
       if(!regexPattern.test(inputValue)){
         $("#trackingError").text("Please specify correct Order ID or AWB No.");
       } else{
