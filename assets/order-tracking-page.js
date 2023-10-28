@@ -2,6 +2,7 @@ $(document).ready(function(){
     $(".tracker-button").click(function() {
       var inputValue = $("#trackingInput").val();
       var selectedValue = $("input[name='trackingType']:checked").val();
+      alert(selectedValue)
       if(selectedValue == "OrderNo")
       {
         var regexPattern = /^(BSC|bsc)\d{9}$/i;
