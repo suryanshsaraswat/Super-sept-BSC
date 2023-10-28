@@ -54,16 +54,16 @@
           "settings": {
           }
         },
-        "share_buttons": {
-          "type": "share_buttons",
-          "settings": {
-          }
-        },
         "1570bf97-71ad-4561-a98d-0e27a8662154": {
           "type": "liquid",
           "disabled": true,
           "settings": {
             "liquid": "{% if product.tags contains 'trimmer' %}\n                    <p>Country of Origin: China<\/p>\n                      {% else %}\n                    <p>Country of Origin: India<\/p>  \n                      {% endif %}"
+          }
+        },
+        "2bb38e58-5ee6-4282-b361-7f074ce21b73": {
+          "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/cart-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "settings": {
           }
         }
       },
@@ -75,8 +75,8 @@
         "quantity_selector",
         "4437a5e4-4556-4a67-b78c-739aaa9068d2",
         "description",
-        "share_buttons",
-        "1570bf97-71ad-4561-a98d-0e27a8662154"
+        "1570bf97-71ad-4561-a98d-0e27a8662154",
+        "2bb38e58-5ee6-4282-b361-7f074ce21b73"
       ],
       "settings": {
         "image_size": "large",
@@ -103,23 +103,6 @@
       "settings": {
       }
     },
-    "16964219592c39e206": {
-      "type": "apps",
-      "blocks": {
-        "2217d07b-94d4-4fc3-a4e9-0e15e146ac22": {
-          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "2217d07b-94d4-4fc3-a4e9-0e15e146ac22"
-      ],
-      "settings": {
-        "include_margins": true,
-        "evm_widgets": false
-      }
-    },
     "1689870779546f51b6": {
       "type": "apps",
       "blocks": {
@@ -131,6 +114,23 @@
       },
       "block_order": [
         "9100363d-baf0-4c0b-b428-0b8aba6caa62"
+      ],
+      "settings": {
+        "include_margins": true,
+        "evm_widgets": false
+      }
+    },
+    "16964219592c39e206": {
+      "type": "apps",
+      "blocks": {
+        "2217d07b-94d4-4fc3-a4e9-0e15e146ac22": {
+          "type": "shopify:\/\/apps\/selleasy\/blocks\/lb-upsell-fbt-block\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "2217d07b-94d4-4fc3-a4e9-0e15e146ac22"
       ],
       "settings": {
         "include_margins": true,
@@ -356,8 +356,8 @@
   "order": [
     "main",
     "7b632def-7da0-4de9-9332-d3eaaea14ce3",
-    "16964219592c39e206",
     "1689870779546f51b6",
+    "16964219592c39e206",
     "1659684819aef7882f",
     "16527729209ba2f855",
     "69f81a89-ebbc-44e8-aa5a-46b526f61562",
