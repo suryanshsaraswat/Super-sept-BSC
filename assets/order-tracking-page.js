@@ -12,6 +12,20 @@ $(document).ready(function(){
         url: url,
         type: "GET",
         success: function(data) {
+            var IS_JSON = true;
+            try
+            {
+                 var jsonData = $.parseJSON(data);
+            }
+            catch(err)
+            {
+                 IS_JSON = false;
+            }   
+
+            if(!IS_JSON)
+            {
+              
+            }
             // Parse the JSON data
             $('#loader').hide();
             $('#order-track').show();
