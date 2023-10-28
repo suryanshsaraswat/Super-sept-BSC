@@ -6,7 +6,7 @@ $(document).ready(function(){
       alert(selectedValue)
       if(selectedValue != "OrderNo")
       {
-        var regexPattern = /^[A-Z0-9]{12}$;
+        var regexPattern = /^[A-Z0-9]{12}$/i;
         //var regexPattern = /^(BSC|bsc)\d{9}$/i;
       }
       
