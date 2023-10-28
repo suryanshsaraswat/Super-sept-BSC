@@ -2,7 +2,8 @@ $(document).ready(function(){
     $(".tracker-button").click(function() {
       var inputValue = $("#trackingInput").val();
       var selectedValue = $("input[name='trackingType']:checked").val();
-      if(selectedValue == "OrderNo"){
+      if(selectedValue == "OrderNo")
+      {
         var regexPattern = /^(BSC|bsc)\d{9}$/i;
       }
       else
@@ -10,6 +11,7 @@ $(document).ready(function(){
         var regexPattern = /^[A-Z0-9]{12}$;
         //var regexPattern = /^(BSC|bsc)\d{9}$/i;
       }
+      
       if(!regexPattern.test(inputValue)){
         $("#trackingError").text("Please specify correct Order ID or AWB No.");
       } else{
