@@ -3,7 +3,7 @@ $(document).ready(function(){
       var inputValue = $("#trackingInput").val();
       var regexPattern = /^(BSC|bsc)\d{9}$/i;
       if(!regexPattern.test(inputValue)){
-        $("#trackingError").text("Enter Correct Order ID");
+        $("#trackingError").text("Please specify correct Order ID or AWB No.");
       } else{
         $("#loader").show();
       $('.number-step').hide();
