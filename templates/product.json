@@ -103,6 +103,56 @@
       "settings": {
       }
     },
+    "34cdfbf9-149a-4de6-87f9-e3afc5177e18": {
+      "type": "assurance-icons",
+      "blocks": {
+        "ea41b6da-25b0-4c5d-b471-0a127f597d1d": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/SecureTranscation_89a36de1-a147-43da-935c-669d562c8368.png",
+            "alt-tags": "100% secure transactions"
+          }
+        },
+        "5db0359d-02d6-4154-824d-4618b84975ec": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_d9e9bcff-ce4b-466f-b440-596ee867e231.png",
+            "alt-tags": "Zero hassle Claims"
+          }
+        },
+        "47d75043-2e0d-40da-a79c-d009847227e1": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder.png",
+            "alt-tags": "Track your order"
+          }
+        },
+        "048bcd97-dd8e-44a2-9dc2-c40c14179c0b": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport.png",
+            "alt-tags": "Quick customer support"
+          }
+        },
+        "83ae36e4-4dc2-4bee-8d75-a16a35d72a9a": {
+          "type": "image",
+          "settings": {
+            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_ae4c821d-d2fe-40a1-8046-378b49b93cfb.png",
+            "alt-tags": "Free delivery above 199"
+          }
+        }
+      },
+      "block_order": [
+        "ea41b6da-25b0-4c5d-b471-0a127f597d1d",
+        "5db0359d-02d6-4154-824d-4618b84975ec",
+        "47d75043-2e0d-40da-a79c-d009847227e1",
+        "048bcd97-dd8e-44a2-9dc2-c40c14179c0b",
+        "83ae36e4-4dc2-4bee-8d75-a16a35d72a9a"
+      ],
+      "settings": {
+        "assurance-heading": ""
+      }
+    },
     "1689870779546f51b6": {
       "type": "apps",
       "blocks": {
@@ -351,61 +401,12 @@
         "include_margins": true,
         "evm_widgets": false
       }
-    },
-    "34cdfbf9-149a-4de6-87f9-e3afc5177e18": {
-      "type": "assurance-icons",
-      "blocks": {
-        "ea41b6da-25b0-4c5d-b471-0a127f597d1d": {
-          "type": "image",
-          "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/SecureTranscation_89a36de1-a147-43da-935c-669d562c8368.png",
-            "alt-tags": "100% secure transactions"
-          }
-        },
-        "5db0359d-02d6-4154-824d-4618b84975ec": {
-          "type": "image",
-          "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_d9e9bcff-ce4b-466f-b440-596ee867e231.png",
-            "alt-tags": "Zero hassle Claims"
-          }
-        },
-        "47d75043-2e0d-40da-a79c-d009847227e1": {
-          "type": "image",
-          "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder.png",
-            "alt-tags": "Track your order"
-          }
-        },
-        "048bcd97-dd8e-44a2-9dc2-c40c14179c0b": {
-          "type": "image",
-          "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport.png",
-            "alt-tags": "Quick customer support"
-          }
-        },
-        "83ae36e4-4dc2-4bee-8d75-a16a35d72a9a": {
-          "type": "image",
-          "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_ae4c821d-d2fe-40a1-8046-378b49b93cfb.png",
-            "alt-tags": "Free delivery above 199"
-          }
-        }
-      },
-      "block_order": [
-        "ea41b6da-25b0-4c5d-b471-0a127f597d1d",
-        "5db0359d-02d6-4154-824d-4618b84975ec",
-        "47d75043-2e0d-40da-a79c-d009847227e1",
-        "048bcd97-dd8e-44a2-9dc2-c40c14179c0b",
-        "83ae36e4-4dc2-4bee-8d75-a16a35d72a9a"
-      ],
-      "settings": {
-        "assurance-heading": ""
-      }
     }
   },
   "order": [
     "main",
     "7b632def-7da0-4de9-9332-d3eaaea14ce3",
+    "34cdfbf9-149a-4de6-87f9-e3afc5177e18",
     "1689870779546f51b6",
     "16964219592c39e206",
     "1659684819aef7882f",
@@ -415,7 +416,6 @@
     "56a5f188-d3ec-44c0-8943-4313ea0e18f4",
     "recently-viewed-products",
     "1656311028f1e2b77e",
-    "1684834796abbf8015",
-    "34cdfbf9-149a-4de6-87f9-e3afc5177e18"
+    "1684834796abbf8015"
   ]
 }
