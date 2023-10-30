@@ -63,6 +63,7 @@
         },
         "2bb38e58-5ee6-4282-b361-7f074ce21b73": {
           "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/cart-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "disabled": true,
           "settings": {
           }
         }
@@ -363,40 +364,6 @@
     },
     "1684834796abbf8015": {
       "type": "apps",
-      "blocks": {
-        "fd99fa18-6543-4836-9daf-01d43724f934": {
-          "type": "shopify:\/\/apps\/bringin\/blocks\/product-wise-video\/15f6568f-0b94-4782-b8fe-538d48d5158e",
-          "settings": {
-            "draggablewidgetsize": "small",
-            "checkout_enabled": "true",
-            "checkouttype": "gokwik",
-            "addtocart_enabled": "true",
-            "fontfamily": "lato_n4",
-            "fontsize": 10,
-            "addtocartprimarycolor": "#0d5ea8",
-            "addtocartsecondarycolor": "#ffffff",
-            "addtocartborderradius": "5px",
-            "addtocartypadding": 6.5,
-            "addtocartxpadding": 6.5,
-            "checkoutprimarycolor": "#0d5ea8",
-            "checkoutsecondarycolor": "#ffffff",
-            "checkoutborderradius": "50%",
-            "checkoutypadding": 6.5,
-            "checkoutxpadding": 6.5,
-            "cartcountbadgeprimarycolor": "#ffffff",
-            "cartcountbadgesecondarycolor": "#000000",
-            "cartcountbadgefontsize": 10,
-            "cartcountbadgeypadding": 6.5,
-            "cartcountbadgexpadding": 6.5,
-            "product": "grey-beard-trimmer",
-            "dragprodslidertype": "draggable",
-            "customclass": ""
-          }
-        }
-      },
-      "block_order": [
-        "fd99fa18-6543-4836-9daf-01d43724f934"
-      ],
       "settings": {
         "include_margins": true,
         "evm_widgets": false
