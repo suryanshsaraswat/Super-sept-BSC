@@ -381,13 +381,24 @@
               "coupon": "SHOP25",
               "linkurl": "shopify:\/\/pages\/skin-care-products-for-men"
             }
+          },
+          "f032f49f-73fc-410f-b4f5-017d1682e86f": {
+            "type": "testimonial",
+            "disabled": true,
+            "settings": {
+              "Offer": "FLAT 40% OFF ON SELECTED PRODUCTS",
+              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
+              "coupon": "",
+              "linkurl": "shopify:\/\/collections\/month-end-sale"
+            }
           }
         },
         "block_order": [
           "24e140a5-298a-4df7-8bcc-d753702e6508",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
-          "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
+          "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
+          "f032f49f-73fc-410f-b4f5-017d1682e86f"
         ],
         "settings": {
           "text": "Get Free shipping on products starting @199"
@@ -1205,12 +1216,6 @@
           "applied_coupon_css": "background-color: rgba(113, 113, 113, .11);\npadding: 4px;\nborder-radius: 4px;\nline-height: 20px;\nmargin-left:0px !important;",
           "applied_succes_msg_css": "color:#769e46;",
           "coupon_after_checked_css": "color:#71a326;\nborder-color:#71a326;"
-        }
-      },
-      "11724500921838622758": {
-        "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
-        "disabled": true,
-        "settings": {
         }
       },
       "18228966181090706294": {
