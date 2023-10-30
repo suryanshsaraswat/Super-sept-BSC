@@ -3,6 +3,22 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "a73829d6-0b9e-489b-86d5-0f13cf8d6b05": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_Banner.png",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile.png",
+            "apply_overlay": true,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/month-end-sale",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
         "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
           "type": "image",
           "disabled": true,
@@ -141,25 +157,10 @@
             "button_2_text": "",
             "button_2_link": ""
           }
-        },
-        "a73829d6-0b9e-489b-86d5-0f13cf8d6b05": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_Banner.png",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile.png",
-            "apply_overlay": true,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/month-end-sale",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
         }
       },
       "block_order": [
+        "a73829d6-0b9e-489b-86d5-0f13cf8d6b05",
         "ab7168f3-b05d-42b3-9351-583cedcbdc26",
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852",
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f",
@@ -168,8 +169,7 @@
         "e791ec55-e8d4-48b2-826b-f2567c828c26",
         "7f28979f-7cff-4767-b103-dd6bcf9cdc26",
         "c8020995-17d9-45cd-9d3e-bc02aba3dbdf",
-        "03607324-dff5-4ca9-92cc-a80524971a97",
-        "a73829d6-0b9e-489b-86d5-0f13cf8d6b05"
+        "03607324-dff5-4ca9-92cc-a80524971a97"
       ],
       "settings": {
         "show_fullscreen": false,
