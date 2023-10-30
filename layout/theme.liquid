@@ -233,118 +233,18 @@ gtag('config','AW-881045097', {'allow_enhanced_conversions':true});
         t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "i2b6j7awvx");
+
+    var device_ID = localStorage.getItem("device_ID")
+    if (device_ID) {
+      console.log('Troopod Identity set to' + device_ID);
+    } else {
+      localStorage.setItem("device_ID", crypto.randomUUID());
+      device_ID = localStorage.getItem("device_ID")
+      console.log('Added Troopod identity in Local storage' + device_ID);
+    }
+    window.clarity('identify', device_ID);
 </script>
 {% comment %} Troopod Clarity End {% endcomment %}
-
-{% comment %} Troopod Mixpanel Start {% endcomment %}
-    <script type="text/javascript">
-          (function (e, b) {
-            if (!b.__SV) {
-              var a, f, i, g;
-              window.mixpanel = b;
-              b._i = [];
-              b.init = function (a, e, d) {
-                function f(b, h) {
-                  var a = h.split(".");
-                  2 == a.length && ((b = b[a[0]]), (h = a[1]));
-                  b[h] = function () {
-                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)));
-                  };
-                }
-                var c = b;
-                "undefined" !== typeof d ? (c = b[d] = []) : (d = "mixpanel");
-                c.people = c.people || [];
-                c.toString = function (b) {
-                  var a = "mixpanel";
-                  "mixpanel" !== d && (a += "." + d);
-                  b || (a += " (stub)");
-                  return a;
-                };
-                c.people.toString = function () {
-                  return c.toString(1) + ".people (stub)";
-                };
-                i =
-                  "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(
-                    " ",
-                  );
-                for (g = 0; g < i.length; g++) f(c, i[g]);
-                b._i.push([a, e, d]);
-              };
-              b.__SV = 1.2;
-              a = e.createElement("script");
-              a.type = "text/javascript";
-              a.async = !0;
-              a.src =
-                "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL
-                  ? MIXPANEL_CUSTOM_LIB_URL
-                  : "file:" === e.location.protocol &&
-                    "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)
-                  ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
-                  : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
-              f = e.getElementsByTagName("script")[0];
-              f.parentNode.insertBefore(a, f);
-            }
-          })(document, window.mixpanel || []);
-
-          mixpanel.init("11f8d42810840f59e7603f2dcc14d640", {debug: true});
-          function trackIndividualPageView(){
-            mixpanel.track("brand-individual-page-view", {
-              page : document.title,
-              url: document.URL
-            });
-          }
-          window.addEventListener("load",trackIndividualPageView())
-
-              function trackPageView(){
-        mixpanel.track("brand-page-view", {
-          name: "{{product.title}}",
-          variant:
-            "{% for variant in product.variants %}{{ variant.sku }}{% endfor %}",
-        });
-      }
-      window.addEventListener("load",trackPageView())
-
-      function uuidv4() {
-        return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
-          (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
-        );
-      }
-
-      var device_ID = localStorage.getItem("device_ID")
-        if (device_ID) {
-          console.log('Mixpanel Identity set to' + device_ID);
-        } else {
-          localStorage.setItem("device_ID", uuidv4());
-          device_ID = localStorage.getItem("device_ID")
-          console.log('Added device Id in Local storage' + device_ID);
-        }
-        mixpanel.identify(device_ID)
-
-        window.addEventListener("message", (e) => {
-          if(e?.data?.analyticsName == "klaviyo" && e?.data?.eventName === "paymentCompleted"){
-              for(var i=0; i<e.data.data?.commonAnalyticsData?.products.length; i++){
-                  let details = {};
-                  details = {
-                      productId: e.data.data.commonAnalyticsData.products[i]['Product ID'],
-                      variantId: e.data.data.commonAnalyticsData.products[i]['Product Variant Id'],
-                      qty: e.data.data.commonAnalyticsData.products[i]['Product Quantity'],
-                      experiment: {
-                          showWidget: window.localStorage.getItem("showWidget"),
-                          currentExperiment: window.localStorage.getItem("currentExperiment"),
-                      },
-                      email: e.data.data?.userAddress?.email,
-                      phone: e.data.data?.userAddress?.phone
-                  }
-        
-                  for(var j = 0; j<e.data.data.commonAnalyticsData.products[i]['Product Quantity']; ++j){
-                  	  console.log({details: details});
-                      mixpanel.track("order_placed_gokwik", {details: details});
-                  }   
-              }
-          }
-        });
-    </script>
-{% comment %} Troopod Mixpanel Start {% endcomment %}
 
 <link rel="canonical" href="{{ canonical_url }}" />
     <script id="ModaSDK" defer data-apikey="AIzaSyAN8V4tqMEk12LKriRfoSOUwJ01X00WeoM" data-shopUrl="bombay-shaving.myshopify.com" data-userid="{{customer.id}}" data-name="{{customer.name}}" data-firstname="{{customer.first_name}}" data-lastname="{{customer.last_name}}" data-email="{{customer.email}}" data-phone="{{customer.phone}}" ></script>
