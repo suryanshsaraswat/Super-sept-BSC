@@ -642,24 +642,14 @@ This is the root container for the zoom functionality. Must not be removed, as o
 });
 </script>
 <script>
-  $(document).ready(function() {
-    $('.read-more-link').click(function(e) {
-      e.preventDefault();
-      $(this).closest('.ProductMeta__Description').find('.description-truncate').hide();
-      $(this).closest('.ProductMeta__Description').find('.description-full').show();
-    });
-
-    $('.read-less-link').click(function(e) {
-      e.preventDefault();
-      $(this).closest('.ProductMeta__Description').find('.description-full').hide();
-      $(this).closest('.ProductMeta__Description').find('.description-truncate').show();
-    });
-  });
-</script>
-<script>
-  $(document).ready(function(){
-    
-  })
+  $(".product-ratingg").click(function(){
+  $(html,body).animate(
+    {
+      scrollTop: $('#judgeme_product_reviews').offset().top-200,
+    },
+    700
+  );
+});
 </script>
 {% schema %}
 {
