@@ -58,10 +58,10 @@
   'tb_tfa_script');
 </script>
 <!-- End of Taboola Pixel Code -->
- {% assign meta = product.metafields.meta %}
+ {% comment %}{% assign meta = product.metafields.meta %}
   {% if meta.product_schema   != blank %}
   {{ meta.product_schema }}
-  {% endif %} 
+  {% endif %} {% endcomment %}
 <!-- CASHKARO -->
   <script>
 function cid() {
