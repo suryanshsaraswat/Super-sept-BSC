@@ -175,3 +175,11 @@ $("a.mob-cont").click(function(){
     1000
   );
 });
+$(".product-ratingg").click(function(){
+  $(html,body).animate(
+    {
+      scrollTop: $('#judgeme_product_reviews').offset().top-200,
+    },
+    1000
+  );
+});
