@@ -150,15 +150,6 @@ document.addEventListener(
   },
   false
 );
-
-$(".vewsim").click(function () {
-  $("html, body").animate(
-    {
-      scrollTop: $(".cbb-frequently-bought-container ").offset().top - 200,
-    },
-    1000
-  );
-});
 $(".neww").click(function () {
   $("html, body").animate(
     {
