@@ -5,6 +5,7 @@
       "blocks": {
         "a73829d6-0b9e-489b-86d5-0f13cf8d6b05": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Month_EndSale_Desktop.webp",
             "mobile_image": "shopify:\/\/shop_images\/Month_EndSale_Mobile.webp",

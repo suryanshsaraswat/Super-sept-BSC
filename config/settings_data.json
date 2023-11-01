@@ -347,6 +347,7 @@
         "blocks": {
           "f032f49f-73fc-410f-b4f5-017d1682e86f": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "FLAT 40% OFF ON SELECTED PRODUCTS",
               "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
@@ -400,7 +401,7 @@
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b"
         ],
         "settings": {
-          "text": "Get Flat 40% off | Use code: OCT40"
+          "text": "Get Free shipping on orders above INR 199"
         }
       },
       "navbar": {
