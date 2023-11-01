@@ -8,6 +8,29 @@ if (device_ID) {
     console.log('Added Troopod identity in Local storage' + device_ID);
 }
 
+window.addEventListener("message", (e) => {
+    if(e?.data?.analyticsName == "klaviyo" && e?.data?.eventName === "paymentCompleted"){
+        for(var i=0; i<e.data.data?.commonAnalyticsData?.products.length; i++){
+            let ecommerce = {
+                'email': e.data.data?.userAddress?.email,
+                'phone': e.data.data?.userAddress?.phone,
+                'items': {
+                    'item_id': e.data.data.commonAnalyticsData.products[i]['Product ID'],
+                    'item_variant': e.data.data.commonAnalyticsData.products[i]['Product Variant Id'],
+                    'quantity': e.data.data.commonAnalyticsData.products[i]['Product Quantity'],
+                }
+            }
+
+            for(var j = 0; j<ecommerce.items.quantity; ++j){
+                dataLayer.push({
+                    'event': 'tp_purchase_gokwik',
+                    ecommerce
+                });
+            }
+        }
+    }
+});
+
 if(!window.jQuery){
     var jqueryScript = document.createElement('script');
     jqueryScript.setAttribute('src','https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js'); 
