@@ -1025,7 +1025,7 @@ input#dateofbirth {
   .ProductMeta__PriceList{margin-top:7px}
   span.ProductMeta__Price.Price.Price--highlight.Text--subdued.u-h4 {font-size: 19px;color: #000;}
   span.ProductMeta__Price.Price.Price--compareAt.Text--subdued.u-h4 {font-size: 13px;}
-  span.discc {position: absolute;font-size: 11px;background: red;top: 9px;right: 18px;padding: 2px 5px;}
+  span.discc {position: absolute;font-size: 11px;background: red;top: 9px;right: 30px;padding: 2px 5px;}
   span.catp.Text---subdued {font-size: 13px;padding-left: 7px;text-decoration: line-through;}
 /*   .jdgm-rev {border: 1px solid #ddd; padding: 11px;margin: 10px 0;border-radius: 10px;box-shadow: 1px -1px 6px 0px #ddd;} */
 }
