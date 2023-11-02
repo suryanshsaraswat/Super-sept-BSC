@@ -80,7 +80,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 {% comment %}
 {% if product.metafields.my_fields.schema != blank %}{{ product.metafields.my_fields.schema }}{% endif %}
 {% endcomment %}
-{% if article.metafields.custom.schema != blank %}{{ article.metafields.custom.schema }}{% endif %}
+{% if template == article %}{% if article.metafields.custom.schema != blank %}{{ article.metafields.custom.schema }}{% endif %}{% endif %}
 
     <link rel="stylesheet" href="{{ 'theme.min.css' | asset_url }}">
     <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
