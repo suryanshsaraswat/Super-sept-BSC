@@ -201,6 +201,7 @@
     },
     "9e18bd2f-6cf5-40ad-86de-0873cf95cb4a": {
       "type": "custom-html-wthout-spacing",
+      "disabled": true,
       "settings": {
         "html": "<h2 style=\"letter-spacing:01px;font-weight:600;font-size:25px;margin-bottom:0;\">What suits you the best?<\/h2>"
       }
