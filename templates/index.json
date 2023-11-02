@@ -212,15 +212,6 @@
     "2384d7fd-c69d-4d56-a38c-32aa431ddb02": {
       "type": "cat-tiles",
       "blocks": {
-        "2c48f83d-197a-455b-8f6d-b03c6b252c31": {
-          "type": "homepage",
-          "settings": {
-            "heading_nav": "Razorpreneur",
-            "linkurl_nav": "shopify:\/\/pages\/razorpreneur",
-            "cat_tile_image": "shopify:\/\/shop_images\/Logo-for-web_1.png",
-            "linkopen": false
-          }
-        },
         "7d285641-1503-4b78-b7e9-c76a3eafa2ad": {
           "type": "homepage",
           "settings": {
@@ -304,7 +295,6 @@
         }
       },
       "block_order": [
-        "2c48f83d-197a-455b-8f6d-b03c6b252c31",
         "7d285641-1503-4b78-b7e9-c76a3eafa2ad",
         "5c833230-b9e0-4e81-9cf6-3b4bce26ae27",
         "dc987930-1d89-4fd4-bc43-66a4c369ddf6",
