@@ -1,0 +1,58 @@
+<div class="comparison-table">
+  <table>
+    <thead>
+      <tr>
+        <th>{{ section.settings.column1 }}</th>
+        {% for block in section.blocks %}
+          <th>{{ block.settings.columnTitle }}</th>
+        {% endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {% for item in section.blocks[0].settings.comparisonItems %}
+        <tr>
+          <td>{{ item.feature }}</td>
+          {% for block in section.blocks %}
+            <td>{{ block.settings.comparisonItems[item._id] }}</td>
+          {% endfor %}
+        </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% schema %}
+    {
+  "name": "Comparison Table",
+  "settings": [
+    {
+      "type": "text",
+      "label": "Column 1 Header",
+      "id": "column1",
+      "default": "Feature"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Comparison Column",
+      "settings": [
+        {
+          "type": "text",
+          "label": "Column Title",
+          "id": "columnTitle",
+          "default": "Product Name"
+        },
+        {
+          "type": "list",
+          "label": "Comparison Items",
+          "id": "comparisonItems",
+          "itemType": {
+            "type": "text",
+            "label": "Feature",
+            "default": "Feature"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
