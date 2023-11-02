@@ -1111,3 +1111,24 @@ h2.jdgm-rev-widg__title {
   font-weight: 600;
   color: #0d5ea8;
 }
+@media(max-width:450px){
+  span.atc {
+    font-weight: 700;
+    margin-left: -30px;
+  }
+  span.mrpp {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  span.catp.Text---subdued {
+    font-weight: 500;
+  }
+  button.Button.Button--primary.Button--full.stickyy-b {
+    border-radius: 10px;
+    background-color: #0d5ea8;
+  }
+}
+button#ad_to_cart {
+  background-color: #0d5ea8;
+  font-weight: 800;
+}
