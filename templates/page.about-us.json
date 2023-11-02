@@ -56,10 +56,13 @@
     },
     "1657002728e8f20463": {
       "type": "custom-html",
+      "custom_css": [
+        ".h1-heading{margin:0;margin-bottom:20px}"
+      ],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<div class=\"textss\">\n<p>We’re reimagining hair removal for men in India with products that delight, deliver, and empower you every day. \nExpress yourself freely, and play with your hair - shave, trim, spray - do it your way. \nOur painless, easy-to-use, and customizable products are designed with you in mind. No fancy jargon or complex formulas – just simple and effective solutions. \nBut you may ask what’s the catch? Frankly, there’s none. \nThese products are good for your skin, good for your wallet, and good for the planet too. \nJoin us and redefine your grooming journey today.\n \n<\/p>\n<\/div>"
+        "html": "<h1 class=\"h1-heading\">About Us<\/h1>\n<div class=\"textss\">\n<p>We’re reimagining hair removal for men in India with products that delight, deliver, and empower you every day. \nExpress yourself freely, and play with your hair - shave, trim, spray - do it your way. \nOur painless, easy-to-use, and customizable products are designed with you in mind. No fancy jargon or complex formulas – just simple and effective solutions. \nBut you may ask what’s the catch? Frankly, there’s none. \nThese products are good for your skin, good for your wallet, and good for the planet too. \nJoin us and redefine your grooming journey today.\n \n<\/p>\n<\/div>"
       }
     },
     "b5d0d30c-2d33-46db-aaac-ce9523abf06c": {
