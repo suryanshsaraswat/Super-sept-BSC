@@ -416,7 +416,7 @@
       {{ snippet_content }}
     {% endunless %}
     {% comment %}//Conversion Pro End {% endcomment %}
-    <script src="{{ 'rewards-popup-script.js' | asset_url }}"></script>
+    {% comment %}<script src="{{ 'rewards-popup-script.js' | asset_url }}"></script>{% endcomment %}
 
     {% render 'special-offers' %}
 
