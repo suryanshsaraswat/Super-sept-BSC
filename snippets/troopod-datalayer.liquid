@@ -8,7 +8,7 @@ if (device_ID) {
     console.log('Added Troopod identity in Local storage' + device_ID);
 }
 
-window.addEventListener("message", (e) => {
+function trackGoKwikPurchases(e){
     if(e?.data?.analyticsName == "klaviyo" && e?.data?.eventName === "paymentCompleted"){
         for(var i=0; i<e.data.data?.commonAnalyticsData?.products.length; i++){
             let ecommerce = {
@@ -29,7 +29,39 @@ window.addEventListener("message", (e) => {
             }
         }
     }
+}
+
+function trackSimplPurchases(e){
+    if(e?.data?.action == "publichMerchantAnalyticsEvent" && e?.data?.message?.stepName === "purchase"){
+        
+      const paylaod = e?.data?.message?.payload;
+      for(let i=0; i<paylaod?.cart?.items.length; i++){
+          let ecommerce = {
+              'email': paylaod?.user?.email,
+              'phone': paylaod?.user?.phoneNumber,
+              'items': {
+                'item_id': paylaod.cart.items[i]["productId"],
+                'item_variant': paylaod.cart.items[i]["variantId"],
+                'quantity': paylaod.cart.items[i]["quantity"]
+              }
+          };
+
+          for(var j = 0; j<ecommerce.items.quantity; ++j){
+              dataLayer.push({
+                'event': 'tp_purchase_simpl',
+                ecommerce
+              })
+              mixpanel.track("order_placed_simple", {details: details});
+          }
+      }
+  }
+}
+
+window.addEventListener("message", (e) => {
+    trackGoKwikPurchases(e);
+    trackSimplPurchases(e);
 });
+
 
 if(!window.jQuery){
     var jqueryScript = document.createElement('script');
@@ -355,18 +387,39 @@ __DL__jQueryinterval = setInterval(function(){
             }
             var ecommerce = {
                 'items': [item]
-            };               
-            dataLayer.push({
+            };
+
+            const troopodUrl = 'https://ecommerce-production.troopod.io/apis/v1/widget/product/' + "{{product.id}}";
+            fetch(troopodUrl)
+              .then(response => {
+                if (!response.ok) {
+                  throw new Error(`Network response was not ok: ${response.status}`);
+                }
+                return response.json();
+              })
+              .then(data => {
+                let keys = Object.keys(data.experiment);
+                let experiments = {};
+                for (let i = 0; i < keys.length; i++) {
+                  experiments[keys[i]] = {
+                    name: data.experiment[keys[i]].name,
+                    cssLink: data.experiment[keys[i]].resources.cssRef,
+                  }
+                }
+                localStorage.setItem("experimentInstance", JSON.stringify(experiments));
+
+                dataLayer.push({
                 'pageType' : 'Product',
                 'event'    : 'view_item',
             	 ecommerce
             	});
 
-            dataLayer.push({
+                dataLayer.push({
                 'pageType' : 'Product',
                 'event'    : 'view_item_singular',
             	 item
             	});
+              })
 
             $(__DL__.cartTriggers).click(function(){
 				dataLayer.push({                    
@@ -435,22 +488,37 @@ __DL__jQueryinterval = setInterval(function(){
                 'items': checkout_items,
                 };
             if(Shopify.Checkout.step){ 
+                console.log('ecommerce.items')
+                console.log(ecommerce)
                 if(Shopify.Checkout.step.length > 0){
                     if (Shopify.Checkout.step === 'contact_information'){
-                        dataLayer.push({
-                            'event'    :'begin_checkout',
-                            'pageType' :'Customer Information',
-                            'step': 1,
-                        	ecommerce
-                        });
-                        {% for checkout_item in checkout_items %}
+                        console.log('ecommerce.items')
+                        console.log(ecommerce)
+
+                        // dataLayer.push({
+                        //     'event'    :'begin_checkout',
+                        //     'pageType' :'Customer Information',
+                        //     'step': 1,
+                        // 	ecommerce
+                        // });
+
+                        for(var i=0; i<ecommerce.items.length; ++i){
                           dataLayer.push({
-                            'event'    :'begin_checkout_singular',
-                            'pageType' :'Customer Information',
-                            'step': 1,
-                            'item': checkout_item,
+                              'event'    :'begin_checkout_singular',
+                              'pageType' :'Customer Information',
+                              'item': ecommerce.items[i]
                           });
-                        {% endfor %}
+                        }
+
+                        // {% for line_item in checkout.line_items %}
+                        //     dataLayer.push({
+                        //       'itemId': {{ line_item.id }},
+                        //       'title': {{ line_item.title | json }},
+                        //       'pageType' :'Customer Information',
+                        //       'quantity': {{ line_item.quantity }},
+                        //       'price': {{ line_item.price | money_without_currency | strip_html | json }}
+                        //     });
+                        // {% endfor %}
                     }else if (Shopify.Checkout.step === 'shipping_method'){
                         dataLayer.push({
                             'event'    :'add_shipping_info',
