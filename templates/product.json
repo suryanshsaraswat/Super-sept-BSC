@@ -63,6 +63,7 @@
         },
         "2bb38e58-5ee6-4282-b361-7f074ce21b73": {
           "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/cart-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "disabled": true,
           "settings": {
           }
         }
