@@ -65,7 +65,9 @@
       }
 
       mixpanel.identify(device_ID);
+
       <!-- Troopod Page View -->
+      {% if template contains 'product' %}
       function trackPageView() {
         var retry = 10;
         var experiments = {};
@@ -150,6 +152,7 @@
         }
       }
       window.addEventListener("load",trackPageView())
+      {% endif %}
       <!-- Troopod Page View End -->
 
       
