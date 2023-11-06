@@ -6,7 +6,7 @@
         <div class="icon-slider">
             {% for block in section.blocks %}
                 <div class="ass-icon icon{{ forloop.index }}">
-                    <img src="{{ block.settings.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.alt-tags }}">
+                    <img src="{{ block.settings.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.assurance-icons-img.alt}}">
                 </div>
             {% endfor %}
         </div>
@@ -64,14 +64,14 @@
             "type": "image",
             "settings": [
                 {
+                    "type": "text",
+                    "id": "alt-tags",
+                    "label": "Heading"
+                },
+                {
                     "type": "image_picker",
                     "id": "assurance-icons-img",
                     "label": "Select Assurance Icons"
-                },
-                {
-                    "type": "text",
-                    "id": "alt-tags",
-                    "label": "Enter alt tag for the icon"
                 }
             ]
         }
