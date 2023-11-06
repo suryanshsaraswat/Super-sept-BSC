@@ -7,7 +7,7 @@
             {% for block in section.blocks %}
                 <div class="ass-icon text-center icon{{ forloop.index }}">
                     <img class="text-center" src="{{ block.settings.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.assurance-icons-img.alt}}">
-                    <h3 class="text-center w600">{{ block.settings.icon-heading }}</h3>
+                    <h3 class="text-center w500">{{ block.settings.icon-heading }}</h3>
                 </div>
             {% endfor %}
         </div>
