@@ -1201,17 +1201,6 @@
           "optimization_level": "extreme"
         }
       },
-      "225325725576874": {
-        "type": "shopify:\/\/apps\/ms-coupon-discount-on-cart\/blocks\/voila_new_theme\/41ea0aaa-9bb3-4283-8fe9-9a18db60eec3",
-        "disabled": true,
-        "settings": {
-          "cpn_filed_css": "background-color: black; \ncolor: white;\nfont-size: 14px;",
-          "cpn_filed_button_bg_hover_color": "background-color: black;\ncolor: white;",
-          "applied_coupon_css": "background-color: rgba(113, 113, 113, .11);\npadding: 4px;\nborder-radius: 4px;\nline-height: 20px;\nmargin-left:0px !important;",
-          "applied_succes_msg_css": "color:#769e46;",
-          "coupon_after_checked_css": "color:#71a326;\nborder-color:#71a326;"
-        }
-      },
       "18228966181090706294": {
         "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": true,

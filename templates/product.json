@@ -87,6 +87,23 @@
         "enable_video_looping": false
       }
     },
+    "1689870779546f51b6": {
+      "type": "apps",
+      "blocks": {
+        "9100363d-baf0-4c0b-b428-0b8aba6caa62": {
+          "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/app-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "9100363d-baf0-4c0b-b428-0b8aba6caa62"
+      ],
+      "settings": {
+        "include_margins": true,
+        "evm_widgets": false
+      }
+    },
     "7b632def-7da0-4de9-9332-d3eaaea14ce3": {
       "type": "pdp-icon",
       "blocks": {
@@ -152,23 +169,6 @@
       ],
       "settings": {
         "assurance-heading": ""
-      }
-    },
-    "1689870779546f51b6": {
-      "type": "apps",
-      "blocks": {
-        "9100363d-baf0-4c0b-b428-0b8aba6caa62": {
-          "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/app-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "9100363d-baf0-4c0b-b428-0b8aba6caa62"
-      ],
-      "settings": {
-        "include_margins": true,
-        "evm_widgets": false
       }
     },
     "16964219592c39e206": {
@@ -372,9 +372,9 @@
   },
   "order": [
     "main",
+    "1689870779546f51b6",
     "7b632def-7da0-4de9-9332-d3eaaea14ce3",
     "34cdfbf9-149a-4de6-87f9-e3afc5177e18",
-    "1689870779546f51b6",
     "16964219592c39e206",
     "1659684819aef7882f",
     "16527729209ba2f855",
