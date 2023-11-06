@@ -517,36 +517,36 @@
         "71a21ad9-62ca-4784-93f6-73e30cd78f84": {
           "type": "image",
           "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport.png",
-            "alt-tags": "Quick Customer Support"
+            "icon-heading": "Quick customer support",
+            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport_122ecc1d-98ea-457b-8c09-ed97ff0aea78.png"
           }
         },
         "8619ce9c-1286-463a-b19a-f63cd88ff352": {
           "type": "image",
           "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_ae4c821d-d2fe-40a1-8046-378b49b93cfb.png",
-            "alt-tags": "Don't pay for anything extra"
+            "icon-heading": "Track order in Real Time",
+            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder_5a5c82b9-4086-49ff-8e29-c7a534c8b7a7.png"
           }
         },
         "efc6c912-ace1-4d67-a516-081bcc3bc109": {
           "type": "image",
           "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder.png",
-            "alt-tags": "Track Order in real time"
+            "icon-heading": "Zero hassle Claims",
+            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_e71ab55d-a478-4acc-a9aa-438b8329d396.png"
           }
         },
         "7e4d6ad2-b168-4267-b08f-34847023e779": {
           "type": "image",
           "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_d9e9bcff-ce4b-466f-b440-596ee867e231.png",
-            "alt-tags": "Hassel free claims"
+            "icon-heading": "Quick customer support",
+            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport_122ecc1d-98ea-457b-8c09-ed97ff0aea78.png"
           }
         },
         "b21ab50d-306c-43a1-89dd-a21b738e53a6": {
           "type": "image",
           "settings": {
-            "assurance-icons-img": "shopify:\/\/shop_images\/SecureTranscation_89a36de1-a147-43da-935c-669d562c8368.png",
-            "alt-tags": "100% Secure Transaction"
+            "icon-heading": "Free delivery above 199",
+            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_245f8346-d20c-41a1-92cf-566ee21e0535.png"
           }
         }
       },
