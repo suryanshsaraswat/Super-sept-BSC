@@ -372,36 +372,6 @@
       <main id="main" role="main">
         {{ content_for_layout }}
       </main>
-      {% render 'ms-voila-snip' %}
-      <style>
-        .ms_vl_drp_cls{
-          text-align:right  !important;
-
-          width:100%;
-          max-width:345px !important
-        }
-        .discountify_discount_wrap{
-           text-align:right  !important;
-          padding-top:10px !important;
-
-        }
-        .ms-vl-drp_sel{
-          height:35px !important;
-            width:100%;
-        }
-        .discountify_txtbox_title{
-          display:none !important;
-        }
-        .discountify_manual_wrap{
-          width:100%;
-          text-align:right !important;
-
-        }
-        .discountify_manual{
-           max-width:345px !important;
-            text-align:right !important;
-        }
-      </style>
       {% section 'footer' %}
       {% if template.name == 'product' %}
       {% endif %}
