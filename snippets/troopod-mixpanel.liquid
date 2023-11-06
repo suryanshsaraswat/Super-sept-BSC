@@ -1,0 +1,207 @@
+{% comment %} Troopod Mixpanel Start {% endcomment %}
+    <script type="text/javascript">
+      (function (e, b) {
+            if (!b.__SV) {
+              var a, f, i, g;
+              window.mixpanel = b;
+              b._i = [];
+              b.init = function (a, e, d) {
+                function f(b, h) {
+                  var a = h.split(".");
+                  2 == a.length && ((b = b[a[0]]), (h = a[1]));
+                  b[h] = function () {
+                    b.push([h].concat(Array.prototype.slice.call(arguments, 0)));
+                  };
+                }
+                var c = b;
+                "undefined" !== typeof d ? (c = b[d] = []) : (d = "mixpanel");
+                c.people = c.people || [];
+                c.toString = function (b) {
+                  var a = "mixpanel";
+                  "mixpanel" !== d && (a += "." + d);
+                  b || (a += " (stub)");
+                  return a;
+                };
+                c.people.toString = function () {
+                  return c.toString(1) + ".people (stub)";
+                };
+                i =
+                  "disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(
+                    " ",
+                  );
+                for (g = 0; g < i.length; g++) f(c, i[g]);
+                b._i.push([a, e, d]);
+              };
+              b.__SV = 1.2;
+              a = e.createElement("script");
+              a.type = "text/javascript";
+              a.async = !0;
+              a.src =
+                "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL
+                  ? MIXPANEL_CUSTOM_LIB_URL
+                  : "file:" === e.location.protocol &&
+                    "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)
+                  ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"
+                  : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";
+              f = e.getElementsByTagName("script")[0];
+              f.parentNode.insertBefore(a, f);
+            }
+          })(document, window.mixpanel || []);
+      mixpanel.init("11f8d42810840f59e7603f2dcc14d640");
+
+      function uuidv4() {
+        return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
+          (c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
+        );
+      }
+      
+      var device_ID = localStorage.getItem("device_ID")
+      if (device_ID) {
+          console.log('Troopod Identity set to' + device_ID);
+      } else {
+          localStorage.setItem("device_ID", crypto.randomUUID());
+          device_ID = localStorage.getItem("device_ID")
+          console.log('Added Troopod identity in Local storage' + device_ID);
+      }
+
+      mixpanel.identify(device_ID);
+      <!-- Troopod Page View -->
+      function trackPageView() {
+        var retry = 10;
+        var experiments = {};
+        var payload = {
+          page : document.title,
+          url: document.URL,
+          productId: "{{product.id}}"
+        };
+      
+        if(localStorage.getItem("experimentInstance") && JSON.parse(localStorage.getItem("experimentInstance")) && Object.keys(JSON.parse(localStorage.getItem("experimentInstance"))).length > 0){
+          const experimentInstance = JSON.parse(
+            localStorage.getItem("experimentInstance")
+          );
+
+          let keys = Object.keys(experimentInstance);
+          for (let i = 0; i < keys.length; i++) {
+            experiments[keys[i]] = {
+              name: experimentInstance[keys[i]].name,
+              cssLink: experimentInstance[keys[i]].cssLink,
+            }
+          }
+
+          payload.experiments = experiments;
+          try{
+            console.log('troopod-payload', payload);
+            mixpanel.track("troopod-page-view-event", payload, {transport: 'sendBeacon'});
+          }catch(e){
+            if(retry > 0){
+              setTimeout(() => {
+                mixpanel.track("troopod-page-view-event", payload, {transport: 'sendBeacon'});
+                retry--;
+              }, 1000);
+            }else{
+              payload.errorReason = "mixpanel timeout";
+              mixpanel.track("troopod-page-view-event-failed", payload, {transport: 'sendBeacon'});
+            }
+          }
+        }else{
+          const troopodUrl = 'https://ecommerce-production.troopod.io/apis/v1/widget/product/' + "{{product.id}}";
+          fetch(troopodUrl)
+            .then(response => {
+              if (!response.ok) {
+                throw new Error(`Network response was not ok: ${response.status}`);
+              }
+              return response.json();
+            })
+            .then(data => {
+              console.log(data.experiment);
+              mixpanel.track("troopod-experiment", data.experiment, {transport: 'sendBeacon'});
+              let keys = Object.keys(data.experiment);
+              for (let i = 0; i < keys.length; i++) {
+                experiments[keys[i]] = {
+                  name: data.experiment[keys[i]].name,
+                  cssLink: data.experiment[keys[i]].resources.cssRef,
+                }
+              }
+      
+              localStorage.setItem("experimentInstance", JSON.stringify(experiments));
+
+              payload.experiments = experiments;
+              try{
+                console.log('troopod-payload', payload);
+                mixpanel.track("troopod-page-view-event", payload, {transport: 'sendBeacon'});
+              }catch(e){
+                if(retry > 0){
+                  setTimeout(() => {
+                    mixpanel.track("troopod-page-view-event", payload, {transport: 'sendBeacon'});
+                    retry--;
+                  }, 1000);
+                }else{
+                  payload.errorReason = "mixpanel timeout";
+                  mixpanel.track("troopod-page-view-event-failed", payload, {transport: 'sendBeacon'});
+                }
+              }
+            })
+            .catch(error => {
+              payload.errorReason = "API failed";
+              mixpanel.track("troopod-page-view-event-failed", payload, {transport: 'sendBeacon'});
+              console.error('Error:', error);
+              return;
+            });
+        }
+      }
+      window.addEventListener("load",trackPageView())
+      <!-- Troopod Page View End -->
+
+      
+      <!-- Troopod Purchase -->
+      function sendToMixpanel(event, payload){
+          var retry = 10;
+          while(retry)
+          try{
+              mixpanel.track(event, payload, {transport: 'sendBeacon'});
+              break;
+          }catch(e){
+              retry--;
+              console.error("retrying failed mixpanel event")
+          }
+      }
+      function trackGoKwikPurchases(e){
+          let experiments = {};
+          const experimentInstance = JSON.parse(
+              localStorage.getItem("experimentInstance")
+          );
+      
+          let keys = Object.keys(experimentInstance);
+          for (let i = 0; i < keys.length; i++) {
+              experiments[keys[i]] = {
+                  name: experimentInstance[keys[i]].name,
+                  cssLink: experimentInstance[keys[i]].cssLink,
+              }
+          }
+      
+          if(e?.data?.analyticsName == "klaviyo" && e?.data?.eventName === "paymentCompleted"){
+              for(var i=0; i<e.data.data?.commonAnalyticsData?.products.length; i++){
+                  let ecommerce = {
+                      'email': e.data.data?.userAddress?.email,
+                      'phone': e.data.data?.userAddress?.phone,
+                      'items': {
+                          'item_id': e.data.data.commonAnalyticsData.products[i]['Product ID'],
+                          'item_variant': e.data.data.commonAnalyticsData.products[i]['Product Variant Id'],
+                          'quantity': e.data.data.commonAnalyticsData.products[i]['Product Quantity'],
+                      },
+                      'experiments': experiments,
+                      'productId': e.data.data.commonAnalyticsData.products[i]['Product ID'],
+                  }
+      
+                  for(var j = 0; j<ecommerce.items.quantity; ++j){
+                      sendToMixpanel("troopod-page-view-event", ecommerce);
+                  }
+              }
+          }
+      }
+      window.addEventListener("message", (e) => {
+          trackGoKwikPurchases(e);
+      });
+      <!-- Troopod Purchase -->
+    </script>
+ {% comment %} Troopod Mixpanel End {% endcomment %}
