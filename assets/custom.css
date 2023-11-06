@@ -1132,7 +1132,7 @@ button#ad_to_cart {
   font-weight: 600;
 }
 /*.text-center{font-size:19px;color:#1C1B1B!important}*/
-.text-center{text-align:center;margin:0 auto;}
+.text-center{text-align:center;margin:0 auto;text-transform:capitalize}
 .w500 {
     font-weight: 550;
 }
