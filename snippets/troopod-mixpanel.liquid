@@ -184,6 +184,8 @@
       
           if(e?.data?.analyticsName == "klaviyo" && e?.data?.eventName === "paymentCompleted"){
               for(var i=0; i<e.data.data?.commonAnalyticsData?.products.length; i++){
+                  console.log('gokwik purchase event', e);
+                
                   let ecommerce = {
                       'email': e.data.data?.userAddress?.email,
                       'phone': e.data.data?.userAddress?.phone,
@@ -197,6 +199,7 @@
                   }
       
                   for(var j = 0; j<ecommerce.items.quantity; ++j){
+                      console.log('order_placed_gokwik', ecommerce);
                       sendToMixpanel("order_placed_gokwik", ecommerce);
                   }
               }
