@@ -1,7 +1,165 @@
+
+<style>
+  .razr-wrapper{width:300px;height:500px;background:#fff;margin:auto;position:relative;overflow:hidden;border-radius:10px 10px 10px 10px;box-shadow:0;transform:scale(0.95);transition:box-shadow 0.5s,transform .5s}
+.razr-wrapper:hover{transform:scale(1);box-shadow:5px 20px 30px rgba(0,0,0,0.2)}
+  .contents h3 {font-family: 'Roboto';font-size: 21px;color: #fff; font-weight: 600;line-height: 23px;}
+.razr-wrapper .razr-container{width:100%;height:100%;background-color:#f6f6f6}
+.razr-wrapper .razr-container .top{height:347px;width:100%;overflow:hidden}
+.razr-wrapper .razr-container .bottom{max-width:100%;transition:transform .5s;padding:0 10px;background-color:#f6f6f6}
+.razr-wrapper .razr-container .bottom.clicked{transform:translateX(-50%)}
+ .bottom{padding-left:10px}
+  .pridce p {font-size: 16px; font-family: Roboto;font-weight: 500;}
+  /* .razr-img::before {height: 150px;content: "";width: 150px;position: absolute;background-color: #ffff;border-radius: 50%;z-index: 0;top: 108px;left: 22%;transition:0.4s} */
+  /* .razr-img:hover::before { transform: scale(1.2);box-shadow: 3px 2px 7px 0px #ddd;} */
+.bottom h2{font-family:Roboto;font-size:24px;font-weight:500;padding-top:9px;margin-bottom:0}
+.razr-wrapper .razr-container .bottom .right .remove{width:calc(30% - 1px);clear:both;border-right:solid thin rgba(255,255,255,0.3);height:50%;background:#BC3B59;transition:transform 0.5s,background .5s}
+.razr-wrapper .razr-container .bottom .right .remove:hover{background:#9B2847}
+.razr-wrapper .razr-container .bottom .right .remove:hover i{transform:translateY(5px)}
+.razr-wrapper .razr-container .bottom .right .remove i{transition:transform .5s;font-size:30px;padding:30px;color:#fff}
+.razr-wrapper .razr-container .bottom .right:hover .remove,.razr-wrapper .razr-container .bottom .right:hover .done{transform:translateY(-100%)}
+.razr-wrapper .inside{z-index:9;background:#92879B;width:140px;height:140px;position:absolute;top:-70px;right:-70px;border-radius:0 0 200px 200px;transition:all 0.5s,border-radius 2s,top 1s;overflow-x:hidden;background-color:#c0d52f}
+.razr-wrapper .inside .icon{position:absolute;right:90px;top:90px;color:#fff;opacity:1}
+.razr-wrapper .inside .icon img{width:20px; height:20px}
+.razr-wrapper .inside:hover{width:100%;right:0;top:0;border-radius:0;height:70%}
+.razr-wrapper .inside:hover .icon{opacity:0;right:15px;top:15px}
+.razr-wrapper .inside:hover .contents{opacity:1;transform:scale(1);transform:translateY(0)}
+.razr-wrapper .inside .contents{padding:20px;opacity:0;transform:scale(0.5);transform:translateY(-200%);transition:opacity 0.2s,transform .8s;padding-top:40px;}
+.contents h3{font-size:17px; text-transform:capitalise;line-height:20px}
+.razr-wrapper .inside .contents h1,.razr-wrapper .inside .contents p,.razr-wrapper .inside .contents table{color:#fff}
+.razr-wrapper .inside .contents p{font-size:13px}
+.razr-block{display:flex;justify-content:center}
+/* .razr-img img{position:absolute;top:19px;width:500px;left:0px;z-index:0;transform:perspective(426px) rotate3d(0,2,2,calc(var(--i,1.2)*27deg));mask:linear-gradient(135deg,#000c 40%,#000,#000c 60%) 100% 100%/240% 240%;transition:.4s;cursor:pointer}
+.razr-img img:hover{--i:1;mask-position:0 0;transform:perspective(426px) rotate3d(0,2,2,calc(var(--i,1.2)*27deg)) scale(1.05)} */
+  .razr-img img {
+    max-width: 100%;
+    width: 100%;
+}
+.metaa {display: flex;justify-content: space-between;align-items:center}
+  span.deal_price {
+    font-size: 18px;
+    margin-left: 4px;
+    color: red;
+}
+.rateit {display: flex;font-family: 'Roboto';}
+  .prod-rev.razr{padding-left:5px}
+  .prod-rate.razr{padding-right:5px}
+p.price_slashed {
+    margin-bottom: -8px;
+    position: relative;
+  text-align:left
+}
+  p.price_slashed::before {
+    content: "";
+    width: 91px;
+    height: 2px;
+    position: absolute;
+    background-color: #000;
+    top: 13px;
+    transform: rotate(354deg);
+}
+  .prod-rate.razr svg {
+    color: #ffc200;
+}
+@media(max-width:450px) {
+.razr-block{display:flex;justify-content:flex-start;overflow-x:scroll;scroll-snap-type:x mandatory;scroll-padding:20px;width:100%;padding:20px;transition:.4s;padding-bottom:0!important}
+.razr-wrapper{flex:93% 0 0!important;scroll-snap-align:start;margin:8px 0px!important}
+}
+</style>
+<div class="razr-block-main">
+<div class="razr-block">
+  {% for block in section.blocks %}
+  {% assign razr_prod = all_products[block.settings.prod] %}
+  {% assign razr_var = razr_prod.selected_or_first_available_variant %}
+  <div class="razr-wrapper">
+    <div class="razr-container">
+     <a href="{{ razr_prod.url }}"> <div class="top" style="background-color:{{ block.settings.top_color }}">
+        <div class="razr-img"><h2><img src="{{ block.settings.razor_img | img_url:"master" }}" loading="lazy"></h2></div>
+      </div></a>
+      <div class="bottom">
+        <h2>{{ razr_prod.title }}</h2>
+        <a href="{{ razr_prod.url }}"><div class="metaa">
+          <div class="pridce">
+          {% if razr_prod.compare_at_price > razr_prod.price %}
+            <p class="price_slashed">MRP: <span class="mrp">{{ razr_prod.compare_at_price | money_with_currency }}</span></p>
+            <p class="disc_price">Deal Price:<span class="deal_price">{{ razr_prod.price | money_with_currency }}</span></p>
+          {% else %}
+            <p>MRP: <span class="mrp_without_slash">{{ razr_prod.compare_at_price | money_with_currency }}</span></p>
+            {% endif %}
+        </div>
+          <div class="rateit">
+            <div class="prod-rate razr">{% render 'icon' with 'rating-star' %}{{ razr_prod.metafields.reviews.rating.value }}</div>
+            <span>|</span>
+            <div class="prod-rev razr">{{ razr_prod.metafields.reviews.rating_count.value }} Reviews</div>
+          </div>
+        </div></a>
+        <div class="btncart">
+          {% if razr_prod.available %}
+                <button type="submit" name="add" aria-label="Add to cart" class="ad_to_cart_coll Button Button--primary razr" id="ad_to_cart" aria-haspopup="dialog" data-add-to-cart="{{ razr_var.id }}" data-var_id="{{ razr_var.id }}"><span>Add to cart</span></button>
+            {% else %}
+                <button type="submit" name="add" aria-label="Add to cart" class=" Button Button--primary soldout" id="ad_to_cart" ><span>Sold Out</span></button>
+                  {% endif %}
+              </div>
+      </div>
+    </div>
+    <div class="inside">
+      <div class="icon"><img src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/info.png?v=1690724659"></div>
+      <div class="contents">{{ block.settings.razr_html }}</div>
+    </div>
+  </div>
+    {% endfor %}
+</div>
+</div>
+<script>
+  $('.buy').click(function(){
+  $('.bottom').addClass("clicked");
+});
+
+$('.remove').click(function(){
+  $('.bottom').removeClass("clicked");
+});
+  $('.contents').click(function(){
+  $('.bottom').removeClass("clicked");
+});
+</script>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Trimmer Product Block",
+    "settings": [],
+    "blocks":[
+      {
+        "type":"product",
+        "name":"Trimmer Block",
+        "settings":[
+          {
+            "type":"product",
+            "id":"prod",
+            "label":"select product"
+          },
+          {
+            "type":"image_picker",
+            "id":"razor_img",
+            "label":"select razr img"
+          },
+          {
+            "type": "html",
+            "id": "razr_html",
+            "label": "HTML content",
+            "default": "<p>Write your own custom HTML content.</p>"
+          },
+          {
+            "type":"color",
+            "id":"top_color",
+            "label":"enter color"
+          }
+        ]
+      }
+    ],
+    "presets":[
+      {
+        "category":"product",
+        "name":"Trimmer Product Block"
+      }
+    ]
   }
 {% endschema %}
 
