@@ -5,7 +5,7 @@
     <div class="icons-section">
         <div class="icon-slider">
             {% for block in section.blocks %}
-                <div class="ass-icon icon{{ forloop.index }}">
+                <div class="ass-icon text-center icon{{ forloop.index }}">
                     <img src="{{ block.settings.assurance-icons-img | img_url: '200x' }}" alt="{{ block.settings.assurance-icons-img.alt}}">
                     <h3 class="text-center w600">{{ block.settings.icon-heading }}</h3>
                 </div>
