@@ -345,6 +345,15 @@
       "new-annbar": {
         "type": "new-annbar",
         "blocks": {
+          "f032f49f-73fc-410f-b4f5-017d1682e86f": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "Diwali Sale: Get any 5 products @ 999",
+              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
+              "coupon": "DIWALI",
+              "linkurl": "shopify:\/\/collections\/diwali-sale"
+            }
+          },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
@@ -372,16 +381,6 @@
               "linkurl": "shopify:\/\/pages\/skin-care-products-for-men"
             }
           },
-          "f032f49f-73fc-410f-b4f5-017d1682e86f": {
-            "type": "testimonial",
-            "disabled": true,
-            "settings": {
-              "Offer": "FLAT 40% OFF ON SELECTED PRODUCTS",
-              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
-              "coupon": "OCT40",
-              "linkurl": "shopify:\/\/collections\/month-end-sale"
-            }
-          },
           "24e140a5-298a-4df7-8bcc-d753702e6508": {
             "type": "testimonial",
             "disabled": true,
@@ -394,14 +393,14 @@
           }
         },
         "block_order": [
+          "f032f49f-73fc-410f-b4f5-017d1682e86f",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
-          "f032f49f-73fc-410f-b4f5-017d1682e86f",
           "24e140a5-298a-4df7-8bcc-d753702e6508"
         ],
         "settings": {
-          "text": "Get Free shipping on orders above INR 199"
+          "text": "Get any 5 Products @999 | use code: Diwali"
         }
       },
       "navbar": {
