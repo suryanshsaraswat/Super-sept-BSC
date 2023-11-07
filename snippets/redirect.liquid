@@ -1,8 +1,5 @@
 <script type="text/javascript">
-  {% if template == '404' %}
-    window.location.href = '/';
-
-  {% elsif collection.url == '/collections/womens-shaving-grooming-personal-care-products' %}
+  {% if collection.url == '/collections/womens-shaving-grooming-personal-care-products' %}
     window.location.href= 'https://www.bscwomen.com/collections/shop-all';
   {% elsif product.url == '/products/eyebrow-face-razor-for-women' %}
     window.location.href= 'https://www.bscwomen.com/products/eyebrow-face-razor-for-women';
@@ -26,6 +23,8 @@
     window.location.href = "https://bombayshavingcompany.com";
     {% elsif product.url == '/products/beard-trimmer-for-men' %}
     window.location.href = "https://www.bombayshavingcompany.com/products/power-styler-beard-trimmer";
+    {% elsif template == '404' %}
+    window.location.href = '/';
   {% endif %}
 
   {% comment %} {% if page.url == '/pages/razorpreneur-dashboard' %}
