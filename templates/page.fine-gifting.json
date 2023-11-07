@@ -23,6 +23,7 @@
           "type": "image",
           "settings": {
             "image": "shopify:\/\/shop_images\/Desktop_8_63d87b87-7ca9-411c-9963-605a5e1dfb6a.webp",
+            "mobile_image": "shopify:\/\/shop_images\/mobile_5.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
