@@ -76,8 +76,8 @@ p.price_slashed {
         <div class="razr-img"><h2><img src="{{ block.settings.razor_img | img_url:"master" }}" loading="lazy"></h2></div>
       </div></a>
       <div class="bottom">
-        <h2>{{ razr_prod.title }}</h2>
-        <a href="{{ razr_prod.url }}"><div class="metaa">
+        <a href="{{ razr_prod.url }}"><h2>{{ razr_prod.title }}</h2>
+        <div class="metaa">
           <div class="pridce">
           {% if razr_prod.compare_at_price > razr_prod.price %}
             <p class="price_slashed">MRP: <span class="mrp">{{ razr_prod.compare_at_price | money_with_currency }}</span></p>
