@@ -205,7 +205,15 @@ $(document).ready(function () {
                 formattedEstimatedDeliveryDate +
                 "</span></p>"
             );
-          } else if (shipStatus === "Packed") {
+          } else if (shipStatus === "open") {
+            var shipStatusUpdate = "In Transit";
+            $("#est-del-status").html(
+              '<p>Estimated date of Delivery: <br><span class="del-date">' +
+                formattedEstimatedDeliveryDate +
+                "</span></p>"
+            );
+          }
+          else if (shipStatus === "Packed") {
             var shipStatusUpdate = "Picked";
             $("#est-del-status").html(
               '<p>Estimated date of Delivery: <br><span class="del-date">' +
