@@ -1,9 +1,8 @@
 <script type="text/javascript">
   {% if template == '404' %}
     window.location.href = '/';
-  {% endif %}
 
-  {% if collection.url == '/collections/womens-shaving-grooming-personal-care-products' %}
+  {% elsif collection.url == '/collections/womens-shaving-grooming-personal-care-products' %}
     window.location.href= 'https://www.bscwomen.com/collections/shop-all';
   {% elsif product.url == '/products/eyebrow-face-razor-for-women' %}
     window.location.href= 'https://www.bscwomen.com/products/eyebrow-face-razor-for-women';
