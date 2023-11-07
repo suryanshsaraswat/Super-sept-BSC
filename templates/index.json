@@ -5,7 +5,6 @@
       "blocks": {
         "6e713555-0d1b-4c56-bf6f-9b22a70f138f": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Diwali_Banner_copy_1.webp",
             "mobile_image": "shopify:\/\/shop_images\/Mobile_banner_copy.webp",
@@ -21,7 +20,6 @@
         },
         "43767d93-472f-4f08-ad90-6d112ac2580e": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Desktop_8_63d87b87-7ca9-411c-9963-605a5e1dfb6a.webp",
             "mobile_image": "shopify:\/\/shop_images\/mobile_2_a8d0642d-e29e-4192-88a1-9ac2e27f553f.webp",
