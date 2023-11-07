@@ -150,7 +150,7 @@ $(document).ready(function () {
           if (deliveryDate === null) {
             $("#delivery-date").html(
               '<p>Order is under processing</p><h3 style="margin-bottom: 8px;">Status</h3><h2>' +
-                shipStatus +
+                shipStatusUpdate +
                 "</h2>"
             );
           } else {
