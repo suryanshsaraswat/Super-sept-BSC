@@ -199,7 +199,7 @@ $(document).ready(function () {
             shipStatus === null ||
             shipStatus === "OrderConfirmed"
           ) {
-            var shipStatusUpdate = "Open";
+            var shipStatusUpdate = "Intransit";
             $("#est-del-status").html(
               '<p>Estimated date of Delivery: <span class="del-date">' +
                 formattedEstimatedDeliveryDate +
