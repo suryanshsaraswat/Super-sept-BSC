@@ -169,8 +169,6 @@ $(document).ready(function () {
               orderPrepaidCod +
               "</td></tr><tr><td>Shipping Address</td><td>" +
               shippingAddress.Street +
-              "</td></tr><tr><td>Contact Details;</td><td>" +
-              customerMobile +
               "</td></tr></tbody>"
           );
           $("#delivery_partner").html(deliveryPartner);
