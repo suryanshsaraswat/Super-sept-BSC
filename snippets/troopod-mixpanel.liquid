@@ -188,12 +188,12 @@
                       'email': e.data.data?.userAddress?.email,
                       'phone': e.data.data?.userAddress?.phone,
                       'items': {
-                          'item_id': e.data.data.commonAnalyticsData.products[i]['Product ID'],
+                          'item_id': "" + e.data.data.commonAnalyticsData.products[i]['Product ID'],
                           'item_variant': e.data.data.commonAnalyticsData.products[i]['Product Variant Id'],
                           'quantity': e.data.data.commonAnalyticsData.products[i]['Product Quantity'],
                       },
                       'experiments': experiments,
-                      'productId': e.data.data.commonAnalyticsData.products[i]['Product ID'],
+                      'productId': "" + e.data.data.commonAnalyticsData.products[i]['Product ID'],
                   }
       
                   for(var j = 0; j<ecommerce.items.quantity; ++j){
