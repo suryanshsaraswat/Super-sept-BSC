@@ -274,6 +274,14 @@
     "69f81a89-ebbc-44e8-aa5a-46b526f61562": {
       "type": "accordion",
       "blocks": {
+        "65f6dbb6-a132-43ef-9dea-6b2844427dfc": {
+          "type": "testimonial",
+          "settings": {
+            "que": "Additional Descripton",
+            "ans": "<p>{{ product.metafields.my_fields.long_description | metafield_tag }}<\/p>",
+            "open": true
+          }
+        },
         "fc38eb95-2169-4fed-afa8-f3a629174c3a": {
           "type": "testimonial",
           "settings": {
@@ -289,20 +297,12 @@
             "ans": "<p>{{ product.metafields.custom.country_of_origin.value }}<\/p>",
             "open": false
           }
-        },
-        "65f6dbb6-a132-43ef-9dea-6b2844427dfc": {
-          "type": "testimonial",
-          "settings": {
-            "que": "Additional Descripton",
-            "ans": "<p>{{ product.metafields.my_fields.long_description | metafield_tag }}<\/p>",
-            "open": true
-          }
         }
       },
       "block_order": [
+        "65f6dbb6-a132-43ef-9dea-6b2844427dfc",
         "fc38eb95-2169-4fed-afa8-f3a629174c3a",
-        "340c8fb6-3521-41d5-b910-82b8fbcdb35d",
-        "65f6dbb6-a132-43ef-9dea-6b2844427dfc"
+        "340c8fb6-3521-41d5-b910-82b8fbcdb35d"
       ],
       "settings": {
         "accord-head": "More about the product"
