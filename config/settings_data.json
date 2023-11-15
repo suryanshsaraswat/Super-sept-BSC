@@ -347,6 +347,7 @@
         "blocks": {
           "f032f49f-73fc-410f-b4f5-017d1682e86f": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Diwali Sale: Get any 5 products @ 999",
               "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",

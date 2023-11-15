@@ -5,6 +5,7 @@
       "blocks": {
         "6e713555-0d1b-4c56-bf6f-9b22a70f138f": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Diwali_Banner_copy_1.webp",
             "mobile_image": "shopify:\/\/shop_images\/Mobile_banner_copy_1.webp",
