@@ -39,6 +39,7 @@ $(document).ready(function () {
           var orderPrepaidCod = jsonData.Order_Prepaid_Cod;
           var shippingAddress = jsonData.Shipping_Address;
           var orderDateNew = new Date(orderPlacedDate);
+          var shipRocketUrl = jsonData.Tracking_URL;
           var estimatedDeliveryDate = new Date(orderDateNew);
           estimatedDeliveryDate.setDate(orderDateNew.getDate() + 4);
           var formattedEstimatedDeliveryDate =
@@ -133,6 +134,7 @@ $(document).ready(function () {
           console.log("orderPlacedDate" + orderPlacedDate);
           console.log("customer Mobile" + customerMobile);
           console.log("COD or Prepaid:" + orderPrepaidCod);
+          console.log("tracking url:"+ shipRocketUrl);
           console.log(
             "shipping address:" +
               shippingAddress.Street +
