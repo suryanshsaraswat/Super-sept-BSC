@@ -175,7 +175,7 @@ $(document).ready(function () {
           );
           $("#delivery_partner").html(deliveryPartner);
           $("#tracking").html(
-            '<a href=""''<p>Tracking ID:<br><span style="font-weight:500; color:blue">' +
+            '<a href=""><p>Tracking ID:<br><span style="font-weight:500; color:blue">' +
               trackingId +
               "</span></p>"
           );
