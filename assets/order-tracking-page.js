@@ -174,11 +174,7 @@ $(document).ready(function () {
               "</td></tr></tbody>"
           );
           $("#delivery_partner").html(deliveryPartner);
-          $("#tracking").html(
-            '<a href=""><p>Tracking ID:<br><span style="font-weight:500; color:blue">' +
-              trackingId +
-              "</span></p>"
-          );
+          $("#tracking").html('<a href="' + shipRocketUrl + '" target="_blank"><p>Tracking ID:<br><span style="font-weight:500; color:blue">' + trackingId + '</span></p></a>');
           $("#delivery_status").html(
             "<p>Status:</p><h2>" + shipStatus + "</h2>"
           );
