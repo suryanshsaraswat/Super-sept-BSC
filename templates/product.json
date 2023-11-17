@@ -105,7 +105,7 @@
           "settings": {
             "class": "primary",
             "tag": "primary",
-            "title": "",
+            "title": "Product Information",
             "footer": ""
           }
         },
@@ -114,7 +114,7 @@
           "settings": {
             "class": "secondary",
             "tag": "secondary",
-            "title": "",
+            "title": "Product Reviews",
             "footer": ""
           }
         }
