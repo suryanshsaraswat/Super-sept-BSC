@@ -21,6 +21,7 @@
         },
         "09e59d3e-b140-4783-9413-02744d3f4a79": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Desktop_1380663d-f6c8-4ffe-b98e-a759fb5a26b7.webp",
             "mobile_image": "shopify:\/\/shop_images\/mobile_87cfd8a9-6d1c-44d0-9482-42ae3b737cec.webp",
@@ -36,7 +37,6 @@
         },
         "template--16064089456794__ed293bca-ba3c-482b-8ee4-5498fe68e8f3-16855106102049cc46-0": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Desktop_ec4a4ca3-62b6-4d73-a143-0b7fd9381816.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Mobile_7ae0fb58-8e84-4df5-afba-624fccfa3c8f.jpg",
