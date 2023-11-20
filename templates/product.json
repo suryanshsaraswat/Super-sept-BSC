@@ -115,12 +115,23 @@
             "title": "Product Reviews",
             "footer": ""
           }
+        },
+        "653219a9-0649-4266-b963-208ca216d1c9": {
+          "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/app-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "disabled": true,
+          "settings": {
+            "class": "secondary2",
+            "tag": "secondary",
+            "title": "Product Reviews",
+            "footer": ""
+          }
         }
       },
       "block_order": [
         "78252483-d96c-455a-9a3f-de9dd40f072e",
         "a3dac918-7866-4520-add4-6f693f424f02",
-        "35c3811e-3b97-485f-a9d7-27e2072c9a7d"
+        "35c3811e-3b97-485f-a9d7-27e2072c9a7d",
+        "653219a9-0649-4266-b963-208ca216d1c9"
       ],
       "settings": {
         "include_margins": true,
