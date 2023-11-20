@@ -1188,19 +1188,6 @@
         "settings": {
         }
       },
-      "6480035358908009760": {
-        "type": "shopify:\/\/apps\/superspeed-googles-page-speed\/blocks\/ss-sonar\/ea1b2c2c-4644-44b9-b10b-fdb914884a8c",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "6897698614501909729": {
-        "type": "shopify:\/\/apps\/superspeed-googles-page-speed\/blocks\/app-embed\/ea1b2c2c-4644-44b9-b10b-fdb914884a8c",
-        "disabled": false,
-        "settings": {
-          "optimization_level": "extreme"
-        }
-      },
       "18228966181090706294": {
         "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
         "disabled": true,
@@ -1211,6 +1198,13 @@
         "type": "shopify:\/\/apps\/bundler\/blocks\/bundler-script-append\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
         "disabled": true,
         "settings": {
+        }
+      },
+      "13951170544780599758": {
+        "type": "shopify:\/\/apps\/tapita-seo-speed\/blocks\/app-embed\/cd37ca7a-40ad-4fdc-afd3-768701482209",
+        "disabled": false,
+        "settings": {
+          "tpt_seo_block": "{}"
         }
       }
     }
