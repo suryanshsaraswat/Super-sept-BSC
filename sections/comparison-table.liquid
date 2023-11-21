@@ -1,68 +1,31 @@
-
-{% assign table_pr = all_products[block.settings.table_product] %}
+<div class="compare-table">
+  <div class="table-header-1">
+    <ul>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+    <div class="table-body">
+      <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</div>
 {% schema %}
   {
     "name": "Comparison Table",
-    "settings": [
+    "settings": [],
+    "presets":[
       {
-        "type":"text",
-        "id":"comparison_heading",
-        "label":"Enter Comparison Table Heading",
-        "default":"Comparison Table"
-      },
-      {
-        "type": "text",
-        "id":"comparison_desc",
-        "label":"Enter COmparison table description",
-        "default":"Table Description"
-      }
-    ],
-    "blocks": [
-      {
-        "name": "Table Block",
-        "type": "table",
-        "settings": [
-          {
-            "type": "product",
-            "id":"table_product",
-            "label": "Select Product"
-          },
-          {
-            "type": "text",
-            "id": "pr_colour",
-            "label":"Product Colour"
-          },
-          {
-            "type": "text",
-            "id": "pr_Material",
-            "label":"Product Colour"
-          },
-          {
-            "type": "text",
-            "id": "pr_body-thickness",
-            "label":"Product Body Thickness"
-          },
-          {
-            "type": "text",
-            "id": "pr_item-dimension",
-            "label":"Product Dimension"
-          },
-          {
-            "type": "text",
-            "id": "pr_item-weight",
-            "label":"Product Weight"
-          },
-          {
-            "type": "text",
-            "id": "pr_blade material",
-            "label":"Product Blade Material"
-          },
-          {
-            "type": "text",
-            "id": "pr_coating-on-blade",
-            "label":"Product Colour"
-          }
-        ]
+        "name":"Comparison Table"
       }
     ]
   }
