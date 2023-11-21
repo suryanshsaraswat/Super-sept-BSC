@@ -282,7 +282,6 @@
       "blocks": {
         "77ee94ff-aad2-4660-a867-9b0fd39e8197": {
           "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/app-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
-          "disabled": true,
           "settings": {
             "class": "secondary2",
             "tag": "secondary",
