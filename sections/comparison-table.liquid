@@ -7,6 +7,9 @@
 <table>
 		<thead>
 			<tr>
+              <th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>Specifications</h3>
+                </th>
 				<th class="pr-header" id="{{ section.settings.id }}">
                   <h3>{{ product_1.title }}</h3>
                   <img src="{{ product_1.featured_image | img_url:'400x' }}" width="200" height="200">
@@ -34,14 +37,16 @@
 			</tr>
 		</thead>
 		<tbody>
+          {% for block in section.blocks %}
 			<tr class="pr-spec-row">
-				<td class="pr-spec"></td>
-				<td class="pr-spec"></td>
-                <td class="pr-spec"></td>
-                <td class="pr-spec"></td>
-                <td class="pr-spec"></td>
-                <td class="pr-spec"></td>
+				<td class="pr-spec">{{ block.settings.spec-1 }}</td>
+				<td class="pr-spec">{{ block.settings.spec-2 }}</td>
+                <td class="pr-spec">{{ block.settings.spec-3 }}</td>
+                <td class="pr-spec">{{ block.settings.spec-4 }}</td>
+                <td class="pr-spec">{{ block.settings.spec-5 }}</td>
+                <td class="pr-spec">{{ block.settings.spec-6 }}</td>
 			</tr>
+            {% endfor %}
 		</tbody>
 	</table>
  {% schema %}
@@ -79,6 +84,54 @@
          "type":"product",
          "id":"table-pr-6",
          "label":"Select 6th product"
+       }
+     ],
+     "blocks":[
+       {
+         "name":"specifications block",
+         "type":"text",
+         "settings":[
+           {
+             "type":"text",
+             "id":"spec-1",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-2",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-3",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-4",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-5",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-6",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-7",
+             "label":"Enter Specification Row Heading"
+           },
+           {
+             "type":"text",
+             "id":"spec-8",
+             "label":"Enter Specification Row Heading"
+           }
+         ]
        }
      ],
      "presets":[
