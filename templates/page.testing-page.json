@@ -183,7 +183,7 @@
         "header-color-1": "#ffffff",
         "text-color-1": "#1c1b1b",
         "table-pr-1": "full-body-trimmer-for-men",
-        "header-color-2": "#bcebcb",
+        "header-color-2": "linear-gradient(90deg, rgba(188, 235, 203, 1) 44%, rgba(255, 255, 255, 1) 93%)",
         "text-color-2": "#262626",
         "table-pr-2": "headshaver-for-men",
         "header-color-3": "#f02d3a",
