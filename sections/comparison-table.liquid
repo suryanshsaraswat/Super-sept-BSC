@@ -8,13 +8,29 @@
 		<thead>
 			<tr>
 				<th class="pr-header" id="{{ section.settings.id }}">
-                  {{ product_1.title }}
+                  <h3>{{ product_1.title }}</h3>
+                  <img src="{{ product_1.featured_image | img_url:'400x' }}" width="200" height="200">
                 </th>
-				<th class="pr-header" id="{{ section.settings.id }}"></th>
-				<th class="pr-header" id="{{ section.settings.id }}"></th>
-				<th class="pr-header" id="{{ section.settings.id }}"></th>
-                <th class="pr-header" id="{{ section.settings.id }}"></th>
-                <th class="pr-header" id="{{ section.settings.id }}"></th>
+				<th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_2.title }}</h3>
+                  <img src="{{ product_2.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
+				<th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_3.title }}</h3>
+                  <img src="{{ product_3.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
+				<th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_4.title }}</h3>
+                  <img src="{{ product_4.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
+                <th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_5.title }}</h3>
+                  <img src="{{ product_5.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
+                <th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_6.title }}</h3>
+                  <img src="{{ product_6.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
 			</tr>
 		</thead>
 		<tbody>
