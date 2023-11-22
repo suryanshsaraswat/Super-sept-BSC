@@ -4,6 +4,8 @@
 {% assign product_4 = all_products[section.settings.table-pr-4] %}
 {% assign product_5 = all_products[section.settings.table-pr-5] %}
 {% assign product_6 = all_products[section.settings.table-pr-6] %}
+{% assign product_7 = all_products[section.settings.table-pr-7] %}
+{% assign product_8 = all_products[section.settings.table-pr-8] %}
 <table>
 		<thead>
 			<tr>
@@ -33,6 +35,14 @@
                 <th class="pr-header" id="{{ section.settings.id }}">
                   <h3>{{ product_6.title }}</h3>
                   <img src="{{ product_6.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
+              <th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_7.title }}</h3>
+                  <img src="{{ product_7.featured_image | img_url:'400x' }}" width="200" height="200">
+                </th>
+              <th class="pr-header" id="{{ section.settings.id }}">
+                  <h3>{{ product_8.title }}</h3>
+                  <img src="{{ product_8.featured_image | img_url:'400x' }}" width="200" height="200">
                 </th>
 			</tr>
 		</thead>
@@ -95,43 +105,48 @@
          "settings":[
            {
              "type":"text",
-             "id":"spec-1",
+             "id":"spec-1-heading",
              "label":"Enter Specification Row Heading"
            },
            {
              "type":"text",
              "id":"spec-2",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 1st Product"
            },
            {
              "type":"text",
              "id":"spec-3",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 2nd Product"
            },
            {
              "type":"text",
              "id":"spec-4",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 3rd Product"
            },
            {
              "type":"text",
              "id":"spec-5",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 4th Product"
            },
            {
              "type":"text",
              "id":"spec-6",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 5th Product"
            },
            {
              "type":"text",
              "id":"spec-7",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 6th Product"
            },
            {
              "type":"text",
              "id":"spec-8",
-             "label":"Enter Specification Row Heading"
+             "label":"Enter Specification for 7th Product"
+           },
+           {
+             "type":"text",
+             "id":"spec-9",
+             "label":"Enter Specification for 8th Product"
            }
          ]
        }
