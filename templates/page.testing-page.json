@@ -67,12 +67,27 @@
             "spec-6": "loren ipsum",
             "spec-7": "loren ipsum",
             "spec-8": "loren ipsum",
-            "spec-9": ""
+            "spec-9": "loren ipsum"
+          }
+        },
+        "866b00e7-74ab-4b7d-a456-30610a313a39": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "Loren Ipsum",
+            "spec-2": "Loren Ipsum",
+            "spec-3": "Loren Ipsum",
+            "spec-4": "Loren Ipsum",
+            "spec-5": "Loren Ipsum",
+            "spec-6": "Loren Ipsum",
+            "spec-7": "Loren Ipsum",
+            "spec-8": "Loren Ipsum",
+            "spec-9": "Loren Ipsum"
           }
         }
       },
       "block_order": [
-        "d211da45-591f-41be-884e-f0accef5cc17"
+        "d211da45-591f-41be-884e-f0accef5cc17",
+        "866b00e7-74ab-4b7d-a456-30610a313a39"
       ],
       "settings": {
         "table-pr-1": "full-body-trimmer-for-men",
