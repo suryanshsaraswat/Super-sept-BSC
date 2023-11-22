@@ -16,6 +16,26 @@
     font-weight: 500;
 }
 table.compare{border-collapse:collapse;padding:5px;max-width:100%; width:1200px; margin:0 auto}
+  @media only screen and (max-width: 599px) {
+        .scrollable-table {
+            overflow-x: auto;
+            display: block;
+        }
+
+        .pr-header,
+        .pr-spec {
+            white-space: nowrap;
+        }
+
+        .pr-spec-row {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .pr-spec {
+            flex: 0 0 auto;
+        }
+    }
 	</style>
 {% assign product_1 = all_products[section.settings.table-pr-1] %}
 {% assign product_2 = all_products[section.settings.table-pr-2] %}
@@ -25,7 +45,7 @@ table.compare{border-collapse:collapse;padding:5px;max-width:100%; width:1200px;
 {% assign product_6 = all_products[section.settings.table-pr-6] %}
 {% assign product_7 = all_products[section.settings.table-pr-7] %}
 {% assign product_8 = all_products[section.settings.table-pr-8] %}
-<table class="compare">
+<table class="compare scrollable-table">
 		<thead>
 			<tr>
               <th class="pr-header" id="{{ section.settings.id }}" style="background-color:{{ section.settings.header-color-1 }}">
