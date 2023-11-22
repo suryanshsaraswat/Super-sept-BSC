@@ -90,12 +90,22 @@
         "866b00e7-74ab-4b7d-a456-30610a313a39"
       ],
       "settings": {
+        "header-color-1": "#6a6a6a",
         "table-pr-1": "full-body-trimmer-for-men",
+        "header-color-2": "#45e8d8",
         "table-pr-2": "headshaver-for-men",
+        "header-color-3": "",
         "table-pr-3": "landscaper-pubic-hair-trimmer-for-men",
+        "header-color-4": "",
         "table-pr-4": "powerplay-trimmer-for-men",
+        "header-color-5": "",
         "table-pr-5": "powerstyler-trimmer-for-men",
-        "table-pr-6": "premium-multi-groomer-trimmer-for-men"
+        "header-color-6": "",
+        "table-pr-6": "premium-multi-groomer-trimmer-for-men",
+        "header-color-7": "",
+        "table-pr-7": "",
+        "header-color-8": "",
+        "table-pr-8": ""
       }
     }
   },
