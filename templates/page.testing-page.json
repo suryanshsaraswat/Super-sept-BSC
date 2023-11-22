@@ -90,7 +90,7 @@
         "866b00e7-74ab-4b7d-a456-30610a313a39"
       ],
       "settings": {
-        "header-color-1": "#6a6a6a",
+        "header-color-1": "#f0e6ef",
         "table-pr-1": "full-body-trimmer-for-men",
         "header-color-2": "#bcebcb",
         "table-pr-2": "headshaver-for-men",
@@ -105,7 +105,8 @@
         "header-color-7": "",
         "table-pr-7": "",
         "header-color-8": "",
-        "table-pr-8": ""
+        "table-pr-8": "",
+        "header-color-9": ""
       }
     }
   },
