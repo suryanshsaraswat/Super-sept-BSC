@@ -59,14 +59,15 @@
         "d211da45-591f-41be-884e-f0accef5cc17": {
           "type": "text",
           "settings": {
-            "spec-1": "loren ipsum",
+            "spec-1-heading": "loren ipsum",
             "spec-2": "loren ipsum",
             "spec-3": "loren ipsum",
             "spec-4": "loren ipsum",
             "spec-5": "loren ipsum",
             "spec-6": "loren ipsum",
             "spec-7": "loren ipsum",
-            "spec-8": "loren ipsum"
+            "spec-8": "loren ipsum",
+            "spec-9": ""
           }
         }
       },
