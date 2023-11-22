@@ -55,6 +55,24 @@
     },
     "aea06ea3-f845-417f-a4d1-d337b6c3b511": {
       "type": "comparison-table",
+      "blocks": {
+        "d211da45-591f-41be-884e-f0accef5cc17": {
+          "type": "text",
+          "settings": {
+            "spec-1": "loren ipsum",
+            "spec-2": "loren ipsum",
+            "spec-3": "loren ipsum",
+            "spec-4": "loren ipsum",
+            "spec-5": "loren ipsum",
+            "spec-6": "loren ipsum",
+            "spec-7": "loren ipsum",
+            "spec-8": "loren ipsum"
+          }
+        }
+      },
+      "block_order": [
+        "d211da45-591f-41be-884e-f0accef5cc17"
+      ],
       "settings": {
         "table-pr-1": "full-body-trimmer-for-men",
         "table-pr-2": "headshaver-for-men",
