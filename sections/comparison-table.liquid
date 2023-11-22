@@ -1,3 +1,23 @@
+<style>
+table {
+			border:1px solid #b3adad;
+			border-collapse:collapse;
+			padding:5px;
+		}
+		table th {
+			border:1px solid #b3adad;
+			padding:5px;
+			background: #f0f0f0;
+			color: #313030;
+		}
+		table td {
+			border:1px solid #b3adad;
+			text-align:center;
+			padding:5px;
+			background: #ffffff;
+			color: #313030;
+		}
+	</style>
 {% assign product_1 = all_products[section.settings.table-pr-1] %}
 {% assign product_2 = all_products[section.settings.table-pr-2] %}
 {% assign product_3 = all_products[section.settings.table-pr-3] %}
@@ -57,6 +77,7 @@
                 <td class="pr-spec">{{ block.settings.spec-6 }}</td>
                 <td class="pr-spec">{{ block.settings.spec-7 }}</td>
                 <td class="pr-spec">{{ block.settings.spec-8 }}</td>
+                <td class="pr-spec">{{ block.settings.spec-9 }}</td>
 			</tr>
             {% endfor %}
 		</tbody>
