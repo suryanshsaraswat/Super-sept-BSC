@@ -15,7 +15,7 @@
     text-transform: uppercase;
     font-weight: 500;
 }
-table{border-collapse:collapse;padding:5px}
+table.compare{border-collapse:collapse;padding:5px}
 	</style>
 {% assign product_1 = all_products[section.settings.table-pr-1] %}
 {% assign product_2 = all_products[section.settings.table-pr-2] %}
@@ -25,7 +25,7 @@ table{border-collapse:collapse;padding:5px}
 {% assign product_6 = all_products[section.settings.table-pr-6] %}
 {% assign product_7 = all_products[section.settings.table-pr-7] %}
 {% assign product_8 = all_products[section.settings.table-pr-8] %}
-<table>
+<table class="compare">
 		<thead>
 			<tr>
               <th class="pr-header" id="{{ section.settings.id }}" style="background-color:{{ section.settings.header-color-1 }}">
