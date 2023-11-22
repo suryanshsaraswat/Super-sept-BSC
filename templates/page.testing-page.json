@@ -181,22 +181,31 @@
       ],
       "settings": {
         "header-color-1": "#ffffff",
+        "text-color-1": "#1c1b1b",
         "table-pr-1": "full-body-trimmer-for-men",
         "header-color-2": "#bcebcb",
+        "text-color-2": "#262626",
         "table-pr-2": "headshaver-for-men",
         "header-color-3": "#f02d3a",
+        "text-color-3": "#ffffff",
         "table-pr-3": "landscaper-pubic-hair-trimmer-for-men",
         "header-color-4": "#f2c14e",
+        "text-color-4": "#fbfbfb",
         "table-pr-4": "powerplay-trimmer-for-men",
         "header-color-5": "#139a43",
+        "text-color-5": "#ffffff",
         "table-pr-5": "powerstyler-trimmer-for-men",
         "header-color-6": "#f78154",
+        "text-color-6": "#ffffff",
         "table-pr-6": "premium-multi-groomer-trimmer-for-men",
         "header-color-7": "#586ba4",
+        "text-color-7": "#ffffff",
         "table-pr-7": "",
         "header-color-8": "",
+        "text-color-8": "",
         "table-pr-8": "",
-        "header-color-9": ""
+        "header-color-9": "",
+        "text-color-9": ""
       }
     }
   },
