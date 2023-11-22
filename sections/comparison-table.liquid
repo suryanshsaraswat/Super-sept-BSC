@@ -16,6 +16,14 @@
     font-weight: 500;
 }
 table.compare{border-collapse:collapse;padding:5px;max-width:100%; width:1200px; margin:0 auto}
+  @media(max-width:450px){
+    th.pr-header{
+      min-width:150px
+    }
+    .comparison-table{
+      overflow:scroll;
+    }
+  }
 	</style>
 {% assign product_1 = all_products[section.settings.table-pr-1] %}
 {% assign product_2 = all_products[section.settings.table-pr-2] %}
