@@ -45,7 +45,8 @@ table.compare{border-collapse:collapse;padding:5px;max-width:100%; width:1200px;
 {% assign product_6 = all_products[section.settings.table-pr-6] %}
 {% assign product_7 = all_products[section.settings.table-pr-7] %}
 {% assign product_8 = all_products[section.settings.table-pr-8] %}
-<table class="compare scrollable-table">
+<div class="comparison-table">
+  <table class="compare scrollable-table">
 		<thead>
 			<tr>
               <th class="pr-header" id="{{ section.settings.id }}" style="background-color:{{ section.settings.header-color-1 }}">
@@ -119,6 +120,7 @@ table.compare{border-collapse:collapse;padding:5px;max-width:100%; width:1200px;
             {% endfor %}
 		</tbody>
 	</table>
+</div>
  {% schema %}
    {
      "name":"Comparison Table",
