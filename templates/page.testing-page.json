@@ -83,11 +83,101 @@
             "spec-8": "",
             "spec-9": ""
           }
+        },
+        "aabd7963-d297-4278-b5d4-0f33ff1a420f": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "Loren Ipsum",
+            "spec-2": "Loren Ipsum",
+            "spec-3": "Loren Ipsum",
+            "spec-4": "Loren Ipsum",
+            "spec-5": "Loren Ipsum",
+            "spec-6": "Loren Ipsum",
+            "spec-7": "Loren Ipsum",
+            "spec-8": "",
+            "spec-9": ""
+          }
+        },
+        "d6a38804-5a45-4cd9-9848-5e5c7e44f2d1": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "Loren Ipsum",
+            "spec-2": "Loren Ipsum",
+            "spec-3": "Loren Ipsum",
+            "spec-4": "Loren Ipsum",
+            "spec-5": "Loren Ipsum",
+            "spec-6": "Loren Ipsum",
+            "spec-7": "Loren Ipsum",
+            "spec-8": "",
+            "spec-9": ""
+          }
+        },
+        "9a59fba8-761d-4f02-856b-c7b99bf54cef": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "Loren Ipsum",
+            "spec-2": "Loren Ipsum",
+            "spec-3": "Loren Ipsum",
+            "spec-4": "Loren Ipsum",
+            "spec-5": "Loren Ipsum",
+            "spec-6": "Loren Ipsum",
+            "spec-7": "Loren Ipsum",
+            "spec-8": "",
+            "spec-9": ""
+          }
+        },
+        "665b7d91-5ee5-4b51-9593-a165a9050262": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "Loren Ipsum",
+            "spec-2": "Loren Ipsum",
+            "spec-3": "Loren Ipsum",
+            "spec-4": "Loren Ipsum",
+            "spec-5": "Loren Ipsum",
+            "spec-6": "Loren Ipsum",
+            "spec-7": "Loren Ipsum",
+            "spec-8": "",
+            "spec-9": ""
+          }
+        },
+        "e3a8d471-a5c9-4df8-9d11-0851e1452937": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "",
+            "spec-2": "",
+            "spec-3": "",
+            "spec-4": "",
+            "spec-5": "",
+            "spec-6": "",
+            "spec-7": "",
+            "spec-8": "",
+            "spec-9": ""
+          }
+        },
+        "80ce60f8-8004-4938-8bf8-34354a04e86c": {
+          "type": "text",
+          "settings": {
+            "spec-1-heading": "",
+            "spec-2": "",
+            "spec-3": "",
+            "spec-4": "",
+            "spec-5": "",
+            "spec-6": "",
+            "spec-7": "",
+            "spec-8": "",
+            "spec-9": ""
+          }
         }
       },
       "block_order": [
         "d211da45-591f-41be-884e-f0accef5cc17",
-        "866b00e7-74ab-4b7d-a456-30610a313a39"
+        "866b00e7-74ab-4b7d-a456-30610a313a39",
+        "aabd7963-d297-4278-b5d4-0f33ff1a420f",
+        "d6a38804-5a45-4cd9-9848-5e5c7e44f2d1",
+        "9a59fba8-761d-4f02-856b-c7b99bf54cef",
+        "665b7d91-5ee5-4b51-9593-a165a9050262",
+        "e3a8d471-a5c9-4df8-9d11-0851e1452937",
+        "80ce60f8-8004-4938-8bf8-34354a04e86c"
       ],
       "settings": {
         "header-color-1": "#ffffff",
