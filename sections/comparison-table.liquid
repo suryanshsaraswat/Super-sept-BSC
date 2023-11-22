@@ -32,6 +32,12 @@ table.compare{border-collapse:collapse;padding:5px;max-width:100%; width:1200px;
       min-height:43px
     }
   }
+  th.pr-header:first-child, td.pr-spec:first-child {
+            /* Set the first column to a fixed width */
+            position: sticky;
+            left: 0;
+            z-index: 1;
+        }
 	</style>
 {% assign product_1 = all_products[section.settings.table-pr-1] %}
 {% assign product_2 = all_products[section.settings.table-pr-2] %}
