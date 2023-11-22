@@ -1,7 +1,15 @@
+{% assign product_1 = all_products[section.settings.table-pr-1] %}
+{% assign product_2 = all_products[section.settings.table-pr-2] %}
+{% assign product_3 = all_products[section.settings.table-pr-3] %}
+{% assign product_4 = all_products[section.settings.table-pr-4] %}
+{% assign product_5 = all_products[section.settings.table-pr-5] %}
+{% assign product_6 = all_products[section.settings.table-pr-6] %}
 <table>
 		<thead>
 			<tr>
-				<th class="pr-header" id="{{ section.settings.id }}"></th>
+				<th class="pr-header" id="{{ section.settings.id }}">
+                  {{ product_1.title }}
+                </th>
 				<th class="pr-header" id="{{ section.settings.id }}"></th>
 				<th class="pr-header" id="{{ section.settings.id }}"></th>
 				<th class="pr-header" id="{{ section.settings.id }}"></th>
