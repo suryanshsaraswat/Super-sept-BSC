@@ -2,12 +2,12 @@
   <style></style>
 <div class="pro-video">
   <div class="desk-video">
-    <video class="video-desk" autoplay muted playsinline>
+    <video class="video-desk"width="100%" height="100%" autoplay muted playsinline>
       <source src="{{ product.metafields.custom.desktop_video }}" type="video/mp4">
     </video>
   </div>
   <div class="mob-video">
-    <video class="video-mob" autoplay muted playsinline>
+    <video class="video-mob"width="100%" height="100%" autoplay muted playsinline>
       <source src="{% if product.metafields.custom.mobile_video != blank %}{{ product.metafields.custom.mobile_video }}{% else %}{{ product.metafields.custom.desktop_video }}{% endif %}" type="video/mp4">
     </video>
   </div>
