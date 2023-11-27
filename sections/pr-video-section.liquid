@@ -1,6 +1,6 @@
 {% if product.metafields.custom.desktop_video != blank %}
-  {% assign desktop_video_url = product.metafields.custom.desktop_video %}
-  {% assign mobile_video_url = product.metafields.custom.mobile_video %}
+  {% assign desktop_video_url = product.metafields.custom.desktop_video | default: "" | strip %}
+  {% assign mobile_video_url = product.metafields.custom.mobile_video | default: "" | strip %}
   <style></style>
 <div class="pro-video">
   <div class="desk-video">
