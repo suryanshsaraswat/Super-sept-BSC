@@ -1,4 +1,5 @@
-<style></style>
+{% if product.metafields.custom.desktop_video != blank %}
+  <style></style>
 <div class="pro-video">
   <div class="desk-video">
     <video class="video-desk" autoplay muted playsinline>
@@ -11,6 +12,7 @@
     </video>
   </div>
 </div>
+{% endif %}
 {% schema %}
   {
     "name": "Product Video Section",
