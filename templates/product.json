@@ -60,11 +60,6 @@
           "settings": {
             "liquid": "{% if product.tags contains 'trimmer' %}\n                    <p>Country of Origin: China<\/p>\n                      {% else %}\n                    <p>Country of Origin: India<\/p>  \n                      {% endif %}"
           }
-        },
-        "2bb38e58-5ee6-4282-b361-7f074ce21b73": {
-          "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/cart-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
-          "settings": {
-          }
         }
       },
       "block_order": [
@@ -75,8 +70,7 @@
         "quantity_selector",
         "4437a5e4-4556-4a67-b78c-739aaa9068d2",
         "description",
-        "1570bf97-71ad-4561-a98d-0e27a8662154",
-        "2bb38e58-5ee6-4282-b361-7f074ce21b73"
+        "1570bf97-71ad-4561-a98d-0e27a8662154"
       ],
       "settings": {
         "image_size": "large",
@@ -277,6 +271,11 @@
       "settings": {
       }
     },
+    "e5d62fda-5906-4442-b583-12a9febea466": {
+      "type": "pr-video-section",
+      "settings": {
+      }
+    },
     "16527729209ba2f855": {
       "type": "apps",
       "blocks": {
@@ -410,6 +409,7 @@
     "34cdfbf9-149a-4de6-87f9-e3afc5177e18",
     "16964219592c39e206",
     "1659684819aef7882f",
+    "e5d62fda-5906-4442-b583-12a9febea466",
     "16527729209ba2f855",
     "69f81a89-ebbc-44e8-aa5a-46b526f61562",
     "product-recommendations",
