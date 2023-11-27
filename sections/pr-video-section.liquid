@@ -1,12 +1,25 @@
+<style></style>
+<div class="pro-video">
+  
+  <div class="desk-video">
+    <video class="video-desk" autoplay muted playsinline>
+      <source src="{{ product.metafields.custom.desktop_video }}" type="video/mp4">
+    </video>
+  </div>
+  <div class="mob-video">
+    <video class="video-mob" autoplay muted playsinline>
+      <source src="{% if product.metafields.custom.mobile_video != blank %}{{ product.metafields.custom.mobile_video }}{% else %}{{ product.metafields.custom.desktop_video }}{% endif %}" type="video/mp4">
+    </video>
+  </div>
+</div>
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Product Video Section",
+    "settings": [],
+    "presets":[
+      {
+        "name":"Product Video Section"
+      }
+    ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
