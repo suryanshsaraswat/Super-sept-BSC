@@ -5,12 +5,12 @@
 <div class="pro-video">
   <div class="desk-video">
     <video class="video-desk"width="100%" height="100%" autoplay muted playsinline>
-      <source src="{{ desktop_video_url }}" type="video/mp4">
+      <source src="{{ desktop_video_url | asset_url }}" type="video/mp4">
     </video>
   </div>
   <div class="mob-video">
     <video class="video-mob"width="100%" height="100%" autoplay muted playsinline>
-      <source src="{% if mobile_video_url != blank %}{{ mobile_video_url }}{% else %}{{ desktop_video_url }}{% endif %}" type="video/mp4">
+      <source src="{% if mobile_video_url != blank %}{{ mobile_video_url | asset_url }}{% else %}{{ desktop_video_url | asset_url }}{% endif %}" type="video/mp4">
     </video>
   </div>
 </div>
