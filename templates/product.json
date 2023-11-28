@@ -60,6 +60,11 @@
           "settings": {
             "liquid": "{% if product.tags contains 'trimmer' %}\n                    <p>Country of Origin: China<\/p>\n                      {% else %}\n                    <p>Country of Origin: India<\/p>  \n                      {% endif %}"
           }
+        },
+        "05922af7-bde8-44d3-a148-934be9bace92": {
+          "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/cart-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "settings": {
+          }
         }
       },
       "block_order": [
@@ -70,7 +75,8 @@
         "quantity_selector",
         "4437a5e4-4556-4a67-b78c-739aaa9068d2",
         "description",
-        "1570bf97-71ad-4561-a98d-0e27a8662154"
+        "1570bf97-71ad-4561-a98d-0e27a8662154",
+        "05922af7-bde8-44d3-a148-934be9bace92"
       ],
       "settings": {
         "image_size": "large",
