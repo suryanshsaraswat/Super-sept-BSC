@@ -3,24 +3,9 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "6e713555-0d1b-4c56-bf6f-9b22a70f138f": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_ffc8d34f-7b2c-4eec-afb9-7b1de29337b3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_e6096354-acca-4b45-b625-007b1ac13980.jpg",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/trimmers-for-men",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
-        },
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Range.webp",
             "mobile_image": "shopify:\/\/shop_images\/Range_Mobile_2.webp",
@@ -30,6 +15,21 @@
             "title": "",
             "button_1_text": "",
             "button_1_link": "shopify:\/\/pages\/razors-for-men",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
+        "4cf8a797-d3b3-40bc-955e-d647feaa4912": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Trimmer_Desktop_1920x650_ab6b06bb-9619-47b2-b48a-e16fd2ebc8d1.webp",
+            "mobile_image": "shopify:\/\/shop_images\/Trimmer_Mobile_800x987_86338891-ca9c-4820-9808-e6491757658a.webp",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/collections\/mens-beardcare-products",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -95,6 +95,22 @@
             "button_2_link": ""
           }
         },
+        "6e713555-0d1b-4c56-bf6f-9b22a70f138f": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Desktop_ffc8d34f-7b2c-4eec-afb9-7b1de29337b3.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Mobile_e6096354-acca-4b45-b625-007b1ac13980.jpg",
+            "apply_overlay": false,
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_1_text": "",
+            "button_1_link": "shopify:\/\/pages\/trimmers-for-men",
+            "button_2_text": "",
+            "button_2_link": ""
+          }
+        },
         "ab7168f3-b05d-42b3-9351-583cedcbdc26": {
           "type": "image",
           "disabled": true,
@@ -142,35 +158,19 @@
             "button_2_text": "",
             "button_2_link": ""
           }
-        },
-        "c8020995-17d9-45cd-9d3e-bc02aba3dbdf": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_f9d31b3f-d88a-4afd-9cae-a1e8ac18c2a4.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_66c7a42c-4fc7-41ed-aad6-768ebb253ef4.webp",
-            "apply_overlay": false,
-            "content_position": "bottomLeft",
-            "subheading": "",
-            "title": "",
-            "button_1_text": "",
-            "button_1_link": "shopify:\/\/products\/charcoal-facewash-men",
-            "button_2_text": "",
-            "button_2_link": ""
-          }
         }
       },
       "block_order": [
-        "6e713555-0d1b-4c56-bf6f-9b22a70f138f",
         "fdd03a74-70c5-4c74-8a66-9eabe9c2e852",
+        "4cf8a797-d3b3-40bc-955e-d647feaa4912",
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f",
         "d6bed712-5d9c-4aac-b1cc-d1c1ac74bfb6",
         "32ffea8a-df40-4983-91f2-b49a91203d66",
         "43767d93-472f-4f08-ad90-6d112ac2580e",
+        "6e713555-0d1b-4c56-bf6f-9b22a70f138f",
         "ab7168f3-b05d-42b3-9351-583cedcbdc26",
         "a73829d6-0b9e-489b-86d5-0f13cf8d6b05",
-        "7f28979f-7cff-4767-b103-dd6bcf9cdc26",
-        "c8020995-17d9-45cd-9d3e-bc02aba3dbdf"
+        "7f28979f-7cff-4767-b103-dd6bcf9cdc26"
       ],
       "settings": {
         "show_fullscreen": false,
