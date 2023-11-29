@@ -256,15 +256,6 @@
             "labelll": ""
           }
         },
-        "b07e283e-bd28-4f38-98f7-c6131a42f96a": {
-          "type": "Product",
-          "settings": {
-            "featured_product": "beard-care-kit",
-            "featured_image-1": "shopify:\/\/shop_images\/Artboard_1_1ca15220-52c0-488e-be73-64579c93ad22.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/Artboard_2_826ddb52-6f7b-4298-bc2a-3644b9964089.jpg",
-            "labelll": ""
-          }
-        },
         "9c49d2ae-b631-4295-b1d4-b171f32c395a": {
           "type": "Product",
           "settings": {
@@ -302,7 +293,6 @@
         "01086769-e2e2-489f-9124-6cc37c329f15",
         "2ae2b35f-832e-4274-a283-64ef8a99ca03",
         "bba8111d-95ca-4bde-b5b4-fdb795541474",
-        "b07e283e-bd28-4f38-98f7-c6131a42f96a",
         "9c49d2ae-b631-4295-b1d4-b171f32c395a",
         "ca9b334c-ee83-453d-9a5c-001786e4c5af",
         "a446a330-974f-418d-8186-4c2ac9be3145"
