@@ -1,1 +1,179 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"show_large":false}},"89722600-ded7-4682-b7be-1b303f986b31":{"type":"custom-html","settings":{"subheading":"","title":"","html":"<h1 style=\"margin-top:0\">Blogs<\/h1>"}},"ec43dc3c-d874-4e9e-8ec7-fabb7a3a778a":{"type":"custom-html-wthout-spacing","settings":{"html":"<h1 style=\"letter-spacing:0; text-transform:capitalize; font-size:18px; margin-bottom:0;margin-top:0\">Men's personal care and grooming blog<\/h1>"}},"165666262348370df2":{"type":"image-with-text-block","disabled":true,"settings":{"image":"shopify:\/\/shop_images\/Bright_Sale_Brand_Website_Homepage_Banner_4_1200x_3f44040e-5a89-40dc-9dd5-41fc0c2d95dc.webp","background":"#ffffff","text_color":"#1c1b1b","block_size":"large","title":"Trimming or Shaving: Which is better for first-timers?","content":"<p>If you have been spending your days staring at the mirror, observing the hair sprouting above your lips, along your jawline, extending down your sideburns and circling your neck, ...<\/p>","button_label":"Read now","button_link":"shopify:\/\/blogs\/beard-care\/trimming-or-shaving-which-is-better-for-first-timers","show_parallax":true}},"1656662560f58b6707":{"type":"blog-posts","blocks":{"16566625601c2de0b9-0":{"type":"blog","settings":{"blog":"beard-care"}}},"block_order":["16566625601c2de0b9-0"],"settings":{"subheading":"","title":"Beard","show_category":true,"button_link":"shopify:\/\/blogs\/beard-care","button_text":"View all articles"}},"1656662578b5662908":{"type":"blog-posts","blocks":{"16566625784e899dce-0":{"type":"blog","settings":{"blog":"shaving"}}},"block_order":["16566625784e899dce-0"],"settings":{"subheading":"","title":"Shaving","show_category":true,"button_link":"shopify:\/\/blogs\/shaving","button_text":"View all articles"}},"fa794564-31fa-491d-9f30-ed72b6bd913d":{"type":"blog-posts","blocks":{"template--15991129702554__fa794564-31fa-491d-9f30-ed72b6bd913d-167324672470fc6bde-0":{"type":"blog","settings":{"blog":"skincare"}}},"block_order":["template--15991129702554__fa794564-31fa-491d-9f30-ed72b6bd913d-167324672470fc6bde-0"],"settings":{"subheading":"","title":"SKINCARE","show_category":false,"button_link":"shopify:\/\/blogs\/skincare","button_text":"View all articles"}},"16597005517b4fe518":{"type":"blog-posts","blocks":{"165970055192d45617-0":{"type":"blog","settings":{"blog":"diy"}}},"block_order":["165970055192d45617-0"],"settings":{"subheading":"","title":"DIY","show_category":false,"button_link":"shopify:\/\/blogs\/diy","button_text":"View all articles"}},"84214c5a-7db7-4e36-ab10-af4aa3647af4":{"type":"blog-posts","blocks":{"template--15991129702554__84214c5a-7db7-4e36-ab10-af4aa3647af4-167324672470fc6bde-0":{"type":"blog","settings":{"blog":"fragrances"}}},"block_order":["template--15991129702554__84214c5a-7db7-4e36-ab10-af4aa3647af4-167324672470fc6bde-0"],"settings":{"subheading":"","title":"Fragrances","show_category":false,"button_link":"shopify:\/\/blogs\/fragrances","button_text":"View all articles"}},"73c1b28a-9bac-4de6-b4d4-e9504abf7d22":{"type":"blog-posts","blocks":{"template--15991129702554__73c1b28a-9bac-4de6-b4d4-e9504abf7d22-167324672470fc6bde-0":{"type":"blog","settings":{"blog":"style"}}},"block_order":["template--15991129702554__73c1b28a-9bac-4de6-b4d4-e9504abf7d22-167324672470fc6bde-0"],"disabled":true,"settings":{"subheading":"","title":"Style","show_category":false,"button_link":"shopify:\/\/blogs\/style","button_text":"View all articles"}}},"order":["main","89722600-ded7-4682-b7be-1b303f986b31","ec43dc3c-d874-4e9e-8ec7-fabb7a3a778a","165666262348370df2","1656662560f58b6707","1656662578b5662908","fa794564-31fa-491d-9f30-ed72b6bd913d","16597005517b4fe518","84214c5a-7db7-4e36-ab10-af4aa3647af4","73c1b28a-9bac-4de6-b4d4-e9504abf7d22"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "89722600-ded7-4682-b7be-1b303f986b31": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "",
+        "html": "<h1 style=\"margin-top:0\">Blogs<\/h1>"
+      }
+    },
+    "ec43dc3c-d874-4e9e-8ec7-fabb7a3a778a": {
+      "type": "custom-html-wthout-spacing",
+      "settings": {
+        "html": "<h2 style=\"letter-spacing:0; text-transform:capitalize; font-size:18px; margin-bottom:0;margin-top:0\">Men's personal care and grooming blog<\/h2>"
+      }
+    },
+    "165666262348370df2": {
+      "type": "image-with-text-block",
+      "disabled": true,
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Bright_Sale_Brand_Website_Homepage_Banner_4_1200x_3f44040e-5a89-40dc-9dd5-41fc0c2d95dc.webp",
+        "background": "#ffffff",
+        "text_color": "#1c1b1b",
+        "block_size": "large",
+        "title": "Trimming or Shaving: Which is better for first-timers?",
+        "content": "<p>If you have been spending your days staring at the mirror, observing the hair sprouting above your lips, along your jawline, extending down your sideburns and circling your neck, ...<\/p>",
+        "button_label": "Read now",
+        "button_link": "shopify:\/\/blogs\/beard-care\/trimming-or-shaving-which-is-better-for-first-timers",
+        "show_parallax": true
+      }
+    },
+    "1656662560f58b6707": {
+      "type": "blog-posts",
+      "blocks": {
+        "16566625601c2de0b9-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "beard-care"
+          }
+        }
+      },
+      "block_order": [
+        "16566625601c2de0b9-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Beard",
+        "show_category": true,
+        "button_link": "shopify:\/\/blogs\/beard-care",
+        "button_text": "View all articles"
+      }
+    },
+    "1656662578b5662908": {
+      "type": "blog-posts",
+      "blocks": {
+        "16566625784e899dce-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "shaving"
+          }
+        }
+      },
+      "block_order": [
+        "16566625784e899dce-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Shaving",
+        "show_category": true,
+        "button_link": "shopify:\/\/blogs\/shaving",
+        "button_text": "View all articles"
+      }
+    },
+    "fa794564-31fa-491d-9f30-ed72b6bd913d": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--15991129702554__fa794564-31fa-491d-9f30-ed72b6bd913d-167324672470fc6bde-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "skincare"
+          }
+        }
+      },
+      "block_order": [
+        "template--15991129702554__fa794564-31fa-491d-9f30-ed72b6bd913d-167324672470fc6bde-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "SKINCARE",
+        "show_category": false,
+        "button_link": "shopify:\/\/blogs\/skincare",
+        "button_text": "View all articles"
+      }
+    },
+    "16597005517b4fe518": {
+      "type": "blog-posts",
+      "blocks": {
+        "165970055192d45617-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "diy"
+          }
+        }
+      },
+      "block_order": [
+        "165970055192d45617-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "DIY",
+        "show_category": false,
+        "button_link": "shopify:\/\/blogs\/diy",
+        "button_text": "View all articles"
+      }
+    },
+    "84214c5a-7db7-4e36-ab10-af4aa3647af4": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--15991129702554__84214c5a-7db7-4e36-ab10-af4aa3647af4-167324672470fc6bde-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "fragrances"
+          }
+        }
+      },
+      "block_order": [
+        "template--15991129702554__84214c5a-7db7-4e36-ab10-af4aa3647af4-167324672470fc6bde-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "Fragrances",
+        "show_category": false,
+        "button_link": "shopify:\/\/blogs\/fragrances",
+        "button_text": "View all articles"
+      }
+    },
+    "73c1b28a-9bac-4de6-b4d4-e9504abf7d22": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--15991129702554__73c1b28a-9bac-4de6-b4d4-e9504abf7d22-167324672470fc6bde-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "style"
+          }
+        }
+      },
+      "block_order": [
+        "template--15991129702554__73c1b28a-9bac-4de6-b4d4-e9504abf7d22-167324672470fc6bde-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "subheading": "",
+        "title": "Style",
+        "show_category": false,
+        "button_link": "shopify:\/\/blogs\/style",
+        "button_text": "View all articles"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "89722600-ded7-4682-b7be-1b303f986b31",
+    "ec43dc3c-d874-4e9e-8ec7-fabb7a3a778a",
+    "165666262348370df2",
+    "1656662560f58b6707",
+    "1656662578b5662908",
+    "fa794564-31fa-491d-9f30-ed72b6bd913d",
+    "16597005517b4fe518",
+    "84214c5a-7db7-4e36-ab10-af4aa3647af4",
+    "73c1b28a-9bac-4de6-b4d4-e9504abf7d22"
+  ]
+}
