@@ -1,5 +1,5 @@
 <style>
-  collection-container h1 {
+  collection-container h2 {
     text-align: center;
     font-size: 25px;
     font-weight: 600;
@@ -34,9 +34,9 @@
 </style>
 <div class="collection-container">
   {% if section.settings.collection_heading != blank %}
-  <h1>{{ section.settings.collection_heading }}</h1>
+  <h2>{{ section.settings.collection_heading }}</h2>
     {% else %}
-    <h1 style="display:none">{{ section.settings.collection_heading }}</h1>
+    <h2 style="display:none">{{ section.settings.collection_heading }}</h2>
   {% endif %}
   <div class="collectionlist">
   {% for block in section.blocks %}
