@@ -182,15 +182,6 @@
     "cec96a02-6dea-4592-91e3-7c58dd9b7cce": {
       "type": "gifting-product-block",
       "blocks": {
-        "feef4794-a9ac-4027-a642-d3b1119e325c": {
-          "type": "Product",
-          "settings": {
-            "featured_product": "premium-shaving-kit-for-men",
-            "featured_image-1": "shopify:\/\/shop_images\/6PSS_0176a492-6b7a-4f0b-98a3-0774add6b26e.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/1_option_2.jpg",
-            "labelll": ""
-          }
-        },
         "3c6ccacd-b880-40f9-9b06-d893d0559119": {
           "type": "Product",
           "disabled": true,
@@ -229,21 +220,21 @@
             "labelll": ""
           }
         },
-        "01086769-e2e2-489f-9124-6cc37c329f15": {
-          "type": "Product",
-          "settings": {
-            "featured_product": "wanderlust-perfume-collection-3-perfume-combo",
-            "featured_image-1": "shopify:\/\/shop_images\/Wander_lust.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/card_2_785528b8-890f-4e21-92fa-4a0905597120.jpg",
-            "labelll": ""
-          }
-        },
         "2ae2b35f-832e-4274-a283-64ef8a99ca03": {
           "type": "Product",
           "settings": {
             "featured_product": "globetrotter-fragrance-gift-set-for-men",
             "featured_image-1": "shopify:\/\/shop_images\/Globrtrtter_Kit.jpg",
             "featured_image-2": "shopify:\/\/shop_images\/2_708325d7-13cf-41c7-988b-cb7fde706513.jpg",
+            "labelll": ""
+          }
+        },
+        "a446a330-974f-418d-8186-4c2ac9be3145": {
+          "type": "Product",
+          "settings": {
+            "featured_product": "charcoal-face-care-kit",
+            "featured_image-1": "shopify:\/\/shop_images\/CFSK_Sheet_Mask.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/Artboard_2_2ea45912-37b0-4d65-8297-1a6597c808dc.jpg",
             "labelll": ""
           }
         },
@@ -274,28 +265,37 @@
             "labelll": ""
           }
         },
-        "a446a330-974f-418d-8186-4c2ac9be3145": {
+        "01086769-e2e2-489f-9124-6cc37c329f15": {
           "type": "Product",
           "settings": {
-            "featured_product": "charcoal-face-care-kit",
-            "featured_image-1": "shopify:\/\/shop_images\/CFSK_Sheet_Mask.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/Artboard_2_2ea45912-37b0-4d65-8297-1a6597c808dc.jpg",
+            "featured_product": "wanderlust-perfume-collection-3-perfume-combo",
+            "featured_image-1": "shopify:\/\/shop_images\/Wander_lust.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/card_2_785528b8-890f-4e21-92fa-4a0905597120.jpg",
+            "labelll": ""
+          }
+        },
+        "feef4794-a9ac-4027-a642-d3b1119e325c": {
+          "type": "Product",
+          "settings": {
+            "featured_product": "premium-shaving-kit-for-men",
+            "featured_image-1": "shopify:\/\/shop_images\/6PSS_0176a492-6b7a-4f0b-98a3-0774add6b26e.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/1_option_2.jpg",
             "labelll": ""
           }
         }
       },
       "block_order": [
-        "feef4794-a9ac-4027-a642-d3b1119e325c",
         "3c6ccacd-b880-40f9-9b06-d893d0559119",
         "96b865f2-ea97-4dcb-b747-fa862fe8f5cd",
         "07fb3086-5ab2-4404-8b66-ea94b82d8dcb",
         "2425466f-3ca4-4d3e-8e6d-0f4d4e30cd2d",
-        "01086769-e2e2-489f-9124-6cc37c329f15",
         "2ae2b35f-832e-4274-a283-64ef8a99ca03",
+        "a446a330-974f-418d-8186-4c2ac9be3145",
         "bba8111d-95ca-4bde-b5b4-fdb795541474",
         "9c49d2ae-b631-4295-b1d4-b171f32c395a",
         "ca9b334c-ee83-453d-9a5c-001786e4c5af",
-        "a446a330-974f-418d-8186-4c2ac9be3145"
+        "01086769-e2e2-489f-9124-6cc37c329f15",
+        "feef4794-a9ac-4027-a642-d3b1119e325c"
       ],
       "settings": {
         "headtext": "BESTSELLING GIFT KITS"
