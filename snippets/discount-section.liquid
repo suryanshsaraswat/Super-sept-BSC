@@ -23,7 +23,7 @@ h2.off{font-size:21px;margin-bottom:0;font-weight:500;color:#007364;position:rel
     {% for tag in product.tags %}
         {% if tag == 'SHOP@25TAG' %}
         <div class="discount-setup">
-            <h2>Get This product for {{ product.price | minus: discount | money_with_currency}}</h2>
+            <h2>Get This product for <span style="color:red">{{ product.price | minus: discount | money_with_currency}}</span></h2>
             <div class="disc">Use code: <span onclick="copyToClipboard(this)" class="dsc" id="copy-cat">SHOP20</span></div>
         </div>
         {% else %}
