@@ -47,7 +47,10 @@
               f.parentNode.insertBefore(a, f);
             }
           })(document, window.mixpanel || []);
-      mixpanel.init("11f8d42810840f59e7603f2dcc14d640");
+      mixpanel.init("11f8d42810840f59e7603f2dcc14d640", {
+        api_host: "https://telemetry.troopod.io",
+        batch_requests: false
+      });
 
       function uuidv4() {
         return ([1e7]+-1e3+-4e3+-8e3+-1e11).replace(/[018]/g, c =>
