@@ -229,6 +229,7 @@
       "block_order": [
         "8d92bece-576f-444b-a7af-dff7eff61393"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -237,6 +238,7 @@
       "blocks": {
         "template--16174121451674__143e1dd1-1ec4-4353-9bc0-31afd1d21039-collection-1": {
           "type": "collection",
+          "disabled": true,
           "settings": {
             "collection": "combo-kits",
             "title": "",
@@ -248,6 +250,7 @@
       "block_order": [
         "template--16174121451674__143e1dd1-1ec4-4353-9bc0-31afd1d21039-collection-1"
       ],
+      "disabled": true,
       "settings": {
         "bg": "",
         "hcl": "",
@@ -285,7 +288,7 @@
             "collection": "razors",
             "title": "",
             "grid_items_count": 4,
-            "button_text": ""
+            "button_text": "Explore ALL"
           }
         }
       },
