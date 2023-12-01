@@ -91,6 +91,7 @@
       "blocks": {
         "78252483-d96c-455a-9a3f-de9dd40f072e": {
           "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/app-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "disabled": true,
           "settings": {
             "class": "",
             "tag": "",
@@ -109,6 +110,7 @@
         },
         "35c3811e-3b97-485f-a9d7-27e2072c9a7d": {
           "type": "shopify:\/\/apps\/bsc-troopod-shopable\/blocks\/app-block\/e9ed15f7-0469-42bf-a44e-9c9a2b36604c",
+          "disabled": true,
           "settings": {
             "class": "secondary",
             "tag": "secondary",
