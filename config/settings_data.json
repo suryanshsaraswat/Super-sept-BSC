@@ -1035,6 +1035,15 @@
       "razr-prod-block": {
         "type": "razr-prod-block",
         "blocks": {
+          "5a4daa1c-6688-42ca-987f-2c541f377974": {
+            "type": "product",
+            "settings": {
+              "prod": "sensi-smart-3-value-pack-1-handle-3-cartridge",
+              "razor_img": "shopify:\/\/shop_images\/Razor_Cartridge_First_Image_Sensi_smart_02.webp",
+              "razr_html": "<h3>Erognomic Grip<\/h3>\n<h3>3 Cartridge Refills<\/h3>\n<h3>Lubricating Strip<\/h3>\n<h3>Pivot Head<\/h3>",
+              "top_color": ""
+            }
+          },
           "9a74eb52-747c-4a6b-9333-e1de4914ca0a": {
             "type": "product",
             "settings": {
@@ -1064,6 +1073,7 @@
           },
           "4db42fa8-ae2d-46be-aec5-a4bc1df8dbd2": {
             "type": "product",
+            "disabled": true,
             "settings": {
               "prod": "razor-sharpener",
               "razor_img": "shopify:\/\/shop_images\/Untitled_design_5.jpg",
@@ -1073,6 +1083,7 @@
           }
         },
         "block_order": [
+          "5a4daa1c-6688-42ca-987f-2c541f377974",
           "9a74eb52-747c-4a6b-9333-e1de4914ca0a",
           "0fb9bf09-af9c-407e-b176-7da503d4e26e",
           "1342f2df-5336-430e-ac5a-3c9f78a4f84f",
