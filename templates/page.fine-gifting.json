@@ -201,6 +201,15 @@
             "labelll": ""
           }
         },
+        "2cc12c1e-a6c6-41ad-9d85-7a6ff91e89ed": {
+          "type": "Product",
+          "settings": {
+            "featured_product": "6-part-shaving-system-sensi-luxe-kit",
+            "featured_image-1": "shopify:\/\/shop_images\/1_12.webp",
+            "featured_image-2": "shopify:\/\/shop_images\/2_13.webp",
+            "labelll": ""
+          }
+        },
         "07fb3086-5ab2-4404-8b66-ea94b82d8dcb": {
           "type": "Product",
           "settings": {
@@ -287,6 +296,7 @@
       "block_order": [
         "3c6ccacd-b880-40f9-9b06-d893d0559119",
         "96b865f2-ea97-4dcb-b747-fa862fe8f5cd",
+        "2cc12c1e-a6c6-41ad-9d85-7a6ff91e89ed",
         "07fb3086-5ab2-4404-8b66-ea94b82d8dcb",
         "2425466f-3ca4-4d3e-8e6d-0f4d4e30cd2d",
         "2ae2b35f-832e-4274-a283-64ef8a99ca03",
