@@ -192,12 +192,30 @@
             "labelll": ""
           }
         },
-        "96b865f2-ea97-4dcb-b747-fa862fe8f5cd": {
+        "feef4794-a9ac-4027-a642-d3b1119e325c": {
           "type": "Product",
           "settings": {
-            "featured_product": "premium-fragrances-for-men",
-            "featured_image-1": "shopify:\/\/shop_images\/Premium_Fragrances_For_Men.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/3_92eb7bc6-0f98-4192-aa63-bdbe6bd6b500.jpg",
+            "featured_product": "premium-shaving-kit-for-men",
+            "featured_image-1": "shopify:\/\/shop_images\/6PSS_0176a492-6b7a-4f0b-98a3-0774add6b26e.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/1_option_2.jpg",
+            "labelll": ""
+          }
+        },
+        "07fb3086-5ab2-4404-8b66-ea94b82d8dcb": {
+          "type": "Product",
+          "settings": {
+            "featured_product": "two-good-two-be-true-set-of-2",
+            "featured_image-1": "shopify:\/\/shop_images\/1_171b02aa-621c-44d3-8bde-7dcb38d79db7.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/6_44a79a49-e61b-46f0-ac9b-6887918b32a1.jpg",
+            "labelll": ""
+          }
+        },
+        "a446a330-974f-418d-8186-4c2ac9be3145": {
+          "type": "Product",
+          "settings": {
+            "featured_product": "charcoal-face-care-kit",
+            "featured_image-1": "shopify:\/\/shop_images\/CFSK_Sheet_Mask.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/Artboard_2_2ea45912-37b0-4d65-8297-1a6597c808dc.jpg",
             "labelll": ""
           }
         },
@@ -210,12 +228,21 @@
             "labelll": ""
           }
         },
-        "07fb3086-5ab2-4404-8b66-ea94b82d8dcb": {
+        "bba8111d-95ca-4bde-b5b4-fdb795541474": {
           "type": "Product",
           "settings": {
-            "featured_product": "two-good-two-be-true-set-of-2",
-            "featured_image-1": "shopify:\/\/shop_images\/1_171b02aa-621c-44d3-8bde-7dcb38d79db7.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/6_44a79a49-e61b-46f0-ac9b-6887918b32a1.jpg",
+            "featured_product": "coffee-face-care-kit",
+            "featured_image-1": "shopify:\/\/shop_images\/Artboard_0_b388e683-f6a2-4a5f-85be-78067435f31c.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/Artboard_1_98806c9d-0e8e-4e95-8548-48c16abdc0e8.jpg",
+            "labelll": ""
+          }
+        },
+        "2ae2b35f-832e-4274-a283-64ef8a99ca03": {
+          "type": "Product",
+          "settings": {
+            "featured_product": "globetrotter-fragrance-gift-set-for-men",
+            "featured_image-1": "shopify:\/\/shop_images\/Globrtrtter_Kit.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/2_708325d7-13cf-41c7-988b-cb7fde706513.jpg",
             "labelll": ""
           }
         },
@@ -229,30 +256,12 @@
             "labelll": ""
           }
         },
-        "2ae2b35f-832e-4274-a283-64ef8a99ca03": {
+        "01086769-e2e2-489f-9124-6cc37c329f15": {
           "type": "Product",
           "settings": {
-            "featured_product": "globetrotter-fragrance-gift-set-for-men",
-            "featured_image-1": "shopify:\/\/shop_images\/Globrtrtter_Kit.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/2_708325d7-13cf-41c7-988b-cb7fde706513.jpg",
-            "labelll": ""
-          }
-        },
-        "a446a330-974f-418d-8186-4c2ac9be3145": {
-          "type": "Product",
-          "settings": {
-            "featured_product": "charcoal-face-care-kit",
-            "featured_image-1": "shopify:\/\/shop_images\/CFSK_Sheet_Mask.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/Artboard_2_2ea45912-37b0-4d65-8297-1a6597c808dc.jpg",
-            "labelll": ""
-          }
-        },
-        "bba8111d-95ca-4bde-b5b4-fdb795541474": {
-          "type": "Product",
-          "settings": {
-            "featured_product": "coffee-face-care-kit",
-            "featured_image-1": "shopify:\/\/shop_images\/Artboard_0_b388e683-f6a2-4a5f-85be-78067435f31c.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/Artboard_1_98806c9d-0e8e-4e95-8548-48c16abdc0e8.jpg",
+            "featured_product": "wanderlust-perfume-collection-3-perfume-combo",
+            "featured_image-1": "shopify:\/\/shop_images\/Wander_lust.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/card_2_785528b8-890f-4e21-92fa-4a0905597120.jpg",
             "labelll": ""
           }
         },
@@ -274,38 +283,29 @@
             "labelll": ""
           }
         },
-        "01086769-e2e2-489f-9124-6cc37c329f15": {
+        "96b865f2-ea97-4dcb-b747-fa862fe8f5cd": {
           "type": "Product",
           "settings": {
-            "featured_product": "wanderlust-perfume-collection-3-perfume-combo",
-            "featured_image-1": "shopify:\/\/shop_images\/Wander_lust.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/card_2_785528b8-890f-4e21-92fa-4a0905597120.jpg",
-            "labelll": ""
-          }
-        },
-        "feef4794-a9ac-4027-a642-d3b1119e325c": {
-          "type": "Product",
-          "settings": {
-            "featured_product": "premium-shaving-kit-for-men",
-            "featured_image-1": "shopify:\/\/shop_images\/6PSS_0176a492-6b7a-4f0b-98a3-0774add6b26e.jpg",
-            "featured_image-2": "shopify:\/\/shop_images\/1_option_2.jpg",
+            "featured_product": "premium-fragrances-for-men",
+            "featured_image-1": "shopify:\/\/shop_images\/Premium_Fragrances_For_Men.jpg",
+            "featured_image-2": "shopify:\/\/shop_images\/3_92eb7bc6-0f98-4192-aa63-bdbe6bd6b500.jpg",
             "labelll": ""
           }
         }
       },
       "block_order": [
         "3c6ccacd-b880-40f9-9b06-d893d0559119",
-        "96b865f2-ea97-4dcb-b747-fa862fe8f5cd",
-        "2cc12c1e-a6c6-41ad-9d85-7a6ff91e89ed",
+        "feef4794-a9ac-4027-a642-d3b1119e325c",
         "07fb3086-5ab2-4404-8b66-ea94b82d8dcb",
-        "2425466f-3ca4-4d3e-8e6d-0f4d4e30cd2d",
-        "2ae2b35f-832e-4274-a283-64ef8a99ca03",
         "a446a330-974f-418d-8186-4c2ac9be3145",
+        "2cc12c1e-a6c6-41ad-9d85-7a6ff91e89ed",
         "bba8111d-95ca-4bde-b5b4-fdb795541474",
+        "2ae2b35f-832e-4274-a283-64ef8a99ca03",
+        "2425466f-3ca4-4d3e-8e6d-0f4d4e30cd2d",
+        "01086769-e2e2-489f-9124-6cc37c329f15",
         "9c49d2ae-b631-4295-b1d4-b171f32c395a",
         "ca9b334c-ee83-453d-9a5c-001786e4c5af",
-        "01086769-e2e2-489f-9124-6cc37c329f15",
-        "feef4794-a9ac-4027-a642-d3b1119e325c"
+        "96b865f2-ea97-4dcb-b747-fa862fe8f5cd"
       ],
       "settings": {
         "headtext": "BESTSELLING GIFT KITS"
