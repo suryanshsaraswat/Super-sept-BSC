@@ -70,25 +70,15 @@
       padding: 7px 5px;
     }
   }
-   h1.brand-partners {
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0; 
-    font-weight: bold;
-  }
   
 </style>
 <div class="brand">
   <div class="brand-parent">
     {% for block in section.blocks %}
-      <header class="SectionHeader SectionHeader--centre">
-        <h1 class="SectionHeader__Header Heading u-h1">Brand Partners</h1>
-      </header>
       <div class="brand-child">
         <div class="brand-img">
           <h2 class="imgg-brand">
-            <img
-              src="{{ block.settings.brand_img_slid | img_url: '400x' }}"
+            <img src="{{ block.settings.brand_img_slid | img_url: '400x' }}"
               alt="{{ block.settings.brand_title }}"
               loading="lazy"
               class="imgg"></h2>
