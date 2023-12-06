@@ -51,6 +51,12 @@
     border-radius: 4px;
     font-size: 12px;
   }
+   h1.brand-heading {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
   @media(max-width:450px) {
     .brand-child {
       display: block;
@@ -73,6 +79,7 @@
 </style>
 <div class="brand">
   <div class="brand-parent">
+    <h1 class="brand-heading">Brand Partners</h1>
     {% for block in section.blocks %}
       <div class="brand-child">
         <div class="brand-img">
