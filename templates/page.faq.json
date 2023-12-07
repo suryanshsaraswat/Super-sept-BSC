@@ -3,7 +3,7 @@
     "6a5864a3-32a4-4911-aa11-5cb1c7df288a": {
       "type": "custom-html-wthout-spacing",
       "custom_css": [
-        "h1{font-size:20px;letter-spacing:0;font-weight:600}"
+        "h1 {font-size: 20px; letter-spacing: 0; font-weight: 600;}"
       ],
       "settings": {
         "html": "<h1>Frequently Asked Questions<\/h1>"
@@ -151,6 +151,13 @@
             "title": "Why can I only subscribe to shaving supplies?",
             "content": "<p>As of now, subscription services are only available for your shaving supplies. However, stay tuned for a new and exciting subscription options by Bombay Shaving Company.<\/p>"
           }
+        },
+        "2fada922-5ae2-4bcf-8034-17ec5d82895e": {
+          "type": "faq",
+          "settings": {
+            "title": "Will I get my order in one shipment?",
+            "content": "<p>You may receive your order in multiple shipments depending on the products ordered. However, this may not be the case for all order places on the website. <\/p>"
+          }
         }
       },
       "block_order": [
@@ -173,7 +180,8 @@
         "0ea65bab-12a0-4102-aa45-e24457d763a0",
         "59644529-75e6-43d2-ab79-e52828ea7e9d",
         "193dcbbe-8b91-4e90-b7a8-67d5faec5b7c",
-        "b0750fd0-083d-403c-850b-6130738334a1"
+        "b0750fd0-083d-403c-850b-6130738334a1",
+        "2fada922-5ae2-4bcf-8034-17ec5d82895e"
       ],
       "custom_css": [
 
