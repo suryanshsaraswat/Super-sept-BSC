@@ -1217,6 +1217,12 @@
         "settings": {
           "tpt_seo_block": "{}"
         }
+      },
+      "16605631912868231181": {
+        "type": "shopify:\/\/apps\/moengage\/blocks\/app-embed\/50f1ed6f-9777-46ca-ae3f-9d9b9c6152ef",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
