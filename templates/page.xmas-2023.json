@@ -145,6 +145,7 @@
       "block_order": [
         "template--16382741708954__dfe8cd7f-94d9-4a60-9855-7e1d193ff595-collection-1"
       ],
+      "disabled": true,
       "settings": {
         "bg": "",
         "hcl": "",
@@ -156,6 +157,14 @@
         "grid_mobile_items_per_row": "2",
         "grid_desktop_items_per_row": 4
       }
+    },
+    "1b2163f0-1547-4bbc-8a81-b0d50c6e48c1": {
+      "type": "Brand-discount-slider",
+      "settings": {
+        "logo-headingg": "",
+        "logo-sub_heading": "",
+        "button-link": ""
+      }
     }
   },
   "order": [
@@ -164,6 +173,7 @@
     "9961539d-3083-4478-b500-95fd344b346b",
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
     "18841b79-dc2c-47aa-a252-73b078d15465",
-    "dfe8cd7f-94d9-4a60-9855-7e1d193ff595"
+    "dfe8cd7f-94d9-4a60-9855-7e1d193ff595",
+    "1b2163f0-1547-4bbc-8a81-b0d50c6e48c1"
   ]
 }
