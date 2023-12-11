@@ -15,19 +15,22 @@
       <div class="Rte" style="text-align: center;margin:0 auto;max-width:1349px;font-size: 32px;max-width:900px;font-style: normal;font-weight: 600;line-height: normal;">
         {{ section.settings.html }}
       </div>
+      <div class="bottom_container">
+        <p>nothing</p>
+      </div>
     {% else %}
       <div class="Rte" style="text-align: center;">
         {{ section.settings.html }}
       </div>
     {% endif %}
   </div>
-  {% if page.id == 99733373082 %}
-    <div style="background-image:url(https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Vector.png?v=1702283714);height:585px">
-      <span>&nbsp;</span>
-    </div>
-  {% endif %}
 </section>
-
+<style>
+.bottom_container
+{
+    background: {{ section.settings.bgcolor }} url('https://cdn.shopify.com/s/files/1/0459/6563/9834/files/Vector.png?v=1702283714') bottom right no-repeat;
+}
+</style>
 {% schema %}
 {
   "name": "Custom HTML",
