@@ -20,29 +20,20 @@
         "content": ""
       }
     },
-    "1657523681299f51d6": {
-      "type": "animated-counters",
-      "blocks": {
-        "c67ef56b-58ad-4ddf-b45f-7cc8859d286b": {
-          "type": "counters",
-          "disabled": true,
-          "settings": {
-            "counter1": "",
-            "counter2": "",
-            "counter3": ""
-          }
-        }
-      },
-      "block_order": [
-        "c67ef56b-58ad-4ddf-b45f-7cc8859d286b"
-      ],
+    "9961539d-3083-4478-b500-95fd344b346b": {
+      "type": "marquee",
       "settings": {
+        "text1": "Rishab won a trimmer worth ₹4999",
+        "text2": "Rishab won a trimmer worth ₹4999",
+        "text3": "Rishab won a trimmer worth ₹4999",
+        "text4": "Rishab won a trimmer worth ₹4999",
+        "page_url": "#"
       }
     }
   },
   "order": [
     "main",
     "e7295f9e-79f7-4502-920e-4961c176e463",
-    "1657523681299f51d6"
+    "9961539d-3083-4478-b500-95fd344b346b"
   ]
 }
