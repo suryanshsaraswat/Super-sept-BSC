@@ -30,7 +30,7 @@
     "currency_code_enabled": false,
     "color_swatch_config": "Festive Green:festive-green.jpg\nHappy Blue:happy-blue.jpg\nHonest grey:honest-grey.jpg\nJolly Turquoise:jolly-turquoise.jpg\nMajestic Maroon:majestic-maroon.jpg\nMidnight Blue:midnight-blue.jpg\nProfound Peach:profound-peach.jpg\nShadow Maroon:shadow-maroon.jpg\nShadow Mint:shadow-mint.jpg",
     "show_page_transition": false,
-    "show_button_transition": true,
+    "show_button_transition": false,
     "show_image_zooming": false,
     "show_element_staggering": false,
     "search_mode": "product,article,page",

@@ -38,12 +38,71 @@
         "html": "<p>We’re giving away unlimited gifts and deals for 12 days of Christmas till 25th December. You also get a  Secret Santa Gift  with each order, and an opportunity to win free trimmers.<\/p>\n<p><a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a><\/p>\n<p>And claim your deaL!<\/p>",
         "bgcolor": "#d00101"
       }
+    },
+    "18841b79-dc2c-47aa-a252-73b078d15465": {
+      "type": "collection-list",
+      "blocks": {
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "fragrances-collection-for-men",
+            "image": "shopify:\/\/shop_images\/FRAG.png",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "",
+            "title": "",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image_alignment": "center center",
+            "content_position": "bottomLeft",
+            "subheading": "Sub-heading",
+            "title": "Collection name",
+            "button_text": "View products",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        }
+      },
+      "block_order": [
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1",
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2",
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3"
+      ],
+      "settings": {
+        "image_size": "small",
+        "add_spacing": true,
+        "expand_collection": false,
+        "stack_on_mobile": true,
+        "text_color": "#ffffff",
+        "button_color": "#363636"
+      }
     }
   },
   "order": [
     "main",
     "e7295f9e-79f7-4502-920e-4961c176e463",
     "9961539d-3083-4478-b500-95fd344b346b",
-    "5b7c2bc3-670b-4dac-93ac-5b386e71efd9"
+    "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
+    "18841b79-dc2c-47aa-a252-73b078d15465"
   ]
 }
