@@ -33,9 +33,9 @@
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9": {
       "type": "custom-html",
       "settings": {
-        "subheading": "Sub-heading",
-        "title": "Your HTML",
-        "html": "<p>Write your own custom HTML content.<\/p>",
+        "subheading": "",
+        "title": "",
+        "html": "<p>We’re giving away unlimited gifts and deals for 12 days of Christmas till 25th December. You also get a  Secret Santa Gift  with each order, and an opportunity to win free trimmers.<\/p>",
         "bgcolor": "#d00101"
       }
     }
