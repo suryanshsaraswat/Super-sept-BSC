@@ -1,1 +1,117 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"show_large":false}},"1657523681299f51d6":{"type":"animated-counters","disabled":true,"settings":{}},"4d19f829-50ae-4d8c-9cab-53638994de3f":{"type":"custom-html","settings":{"subheading":"","title":"DIY GROOMING GUIDES","html":"<p style=\"margin-top:-20px; font-size:20px; font-weight:500\">BEARD GROOMING &amp; STYLING KIT<\/p>"}},"6e8c56cc-68b0-4902-8f61-dab466a79b75":{"type":"youtube-video","blocks":{"358d9c57-6a34-4c28-9650-62c5f381fffe":{"type":"Product","settings":{"video_id":"zveCI90Q_Qw"}}},"block_order":["358d9c57-6a34-4c28-9650-62c5f381fffe"],"settings":{}},"53880f2d-cc21-42f8-a845-06a5423cf395":{"type":"featured-collections","blocks":{"template--16014680916122__53880f2d-cc21-42f8-a845-06a5423cf395-167472243387c844ba-0":{"type":"collection","settings":{"collection":"beard-combos","title":"More Combos","grid_items_count":8,"button_text":""}}},"block_order":["template--16014680916122__53880f2d-cc21-42f8-a845-06a5423cf395-167472243387c844ba-0"],"settings":{"bg":"","hcl":"","title":"","layout_mode":"grid","show_product_info":true,"show_vendor":false,"show_color_swatch":false,"grid_mobile_items_per_row":"2","grid_desktop_items_per_row":4}},"5ec379be-7eee-4789-a606-ae021b065ede":{"type":"blog-posts","blocks":{"template--16014680916122__5ec379be-7eee-4789-a606-ae021b065ede-1674722497b156b621-0":{"type":"blog","settings":{"blog":"beard-care"}}},"block_order":["template--16014680916122__5ec379be-7eee-4789-a606-ae021b065ede-1674722497b156b621-0"],"settings":{"subheading":"","title":"FROM OUR BLOG","show_category":false,"button_link":"","button_text":""}},"167472379721576c83":{"type":"apps","blocks":{"35c44950-e065-4d05-bac9-75ea0ec1ede1":{"type":"shopify:\/\/apps\/judge-me-product-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8","settings":{"maxwidth":1200}}},"block_order":["35c44950-e065-4d05-bac9-75ea0ec1ede1"],"settings":{"include_margins":true,"evm_widgets":false}}},"order":["main","1657523681299f51d6","4d19f829-50ae-4d8c-9cab-53638994de3f","6e8c56cc-68b0-4902-8f61-dab466a79b75","53880f2d-cc21-42f8-a845-06a5423cf395","5ec379be-7eee-4789-a606-ae021b065ede","167472379721576c83"]}
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_large": false
+      }
+    },
+    "1657523681299f51d6": {
+      "type": "animated-counters",
+      "disabled": true,
+      "settings": {
+      }
+    },
+    "4d19f829-50ae-4d8c-9cab-53638994de3f": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "",
+        "title": "DIY GROOMING GUIDES",
+        "html": "<h1 style=\"margin-top:-20px; font-size:20px; font-weight:500\">BEARD GROOMING &amp; STYLING KIT<\/h1>"
+      }
+    },
+    "6e8c56cc-68b0-4902-8f61-dab466a79b75": {
+      "type": "youtube-video",
+      "blocks": {
+        "358d9c57-6a34-4c28-9650-62c5f381fffe": {
+          "type": "Product",
+          "settings": {
+            "video_id": "zveCI90Q_Qw"
+          }
+        }
+      },
+      "block_order": [
+        "358d9c57-6a34-4c28-9650-62c5f381fffe"
+      ],
+      "settings": {
+      }
+    },
+    "53880f2d-cc21-42f8-a845-06a5423cf395": {
+      "type": "featured-collections",
+      "blocks": {
+        "template--16014680916122__53880f2d-cc21-42f8-a845-06a5423cf395-167472243387c844ba-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "beard-combos",
+            "title": "More Combos",
+            "grid_items_count": 8,
+            "button_text": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--16014680916122__53880f2d-cc21-42f8-a845-06a5423cf395-167472243387c844ba-0"
+      ],
+      "settings": {
+        "bg": "",
+        "hcl": "",
+        "title": "",
+        "layout_mode": "grid",
+        "show_product_info": true,
+        "show_vendor": false,
+        "show_color_swatch": false,
+        "grid_mobile_items_per_row": "2",
+        "grid_desktop_items_per_row": 4
+      }
+    },
+    "5ec379be-7eee-4789-a606-ae021b065ede": {
+      "type": "blog-posts",
+      "blocks": {
+        "template--16014680916122__5ec379be-7eee-4789-a606-ae021b065ede-1674722497b156b621-0": {
+          "type": "blog",
+          "settings": {
+            "blog": "beard-care"
+          }
+        }
+      },
+      "block_order": [
+        "template--16014680916122__5ec379be-7eee-4789-a606-ae021b065ede-1674722497b156b621-0"
+      ],
+      "settings": {
+        "subheading": "",
+        "title": "FROM OUR BLOG",
+        "show_category": false,
+        "button_link": "",
+        "button_text": ""
+      }
+    },
+    "167472379721576c83": {
+      "type": "apps",
+      "blocks": {
+        "35c44950-e065-4d05-bac9-75ea0ec1ede1": {
+          "type": "shopify:\/\/apps\/judge-me-reviews\/blocks\/featured_carousel\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1200
+          }
+        }
+      },
+      "block_order": [
+        "35c44950-e065-4d05-bac9-75ea0ec1ede1"
+      ],
+      "settings": {
+        "include_margins": true,
+        "evm_widgets": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1657523681299f51d6",
+    "4d19f829-50ae-4d8c-9cab-53638994de3f",
+    "6e8c56cc-68b0-4902-8f61-dab466a79b75",
+    "53880f2d-cc21-42f8-a845-06a5423cf395",
+    "5ec379be-7eee-4789-a606-ae021b065ede",
+    "167472379721576c83"
+  ]
+}
