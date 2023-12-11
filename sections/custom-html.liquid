@@ -1,4 +1,4 @@
-<section class="Section Section--spacingNormal" id="section-{{ section.id }}" style="background-color:{{ section.settings.bgcolor }}">
+<section class="Section Section--spacingNormal" id="section-{{ section.id }}" style="background-color:{{ section.settings.bgcolor }}; color:{{ section.settings.txtcolor }}">
   <div class="Container">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center">
@@ -12,7 +12,7 @@
       </header>
     {%- endif -%}
 
-    <div class="Rte" style="text-align: center; color:{{ section.settings.txtcolor }}"">
+    <div class="Rte" style="text-align: center;">
       {{ section.settings.html }}
     </div>
   </div>
