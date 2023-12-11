@@ -2,8 +2,22 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "show_large": false
+      }
+    },
+    "e7295f9e-79f7-4502-920e-4961c176e463": {
+      "type": "image-with-text-overlay",
+      "settings": {
+        "section_size": "large",
+        "image": "shopify:\/\/shop_images\/Xmas.webp",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "subheading": "",
+        "title": "",
+        "content": ""
       }
     },
     "1657523681299f51d6": {
@@ -24,24 +38,11 @@
       ],
       "settings": {
       }
-    },
-    "e7295f9e-79f7-4502-920e-4961c176e463": {
-      "type": "image-with-text-overlay",
-      "settings": {
-        "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Xmas.webp",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "subheading": "",
-        "title": "",
-        "content": ""
-      }
     }
   },
   "order": [
     "main",
-    "1657523681299f51d6",
-    "e7295f9e-79f7-4502-920e-4961c176e463"
+    "e7295f9e-79f7-4502-920e-4961c176e463",
+    "1657523681299f51d6"
   ]
 }
