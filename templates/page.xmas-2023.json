@@ -67,7 +67,7 @@
             "title": "Trimmers",
             "button_text": "Shop Now",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3": {
@@ -81,7 +81,7 @@
             "title": "Razors",
             "button_text": "Shop Now",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "2e3d7684-d91f-4650-bcd1-9506b08965e3": {
@@ -95,7 +95,7 @@
             "title": "Skin Care",
             "button_text": "Shop Now",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "38abe27c-9f4c-44c3-849d-3a8e5ebfe27b": {
@@ -109,7 +109,7 @@
             "title": "Shaving Essentials",
             "button_text": "View products",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         }
       },
