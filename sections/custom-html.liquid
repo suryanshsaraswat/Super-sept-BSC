@@ -1,4 +1,4 @@
-<section class="Section Section--spacingNormal" id="section-{{ section.id }}" style="background-color:{{ section.settings.bgcolor }}; color:{{ section.settings.txtcolor }}">
+<section class="Section Section--spacingNormal {% if page.id == 99733373082 %}bottom_container{% endif %}" id="section-{{ section.id }}" style="background-color:{{ section.settings.bgcolor }}; color:{{ section.settings.txtcolor }}">
   <div class="Container">
     {%- if section.settings.subheading != blank or section.settings.title != blank -%}
       <header class="SectionHeader SectionHeader--center">
@@ -21,10 +21,6 @@
       </div>
     {% endif %}
   </div>
-  {% if page.id == 99733373082 %}
-    <div class="bottom_container">
-    </div>
-  {% endif %}
 </section>
 <style>
 .bottom_container
