@@ -47,24 +47,25 @@
           "settings": {
             "collection": "fragrances-collection-for-men",
             "image": "shopify:\/\/shop_images\/FRAG.png",
-            "image_alignment": "center center",
-            "content_position": "bottomLeft",
+            "image_alignment": "top center",
+            "content_position": "bottomCenter",
             "subheading": "",
-            "title": "",
-            "button_text": "View products",
+            "title": "Fragrances",
+            "button_text": "Shop Now",
             "button_link": "",
-            "apply_overlay": true
+            "apply_overlay": false
           }
         },
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "",
+            "collection": "trimmers",
+            "image": "shopify:\/\/shop_images\/trimmers.png",
             "image_alignment": "center center",
-            "content_position": "bottomLeft",
+            "content_position": "bottomCenter",
             "subheading": "Sub-heading",
-            "title": "Collection name",
-            "button_text": "View products",
+            "title": "Trimmers",
+            "button_text": "Shop Now",
             "button_link": "",
             "apply_overlay": true
           }
@@ -72,11 +73,40 @@
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3": {
           "type": "collection",
           "settings": {
-            "collection": "",
-            "image_alignment": "center center",
+            "collection": "razors-1",
+            "image": "shopify:\/\/shop_images\/razors.png",
+            "image_alignment": "top center",
             "content_position": "bottomLeft",
-            "subheading": "Sub-heading",
-            "title": "Collection name",
+            "subheading": "",
+            "title": "Razors",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "2e3d7684-d91f-4650-bcd1-9506b08965e3": {
+          "type": "collection",
+          "settings": {
+            "collection": "skin-care-products-for-men",
+            "image": "shopify:\/\/shop_images\/skincare_faaa679d-8212-432d-9b82-965262858323.png",
+            "image_alignment": "top center",
+            "content_position": "bottomCenter",
+            "subheading": "",
+            "title": "Skin Care",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "apply_overlay": true
+          }
+        },
+        "38abe27c-9f4c-44c3-849d-3a8e5ebfe27b": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify:\/\/shop_images\/shaving-essentials.png",
+            "image_alignment": "top center",
+            "content_position": "bottomCenter",
+            "subheading": "",
+            "title": "Shaving Essentials",
             "button_text": "View products",
             "button_link": "",
             "apply_overlay": true
@@ -86,7 +116,9 @@
       "block_order": [
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1",
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2",
-        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3"
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3",
+        "2e3d7684-d91f-4650-bcd1-9506b08965e3",
+        "38abe27c-9f4c-44c3-849d-3a8e5ebfe27b"
       ],
       "settings": {
         "image_size": "small",
