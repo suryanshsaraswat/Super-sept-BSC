@@ -11,17 +11,17 @@
       "blocks": {
         "c67ef56b-58ad-4ddf-b45f-7cc8859d286b": {
           "type": "counters",
+          "disabled": true,
           "settings": {
-            "counter1": "EWWREW",
-            "counter2": "ERERE",
-            "counter3": "EWREW"
+            "counter1": "",
+            "counter2": "",
+            "counter3": ""
           }
         }
       },
       "block_order": [
         "c67ef56b-58ad-4ddf-b45f-7cc8859d286b"
       ],
-      "disabled": true,
       "settings": {
       }
     },
