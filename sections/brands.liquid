@@ -69,13 +69,15 @@
       font-size: 10px;
       padding: 7px 5px;
     }
-    h1.brand-parent { display: none; }
+    h1.brand-parent { 
+      display: none;
+    }
   } 
 </style>
 <div class="brand">
 
   <div class="brand-parent">
-    <h1>Brand Partners</h1>
+    <h1 style='display: none;'>Brand Partners</h1>
      {% for block in section.blocks %}
       <div class="brand-child">
         <div class="brand-img">
