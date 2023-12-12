@@ -1,7 +1,13 @@
 {% schema %}
   {
     "name": "Scrolling Category list",
-    "settings": [],
+    "settings": [
+      {
+        "type":"text",
+        "id":"collection_heading",
+        "label":"Enter Section Heading"
+      }
+    ],
     "blocks":[
       {
         "name":"collection block",
@@ -22,9 +28,3 @@
     ]
   }
 {% endschema %}
-
-{% stylesheet %}
-{% endstylesheet %}
-
-{% javascript %}
-{% endjavascript %}
