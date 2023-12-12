@@ -37,16 +37,6 @@
         "page_url": "#"
       }
     },
-    "5b7c2bc3-670b-4dac-93ac-5b386e71efd9": {
-      "type": "custom-html",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "html": "<p style=\"font-weight:400;font-size:26px\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a>\n<p style=\"font-weight:400;font-size:26px;margin-top:15px\">And claim your deal!<\/p>",
-        "bgcolor": "#d00101",
-        "txtcolor": "#ffffff"
-      }
-    },
     "18841b79-dc2c-47aa-a252-73b078d15465": {
       "type": "collection-list",
       "blocks": {
@@ -187,14 +177,24 @@
       "settings": {
         "collection_heading": "Explore Categories"
       }
+    },
+    "e80eccb7-cea2-4359-8af9-6d027e8b700f": {
+      "type": "custom-html",
+      "settings": {
+        "subheading": "Sub-heading",
+        "title": "",
+        "html": "",
+        "bgcolor": "#FFFFFF",
+        "txtcolor": "#FFFFFF"
+      }
     }
   },
   "order": [
     "main",
     "4e8649eb-f757-42cf-a992-901af79d5a6f",
     "9961539d-3083-4478-b500-95fd344b346b",
-    "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
     "18841b79-dc2c-47aa-a252-73b078d15465",
-    "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d"
+    "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d",
+    "e80eccb7-cea2-4359-8af9-6d027e8b700f"
   ]
 }
