@@ -1,3 +1,17 @@
+<style>
+  .collection-inner {
+    scroll-snap-type: x mandatory;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 20px;
+    width: 100%;
+    padding: 20px;
+    transition: 0.4s;
+}
+</style>
 <div class="container-collection">
   <h2>{{ section.settings.collection_heading }}</h2>
   <div class="collection-inner">
