@@ -24,8 +24,8 @@
     {% for block in section.blocks %}
       <div class="collection-img coll-img-{{ forloop.index }}">
         <style>
-          .coll-img-{{forloop.index}} img{position:relative}
-            .coll-img-{{forloop.index}} img::before{
+          .overlay{position:relative}
+            .overlay::before{
               content:url('https://cdn.shopify.com/s/files/1/0459/6563/9834/files/OBJECTS_2.png?v=1702361257');
               width:40px;
               height:40px;
@@ -35,7 +35,7 @@
           </style>
         {% if block.settings.collection_img != blank %}
         <a href="{{ block.settings.collection_url }}">
-          
+          <span class="overlay"/>
           <img src="{{ block.settings.collection_img | img_url:'master' }}" width="100%" height="100%" alt={{ block.settings.collection_img.alt }}>
         </a>
         {% endif %}
