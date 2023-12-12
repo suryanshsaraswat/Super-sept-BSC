@@ -1,0 +1,50 @@
+ <style>
+        .snowflake {
+            position: absolute;
+            background: #fff;
+            border-radius: 50%;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(-100vh);
+            }
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+    </style>
+    <script>
+        // Function to create a snowflake and append it to the body
+        function createSnowflake() {
+            const snowflake = document.createElement('div');
+            snowflake.className = 'snowflake';
+            document.body.appendChild(snowflake);
+
+            // Set random position and size for the snowflake
+            const size = Math.random() * 3 + 2 + 'px';
+            const left = Math.random() * window.innerWidth + 'px';
+            const animationDuration = Math.random() * 3 + 2 + 's';
+
+            snowflake.style.width = size;
+            snowflake.style.height = size;
+            snowflake.style.left = left;
+            snowflake.style.animationDuration = animationDuration;
+
+            // Remove the snowflake from the DOM after it falls out of view
+            snowflake.addEventListener('animationiteration', () => {
+                snowflake.remove();
+                createSnowflake();
+            });
+        }
+
+        // Create snowflakes on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            for (let i = 0; i < 50; i++) {
+                createSnowflake();
+            }
+        });
+    </script>
+</html>
