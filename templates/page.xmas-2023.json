@@ -7,14 +7,6 @@
         "show_large": false
       }
     },
-    "d52c8f88-5884-4190-ab41-dd6795b261d8": {
-      "type": "custom-liquid",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "liquid": "{% render 'snow-effect' %}"
-      }
-    },
     "4e8649eb-f757-42cf-a992-901af79d5a6f": {
       "type": "single-banner",
       "blocks": {
@@ -199,7 +191,6 @@
   },
   "order": [
     "main",
-    "d52c8f88-5884-4190-ab41-dd6795b261d8",
     "4e8649eb-f757-42cf-a992-901af79d5a6f",
     "9961539d-3083-4478-b500-95fd344b346b",
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
