@@ -187,16 +187,6 @@
       "settings": {
         "collection_heading": "Explore Categories"
       }
-    },
-    "e80eccb7-cea2-4359-8af9-6d027e8b700f": {
-      "type": "custom-html",
-      "settings": {
-        "subheading": "Sub-heading",
-        "title": "",
-        "html": "",
-        "bgcolor": "#FFFFFF",
-        "txtcolor": "#FFFFFF"
-      }
     }
   },
   "order": [
@@ -205,7 +195,6 @@
     "9961539d-3083-4478-b500-95fd344b346b",
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
     "18841b79-dc2c-47aa-a252-73b078d15465",
-    "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d",
-    "e80eccb7-cea2-4359-8af9-6d027e8b700f"
+    "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d"
   ]
 }
