@@ -39,10 +39,13 @@
     },
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9": {
       "type": "custom-html",
+      "custom_css": [
+        ".text-xmas {font-weight: 400; font-size: 26px; margin-top: 15px;}"
+      ],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p style=\"font-weight:400;font-size:26px\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a>\n<p style=\"font-weight:400;font-size:26px;margin-top:15px\">And claim your deal!<\/p>",
+        "html": "<p style=\"font-weight:400;font-size:26px\" class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a>\n<p class=\"text-xmas\">And claim your deal!<\/p>",
         "bgcolor": "#d00101",
         "txtcolor": "#ffffff"
       }
