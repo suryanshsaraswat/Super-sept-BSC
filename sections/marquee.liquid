@@ -3,7 +3,6 @@
   .marquee[data-v-2d2501c6]{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start}
   .marquee__inner[data-v-2d2501c6]{-webkit-animation:marquee-data-v-2d2501c6 30s linear infinite;animation:marquee-data-v-2d2501c6 30s linear infinite}
   .marquee__text[data-v-2d2501c6]{display:inline-block;margin-right:5.3em;font-size:15px;text-transform:none;position:relative}
-  .marquee__text::after{position:absolute; content:""; width:2px; height:2px; border-radius:50%; top:10px; background-color:#000}
   .marquee__wrapper[data-v-2d2501c6] img{width:50px;margin-right: 10px;display:none}
   .marquee__text::after {
     position: absolute;
@@ -13,7 +12,7 @@
     border-radius: 50%;
     top: 8px;
     background-color: #224F14;
-    right: -28px;
+    right: -42px;
 }
   @keyframes marquee-data-v-2d2501c6 {
     0%{-webkit-transform:translateX(0);transform:translateX(0)}
@@ -22,6 +21,7 @@
   @media(max-width:480px){
   .marquee__wrapper[data-v-2d2501c6] img {width: 30px;margin-right: 5px;vertical-align: top;}
     .marquee__text[data-v-2d2501c6]{margin-right:3.3em}
+    .marquee__text::after{right:-28px}
   }
 </style>
 <div id="marq" data-v-2d2501c6="" class="marquee__wrapper marquee__wrapper-theme--default" style="background-color:{{ section.settings.back_color }}"><a href="{{ block.settings.page_url }}"><div data-v-2d2501c6="" class="marquee">
