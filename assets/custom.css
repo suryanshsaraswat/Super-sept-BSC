@@ -1136,4 +1136,7 @@ button#ad_to_cart {
 .w500 {
     font-weight: 550;
 }
+div#gliconsymbols {
+    display: none;
+}
 .assurance-icons-parent{margin-bottom:20px;}
