@@ -41,12 +41,12 @@
       "type": "custom-html",
       "custom_css": [
         ".text-xmas {font-weight: 400; font-size: 26px; margin-top: 15px; margin-bottom: 10px;}",
-        "@media (max-width: 450px) {.text-xmas {font-size: 20px; margin-bottom: 0px; } a.spinbtn{margin-top:-10px}}"
+        "@media (max-width: 450px) {.text-xmas {font-size: 20px; margin-bottom: 0px; } a.spinbtn {margin-top: -10px; }}"
       ],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p. class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<p><\/p>\n<a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a>\n<p class=\"text-xmas\">And claim your deal!<\/p><\/p.>",
+        "html": "<p. class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<p><\/p>\n<a class=\"spinbtn\" id=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a>\n<p class=\"text-xmas\">And claim your deal!<\/p><\/p.>",
         "bgcolor": "#d00101",
         "txtcolor": "#ffffff"
       }
