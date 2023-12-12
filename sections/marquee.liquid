@@ -14,7 +14,7 @@ background: linear-gradient(90deg, rgba(226,23,143,1) 66%, rgba(46,49,146,0.9080
   .marquee__wrapper[data-v-2d2501c6] img {width: 30px;margin-right: 5px;vertical-align: top;}
   }
 </style>
-<div id="marq" data-v-2d2501c6="" class="marquee__wrapper marquee__wrapper-theme--default"><a href="{{ block.settings.page_url }}"><div data-v-2d2501c6="" class="marquee">
+<div id="marq" data-v-2d2501c6="" class="marquee__wrapper marquee__wrapper-theme--default" style="background-color:{{ section.settings.back_color }}"><a href="{{ block.settings.page_url }}"><div data-v-2d2501c6="" class="marquee">
     <div data-v-2d2501c6="" class="marquee__inner"><span data-v-2d2501c6="" class="marquee__text">
        {{ section.settings.text1 }}
       </span><span data-v-2d2501c6="" class="marquee__text">
@@ -42,13 +42,16 @@ background: linear-gradient(90deg, rgba(226,23,143,1) 66%, rgba(46,49,146,0.9080
    {
     "name": "marquee",
     "settings": [
-   		
+   		{
+        "type":"color",
+        "id":"back_color",
+        "label":"Select background color"
+      },
         {
           "type": "text",
           "id": "text1",
           "label": "Text 1"
         },
-
         {
           "type": "text",
           "id": "text2",
