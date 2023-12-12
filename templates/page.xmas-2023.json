@@ -137,6 +137,56 @@
         "text_color": "#ffffff",
         "button_color": "#363636"
       }
+    },
+    "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d": {
+      "type": "category-scroller",
+      "blocks": {
+        "763e2c46-b777-4a55-b654-be5a3e58e0ad": {
+          "type": "image",
+          "settings": {
+            "collection_img": "shopify:\/\/shop_images\/FRAG.png",
+            "collection_url": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men"
+          }
+        },
+        "b3d1fd7b-391f-4f7c-b964-51bc9e82243d": {
+          "type": "image",
+          "settings": {
+            "collection_img": "shopify:\/\/shop_images\/trimmers.png",
+            "collection_url": "shopify:\/\/pages\/trimmers-for-men"
+          }
+        },
+        "c997c301-af85-40ce-9b59-8d0f04e8d28c": {
+          "type": "image",
+          "settings": {
+            "collection_img": "shopify:\/\/shop_images\/razors.png",
+            "collection_url": "shopify:\/\/pages\/razors-for-men"
+          }
+        },
+        "5f080ff0-8552-42cb-a934-caed7be768ce": {
+          "type": "image",
+          "settings": {
+            "collection_img": "shopify:\/\/shop_images\/skincare_faaa679d-8212-432d-9b82-965262858323.png",
+            "collection_url": "shopify:\/\/pages\/skin-care-products-for-men"
+          }
+        },
+        "0e13c7d3-aa49-4111-936a-00f3f7bd64ed": {
+          "type": "image",
+          "settings": {
+            "collection_img": "shopify:\/\/shop_images\/shaving-essentials.png",
+            "collection_url": "shopify:\/\/pages\/shaving-products-for-men"
+          }
+        }
+      },
+      "block_order": [
+        "763e2c46-b777-4a55-b654-be5a3e58e0ad",
+        "b3d1fd7b-391f-4f7c-b964-51bc9e82243d",
+        "c997c301-af85-40ce-9b59-8d0f04e8d28c",
+        "5f080ff0-8552-42cb-a934-caed7be768ce",
+        "0e13c7d3-aa49-4111-936a-00f3f7bd64ed"
+      ],
+      "settings": {
+        "collection_heading": "Explore Categories"
+      }
     }
   },
   "order": [
@@ -144,6 +194,7 @@
     "4e8649eb-f757-42cf-a992-901af79d5a6f",
     "9961539d-3083-4478-b500-95fd344b346b",
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
-    "18841b79-dc2c-47aa-a252-73b078d15465"
+    "18841b79-dc2c-47aa-a252-73b078d15465",
+    "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d"
   ]
 }
