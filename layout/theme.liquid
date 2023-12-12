@@ -330,7 +330,9 @@
     {%- if settings.tele_pop -%}
       {% render 'telegram-popup' %}
     {% endif %}
-
+    {% unless page.template_suffix == 'xmas' %}
+      {% render 'snow-effect' %}
+     {% endunless %} 
     <!-- Google Tag Manager Troopod (noscript) -->
     <!-- <noscript
       ><iframe
