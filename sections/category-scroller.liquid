@@ -1,7 +1,25 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Scrolling Category list",
+    "settings": [],
+    "blocks":[
+      {
+        "name":"collection block",
+        "type":"image",
+        "settings":[
+          {
+            "type":"image_picker",
+            "id":"collection_img",
+            "label":"select collection image"
+          },
+          {
+            "type":"url",
+            "id":"collection_url",
+            "label":"Select collection URL"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
