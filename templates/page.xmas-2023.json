@@ -7,17 +7,23 @@
         "show_large": false
       }
     },
-    "e7295f9e-79f7-4502-920e-4961c176e463": {
-      "type": "image-with-text-overlay",
+    "4e8649eb-f757-42cf-a992-901af79d5a6f": {
+      "type": "single-banner",
+      "blocks": {
+        "bbcaaa16-1133-4356-ab6a-1859a81924df": {
+          "type": "testimonial",
+          "settings": {
+            "imags": "shopify:\/\/shop_images\/home_page.webp",
+            "imags2": "shopify:\/\/shop_images\/home_page_mobile.webp",
+            "linkk": "",
+            "change_banner": ""
+          }
+        }
+      },
+      "block_order": [
+        "bbcaaa16-1133-4356-ab6a-1859a81924df"
+      ],
       "settings": {
-        "section_size": "large",
-        "image": "shopify:\/\/shop_images\/Xmas.webp",
-        "text_color": "#ffffff",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "subheading": "",
-        "title": "",
-        "content": ""
       }
     },
     "9961539d-3083-4478-b500-95fd344b346b": {
@@ -35,7 +41,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p>We’re giving away unlimited gifts and deals for 12 days of Christmas till 25th December. You also get a  Secret Santa Gift  with each order, and an opportunity to win free trimmers.<\/p>\n<p><a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a><\/p>\n<p>And claim your deaL!<\/p>",
+        "html": "<p style=\"font-weight:400\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<p><a class=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a><\/p>\n<p>And claim your deaL!<\/p>",
         "bgcolor": "#d00101",
         "txtcolor": "#FFFFFF"
       }
@@ -133,7 +139,7 @@
   },
   "order": [
     "main",
-    "e7295f9e-79f7-4502-920e-4961c176e463",
+    "4e8649eb-f757-42cf-a992-901af79d5a6f",
     "9961539d-3083-4478-b500-95fd344b346b",
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9",
     "18841b79-dc2c-47aa-a252-73b078d15465"
