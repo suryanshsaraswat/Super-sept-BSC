@@ -1116,9 +1116,9 @@ h2.jdgm-rev-widg__title {
     margin-left: -30px;
   }
 
-  .bottom_container{
-    min-height:410px;
-    background-size:contain;
+  #shopify-section-template--16382741708954__5b7c2bc3-670b-4dac-93ac-5b386e71efd9 .bottom_container{
+    min-height:410px !important;
+    background-size:contain !important;
   }
   span.mrpp {
     font-weight: 600;
