@@ -11,10 +11,30 @@
       "disabled": true,
       "settings": {
       }
+    },
+    "7f9e44b6-0b7a-47b0-9f06-d49dbfb02b8e": {
+      "type": "coupon-section",
+      "blocks": {
+        "6c315567-3185-4c78-9e9e-01d380d3cd3c": {
+          "type": "testimonial",
+          "settings": {
+            "coupon_name": "SHOP20",
+            "coupon_desc": "Lorem ipsum dolor sit amet consectetur adipiscing elit vivamus commodo, tempor mi integer viverra mollis gravida aliquet sollicitudin et, nibh scelerisque",
+            "coupon_discount": "FLAT 20% OFF",
+            "terms_of_use": "<ul><li>Lorem ipsum dolor sit amet consectetur adipiscing elit congue<\/li><li>Lorem ipsum dolor sit amet consectetur adipiscing elit congue<\/li><li>Lorem ipsum dolor sit amet consectetur adipiscing elit congue<\/li><li>Lorem ipsum dolor sit amet consectetur adipiscing elit congue<\/li><\/ul>"
+          }
+        }
+      },
+      "block_order": [
+        "6c315567-3185-4c78-9e9e-01d380d3cd3c"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "1657523681299f51d6"
+    "1657523681299f51d6",
+    "7f9e44b6-0b7a-47b0-9f06-d49dbfb02b8e"
   ]
 }
