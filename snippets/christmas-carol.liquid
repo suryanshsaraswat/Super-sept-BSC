@@ -6,13 +6,8 @@
     const audio = document.getElementById('audioPlayer');
 
     audio.addEventListener('ended', function() {
-        // Reset the audio and pause
-        audio.currentTime = 0;
-        audio.pause();
+        // Reset the audio source and autostart to stop playback after one run
+        audio.src = "your-audio-file.mp3";
+        audio.autostart = "false";
     });
-
-    // If you want to play the audio again, you can use this function
-    function playAudio() {
-        audio.play();
-    }
 </script>
