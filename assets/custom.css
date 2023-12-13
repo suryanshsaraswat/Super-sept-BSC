@@ -1115,6 +1115,11 @@ h2.jdgm-rev-widg__title {
     font-weight: 700;
     margin-left: -30px;
   }
+
+  .bottom_container{
+    min-height:410px;
+    background-size:contain;
+  }
   span.mrpp {
     font-weight: 600;
     font-size: 15px;
