@@ -1,7 +1,35 @@
 {% schema %}
   {
-    "name": "Section name",
-    "settings": []
+    "name": "Coupons",
+    "settings": [],
+    "blocks":[
+      {
+        "name":"coupon block",
+        "type":"testimonial",
+        "settings":[
+          {
+            "type":"text",
+            "id":"coupon_name",
+            "label":"Enter COupon Name"
+          },
+          {
+            "type":"text",
+            "id":"coupon_desc",
+            "label":"Enter Coupon Desceription if any"
+          },
+          {
+            "type":"text",
+            "id":"coupon_discount",
+            "label":"Enter coupon Defnition"
+          },
+          {
+            "type":"richtext",
+            "id":"terms_of_use",
+            "label":"Enter terms of Use if any"
+          }
+        ]
+      }
+    ]
   }
 {% endschema %}
 
