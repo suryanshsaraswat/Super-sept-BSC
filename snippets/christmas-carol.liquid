@@ -1,13 +1,32 @@
-<style>
-  #audioPlayer{display:none}
-</style>
-<embed id="audioPlayer" src="https://cdn.shopify.com/s/files/1/0459/6563/9834/files/We_Wish_You_a_Merry_Christmas_-_Instrumental_Christmas_Music_Trumpet_Orchestra.mp3?v=1702465420" autostart="true" loop="false" width="0" height="0">
 <script>
-    const audio = document.getElementById('audioPlayer');
+    // Initialize the AudioContext
+    const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
-    audio.addEventListener('ended', function() {
-        // Reset the audio source and autostart to stop playback after one run
-        audio.src = "https://cdn.shopify.com/s/files/1/0459/6563/9834/files/We_Wish_You_a_Merry_Christmas_-_Instrumental_Christmas_Music_Trumpet_Orchestra.mp3?v=1702465420";
-        audio.autostart = "false";
+    // Load the audio file
+    function loadAudio(url, callback) {
+        const request = new XMLHttpRequest();
+        request.open('GET', url, true);
+        request.responseType = 'arraybuffer';
+
+        request.onload = function() {
+            audioContext.decodeAudioData(request.response, function(buffer) {
+                callback(buffer);
+            });
+        };
+
+        request.send();
+    }
+
+    // Play the audio once
+    function playAudio(buffer) {
+        const source = audioContext.createBufferSource();
+        source.buffer = buffer;
+        source.connect(audioContext.destination);
+        source.start(0);
+    }
+
+    // Load and play the audio
+    loadAudio('https://cdn.shopify.com/s/files/1/0459/6563/9834/files/We_Wish_You_a_Merry_Christmas_-_Instrumental_Christmas_Music_Trumpet_Orchestra.mp3?v=1702465420', function(buffer) {
+        playAudio(buffer);
     });
 </script>
