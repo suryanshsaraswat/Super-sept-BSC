@@ -41,7 +41,7 @@
       "type": "custom-html",
       "custom_css": [
         ".text-xmas {font-weight: 400; font-size: 26px !important; margin-top: 15px; margin-bottom: 10px;}",
-        "@media (max-width: 450px) {.text-xmas {font-size: 18px !important; margin-bottom: 0px; } a.spinbtn {margin-top: -10px; }}"
+        "@media (max-width: 450px) {.text-xmas {font-size: 15px !important; margin-bottom: 0px; } a.spinbtn {margin-top: -10px; }}"
       ],
       "settings": {
         "subheading": "",
