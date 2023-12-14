@@ -40,6 +40,21 @@
   text-decoration:none !important;
   border-radius:10px;
 }
+  @media (max-width: 450px) {
+  .text-xmas {
+    font-size: 18px !important;
+    margin-bottom: 0px;
+  }
+  a.spinbtn {
+    margin-top: -10px;
+    position: relative;
+    display: inline-block;
+  }
+  a.spinbtn::after {
+    content: '➔';
+    margin-left: 5px;
+  }
+}
 </style>
 {% schema %}
 {
