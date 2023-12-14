@@ -14,6 +14,7 @@
     {% if page.id == 99733373082 %}
       <div class="Rte" style="text-align: center;margin:0 auto;max-width:1349px;font-size: 28px;max-width:900px;font-style: normal;font-weight: 600;line-height: normal;">
         {{ section.settings.html }}
+       <a class="spinbtn" id="spinbtn" href="#">SPIN THE WHEEL<span class="arrow"></span></a>
       </div>
     {% else %}
       <div class="Rte" style="text-align: center;">
@@ -40,6 +41,16 @@
   text-decoration:none !important;
   border-radius:10px;
 }
+  .arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid black; 
 </style>
 {% schema %}
 {
