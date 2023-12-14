@@ -32,7 +32,7 @@
         "back_color": "#ffffff",
         "text1": "Rishab won a trimmer worth ₹4999",
         "text2": "Vivek won Buy 1 Get 1 Free Deal",
-        "text3": "Romil won extra 5% Off on trimmers",
+        "text3": "Romil won extra 5% Off on trimmer",
         "text4": "Manoj won 50% Off on perfumes",
         "page_url": "#"
       }
@@ -46,7 +46,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p. class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<p><\/p>\n<p class=\"text-xmas\">And claim your deal!<\/p><\/p.>",
+        "html": "<p. class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<p><\/p>\n<a class=\"spinbtn\" id=\"spinbtn\" href=\"#\">SPIN THE WHEEL<\/a>\n<p class=\"text-xmas\">And claim your deal!<\/p><\/p.>",
         "bgcolor": "#d00101",
         "txtcolor": "#ffffff"
       }
