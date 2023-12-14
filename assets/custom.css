@@ -1145,3 +1145,37 @@ div#gliconsymbols {
     display: none;
 }
 .assurance-icons-parent{margin-bottom:20px;}
+.text-xmas {
+  font-weight: 400;
+  font-size: 26px !important;
+  margin-top: -15px;
+  margin-bottom: -10px;
+}
+
+h3.spin{
+  font-size: 20px;
+  color:#fff;
+  position:relative;
+  letter-spacing:1px!important;
+  margin-top:0px;
+}
+h3.spin::after {
+  content: "\2191";
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  right: 38%;
+}
+@media (max-width: 450px) {
+  .text-xmas {
+    font-size: 15px !important;
+    margin-bottom: 5px;
+    margin-top: 0px;
+  }
+  h3.spin::after {
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    right: 18%;
+  }
+}
