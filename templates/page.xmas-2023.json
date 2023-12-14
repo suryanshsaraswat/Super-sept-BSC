@@ -54,20 +54,6 @@
     "18841b79-dc2c-47aa-a252-73b078d15465": {
       "type": "collection-list",
       "blocks": {
-        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "fragrances-collection-for-men",
-            "image": "shopify:\/\/shop_images\/FRAG.png",
-            "image_alignment": "top center",
-            "content_position": "bottomCenter",
-            "subheading": "",
-            "title": "Fragrances",
-            "button_text": "Shop Now",
-            "button_link": "",
-            "apply_overlay": false
-          }
-        },
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2": {
           "type": "collection",
           "settings": {
@@ -77,6 +63,20 @@
             "content_position": "bottomCenter",
             "subheading": "Sub-heading",
             "title": "Trimmers",
+            "button_text": "Shop Now",
+            "button_link": "",
+            "apply_overlay": false
+          }
+        },
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "fragrances-collection-for-men",
+            "image": "shopify:\/\/shop_images\/FRAG.png",
+            "image_alignment": "top center",
+            "content_position": "bottomCenter",
+            "subheading": "",
+            "title": "Fragrances",
             "button_text": "Shop Now",
             "button_link": "",
             "apply_overlay": false
@@ -126,8 +126,8 @@
         }
       },
       "block_order": [
-        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1",
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2",
+        "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-1",
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-3",
         "2e3d7684-d91f-4650-bcd1-9506b08965e3",
         "38abe27c-9f4c-44c3-849d-3a8e5ebfe27b"
@@ -145,18 +145,18 @@
     "d6e30ff1-7159-47dc-9c1a-dd15c5edc47d": {
       "type": "category-scroller",
       "blocks": {
-        "763e2c46-b777-4a55-b654-be5a3e58e0ad": {
-          "type": "image",
-          "settings": {
-            "collection_img": "shopify:\/\/shop_images\/FRAG.png",
-            "collection_url": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men"
-          }
-        },
         "b3d1fd7b-391f-4f7c-b964-51bc9e82243d": {
           "type": "image",
           "settings": {
             "collection_img": "shopify:\/\/shop_images\/trimmers.png",
             "collection_url": "shopify:\/\/pages\/trimmers-for-men"
+          }
+        },
+        "763e2c46-b777-4a55-b654-be5a3e58e0ad": {
+          "type": "image",
+          "settings": {
+            "collection_img": "shopify:\/\/shop_images\/FRAG.png",
+            "collection_url": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men"
           }
         },
         "c997c301-af85-40ce-9b59-8d0f04e8d28c": {
@@ -182,8 +182,8 @@
         }
       },
       "block_order": [
-        "763e2c46-b777-4a55-b654-be5a3e58e0ad",
         "b3d1fd7b-391f-4f7c-b964-51bc9e82243d",
+        "763e2c46-b777-4a55-b654-be5a3e58e0ad",
         "c997c301-af85-40ce-9b59-8d0f04e8d28c",
         "5f080ff0-8552-42cb-a934-caed7be768ce",
         "0e13c7d3-aa49-4111-936a-00f3f7bd64ed"
