@@ -1152,10 +1152,10 @@ div#gliconsymbols {
   margin-bottom: -10px;
 }
 
-.spin{
+h3.spin{
   font-size: 20px;
 }
-.spin::after {
+h3.spin::after {
   content: "\2191";
   position: absolute;
   top: 0%;
@@ -1168,7 +1168,7 @@ div#gliconsymbols {
     margin-bottom: 5px;
     margin-top: 0px;
   }
-  .spin::after {
+  h3.spin::after {
     position: absolute;
     top: 0%;
     z-index: 1;
