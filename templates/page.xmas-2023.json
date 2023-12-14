@@ -40,7 +40,7 @@
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9": {
       "type": "custom-html",
       "custom_css": [
-        ".text-xmas {font-weight: 400; font-size: 26px; margin-top: 15px; margin-bottom: 10px;}",
+        ".text-xmas {font-weight: 400; font-size: 20px; margin-top: 15px; margin-bottom: 10px;}",
         "@media (max-width: 450px) {.text-xmas {font-size: 20px; margin-bottom: 0px; } a.spinbtn {margin-top: -10px; }}"
       ],
       "settings": {
