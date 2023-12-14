@@ -40,13 +40,13 @@
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9": {
       "type": "custom-html",
       "custom_css": [
-        ".text-xmas {font-weight: 400; font-size: 26px !important; margin-top: 15px; margin-bottom: 10px;}",
-        "@media (max-width: 450px) {.text-xmas {font-size: 15px !important; margin-bottom: 5px; } a.spinbtn {margin-top: -10px; }}"
+        ".text-xmas {font-weight: 400; font-size: 26px !important; margin-top: -15px; margin-bottom: -10px;}",
+        "@media (max-width: 450px) {.text-xmas {font-size: 15px !important; margin-bottom: 5px; margin-top: 0px; } h2.spin::after {position: absolute; top: 0%; z-index: 1; right: 18%; }}"
       ],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p. class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a  <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<p><\/p>\n<h2 class=\"spinbtn\" id=\"spinbtn\">SPIN THE WHEEL<\/h2>\n<p class=\"text-xmas\">And claim your deal!<\/p><\/p.>",
+        "html": "<p class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<h2 class=\"spin\" n=\"\">SPIN THE WHEEL<\/h2> \n<p class=\"text-xmas\">And claim your deal!<\/p><p><\/p>",
         "bgcolor": "#d00101",
         "txtcolor": "#ffffff"
       }
