@@ -356,6 +356,7 @@
           },
           "987e7583-5629-4d60-a3f9-01164e50db6c": {
             "type": "testimonial",
+            "disabled": true,
             "settings": {
               "Offer": "Spin and Win this Christmas! Click here to get the best deals EVER!",
               "image": "shopify:\/\/shop_images\/xmas2.jpg",
