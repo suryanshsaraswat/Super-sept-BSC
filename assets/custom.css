@@ -1154,6 +1154,9 @@ div#gliconsymbols {
 
 h3.spin{
   font-size: 20px;
+  color:#fff;
+  position:relative;
+  letter-spacing:1px;
 }
 h3.spin::after {
   content: "\2191";
