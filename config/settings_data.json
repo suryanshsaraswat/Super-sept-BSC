@@ -354,6 +354,15 @@
               "linkurl": "shopify:\/\/collections\/diwali-sale"
             }
           },
+          "987e7583-5629-4d60-a3f9-01164e50db6c": {
+            "type": "testimonial",
+            "settings": {
+              "Offer": "Spin and Win this Christmas! Click here to get the best deals EVER!",
+              "image": "shopify:\/\/shop_images\/xmas2.jpg",
+              "coupon": "",
+              "linkurl": "shopify:\/\/pages\/xmas"
+            }
+          },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
@@ -381,15 +390,6 @@
               "linkurl": "shopify:\/\/pages\/skin-care-products-for-men"
             }
           },
-          "987e7583-5629-4d60-a3f9-01164e50db6c": {
-            "type": "testimonial",
-            "settings": {
-              "Offer": "Spin and Win this Christmas! Click here to get the best deals EVER!",
-              "image": "shopify:\/\/shop_images\/xmas2.jpg",
-              "coupon": "",
-              "linkurl": "shopify:\/\/pages\/xmas"
-            }
-          },
           "24e140a5-298a-4df7-8bcc-d753702e6508": {
             "type": "testimonial",
             "disabled": true,
@@ -403,10 +403,10 @@
         },
         "block_order": [
           "f032f49f-73fc-410f-b4f5-017d1682e86f",
+          "987e7583-5629-4d60-a3f9-01164e50db6c",
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36",
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a",
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b",
-          "987e7583-5629-4d60-a3f9-01164e50db6c",
           "24e140a5-298a-4df7-8bcc-d753702e6508"
         ],
         "settings": {
