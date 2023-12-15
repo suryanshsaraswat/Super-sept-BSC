@@ -45,7 +45,7 @@
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of<\/p> <p>Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order,<\/p><p> and an opportunity to win free trimmers.<\/p>\n<h3 class=\"spin\">SPIN THE WHEEL<\/h3> \n<p class=\"text-xmas\">And claim your deal!<\/p>",
+        "html": "<p class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<h3 class=\"spin\">SPIN THE WHEEL<\/h3> \n<p class=\"text-xmas\">And claim your deal!<\/p>",
         "bgcolor": "#d00101",
         "txtcolor": "#ffffff"
       }
