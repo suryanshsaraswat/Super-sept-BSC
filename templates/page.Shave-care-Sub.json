@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "a1ec68c4-0dc7-4f1a-880c-beddd7834b23": {
@@ -88,7 +97,7 @@
         "template--16174121451674__5d3ddf85-b964-42e0-8d54-f68b6ffe4f1f-collection-1": {
           "type": "collection",
           "settings": {
-            "collection": "cartridges-1",
+            "collection": "razor-cartridges",
             "title": "",
             "grid_items_count": 8,
             "button_text": ""
