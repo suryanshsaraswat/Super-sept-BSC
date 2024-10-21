@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "current": {
     "heading_color": "#1c1b1b",
@@ -45,18 +54,18 @@
     "cart_enable_notes": false,
     "cart_show_free_shipping_threshold": true,
     "cart_free_shipping_threshold": "500",
-    "social_facebook": "https:\/\/www.facebook.com\/bombayshavingcompany\/",
-    "social_twitter": "https:\/\/twitter.com\/BombayShavingCo",
-    "social_pinterest": "https:\/\/in.pinterest.com\/bombayshavingcompanyindia\/",
-    "social_instagram": "https:\/\/instagram.com\/bombayshavingcompany",
-    "social_youtube": "https:\/\/www.youtube.com\/c\/Bombayshavingcompany",
-    "social_linkedin": "https:\/\/in.linkedin.com\/company\/bombay-shaving-company\/",
-    "favicon": "shopify:\/\/shop_images\/Screenshot_2023-08-02_at_9.29.37_PM.png",
+    "social_facebook": "https://www.facebook.com/bombayshavingcompany/",
+    "social_twitter": "https://twitter.com/BombayShavingCo",
+    "social_pinterest": "https://in.pinterest.com/bombayshavingcompanyindia/",
+    "social_instagram": "https://instagram.com/bombayshavingcompany",
+    "social_youtube": "https://www.youtube.com/c/Bombayshavingcompany",
+    "social_linkedin": "https://in.linkedin.com/company/bombay-shaving-company/",
+    "favicon": "shopify://shop_images/Screenshot_2023-08-02_at_9.29.37_PM.png",
     "mid": "3mt5u7n3w2kzqua196",
     "envType": "production",
     "hideFlow": false,
     "btnTxt": false,
-    "gk-merchant-btnText": "Pay via Debit\/Credit Card",
+    "gk-merchant-btnText": "Pay via Debit/Credit Card",
     "fbpixel": "1047077635386640",
     "priClr": "#0d5ea8",
     "secClr": "#ffffff",
@@ -64,7 +73,7 @@
     "main-titile": "Place order",
     "sub-titile": "",
     "tele_pop": false,
-    "checkout_logo_image": "shopify:\/\/shop_images\/BSC_Logo___for_site_2_1.gif",
+    "checkout_logo_image": "shopify://shop_images/BSC_Logo___for_site_2_1.gif",
     "checkout_logo_position": "center",
     "checkout_logo_size": "medium",
     "checkout_body_background_color": "#fbfbfb",
@@ -98,8 +107,8 @@
           "home_page_only": false,
           "background": "#29705a",
           "text_color": "#ffffff",
-          "content": "<b>Free Shipping<\/b> Worldwide + <b>Easy Returns<\/b>",
-          "link": "shopify:\/\/collections\/best-sellers"
+          "content": "<b>Free Shipping</b> Worldwide + <b>Easy Returns</b>",
+          "link": "shopify://collections/best-sellers"
         }
       },
       "header": {
@@ -109,14 +118,14 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Best Sellers",
-              "push_1_image": "shopify:\/\/shop_images\/GiftKits.jpg",
+              "push_1_image": "shopify://shop_images/GiftKits.jpg",
               "push_1_heading": "Shop bestselling Gift Kits",
               "push_1_subheading": "Gift kits + Gift Cards",
-              "push_1_url": "shopify:\/\/pages\/gifts-for-men-online",
-              "push_2_image": "shopify:\/\/shop_images\/Fragrances_1.jpg",
+              "push_1_url": "shopify://pages/gifts-for-men-online",
+              "push_2_image": "shopify://shop_images/Fragrances_1.jpg",
               "push_2_heading": "New Arrivals in",
               "push_2_subheading": "Fragrances",
-              "push_2_url": "shopify:\/\/collections\/cred-rewards-march"
+              "push_2_url": "shopify://collections/cred-rewards-march"
             }
           },
           "88f358d9-f730-4db5-9199-867edf4f2562": {
@@ -125,7 +134,7 @@
               "navigation_mega_menu": "Shave",
               "push_1_heading": "Shaving Foam Combo",
               "push_1_subheading": "Some Partnership works best in 3s",
-              "push_1_url": "shopify:\/\/products\/shaving-foams-combo-pack-of-3",
+              "push_1_url": "shopify://products/shaving-foams-combo-pack-of-3",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": ""
@@ -137,7 +146,7 @@
               "navigation_mega_menu": "Beard",
               "push_1_heading": "Beard Care Combo",
               "push_1_subheading": "Flaunt your Beard",
-              "push_1_url": "shopify:\/\/collections\/mens-beardcare-products",
+              "push_1_url": "shopify://collections/mens-beardcare-products",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": ""
@@ -147,7 +156,7 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Hair",
-              "push_1_image": "shopify:\/\/shop_images\/HairCare_1.jpg",
+              "push_1_image": "shopify://shop_images/HairCare_1.jpg",
               "push_1_heading": "Complete Hair Care Range",
               "push_1_subheading": "For Long Shiny Hair",
               "push_1_url": "",
@@ -160,23 +169,23 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Skin",
-              "push_1_image": "shopify:\/\/shop_images\/SkinCare_1.jpg",
+              "push_1_image": "shopify://shop_images/SkinCare_1.jpg",
               "push_1_heading": "New Launches",
               "push_1_subheading": "New Season New Must Haves",
-              "push_1_url": "shopify:\/\/collections\/new-launches",
+              "push_1_url": "shopify://collections/new-launches",
               "push_2_heading": "Teal Solid Cotton Short Shorts",
               "push_2_subheading": "BREEZY 100% COTTON",
-              "push_2_url": "shopify:\/\/products\/teal-blue-low-rise-short-cotton-shorts"
+              "push_2_url": "shopify://products/teal-blue-low-rise-short-cotton-shorts"
             }
           },
           "d82e5a13-5368-4c6c-8fe8-1e995ee6cfb0": {
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Bath",
-              "push_1_image": "shopify:\/\/shop_images\/BathCare_e97b3d45-fc74-4b46-bbb5-d1fc9f7cfd0f.jpg",
+              "push_1_image": "shopify://shop_images/BathCare_e97b3d45-fc74-4b46-bbb5-d1fc9f7cfd0f.jpg",
               "push_1_heading": "Fresh Summer Fresh You",
               "push_1_subheading": "Beat the Heat this Summer",
-              "push_1_url": "shopify:\/\/collections\/bath-care",
+              "push_1_url": "shopify://collections/bath-care",
               "push_2_heading": "Example heading",
               "push_2_subheading": "Example sub-heading",
               "push_2_url": ""
@@ -186,28 +195,28 @@
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "trimmers",
-              "push_1_image": "shopify:\/\/shop_images\/1_09bd48ff-7035-45bc-ac36-9fb7becadb99.webp",
+              "push_1_image": "shopify://shop_images/1_09bd48ff-7035-45bc-ac36-9fb7becadb99.webp",
               "push_1_heading": "Full Body Trimmer",
               "push_1_subheading": "New Arrival",
-              "push_1_url": "shopify:\/\/products\/full-body-trimmer-for-men",
-              "push_2_image": "shopify:\/\/shop_images\/1_1_8aa186cc-a161-4473-bb7a-37b5580e52ac.webp",
+              "push_1_url": "shopify://products/full-body-trimmer-for-men",
+              "push_2_image": "shopify://shop_images/1_1_8aa186cc-a161-4473-bb7a-37b5580e52ac.webp",
               "push_2_heading": "Power Styler Trimmer",
               "push_2_subheading": "NEW ARRIVAL",
-              "push_2_url": "shopify:\/\/products\/powerstyler-trimmer-for-men"
+              "push_2_url": "shopify://products/powerstyler-trimmer-for-men"
             }
           },
           "1625da8a-dfbf-40a5-8b18-cc049cd2ea6c": {
             "type": "mega_menu",
             "settings": {
               "navigation_mega_menu": "Blogs",
-              "push_1_image": "shopify:\/\/shop_images\/SHAVING_CREAM_Vs_FOAM_vS_GEL_800x_563ae5d7-9f90-413a-a414-d5f8836a2618.webp",
+              "push_1_image": "shopify://shop_images/SHAVING_CREAM_Vs_FOAM_vS_GEL_800x_563ae5d7-9f90-413a-a414-d5f8836a2618.webp",
               "push_1_heading": "Shaving",
               "push_1_subheading": "",
-              "push_1_url": "shopify:\/\/blogs\/shaving",
-              "push_2_image": "shopify:\/\/shop_images\/THE_ULTIMATE_WINTER_GROOMING_KIT_FOR_MEN_2_800x_d23319a9-c4b3-44da-8543-1334108570f7.webp",
+              "push_1_url": "shopify://blogs/shaving",
+              "push_2_image": "shopify://shop_images/THE_ULTIMATE_WINTER_GROOMING_KIT_FOR_MEN_2_800x_d23319a9-c4b3-44da-8543-1334108570f7.webp",
               "push_2_heading": "Beard Care",
               "push_2_subheading": "",
-              "push_2_url": "shopify:\/\/blogs\/beard-care"
+              "push_2_url": "shopify://blogs/beard-care"
             }
           },
           "bbb90206-d1f0-40be-a4cb-ca94940414c2": {
@@ -263,7 +272,7 @@
         ],
         "settings": {
           "use_sticky_header": true,
-          "logo": "shopify:\/\/shop_images\/Website_StaticLogo_1.png",
+          "logo": "shopify://shop_images/Website_StaticLogo_1.png",
           "logo_max_width": 70,
           "mobile_logo_max_width": 70,
           "show_country_selector": false,
@@ -291,7 +300,7 @@
             "disabled": true,
             "settings": {
               "title": "ABOUT US",
-              "content": "<p>Bombay Shaving Company is a premium personal care and grooming solutions brand committed to delivering truly remarkable customer experiences. <\/p><p>Ours thoughtfully curated personal care regimens double-up as the perfect gifting options for special occasions, too. Come, shine like never before with products made with love!<\/p>",
+              "content": "<p>Bombay Shaving Company is a premium personal care and grooming solutions brand committed to delivering truly remarkable customer experiences. </p><p>Ours thoughtfully curated personal care regimens double-up as the perfect gifting options for special occasions, too. Come, shine like never before with products made with love!</p>",
               "show_social_media": true
             }
           },
@@ -311,7 +320,7 @@
             "type": "newsletter",
             "settings": {
               "title": "Newsletter",
-              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+              "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
             }
           }
         },
@@ -336,7 +345,7 @@
           "show_only_for_visitors": true,
           "show_only_once": true,
           "title": "Let's get to know each other!",
-          "content": "<p>Drop your email to get latest updates on what’s hot, special offers and tips to always look hot-shot.<\/p>",
+          "content": "<p>Drop your email to get latest updates on what’s hot, special offers and tips to always look hot-shot.</p>",
           "show_newsletter": true,
           "apparition_delay": 3
         }
@@ -349,45 +358,45 @@
             "disabled": true,
             "settings": {
               "Offer": "Diwali Sale: Get any 5 products @ 999",
-              "image": "shopify:\/\/shop_images\/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
+              "image": "shopify://shop_images/offer_554074b8-e06a-4be2-8468-c90b8ace2265.png",
               "coupon": "DIWALI",
-              "linkurl": "shopify:\/\/collections\/diwali-sale"
+              "linkurl": "shopify://collections/diwali-sale"
             }
           },
           "987e7583-5629-4d60-a3f9-01164e50db6c": {
             "type": "testimonial",
             "settings": {
               "Offer": "Spin and Win this Christmas! Click here to get the best deals EVER!",
-              "image": "shopify:\/\/shop_images\/xmas2.jpg",
+              "image": "shopify://shop_images/xmas2.jpg",
               "coupon": "",
-              "linkurl": "shopify:\/\/pages\/xmas"
+              "linkurl": "shopify://pages/xmas"
             }
           },
           "4e3350df-fe9a-4254-9ca5-dccc73df0f36": {
             "type": "testimonial",
             "settings": {
               "Offer": "Elevate Your Grooming Game with Premium TRIMMERS starting at INR 599",
-              "image": "shopify:\/\/shop_images\/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
+              "image": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
               "coupon": "",
-              "linkurl": "shopify:\/\/pages\/trimmers-for-men"
+              "linkurl": "shopify://pages/trimmers-for-men"
             }
           },
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a": {
             "type": "testimonial",
             "settings": {
               "Offer": "Sensitive on skin RAZORS starting @99",
-              "image": "shopify:\/\/shop_images\/new_arrivals_84b4c1cf-1f49-4f6e-902d-781fd0c8b485.png",
+              "image": "shopify://shop_images/new_arrivals_84b4c1cf-1f49-4f6e-902d-781fd0c8b485.png",
               "coupon": "",
-              "linkurl": "shopify:\/\/pages\/razors-for-men"
+              "linkurl": "shopify://pages/razors-for-men"
             }
           },
           "d2b10f03-c906-4bf4-a497-032e45bb7f0b": {
             "type": "testimonial",
             "settings": {
               "Offer": "Unleash confidence with Premium SKINCARE range at extra 20% OFF",
-              "image": "shopify:\/\/shop_images\/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
+              "image": "shopify://shop_images/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
               "coupon": "SHOP20",
-              "linkurl": "shopify:\/\/pages\/skin-care-products-for-men"
+              "linkurl": "shopify://pages/skin-care-products-for-men"
             }
           },
           "24e140a5-298a-4df7-8bcc-d753702e6508": {
@@ -395,9 +404,9 @@
             "disabled": true,
             "settings": {
               "Offer": "Get a set of 4 perfumes free on shopping for Rs.999",
-              "image": "shopify:\/\/shop_images\/tt_logo.png",
+              "image": "shopify://shop_images/tt_logo.png",
               "coupon": "TUESDAY",
-              "linkurl": "shopify:\/\/collections\/grooming-galore"
+              "linkurl": "shopify://collections/grooming-galore"
             }
           }
         },
@@ -421,7 +430,7 @@
             "disabled": true,
             "settings": {
               "text": "Home",
-              "linkurl": "\/",
+              "linkurl": "/",
               "linkopen": false
             }
           },
@@ -429,90 +438,90 @@
             "type": "testimonial",
             "disabled": true,
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/Logo-for-web_1.png",
+              "mobile_nav": "shopify://shop_images/Logo-for-web_1.png",
               "text": "Razorpreneur",
-              "linkurl": "shopify:\/\/pages\/razorpreneur",
+              "linkurl": "shopify://pages/razorprenuer",
               "linkopen": true
             }
           },
           "61483588-c8b3-4603-b2be-e6642e8c2845": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/bestsellers.png",
+              "mobile_nav": "shopify://shop_images/bestsellers.png",
               "text": "BestSellers",
-              "linkurl": "shopify:\/\/pages\/best-sellers",
+              "linkurl": "shopify://pages/best-sellers",
               "linkopen": false
             }
           },
           "9d08cfe9-2e2f-4020-9527-af6099ab3c88": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/new_arrivals.png",
+              "mobile_nav": "shopify://shop_images/new_arrivals.png",
               "text": "Razors",
-              "linkurl": "shopify:\/\/pages\/razors-for-men",
+              "linkurl": "shopify://pages/razors-for-men",
               "linkopen": false
             }
           },
           "723462a7-6687-4d01-9fa0-18023bbafc5b": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
+              "mobile_nav": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
               "text": "Trimmers",
-              "linkurl": "shopify:\/\/pages\/trimmers-for-men",
+              "linkurl": "shopify://pages/trimmers-for-men",
               "linkopen": false
             }
           },
           "de6ec94f-3b94-42f6-8d56-71dff7d5b5f4": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/shaving.png",
+              "mobile_nav": "shopify://shop_images/shaving.png",
               "text": "Shave",
-              "linkurl": "shopify:\/\/pages\/shaving-products-for-men",
+              "linkurl": "shopify://pages/shaving-products-for-men",
               "linkopen": false
             }
           },
           "585a3d49-5aa7-4472-a028-3d238a4e6a0f": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/gifting.png",
+              "mobile_nav": "shopify://shop_images/gifting.png",
               "text": "Gifting kits",
-              "linkurl": "shopify:\/\/pages\/gifts-for-men-online",
+              "linkurl": "shopify://pages/gifts-for-men-online",
               "linkopen": false
             }
           },
           "ab7da4f2-8c7b-4117-aef1-4cfa2ec469cb": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
+              "mobile_nav": "shopify://shop_images/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
               "text": "Skin",
-              "linkurl": "shopify:\/\/pages\/skin-care-products-for-men",
+              "linkurl": "shopify://pages/skin-care-products-for-men",
               "linkopen": false
             }
           },
           "24024d88-b1ad-4dcc-8cb9-4bdf7d2743dc": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/beard_be523a69-35ec-4f92-a3f1-7535eb215104.png",
+              "mobile_nav": "shopify://shop_images/beard_be523a69-35ec-4f92-a3f1-7535eb215104.png",
               "text": "Beard",
-              "linkurl": "shopify:\/\/collections\/mens-beardcare-products",
+              "linkurl": "shopify://collections/mens-beardcare-products",
               "linkopen": false
             }
           },
           "442afb8b-d88b-4bbd-ade6-d4e5381d4263": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/fragrance.png",
+              "mobile_nav": "shopify://shop_images/fragrance.png",
               "text": "Fragrances",
-              "linkurl": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men",
+              "linkurl": "shopify://pages/buy-perfumes-fragrances-for-men",
               "linkopen": false
             }
           },
           "debb41d3-b108-48a6-91eb-115025e8ba25": {
             "type": "testimonial",
             "settings": {
-              "mobile_nav": "shopify:\/\/shop_images\/bsc-page-icon.png",
+              "mobile_nav": "shopify://shop_images/bsc-page-icon.png",
               "text": "Women",
-              "linkurl": "https:\/\/mybombae.in\/",
+              "linkurl": "https://mybombae.in/",
               "linkopen": false
             }
           }
@@ -539,23 +548,23 @@
           "6769a127-8773-45c7-a7c4-0c1486b93998": {
             "type": "testimonial",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/Ingredient_Charcoal.png",
-              "quote": "<p>\" I'm a regular charcoal facewash user. I felt really happy to grab the charcoal facewash at a very cheap price compared to other shopping sites. Thanks 🙏 \"<\/p>"
+              "logo": "shopify://shop_images/Ingredient_Charcoal.png",
+              "quote": "<p>\" I'm a regular charcoal facewash user. I felt really happy to grab the charcoal facewash at a very cheap price compared to other shopping sites. Thanks 🙏 \"</p>"
             }
           },
           "1150c06a-19d2-4e40-8895-4a6e7950b164": {
             "type": "testimonial",
             "settings": {
-              "logo": "shopify:\/\/shop_images\/Ingredient_Pomegranate.png",
-              "quote": "<p>\" Had bought it earlier as sample and it's really awesome. Smells good and feels refreshing. \"<\/p>"
+              "logo": "shopify://shop_images/Ingredient_Pomegranate.png",
+              "quote": "<p>\" Had bought it earlier as sample and it's really awesome. Smells good and feels refreshing. \"</p>"
             }
           },
           "76843395-d541-471e-ada4-d29bc41a9634": {
             "type": "testimonial",
             "disabled": true,
             "settings": {
-              "logo": "shopify:\/\/shop_images\/Ingredient_Papaya.png",
-              "quote": "<p>The six pieces set is a good variety as far as the value of this product is concerned. I  use beard butter regularly and it's very useful and makes my beard very soft. Moreover, the different types of oils in the kit have a very good smell which makes my face even more attractive. For me, quantity is not the concern if the quality is good and this is really nice and with this amazing packaging I'll gift it to my brother as well.<\/p>"
+              "logo": "shopify://shop_images/Ingredient_Papaya.png",
+              "quote": "<p>The six pieces set is a good variety as far as the value of this product is concerned. I  use beard butter regularly and it's very useful and makes my beard very soft. Moreover, the different types of oils in the kit have a very good smell which makes my face even more attractive. For me, quantity is not the concern if the quality is good and this is really nice and with this amazing packaging I'll gift it to my brother as well.</p>"
             }
           }
         },
@@ -581,7 +590,7 @@
               "company": "Bombay Shaving Company",
               "location": "Gurugram, India",
               "date": "1 week ago",
-              "url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw\/viewform"
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw/viewform"
             }
           },
           "1b5f48cc-7c33-43a9-9e32-35ab64a44973": {
@@ -591,7 +600,7 @@
               "company": "Bombay Shaving Company",
               "location": "Gurugram, India",
               "date": "2 week ago",
-              "url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw\/viewform"
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw/viewform"
             }
           },
           "a4c9ac17-56b1-456b-9921-a32ad8e6b160": {
@@ -601,7 +610,7 @@
               "company": "Bombay Shaving Company",
               "location": "Gurugram, India",
               "date": "1 week ago",
-              "url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw\/viewform"
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw/viewform"
             }
           },
           "0c8da2b6-d7b0-4c20-b96d-f02b57508892": {
@@ -611,7 +620,7 @@
               "company": "Bombay Shaving Company",
               "location": "Gurugram, India",
               "date": "1 week ago",
-              "url": "https:\/\/docs.google.com\/forms\/d\/e\/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw\/viewform"
+              "url": "https://docs.google.com/forms/d/e/1FAIpQLSd-LkgV2AiTXnHRddbZVDv3c7eJTKwB0nMuUOTNaTyu-k_Muw/viewform"
             }
           }
         },
@@ -630,37 +639,37 @@
           "30b96fc7-a68c-465d-a2b7-3019b15d0f78": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LifeatBSC_0003_1654235313023.jpg"
+              "image": "shopify://shop_images/LifeatBSC_0003_1654235313023.jpg"
             }
           },
           "19009129-c013-4b1a-b683-4f9ff9eb46d9": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LifeatBSC_0000_1652263389910.jpg"
+              "image": "shopify://shop_images/LifeatBSC_0000_1652263389910.jpg"
             }
           },
           "4bd00d9a-69a0-4ebd-b5a5-90ec27780298": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LifeatBSC_0002_1653626648394.jpg"
+              "image": "shopify://shop_images/LifeatBSC_0002_1653626648394.jpg"
             }
           },
           "44659ec5-5ecb-4eef-8715-ffb3ea2ad645": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LifeatBSC_0004_1655906610354.jpg"
+              "image": "shopify://shop_images/LifeatBSC_0004_1655906610354.jpg"
             }
           },
           "12dc15b6-c714-4957-b083-fea5d026a1aa": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LifeatBSC_0005_1657000382606.jpg"
+              "image": "shopify://shop_images/LifeatBSC_0005_1657000382606.jpg"
             }
           },
           "45ef7cf1-51e2-40e5-af34-0c7cc831d584": {
             "type": "testimonial",
             "settings": {
-              "image": "shopify:\/\/shop_images\/LifeatBSC_0001_1652855014532.jpg"
+              "image": "shopify://shop_images/LifeatBSC_0001_1652855014532.jpg"
             }
           }
         },
@@ -714,14 +723,14 @@
           "98026137-351c-4a19-ada7-147c5355cf1e": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SensiSmart_Banner_1.webp",
-              "mobile_image": "shopify:\/\/shop_images\/Sensi_Mobile_1.webp",
+              "image": "shopify://shop_images/SensiSmart_Banner_1.webp",
+              "mobile_image": "shopify://shop_images/Sensi_Mobile_1.webp",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "shopify:\/\/products\/sensi-smart-3",
+              "button_1_link": "shopify://products/sensi-smart-3",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -729,14 +738,14 @@
           "596c4a11-1fd1-4809-8282-a9a25cf2f194": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/website_5.webp",
-              "mobile_image": "shopify:\/\/shop_images\/Sensi_Mobile_copy_1_bc9dd9d8-b5dd-485b-a51e-244cd61d4f63.webp",
+              "image": "shopify://shop_images/website_5.webp",
+              "mobile_image": "shopify://shop_images/Sensi_Mobile_copy_1_bc9dd9d8-b5dd-485b-a51e-244cd61d4f63.webp",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "shopify:\/\/products\/sensi-smart-3-value-pack-1-handle-3-cartridge",
+              "button_1_link": "shopify://products/sensi-smart-3-value-pack-1-handle-3-cartridge",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -744,14 +753,14 @@
           "6523a763-d8af-440a-a361-55731539ab76": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/SensiFlo4_copy_2.webp",
-              "mobile_image": "shopify:\/\/shop_images\/Flo4_Mobile_copy_3.webp",
+              "image": "shopify://shop_images/SensiFlo4_copy_2.webp",
+              "mobile_image": "shopify://shop_images/Flo4_Mobile_copy_3.webp",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "shopify:\/\/products\/sensi-flo4-razor-with-refills",
+              "button_1_link": "shopify://products/sensi-flo4-razor-with-refills",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -759,14 +768,14 @@
           "700cc044-cd60-43fc-9325-f255975a7a9b": {
             "type": "image",
             "settings": {
-              "image": "shopify:\/\/shop_images\/website_6.webp",
-              "mobile_image": "shopify:\/\/shop_images\/Flo6_Mobile_copy_3.webp",
+              "image": "shopify://shop_images/website_6.webp",
+              "mobile_image": "shopify://shop_images/Flo6_Mobile_copy_3.webp",
               "apply_overlay": false,
               "content_position": "bottomLeft",
               "subheading": "",
               "title": "",
               "button_1_text": "",
-              "button_1_link": "shopify:\/\/products\/sensi-flo6-razor-with-refills",
+              "button_1_link": "shopify://products/sensi-flo6-razor-with-refills",
               "button_2_text": "",
               "button_2_link": ""
             }
@@ -799,8 +808,8 @@
           "bf82ab79-bbc1-43da-8976-43adacc0c030": {
             "type": "testimonial",
             "settings": {
-              "imags": "shopify:\/\/shop_images\/1920X650_24.jpg",
-              "imags2": "shopify:\/\/shop_images\/800X600_23.jpg",
+              "imags": "shopify://shop_images/1920X650_24.jpg",
+              "imags2": "shopify://shop_images/800X600_23.jpg",
               "linkk": "#"
             }
           },
@@ -808,8 +817,8 @@
             "type": "testimonial",
             "disabled": true,
             "settings": {
-              "imags": "shopify:\/\/shop_images\/DesktopBanner2.jpg",
-              "imags2": "shopify:\/\/shop_images\/MobileBanner_2_7d120ec7-06dd-4522-be19-a6eacc972144.jpg",
+              "imags": "shopify://shop_images/DesktopBanner2.jpg",
+              "imags2": "shopify://shop_images/MobileBanner_2_7d120ec7-06dd-4522-be19-a6eacc972144.jpg",
               "linkk": ""
             }
           }
@@ -828,14 +837,14 @@
             "type": "Product",
             "settings": {
               "featured_product": "bhaidooj-kits-6-in-1-premium-shaving-kit-for-men",
-              "featured_image": "shopify:\/\/shop_images\/6in1PremiumShavingKit.jpg"
+              "featured_image": "shopify://shop_images/6in1PremiumShavingKit.jpg"
             }
           },
           "37219471-e530-4986-a203-c0bdf61c3240": {
             "type": "Product",
             "settings": {
               "featured_product": "bhaidooj-kits-charcoal-facial-starter-kit",
-              "featured_image": "shopify:\/\/shop_images\/CFSK_d624eb9b-a2ae-4fe6-ad24-6517f04df279.jpg"
+              "featured_image": "shopify://shop_images/CFSK_d624eb9b-a2ae-4fe6-ad24-6517f04df279.jpg"
             }
           }
         },
@@ -853,14 +862,14 @@
             "type": "Product",
             "settings": {
               "featured_product": "bhaidooj-kits-coffee-detan-facial-kit",
-              "featured_image": "shopify:\/\/shop_images\/DeTanCoffeKit.jpg"
+              "featured_image": "shopify://shop_images/DeTanCoffeKit.jpg"
             }
           },
           "475640fe-2846-499a-861e-31a96924add0": {
             "type": "Product",
             "settings": {
               "featured_product": "bhaidooj-kits-premium-fragrances-for-men",
-              "featured_image": "shopify:\/\/shop_images\/PerfumeFragrances.jpg"
+              "featured_image": "shopify://shop_images/PerfumeFragrances.jpg"
             }
           }
         },
@@ -878,14 +887,14 @@
             "type": "Product",
             "settings": {
               "featured_product": "bhaidooj-kits-shave-dazzle-kit",
-              "featured_image": "shopify:\/\/shop_images\/Shave_DazzleKit_1a8dca81-2a9d-4392-9dc9-a4699043bd80.jpg"
+              "featured_image": "shopify://shop_images/Shave_DazzleKit_1a8dca81-2a9d-4392-9dc9-a4699043bd80.jpg"
             }
           },
           "f4d56e55-c827-4b56-bd7c-2810280ec371": {
             "type": "Product",
             "settings": {
               "featured_product": "festive-kit-beard-trim-and-care-kit",
-              "featured_image": "shopify:\/\/shop_images\/BeardTrimmerStylingKit.jpg"
+              "featured_image": "shopify://shop_images/BeardTrimmerStylingKit.jpg"
             }
           }
         },
@@ -903,14 +912,14 @@
             "type": "Product",
             "settings": {
               "featured_product": "festive-kit-mexico-tokyo-combo",
-              "featured_image": "shopify:\/\/shop_images\/Mexico_Tokyo.jpg"
+              "featured_image": "shopify://shop_images/Mexico_Tokyo.jpg"
             }
           },
           "00bd71bc-5a88-426f-9a21-1b3149d195d3": {
             "type": "Product",
             "settings": {
               "featured_product": "festive-gift-signature-grey-trimmer-hair-clipper-free-engraving",
-              "featured_image": "shopify:\/\/shop_images\/SignatureGreyTrimmer.jpg"
+              "featured_image": "shopify://shop_images/SignatureGreyTrimmer.jpg"
             }
           }
         },
@@ -928,14 +937,14 @@
             "type": "Product",
             "settings": {
               "featured_product": "bhaidooj-kits-shave-travel-kit",
-              "featured_image": "shopify:\/\/shop_images\/Travel-Grooming-Kit.jpg"
+              "featured_image": "shopify://shop_images/Travel-Grooming-Kit.jpg"
             }
           },
           "69050be6-d0fb-4b4d-af1d-d368b1835f53": {
             "type": "Product",
             "settings": {
               "featured_product": "festive-kit-mexico-black-vibe-combo",
-              "featured_image": "shopify:\/\/shop_images\/Black-Vibe-_-Mexico.jpg"
+              "featured_image": "shopify://shop_images/Black-Vibe-_-Mexico.jpg"
             }
           }
         },
@@ -1007,8 +1016,8 @@
           "text_color": "#ffffff",
           "subheading": "",
           "title": "",
-          "image": "shopify:\/\/shop_images\/Precaution-Video.jpg",
-          "video_url": "https:\/\/youtube.com\/watch?v=ZXBqH0pfySw&si=EnSIkaIECMiOmarE"
+          "image": "shopify://shop_images/Precaution-Video.jpg",
+          "video_url": "https://youtube.com/watch?v=ZXBqH0pfySw&si=EnSIkaIECMiOmarE"
         }
       },
       "blog-posts": {
@@ -1048,8 +1057,8 @@
             "type": "product",
             "settings": {
               "prod": "sensi-smart-3-value-pack-1-handle-3-cartridge",
-              "razor_img": "shopify:\/\/shop_images\/Razor_Cartridge_First_Image_Sensi_smart_02.webp",
-              "razr_html": "<h3>Erognomic Grip<\/h3>\n<h3>3 Cartridge Refills<\/h3>\n<h3>Lubricating Strip<\/h3>\n<h3>Pivot Head<\/h3>",
+              "razor_img": "shopify://shop_images/Razor_Cartridge_First_Image_Sensi_smart_02.webp",
+              "razr_html": "<h3>Erognomic Grip</h3>\n<h3>3 Cartridge Refills</h3>\n<h3>Lubricating Strip</h3>\n<h3>Pivot Head</h3>",
               "top_color": ""
             }
           },
@@ -1057,8 +1066,8 @@
             "type": "product",
             "settings": {
               "prod": "sensi-smart-3",
-              "razor_img": "shopify:\/\/shop_images\/SensiSmart_3.jpg",
-              "razr_html": "<h3>SENSITIVE LUBRICATING STRIP<\/h3>\n<h3>EXTRA CARE FOR SKIN<\/h3>\n<h3>SAY GOODBYE TO OVERPRICED RAZORS<\/h3>\n<h3>PIVOT HEAD FOR EASY MANOEUVEREING<\/h3>",
+              "razor_img": "shopify://shop_images/SensiSmart_3.jpg",
+              "razr_html": "<h3>SENSITIVE LUBRICATING STRIP</h3>\n<h3>EXTRA CARE FOR SKIN</h3>\n<h3>SAY GOODBYE TO OVERPRICED RAZORS</h3>\n<h3>PIVOT HEAD FOR EASY MANOEUVEREING</h3>",
               "top_color": "#c0d52f"
             }
           },
@@ -1066,8 +1075,8 @@
             "type": "product",
             "settings": {
               "prod": "sensi-flo-6-razor",
-              "razor_img": "shopify:\/\/shop_images\/Flo6.jpg",
-              "razr_html": "<h3>WORLD’S FIRST 6 BLADE SENSITIVE RAZOR<\/h3>\n<h3>TRIPLE ACTION LUBRICATING STRIP<\/h3>\n<h3>UNPARALLELED CLOSE SHAVES<\/h3>\n<h3>ERGONOMIC DESIGN WITH A TWIST<\/h3>\n<h3>BEARD STYLING BACK BLADE<\/h3>\n<h3>FREE RAZOR SHARPENER:<\/h3>",
+              "razor_img": "shopify://shop_images/Flo6.jpg",
+              "razr_html": "<h3>WORLD’S FIRST 6 BLADE SENSITIVE RAZOR</h3>\n<h3>TRIPLE ACTION LUBRICATING STRIP</h3>\n<h3>UNPARALLELED CLOSE SHAVES</h3>\n<h3>ERGONOMIC DESIGN WITH A TWIST</h3>\n<h3>BEARD STYLING BACK BLADE</h3>\n<h3>FREE RAZOR SHARPENER:</h3>",
               "top_color": "#007684"
             }
           },
@@ -1075,8 +1084,8 @@
             "type": "product",
             "settings": {
               "prod": "sensi-flo-4-razor",
-              "razor_img": "shopify:\/\/shop_images\/Flo4.jpg",
-              "razr_html": "<h3>4 MICRO-SPAN BLADES<\/h3>\n<h3>LUBRICATING STRIP WITH ALOE, MOROCCAN ARGAN OIL and VIT E<\/h3>\n<h3>BEARD STYLING BACK BLADE<\/h3>\n<h3>ERGONOMIC DESIGN<\/h3>\n<h3>FREE RAZOR SHARPENER<\/h3>",
+              "razor_img": "shopify://shop_images/Flo4.jpg",
+              "razr_html": "<h3>4 MICRO-SPAN BLADES</h3>\n<h3>LUBRICATING STRIP WITH ALOE, MOROCCAN ARGAN OIL and VIT E</h3>\n<h3>BEARD STYLING BACK BLADE</h3>\n<h3>ERGONOMIC DESIGN</h3>\n<h3>FREE RAZOR SHARPENER</h3>",
               "top_color": "#259b47"
             }
           },
@@ -1085,8 +1094,8 @@
             "disabled": true,
             "settings": {
               "prod": "razor-sharpener",
-              "razor_img": "shopify:\/\/shop_images\/Untitled_design_5.jpg",
-              "razr_html": "<h3>EXTEND YOUR RAZOR’S LIFE BY UPTO 30%<\/h3>\n<h3>V-SHAPED WEAVING<\/h3>\n<h3>SPUN-POLYESTER MATERIAL<\/h3>\n<h3>D-HOOK AT THE END<\/h3>",
+              "razor_img": "shopify://shop_images/Untitled_design_5.jpg",
+              "razr_html": "<h3>EXTEND YOUR RAZOR’S LIFE BY UPTO 30%</h3>\n<h3>V-SHAPED WEAVING</h3>\n<h3>SPUN-POLYESTER MATERIAL</h3>\n<h3>D-HOOK AT THE END</h3>",
               "top_color": ""
             }
           }
@@ -1107,19 +1116,19 @@
           "72d12aa1-f907-4761-a62e-a5e12f022e0b": {
             "type": "Product",
             "settings": {
-              "ing": "shopify:\/\/shop_images\/SensiSmart3_2.webp"
+              "ing": "shopify://shop_images/SensiSmart3_2.webp"
             }
           },
           "0067d891-5ade-407d-8ca0-83fbbd945bbe": {
             "type": "Product",
             "settings": {
-              "ing": "shopify:\/\/shop_images\/SensiSmart3_1.webp"
+              "ing": "shopify://shop_images/SensiSmart3_1.webp"
             }
           },
           "c2de6ab7-df95-4117-9cde-d5d9b9bc301a": {
             "type": "Product",
             "settings": {
-              "ing": "shopify:\/\/shop_images\/SensiFlo6_4.webp"
+              "ing": "shopify://shop_images/SensiFlo6_4.webp"
             }
           }
         },
@@ -1139,8 +1148,8 @@
             "type": "product",
             "settings": {
               "prod": "sensi-smart-3-cartridge-pack-of-2",
-              "razor_img": "shopify:\/\/shop_images\/SensiSmart_3.webp",
-              "razr_html": "<p>Give your skin the most SENSITIVE treatment with Sensi Smart3 cartridges - now in a pack of 2. Each cartridge features 3 skin hugging blades, and an extra-lubricating strip, enriched with Aloe Vera, Argan oil, and Vitamin E to reduce irritation and burns. The pivoting head adapts to your face's contours, allowing for easy manoeuvring and precise shaving even in the hardest-to-reach areas. Enjoy complete control, safety, and precision with  Sensi SMART3.<\/p>",
+              "razor_img": "shopify://shop_images/SensiSmart_3.webp",
+              "razr_html": "<p>Give your skin the most SENSITIVE treatment with Sensi Smart3 cartridges - now in a pack of 2. Each cartridge features 3 skin hugging blades, and an extra-lubricating strip, enriched with Aloe Vera, Argan oil, and Vitamin E to reduce irritation and burns. The pivoting head adapts to your face's contours, allowing for easy manoeuvring and precise shaving even in the hardest-to-reach areas. Enjoy complete control, safety, and precision with  Sensi SMART3.</p>",
               "top_color": ""
             }
           },
@@ -1148,8 +1157,8 @@
             "type": "product",
             "settings": {
               "prod": "sensiflo-4-cartridge-pack-of-2",
-              "razor_img": "shopify:\/\/shop_images\/SensiFlo4_79bcafbc-4a26-4099-a2b6-549e0ceefff0.webp",
-              "razr_html": "<p>Experience the closeness of a 4-blade action, balanced with an extra SENSITIVE approach to shaving. The Sensi Flo 4 features a superior lubricating strip enriched with Aloe vera, Argan oil, and Vitamin E that provide gentle . The curved blades and advanced blade engineering minimise nicks and cuts, providing the most gentle shaving experience. Another notable feature is its specialised shaping and edging back blade for better precision control in the neckline, sideburns, and cheek lines.<\/p>",
+              "razor_img": "shopify://shop_images/SensiFlo4_79bcafbc-4a26-4099-a2b6-549e0ceefff0.webp",
+              "razr_html": "<p>Experience the closeness of a 4-blade action, balanced with an extra SENSITIVE approach to shaving. The Sensi Flo 4 features a superior lubricating strip enriched with Aloe vera, Argan oil, and Vitamin E that provide gentle . The curved blades and advanced blade engineering minimise nicks and cuts, providing the most gentle shaving experience. Another notable feature is its specialised shaping and edging back blade for better precision control in the neckline, sideburns, and cheek lines.</p>",
               "top_color": ""
             }
           },
@@ -1157,8 +1166,8 @@
             "type": "product",
             "settings": {
               "prod": "sensiflo-6-cartridge-pack-of-2",
-              "razor_img": "shopify:\/\/shop_images\/SensiFlo6_554ba87d-b1ef-4cec-8248-3392aac42563.webp",
-              "razr_html": "<p>The Sensi Flo 6 cartridge features a 2X lubricating strip enriched with Aloe vera, Argan oil, Vitamin E, and an additional skin guard. The curved blades and advanced blade engineering minimise nicks and cuts, providing the most gentle shaving experience. Another notable feature is its specialised shaping and edging back blade for better precision control in the neckline, sideburns, and cheek lines. Try it and experience true closeness, comfort, and precision with Sensi Flo 6 today.<\/p>",
+              "razor_img": "shopify://shop_images/SensiFlo6_554ba87d-b1ef-4cec-8248-3392aac42563.webp",
+              "razr_html": "<p>The Sensi Flo 6 cartridge features a 2X lubricating strip enriched with Aloe vera, Argan oil, Vitamin E, and an additional skin guard. The curved blades and advanced blade engineering minimise nicks and cuts, providing the most gentle shaving experience. Another notable feature is its specialised shaping and edging back blade for better precision control in the neckline, sideburns, and cheek lines. Try it and experience true closeness, comfort, and precision with Sensi Flo 6 today.</p>",
               "top_color": ""
             }
           }
@@ -1177,58 +1186,39 @@
     ],
     "blocks": {
       "14060646107696862457": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/judgeme_core\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
         "settings": {
         }
       },
       "12120936241911852800": {
-        "type": "shopify:\/\/apps\/judge-me-product-reviews\/blocks\/reviews_tab\/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+        "type": "shopify://apps/judge-me-product-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": true,
         "settings": {
           "position": "right"
         }
       },
-      "14418474333536001498": {
-        "type": "shopify:\/\/apps\/cooee\/blocks\/app-embed-main\/2f17a8e7-57ed-4fda-b07d-26521d722e6f",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "10605408327587305396": {
-        "type": "shopify:\/\/apps\/easygift-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
+        "type": "shopify://apps/easygift-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
         "disabled": false,
         "settings": {
           "version": "v3"
         }
       },
       "11348531219507317188": {
-        "type": "shopify:\/\/apps\/easy-bundles\/blocks\/app-embed\/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "18228966181090706294": {
-        "type": "shopify:\/\/apps\/selleasy\/blocks\/app-embed\/790c1a03-a71f-4bc1-9869-00dad526d3c2",
-        "disabled": true,
-        "settings": {
-        }
-      },
-      "5918445685253060206": {
-        "type": "shopify:\/\/apps\/bundler\/blocks\/bundler-script-append\/7a6ae1b8-3b16-449b-8429-8bb89a62c664",
+        "type": "shopify://apps/easy-bundles/blocks/app-embed/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
         "disabled": true,
         "settings": {
         }
       },
       "13951170544780599758": {
-        "type": "shopify:\/\/apps\/tapita-seo-speed\/blocks\/app-embed\/cd37ca7a-40ad-4fdc-afd3-768701482209",
+        "type": "shopify://apps/tapita-seo-speed/blocks/app-embed/cd37ca7a-40ad-4fdc-afd3-768701482209",
         "disabled": false,
         "settings": {
-          "tpt_seo_block": "{}"
         }
       },
       "16605631912868231181": {
-        "type": "shopify:\/\/apps\/moengage\/blocks\/app-embed\/50f1ed6f-9777-46ca-ae3f-9d9b9c6152ef",
+        "type": "shopify://apps/moengage/blocks/app-embed/50f1ed6f-9777-46ca-ae3f-9d9b9c6152ef",
         "disabled": false,
         "settings": {
         }
@@ -1316,7 +1306,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -1330,7 +1320,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
@@ -1425,7 +1415,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -1439,7 +1429,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
@@ -1535,7 +1525,7 @@
               "type": "text",
               "settings": {
                 "title": "About the shop",
-                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.<\/p>",
+                "content": "<p>Use this text area to tell your customers about your brand and vision. You can change it in the theme settings.</p>",
                 "show_social_media": true
               }
             },
@@ -1549,7 +1539,7 @@
               "type": "newsletter",
               "settings": {
                 "title": "Newsletter",
-                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.<\/p>"
+                "content": "<p>Subscribe to receive updates, access to exclusive deals, and more.</p>"
               }
             }
           },
