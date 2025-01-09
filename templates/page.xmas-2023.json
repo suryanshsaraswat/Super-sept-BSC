@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -13,8 +22,8 @@
         "bbcaaa16-1133-4356-ab6a-1859a81924df": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/home_page.webp",
-            "imags2": "shopify:\/\/shop_images\/home_page_mobile.webp",
+            "imags": "shopify://shop_images/home_page.webp",
+            "imags2": "shopify://shop_images/home_page_mobile.webp",
             "linkk": "",
             "change_banner": ""
           }
@@ -23,8 +32,7 @@
       "block_order": [
         "bbcaaa16-1133-4356-ab6a-1859a81924df"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "9961539d-3083-4478-b500-95fd344b346b": {
       "type": "marquee",
@@ -39,13 +47,11 @@
     },
     "5b7c2bc3-670b-4dac-93ac-5b386e71efd9": {
       "type": "custom-html",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
-        "html": "<p class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.<\/span> You also get a <span class=\"green-badge\">Secret Santa Gift<\/span>  with each order, and an opportunity to win free trimmers.<\/p>\n<h3 class=\"spin\">SPIN THE WHEEL<\/h3> \n<p class=\"text-xmas\">And claim your deal!<\/p>",
+        "html": "<p class=\"text-xmas\">We’re giving away unlimited gifts and deals for 12 days of Christmas till<span style=\"font-weight:600\"> 25th December.</span> You also get a <span class=\"green-badge\">Secret Santa Gift</span>  with each order, and an opportunity to win free trimmers.</p>\n<h3 class=\"spin\">SPIN THE WHEEL</h3> \n<p class=\"text-xmas\">And claim your deal!</p>",
         "bgcolor": "#d00101",
         "txtcolor": "#ffffff"
       }
@@ -56,8 +62,8 @@
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "trimmers",
-            "image": "shopify:\/\/shop_images\/trimmers.png",
+            "collection": "trimmers-1",
+            "image": "shopify://shop_images/trimmers.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
             "subheading": "Sub-heading",
@@ -71,7 +77,7 @@
           "type": "collection",
           "settings": {
             "collection": "fragrances-collection-for-men",
-            "image": "shopify:\/\/shop_images\/FRAG.png",
+            "image": "shopify://shop_images/FRAG.png",
             "image_alignment": "top center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -85,7 +91,7 @@
           "type": "collection",
           "settings": {
             "collection": "razors-1",
-            "image": "shopify:\/\/shop_images\/razors.png",
+            "image": "shopify://shop_images/razors.png",
             "image_alignment": "top center",
             "content_position": "bottomLeft",
             "subheading": "",
@@ -99,7 +105,7 @@
           "type": "collection",
           "settings": {
             "collection": "skin-care-products-for-men",
-            "image": "shopify:\/\/shop_images\/skincare_faaa679d-8212-432d-9b82-965262858323.png",
+            "image": "shopify://shop_images/skincare_faaa679d-8212-432d-9b82-965262858323.png",
             "image_alignment": "top center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -113,7 +119,7 @@
           "type": "collection",
           "settings": {
             "collection": "mens-shaving-products",
-            "image": "shopify:\/\/shop_images\/shaving-essentials.png",
+            "image": "shopify://shop_images/shaving-essentials.png",
             "image_alignment": "top center",
             "content_position": "bottomCenter",
             "subheading": "",
@@ -147,36 +153,36 @@
         "b3d1fd7b-391f-4f7c-b964-51bc9e82243d": {
           "type": "image",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/trimmers.png",
-            "collection_url": "shopify:\/\/pages\/trimmers-for-men"
+            "collection_img": "shopify://shop_images/trimmers.png",
+            "collection_url": "shopify://pages/trimmers-for-men"
           }
         },
         "763e2c46-b777-4a55-b654-be5a3e58e0ad": {
           "type": "image",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/FRAG.png",
-            "collection_url": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men"
+            "collection_img": "shopify://shop_images/FRAG.png",
+            "collection_url": "shopify://pages/buy-perfumes-fragrances-for-men"
           }
         },
         "c997c301-af85-40ce-9b59-8d0f04e8d28c": {
           "type": "image",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/razors.png",
-            "collection_url": "shopify:\/\/pages\/razors-for-men"
+            "collection_img": "shopify://shop_images/razors.png",
+            "collection_url": "shopify://pages/razors-for-men"
           }
         },
         "5f080ff0-8552-42cb-a934-caed7be768ce": {
           "type": "image",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/skincare_faaa679d-8212-432d-9b82-965262858323.png",
-            "collection_url": "shopify:\/\/pages\/skin-care-products-for-men"
+            "collection_img": "shopify://shop_images/skincare_faaa679d-8212-432d-9b82-965262858323.png",
+            "collection_url": "shopify://pages/skin-care-products-for-men"
           }
         },
         "0e13c7d3-aa49-4111-936a-00f3f7bd64ed": {
           "type": "image",
           "settings": {
-            "collection_img": "shopify:\/\/shop_images\/shaving-essentials.png",
-            "collection_url": "shopify:\/\/pages\/shaving-products-for-men"
+            "collection_img": "shopify://shop_images/shaving-essentials.png",
+            "collection_url": "shopify://pages/shaving-products-for-men"
           }
         }
       },

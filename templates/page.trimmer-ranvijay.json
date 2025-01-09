@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -14,8 +23,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Collection-Page-Banner.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/800X600_ff688829-275c-44d3-8809-9f6ff9f53a9c.jpg",
+            "image": "shopify://shop_images/Collection-Page-Banner.jpg",
+            "mobile_image": "shopify://shop_images/800X600_ff688829-275c-44d3-8809-9f6ff9f53a9c.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -29,8 +38,8 @@
         "14b587a4-92f2-4251-b086-bc5cd217d769": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Trimmer_Desktop_1920x650_ab6b06bb-9619-47b2-b48a-e16fd2ebc8d1.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Trimmer_Mobile_800x987_86338891-ca9c-4820-9808-e6491757658a.jpg",
+            "image": "shopify://shop_images/Trimmer_Desktop_1920x650_ab6b06bb-9619-47b2-b48a-e16fd2ebc8d1.jpg",
+            "mobile_image": "shopify://shop_images/Trimmer_Mobile_800x987_86338891-ca9c-4820-9808-e6491757658a.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -45,8 +54,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/OG-Black-Trimmer-Web-Banner_cc28ea55-cd49-441e-8034-4156f021754c.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/OG-Black-Trimmer-Mobile-Banner.jpg",
+            "image": "shopify://shop_images/OG-Black-Trimmer-Web-Banner_cc28ea55-cd49-441e-8034-4156f021754c.jpg",
+            "mobile_image": "shopify://shop_images/OG-Black-Trimmer-Mobile-Banner.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -61,8 +70,8 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/FinalChrome_Banner_3a015909-ebb8-4907-b782-944f2f03cc01.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/FinalChrome_BannerMobile.jpg",
+            "image": "shopify://shop_images/FinalChrome_Banner_3a015909-ebb8-4907-b782-944f2f03cc01.jpg",
+            "mobile_image": "shopify://shop_images/FinalChrome_BannerMobile.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
@@ -94,7 +103,7 @@
       "type": "custom-html-wthout-spacing",
       "disabled": true,
       "settings": {
-        "html": "<h1 style=\"font-weight:700; font-size:18px; text-transform:capitalize; letter-spacing:0;font-weight:700; color:#0d5ea8\">Buy best trimmer for men online<\/h1>"
+        "html": "<h1 style=\"font-weight:700; font-size:18px; text-transform:capitalize; letter-spacing:0;font-weight:700; color:#0d5ea8\">Buy best trimmer for men online</h1>"
       }
     },
     "29cb4d5d-0206-42a3-9b27-c8d33f4520cb": {
@@ -103,7 +112,7 @@
         "template--16123786395802__29cb4d5d-0206-42a3-9b27-c8d33f4520cb-1687500493ad42ed38-0": {
           "type": "collection",
           "settings": {
-            "collection": "trimmers",
+            "collection": "trimmers-1",
             "title": "",
             "grid_items_count": 8,
             "button_text": ""
@@ -132,8 +141,8 @@
           "type": "Product",
           "settings": {
             "featured_product": "beard-trimmer-for-men",
-            "featured_image": "shopify:\/\/shop_images\/OGBlackTrimmer.jpg",
-            "featured_image2": "shopify:\/\/shop_images\/OG_Black_Trimmer.gif",
+            "featured_image": "shopify://shop_images/OGBlackTrimmer.jpg",
+            "featured_image2": "shopify://shop_images/OG_Black_Trimmer.gif",
             "quote": ""
           }
         },
@@ -141,8 +150,8 @@
           "type": "Product",
           "settings": {
             "featured_product": "landscaper-pubic-hair-trimmer-for-men",
-            "featured_image": "shopify:\/\/shop_images\/Landscaper.jpg",
-            "featured_image2": "shopify:\/\/shop_images\/Electric_Blue.gif",
+            "featured_image": "shopify://shop_images/Landscaper.jpg",
+            "featured_image2": "shopify://shop_images/Electric_Blue.gif",
             "quote": ""
           }
         },
@@ -151,8 +160,8 @@
           "disabled": true,
           "settings": {
             "featured_product": "black-trimmer",
-            "featured_image": "shopify:\/\/shop_images\/ChromeBlackTrimmer.png",
-            "featured_image2": "shopify:\/\/shop_images\/Classic_Black.gif",
+            "featured_image": "shopify://shop_images/ChromeBlackTrimmer.png",
+            "featured_image2": "shopify://shop_images/Classic_Black.gif",
             "quote": "Here's why Ranvijay likes this trimmer"
           }
         }
@@ -163,14 +172,12 @@
         "62869846-7dbb-493f-af62-191c1dc42402"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "16627032037dec46a6": {
       "type": "threeinarow",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "1662635306ed45f106": {
       "type": "blog-posts",
@@ -196,14 +203,14 @@
     "6a2949c9-db68-49f7-aeba-4229e02bb81c": {
       "type": "custom-html-wthout-spacing",
       "settings": {
-        "html": "<p style=\"padding-bottom:20px\"> Purchased a trimmer from us?<a href=\"https:\/\/bombayshavingcompany.com\/pages\/warranty-registration\"> Register your warranty here.<\/a><\/p>\n<h1 style=\"display:none\">Trimmers for Men <\/h1>"
+        "html": "<p style=\"padding-bottom:20px\"> Purchased a trimmer from us?<a href=\"https://bombayshavingcompany.com/pages/warranty-registration\"> Register your warranty here.</a></p>\n<h1 style=\"display:none\">Trimmers for Men </h1>"
       }
     },
     "9e18bd2f-6cf5-40ad-86de-0873cf95cb4a": {
       "type": "custom-html-wthout-spacing",
       "disabled": true,
       "settings": {
-        "html": "<h2 style=\"letter-spacing:01px;font-weight:600;font-size:25px;margin-bottom:0;\">What suits you the best?<\/h2>"
+        "html": "<h2 style=\"letter-spacing:01px;font-weight:600;font-size:25px;margin-bottom:0;\">What suits you the best?</h2>"
       }
     },
     "8b438f21-c2b7-4e08-b3a0-b387c49fd5e8": {
@@ -218,14 +225,11 @@
     "1662704788e3c19723": {
       "type": "trimmer-testimonials",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "65ad007e-a33f-4d18-953a-68e70d6ebbdc": {
       "type": "custom-html",
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "subheading": "",
         "title": "",
