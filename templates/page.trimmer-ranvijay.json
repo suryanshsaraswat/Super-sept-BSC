@@ -112,7 +112,7 @@
         "template--16123786395802__29cb4d5d-0206-42a3-9b27-c8d33f4520cb-1687500493ad42ed38-0": {
           "type": "collection",
           "settings": {
-            "collection": "trimmers-1",
+            "collection": "trimmers",
             "title": "",
             "grid_items_count": 8,
             "button_text": ""

@@ -62,7 +62,7 @@
         "template--16382741708954__18841b79-dc2c-47aa-a252-73b078d15465-collection-2": {
           "type": "collection",
           "settings": {
-            "collection": "trimmers-1",
+            "collection": "trimmers",
             "image": "shopify://shop_images/trimmers.png",
             "image_alignment": "center center",
             "content_position": "bottomCenter",
