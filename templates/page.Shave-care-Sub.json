@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "a1ec68c4-0dc7-4f1a-880c-beddd7834b23": {
@@ -14,8 +14,8 @@
       "disabled": true,
       "settings": {
         "subheading": "",
-        "title": "<h1 style=\"display:none\"><\/h1>",
-        "html": "<h1 style=\"display:none\">SEO H1 HEADING<\/h1>"
+        "title": "<h1 style=\"display:none\"></h1>",
+        "html": "<h1 style=\"display:none\">SEO H1 HEADING</h1>"
       }
     },
     "main": {
@@ -28,8 +28,7 @@
     "1657523681299f51d6": {
       "type": "animated-counters",
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "7f51eb05-7a04-4114-bb7a-cd8ffc6ed9ac": {
       "type": "category-banner-single",
@@ -37,15 +36,14 @@
         "1892186d-1dfa-4078-bb87-84dbcca2379c": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/Sensi_range_36b3519d-b4c7-405b-94de-3e8bbf890caa.png"
+            "imags": "shopify://shop_images/Sensi_range_36b3519d-b4c7-405b-94de-3e8bbf890caa.png"
           }
         }
       },
       "block_order": [
         "1892186d-1dfa-4078-bb87-84dbcca2379c"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "0562ed96-cc57-45ca-b637-6e6f710af8e0": {
       "type": "featured-collections",
@@ -81,15 +79,14 @@
         "dc815e3a-41c0-4bd7-aeb9-8575624f81dc": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/web_246e1845-ce2d-46e2-bf24-55a0a631f613.jpg"
+            "imags": "shopify://shop_images/web_246e1845-ce2d-46e2-bf24-55a0a631f613.jpg"
           }
         }
       },
       "block_order": [
         "dc815e3a-41c0-4bd7-aeb9-8575624f81dc"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "5d3ddf85-b964-42e0-8d54-f68b6ffe4f1f": {
       "type": "featured-collections",
@@ -125,15 +122,14 @@
         "10a7dbad-2281-4f15-8aa4-4547e4ceedf8": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/foam_web.jpg"
+            "imags": "shopify://shop_images/foam_web.jpg"
           }
         }
       },
       "block_order": [
         "10a7dbad-2281-4f15-8aa4-4547e4ceedf8"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "4fc1a439-91d9-4314-870d-3f2fb1499960": {
       "type": "title-and-description-seo-category-apges",
@@ -150,8 +146,7 @@
         "b6206ad8-a23f-4f14-906f-016a0ec9b0b7"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "6460e6cb-c74b-44a6-8a39-84eb2147dfe0": {
       "type": "featured-collections",
@@ -187,15 +182,14 @@
         "76ed66d6-e25f-4d38-b5fe-c683f06cc63b": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/PreShave_PostShave.jpg"
+            "imags": "shopify://shop_images/PreShave_PostShave.jpg"
           }
         }
       },
       "block_order": [
         "76ed66d6-e25f-4d38-b5fe-c683f06cc63b"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "6be5d94b-bc5b-41df-97dd-de1f8482f434": {
       "type": "featured-collections",
@@ -204,7 +198,7 @@
           "type": "collection",
           "settings": {
             "collection": "shaving-regime",
-            "title": "<a href=\"#regime\">Shaving Regime<\/a>",
+            "title": "<a href=\"#regime\">Shaving Regime</a>",
             "grid_items_count": 50,
             "button_text": ""
           }
@@ -231,7 +225,7 @@
         "8d92bece-576f-444b-a7af-dff7eff61393": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/razor_kit_web.jpg"
+            "imags": "shopify://shop_images/razor_kit_web.jpg"
           }
         }
       },
@@ -239,8 +233,7 @@
         "8d92bece-576f-444b-a7af-dff7eff61393"
       ],
       "disabled": true,
-      "settings": {
-      }
+      "settings": {}
     },
     "143e1dd1-1ec4-4353-9bc0-31afd1d21039": {
       "type": "featured-collections",
@@ -278,15 +271,14 @@
         "b91178ce-54b2-4e12-8661-ee64987bcd99": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/1_1_e473757c-8266-4ad9-9d5b-674619cafe9a.jpg"
+            "imags": "shopify://shop_images/1_1_e473757c-8266-4ad9-9d5b-674619cafe9a.jpg"
           }
         }
       },
       "block_order": [
         "b91178ce-54b2-4e12-8661-ee64987bcd99"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "51a7521a-8f03-43de-bb45-559fcae206f7": {
       "type": "featured-collections",
@@ -294,7 +286,7 @@
         "template--15975811285146__51a7521a-8f03-43de-bb45-559fcae206f7-167164682769e91849-0": {
           "type": "collection",
           "settings": {
-            "collection": "razors",
+            "collection": "shaving-kits-razors",
             "title": "",
             "grid_items_count": 4,
             "button_text": "Explore ALL"
