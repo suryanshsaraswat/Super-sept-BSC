@@ -378,7 +378,7 @@
               "Offer": "Elevate Your Grooming Game with Premium TRIMMERS starting at INR 599",
               "image": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
               "coupon": "",
-              "linkurl": "shopify://pages/trimmers-for-men"
+              "linkurl": "shopify://pages/trimmers-for-men-1"
             }
           },
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a": {
@@ -467,7 +467,7 @@
             "settings": {
               "mobile_nav": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
               "text": "Trimmers",
-              "linkurl": "shopify://pages/trimmers-for-men",
+              "linkurl": "shopify://pages/trimmers-for-men-1",
               "linkopen": false
             }
           },
@@ -539,8 +539,7 @@
           "442afb8b-d88b-4bbd-ade6-d4e5381d4263",
           "debb41d3-b108-48a6-91eb-115025e8ba25"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "testimonials": {
         "type": "testimonials",
@@ -630,8 +629,7 @@
           "a4c9ac17-56b1-456b-9921-a32ad8e6b160",
           "0c8da2b6-d7b0-4c20-b96d-f02b57508892"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "career-testimonials": {
         "type": "career-testimonials",
@@ -681,8 +679,7 @@
           "12dc15b6-c714-4957-b083-fea5d026a1aa",
           "45ef7cf1-51e2-40e5-af34-0c7cc831d584"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "featured-collections": {
         "type": "featured-collections",
@@ -714,8 +711,7 @@
       },
       "marquee-gz": {
         "type": "marquee-gz",
-        "settings": {
-        }
+        "settings": {}
       },
       "slideshow": {
         "type": "slideshow",
@@ -799,8 +795,7 @@
       },
       "games": {
         "type": "games",
-        "settings": {
-        }
+        "settings": {}
       },
       "single-banner": {
         "type": "single-banner",
@@ -827,8 +822,7 @@
           "bf82ab79-bbc1-43da-8976-43adacc0c030",
           "d68ca874-d36c-4a68-bffd-3eef548d9ef0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "bhaidooj-prod-block": {
         "type": "bhaidooj-prod-block",
@@ -852,8 +846,7 @@
           "9f808314-ce23-4e16-8a8f-15a98c2ac01b",
           "37219471-e530-4986-a203-c0bdf61c3240"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "bhaidooj-prod-block-2": {
         "type": "bhaidooj-prod-block-2",
@@ -877,8 +870,7 @@
           "3d279475-85a1-4e42-8dbf-538a2967b46b",
           "475640fe-2846-499a-861e-31a96924add0"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "bhaidooj-prod-block-3": {
         "type": "bhaidooj-prod-block-3",
@@ -902,8 +894,7 @@
           "da82cc1e-3300-448d-9d18-abaf5cc4665b",
           "f4d56e55-c827-4b56-bd7c-2810280ec371"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "bhaidooj-prod-block-4": {
         "type": "bhaidooj-prod-block-4",
@@ -927,8 +918,7 @@
           "d9e1c850-a644-4f37-859a-129f36ee8fbf",
           "00bd71bc-5a88-426f-9a21-1b3149d195d3"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "bhaidooj-prod-block-5": {
         "type": "bhaidooj-prod-block-5",
@@ -952,8 +942,7 @@
           "71bd517d-7318-4dbe-b8c5-de59a42bf647",
           "69050be6-d0fb-4b4d-af1d-d368b1835f53"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "featured-product": {
         "type": "featured-product",
@@ -991,8 +980,7 @@
           },
           "6bcddb55-8e93-40f9-baa4-4d0640d45583": {
             "type": "description",
-            "settings": {
-            }
+            "settings": {}
           }
         },
         "block_order": [
@@ -1107,8 +1095,7 @@
           "1342f2df-5336-430e-ac5a-3c9f78a4f84f",
           "4db42fa8-ae2d-46be-aec5-a4bc1df8dbd2"
         ],
-        "settings": {
-        }
+        "settings": {}
       },
       "Razr-Testimonials": {
         "type": "Razr-Testimonials",
@@ -1177,19 +1164,15 @@
           "da13f1cf-dcc5-4a7f-ae60-3f0d457490e1",
           "5609eb6f-5c97-46e7-8b1d-1f894625230a"
         ],
-        "settings": {
-        }
+        "settings": {}
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
     "blocks": {
       "14060646107696862457": {
         "type": "shopify://apps/judge-me-product-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "12120936241911852800": {
         "type": "shopify://apps/judge-me-product-reviews/blocks/reviews_tab/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
@@ -1198,30 +1181,20 @@
           "position": "right"
         }
       },
-      "10605408327587305396": {
-        "type": "shopify://apps/easygift-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
-        "disabled": false,
-        "settings": {
-          "version": "v3"
-        }
-      },
       "11348531219507317188": {
         "type": "shopify://apps/easy-bundles/blocks/app-embed/05b1325c-6303-4da5-8e2f-b13ab2a50e1a",
         "disabled": true,
-        "settings": {
-        }
+        "settings": {}
       },
       "13951170544780599758": {
         "type": "shopify://apps/tapita-seo-speed/blocks/app-embed/cd37ca7a-40ad-4fdc-afd3-768701482209",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       },
       "16605631912868231181": {
         "type": "shopify://apps/moengage/blocks/app-embed/50f1ed6f-9777-46ca-ae3f-9d9b9c6152ef",
         "disabled": false,
-        "settings": {
-        }
+        "settings": {}
       }
     }
   },

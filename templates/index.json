@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -7,14 +16,14 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Range.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Range_Mobile_2.webp",
+            "image": "shopify://shop_images/Range.webp",
+            "mobile_image": "shopify://shop_images/Range_Mobile_2.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/razors-for-men",
+            "button_1_link": "shopify://pages/razors-for-men",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -22,14 +31,14 @@
         "bbab0c94-22d5-4464-9225-1b5da00f1280": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/home_page_64ae6042-644b-4cdc-a7bd-c2db04032f58.webp",
-            "mobile_image": "shopify:\/\/shop_images\/home_page_mobile_780e08dc-4394-41db-8d52-2a03d2e87bc1.webp",
+            "image": "shopify://shop_images/home_page_64ae6042-644b-4cdc-a7bd-c2db04032f58.webp",
+            "mobile_image": "shopify://shop_images/home_page_mobile_780e08dc-4394-41db-8d52-2a03d2e87bc1.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "https:\/\/www.bombayshavingcompany.com\/pages\/xmas",
+            "button_1_link": "https://www.bombayshavingcompany.com/pages/xmas",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -37,14 +46,14 @@
         "4cf8a797-d3b3-40bc-955e-d647feaa4912": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Trimmer_Desktop_1920x650_ab6b06bb-9619-47b2-b48a-e16fd2ebc8d1.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Trimmer_Mobile_800x987_86338891-ca9c-4820-9808-e6491757658a.webp",
+            "image": "shopify://shop_images/Trimmer_Desktop_1920x650_ab6b06bb-9619-47b2-b48a-e16fd2ebc8d1.webp",
+            "mobile_image": "shopify://shop_images/Trimmer_Mobile_800x987_86338891-ca9c-4820-9808-e6491757658a.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/trimmers-for-men",
+            "button_1_link": "shopify://pages/trimmers-for-men-1",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -52,14 +61,14 @@
         "5a2a6b54-877a-4df6-924b-9481b74a7d6f": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Sensi_Mobile_copy_1.webp",
+            "image": "shopify://shop_images/website.webp",
+            "mobile_image": "shopify://shop_images/Sensi_Mobile_copy_1.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/products\/sensi-smart-3-value-pack-1-handle-3-cartridge",
+            "button_1_link": "shopify://products/sensi-smart-3-value-pack-1-handle-3-cartridge",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -67,14 +76,14 @@
         "d6bed712-5d9c-4aac-b1cc-d1c1ac74bfb6": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/SensiFlo4_copy.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Flo4_Mobile_copy_2.webp",
+            "image": "shopify://shop_images/SensiFlo4_copy.webp",
+            "mobile_image": "shopify://shop_images/Flo4_Mobile_copy_2.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/products\/sensi-flo4-razor-with-refills",
+            "button_1_link": "shopify://products/sensi-flo4-razor-with-refills",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -82,14 +91,14 @@
         "32ffea8a-df40-4983-91f2-b49a91203d66": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/website_1.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Flo6_Mobile_copy_2.webp",
+            "image": "shopify://shop_images/website_1.webp",
+            "mobile_image": "shopify://shop_images/Flo6_Mobile_copy_2.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/products\/sensi-flo6-razor-with-refills",
+            "button_1_link": "shopify://products/sensi-flo6-razor-with-refills",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -98,14 +107,14 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_1380663d-f6c8-4ffe-b98e-a759fb5a26b7.webp",
-            "mobile_image": "shopify:\/\/shop_images\/mobile_87cfd8a9-6d1c-44d0-9482-42ae3b737cec.webp",
+            "image": "shopify://shop_images/Desktop_1380663d-f6c8-4ffe-b98e-a759fb5a26b7.webp",
+            "mobile_image": "shopify://shop_images/mobile_87cfd8a9-6d1c-44d0-9482-42ae3b737cec.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/gifts-for-men-online",
+            "button_1_link": "shopify://pages/gifts-for-men-online",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -114,14 +123,14 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_ffc8d34f-7b2c-4eec-afb9-7b1de29337b3.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_e6096354-acca-4b45-b625-007b1ac13980.jpg",
+            "image": "shopify://shop_images/Desktop_ffc8d34f-7b2c-4eec-afb9-7b1de29337b3.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_e6096354-acca-4b45-b625-007b1ac13980.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/pages\/trimmers-for-men",
+            "button_1_link": "shopify://pages/trimmers-for-men-1",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -130,14 +139,14 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Desktop_5_1d35414d-276c-4079-8147-252bd6599e63.jpg",
-            "mobile_image": "shopify:\/\/shop_images\/Mobile_1_0cecda82-a01b-4e11-b128-412fbb605ae8.jpg",
+            "image": "shopify://shop_images/Desktop_5_1d35414d-276c-4079-8147-252bd6599e63.jpg",
+            "mobile_image": "shopify://shop_images/Mobile_1_0cecda82-a01b-4e11-b128-412fbb605ae8.jpg",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/grooming-galore",
+            "button_1_link": "shopify://collections/grooming-galore",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -146,14 +155,14 @@
           "type": "image",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Month_EndSale_Desktop.webp",
-            "mobile_image": "shopify:\/\/shop_images\/Month_EndSale_Mobile.webp",
+            "image": "shopify://shop_images/Month_EndSale_Desktop.webp",
+            "mobile_image": "shopify://shop_images/Month_EndSale_Mobile.webp",
             "apply_overlay": false,
             "content_position": "bottomLeft",
             "subheading": "",
             "title": "",
             "button_1_text": "",
-            "button_1_link": "shopify:\/\/collections\/month-end-sale",
+            "button_1_link": "shopify://collections/month-end-sale",
             "button_2_text": "",
             "button_2_link": ""
           }
@@ -198,7 +207,7 @@
         "featured-collection-0"
       ],
       "settings": {
-        "bg": "linear-gradient(180deg, rgb(99 195 255 \/ 45%), rgba(255, 255, 255, 1) 100%)",
+        "bg": "linear-gradient(180deg, rgb(99 195 255 / 45%), rgba(255, 255, 255, 1) 100%)",
         "hcl": "#0d5ea8",
         "title": "",
         "layout_mode": "grid",
@@ -216,8 +225,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "New Arrivals",
-            "linkurl_nav": "shopify:\/\/collections\/new-arrivals",
-            "cat_tile_image": "shopify:\/\/shop_images\/new_arrivals.png",
+            "linkurl_nav": "shopify://collections/new-arrivals",
+            "cat_tile_image": "shopify://shop_images/new_arrivals.png",
             "linkopen": false
           }
         },
@@ -225,8 +234,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Trimmers",
-            "linkurl_nav": "shopify:\/\/pages\/trimmers-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
+            "linkurl_nav": "shopify://pages/trimmers-for-men-1",
+            "cat_tile_image": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
             "linkopen": false
           }
         },
@@ -234,8 +243,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Gifts for men",
-            "linkurl_nav": "shopify:\/\/pages\/gifts-for-men-online",
-            "cat_tile_image": "shopify:\/\/shop_images\/gifting.png",
+            "linkurl_nav": "shopify://pages/gifts-for-men-online",
+            "cat_tile_image": "shopify://shop_images/gifting.png",
             "linkopen": false
           }
         },
@@ -243,8 +252,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Skin Care",
-            "linkurl_nav": "shopify:\/\/pages\/skin-care-products-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
+            "linkurl_nav": "shopify://pages/skin-care-products-for-men",
+            "cat_tile_image": "shopify://shop_images/skin_304da1b9-a991-443d-ab29-045b32306cfe.png",
             "linkopen": false
           }
         },
@@ -252,8 +261,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Shave Care",
-            "linkurl_nav": "shopify:\/\/pages\/shaving-products-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/shaving.png",
+            "linkurl_nav": "shopify://pages/shaving-products-for-men",
+            "cat_tile_image": "shopify://shop_images/shaving.png",
             "linkopen": false
           }
         },
@@ -261,8 +270,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Fragrances",
-            "linkurl_nav": "shopify:\/\/pages\/buy-perfumes-fragrances-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/fragrance_2.png",
+            "linkurl_nav": "shopify://pages/buy-perfumes-fragrances-for-men",
+            "cat_tile_image": "shopify://shop_images/fragrance_2.png",
             "linkopen": false
           }
         },
@@ -270,8 +279,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Beard Care",
-            "linkurl_nav": "shopify:\/\/pages\/beard-care-products-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/beard_be523a69-35ec-4f92-a3f1-7535eb215104.png",
+            "linkurl_nav": "shopify://pages/beard-care-products-for-men",
+            "cat_tile_image": "shopify://shop_images/beard_be523a69-35ec-4f92-a3f1-7535eb215104.png",
             "linkopen": false
           }
         },
@@ -279,8 +288,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "bath Care",
-            "linkurl_nav": "shopify:\/\/pages\/bath-care-products-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/bath.png",
+            "linkurl_nav": "shopify://pages/bath-care-products-for-men",
+            "cat_tile_image": "shopify://shop_images/bath.png",
             "linkopen": false
           }
         },
@@ -288,8 +297,8 @@
           "type": "homepage",
           "settings": {
             "heading_nav": "Hair Care",
-            "linkurl_nav": "shopify:\/\/pages\/hair-care-products-for-men",
-            "cat_tile_image": "shopify:\/\/shop_images\/hair_a2baadaf-a0ba-412b-972c-b0494a9e1070.png",
+            "linkurl_nav": "shopify://pages/hair-care-products-for-men",
+            "cat_tile_image": "shopify://shop_images/hair_a2baadaf-a0ba-412b-972c-b0494a9e1070.png",
             "linkopen": false
           }
         }
@@ -305,8 +314,7 @@
         "84733214-9fc7-4cc0-aee6-5c47e9c0188a",
         "dbb2c8a7-1f17-4597-ae64-bebe34c0d6f8"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "ceb678ff-b04b-4548-8e64-b37aedaef435": {
       "type": "featured-collections",
@@ -325,7 +333,7 @@
         "template--15991129473178__ceb678ff-b04b-4548-8e64-b37aedaef435-167775817520d6c0bb-0"
       ],
       "settings": {
-        "bg": "linear-gradient(0deg, rgb(99 195 255 \/ 45%), rgba(255, 255, 255, 1) 100%)",
+        "bg": "linear-gradient(0deg, rgb(99 195 255 / 45%), rgba(255, 255, 255, 1) 100%)",
         "hcl": "#0d5ea8",
         "title": "",
         "layout_mode": "grid",
@@ -470,7 +478,7 @@
       "type": "custom-html-wthout-spacing",
       "disabled": true,
       "settings": {
-        "html": "<h2 style=\"margin:20px 0;font-size:25px; text-transform:capitalize;letter-spacing:1px; font-weight:600 \">Grooming Zone<\/h2>"
+        "html": "<h2 style=\"margin:20px 0;font-size:25px; text-transform:capitalize;letter-spacing:1px; font-weight:600 \">Grooming Zone</h2>"
       }
     },
     "165121474616655051": {
@@ -479,22 +487,22 @@
         "16512147463b729988-2": {
           "type": "testimonial",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/612FpL6kFbL_200x_437b6247-a4df-4057-b12e-bdf0e50f379f.webp",
-            "quote": "<p>This is a brilliant product. This product is rich with the goodness of onion which is proven to be beneficial for the hair follicles. This is perfectly suitable for people having patchy beards. After a few weeks of usage the change is visible. The product has a good fragrance. It also moisturises the beard and makes it soft. The product is also beneficial for people having beard ruffs and makes the beard strong. I recommend this product to all my friends who want a thicker and a strong beard with zero patches.<\/p>"
+            "logo": "shopify://shop_images/612FpL6kFbL_200x_437b6247-a4df-4057-b12e-bdf0e50f379f.webp",
+            "quote": "<p>This is a brilliant product. This product is rich with the goodness of onion which is proven to be beneficial for the hair follicles. This is perfectly suitable for people having patchy beards. After a few weeks of usage the change is visible. The product has a good fragrance. It also moisturises the beard and makes it soft. The product is also beneficial for people having beard ruffs and makes the beard strong. I recommend this product to all my friends who want a thicker and a strong beard with zero patches.</p>"
           }
         },
         "16512147463b729988-0": {
           "type": "testimonial",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/610K0vxIrJL_200x_553f567b-0cf2-4ab1-8ffb-bec0b47c9ada.webp",
-            "quote": "<p>I have really sensitive skin and being a professional I have to shave daily which leads to sore skin, especially during summer when you tend to sweat a lot. But no more sore, painful chin as this after shave balm gives the ultimate soothing effect and its long lasting rehydration makes your day. Just take a dollop of balm and massage only the shaved area for a few seconds till it dries.<\/p>"
+            "logo": "shopify://shop_images/610K0vxIrJL_200x_553f567b-0cf2-4ab1-8ffb-bec0b47c9ada.webp",
+            "quote": "<p>I have really sensitive skin and being a professional I have to shave daily which leads to sore skin, especially during summer when you tend to sweat a lot. But no more sore, painful chin as this after shave balm gives the ultimate soothing effect and its long lasting rehydration makes your day. Just take a dollop of balm and massage only the shaved area for a few seconds till it dries.</p>"
           }
         },
         "16512147463b729988-1": {
           "type": "testimonial",
           "settings": {
-            "logo": "shopify:\/\/shop_images\/61Bd-kYB6gL._SL1600_200x_e5af0597-2fb5-4898-8002-99d74f45e6b8.webp",
-            "quote": "<p>The six pieces set is a good variety as far as the value of this product is concerned. I  use beard butter regularly and it's very useful and makes my beard very soft. Moreover, the different types of oils in the kit have a very good smell which makes my face even more attractive. For me, quantity is not the concern if the quality is good and this is really nice and with this amazing packaging I'll gift it to my brother as well.<\/p>"
+            "logo": "shopify://shop_images/61Bd-kYB6gL._SL1600_200x_e5af0597-2fb5-4898-8002-99d74f45e6b8.webp",
+            "quote": "<p>The six pieces set is a good variety as far as the value of this product is concerned. I  use beard butter regularly and it's very useful and makes my beard very soft. Moreover, the different types of oils in the kit have a very good smell which makes my face even more attractive. For me, quantity is not the concern if the quality is good and this is really nice and with this amazing packaging I'll gift it to my brother as well.</p>"
           }
         }
       },
@@ -518,35 +526,35 @@
           "type": "image",
           "settings": {
             "icon-heading": "Quick customer support",
-            "assurance-icons-img": "shopify:\/\/shop_images\/CustomerSupport_122ecc1d-98ea-457b-8c09-ed97ff0aea78.png"
+            "assurance-icons-img": "shopify://shop_images/CustomerSupport_122ecc1d-98ea-457b-8c09-ed97ff0aea78.png"
           }
         },
         "8619ce9c-1286-463a-b19a-f63cd88ff352": {
           "type": "image",
           "settings": {
             "icon-heading": "Track order in Real Time",
-            "assurance-icons-img": "shopify:\/\/shop_images\/TrackOrder_5a5c82b9-4086-49ff-8e29-c7a534c8b7a7.png"
+            "assurance-icons-img": "shopify://shop_images/TrackOrder_5a5c82b9-4086-49ff-8e29-c7a534c8b7a7.png"
           }
         },
         "efc6c912-ace1-4d67-a516-081bcc3bc109": {
           "type": "image",
           "settings": {
             "icon-heading": "No hassle claims",
-            "assurance-icons-img": "shopify:\/\/shop_images\/ZeroHassleClaims_e71ab55d-a478-4acc-a9aa-438b8329d396.png"
+            "assurance-icons-img": "shopify://shop_images/ZeroHassleClaims_e71ab55d-a478-4acc-a9aa-438b8329d396.png"
           }
         },
         "7e4d6ad2-b168-4267-b08f-34847023e779": {
           "type": "image",
           "settings": {
             "icon-heading": "100% secure transactions",
-            "assurance-icons-img": "shopify:\/\/shop_images\/SecureTranscation_d2927147-fe7e-4187-aca4-eb294c48f82e.png"
+            "assurance-icons-img": "shopify://shop_images/SecureTranscation_d2927147-fe7e-4187-aca4-eb294c48f82e.png"
           }
         },
         "b21ab50d-306c-43a1-89dd-a21b738e53a6": {
           "type": "image",
           "settings": {
             "icon-heading": "Free delivery above 199",
-            "assurance-icons-img": "shopify:\/\/shop_images\/FreeDelivery_245f8346-d20c-41a1-92cf-566ee21e0535.png"
+            "assurance-icons-img": "shopify://shop_images/FreeDelivery_245f8346-d20c-41a1-92cf-566ee21e0535.png"
           }
         }
       },
@@ -575,8 +583,8 @@
         "d05ffd11-2259-4041-b24f-b72672060e2d": {
           "type": "testimonial",
           "settings": {
-            "imags": "shopify:\/\/shop_images\/WebsiteBanner_Desktop.webp",
-            "imags2": "shopify:\/\/shop_images\/WebsiteBanner_Mobile.webp",
+            "imags": "shopify://shop_images/WebsiteBanner_Desktop.webp",
+            "imags2": "shopify://shop_images/WebsiteBanner_Mobile.webp",
             "linkk": "",
             "change_banner": ""
           }
@@ -585,8 +593,7 @@
       "block_order": [
         "d05ffd11-2259-4041-b24f-b72672060e2d"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "007a788c-f1b2-4222-9642-acd527fba986": {
       "type": "single-banner",
@@ -595,9 +602,9 @@
           "type": "testimonial",
           "disabled": true,
           "settings": {
-            "imags": "shopify:\/\/shop_images\/App_Banner_Desktop.jpg",
-            "imags2": "shopify:\/\/shop_images\/393X131.png",
-            "linkk": "https:\/\/onelink.to\/knm3j8",
+            "imags": "shopify://shop_images/App_Banner_Desktop.jpg",
+            "imags2": "shopify://shop_images/393X131.png",
+            "linkk": "https://onelink.to/knm3j8",
             "change_banner": "yes"
           }
         }
@@ -605,14 +612,13 @@
       "block_order": [
         "ea169b49-edc3-4c48-906e-32902e3bab33"
       ],
-      "settings": {
-      }
+      "settings": {}
     },
     "165658871236433278": {
       "type": "apps",
       "blocks": {
         "9b2832ec-dd09-48ad-a36a-f404910272d5": {
-          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
           "settings": {
             "title": "",
             "title_color": "",
