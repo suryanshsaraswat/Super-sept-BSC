@@ -378,7 +378,7 @@
               "Offer": "Elevate Your Grooming Game with Premium TRIMMERS starting at INR 599",
               "image": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
               "coupon": "",
-              "linkurl": "shopify://pages/trimmers-for-men-1"
+              "linkurl": "shopify://pages/trimmer-page"
             }
           },
           "bfac92d8-3689-43dc-9787-3b5e34d0af4a": {
@@ -467,7 +467,7 @@
             "settings": {
               "mobile_nav": "shopify://shop_images/trimmer_1903f2be-7046-4ccf-919a-17c168f9f05f.png",
               "text": "Trimmers",
-              "linkurl": "shopify://pages/trimmers-for-men-1",
+              "linkurl": "shopify://pages/trimmer-page",
               "linkopen": false
             }
           },
